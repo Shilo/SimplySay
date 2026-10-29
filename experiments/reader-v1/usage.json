@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-5-preparation",
+  "status": "unit-5-preparation-complete-no-response-dispatch",
   "new_conversations": 31,
   "new_task_starts": 74,
   "starts": [
@@ -311,7 +311,8 @@
       "purpose": "Diagnose exclusive-stage regression and challenge one meaningfully different full-goal mechanism before further response tests",
       "turns": 1,
       "max_turns": 1,
-      "status": "reserved"
+      "status": "completed",
+      "agent": "/root/full_goal_mechanism_challenge"
     },
     {
       "id": "n33",
@@ -319,7 +320,8 @@
       "purpose": "Inspect actual baseline constraints and propose at most two natural unused development conversations without forcing verbosity",
       "turns": 1,
       "max_turns": 1,
-      "status": "reserved"
+      "status": "completed",
+      "agent": "/root/natural_case_challenge"
     }
   ],
   "new_paid_services": false,
@@ -334,7 +336,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "Preparation only: two independent challengers; all native response dispatch remains blocked pending a recorded evidence-backed comparison.",
+  "block_reason": "Two independent challenges find no justified new policy comparison. Establish representative desktop-isolation feasibility before further subject spending; no new candidate or subject allocation.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -355,5 +357,6 @@
       "turns": 0,
       "reason": "Apply prospective stopping rule: skip n24 and send all saved pair evidence to the two allocated blinded reviewers. No further response pair."
     }
-  ]
+  ],
+  "decision": "docs/reader-unit5-decision.md"
 }
