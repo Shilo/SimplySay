@@ -1,0 +1,12 @@
+# Disposable research and raw local logs do not belong in the public repository.
+/.local/
+/downloads/
+/dist/
+/node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.key
