@@ -381,7 +381,8 @@
       "purpose": "Independent blinded per-goal assessment of every saved corrected chat and unchanged controls; no failed-setup rerun",
       "turns": 1,
       "max_turns": 1,
-      "status": "reserved-review"
+      "status": "running-review",
+      "agent": "/root/core_chat_blind_1"
     },
     {
       "id": "n46",
@@ -389,7 +390,8 @@
       "purpose": "Independent blinded per-goal assessment of every saved corrected chat and unchanged controls; no failed-setup rerun",
       "turns": 1,
       "max_turns": 1,
-      "status": "reserved-review"
+      "status": "running-review",
+      "agent": "/root/core_chat_blind_2"
     }
   ],
   "new_paid_services": false,

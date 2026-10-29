@@ -7,7 +7,6 @@
   "new_task_starts": 2,
   "fork_turns": "none",
   "model_effort": "unknown",
-  "brief_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
   "scoring": "Unchanged prospective independent-goals-v1; same nine controls and common host facts",
   "rows": [
     {
@@ -27,5 +26,7 @@
       "policy_in_packet": false
     }
   ],
-  "scope": "Corrected ordinary chat only; file/workflow and original incoming helper directives remain unverified"
+  "scope": "Corrected ordinary chat only; file/workflow and original incoming helper directives remain unverified",
+  "reference_brief_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
+  "dispatch_note": "The reference-brief hash identifies the unchanged source guidance. Actual task messages add assigned paths, output ownership and validate-only instructions, without treatment labels or expected winners."
 }
