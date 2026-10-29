@@ -1,0 +1,134 @@
+{
+  "label": "Automated assessments, not measured human comprehension",
+  "formal_outcome": "inconclusive-under-frozen-calibration",
+  "new_conversations": 4,
+  "new_task_starts": 8,
+  "counted_conversations": 25,
+  "conversation_cap": 32,
+  "counted_task_starts": 78,
+  "task_turn_cap": 108,
+  "retries_or_replacements": 0,
+  "additional_helpers_or_model_diagnostics": 0,
+  "valid_review_responses": 2,
+  "calibrated_review_responses": 0,
+  "control_judgments_passed": 6,
+  "control_judgments_total": 8,
+  "failed_controls": [
+    "review-1 omission issue-field explanation",
+    "review-2 omission issue-field explanation"
+  ],
+  "raw_comparison_votes": [
+    {
+      "reviewer": "replication-review-1",
+      "preference": "tie",
+      "qualified": false
+    },
+    {
+      "reviewer": "replication-review-2",
+      "preference": "tie",
+      "qualified": false
+    }
+  ],
+  "opposite_sides_and_order": true,
+  "order_bias_excluded": false,
+  "raw_reviews_unchanged": true,
+  "review_format_conversions": 0,
+  "assessment_replay": "byte-identical with frozen adapter before future wording correction",
+  "assessment_adapter_sha256": "175a5bb2bd7a5120762ed601d76eda916ea797196cef2280a30308ce815b7a5d",
+  "review_archive_files": 10,
+  "review_archive": [
+    {
+      "path": "review/assessment.json",
+      "sha256": "36f9b4c825b2616c95904bb7cf86948381ead744899c55d2a586c95ca5ec2ff6",
+      "bytes": 91616
+    },
+    {
+      "path": "review/controller-map.json",
+      "sha256": "66bc4d180b6a35eeabcc3a896ef67d7dd09163870ddca40e56f29126ee2d6e53",
+      "bytes": 3428
+    },
+    {
+      "path": "review/deterministic.json",
+      "sha256": "e60d1bc9ef65a6c8f3d6bf3dbb3e291df8c0c2822b6bfeaed45358a05e12327c",
+      "bytes": 31026
+    },
+    {
+      "path": "review/review-freeze.json",
+      "sha256": "2159cad6cc20ada680de3002b66104880155e3d81e24b8ea70fc373bfa6d7263",
+      "bytes": 3514
+    },
+    {
+      "path": "review/replication-review-1/packet.json",
+      "sha256": "2f6623af555c914524c6b55079a3de8ccd785a1e9d5000b3c3cfaae279c60853",
+      "bytes": 464647,
+      "non_identifying_drive_root_count": 4
+    },
+    {
+      "path": "review/replication-review-1/response-template.json",
+      "sha256": "4fe2b54ad152ddf5f1de17a08aed33c914e600cd2b6b91883e3e482b4b177a29",
+      "bytes": 3876
+    },
+    {
+      "path": "review/reviews/replication-review-1.json",
+      "sha256": "4f03303ef57ebe365b3c6fe89bc351623470751928c552bddab7cb23c8237efd",
+      "bytes": 21855
+    },
+    {
+      "path": "review/replication-review-2/packet.json",
+      "sha256": "0cb7341da9340f1c082722ea9eef9b94d9d116e8857932d7e860471c2dd22c7c",
+      "bytes": 464647,
+      "non_identifying_drive_root_count": 4
+    },
+    {
+      "path": "review/replication-review-2/response-template.json",
+      "sha256": "5dcd50143457acc2dcce3b6245f60818f71ad2b6ff2a9d6a1b514c4ff80fb940",
+      "bytes": 3876
+    },
+    {
+      "path": "review/reviews/replication-review-2.json",
+      "sha256": "7fd4e98d14d6a13c409b79be7dd4b5c5f0003dc3ce3ccae03a4a2fe2b4587583",
+      "bytes": 20223
+    }
+  ],
+  "new_selected_subject_exports": 118,
+  "new_byte_exact_raw_artifacts": 76,
+  "previous_subject_exports_unchanged": 199,
+  "total_subject_exports": 317,
+  "subjects": [
+    {
+      "id": "e21",
+      "turns": 3,
+      "native_completion": "completed",
+      "capture_or_snapshot_failures": 0,
+      "exact_loading": "absent/no policy hook",
+      "preflight_primary_used_percent": 98,
+      "final_primary_used_percent": 99,
+      "provider_included_use_permitted": true
+    },
+    {
+      "id": "e22",
+      "turns": 3,
+      "native_completion": "completed",
+      "capture_or_snapshot_failures": 0,
+      "exact_loading": "one installed exact-v4 hook",
+      "preflight_primary_used_percent": 98,
+      "final_primary_used_percent": 99,
+      "provider_included_use_permitted": true
+    }
+  ],
+  "historical_files_unchanged": 287,
+  "auth_profiles_checked": 19,
+  "copied_signins_retained": 0,
+  "holdout_hashes_unchanged": true,
+  "holdout_content_not_opened": true,
+  "original_child_instructions": "unverified",
+  "full_desktop_interface": "unverified",
+  "reviewer_model_and_effort": "unknown",
+  "provider_limit_bypass": false,
+  "new_paid_services": false,
+  "direct_claude": false,
+  "new_model_sessions_in_verifier": 0,
+  "production": "hold",
+  "publication": "hold",
+  "privacy_scope": "Targeted scanner with explicit non-identifying drive-root exception; not full release/history/license clearance"
+}

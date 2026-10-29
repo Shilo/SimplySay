@@ -1,0 +1,128 @@
+{
+  "method": "Whitelisted existing supported context fields only; no new model or loading probe",
+  "rows": [
+    {
+      "id": "e21",
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "b293e8e781033661d0a11e0c768c866db323b4490df1dc34b453aeefaca7cad8",
+          "exact_policy": false
+        }
+      ],
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "dc3a2c2c3fd7d767f922a1511dd810e8094a49ef0c96722c7e16522e79620ad8"
+        },
+        {
+          "turn": 2,
+          "line": 75,
+          "sha256": "6046f14c501da0b0c417c17072fd9deaa6b497f72f572ed5feca6c3eb39a641f"
+        },
+        {
+          "turn": 3,
+          "line": 87,
+          "sha256": "284b90b468e434ee42b27303e8890eab6d825e64a6e2378502fe5bb824660fae"
+        }
+      ],
+      "turn_settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compaction_records": 0,
+      "outgoing_request_and_attention": "unverified"
+    },
+    {
+      "id": "e22",
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "73050fa4c8507474355fe021222b6e898c755e6414611979b3587bc6df5b5e8a",
+          "exact_policy": false
+        },
+        {
+          "line": 10,
+          "characters": 837,
+          "sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+          "exact_policy": true
+        }
+      ],
+      "requests": [
+        {
+          "turn": 1,
+          "line": 11,
+          "sha256": "dc3a2c2c3fd7d767f922a1511dd810e8094a49ef0c96722c7e16522e79620ad8"
+        },
+        {
+          "turn": 2,
+          "line": 78,
+          "sha256": "6046f14c501da0b0c417c17072fd9deaa6b497f72f572ed5feca6c3eb39a641f"
+        },
+        {
+          "turn": 3,
+          "line": 90,
+          "sha256": "284b90b468e434ee42b27303e8890eab6d825e64a6e2378502fe5bb824660fae"
+        }
+      ],
+      "turn_settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compaction_records": 0,
+      "outgoing_request_and_attention": "unverified"
+    }
+  ],
+  "matching_exact_tasks": true,
+  "matching_recorded_model_effort_mode": true,
+  "stock_host_hashes_match": true,
+  "ui_or_notification_behavior": "unverified",
+  "reviewer_model_and_effort_readback": "unknown"
+}

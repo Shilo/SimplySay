@@ -1,0 +1,27 @@
+{
+  "authorization": "owner-approved-2026-10-29-targeted-replication",
+  "repeated_confirmations_do_not_add_allowance": true,
+  "starting_conversations": 21,
+  "starting_task_starts": 70,
+  "new_conversations": 4,
+  "new_task_starts": 8,
+  "subject_conversations": 2,
+  "completed_subject_turns": 6,
+  "fresh_reviewer_conversations": 2,
+  "reviewer_task_starts": 2,
+  "retries": 0,
+  "replacement_chats": 0,
+  "diagnostic_model_sessions": 0,
+  "extra_helpers": 0,
+  "total_conversations": 25,
+  "total_task_starts": 78,
+  "overall_caps": {
+    "conversations": 32,
+    "task_starts": 108
+  },
+  "unused_conversation_slots": 7,
+  "formal_outcome": "inconclusive-under-unchanged-calibration",
+  "no_automatic_next_round": true,
+  "production": "hold",
+  "publication": "hold"
+}

@@ -1,0 +1,124 @@
+{
+  "sources": [
+    {
+      "id": "e21",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json",
+      "condition": "absent"
+    },
+    {
+      "id": "e22",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/workflow-v1/candidates/workflow.v4.txt"
+    }
+  ],
+  "pairs": [
+    {
+      "key": "w1-consistency-absent-v4",
+      "a": "e21",
+      "b": "e22"
+    }
+  ],
+  "reviewers": {
+    "replication-review-1": {
+      "pairs": [
+        {
+          "key": "w1-consistency-absent-v4",
+          "kind": "real",
+          "pair_id": "pair-eb68e4128373",
+          "left": "sample-d1d9f1e70a24",
+          "right": "sample-ad147831eec1",
+          "left_source": "e21",
+          "right_source": "e22"
+        },
+        {
+          "pair_id": "pair-73ab5828a",
+          "left": "sample-2576ab1cf",
+          "right": "sample-86c7faf6c",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "cMissing",
+          "right_source": "mC"
+        },
+        {
+          "pair_id": "pair-5ff3ef47e",
+          "left": "sample-86c7faf6c",
+          "right": "sample-b3828c97b",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cFiller"
+        },
+        {
+          "pair_id": "pair-dcf59ddf3",
+          "left": "sample-c33d41d55",
+          "right": "sample-e9a313b83",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "cTerse",
+          "right_source": "dB"
+        },
+        {
+          "pair_id": "pair-a9491d80f",
+          "left": "sample-86c7faf6c",
+          "right": "sample-cbe806cd1",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cIdentical"
+        }
+      ],
+      "packet_sha256": "2f6623af555c914524c6b55079a3de8ccd785a1e9d5000b3c3cfaae279c60853"
+    },
+    "replication-review-2": {
+      "pairs": [
+        {
+          "pair_id": "pair-f2ecf2583",
+          "left": "sample-f896a3879",
+          "right": "sample-fe159c2f8",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cMissing"
+        },
+        {
+          "pair_id": "pair-30d4f6ffa",
+          "left": "sample-914adb43c",
+          "right": "sample-f896a3879",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "cFiller",
+          "right_source": "mC"
+        },
+        {
+          "pair_id": "pair-49491fbf4",
+          "left": "sample-95842651b",
+          "right": "sample-89813e901",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "dB",
+          "right_source": "cTerse"
+        },
+        {
+          "pair_id": "pair-e8e252fc0",
+          "left": "sample-73cbcc024",
+          "right": "sample-f896a3879",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "cIdentical",
+          "right_source": "mC"
+        },
+        {
+          "key": "w1-consistency-absent-v4",
+          "kind": "real",
+          "pair_id": "pair-fb3b015af36a",
+          "left": "sample-ec3f4255524f",
+          "right": "sample-403dee67d98a",
+          "left_source": "e22",
+          "right_source": "e21"
+        }
+      ],
+      "packet_sha256": "0cb7341da9340f1c082722ea9eef9b94d9d116e8857932d7e860471c2dd22c7c"
+    }
+  }
+}
