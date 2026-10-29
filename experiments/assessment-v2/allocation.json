@@ -1,0 +1,26 @@
+{
+  "phase": "retrospective-automated-assessment-v2",
+  "status": "frozen-before-new-agent-sessions",
+  "original_authorized_ceiling": 24,
+  "prior_confirmed_sessions": 11,
+  "new_phase_ceiling": 8,
+  "planned_new_sessions": 7,
+  "planned_combined_total": 18,
+  "maximum_combined_total": 19,
+  "sessions": [
+    {"id":"a12","role":"offline-harness-implementation","kind":"development-agent","slots":1},
+    {"id":"a13","role":"zero-model-capture-investigation","kind":"development-agent","slots":1},
+    {"id":"a14","role":"independent-protocol-challenge","kind":"development-agent","slots":1},
+    {"id":"a15","role":"blind-review-1","kind":"automated-reviewer","slots":1},
+    {"id":"a16","role":"blind-review-2","kind":"automated-reviewer","slots":1},
+    {"id":"a17","role":"blind-review-3","kind":"automated-reviewer","slots":1},
+    {"id":"a18","role":"blind-review-4","kind":"automated-reviewer","slots":1}
+  ],
+  "reserve": {"id":"a19","slots":1,"trigger":"A started reviewer cannot access its packet or returns unusable/missing structured output. Never retry to replace an unfavorable assessment or calibration failure."},
+  "counting": "Conservatively charge every new collaborator/reviewer conversation in this phase, including authoring and capture engineers. Count failures and replacements. Ongoing root/controller conversation and offline commands create no new evaluation conversation. Do not reuse unused prior subcap slots as another pool.",
+  "native_subject_trials_allocated": 0,
+  "direct_claude_execution": false,
+  "paid_api_or_judging_services": false,
+  "credential_copy_needed": false,
+  "production_or_publication_authorized": false
+}
