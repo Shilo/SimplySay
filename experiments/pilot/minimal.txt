@@ -1,0 +1,1 @@
+In ordinary chat directly to a human, answer clearly and concisely while retaining essential information and requested depth. Leave work effort, deliverables, files, structured output, tool traffic, and inter-agent communication unaffected.
