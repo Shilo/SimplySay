@@ -1,0 +1,107 @@
+{
+  "batch": "revision-review",
+  "development_only": true,
+  "existing_references_not_fresh_repetitions": true,
+  "subjects": [
+    {
+      "id": "e14",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    },
+    {
+      "id": "e16",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e15",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e13",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    },
+    {
+      "id": "e03",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "absent",
+      "existing_capture_reference": true
+    },
+    {
+      "id": "e06",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "minimal",
+      "existing_capture_reference": true
+    },
+    {
+      "id": "e07",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "absent",
+      "existing_capture_reference": true,
+      "projection_turns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "e10",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "minimal",
+      "existing_capture_reference": true,
+      "projection_turns": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "d1-abs-a-v3",
+      "a": "e03",
+      "b": "e14"
+    },
+    {
+      "key": "d1-abs-b-v3",
+      "a": "e03",
+      "b": "e15"
+    },
+    {
+      "key": "d1-a-v3-b-v3",
+      "a": "e14",
+      "b": "e15"
+    },
+    {
+      "key": "d1-a-v3-simple",
+      "a": "e14",
+      "b": "e06"
+    },
+    {
+      "key": "d2prefix-abs-a-v3",
+      "a": "e07",
+      "b": "e13"
+    },
+    {
+      "key": "d2prefix-abs-b-v3",
+      "a": "e07",
+      "b": "e16"
+    },
+    {
+      "key": "d2prefix-a-v3-b-v3",
+      "a": "e13",
+      "b": "e16"
+    },
+    {
+      "key": "d2prefix-b-v3-simple",
+      "a": "e16",
+      "b": "e10"
+    }
+  ]
+}

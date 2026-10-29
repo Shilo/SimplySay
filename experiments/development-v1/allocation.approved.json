@@ -77,22 +77,22 @@
     },
     {
       "id": "e13",
-      "role": "development-check-d3-absent",
+      "role": "development-revision-d2-prefix-a-v3-enabled",
       "max_turns": 3
     },
     {
       "id": "e14",
-      "role": "development-check-d3-selected-or-once-revised-candidate-enabled",
+      "role": "development-revision-d1-a-v3-enabled",
       "max_turns": 3
     },
     {
       "id": "e15",
-      "role": "development-check-d3-alternative-or-revised-candidate-enabled",
+      "role": "development-revision-d1-b-v3-enabled",
       "max_turns": 3
     },
     {
       "id": "e16",
-      "role": "development-check-d3-simple-manual",
+      "role": "development-revision-d2-prefix-b-v3-enabled",
       "max_turns": 3
     },
     {
@@ -192,5 +192,6 @@
   "production_architecture": "approval-required",
   "publication": "approval-required",
   "authorization_record": "docs/development-phase-authorization.md",
-  "development_revision_limit": "No arbitrary limit; all revisions and tests must fit the 12 development subject slots and existing turn caps. No holdout tuning."
+  "development_revision_limit": "No arbitrary limit; all revisions and tests must fit the 12 development subject slots and existing turn caps. No holdout tuning.",
+  "development_assignment_amendment": "docs/development-revision-check.md: same 12 development slots and max_turns, retest observed requests rather than unrun D3 quartet."
 }

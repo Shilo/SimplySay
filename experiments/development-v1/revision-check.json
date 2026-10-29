@@ -1,0 +1,31 @@
+{
+  "batch": "revision-check",
+  "fixed_before_subjects": true,
+  "amendment": "docs/development-revision-check.md",
+  "subjects": [
+    {
+      "id": "e14",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    },
+    {
+      "id": "e16",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e15",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e13",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    }
+  ]
+}
