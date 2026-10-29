@@ -6,10 +6,18 @@ class CodexRpc {
     this.sequence = 0;
     this.pending = new Map();
     this.stderr = '';
+    this.fatal = null;
     this.child = spawn(binary, ['app-server', '--listen', 'stdio://'], {
       cwd, env: { ...env, CODEX_HOME: profile }, windowsHide: true, stdio: ['pipe', 'pipe', 'pipe'],
     });
     this.child.stderr.on('data', b => { this.stderr += b.toString(); });
+    const fail = error => {
+      this.fatal = error;
+      for (const pending of this.pending.values()) { clearTimeout(pending.timer); pending.reject(error); }
+      this.pending.clear();
+    };
+    this.child.on('error', fail);
+    this.child.stdin.on('error', fail);
     readline.createInterface({ input: this.child.stdout }).on('line', line => {
       let value;
       try { value = JSON.parse(line); } catch { return; }
@@ -27,6 +35,7 @@ class CodexRpc {
     });
   }
   request(method, params) {
+    if (this.fatal) return Promise.reject(this.fatal);
     const id = ++this.sequence;
     return new Promise((resolve, reject) => {
       const timer = setTimeout(() => { this.pending.delete(id); reject(new Error(`Timeout: ${method}`)); }, 20000);
