@@ -1,0 +1,27 @@
+{
+  "subjects": [
+    {
+      "id": "e21",
+      "all_native_turns_completed": true,
+      "native_errors": [],
+      "snapshot_issues": [],
+      "auth_copy_removed": true,
+      "guide_bytes": 20661,
+      "guide_raw_sha256": "ef2d5f1f20a47987d252e574598090581abac384dceb7c06761f9cf4e3b6f3ec"
+    },
+    {
+      "id": "e22",
+      "all_native_turns_completed": true,
+      "native_errors": [],
+      "snapshot_issues": [],
+      "auth_copy_removed": true,
+      "guide_bytes": 21025,
+      "guide_raw_sha256": "a2e016a985587b3a8484cf084c01ca642b9eca5c08e4c85377f5b5236b4a6c70"
+    }
+  ],
+  "fixture_byte_checks": 60,
+  "audit_retention_checks": 8,
+  "exact_original_draft_copies": 2,
+  "semantic_review": "Fresh independent blinded review required",
+  "new_model_sessions_in_verifier": 0
+}

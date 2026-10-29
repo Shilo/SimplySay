@@ -1,0 +1,154 @@
+{
+  "turn": 3,
+  "expected_thread": "thread-3c82cb21d5cdc17d",
+  "observed_thread": "thread-3c82cb21d5cdc17d",
+  "thread": "thread-3c82cb21d5cdc17d",
+  "started_utc": "2026-10-29T12:32:53.901Z",
+  "continuation_observed": true,
+  "failed": false,
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "last": {
+      "inputTokens": 37056,
+      "cachedInputTokens": 36608,
+      "outputTokens": 644,
+      "reasoningOutputTokens": 347,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 37700
+    },
+    "total": {
+      "inputTokens": 318089,
+      "cachedInputTokens": 304000,
+      "outputTokens": 17226,
+      "reasoningOutputTokens": 4342,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 335315
+    }
+  },
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 99,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "accepted_turn_id": "thread-05bc5152302e5dae",
+  "native_turn_id": "thread-05bc5152302e5dae",
+  "usage_snapshots": [
+    {
+      "last": {
+        "inputTokens": 23966,
+        "cachedInputTokens": 23680,
+        "outputTokens": 183,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 24149
+      },
+      "total": {
+        "inputTokens": 187784,
+        "cachedInputTokens": 179200,
+        "outputTokens": 8412,
+        "reasoningOutputTokens": 1929,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 196196
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 28536,
+        "cachedInputTokens": 23936,
+        "outputTokens": 738,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 29274
+      },
+      "total": {
+        "inputTokens": 216320,
+        "cachedInputTokens": 203136,
+        "outputTokens": 9150,
+        "reasoningOutputTokens": 2445,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 225470
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 29306,
+        "cachedInputTokens": 29056,
+        "outputTokens": 6042,
+        "reasoningOutputTokens": 1034,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 35348
+      },
+      "total": {
+        "inputTokens": 245626,
+        "cachedInputTokens": 232192,
+        "outputTokens": 15192,
+        "reasoningOutputTokens": 3479,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 260818
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 35407,
+        "cachedInputTokens": 35200,
+        "outputTokens": 1390,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 36797
+      },
+      "total": {
+        "inputTokens": 281033,
+        "cachedInputTokens": 267392,
+        "outputTokens": 16582,
+        "reasoningOutputTokens": 3995,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 297615
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 37056,
+        "cachedInputTokens": 36608,
+        "outputTokens": 644,
+        "reasoningOutputTokens": 347,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 37700
+      },
+      "total": {
+        "inputTokens": 318089,
+        "cachedInputTokens": 304000,
+        "outputTokens": 17226,
+        "reasoningOutputTokens": 4342,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 335315
+      }
+    }
+  ],
+  "native_status": "completed",
+  "public_message_phases": [
+    {
+      "id": "msg_01d3584433f8e0cf016ae33cf7ad488198b21723a2a90a69f4",
+      "phase": "commentary"
+    },
+    {
+      "id": "msg_01d3584433f8e0cf016ae33d43df108198b1426b392c934ca8",
+      "phase": "commentary"
+    },
+    {
+      "id": "msg_01d3584433f8e0cf016ae33df60c4881989ce9161bbe73e2e4",
+      "phase": "final_answer"
+    }
+  ],
+  "ended_utc": "2026-10-29T12:37:18.158Z",
+  "snapshot_issues": [],
+  "case_turn_id": "t3_methods_handoff"
+}

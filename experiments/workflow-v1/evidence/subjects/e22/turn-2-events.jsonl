@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-23efe4011ac8a8c0"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0fe99d2ed64cc518016ae33d1508988199ae2e0280405e42a6","type":"agent_message","text":"No. The records show **12.1% less total lookup time across seven usable pairs** and **equal first-selection accuracy: 7/8 for each format**. “30 percent faster and more accurate” is unsupported.\n\nDecide whether to pursue a limited staffed check. If so, agree its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing now."}}
+{"type":"turn.completed","usage":{}}

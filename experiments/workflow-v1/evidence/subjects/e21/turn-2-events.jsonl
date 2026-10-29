@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-3c82cb21d5cdc17d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_01d3584433f8e0cf016ae33cf22bb48198af747fadb7b147c7","type":"agent_message","text":"No. The records show **12.1% less total lookup time across seven usable pairs**, and **7/8 correct first selections for both formats**. Neither “30 percent faster” nor “more accurate” is supported.\n\nDecide whether to authorize a **limited staffed check**, with agreed scope, staffing and accuracy/stop criteria. The evidence does not support standardizing now."}}
+{"type":"turn.completed","usage":{}}

@@ -1,0 +1,5 @@
+The evidence supports a **limited staffed check before standardizing**. The guide saved 110 seconds (12.1%) across seven usable pairs, but was slower in two. Both formats had 7/8 correct first selections.
+
+Written: [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json).
+
+The findings include draft corrections and conditions to resolve before another check. All supplied sources remain unchanged; no study was started.

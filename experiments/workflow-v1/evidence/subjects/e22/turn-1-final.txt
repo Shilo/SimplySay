@@ -1,0 +1,5 @@
+Recommend a **limited staffed check before standardizing**. Verified time savings were **12.1% across seven usable pairs**; first-selection accuracy was **7/8 for both formats**. Four volunteers, missing timing, coaching and practice effects limit the conclusion.
+
+Before another check, define its scope and accuracy/usability acceptance criteria.
+
+Completed [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json). All supplied sources remain unchanged.

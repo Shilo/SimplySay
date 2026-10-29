@@ -1,0 +1,11 @@
+Saved [methods.md](/<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, interpretation limits and a bounded next-check plan. [original-summary.md](/<TASK_ROOT>/handoff/original-summary.md) preserves the complete draft byte-for-byte. All existing files remain unchanged.
+
+Committee message to copy; not sent:
+
+> We will keep the current guide in place while planning a limited staffed check.
+>
+> The audit corrected several claims in the draft. Four volunteers completed eight paired tasks; these were not eight independent participants. Seven pairs had usable timing measurements. The reorganized guide took 800 seconds versus 910 for the reference card—a 110-second reduction, or 12.1%. It was faster in five pairs and slower in two. Both formats had seven correct first selections out of eight, so no accuracy improvement was observed.
+>
+> Repeated tasks, coaching, one missing timing measurement and the small volunteer sample limit what these results establish. They do not support claiming “30 percent faster and more accurate” or standardizing now.
+>
+> Before another check begins, we will agree its scope, staffing, measurement rules and accuracy and pause/review criteria. No further check has been launched.
