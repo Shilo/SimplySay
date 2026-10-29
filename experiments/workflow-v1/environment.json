@@ -1,0 +1,18 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh",
+  "summary": "none",
+  "expected_binary_version": "codex-cli 0.165.0-alpha.1.2",
+  "binary_source": "CODEX_APP_RUNTIME_CLI_PATH from this desktop session; exact hash frozen before subjects",
+  "transport": "app-server stdio, own identified research client, no originator spoofing",
+  "observed_desktop_source": "vscode / codex_work_desktop",
+  "user_personality_preference": "pragmatic; deprecated selector, not claimed as an effective style match",
+  "previous_trials": {"version":"codex-cli 0.163.0","effort":"low","transport":"exec/resume"},
+  "generic_model_template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+  "parity_limits": [
+    "Isolated API subjects are a closer backend proxy, not desktop UI/notification validation.",
+    "Apps and delegation remain disabled for access/budget isolation; actual desktop tools/context differ.",
+    "Current desktop context is long-lived; neutral synthetic cases cannot reproduce all its history.",
+    "Same generic template hash is not proof of identical effective prompts or instruction adherence."
+  ]
+}

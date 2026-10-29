@@ -1,0 +1,97 @@
+{
+  "status": "owner-approved-2026-10-29",
+  "approved_overall_ceiling": 32,
+  "already_used_conversations": 16,
+  "unused": 16,
+  "remaining": {
+    "targeted_development_subjects": 4,
+    "final_absent_enabled_repetitions": 8,
+    "fresh_final_reviewers": 2,
+    "failure_reserves": 2
+  },
+  "existing_conversation_turn_caps_if_approved": {
+    "e01": 4,
+    "e02": 4,
+    "e11": 3,
+    "e12": 3
+  },
+  "scheduled_subject_turns_total": 84,
+  "scheduled_total_task_turns": 100,
+  "maximum_total_task_turns": 108,
+  "final_disabled_and_manual_comparisons": "Explicit proposed deferral to separately budgeted lifecycle/release testing; requirement retained, not passed",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false,
+  "current_task_turns": 50,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "e17",
+        "e18"
+      ],
+      "role": "targeted-development-absent",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "e19",
+        "e20"
+      ],
+      "role": "targeted-development-enabled-matches",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "e21",
+        "e22"
+      ],
+      "role": "h1-absent-enabled-initial",
+      "max_turns_each": 4
+    },
+    {
+      "ids": [
+        "e23",
+        "e24"
+      ],
+      "role": "h2-absent-enabled-initial",
+      "max_turns_each": 4
+    },
+    {
+      "ids": [
+        "e25",
+        "e26"
+      ],
+      "role": "h1-absent-enabled-one-repeat",
+      "max_turns_each": 4
+    },
+    {
+      "ids": [
+        "e27",
+        "e28"
+      ],
+      "role": "h2-absent-enabled-one-repeat",
+      "max_turns_each": 4
+    },
+    {
+      "ids": [
+        "e29",
+        "e30"
+      ],
+      "role": "fresh-final-reviewers",
+      "max_turns_each": 1
+    },
+    {
+      "ids": [
+        "e31",
+        "e32"
+      ],
+      "role": "failure-reserves",
+      "max_turns_each": 4
+    }
+  ],
+  "baseline_diagnostic": "Controller plus instruction challenger, unblinded development only; existing review contexts get one additional task turn after enabled matches, not a hidden baseline-only turn.",
+  "final_benchmark": "Original three-of-four and each-case breadth benchmark retained unchanged; narrower findings descriptive only, no silent qualification waiver.",
+  "authorization_record": "docs/workflow-authorization.md",
+  "execution_order": "e17 absent, e19 enabled; first matched controller/challenger review; e18 absent, e20 enabled only if warranted. Final cases remain gated."
+}
