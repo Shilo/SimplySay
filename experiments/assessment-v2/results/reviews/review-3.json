@@ -1,0 +1,541 @@
+{
+  "schema_version": 1,
+  "reviewer_id": "review-3",
+  "pair_reviews": [
+    {
+      "pair_id": "pair-f598c8994",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **7 tests passed, 0 failed**",
+          "The batch currently includes approved reimbursements totaling 11,249 cents (112.49): R-101 and R-105.",
+          "R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "- Final `node --test settle.test.mjs`, after adding command-level malformed JSON and invalid-record coverage: 9 passed, 0 failed.",
+          "The approved batch totals 11,249 cents (112.49 currency units), covering R-101 and R-105.",
+          "R-102 (2,400 cents) needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved total. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival because the payment team’s processing schedule and bank arrival times are unconfirmed. We need that information before promising an arrival date."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Resolve R-102’s pending approval and R-103’s missing receipt. R-104 is denied and excluded. Friday arrival remains unconfirmed.",
+          "Resolve R-102’s approval and R-103’s missing receipt. Friday arrival requires confirmation of processing and bank timing.",
+          "All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results."
+        ],
+        "rationale": "Both lead with artifacts and supported test outcomes and give concrete next actions. The right's extra progress message identifies a new check; the left's summary additionally names the denied claim. Neither has a material clarity or filler problem, and the available order does not establish excessive cadence.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-19a8559ac",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "M7: The standalone email omits R-103's missing-receipt action and 1,800-cent review item. Its list says \"Two claims need action before inclusion:\" and gives only \"- R-102, 2,400 cents: pending approval.\" before \"R-104 was denied and is excluded.\" The other side explicitly includes \"- R-103, 1,800 cents: missing receipt.\" Surrounding chat and the report cannot repair this protected email omission."
+        ],
+        "evidence": [
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt.",
+          "| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |"
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+          "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+        ],
+        "rationale": "Ordinary chat and progress are identical, so every communication dimension ties. The left email's missing review item is an information failure and does not create an ordinary-chat style difference.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-2eb4e42ab",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **7 tests passed, 0 failed**",
+          "The batch currently includes approved reimbursements totaling 11,249 cents (112.49): R-101 and R-105.",
+          "R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "All **7 tests passed**, and the command produced the expected JSON.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt. R-104 is denied and excluded. Friday arrival remains unconfirmed."
+        ],
+        "rationale": "Both give one appropriate initial update and a clear final summary of files, checks, total and outstanding work. CLI is appropriate to the coding request, and neither has distracting repetition or filler. No material communication preference.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-3c841271f",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **7 tests passed, 0 failed**",
+          "The batch currently includes approved reimbursements totaling 11,249 cents (112.49): R-101 and R-105.",
+          "R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **8 tests passed, 0 failed, 0 skipped**",
+          "The batch has 11,249 cents approved with receipts across R-101 and R-105—112.49 in the batch’s currency, which the input does not specify.",
+          "R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md` using only built-in Node.js modules.",
+          "Friday arrival remains unconfirmed.",
+          "Friday arrival requires confirmation of payment processing and bank timing."
+        ],
+        "rationale": "Both communicate results and actions plainly. The right names built-in modules and timing verification; the left includes the converted amount and denied-claim treatment in chat. These are useful small differences without a clear overall advantage. Each has one appropriate progress update.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-874ca1f02",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "left",
+          "repetition": "left",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "left"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+          "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+          "I am still working on this task."
+        ],
+        "rationale": "The substantive work and email remain complete on both sides. The left communicates better because it reaches the result directly and avoids an unrelated aside and three repeated status messages that add no progress information. This judges recorded content and repetition, not unobserved timestamps. Both use appropriate technical terms.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-1a4c6a331",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "- Final `node --test settle.test.mjs`, after adding command-level malformed JSON and invalid-record coverage: 9 passed, 0 failed.",
+          "The approved batch totals 11,249 cents (112.49 currency units), covering R-101 and R-105.",
+          "R-102 (2,400 cents) needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved total. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival because the payment team’s processing schedule and bank arrival times are unconfirmed. We need that information before promising an arrival date."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "All **9 tests passed**; the command also produced the expected JSON.",
+          "R-102 needs approval, R-103 needs a receipt, and R-104 is excluded. All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results."
+        ],
+        "rationale": "Both ordinary replies identify files, passing checks, the approved amount and unresolved work without filler. The right's additional progress message is substantive and consistent with the final result; it is not excessive merely because the left has one update. Neither wording creates a material communication advantage.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-2c035d695",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "The stored state describes the queue’s view of the job. The receiver’s acceptance is a separate fact.",
+          "| `00:30` | A’s lease expires | Available again (`ready`) | No change |",
+          "| `00:33` | B sends the same job’s notice | `leased` | Accepts notice #2: a duplicate |",
+          "Even a worker that checks its lease immediately before sending could pause between that check and the send.",
+          "The crucial requirement is that **claiming or recording the key and applying the notice’s effect must form one atomic, durable operation**, or have an equivalent guarantee:",
+          "Keep **send before marking `done`**, because a missed notice is worse than a duplicate."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+          "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |",
+          "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+          "Both workers can reach the receiver because the rules explicitly allow A to keep running after expiration.",
+          "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+          "The rules make eventual delivery conditional: **retries must continue, and some attempt must eventually succeed.**"
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "The stored state describes the queue’s view of the job. The receiver’s acceptance is a separate fact.",
+          "The underlying difficulty is that sending to the receiver and updating the stored job are separate operations. The rules provide no transaction that makes those two operations succeed or fail together.",
+          "A database transaction could provide this atomic boundary if the effect and deduplication record are both within that database.",
+          "Generating a new key for each retry would defeat deduplication."
+        ],
+        "rationale": "Both meet the requested depth with causal failure cases, stateful timelines and careful limitations. I slightly prefer the right's explanation for this reader: numbered failure cases and a concrete transaction example make the reasoning easier to review. Both remain relevant and use technical terms with explanation; the detail and recap serve the request rather than count as filler or excessive updates.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-1ec30fba5",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "Q1, Q2 and Q8: Around \"A stopped worker can cause a retry and duplicate; marking done first can lose a notice.\", there is no before-send recovery explanation, accepted-before-done causal sequence, or worked times/states timeline. The other side explains \"The job remains unfinished. Once its lease expires, it becomes available to another worker, which can retry.\" and shows \"| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\".",
+          "Q3: The short answer has no old-worker overlap or ambiguous-timeout explanation around \"A stopped worker can cause a retry and duplicate\". The other side states \"Both workers can reach the receiver because the rules explicitly allow A to keep running after expiration.\" and \"The receiver may have accepted the request despite the timeout.\"",
+          "Q5 and Q8: \"Use idempotency and receiver deduplication\" does not explain a stable key shared across attempts, durable memory, or atomic coordination with the effect and concurrent requests. The other side states \"Generating a new key for each retry would defeat deduplication.\" and requires \"**the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**\".",
+          "Q4, Q6 and Q7: \"keep retrying, and consider a longer lease\" omits the eventual-success assumption, renewal's benefit and failure cases, and why lease changes cannot close the send/done crash gap. The other side gives \"**retries must continue, and some attempt must eventually succeed.**\" and \"Neither makes receiver acceptance and marking done atomic.\""
+        ],
+        "evidence": [
+          "A stopped worker can cause a retry and duplicate; marking done first can lose a notice.",
+          "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease.",
+          "The receiver capabilities are unknown."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+          "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |",
+          "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+          "Both workers can reach the receiver because the rules explicitly allow A to keep running after expiration.",
+          "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+          "The rules make eventual delivery conditional: **retries must continue, and some attempt must eventually succeed.**"
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "right",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "right",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease.",
+          "If the receiver can be changed, each attempt should send the same stable idempotency key for the same logical notice.",
+          "If the receiver performs the effect and crashes before recording the key, a retry can perform the effect again.",
+          "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded. The duplicate arises from the gap between receiver acceptance and recording completion."
+        ],
+        "rationale": "The right directly serves the request for detailed reasoning: states, times, transitions and mechanism-level qualifications make its recommendation reviewable. The left uses labels without explaining their relationships. This preference is about explanatory clarity and fit to the requested depth, not length. Neither has an irrelevant aside or redundant progress updates; the right's useful detail is not filler.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-ce28546e3",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "- Final `node --test settle.test.mjs`, after adding command-level malformed JSON and invalid-record coverage: 9 passed, 0 failed.",
+          "The approved batch totals 11,249 cents (112.49 currency units), covering R-101 and R-105.",
+          "R-102 (2,400 cents) needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved total. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival because the payment team’s processing schedule and bank arrival times are unconfirmed. We need that information before promising an arrival date."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **8 tests passed, 0 failed, 0 skipped**",
+          "The batch has 11,249 cents approved with receipts across R-101 and R-105—112.49 in the batch’s currency, which the input does not specify.",
+          "R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Friday arrival requires confirmation of processing and bank timing.",
+          "Friday arrival requires confirmation of payment processing and bank timing.",
+          "All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results.",
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md` using only built-in Node.js modules."
+        ],
+        "rationale": "Both give clear artifacts, honest successful checks, approved total, review actions and timing uncertainty. The left has an informative extra progress message; the right uses one appropriate initial update. Neither has material filler, unnecessary jargon or excessive recorded updating. The different test counts reflect their respective supported implementations.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-92f795538",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+        ],
+        "rationale": "The displayed candidates have identical progress, ordinary chat, email and protected deliverables. There is no content-based basis to prefer either side; all communication dimensions tie.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-7deea5654",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **8 tests passed, 0 failed, 0 skipped**",
+          "The batch has 11,249 cents approved with receipts across R-101 and R-105—112.49 in the batch’s currency, which the input does not specify.",
+          "R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.",
+          "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "`node --test settle.test.mjs`: **9 tests passed, 0 failed**",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "All **8 tests passed**. The CLI also returned the expected batch: **11,249 cents approved**.",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival requires confirmation of payment processing and bank timing.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+        ],
+        "rationale": "Both provide one appropriate initial update and a relevant, understandable final result. The left explicitly names the timing verification and built-in modules; the right gives the converted approved amount in chat. Neither has distracting repetition or jargon. Their protected output remains complete, so there is no reason to prefer one solely for compactness.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    }
+  ],
+  "supplemental_delegation": {
+    "parent_directive_status": "unknown",
+    "information": {
+      "status": "unknown",
+      "issues": [],
+      "evidence": [
+        "There are 10 possible pairs. Crates A, B, and C have confirmed Friday availability. D is tentative for Friday and is not confirmed.",
+        "| B + D | $95 + $90 = **$185** | 12 + 14 = **26** | 15 + 12 = **27** | Fail: $5 over budget | Fail: 4 kits short, despite 7 extra mats | Fail currently: D is tentative, not confirmed |",
+        "The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**.",
+        "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+        "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+        "**Next action:** verify D’s Friday availability before choosing C + D. Tentative availability does not qualify; otherwise, choose A + B.",
+        "Exactly one native child performed the analysis without delegation. I independently checked all ten pairs’ arithmetic and constraints"
+      ]
+    },
+    "ordinary_chat_quality": {
+      "observations": [
+        "The root's two recorded progress messages are relevant: one announces the authorized delegation and checking work, and the next reports the confirmed and conditional conclusions and remaining checking. Their timestamps are unavailable, so frequency is not inferred.",
+        "The final recommendation leads with the currently valid option, gives cost and quantities, then distinguishes the cheaper option conditional on D and states the next verification. This is clear and actionable.",
+        "The detailed child report is requested task output. Its full pair analysis is preserved and should not be treated as ordinary-chat verbosity. There is no matched comparator, so no comparative communication or policy effect can be inferred.",
+        "The incoming parent-to-child directive is unknown; report completeness does not establish whether the parent imposed a style constraint or forwarded the instructions correctly."
+      ],
+      "evidence": [
+        "I’ll ask one child agent to evaluate every crate pair, then independently check its results and save the report.",
+        "C + D would save $15 if D becomes confirmed for Friday.",
+        "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**."
+      ]
+    },
+    "missing_evidence": [
+      "The actual parent-to-child directive is absent. Forwarding of data and requirements, and absence of parent-added style or length constraints, remain unknown.",
+      "No native spawn or descendant event capture is included. The exact-one-native-child and no-descendant assertions cannot be verified independently beyond the root's claim and the labeled child public response.",
+      "The root asserts independent checking and gives correct conclusions, but no separate correct root recomputation or local calculation is captured. The reviewer can confirm the arithmetic from supplied data without treating that as evidence of the root's checking process.",
+      "No completed matched comparison is supplied for delegation, so a comparative effect is unknown."
+    ]
+  },
+  "limitations": [
+    "This is an independent retrospective automated assessment of the supplied packet, not a measured human-comprehension study.",
+    "Captured commands were treated only as historical evidence; no candidate code, model, agent, API or external service was executed.",
+    "Message timestamps and elapsed intervals are absent. Update judgments concern relevance and repetition in the recorded order, not inferred timing.",
+    "Delegation report content and saved preservation are observable, while the incoming directive and some procedural provenance are not. Unknowns are not treated as observed failures."
+  ]
+}

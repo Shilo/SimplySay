@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "reviewer_id": "review-3",
+  "pair_reviews": [
+    {
+      "pair_id": "pair-f598c8994",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-19a8559ac",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-2eb4e42ab",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-3c841271f",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-874ca1f02",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-1a4c6a331",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-2c035d695",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-1ec30fba5",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-ce28546e3",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-92f795538",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-7deea5654",
+      "left_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": []
+      },
+      "communication": {
+        "preference": "unknown",
+        "dimensions": {
+          "clarity": "unknown",
+          "relevance": "unknown",
+          "filler": "unknown",
+          "repetition": "unknown",
+          "unnecessary_jargon": "unknown",
+          "excessive_updates": "unknown"
+        },
+        "evidence": [],
+        "rationale": "",
+        "confidence": "low"
+      },
+      "missing_evidence": []
+    }
+  ],
+  "supplemental_delegation": {
+    "parent_directive_status": "unknown",
+    "information": {
+      "status": "unknown",
+      "issues": [],
+      "evidence": []
+    },
+    "ordinary_chat_quality": {
+      "observations": [],
+      "evidence": []
+    },
+    "missing_evidence": []
+  },
+  "limitations": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "harness_sha256": "5b3d3235146284d6e31d516bc0d8f245638ec1b8c22ee75923157f7453718732",
+  "protocol_sha256": "bda7ac507a3e08848384c82e6d0c3329f5f7f3f037eae7e3bce27998628279a5",
+  "calibration_spec_sha256": "2aeed8457a87d49b3d6e92e034c12cabcc75dfdc6fabe272edad263c25f1c6bd",
+  "allocation_sha256": "862fd003ea218a4bf6767d24a515b8b8dfe9b013298e147ec59aa10e39050a24",
+  "controller_map_sha256": "a1e648dc9c4c1726416fefe80936f9aefd706f57f7638eb1781c6666b051198b",
+  "jobs": [
+    {
+      "reviewer_id": "review-1",
+      "packet_sha256": "94accd22ac9034ff5c902722d59acfd61232cc541d15b80ec6865412d213eaf5"
+    },
+    {
+      "reviewer_id": "review-2",
+      "packet_sha256": "6733852445ff044811d72899f510deac7d9bb779117f645b3df7cd02208a70c9"
+    },
+    {
+      "reviewer_id": "review-3",
+      "packet_sha256": "62d518403738382f10748cc0524eac42c2e8554312e0b272ad6938b19dda41e6"
+    },
+    {
+      "reviewer_id": "review-4",
+      "packet_sha256": "bb8f0010f01ee9bc8e396d2ff6e93299b5446c3c30e991e6ef5c94a5151ea61f"
+    }
+  ],
+  "calibration_expectations": {
+    "omission": {
+      "original_information": "preserved",
+      "mutant_information": "omitted-essential",
+      "communication": "unconstrained"
+    },
+    "filler": {
+      "both_information": "preserved",
+      "communication": "original",
+      "must_cite": "irrelevant filler AND redundant updates/repetition"
+    },
+    "depth": {
+      "original_information": "preserved",
+      "mutant_information": "omitted-essential",
+      "communication": "original"
+    },
+    "identity": {
+      "both_information": "preserved",
+      "communication": "tie"
+    }
+  },
+  "threshold": "All four controls required per reviewer, with intended-defect/equality evidence and medium/high confidence. Retain failed controls and all-reviewer results; calibrated-only results may be empty. No retuning/retry for unfavorable results."
+}

@@ -1,0 +1,18 @@
+{
+  "label": "conservative conversation accounting, not token or monetary cost measurement",
+  "authorized_ceiling": 24,
+  "prior_pilot_sessions": 11,
+  "new_development_conversations": ["a12", "a13", "a14"],
+  "new_blinded_review_conversations": ["a15", "a16", "a17", "a18"],
+  "combined_used": 18,
+  "combined_remaining_unspent": 6,
+  "replacement_reserve_used": false,
+  "new_subject_trials": 0,
+  "new_native_children": 0,
+  "direct_claude_execution": false,
+  "new_credential_copies": 0,
+  "paid_api_or_external_judging_services_invoked": false,
+  "account_wide_token_or_quota_meter": "not independently captured in this phase",
+  "native_delegation_decision": "pending; no repeated blocked test or different testing setup authorized",
+  "production_and_publication": "on hold"
+}

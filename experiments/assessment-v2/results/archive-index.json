@@ -1,0 +1,151 @@
+{
+  "label": "Automated retrospective assessments",
+  "scope": "Frozen neutral packets/templates, accepted reviews, all raw rich originals, format failures/audits, session accounting, offline verification, controller mapping and aggregates. No new subject trials.",
+  "files": [
+    {
+      "path": "assessment.json",
+      "bytes": 322231,
+      "sha256": "8bca37ae15bbacfca3e85ae9f699fa2395034ae0b41814b941dc08c37c043c54"
+    },
+    {
+      "path": "assessment.md",
+      "bytes": 2756,
+      "sha256": "b0da75c3ac074d5a66ad406f6e31d7e893e340e8d74c53619542e897761efc68"
+    },
+    {
+      "path": "controller-map.json",
+      "bytes": 15391,
+      "sha256": "a1e648dc9c4c1726416fefe80936f9aefd706f57f7638eb1781c6666b051198b"
+    },
+    {
+      "path": "deterministic.json",
+      "bytes": 37094,
+      "sha256": "0ee2b8b9ef9d65b5324589c1fc204cfa8b348af748318eaa37ab0f2338ae5df5"
+    },
+    {
+      "path": "development-verification.json",
+      "bytes": 1534,
+      "sha256": "cb35cf83c8e8884b3d83eca853202fdecde3f0f29c81eba4a1d6200c441c337e"
+    },
+    {
+      "path": "format-rejections/ingestion-errors.json",
+      "bytes": 1045,
+      "sha256": "9c1252b01c32853edd72bafacdda4def57ffc0c0c6c967904ba284ea1149ea81"
+    },
+    {
+      "path": "format-rejections/review-1-original.json",
+      "bytes": 73278,
+      "sha256": "de25920fb6052e7ae4a5eb49bfb77c21295cd8da139a262edd651e02f8289f95"
+    },
+    {
+      "path": "format-rejections/review-2-original.json",
+      "bytes": 97030,
+      "sha256": "e373e9b1c8ce0bceda465191567f14d1885ab91e57f02d273164cd423c75a250"
+    },
+    {
+      "path": "format-rejections/review-3-original.json",
+      "bytes": 70679,
+      "sha256": "fe90f0f87d29ecef2e24f4cf99a25d62f8c457434d6b7a696daa2f462d3ee7af"
+    },
+    {
+      "path": "format-rejections/review-4-original.json",
+      "bytes": 156667,
+      "sha256": "c503e9d4f741309a7420f9932927df9193d71ced0b7ce6241a1bd38c3094b43f"
+    },
+    {
+      "path": "normalized/review-1-format-audit.json",
+      "bytes": 26627,
+      "sha256": "db7145d7283446fb070c0c331bea814f9b09996bc79a30e2aefad88f029c4eda"
+    },
+    {
+      "path": "normalized/review-2-format-audit.json",
+      "bytes": 31319,
+      "sha256": "1161c0561b6431dfa40ed113a650f015d734235e5b1707e02b4a787d03029bd5"
+    },
+    {
+      "path": "normalized/review-2-routed-format-audit.json",
+      "bytes": 31524,
+      "sha256": "a5031f17662408c88fe6094a80c1df2b90b6e3853d7ce6013eb68c512918bc0e"
+    },
+    {
+      "path": "normalized/review-3-format-audit.json",
+      "bytes": 23201,
+      "sha256": "d8f6cf0c40e41bf5d6ed7ab38325beb595662432cf9cea39a07a84b442734659"
+    },
+    {
+      "path": "normalized/review-4-format-audit.json",
+      "bytes": 38283,
+      "sha256": "019b3803e4e221cf415806e8375eb18056c8fb316ca3e12bb327cbbdf4cd109e"
+    },
+    {
+      "path": "pre-review-freeze.json",
+      "bytes": 1904,
+      "sha256": "fbc68d71936eaca7b21bcf289c7d1403366cb37f998f0596b11b87f6dd0fb9f0"
+    },
+    {
+      "path": "review-1/packet.json",
+      "bytes": 207234,
+      "sha256": "94accd22ac9034ff5c902722d59acfd61232cc541d15b80ec6865412d213eaf5"
+    },
+    {
+      "path": "review-1/response-template.json",
+      "bytes": 8031,
+      "sha256": "e40afc4a049cbe4b5a40a9bc847ea0cd59db0e2b731d3573c8abc1195bba0a18"
+    },
+    {
+      "path": "review-2/packet.json",
+      "bytes": 207234,
+      "sha256": "6733852445ff044811d72899f510deac7d9bb779117f645b3df7cd02208a70c9"
+    },
+    {
+      "path": "review-2/response-template.json",
+      "bytes": 8031,
+      "sha256": "358cb51cbaae14ec281ae5d8a9abd97976a28a71a13f78ef905073f557901e18"
+    },
+    {
+      "path": "review-3/packet.json",
+      "bytes": 207234,
+      "sha256": "62d518403738382f10748cc0524eac42c2e8554312e0b272ad6938b19dda41e6"
+    },
+    {
+      "path": "review-3/response-template.json",
+      "bytes": 8031,
+      "sha256": "8fae1c38e9666232ad5131679418ab4e03114590f03df092eecbbb9a1f7be328"
+    },
+    {
+      "path": "review-4/packet.json",
+      "bytes": 207234,
+      "sha256": "bb8f0010f01ee9bc8e396d2ff6e93299b5446c3c30e991e6ef5c94a5151ea61f"
+    },
+    {
+      "path": "review-4/response-template.json",
+      "bytes": 8031,
+      "sha256": "e673dbce269ccd49728e001358fec01ff9bd42518edf113b4b294162f902316f"
+    },
+    {
+      "path": "reviews/review-1.json",
+      "bytes": 41683,
+      "sha256": "f4da7553985fc03b8f05a245e681c5d8eb327979a9b1f6ec199818fb4d30667a"
+    },
+    {
+      "path": "reviews/review-2.json",
+      "bytes": 50179,
+      "sha256": "e5132a3036412b43f1fba94343faaa114d2dd1f1ecaca9124fb454331142df74"
+    },
+    {
+      "path": "reviews/review-3.json",
+      "bytes": 34312,
+      "sha256": "113fd11b45f0cd6fc9c6c1f8758b7e302dbb4ca198dcfef29dc59069484f2225"
+    },
+    {
+      "path": "reviews/review-4.json",
+      "bytes": 87020,
+      "sha256": "3bff3addabf28d6868d3f003c9db4dfde75d0f6f63ca20cf6ec65e9c1106db1a"
+    },
+    {
+      "path": "session-accounting.json",
+      "bytes": 785,
+      "sha256": "021f6d1abd8b921de8c86a75f6797f7add0ff84297bd9a3759f2f53b82e32140"
+    }
+  ]
+}

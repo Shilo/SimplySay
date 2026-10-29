@@ -1,0 +1,17 @@
+{
+  "purpose": "Record schema/representation failures without replacing substantive judgments",
+  "initial_rejections": [
+    {"reviewer":"review-1","failure":"issues/evidence require string arrays; rich objects returned"},
+    {"reviewer":"review-2","failure":"issues/evidence require string arrays; rich objects returned"},
+    {"reviewer":"review-3","failure":"issues/evidence require string arrays; rich objects returned"},
+    {"reviewer":"review-4","failure":"issues/evidence require string arrays; rich objects returned"}
+  ],
+  "additional_rejection": {
+    "reviewer": "review-2",
+    "failure": "A literal quote explicitly attributed to the opposite candidate appeared in the current candidate's evidence array",
+    "resolution": "Relocate that existing exact quote to its explicitly named candidate; preserve the original source attribution and complete raw record"
+  },
+  "statuses_preferences_dimensions_confidence_rationale_changed": false,
+  "frozen_scorer_and_calibration_changed": false,
+  "replacement_reviewers_started": 0
+}

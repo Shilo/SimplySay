@@ -1,0 +1,631 @@
+{
+  "original_sha256": "fe90f0f87d29ecef2e24f4cf99a25d62f8c457434d6b7a696daa2f462d3ee7af",
+  "normalized_sha256": "113fd11b45f0cd6fc9c6c1f8758b7e302dbb4ca198dcfef29dc59069484f2225",
+  "judgments_changed": false,
+  "changes": [
+    {
+      "pointer": "/pair_reviews/0/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/left_information/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/right_information/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/right_information/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/7/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/8/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/9/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/left_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/left_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/left_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/left_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/left_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/right_information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/right_information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/right_information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/right_information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/right_information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/10/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/information/evidence/6",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/ordinary_chat_quality/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/ordinary_chat_quality/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/supplemental_delegation/ordinary_chat_quality/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    }
+  ]
+}

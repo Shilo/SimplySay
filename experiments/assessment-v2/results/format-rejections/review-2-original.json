@@ -1,0 +1,1588 @@
+{
+  "schema_version": 1,
+  "reviewer_id": "review-2",
+  "pair_reviews": [
+    {
+      "pair_id": "pair-cc921bb21",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-f896a3879.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-1364b6830.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-1364b6830.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-1364b6830.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 8\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-1364b6830.protected_deliverables['batch-report.md']",
+            "quote": "Two qualify for the approved batch, totaling **11,249 cents (112.49 currency units)**. The input does not specify a currency. Preparing this batch does not send payments.",
+            "explanation": "M5/M8: correct approved amount and payment caveat."
+          },
+          {
+            "source": "sample-1364b6830.protected_email",
+            "quote": "R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.",
+            "explanation": "M7: both review actions and exclusion remain in the standalone email."
+          },
+          {
+            "source": "sample-1364b6830.protected_email",
+            "quote": "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date. Batch approval does not confirm payment has been sent.",
+            "explanation": "M6-M8: timing uncertainty and required verification are explained in the email."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-f896a3879.ordinary_chat",
+            "quote": "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "explanation": "Left: clear amount, actions and uncertainty."
+          },
+          {
+            "source": "sample-1364b6830.ordinary_chat",
+            "quote": "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival requires confirmation of payment processing and bank timing.",
+            "explanation": "Right: equally actionable, with the verification named."
+          },
+          {
+            "source": "sample-f896a3879.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft.",
+            "explanation": "Left initial update sets useful scope."
+          },
+          {
+            "source": "sample-1364b6830.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the tool, and write the report and draft email with the payment-timing limits made clear.",
+            "explanation": "Right initial update serves the same purpose."
+          }
+        ],
+        "rationale": "Both ordinary replies identify the files, report the captured passing tests, give the approved total and name both actions. The left gives the converted amount; the right makes processing/bank verification explicit in chat. Neither advantage produces a clear overall communication preference. Each has one useful initial update, no filler, and technical terms appropriate to the coding request. The protected emails and reports are assessed separately and are complete.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-e8e252fc0",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-73cbcc024.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-73cbcc024.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-73cbcc024.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-73cbcc024.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-73cbcc024.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-73cbcc024.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-73cbcc024.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-f896a3879.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-73cbcc024.ordinary_chat",
+            "quote": "All **9 tests passed**, and the CLI produced the expected JSON.",
+            "explanation": "Left and right have this exact verification sentence."
+          },
+          {
+            "source": "sample-f896a3879.ordinary_chat",
+            "quote": "All **9 tests passed**, and the CLI produced the expected JSON.",
+            "explanation": "Right matches the left exactly."
+          },
+          {
+            "source": "sample-73cbcc024.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "explanation": "Left initial update is identical to the right."
+          },
+          {
+            "source": "sample-f896a3879.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "explanation": "Right initial update is identical to the left."
+          }
+        ],
+        "rationale": "The displayed progress, ordinary chat, final response and substantive deliverables are identical. There is no basis for a winner on clarity, relevance, filler, repetition, jargon or updates; test counts and qualifications are the same.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-ee087a847",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-1364b6830.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-1364b6830.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-1364b6830.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 8\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-1364b6830.protected_deliverables['batch-report.md']",
+            "quote": "Two qualify for the approved batch, totaling **11,249 cents (112.49 currency units)**. The input does not specify a currency. Preparing this batch does not send payments.",
+            "explanation": "M5/M8: correct approved amount and payment caveat."
+          },
+          {
+            "source": "sample-1364b6830.protected_email",
+            "quote": "R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.",
+            "explanation": "M7: both review actions and exclusion remain in the standalone email."
+          },
+          {
+            "source": "sample-1364b6830.protected_email",
+            "quote": "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date. Batch approval does not confirm payment has been sent.",
+            "explanation": "M6-M8: timing uncertainty and required verification are explained in the email."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-d1355a29b.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-d1355a29b.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-d1355a29b.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-d1355a29b.protected_deliverables['batch-report.md']",
+            "quote": "Two qualify for this batch, totaling **11,249 cents (112.49 currency units)**. The input does not specify a currency. This tool prepares a batch; it does not submit payments.",
+            "explanation": "M5/M8: correct amount and distinction between preparation and actual payment."
+          },
+          {
+            "source": "sample-d1355a29b.protected_email",
+            "quote": "R-102 (2,400 cents) needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved total. R-104 was denied and is excluded.",
+            "explanation": "M7: both review actions remain in the email itself."
+          },
+          {
+            "source": "sample-d1355a29b.protected_email",
+            "quote": "We cannot confirm Friday arrival because the payment team’s processing schedule and bank arrival times are unconfirmed. We need that information before promising an arrival date.",
+            "explanation": "M6-M8: honest timing caveat and next verification."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-1364b6830.ordinary_chat",
+            "quote": "All **8 tests passed**. The CLI also returned the expected batch: **11,249 cents approved**.",
+            "explanation": "Left exposes the result plainly."
+          },
+          {
+            "source": "sample-d1355a29b.ordinary_chat",
+            "quote": "All **9 tests passed**; the command also produced the expected JSON.",
+            "explanation": "Right is equally direct about the final result."
+          },
+          {
+            "source": "sample-d1355a29b.progress",
+            "quote": "All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results.",
+            "explanation": "Additional update conveys new verification work and matches the captured intermediate run."
+          },
+          {
+            "source": "sample-1364b6830.ordinary_chat",
+            "quote": "Friday arrival requires confirmation of payment processing and bank timing.",
+            "explanation": "Left names the necessary follow-up."
+          },
+          {
+            "source": "sample-d1355a29b.ordinary_chat",
+            "quote": "Friday arrival requires confirmation of processing and bank timing.",
+            "explanation": "Right names the same follow-up."
+          }
+        ],
+        "rationale": "Both replies clearly give the files, successful checks, approval/receipt actions and the verification needed for Friday. The right has an additional progress update, but it reports an actual intermediate eight-test result and the concrete check being added, so it is useful progress rather than empty repetition or excessive updating. The left groups its final result into short paragraphs; the right includes a currency-unit conversion. Neither has a material communication defect.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-49491fbf4",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "The receiver has not received a notice from that attempt. The job remains unfinished. Once its lease expires, it becomes available to another worker, which can retry.",
+            "explanation": "Q1: explains stopping before send and the retry path."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "If the worker then stops before sending, the queue records completion even though no notice was sent. The rules provide no recovery path for this done job.",
+            "explanation": "Q1: explains the done-first loss window."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+            "explanation": "Q2: the complete timeline supplies times, queue states and receiver history leading to this duplicate."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "4. At 32 s, A resumes and sends; the receiver accepts.\n5. At 33 s, B also sends; the receiver accepts again.",
+            "explanation": "Q3: old and replacement workers overlap after expiry."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "The receiver may have accepted the request despite the timeout. The worker cannot safely interpret the timeout as “nothing happened.”",
+            "explanation": "Q3: explains ambiguous acceptance."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "**retries must continue, and some attempt must eventually succeed.**",
+            "explanation": "Q4: eventual delivery is explicitly conditional."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "Generating a new key for each retry would defeat deduplication.",
+            "explanation": "Q5: explains why the same key is necessary."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "**the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**",
+            "explanation": "Q5: explains the atomic boundary, with crash and concurrency examples."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "Neither makes receiver acceptance and marking done atomic.",
+            "explanation": "Q6: lease tuning and renewal cannot close the crash window."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "From the supplied rules, we cannot promise delivery without continued retries and an eventual successful attempt, duplicate-free behavior with the current receiver, a delivery deadline, or exactly one downstream effect.",
+            "explanation": "Q7/Q8: recommendation follows the priority and preserves the limits."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          {
+            "requirements": [
+              "Q1",
+              "Q8"
+            ],
+            "description": "The right names duplicate/loss outcomes but does not explain the three requested failure windows: how an unfinished pre-send job becomes retryable, why acceptance before done permits a second send, and why done-before-send removes ordinary recovery. The left supplies those causal state transitions.",
+            "evidence": [
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "A stopped worker can cause a retry and duplicate; marking done first can lose a notice.",
+                "explanation": "Right anchor: the entire failure-window explanation."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "The receiver has not received a notice from that attempt. The job remains unfinished. Once its lease expires, it becomes available to another worker, which can retry.",
+                "explanation": "Corresponding left explanation for stopping before send."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "The notice has been accepted, but the stored job is still unfinished. After lease expiration, another worker can send it again.",
+                "explanation": "Corresponding left explanation for acceptance before done."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "If the worker then stops before sending, the queue records completion even though no notice was sent. The rules provide no recovery path for this done job.",
+                "explanation": "Corresponding left explanation for done before send."
+              }
+            ]
+          },
+          {
+            "requirements": [
+              "Q2"
+            ],
+            "description": "The right has no worked timeline, times or queue states showing a retry producing a duplicate. Its general retry statement does not meet the explicit timeline request.",
+            "evidence": [
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "A stopped worker can cause a retry and duplicate;",
+                "explanation": "Right anchor: asserts the outcome without the requested timeline."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "| 8 s | A sends the notice; the receiver accepts it. | Leased to A | One notice accepted |\n| 9 s | A stops before marking the job done. | Leased to A | One notice accepted |\n| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |",
+                "explanation": "Left gives the first acceptance, failure, expiry and stored states."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+                "explanation": "Left then shows the retry and duplicate with time and state."
+              }
+            ]
+          },
+          {
+            "requirements": [
+              "Q3",
+              "Q7"
+            ],
+            "description": "The right omits the old worker continuing after the 30-second lease, overlapping sends, and the fact that a timed-out request may already have been accepted. Unknown receiver capabilities are retained but do not substitute for these distinct uncertainties.",
+            "evidence": [
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "consider a longer lease. The receiver capabilities are unknown.",
+                "explanation": "Right anchor: no stale-worker or timeout explanation is given here or elsewhere in the answer."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "4. At 32 s, A resumes and sends; the receiver accepts.\n5. At 33 s, B also sends; the receiver accepts again.",
+                "explanation": "Left shows overlapping old and replacement workers."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "The receiver may have accepted the request despite the timeout. The worker cannot safely interpret the timeout as “nothing happened.”",
+                "explanation": "Left supplies the missing ambiguous-acceptance fact."
+              }
+            ]
+          },
+          {
+            "requirements": [
+              "Q4",
+              "Q7"
+            ],
+            "description": "The right says to keep retrying but omits the eventual-success condition for eventual delivery and the explanation of what retrying can and cannot promise. It also leaves the missed-notice priority implicit instead of explaining the recommendation against that priority.",
+            "evidence": [
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "Send first, then mark done.",
+                "explanation": "Right recommendation is given without priority-based reasoning."
+              },
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "keep retrying,",
+                "explanation": "Right instruction lacks the eventual-success condition."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "**retries must continue, and some attempt must eventually succeed.**",
+                "explanation": "Left explicitly preserves both conditions."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "This accepts duplicate risk to protect your higher priority: avoiding missed notices.",
+                "explanation": "Left explains the recommendation against the stated priority."
+              }
+            ]
+          },
+          {
+            "requirements": [
+              "Q5",
+              "Q8"
+            ],
+            "description": "The right only names idempotency and deduplication. It omits one stable key across all attempts, durable receiver memory, atomic coordination of the new-key decision with the effect and key record, and why a separate check can race or fail after a crash. These are essential design reasoning for the stated reader.",
+            "evidence": [
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "Use idempotency and receiver deduplication,",
+                "explanation": "Right anchor: neither term is explained."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "each attempt should send the same stable idempotency key for the same logical notice.",
+                "explanation": "Left explains key stability."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "The receiver would durably remember which keys it has processed.",
+                "explanation": "Left explains durable memory."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "**the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**",
+                "explanation": "Left identifies the necessary atomic boundary."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+                "explanation": "Left explains why an ordinary separate check is insufficient."
+              }
+            ]
+          },
+          {
+            "requirements": [
+              "Q6",
+              "Q8"
+            ],
+            "description": "The right suggests a longer lease without explaining its benefit, renewal, the delayed-recovery tradeoff, or why neither can close the send/done crash window and ambiguous timeout. Merely naming lease length does not satisfy the requested explanation of limitations.",
+            "evidence": [
+              {
+                "source": "sample-89813e901.ordinary_chat",
+                "quote": "consider a longer lease.",
+                "explanation": "Right anchor: the entire lease recommendation."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "A longer lease reduces the chance that legitimate, slow work outlasts its lease. Renewal lets an active worker extend its claim, which can reduce unnecessary replacement workers and overlapping sends.",
+                "explanation": "Left gives the missing benefit and renewal mechanism."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "A longer lease delays recovery when a worker really has stopped.",
+                "explanation": "Left names the tradeoff."
+              },
+              {
+                "source": "sample-95842651b.ordinary_chat",
+                "quote": "Neither makes receiver acceptance and marking done atomic.",
+                "explanation": "Left explains the crucial limit."
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "source": "sample-89813e901.ordinary_chat",
+            "quote": "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown.",
+            "explanation": "The full right answer is visible: it names outcomes and techniques but supplies none of the requested timeline or detailed causal, concurrency, atomicity and lease-limit explanations."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "left",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+            "explanation": "Left makes the central distinction understandable."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+            "explanation": "Left explains a race concretely rather than merely naming it."
+          },
+          {
+            "source": "sample-89813e901.ordinary_chat",
+            "quote": "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease.",
+            "explanation": "Right supplies recommendations through unexplained terminology."
+          },
+          {
+            "source": "sample-95842651b.progress",
+            "quote": "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs.",
+            "explanation": "The initial update is useful and identical on both sides."
+          }
+        ],
+        "rationale": "The user explicitly requested enough detailed reasoning to review a queue design. The left defines states, connects queue state to receiver history, walks through failures and explains technical terms with examples. The right presents unexpanded terms and outcomes, so its brevity does not improve communication for this reader. The left’s worked tables and qualifications are relevant substance rather than filler; its recaps serve comparison and recommendation. Both have the same appropriate initial update. Information omissions are recorded separately above.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-7abf700b3",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "The receiver has not received a notice from that attempt. The job remains unfinished. Once its lease expires, it becomes available to another worker, which can retry.",
+            "explanation": "Q1: explains stopping before send and the retry path."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "If the worker then stops before sending, the queue records completion even though no notice was sent. The rules provide no recovery path for this done job.",
+            "explanation": "Q1: explains the done-first loss window."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+            "explanation": "Q2: the complete timeline supplies times, queue states and receiver history leading to this duplicate."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "4. At 32 s, A resumes and sends; the receiver accepts.\n5. At 33 s, B also sends; the receiver accepts again.",
+            "explanation": "Q3: old and replacement workers overlap after expiry."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "The receiver may have accepted the request despite the timeout. The worker cannot safely interpret the timeout as “nothing happened.”",
+            "explanation": "Q3: explains ambiguous acceptance."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "**retries must continue, and some attempt must eventually succeed.**",
+            "explanation": "Q4: eventual delivery is explicitly conditional."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "Generating a new key for each retry would defeat deduplication.",
+            "explanation": "Q5: explains why the same key is necessary."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "**the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**",
+            "explanation": "Q5: explains the atomic boundary, with crash and concurrency examples."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "Neither makes receiver acceptance and marking done atomic.",
+            "explanation": "Q6: lease tuning and renewal cannot close the crash window."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "From the supplied rules, we cannot promise delivery without continued retries and an eventual successful attempt, duplicate-free behavior with the current receiver, a delivery deadline, or exactly one downstream effect.",
+            "explanation": "Q7/Q8: recommendation follows the priority and preserves the limits."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "When its lease expires, another worker can claim it and try again. This is a recoverable interruption, provided retries continue and a later attempt succeeds.",
+            "explanation": "Q1/Q4: causal recovery before sending and explicit progress assumptions."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "Lease expiry does not recover it, because the expiry rule applies to unfinished jobs.",
+            "explanation": "Q1: the done-first case explains loss and lack of normal recovery."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "Accepts notice #2: a duplicate",
+            "explanation": "Q2: the complete worked timeline contains times, job states, expiry, retry and this second acceptance."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "Both notices can be accepted.",
+            "explanation": "Q3: the old-worker example shows A resuming at 00:32 and B sending at 00:33 after A’s 30-second expiry."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "The receiver may have accepted the notice despite the timeout. The sender cannot safely interpret a timeout as “nothing happened.”",
+            "explanation": "Q3: ambiguous acceptance is explained."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "Every retry and every worker must use the same key.",
+            "explanation": "Q5: key stability across all attempts."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "**claiming or recording the key and applying the notice’s effect must form one atomic, durable operation**",
+            "explanation": "Q5: explains the necessary boundary, followed by crash and concurrent-check examples."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "A longer lease gives a healthy worker more time to finish before another worker can claim the job. Lease renewal can extend that protection while work continues.",
+            "explanation": "Q6: explains the benefit of lease tuning and renewal."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "From these rules, we cannot promise duplicate-free delivery, bounded delivery time, or unconditional eventual delivery.",
+            "explanation": "Q6-Q8: meaningful qualifications and limits remain understandable."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+            "explanation": "Left clearly explains separate state histories."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "The stored state describes the queue’s view of the job. The receiver’s acceptance is a separate fact.",
+            "explanation": "Right explains the same distinction equally clearly."
+          },
+          {
+            "source": "sample-95842651b.ordinary_chat",
+            "quote": "Generating a new key for each retry would defeat deduplication.",
+            "explanation": "Left provides useful causal explanation of a technical term."
+          },
+          {
+            "source": "sample-5cb9b451a.ordinary_chat",
+            "quote": "If concurrent requests can both check “key absent” before either records it, both might apply the effect. The receiver must resolve that race atomically.",
+            "explanation": "Right explains the concurrency concern in ordinary language."
+          }
+        ],
+        "rationale": "Both are detailed explanations appropriate to the requested depth. Each defines the states, contrasts queue completion with receiver acceptance, gives a timed duplicate example, explains old-worker overlap, and describes atomic durable deduplication with causal failure examples. The left separates eventual delivery into its own section; the right integrates it with the ordering comparison and explicitly notes the pre-send lease-check race. These are useful organizational choices, not grounds for penalizing length or technical precision. Both use relevant recaps and one appropriate initial update.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-a5a8cf38a",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-d1355a29b.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-d1355a29b.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-d1355a29b.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-d1355a29b.protected_deliverables['batch-report.md']",
+            "quote": "Two qualify for this batch, totaling **11,249 cents (112.49 currency units)**. The input does not specify a currency. This tool prepares a batch; it does not submit payments.",
+            "explanation": "M5/M8: correct amount and distinction between preparation and actual payment."
+          },
+          {
+            "source": "sample-d1355a29b.protected_email",
+            "quote": "R-102 (2,400 cents) needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved total. R-104 was denied and is excluded.",
+            "explanation": "M7: both review actions remain in the email itself."
+          },
+          {
+            "source": "sample-d1355a29b.protected_email",
+            "quote": "We cannot confirm Friday arrival because the payment team’s processing schedule and bank arrival times are unconfirmed. We need that information before promising an arrival date.",
+            "explanation": "M6-M8: honest timing caveat and next verification."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-f896a3879.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-d1355a29b.ordinary_chat",
+            "quote": "Approved total: **11,249 cents (112.49 currency units)**. Resolve R-102’s approval and R-103’s missing receipt. Friday arrival requires confirmation of processing and bank timing.",
+            "explanation": "Left is direct and actionable."
+          },
+          {
+            "source": "sample-f896a3879.ordinary_chat",
+            "quote": "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "explanation": "Right conveys the same core outcome clearly."
+          },
+          {
+            "source": "sample-d1355a29b.progress",
+            "quote": "R-102 needs approval, R-103 needs a receipt, and R-104 is excluded. All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results.",
+            "explanation": "The extra update contains findings and remaining work, so a count-based penalty is not warranted."
+          }
+        ],
+        "rationale": "Both final ordinary replies make the result and next actions easy to find and avoid unsupported timing promises. The left names the missing processing/bank confirmation in final chat; the right states the same uncertainty succinctly and includes the full verification caveat in its standalone email. The left’s intermediate update supplies a real finding and a specific remaining check, not empty status. There is no meaningful filler, irrelevant jargon or excessive repetition on either side.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-30d4f6ffa",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-914adb43c.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-914adb43c.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-914adb43c.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-914adb43c.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-914adb43c.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-914adb43c.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-914adb43c.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-f896a3879.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "right",
+          "filler": "right",
+          "repetition": "right",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "right"
+        },
+        "evidence": [
+          {
+            "source": "sample-914adb43c.ordinary_chat",
+            "quote": "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "explanation": "Left opening is unrelated filler that delays the requested result."
+          },
+          {
+            "source": "sample-914adb43c.progress",
+            "quote": "I am still working on this task.",
+            "explanation": "This exact message appears three times after the initial update and reports no finding or next step."
+          },
+          {
+            "source": "sample-f896a3879.ordinary_chat",
+            "quote": "All **9 tests passed**, and the CLI produced the expected JSON.",
+            "explanation": "Right begins with the requested files and outcome."
+          },
+          {
+            "source": "sample-f896a3879.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "explanation": "Right has one relevant scope-setting update."
+          }
+        ],
+        "rationale": "The reimbursement guidance, email and protected artifacts retain the same essential content, but the left inserts an unrelated animal fact before the result and repeats the identical content-free progress message three times. The right starts with the task outcome and has only the useful initial update. That improves focus and avoids filler/repetition; the judgment uses captured contents and order, not assumed timestamps. Their task-specific language is otherwise identical.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-f2c7e8d93",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-1364b6830.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-1364b6830.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-1364b6830.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 8\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-1364b6830.protected_deliverables['batch-report.md']",
+            "quote": "Two qualify for the approved batch, totaling **11,249 cents (112.49 currency units)**. The input does not specify a currency. Preparing this batch does not send payments.",
+            "explanation": "M5/M8: correct approved amount and payment caveat."
+          },
+          {
+            "source": "sample-1364b6830.protected_email",
+            "quote": "R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.",
+            "explanation": "M7: both review actions and exclusion remain in the standalone email."
+          },
+          {
+            "source": "sample-1364b6830.protected_email",
+            "quote": "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date. Batch approval does not confirm payment has been sent.",
+            "explanation": "M6-M8: timing uncertainty and required verification are explained in the email."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-7a1b78520.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-7a1b78520.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-7a1b78520.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 7\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-7a1b78520.protected_deliverables['batch-report.md']",
+            "quote": "The supplied batch has 11,249 cents (112.49 in the input's currency) eligible for inclusion: R-101 (7,250 cents) and R-105 (3,999 cents). No currency was specified.",
+            "explanation": "M5: correct approved total without inventing a currency."
+          },
+          {
+            "source": "sample-7a1b78520.protected_email",
+            "quote": "R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.",
+            "explanation": "M7: the standalone email contains both review actions and the denied-item treatment."
+          },
+          {
+            "source": "sample-7a1b78520.protected_email",
+            "quote": "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date.",
+            "explanation": "M6-M8: honest uncertainty and the required verification remain in the email."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-1364b6830.ordinary_chat",
+            "quote": "All **8 tests passed**. The CLI also returned the expected batch: **11,249 cents approved**.",
+            "explanation": "Left identifies actual verification and result."
+          },
+          {
+            "source": "sample-7a1b78520.ordinary_chat",
+            "quote": "All **7 tests passed**, and the command produced the expected JSON.",
+            "explanation": "Right identifies its actual verification just as directly."
+          },
+          {
+            "source": "sample-1364b6830.ordinary_chat",
+            "quote": "Friday arrival requires confirmation of payment processing and bank timing.",
+            "explanation": "Left gives a concrete next verification."
+          },
+          {
+            "source": "sample-7a1b78520.ordinary_chat",
+            "quote": "R-104 is denied and excluded. Friday arrival remains unconfirmed.",
+            "explanation": "Right adds relevant exclusion context."
+          }
+        ],
+        "rationale": "Both concise ordinary replies name the files, distinguish the successful check from the batch amount, and tell the user what to resolve. The left explicitly names processing and bank timing in chat, while the right additionally identifies R-104 as excluded and gives the converted amount. Both standalone emails preserve the full timing and review facts. A single relevant initial update on each side is appropriate, and neither uses unnecessary technical language for a Node.js task.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-3339d47e2",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-7a1b78520.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-7a1b78520.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-7a1b78520.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 7\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-7a1b78520.protected_deliverables['batch-report.md']",
+            "quote": "The supplied batch has 11,249 cents (112.49 in the input's currency) eligible for inclusion: R-101 (7,250 cents) and R-105 (3,999 cents). No currency was specified.",
+            "explanation": "M5: correct approved total without inventing a currency."
+          },
+          {
+            "source": "sample-7a1b78520.protected_email",
+            "quote": "R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.",
+            "explanation": "M7: the standalone email contains both review actions and the denied-item treatment."
+          },
+          {
+            "source": "sample-7a1b78520.protected_email",
+            "quote": "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date.",
+            "explanation": "M6-M8: honest uncertainty and the required verification remain in the email."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-f896a3879.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-7a1b78520.ordinary_chat",
+            "quote": "Approved total: **11,249 cents (112.49)**. Resolve R-102’s pending approval and R-103’s missing receipt. R-104 is denied and excluded. Friday arrival remains unconfirmed.",
+            "explanation": "Left gives a compact, complete ordinary summary."
+          },
+          {
+            "source": "sample-f896a3879.ordinary_chat",
+            "quote": "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "explanation": "Right gives an equally clear ordinary summary."
+          },
+          {
+            "source": "sample-7a1b78520.progress",
+            "quote": "write a report that keeps approval status separate from payment timing.",
+            "explanation": "Left initial update highlights relevant uncertainty."
+          },
+          {
+            "source": "sample-f896a3879.progress",
+            "quote": "Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "explanation": "Right initial update serves the same purpose."
+          }
+        ],
+        "rationale": "Each ordinary reply opens with the files and truthful test result, then gives the approved amount, two unresolved actions and Friday uncertainty. The left adds the denied-item outcome; the right labels the unspecified monetary unit explicitly. These are small useful differences, with neither reply burying the result or introducing irrelevant explanation. Test-count differences reflect their respective valid implementations and are not a communication advantage. Each initial update is appropriate.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-f2ecf2583",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-f896a3879.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-f896a3879.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+            "explanation": "M7: the standalone email retains both required review actions."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          {
+            "requirements": [
+              "M7",
+              "M9"
+            ],
+            "description": "The standalone right email omits R-103, its 1,800-cent amount, and the need to obtain its missing receipt, despite introducing two review claims. It lists only R-102 before moving to denied R-104. R-103 remains in surrounding chat and the report, but those cannot repair the ready-to-copy email. The left email retains the missing action. The code, tests, report, amount and Friday caveat otherwise remain preserved.",
+            "evidence": [
+              {
+                "source": "sample-fe159c2f8.protected_email",
+                "quote": "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+                "explanation": "Right email jumps from its only listed review item to denied R-104; R-103 and its receipt action are missing."
+              },
+              {
+                "source": "sample-f896a3879.protected_email",
+                "quote": "- R-103, 1,800 cents: missing receipt.",
+                "explanation": "Left email retains the corresponding required fact."
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "source": "sample-fe159c2f8.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-fe159c2f8.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-fe159c2f8.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-fe159c2f8.protected_deliverables['batch-report.md']",
+            "quote": "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**. The input does not specify a currency.",
+            "explanation": "M5/M8: correct total without inventing a currency."
+          },
+          {
+            "source": "sample-fe159c2f8.protected_deliverables['batch-report.md']",
+            "quote": "| R-102 | 2,400 | Needs review: pending_approval | Obtain approval |\n| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |\n| R-104 | 900 | Excluded: denied | Excluded from payment total |",
+            "explanation": "M5: the protected report retains both review actions and denied-item treatment."
+          },
+          {
+            "source": "sample-fe159c2f8.protected_email",
+            "quote": "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "explanation": "M7/M8: the full timing caveat remains in the standalone email."
+          },
+          {
+            "source": "sample-fe159c2f8.protected_email",
+            "quote": "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+            "explanation": "Right email jumps from its only listed review item to denied R-104; R-103 and its receipt action are missing."
+          },
+          {
+            "source": "sample-f896a3879.protected_email",
+            "quote": "- R-103, 1,800 cents: missing receipt.",
+            "explanation": "Left email retains the corresponding required fact."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-f896a3879.ordinary_chat",
+            "quote": "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "explanation": "Left ordinary chat is identical to the right."
+          },
+          {
+            "source": "sample-fe159c2f8.ordinary_chat",
+            "quote": "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "explanation": "Right ordinary chat is identical to the left."
+          },
+          {
+            "source": "sample-f896a3879.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "explanation": "Left initial update is identical to the right."
+          },
+          {
+            "source": "sample-fe159c2f8.progress",
+            "quote": "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "explanation": "Right initial update is identical to the left."
+          }
+        ],
+        "rationale": "The ordinary chat and progress messages are exactly identical. All six communication dimensions therefore tie. The right email’s substantive omission is an information-preservation failure recorded separately; it is not a basis for pretending the ordinary chat differs or rewarding a shorter protected email.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-a436f5d2a",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-d1355a29b.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-d1355a29b.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-d1355a29b.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 9\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-d1355a29b.protected_deliverables['batch-report.md']",
+            "quote": "Two qualify for this batch, totaling **11,249 cents (112.49 currency units)**. The input does not specify a currency. This tool prepares a batch; it does not submit payments.",
+            "explanation": "M5/M8: correct amount and distinction between preparation and actual payment."
+          },
+          {
+            "source": "sample-d1355a29b.protected_email",
+            "quote": "R-102 (2,400 cents) needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved total. R-104 was denied and is excluded.",
+            "explanation": "M7: both review actions remain in the email itself."
+          },
+          {
+            "source": "sample-d1355a29b.protected_email",
+            "quote": "We cannot confirm Friday arrival because the payment team’s processing schedule and bank arrival times are unconfirmed. We need that information before promising an arrival date.",
+            "explanation": "M6-M8: honest timing caveat and next verification."
+          }
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          {
+            "source": "sample-7a1b78520.protected_deliverables['settle.mjs']",
+            "quote": "export function prepareBatch(claims) {",
+            "explanation": "M1-M3: the displayed implementation has the named export, validates every record, preserves routing/order and guards command execution."
+          },
+          {
+            "source": "sample-7a1b78520.protected_deliverables['settle.test.mjs']",
+            "quote": "excluded: ['R-104'], total_cents: 11249",
+            "explanation": "M2/M4: tests assert the supplied batch; the displayed suite also exercises empty input, routing/order, invalid records and command/import behavior."
+          },
+          {
+            "source": "sample-7a1b78520.historical_execution.subject_commands.stdout_and_stderr",
+            "quote": "ℹ pass 7\nℹ fail 0",
+            "explanation": "M4: captured execution supports the reported passing tests. Independent captured import, valid/invalid command and export probes also agree."
+          },
+          {
+            "source": "sample-7a1b78520.protected_deliverables['batch-report.md']",
+            "quote": "The supplied batch has 11,249 cents (112.49 in the input's currency) eligible for inclusion: R-101 (7,250 cents) and R-105 (3,999 cents). No currency was specified.",
+            "explanation": "M5: correct approved total without inventing a currency."
+          },
+          {
+            "source": "sample-7a1b78520.protected_email",
+            "quote": "R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.",
+            "explanation": "M7: the standalone email contains both review actions and the denied-item treatment."
+          },
+          {
+            "source": "sample-7a1b78520.protected_email",
+            "quote": "We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date.",
+            "explanation": "M6-M8: honest uncertainty and the required verification remain in the email."
+          }
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          {
+            "source": "sample-d1355a29b.ordinary_chat",
+            "quote": "Resolve R-102’s approval and R-103’s missing receipt. Friday arrival requires confirmation of processing and bank timing.",
+            "explanation": "Left directly states actions and verification."
+          },
+          {
+            "source": "sample-7a1b78520.ordinary_chat",
+            "quote": "Resolve R-102’s pending approval and R-103’s missing receipt. R-104 is denied and excluded. Friday arrival remains unconfirmed.",
+            "explanation": "Right directly states actions, exclusion and uncertainty."
+          },
+          {
+            "source": "sample-d1355a29b.progress",
+            "quote": "All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results.",
+            "explanation": "Left extra update has a concrete result and next step."
+          },
+          {
+            "source": "sample-7a1b78520.progress",
+            "quote": "I’ll inspect the supplied batch, build the tool and tests using Node’s built-in modules, and write a report that keeps approval status separate from payment timing.",
+            "explanation": "Right initial update is adequate and relevant."
+          }
+        ],
+        "rationale": "Both ordinary finals are clear, specific and actionable. The left spells out the processing/bank verification; the right names the denied claim and states Friday uncertainty directly. The left has one additional informative update about the eight-test intermediate state and a command-level check being added, which is justified by the captured work. The right needs only its initial update. Neither contains filler or unsupported status claims, and the protected email/report detail remains useful task output.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    }
+  ],
+  "supplemental_delegation": {
+    "parent_directive_status": "unknown",
+    "information": {
+      "status": "preserved",
+      "issues": [],
+      "evidence": [
+        {
+          "source": "supplemental_delegation.actual_child_public_messages",
+          "quote": "There are 10 possible pairs. Crates A, B, and C have confirmed Friday availability. D is tentative for Friday and is not confirmed. E is confirmed for Monday after the event, so it does not meet the Friday requirement.",
+          "explanation": "D3: the observable child report has the full scope and correct availability constraints; its table covers all ten pairs with correct totals and applicable rejection reasons."
+        },
+        {
+          "source": "supplemental_delegation.actual_child_public_messages",
+          "quote": "| B + D | $95 + $90 = **$185** | 12 + 14 = **26** | 15 + 12 = **27** | Fail: $5 over budget | Fail: 4 kits short, despite 7 extra mats | Fail currently: D is tentative, not confirmed | Does not qualify: over budget, insufficient kits, and unconfirmed Friday availability; confirming D would not fix the budget or kit failures |",
+          "explanation": "D3: multiple independent rejection reasons remain explicit."
+        },
+        {
+          "source": "supplemental_delegation.saved_child_report",
+          "quote": "| D + E | $90 + $60 = **$150** | 14 + 10 = **24** | 12 + 15 = **27** | Pass: $30 under budget | Fail: 6 kits short, despite 7 extra mats | Fail: D is tentative and E is confirmed for Monday after the event | Does not qualify: insufficient kits and neither crate has confirmed Friday availability; confirming D would still leave the kit shortage and E’s timing failure |",
+          "explanation": "D4: the saved report preserves per-pair calculations and caveats. All ten substantive rows and the conclusions remain present."
+        },
+        {
+          "source": "supplemental_delegation.saved_child_report",
+          "quote": "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B. Both choices supply 30 kits, but C + D supplies **5 fewer mats**: 20 instead of 25.",
+          "explanation": "D3/D4: savings and quantity differences remain in the protected saved report."
+        },
+        {
+          "source": "supplemental_delegation.root_final",
+          "quote": "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday. This is the only currently qualifying pair and leaves **$5** of the $180 budget.",
+          "explanation": "D5/D6: root presents the correct key confirmed totals and budget constraint, consistent with its stated independent check."
+        },
+        {
+          "source": "supplemental_delegation.root_final",
+          "quote": "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**. It saves **$15**, with five fewer mats and no quantity surplus.",
+          "explanation": "D5/D6: root retains correct conditional totals, savings and quantities."
+        },
+        {
+          "source": "supplemental_delegation.root_final",
+          "quote": "**Next action:** verify D’s Friday availability before choosing C + D. Tentative availability does not qualify; otherwise, choose A + B.",
+          "explanation": "D5/D7: the next verification is explicit and tentative availability is not treated as confirmed."
+        },
+        {
+          "source": "supplemental_delegation.actual_child_public_messages",
+          "quote": "The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D. If D remains tentative, select A + B.",
+          "explanation": "D3/D4/D7: the actual observable child report retains the caveat as does the saved copy; the concise root recommendation did not replace detailed child work."
+        }
+      ]
+    },
+    "ordinary_chat_quality": {
+      "observations": [
+        "The two root updates state the intended work, then report a substantive finding and the specific verification/saving step. No content-free repeated update is shown; no timing claim is inferred.",
+        "The final recommendation makes the confirmed choice, budget margin, conditional savings and next action easy to identify. The complete ten-pair analysis remains observable and saved, so root summarization does not displace protected detail.",
+        "The incoming parent-to-child directive is unknown. Good output does not establish that no style/length constraint was forwarded, and no comparative policy effect can be inferred. The final sentence about native delegation is a captured claim rather than a complete orchestration trace."
+      ],
+      "evidence": [
+        {
+          "source": "supplemental_delegation.root_progress",
+          "quote": "I’ll ask one child agent to evaluate every crate pair, then independently check its results and save the report.",
+          "explanation": "Useful initial scope-setting update."
+        },
+        {
+          "source": "supplemental_delegation.root_progress",
+          "quote": "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report.",
+          "explanation": "Substantive progress contains findings and remaining work."
+        },
+        {
+          "source": "supplemental_delegation.root_final",
+          "quote": "**Next action:** verify D’s Friday availability before choosing C + D.",
+          "explanation": "Follow-up is directly linked to the conditional recommendation."
+        },
+        {
+          "source": "supplemental_delegation.root_final",
+          "quote": "Exactly one native child performed the analysis without delegation.",
+          "explanation": "This is a root claim; it is not used to infer the unobserved directive or a comparative effect."
+        }
+      ]
+    },
+    "missing_evidence": [
+      "The actual parent-to-child directive is not observable. D2 forwarding completeness and the absence of added style/length constraints therefore remain unknown.",
+      "A complete native creation/descendant trace is not supplied. The packet identifies actual child public messages and the root asserts exactly one native child with no delegation; this does not independently establish every D1 orchestration constraint.",
+      "The root explicitly states it checked all ten pairs and displays correct key totals/constraints. No arithmetic contradiction is observed; the packet does not expose the mechanics of that check beyond the displayed results.",
+      "No completed matched delegation comparison is available, so no comparative policy or communication effect can be concluded."
+    ]
+  },
+  "limitations": [
+    "This is an independent retrospective automated assessment of the supplied packet, not a measured human-comprehension study.",
+    "Only the supplied packet and template were read as evidence. Captured commands and code were inspected as text; none of the candidate programs or historical checks was executed for this review.",
+    "Message timestamps and elapsed durations are unavailable. Update judgments rely on recorded content/order, including actual repeated text, rather than assumed cadence.",
+    "Historical execution and artifact-binding evidence support reimbursement correctness and honesty within the supplied captures; this review does not establish behavior outside that evidence.",
+    "Supplemental information preservation refers to displayed child work, the saved report and the root recommendation. Unobservable delegation directives and complete agent-count/descendant compliance remain unknown and are not inferred from good output.",
+    "Identical displayed content is tied. Useful detail, technical precision and qualifications are assessed against requested depth rather than treated as a length penalty."
+  ]
+}
