@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-3-decision-preparation",
+  "status": "unit-3-ready",
   "new_conversations": 20,
   "new_task_starts": 50,
   "starts": [
@@ -17,7 +17,7 @@
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "allocated-next-step-challenge",
+      "status": "completed",
       "agent": "/root/reader_policy_challenge",
       "turns": 6,
       "max_turns": 6,
@@ -227,10 +227,13 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": true,
-  "allowed_subjects": [],
-  "block_reason": "One recorded independent decision task only; no further response/reviewer dispatch allocated",
-  "checkpoint": "experiments/reader-v1/evidence/unit2/first-pair-checkpoint.json",
+  "dispatch_blocked": false,
+  "allowed_subjects": [
+    "n22",
+    "n23"
+  ],
+  "block_reason": null,
+  "checkpoint": "experiments/reader-v1/evidence/unit3/first-pair-checkpoint.json",
   "diagnostics": [
     {
       "purpose": "Inspect supported disabling command and verify native config control after n07 failure",

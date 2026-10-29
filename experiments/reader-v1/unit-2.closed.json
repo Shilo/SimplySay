@@ -1,0 +1,79 @@
+{
+  "status": "ready",
+  "authorization": "owner-reader-development-2026-10-29",
+  "record": "docs/reader-unit2-plan.md",
+  "purpose": "Natural technical-source explanation plus explicit exclusion of optional previews on an existing workflow; development not validation",
+  "end_conversation_cap": 20,
+  "end_task_cap": 49,
+  "unit_limits_are_not_overall_owner_caps": true,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "n14"
+      ],
+      "role": "technical-source-absent",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n15"
+      ],
+      "role": "technical-source-enabled-v2",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n16"
+      ],
+      "role": "technical-source-disabled-v2",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n17"
+      ],
+      "role": "study-absent",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n18"
+      ],
+      "role": "study-enabled-v2",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n19"
+      ],
+      "role": "study-disabled-v2",
+      "max_turns_each": 3
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "n20",
+      "max_turns": 1
+    },
+    {
+      "id": "n21",
+      "max_turns": 1
+    }
+  ],
+  "preparation_contexts": 0,
+  "planned_preparation_tasks": 2,
+  "new_native_response_tasks": 18,
+  "new_blinded_reviewer_conversations": 2,
+  "new_blinded_reviewer_tasks": 2,
+  "retries": 0,
+  "replacements": 0,
+  "further_units": "Record a specific evidence-backed purpose before dispatch, under the broader authorization",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false,
+  "manifest": "experiments/workflow-v1/reader-unit2.manifest.json",
+  "native_response_attempt_slots": 6,
+  "planned_completed_response_conversations": 6,
+  "retained_pre_model_failure_slots": 0
+}
