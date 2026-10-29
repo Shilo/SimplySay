@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "counts": {
+    "conversations": 2,
+    "turns": 8,
+    "files": 11
+  },
+  "case_sha256": {
+    "h1": "b36d059f6cdf2f1a1fb7f553c3e0db0086b8df39d783b3c03135a8f824644261",
+    "h2": "5604eb52e3106eef946932cb6e68a886258a05bdde903b26e7c537d1da52018c"
+  },
+  "files": [
+    {
+      "ordinal": 1,
+      "bytes": 1867,
+      "sha256": "7343934b803a5c14802d29dc543f0f6b2efa1eebeced7cfbf75e49a3e9643ba5"
+    },
+    {
+      "ordinal": 2,
+      "bytes": 356,
+      "sha256": "9841b19ef08a5e9cca880b5cc82076729d30e23dd1c128e71b7dc7f281b49b2f"
+    },
+    {
+      "ordinal": 3,
+      "bytes": 246,
+      "sha256": "916d37cbb2ae3c075656f6226fe7b46cd750cdd542d9263f93363b47e38fc7fe"
+    },
+    {
+      "ordinal": 4,
+      "bytes": 599,
+      "sha256": "89f92466521c47fa1ded7fc693c882ea173404f9483e1737ef0f48cefb764465"
+    },
+    {
+      "ordinal": 5,
+      "bytes": 212,
+      "sha256": "875720a3c952e2ad77c662bae7d2539d5404bfbec0f70976cd2443a59b5c5cd8"
+    },
+    {
+      "ordinal": 6,
+      "bytes": 687,
+      "sha256": "c168031e09ba63472598a43f2971ab3809dc29c4324c8fbd4769f95966d881a5"
+    },
+    {
+      "ordinal": 7,
+      "bytes": 908,
+      "sha256": "c0098ae6fd3304eb3a3712541fd1be72448a7aed1074658cc269c41032896bf5"
+    },
+    {
+      "ordinal": 8,
+      "bytes": 369,
+      "sha256": "34be3b6a7c8e4d57959526626e2bb610057e695418e5485e59f086057e31685e"
+    },
+    {
+      "ordinal": 9,
+      "bytes": 16436,
+      "sha256": "b36d059f6cdf2f1a1fb7f553c3e0db0086b8df39d783b3c03135a8f824644261"
+    },
+    {
+      "ordinal": 10,
+      "bytes": 1816,
+      "sha256": "51dfa9e4541a5df424b6297e4b16510834dc5f07d18bc7181e2792171854b804"
+    },
+    {
+      "ordinal": 11,
+      "bytes": 9294,
+      "sha256": "5604eb52e3106eef946932cb6e68a886258a05bdde903b26e7c537d1da52018c"
+    }
+  ],
+  "tree_sha256": "30218166a965e86be3391dd60c8f351266078d7f45ba6c5085803a44eda1bb69"
+}

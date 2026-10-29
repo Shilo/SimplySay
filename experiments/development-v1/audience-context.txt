@@ -1,0 +1,1 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
