@@ -1,0 +1,92 @@
+{
+  "batch": "screening",
+  "fixed_before_subjects": true,
+  "subjects": [
+    {
+      "id": "e05",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v2.txt"
+    },
+    {
+      "id": "e03",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "absent"
+    },
+    {
+      "id": "e06",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "minimal"
+    },
+    {
+      "id": "e04",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v2.txt"
+    },
+    {
+      "id": "e08",
+      "case_file": "experiments/development-v1/cases/d2.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v2.txt"
+    },
+    {
+      "id": "e10",
+      "case_file": "experiments/development-v1/cases/d2.case.json",
+      "condition": "minimal"
+    },
+    {
+      "id": "e07",
+      "case_file": "experiments/development-v1/cases/d2.case.json",
+      "condition": "absent"
+    },
+    {
+      "id": "e09",
+      "case_file": "experiments/development-v1/cases/d2.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v2.txt"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "d1-abs-a",
+      "a": "e03",
+      "b": "e04"
+    },
+    {
+      "key": "d1-abs-b",
+      "a": "e03",
+      "b": "e05"
+    },
+    {
+      "key": "d1-abs-simple",
+      "a": "e03",
+      "b": "e06"
+    },
+    {
+      "key": "d1-a-b",
+      "a": "e04",
+      "b": "e05"
+    },
+    {
+      "key": "d2-abs-a",
+      "a": "e07",
+      "b": "e08"
+    },
+    {
+      "key": "d2-abs-b",
+      "a": "e07",
+      "b": "e09"
+    },
+    {
+      "key": "d2-abs-simple",
+      "a": "e07",
+      "b": "e10"
+    },
+    {
+      "key": "d2-a-b",
+      "a": "e08",
+      "b": "e09"
+    }
+  ]
+}

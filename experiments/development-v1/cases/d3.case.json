@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "d3-search-freshness-explanation",
+  "stage": "development-check",
+  "design": {
+    "same_inputs_for_all_subjects": true,
+    "same_conversation_turns": 3,
+    "allowed_subject_work": "Read the fictional local notes and write runbook.md. No external service access, new delegation, dependency download or model call.",
+    "progress_assessment": "No forced updates or delay. Required technical depth is evaluated under its explicit request.",
+    "scope_limit": "No child report is relevant; original incoming native child instructions remain unverified."
+  },
+  "fixture_files": [
+    {
+      "path": "search-notes.md",
+      "content": "# Search freshness notes\n\nA title edit writes synchronously to the primary store: when the edit succeeds, that store has the new title. Search does not read that store directly. A background job updates the separate search index asynchronously. Nobody has confirmed a maximum index-update delay.\n\nSearch results are cached per query for 90 seconds. A cache hit returns its saved result. A cache miss reads the search index and caches that result for the next 90 seconds, even if the index still has the old title. Clearing or expiring the cache does not itself run the index job. No supported force-refresh endpoint or verified index-status screen is supplied here.\n\nOne observed local trace: at 14:00:00 an edit changed the primary title from Aspen to Birch; the index still held Aspen. At 14:00:05 a cache miss read Aspen from the old index and cached it until 14:01:35. In this trace the index job completed at 14:00:35, but a 14:00:50 search still returned the cached Aspen. At 14:01:35 the first request after expiry read Birch from the now-updated index. That observed 35-second index delay is not an SLA or a confirmed maximum.\n\nTomorrow's demo can use entries that were indexed before the session and verified in the actual search view. It does not have to demonstrate a just-edited title appearing in search. No live service is connected to this local planning exercise.\n",
+      "encoding": "utf-8",
+      "sha256": "62134d58d67310d5cd83115e606d2bc58703aba4a37e4c1140a630196947f801"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1_demo_decision",
+      "prompt": "The team says search results can show an old title after an edit. Read search-notes.md. Do I need to delay tomorrow's demo, or can we work around it?",
+      "essentials": [
+        {
+          "id": "d3_t1_recommendation",
+          "requirement": "Give a supported practical recommendation: proceed using preindexed entries checked in the actual search view if the demo need not show immediate post-edit freshness. Do not guarantee a new title appears within 90 seconds or promise an unprovided refresh mechanism.",
+          "request_clause": "Do I need to delay ... or ... work around it?",
+          "location": "chat"
+        },
+        {
+          "id": "d3_t1_uncertainty",
+          "requirement": "Explain the relevant limit that indexing is asynchronous with no confirmed maximum delay; live-edit freshness is unverified, so qualifying the demo is necessary.",
+          "request_clause": "avoid a materially misleading demo recommendation",
+          "location": "chat"
+        }
+      ]
+    },
+    {
+      "id": "t2_timeline",
+      "prompt": "Show me how the write, background index and cache interact, using a timeline. I maintain this now and need enough detail to know whether invalidating the cache alone fixes it.",
+      "essentials": [
+        {
+          "id": "d3_t2_cause",
+          "requirement": "Give a causally correct timeline distinguishing successful primary write, later background index update, cache miss reading the index, and cache hits retaining old results until expiry. Use supplied observed timings or another clearly labelled coherent worked example.",
+          "request_clause": "Show me how ... interact, using a timeline ... enough detail",
+          "location": "chat"
+        },
+        {
+          "id": "d3_t2_invalidation",
+          "requirement": "Explain why invalidating the cache alone may read the still-old index and cache stale data for another TTL; invalidation cannot ensure indexing has finished. If index is already fresh, removing stale cache can expose the new result. Neither the observed trace nor 90-second TTL supplies a maximum end-to-end freshness guarantee.",
+          "request_clause": "know whether invalidating the cache alone fixes it",
+          "location": "chat"
+        }
+      ]
+    },
+    {
+      "id": "t3_runbook",
+      "prompt": "If a cache miss reads the old index just after a write, is a shorter TTL enough? Put practical operating instructions and their limits in runbook.md, including a usable demo workaround. Keep search-notes.md unchanged.",
+      "essentials": [
+        {
+          "id": "d3_t3_answer",
+          "requirement": "Answer that a shorter TTL can reduce cache retention but does not make the index current or guarantee freshness after a write. A miss can refill stale data repeatedly until indexing catches up.",
+          "request_clause": "is a shorter TTL enough?",
+          "location": "chat"
+        },
+        {
+          "id": "d3_t3_artifact",
+          "requirement": "Actually create a standalone usable runbook: explain the primary/index/cache distinction as needed for operation; check demo searches on preindexed entries before the session; avoid depending on immediate edit-to-search visibility; explain unbounded/unknown index lag and the limit of cache invalidation/shorter TTL without inventing unsupported controls.",
+          "request_clause": "Put practical operating instructions and their limits ... usable demo workaround",
+          "location": "runbook.md"
+        },
+        {
+          "id": "d3_t3_source",
+          "requirement": "Keep the complete original search-notes.md bytes unchanged.",
+          "request_clause": "Keep search-notes.md unchanged",
+          "location": "search-notes.md"
+        }
+      ]
+    }
+  ],
+  "expected_files": [
+    {
+      "path": "runbook.md",
+      "first_required_after_turn": "t3_runbook",
+      "kind": "markdown",
+      "semantic_essentials": [
+        "d3_t3_artifact"
+      ]
+    }
+  ],
+  "capture_files": [
+    "search-notes.md",
+    "runbook.md"
+  ],
+  "objective": {
+    "preserve_fixture_paths": [
+      "search-notes.md"
+    ],
+    "semantic_review": "Requested causal explanation, useful terminology and full standalone operating instructions are necessary depth. Do not require every source fact or an exact timeline wording. Do not infer measured freshness guarantees from the one observed trace."
+  }
+}
