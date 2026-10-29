@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "reader-d-inline-photo-advice",
+  "title": "DEVELOPMENT source-delivery correction: ordinary photo advice with export facts in the request",
+  "fixture_files": [],
+  "turns": [
+    {
+      "id": "d1_explain_recommend",
+      "prompt": "Here are the photo export notes:\n\n# Photo export notes for the community display\n\nThis is a fictional local production note. The pack describes two JPEG copies of the same photograph; it contains no image files, live website or printer connection.\n\n## Export record\n\nThe original is 4000 by 3000 pixels. The web copy was downsampled from it to 1000 by 750 pixels. Both copies retain the same framing and 4:3 shape. Preserve the original for later uses.\n\nBoth file headers record a horizontal and vertical resolution of 300 pixels per inch. The export screen labels this field \"dpi\". This is output-size metadata. Editing only that label with resampling disabled leaves the stored pixel dimensions unchanged.\n\n## Current jobs\n\nThe website accepts an image up to 1200 pixels on its longest edge. The display image area is 10 by 7.5 inches. Its stated production requirement is at least 240 image pixels per printed inch.\n\nNo sample print has been inspected, and the actual image files are not available for a visual quality check in this pack. The recorded dimensions can support a file-choice calculation; they do not establish how a particular finished print looks.\n\nI’m preparing photos for our community display and website. Both files say 300 dpi, but the web copy looks softer. What does that label tell me, and which copy should I use for each job?",
+      "essentials": [
+        {
+          "id": "d1_label",
+          "requirement": "Explain that the label is image-density/output-size metadata, not proof that both copies contain the same picture detail. Relate that distinction to the different stored pixel dimensions without claiming that a print or actual image quality has been inspected.",
+          "request_clause": "Both files say 300 dpi ... What does that label tell me?",
+          "location": "ordinary answer"
+        },
+        {
+          "id": "d1_choices",
+          "requirement": "Give a justified choice: use the original for the specified display print and the web copy for the website. The original has enough recorded pixels for the display requirement; the web copy fits the website size limit but does not meet the display density at that size. The later detailed calculations are not all mandatory recap items here.",
+          "request_clause": "which copy should I use for each job?",
+          "location": "ordinary answer"
+        }
+      ]
+    },
+    {
+      "id": "d2_metadata_followup",
+      "prompt": "If I change only the web copy’s label from 300 to 600 dpi, will that fix the display print?",
+      "essentials": [
+        {
+          "id": "d2_no_detail_recovery",
+          "requirement": "Answer no: a label-only change leaves the stored pixel dimensions and captured detail unchanged, so it cannot restore the missing detail at the requested print size. Exact dimensions need not be repeated. Do not imply that the number 600 repairs the display image.",
+          "request_clause": "change only the web copy’s label from 300 to 600 dpi ... fix the display print?",
+          "location": "ordinary answer"
+        }
+      ]
+    },
+    {
+      "id": "d3_detailed_teaching",
+      "prompt": "Please work through how you reached that recommendation. Show the pixel dimensions needed for the 10 by 7.5 inch print and the pixel density each copy provides at that size. Explain the difference between changing the label, reducing the image, and enlarging it. We may later need a 10 by 8 inch borderless layout; explain the choices this would require, rather than silently stretching the photo. I need to teach the next coordinator how to make this decision.",
+      "essentials": [
+        {
+          "id": "d3_calculations",
+          "requirement": "Provide understandable worked calculations in chat: 10 by 7.5 inches at the stated minimum 240 image pixels per inch needs 2400 by 1800 pixels. At that print size the original supplies 400 image pixels per inch on both axes and the web copy supplies 100. Connect these numbers to the file choices; equivalent correct arithmetic and wording pass.",
+          "request_clause": "Show the pixel dimensions needed ... and the pixel density each copy provides at that size",
+          "location": "ordinary detailed explanation"
+        },
+        {
+          "id": "d3_resampling",
+          "requirement": "Explain the requested causal distinctions: changing only the label leaves the pixel grid unchanged; reducing/downsampling removes samples; enlarging/resampling creates additional samples without recovering the original captured detail. Do not replace the requested teaching with an unexplained conclusion or promise verified print quality.",
+          "request_clause": "Explain the difference between changing the label, reducing the image, and enlarging it ... teach the next coordinator",
+          "location": "ordinary detailed explanation"
+        },
+        {
+          "id": "d3_shape_choice",
+          "requirement": "Explain that the existing 4:3 picture and a 10 by 8 inch (5:4) borderless area have different shapes. Describe meaningful choices such as cropping/recomposition or changing the layout to preserve the picture proportions; stretching would distort it. No particular crop, application or unobserved visual judgement is required.",
+          "request_clause": "10 by 8 inch borderless layout; explain the choices ... rather than silently stretching the photo",
+          "location": "ordinary detailed explanation"
+        }
+      ]
+    }
+  ],
+  "expected_files": [],
+  "capture_files": [],
+  "objective": {
+    "code_probes": [],
+    "preserve_fixture_paths": [],
+    "semantic_review": "Judge request-derived information in the supplied notes and requested teaching. No generated image, file or code is requested; their preservation is not observed in this case."
+  },
+  "stage": "development-source-delivery-correction",
+  "design_provenance": {
+    "source": "experiments/reader-v1/cases/d.case.json",
+    "source_sha256": "88e1ce719c2aff605ff424204db22422b6f80ff4c4c3a061620d25c0f3a3b104",
+    "change": "Exact note content supplied in first human request instead of a file-read instruction after demonstrated executor failure; D2/D3/essentials unchanged",
+    "category": "ordinary conversation without an added brevity preference; familiar development derivative, not untouched validation"
+  }
+}

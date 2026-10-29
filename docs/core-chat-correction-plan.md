@@ -1,0 +1,19 @@
+# Core v1 short-chat comparison with source facts supplied directly
+
+2026-10-29. Prospective correction under existing included-access authorization, after the recorded no-model executor diagnosis. Original core-unit1 is closed with failures intact. No new framework, weakened isolation, paid service or direct Claude. Production release, final identities and further publication/push remain unapproved.
+
+Question: does unchanged installed core.v1 improve ordinary human explanations/recommendations or a narrow follow-up while preserving necessary facts, technical precision, uncertainty and explicitly requested teaching? Core SHA-256 remains `3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8`. This is the first potentially interpretable comparison for that bundle, not an unchanged repetition after an adverse quality grade.
+
+The derivative D-inline supplies the exact prior note content in the first user request instead of asking subjects to open a file. D2/D3 and the six substantive essentials remain unchanged. All arms have the same source facts and human preamble, without a brevity/style cue. It remains familiar development material, not untouched validation. No image/file/code/deliverable is requested, so those scope boundaries remain unverified for core. The earlier original D failures are not merged into a corrected pass.
+
+Use existing pinned app-server 0.165.0-alpha.1.2, gpt-6.1-sol/xhigh/default/summary-none, same tools, isolation and normal installed-byte/context evidence. Do not remove host communication requirements, inject only-treatment reminders or re-prove old loading. Keep core v1 and inputs fixed throughout.
+
+## Allocation and stopping
+
+Start from 33 attempted slots/82 logical tasks. N42 absent, n43 installed-enabled, n44 installed-disabled: three fresh contexts/three turns each. N45/n46: two fresh blinded independent reviewers, one task each, opposite order/sides with the unchanged nine controls and independent-goals mode. No additional preparation agent, helper, diagnostic model session, retry or replacement. Maximum increment **5 contexts/11 tasks**, endpoint **38 attempted slots/93 tasks**. Original unused n36–n41 remain unattempted; their numbers are not recycled.
+
+Inspect the complete n42/n43 pair before n44. A setup/capture failure or evident essential/depth loss stops affected launches; preserve partial results, with no automatic replacement. If valid, complete the inactive control even if the pair appears already satisfactory, then grade all three. No repeated pair is allocated to hunt for a better result. Provider included-use permission remains required before each native turn; no overage/fallback/bypass. Unknown helper/reviewer model/effort/token usage stays unknown.
+
+Reuse deterministic capture/continuation/cleanup checks and independent semantic review against the supplied facts. Root checks the actual calculations from the request, not a rubric demanding all possible image-processing knowledge. Reviewers receive complete chronological answers/progress and the original nine controls, with no policy/treatment/history. Separate clarity, relevance, filler, repetition, jargon, explanation and optional updates from information. Requested D3 teaching is ordinary chat with necessary depth, not automatically clutter. No count/length-only or human-comprehension claim.
+
+Both calibrated reviewers agreeing on the same useful goal/surface with preserved information is a development signal; it need not improve every goal or an already-clear answer. Preserve worsened dimensions and every tie basis. Missing evidence is not a pass. A positive short-chat result justifies later targeted work/unused-conversation validation, not whole-product success. File/workflow preservation, necessary native interruptions, memory, opaque incoming agent instructions, other models/apps and desktop display remain open. Do not promote core or publish a release from this unit.

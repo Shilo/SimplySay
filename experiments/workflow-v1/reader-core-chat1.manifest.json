@@ -1,0 +1,69 @@
+{
+  "subjects": [
+    {
+      "id": "n42",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/d-inline.case.json"
+    },
+    {
+      "id": "n43",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/core.v1.txt",
+      "case_file": "experiments/reader-v1/cases/d-inline.case.json"
+    },
+    {
+      "id": "n44",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/core.v1.txt",
+      "case_file": "experiments/reader-v1/cases/d-inline.case.json"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "inline-photo-core-enabled-absent",
+      "a": "n42",
+      "b": "n43"
+    },
+    {
+      "key": "inline-photo-core-disabled-absent",
+      "a": "n42",
+      "b": "n44"
+    }
+  ],
+  "dispatch_order": [
+    "n42",
+    "n43",
+    "n44"
+  ],
+  "checkpoint": "Inspect n42/n43 fully; stop on setup/capture failure or evident essential/depth loss. If valid complete disabled n44 and grade all. No repeated pair allocated.",
+  "goal_calibration_mode": "independent-goals-v1",
+  "calibration_file": "experiments/reader-v1/calibration-v2.json",
+  "extra_input_files": [
+    "experiments/reader-v1/run.cjs",
+    "experiments/reader-v1/unit.json",
+    "experiments/reader-v1/review.cjs",
+    "experiments/reader-v1/review-check.cjs",
+    "experiments/reader-v1/calibration-v2.json",
+    "experiments/assessment-v2/assess.cjs",
+    "docs/core-chat-correction-plan.md",
+    "docs/core-executor-failure.md",
+    "docs/core-policy-challenge.md",
+    "docs/core-case-design.md",
+    "docs/reader-development-authorization.md"
+  ],
+  "assessor_host_facts": {
+    "case_ids": [
+      "reader-d-inline-photo-advice"
+    ],
+    "summary": "The applicable stock host guidance requires an opening commentary message before tool work and commentary during ongoing work with a stated 60-second upper gap.",
+    "source_role": "developer",
+    "source_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+    "provenance": "Supported saved stock developer-message records; docs/workflow-instruction-review.md and docs/instruction-delivery-diagnosis.md.",
+    "limits": [
+      "Completed-message receipt timestamps are not exact authoring timestamps or UI notification times and do not prove compliance with the stated cadence.",
+      "No desktop notification or reader-comprehension measurement is supplied.",
+      "These facts do not reveal incoming native parent-to-child instructions or verify inter-agent boundaries.",
+      "The source is developer-role history; it does not expose the complete upstream system layer, final outgoing request assembly or model attention."
+    ]
+  }
+}

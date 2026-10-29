@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-unit1-closed-environment-failure",
+  "status": "core-chat1-allocated",
   "new_conversations": 33,
   "new_task_starts": 82,
   "starts": [
@@ -356,9 +356,12 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": true,
-  "allowed_subjects": [],
-  "block_reason": "Both active D subjects report inability to read their fixture; pause later launches while existing records are inspected. No response/reviewer retries.",
+  "dispatch_blocked": false,
+  "allowed_subjects": [
+    "n42",
+    "n43"
+  ],
+  "block_reason": "Only corrected first matched chat pair; no file/workflow launches, no weaker executor.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -423,5 +426,5 @@
       "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
     }
   ],
-  "decision": "docs/core-experiment-plan.md"
+  "decision": "docs/core-chat-correction-plan.md"
 }
