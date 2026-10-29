@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-28",
+  "kind": "independent native CLI metadata lifecycle reproduction",
+  "host": "Claude Code 2.1.312",
+  "os": "Windows",
+  "fixture": "Two local inert catalogs, same name, distinct source folders A and B; independent-probe v0.0.0; no styles, skills, hooks, agents, or services",
+  "isolation": "fresh CLAUDE_CONFIG_DIR; working directory inside disposable temp root; no model task or supplied account credential",
+  "scope": "Not SimplySay; not policy loading, communication efficacy, or non-interference",
+  "normalization": "Only machine-specific temp-root paths replaced with <TEMP_ROOT>; stdout JSON formatting and synthetic lifecycle identifiers retained",
+  "records": [
+    {
+      "args": [
+        "--version"
+      ],
+      "status": 0,
+      "stdout": "2.1.312 (Claude Code)\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "list",
+        "--json"
+      ],
+      "status": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "marketplace",
+        "add",
+        "<TEMP_ROOT>\\a",
+        "--json"
+      ],
+      "status": 0,
+      "stdout": "{\"command\":\"marketplace-add\",\"outcome\":\"ok\",\"marketplace\":\"independent-probe-catalog\",\"message\":\"Successfully added marketplace: independent-probe-catalog (declared in user settings)\"}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "install",
+        "independent-probe@independent-probe-catalog",
+        "--json"
+      ],
+      "status": 0,
+      "stdout": "{\"command\":\"install\",\"outcome\":\"ok\",\"plugin\":\"independent-probe@independent-probe-catalog\",\"pluginId\":\"independent-probe@independent-probe-catalog\",\"scope\":\"user\",\"message\":\"Successfully installed plugin: independent-probe@independent-probe-catalog (scope: user)\"}\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "disable",
+        "independent-probe@independent-probe-catalog"
+      ],
+      "status": 0,
+      "stdout": "√ Successfully disabled plugin: independent-probe (scope: user)\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "list",
+        "--json"
+      ],
+      "status": 0,
+      "stdout": "[\n  {\n    \"id\": \"independent-probe@independent-probe-catalog\",\n    \"version\": \"0.0.0\",\n    \"scope\": \"user\",\n    \"enabled\": false,\n    \"installPath\": \"<TEMP_ROOT>\\\\profile\\\\plugins\\\\cache\\\\independent-probe-catalog\\\\independent-probe\\\\0.0.0\",\n    \"readFromFolder\": \"<TEMP_ROOT>\\\\a\\\\plugin\",\n    \"folderVersion\": \"0.0.0\",\n    \"installedAt\": \"2026-10-29T01:48:57.994Z\",\n    \"lastUpdated\": \"2026-10-29T01:48:57.994Z\",\n    \"projectEnabled\": false\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "enable",
+        "independent-probe@independent-probe-catalog"
+      ],
+      "status": 0,
+      "stdout": "√ Successfully enabled plugin: independent-probe (scope: user)\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "marketplace",
+        "add",
+        "<TEMP_ROOT>\\b",
+        "--json"
+      ],
+      "status": 0,
+      "stdout": "{\"command\":\"marketplace-add\",\"outcome\":\"ok\",\"marketplace\":\"independent-probe-catalog\",\"message\":\"Successfully added marketplace: independent-probe-catalog (declared in user settings)\\nMarketplace 'independent-probe-catalog' was already added from dir:<TEMP_ROOT>\\\\a and now points at dir:<TEMP_ROOT>\\\\b.\\nPlugins already installed from it now update from the new source. To undo, add the previous source again.\"}\n",
+      "stderr": ""
+    },
+    {
+      "registry": {
+        "independent-probe-catalog": {
+          "source": {
+            "source": "directory",
+            "path": "<TEMP_ROOT>\\b"
+          },
+          "installLocation": "<TEMP_ROOT>\\b",
+          "lastUpdated": "2026-10-29T01:48:58.818Z"
+        }
+      }
+    },
+    {
+      "args": [
+        "plugin",
+        "uninstall",
+        "independent-probe@independent-probe-catalog"
+      ],
+      "status": 0,
+      "stdout": "√ Successfully uninstalled plugin: independent-probe (scope: user)\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "marketplace",
+        "remove",
+        "independent-probe-catalog"
+      ],
+      "status": 0,
+      "stdout": "√ Successfully removed marketplace: independent-probe-catalog\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "plugin",
+        "list",
+        "--json"
+      ],
+      "status": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    {
+      "result": "PASS",
+      "checks": [
+        "fresh absent list",
+        "installed-disabled state",
+        "re-enable command",
+        "duplicate repoints registry",
+        "uninstall absent list",
+        "unrelated setting retained"
+      ]
+    }
+  ]
+}

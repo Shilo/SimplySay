@@ -97,6 +97,8 @@ Primary sources: [official description](https://www.asd-ste100.org/about_STE.htm
 
 No current experiment demonstrates the cue's benefit across models or non-English conversations. Calling it unnecessary is a provisional engineering recommendation, not a measured negative result. Hold scope, language, model, effort, task, and environment constant; pre-register reader comprehension and preservation checks before comparing. Test technical terms, long necessary sentences, multilingual chat, a confused reader needing added context, and detailed requested artifacts. An English cue must not silently translate the user's language or make an answer unnaturally rigid. Do not copy a controlled dictionary or require a project glossary to test the hypothesis.
 
+Independent challenge: the `host_distribution` sub-agent independently retrieved the two official pages and the pinned wait-what skill. It objected that STE's technical-term allowance defeats an argument that the standard necessarily removes domain terminology. It also required semantically comparable instructions rather than unequal examples across arms. Accepted: the concern is uncertain model interpretation and task fit, not demonstrated harm or a claim that formal STE prohibits technical terms. No experimental winner was selected.
+
 ## Video and creator-material evidence
 
 Read the organizer's timestamped transcript and slide descriptions for [Building Great Agent Skills: The Missing Manual](https://ai.engineer/talks/UNzCG3lw6O0-building-great-agent-skills), linked to the [original recording](https://www.youtube.com/watch?v=UNzCG3lw6O0). Did not watch or listen to the recording. Approximate timestamps useful for verification: 3:28 invocation tradeoff; 7:22 steps versus conditional references; 16:18 pruning; 18:05 deletion tests. These are author proposals, not controlled evidence that minimal prompts necessarily improve SimplySay. Current repository files corroborate manual invocation and conditional-reference structures.
@@ -124,3 +126,16 @@ Source metadata/licenses inspected: Matt skills, Ponytail, NoYap, Humanizer, Cri
 3. Decide whether a host route that cannot reliably distinguish people from automated callers can be qualified support, or must remain excluded. This cannot be silently answered by writing another boundary sentence.
 4. Approve actual host/model access and a trial budget separately. No model or installed-host efficacy result exists in this report. The current local no-spend scope is sufficient for structural and installer work, not live cross-model evaluation.
 5. Judge meaningful communication benefit separately from essential-information and task-quality passes. Never let word reductions offset omissions or changed work.
+
+## Independent review of the integrated proposal
+
+Reviewed `docs/design.md` and the revised `docs/evaluation-plan.md` after this research recommendation was formed. No production policy or package was supplied. The revised proposal clearly distinguishes future SimplySay trials from the actual inert-catalog and upstream helper tests. No final improvement, perfect isolation, completed exhaustive source audit, licensing clearance, or published repository is claimed. Independently reran read-only reference inventory: 421 tracked files at observed HEAD `b9631bd8e3756f04c3cdbdff2dcc4dbf422754ba`; that verifies the inventory count, not working-tree cleanliness.
+
+Remaining challenges sent to the lead before the approval brief:
+
+1. A 24-task-session pilot is not by itself a monetary or model-call cap. Explicitly account for subagent calls, judges, failed starts, and diagnostics; authorize the host credentials and total usage separately. The high-risk multi-agent case can otherwise expand a superficially small allocation.
+2. The independent holdout author needs a fresh context without candidate policy text or development outputs, with cases frozen before tuning. Merely being a different agent that has not seen the *final* policy can still allow candidate/example contamination through inherited context.
+3. Report total shipped size and runtime prerequisites, including a preinstalled interpreter required by an adapter. A budget excluding optional artwork/licenses or measuring only new dependency installation can conceal real distribution or execution overhead. Separate policy bytes, total package bytes, host prerequisites, loaded tokens, and process cost.
+4. Update stale report-status phrases: communication research is written and the ASD primary-source challenge occurred; the recommendation remains provisional because no model comparison ran. A completed reviewer discussion is distinct from an approved or behavior-validated decision.
+
+These are planning corrections and approval questions, not failed SimplySay tests. The source-focused reference audit may be sufficient for the proposed product decision, but the remaining domain-file scope exception belongs to the owner; it cannot be silently called comprehensive.
