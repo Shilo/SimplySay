@@ -1,0 +1,25 @@
+// Offline evidence projection for the unchanged assessor; never starts a model.
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
+const {BASE}=require('../development-v1/run.cjs'),{scrubber,visibleEvent,privacyFindings}=require('../pilot/export-evidence.cjs');
+const ROOT=path.resolve(__dirname,'../..'),OUT=path.join(__dirname,'evidence/continuation'),sha=b=>crypto.createHash('sha256').update(b).digest('hex'),j=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const bindings=[];
+function put(p,b){assert(!fs.existsSync(p),'Refuse projection/export overwrite');fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,b);}
+function projected(source,scrub,raw){const b=fs.readFileSync(source);let out=b;if(!raw){const s=b.toString('utf8');out=Buffer.from(source.endsWith('-events.jsonl')?s.split(/\r?\n/).filter(Boolean).map(JSON.parse).map(visibleEvent).filter(Boolean).map(e=>JSON.stringify(scrub.object(e))).join('\n')+'\n':source.endsWith('.json')?JSON.stringify(scrub.object(JSON.parse(s)),null,2)+'\n':scrub.text(s));}assert.deepEqual(privacyFindings(out.toString('utf8')),[],'Selected evidence privacy check');return {source_bytes:b,bytes:out};}
+function transfer(source,dest,scrub,raw){const x=projected(source,scrub,raw);put(dest,x.bytes);bindings.push({source:path.relative(BASE,source).replaceAll('\\','/'),target:dest.startsWith(BASE+path.sep)?'evidence-view/'+path.relative(BASE,dest).replaceAll('\\','/'):path.relative(ROOT,dest).replaceAll('\\','/'),source_sha256:sha(x.source_bytes),target_sha256:sha(x.bytes),mode:raw?'raw-actual-file':'public-metadata-path-redaction'});}
+function tree(source,dest,scrub){for(const e of fs.readdirSync(source,{withFileTypes:true})){assert(!e.isSymbolicLink());if(e.isDirectory())tree(path.join(source,e.name),path.join(dest,e.name),scrub);else if(e.isFile())transfer(path.join(source,e.name),path.join(dest,e.name),scrub,true);}}
+function selected(source,dest,scrub){for(const e of fs.readdirSync(source,{withFileTypes:true})){assert(!e.isSymbolicLink());if(e.isDirectory()&&/^turn-\d+-files$/.test(e.name))tree(path.join(source,e.name),path.join(dest,e.name),scrub);else if(e.isFile()&&(/^(?:preflight|result|thread-resume)\.json$/.test(e.name)||/^turn-\d+-(?:prompt\.txt|final\.txt|events\.jsonl|stderr\.txt|timing\.jsonl|result\.json)$/.test(e.name)))transfer(path.join(source,e.name),path.join(dest,e.name),scrub,false);}}
+const rows=[];
+for(const id of ['e18','e20']){
+  const trial=path.join(BASE,id),scrub=scrubber(BASE,trial),v2=path.join(trial,'continuation-v2'),latest=j(path.join(v2,'result.json')),viewId=id==='e18'?'view-w2-a':'view-w2-b',view=path.join(BASE,viewId);assert(!fs.existsSync(view),'Refuse view reuse');fs.mkdirSync(view);
+  for(const version of ['continuation-v1','continuation-v2']){const src=path.join(trial,version);if(fs.existsSync(src))selected(src,path.join(OUT,'attempts',id,version),scrub);}
+  const prior=j(path.join(trial,'result.json')),turns=[];
+  for(const n of [1,2,3]){const src=n===1?trial:id==='e18'&&n===2?path.join(trial,'continuation-v1'):v2;for(const suffix of ['prompt.txt','final.txt','events.jsonl','stderr.txt','timing.jsonl','result.json']){const source=path.join(src,`turn-${n}-${suffix}`);if(fs.existsSync(source))transfer(source,path.join(view,`turn-${n}-${suffix}`),scrub,false);}const files=path.join(src,`turn-${n}-files`);if(fs.existsSync(files))tree(files,path.join(view,`turn-${n}-files`),scrub);const result=path.join(src,`turn-${n}-result.json`);if(fs.existsSync(result))turns.push(j(result));}
+  const result={id,condition:prior.condition,case_id:prior.case_id,policy:prior.policy,turns,failed:turns.length!==3||turns.some(t=>t.failed),auth_copy_removed:latest.auth_copy_removed,loading_events:latest.loading_events||prior.loading_events||[],projection_only:true,original_failed_attempts_retained:true,missing_practical_answer:id==='e18'?'unverified-capture-interruption':null};put(path.join(view,'result.json'),Buffer.from(JSON.stringify(scrub.object(result),null,2)+'\n'));
+  rows.push({id:viewId,case_file:'experiments/workflow-v1/cases/w2.case.json',condition:prior.condition,...prior.policy?{policy:prior.policy}:{},source_existing_chat:id,evidence_projection_only:true});
+  // Archive the exact view read by the unchanged assessor; no profile/auth included.
+  selected(view,path.join(OUT,'views',viewId),{text:s=>s,object:x=>x});
+}
+const manifest={stage:'Completed captured continuation; projection IDs are not model conversations',subjects:rows,review_pairs:[{key:'w2-continuation-absent-v4',a:rows[0].id,b:rows[1].id}]};
+put(path.join(__dirname,'continuation-review.manifest.json'),Buffer.from(JSON.stringify(manifest,null,2)+'\n'));put(path.join(OUT,'binding-index.json'),Buffer.from(JSON.stringify({bindings,raw_failed_attempts_retained:true,metadata_redaction:'Existing scrubber/visibleEvent; actual deliverable bytes unchanged',new_model_sessions:0},null,2)+'\n'));
+console.log(JSON.stringify({model_conversations_created:0,views:2,bindings:bindings.length,missing_absent_practical_reply:'unverified'}));
