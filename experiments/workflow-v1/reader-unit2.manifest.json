@@ -1,0 +1,82 @@
+{
+  "subjects": [
+    {
+      "id": "n14",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/c.case.json"
+    },
+    {
+      "id": "n15",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/reader-v1/cases/c.case.json"
+    },
+    {
+      "id": "n16",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/reader-v1/cases/c.case.json"
+    },
+    {
+      "id": "n17",
+      "condition": "absent",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n18",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n19",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "c-enabled-absent",
+      "a": "n14",
+      "b": "n15"
+    },
+    {
+      "key": "c-disabled-absent",
+      "a": "n14",
+      "b": "n16"
+    },
+    {
+      "key": "w1-r2-enabled-absent",
+      "a": "n17",
+      "b": "n18"
+    },
+    {
+      "key": "w1-r2-disabled-absent",
+      "a": "n17",
+      "b": "n19"
+    }
+  ],
+  "dispatch_order": [
+    "n14",
+    "n15",
+    "n16",
+    "n17",
+    "n18",
+    "n19"
+  ],
+  "checkpoint": "Inspect first natural-source absent/enabled pair capture, correctness, audience and work before remaining launches; do not tune frozen policy/cases/criteria",
+  "calibration_file": "experiments/reader-v1/calibration-v2.json",
+  "extra_input_files": [
+    "experiments/reader-v1/run.cjs",
+    "experiments/reader-v1/unit.json",
+    "experiments/reader-v1/review.cjs",
+    "experiments/reader-v1/review-check.cjs",
+    "experiments/reader-v1/calibration-v2.json",
+    "experiments/assessment-v2/assess.cjs",
+    "docs/reader-unit2-plan.md",
+    "docs/reader-unit2-case-design.md",
+    "docs/reader-unit2-verification.md",
+    "docs/reader-development-authorization.md"
+  ]
+}

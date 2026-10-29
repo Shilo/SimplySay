@@ -1,54 +1,67 @@
 {
   "status": "ready",
   "authorization": "owner-reader-development-2026-10-29",
-  "record": "docs/reader-control-amendment.md",
-  "purpose": "Concrete final explanations plus a narrow optional-progress gate, preserving work; two natural development triads",
-  "end_conversation_cap": 12,
-  "end_task_cap": 27,
+  "record": "docs/reader-unit2-plan.md",
+  "purpose": "Natural technical-source explanation plus explicit exclusion of optional previews on an existing workflow; development not validation",
+  "end_conversation_cap": 20,
+  "end_task_cap": 49,
   "unit_limits_are_not_overall_owner_caps": true,
   "exact_fresh_assignments": [
     {
       "ids": [
-        "n13"
+        "n14"
       ],
-      "role": "shared-files-corrected-installed-disabled",
+      "role": "technical-source-absent",
       "max_turns_each": 3
     },
     {
       "ids": [
-        "n08"
+        "n15"
       ],
-      "role": "workorders-absent",
+      "role": "technical-source-enabled-v2",
       "max_turns_each": 3
     },
     {
       "ids": [
-        "n09"
+        "n16"
       ],
-      "role": "workorders-installed-concrete",
+      "role": "technical-source-disabled-v2",
       "max_turns_each": 3
     },
     {
       "ids": [
-        "n10"
+        "n17"
       ],
-      "role": "workorders-installed-disabled",
+      "role": "study-absent",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n18"
+      ],
+      "role": "study-enabled-v2",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n19"
+      ],
+      "role": "study-disabled-v2",
       "max_turns_each": 3
     }
   ],
   "reviewers": [
     {
-      "id": "n11",
+      "id": "n20",
       "max_turns": 1
     },
     {
-      "id": "n12",
+      "id": "n21",
       "max_turns": 1
     }
   ],
-  "preparation_contexts": 3,
-  "planned_preparation_tasks": 7,
-  "additional_preparation_task": "Independent correction/verification of rejected disabling CLI with supported settings API",
+  "preparation_contexts": 0,
+  "planned_preparation_tasks": 2,
   "new_native_response_tasks": 18,
   "new_blinded_reviewer_conversations": 2,
   "new_blinded_reviewer_tasks": 2,
@@ -59,11 +72,8 @@
   "direct_claude": false,
   "production": false,
   "publication": false,
-  "manifest": "experiments/workflow-v1/reader-screen-v2.manifest.json",
-  "retained_pre_model_failures": [
-    "n07"
-  ],
-  "native_response_attempt_slots": 7,
+  "manifest": "experiments/workflow-v1/reader-unit2.manifest.json",
+  "native_response_attempt_slots": 6,
   "planned_completed_response_conversations": 6,
-  "retained_pre_model_failure_slots": 1
+  "retained_pre_model_failure_slots": 0
 }

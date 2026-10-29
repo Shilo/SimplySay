@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-2-preparation",
+  "status": "unit-2-ready",
   "new_conversations": 12,
   "new_task_starts": 29,
   "starts": [
@@ -17,7 +17,7 @@
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "allocated-preparation",
+      "status": "completed",
       "agent": "/root/reader_policy_challenge",
       "turns": 5,
       "max_turns": 5,
@@ -32,7 +32,7 @@
       "id": "n02",
       "role": "independent-case-and-evaluation-challenger",
       "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
-      "status": "allocated-preparation",
+      "status": "completed",
       "agent": "/root/reader_case_eval_challenge",
       "turns": 3,
       "max_turns": 3,
@@ -148,10 +148,13 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": true,
-  "allowed_subjects": [],
-  "block_reason": "Unit 2 preparation recorded; no response dispatch until independent challenges, local checks and freeze",
-  "checkpoint": "experiments/reader-v1/evidence/first-pair-checkpoint.json",
+  "dispatch_blocked": false,
+  "allowed_subjects": [
+    "n14",
+    "n15"
+  ],
+  "block_reason": null,
+  "checkpoint": "experiments/reader-v1/evidence/unit2/first-pair-checkpoint.json",
   "diagnostics": [
     {
       "purpose": "Inspect supported disabling command and verify native config control after n07 failure",
