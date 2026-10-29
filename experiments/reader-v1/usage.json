@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-chat1-disabled-control",
-  "new_conversations": 35,
-  "new_task_starts": 88,
+  "status": "core-chat1-review",
+  "new_conversations": 38,
+  "new_task_starts": 93,
   "starts": [
     {
       "id": "n01",
@@ -364,6 +364,32 @@
       "max_turns": 3,
       "status": "completed",
       "reserved_utc": "2026-10-29T20:45:59.031Z"
+    },
+    {
+      "id": "n44",
+      "role": "inline-photo-disabled-core1",
+      "condition": "disabled",
+      "case_id": "reader-d-inline-photo-advice",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T20:48:45.731Z"
+    },
+    {
+      "id": "n45",
+      "role": "fresh-blinded-core-chat-reviewer-one",
+      "purpose": "Independent blinded per-goal assessment of every saved corrected chat and unchanged controls; no failed-setup rerun",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "reserved-review"
+    },
+    {
+      "id": "n46",
+      "role": "fresh-blinded-core-chat-reviewer-reversed",
+      "purpose": "Independent blinded per-goal assessment of every saved corrected chat and unchanged controls; no failed-setup rerun",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "reserved-review"
     }
   ],
   "new_paid_services": false,
@@ -376,11 +402,9 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": false,
-  "allowed_subjects": [
-    "n44"
-  ],
-  "block_reason": "First corrected pair is valid; only the predeclared disabled control remains allowed before review.",
+  "dispatch_blocked": true,
+  "allowed_subjects": [],
+  "block_reason": "All corrected subjects complete; only the two allocated fresh reviews remain.",
   "checkpoint": "experiments/reader-v1/evidence/core-chat1/first-pair-checkpoint.json",
   "diagnostics": [
     {

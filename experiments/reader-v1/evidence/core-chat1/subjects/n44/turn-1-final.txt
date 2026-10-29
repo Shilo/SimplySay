@@ -1,0 +1,8 @@
+The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels and image detail unchanged.
+
+The web copy has fewer pixels—1000 × 750 versus 4000 × 3000—so it has less detail available when enlarged. Both saying “300 dpi” doesn’t make them equally detailed.
+
+- **Website:** Use the **1000 × 750 web copy**. Its longest edge is within the 1200-pixel limit.
+- **Community display:** Use the **4000 × 3000 original**. At 10 × 7.5 inches, it supplies **400 PPI**, exceeding the 240 PPI requirement. The web copy would supply only **100 PPI** at that size.
+
+The display requires at least **2400 × 1800 pixels**, and both copies already match its proportions. These calculations establish that the original meets the resolution requirement; they don’t establish how the finished print will look. Preserve the original unchanged for future uses.

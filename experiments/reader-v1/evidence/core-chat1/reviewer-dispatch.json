@@ -1,0 +1,31 @@
+{
+  "attempt_ids": [
+    "n45",
+    "n46"
+  ],
+  "new_model_conversations": 2,
+  "new_task_starts": 2,
+  "fork_turns": "none",
+  "model_effort": "unknown",
+  "brief_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
+  "scoring": "Unchanged prospective independent-goals-v1; same nine controls and common host facts",
+  "rows": [
+    {
+      "reviewer": "reader-core-chat1-review-1",
+      "packet_sha256": "510920c0f14248734ba64255eaf4b97d11e87cdfa2a62388c38d3e1897f63a15",
+      "bytes": 196049,
+      "pairs": 11,
+      "condition_labels": false,
+      "policy_in_packet": false
+    },
+    {
+      "reviewer": "reader-core-chat1-review-2",
+      "packet_sha256": "3e1f193361d050a801dcb1229a0558d761d7bf26a06ee740cb24971a6c64ef28",
+      "bytes": 196049,
+      "pairs": 11,
+      "condition_labels": false,
+      "policy_in_packet": false
+    }
+  ],
+  "scope": "Corrected ordinary chat only; file/workflow and original incoming helper directives remain unverified"
+}

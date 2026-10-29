@@ -1,0 +1,209 @@
+{
+  "method": "Existing supported developer/user/turn-context records only; no repeated loading probe",
+  "rows": [
+    {
+      "id": "n42",
+      "condition": "absent",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "337860e6e148902e1f5dc75410894360278e18b3ca510a7ab93d183f9fa087bb"
+        },
+        {
+          "turn": 2,
+          "line": 22,
+          "sha256": "5f16ff59b35e8cc54c9a2ecc6b910de4e5c7280b07b3490bfe210a4fa65a3b51"
+        },
+        {
+          "turn": 3,
+          "line": 32,
+          "sha256": "6f9441c3504091e0687dd7b626917fd67e8262573bcee529488086ae8af0124d"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "371a42fadb98753c91e8e910e58139e1aff66df08ca4671e151997cf400d14f0",
+          "exact_policy": false
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "no exact candidate in observed developer context",
+      "original_hook_events": 0,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    },
+    {
+      "id": "n43",
+      "condition": "enabled",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 11,
+          "sha256": "337860e6e148902e1f5dc75410894360278e18b3ca510a7ab93d183f9fa087bb"
+        },
+        {
+          "turn": 2,
+          "line": 23,
+          "sha256": "5f16ff59b35e8cc54c9a2ecc6b910de4e5c7280b07b3490bfe210a4fa65a3b51"
+        },
+        {
+          "turn": 3,
+          "line": 33,
+          "sha256": "6f9441c3504091e0687dd7b626917fd67e8262573bcee529488086ae8af0124d"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "9269b4813a970d6b89b7cc9b7534b2afb8c975fe360b52409b9f47fb1a75b1dd",
+          "exact_policy": false
+        },
+        {
+          "line": 10,
+          "characters": 1091,
+          "sha256": "3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8",
+          "exact_policy": true
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "exact policy in developer history before all requests",
+      "original_hook_events": 1,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    },
+    {
+      "id": "n44",
+      "condition": "disabled",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "337860e6e148902e1f5dc75410894360278e18b3ca510a7ab93d183f9fa087bb"
+        },
+        {
+          "turn": 2,
+          "line": 22,
+          "sha256": "5f16ff59b35e8cc54c9a2ecc6b910de4e5c7280b07b3490bfe210a4fa65a3b51"
+        },
+        {
+          "turn": 3,
+          "line": 32,
+          "sha256": "6f9441c3504091e0687dd7b626917fd67e8262573bcee529488086ae8af0124d"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "41cafca4712b14d3f9a17310176dbc2c1de92efd5867949082b978f6b268816d",
+          "exact_policy": false
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "no exact candidate in observed developer context",
+      "original_hook_events": 0,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    }
+  ],
+  "retained_pre_model_failures": [],
+  "reviewer_model_effort": "unknown",
+  "new_model_sessions": 0
+}

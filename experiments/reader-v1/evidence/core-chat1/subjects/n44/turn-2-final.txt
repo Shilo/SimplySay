@@ -1,0 +1,3 @@
+No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.
+
+Use the **4000 × 3000 original**, which supplies **400 PPI** at that display size.

@@ -1,0 +1,36 @@
+Use the **original for the display** because its stored pixels provide enough resolution at the requested print size.
+
+The requirement is at least **240 image pixels per printed inch**, or 240 PPI. Multiply each print dimension by that requirement:
+
+- Width: **10 inches × 240 PPI = 2400 pixels**
+- Height: **7.5 inches × 240 PPI = 1800 pixels**
+
+So the image needs at least **2400 × 1800 pixels** for this print. The photo and print area are both 4:3, so their proportions match.
+
+To calculate what each copy actually provides, divide its pixel dimensions by the print dimensions:
+
+| Copy | Stored pixels | Horizontal density | Vertical density | Meets 240 PPI? |
+|---|---:|---:|---:|---|
+| Original | 4000 × 3000 | 4000 ÷ 10 = **400 PPI** | 3000 ÷ 7.5 = **400 PPI** | Yes |
+| Web copy | 1000 × 750 | 1000 ÷ 10 = **100 PPI** | 750 ÷ 7.5 = **100 PPI** | No |
+
+The “dpi” label doesn’t change these calculations when the print size is fixed.
+
+These editing operations have different effects:
+
+- **Changing only the resolution label:** With resampling disabled, changing 300 to 600 leaves the web copy at 1000 × 750 pixels. It changes the suggested print size: at 600 PPI, that copy corresponds to about 1.67 × 1.25 inches. If you print it at 10 × 7.5 inches, it still provides 100 PPI.
+- **Reducing pixel dimensions through resampling:** Software combines or discards pixel information. That is how the original became the web copy. It helps meet website size limits, but leaves less detail available for later enlargement.
+- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality.
+- **Changing physical print size without resampling:** The pixel count stays fixed. A larger print spreads those pixels over more inches and lowers PPI; a smaller print raises PPI.
+
+For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**. The choices are:
+
+| Choice | Result |
+|---|---|
+| **Crop to fill 10 × 8** | The photograph fills the area, with some content removed from the left and/or right. |
+| **Preserve the entire photograph** | It fits at 10 × 7.5 inches, leaving 0.5 inch of unused height—typically 0.25 inch above and below. This needs margins or a designed background. |
+| **Stretch to 10 × 8** | The proportions change and subjects become relatively taller. This requires an explicit decision because it distorts the photograph. |
+
+For the crop option, the original can become **3750 × 3000 pixels**: remove 250 pixels of width, split between the sides according to the composition. At 10 × 8 inches, that supplies **375 PPI** in both directions. The minimum for that layout is **2400 × 1920 pixels**.
+
+Keep the original unchanged and make separate exports for each job. These calculations establish resolution suitability; judging sharpness, compression artifacts, and finished-print appearance still requires inspecting the image and a sample print.

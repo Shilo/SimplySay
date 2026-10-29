@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-773d565505ffafcf"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0cb95308c8dff7e6016ae3b14ef8bc819b8d8865634232f5b7","type":"agent_message","text":"No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.\n\nUse the **4000 × 3000 original**, which supplies **400 PPI** at that display size."}}
+{"type":"turn.completed","usage":{}}
