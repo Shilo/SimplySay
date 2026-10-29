@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "reviewer_id": "screen-review-1",
+  "pair_reviews": [
+    {
+      "pair_id": "pair-8d4ca9f00bcc",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Once the confirmation is corrected and tested, the recorded blocker is cleared.",
+          "Registration accepts the first **40 places** and rejects the next registration once full.",
+          "Different people may share an email address, so matching emails alone aren’t treated as duplicates.",
+          "Hi volunteers! Registration is now open for Saturday’s workshop at **10:00 in room Cedar**.",
+          "At the door, use the **confirmed registration list** to look up each attendee and mark them checked in.",
+          "**Calendar-invite delivery is still unverified**, so don’t assume attendees received a working invite."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Not yet. First, correct the confirmation message from **Thursday at 10:00** to **Saturday at 10:00 in room Cedar**, then test it. That’s the only recorded launch blocker.",
+          "Repeat clicks with the same submission token return the existing registration instead of creating another. Different people sharing an email address can still register.",
+          "Hi volunteers! Saturday’s workshop starts at 10:00 in room Cedar.",
+          "At the door, use the confirmed registration list to look up each attendee and mark them checked in.",
+          "Calendar-invite delivery hasn’t been verified, so please don’t assume attendees received a working invite."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Once the confirmation is corrected and tested, the recorded blocker is cleared.",
+          "That’s the only recorded launch blocker.",
+          "Neither still blocks opening: both checks passed."
+        ],
+        "rationale": "Both lead with the known confirmation failure, explain passed checks at the next request, and keep invite uncertainty separate from launch readiness. The priority bullets on the left and explicit single-blocker sentence on the right are both easy to follow. The slightly fuller volunteer draft is protected requested work, not a reason to prefer fewer words. One initial update on each side sets the same useful expectation; no material communication advantage is established.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-061e00d2224c",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Not yet. First, correct the confirmation message from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration.",
+          "Different people may share an email address, so matching emails alone don’t count as duplicates.",
+          "Hi volunteers! Saturday’s workshop starts at 10:00 in room Cedar.",
+          "At the door, use the confirmed registration list to look up each attendee and mark them checked in.",
+          "Calendar-invite delivery hasn’t been verified, so please don’t assume attendees received a working invite."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Once the confirmation is corrected and tested, the recorded blocker is cleared.",
+          "Registration accepts the first **40 places** and rejects the next registration once full.",
+          "Different people may share an email address, so matching emails alone aren’t treated as duplicates.",
+          "Hi volunteers! Registration is now open for Saturday’s workshop at **10:00 in room Cedar**.",
+          "At the door, use the **confirmed registration list** to look up each attendee and mark them checked in.",
+          "**Calendar-invite delivery is still unverified**, so don’t assume attendees received a working invite."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Not yet. First, correct the confirmation message from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration.",
+          "Neither blocks opening: both checks passed.",
+          "Neither still blocks opening: both checks passed.",
+          "Calendar-invite delivery is still unverified, so don’t assume attendees received working invites."
+        ],
+        "rationale": "Both give a direct conditional opening answer and concrete explanations of capacity and submission tokens for the current follow-up. The left uses paragraphs and the right uses priority bullets; neither introduces a substantive detour or unexplained jargon. Both complete volunteer messages stand on their own. The different initial wording and repeated invite reminder across different requests do not establish excessive updates or avoidable repetition.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-73ab5828a",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The standalone Casey email omits R-103 and the missing-receipt action. Its heading says two claims need action but lists only R-102. The surrounding chat and complete report do not repair the copy-ready email."
+        ],
+        "evidence": [
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+        ],
+        "rationale": "The ordinary reply and initial progress update are identical. The missing email item is a protected-deliverable omission assessed separately, not a communication improvement. Both ordinary replies clearly state files, observed tests, actions and timing uncertainty.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "Execution evidence is historical; no fresh rerun or message-timing evidence is supplied."
+      ]
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "left",
+          "repetition": "left",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "left"
+        },
+        "evidence": [
+          "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+          "I am still working on this task.",
+          "The approved total is **11,249 cents (112.49 currency units)**."
+        ],
+        "rationale": "The left stays on the reimbursement result and required actions. The right adds an unrelated animal fact and three identical updates that contain no decision, blocker, result or useful wait expectation. This preference follows irrelevant and repeated content, not message count alone; the shared initial update and full email are appropriate.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "Message timing is unavailable; the update judgment concerns the three unchanged messages' content, not assumed elapsed cadence."
+      ]
+    },
+    {
+      "pair_id": "pair-33cc150046cc",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Once the confirmation is corrected and tested, the recorded blocker is cleared.",
+          "Registration accepts the first **40 places** and rejects the next registration once full.",
+          "Different people may share an email address, so matching emails alone aren’t treated as duplicates.",
+          "Hi volunteers! Registration is now open for Saturday’s workshop at **10:00 in room Cedar**.",
+          "At the door, use the **confirmed registration list** to look up each attendee and mark them checked in.",
+          "**Calendar-invite delivery is still unverified**, so don’t assume attendees received a working invite."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Not yet. First, correct the confirmation text from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration.",
+          "Neither still blocks opening: both checks passed.",
+          "Different people may share an email address, so matching emails alone aren’t treated as duplicates.",
+          "Hi volunteers! Saturday’s workshop starts at **10:00 in room Cedar**.",
+          "At the door, use the **confirmed registration list** to look up each attendee and mark them checked in.",
+          "**Calendar-invite delivery hasn’t been verified**, so don’t assume attendees received a working invite."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "The notes record no other failed launch check.",
+          "No other failed launch check is recorded.",
+          "Different people may share an email address, so matching emails alone aren’t treated as duplicates.",
+          "With the confirmation time fixed and tested, the notes show no remaining launch blocker."
+        ],
+        "rationale": "Both answer each chronological request directly, distinguish the failed confirmation from unverified invites, and explain the token rule in familiar event terms. Paragraph compression on the right and bullets on the left do not materially alter readability or relevance. The extra direction reminder in the right volunteer draft and check-in reminder in the left are reasonable within the protected draft. Initial updates are equivalent in benefit.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-c73b6c7e5daf",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Not yet. First, correct the confirmation message from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration.",
+          "Different people may share an email address, so matching emails alone don’t count as duplicates.",
+          "Hi volunteers! Saturday’s workshop starts at 10:00 in room Cedar.",
+          "At the door, use the confirmed registration list to look up each attendee and mark them checked in.",
+          "Calendar-invite delivery hasn’t been verified, so please don’t assume attendees received a working invite."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Not yet. First, correct the confirmation message from **Thursday at 10:00** to **Saturday at 10:00 in room Cedar**, then test it. That’s the only recorded launch blocker.",
+          "Repeat clicks with the same submission token return the existing registration instead of creating another. Different people sharing an email address can still register.",
+          "Hi volunteers! Saturday’s workshop starts at 10:00 in room Cedar.",
+          "At the door, use the confirmed registration list to look up each attendee and mark them checked in.",
+          "Calendar-invite delivery hasn’t been verified, so please don’t assume attendees received a working invite."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "No other failed launch check is recorded.",
+          "That’s the only recorded launch blocker.",
+          "Calendar-invite delivery hasn’t been verified, so please don’t assume attendees received a working invite."
+        ],
+        "rationale": "Both make the next action prominent, explain the passed controls only as relevant to the opening question, and retain the invite warning in the later copy-ready message. The right's explicit only-blocker wording and the left's equivalent conditional instruction are both clear. Their single initial updates have the same purpose; the small wording differences offer no reliable overall benefit.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-e57ef3ed0a19",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Timestamp comparison uses Node's `Date.parse`, with millisecond precision; finer timestamp distinctions are not verified by this suite.",
+          "A live staff export and downstream import have not yet been verified."
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 8\nℹ suites 0\nℹ pass 8\nℹ fail 0",
+          "Winner selection depends on supplied timestamps and uses JavaScript Date's millisecond precision; finer-than-millisecond distinctions are not covered by these tests.",
+          "This has not been verified with a live export, production data, or a downstream import."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Email is just a value in the row—it never determines whether two rows belong to the same person.",
+          "Morgan and Ari stay separate because their IDs differ.",
+          "Replacing a row also preserves that ID’s original position in the export.",
+          "Traversal follows the supplied file order, then the row order within each file."
+        ],
+        "rationale": "Both adapt from a practical staff summary to the requested maintainer walkthrough, with concrete shared-email examples, complete-row selection, ties, stable ordering and test coverage. Technical terms serve the maintainer's request and are explained. Their initial plan and causal diagnosis provide scope and a material finding; their handoff-start announcement mostly repeats the request and adds limited benefit on both sides. Differences in tables, bullets and coverage grouping do not establish a material communication winner. The detailed handoffs and staff drafts are protected work.",
+        "confidence": "medium"
+      },
+      "missing_evidence": [
+        "No captured sub-millisecond timestamp probe; the shared precision issue follows the displayed comparison code and unrestricted ISO-timestamp contract, rather than an executed failing check. No fresh reruns were performed."
+      ]
+    },
+    {
+      "pair_id": "pair-5e19675b8ec3",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0",
+          "The commands above were run directly; `npm test` is an equivalent package script but was not separately run.",
+          "An export using live staff data and its downstream use have not yet been verified."
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Timestamp comparison uses Node's `Date.parse`, with millisecond precision; finer timestamp distinctions are not verified by this suite.",
+          "A live staff export and downstream import have not yet been verified."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Those IDs differ, so both contacts stay in the export.",
+          "They have different IDs, so both appear in the export.",
+          "Keep the **complete newest row**—we don’t combine fields from different versions.",
+          "Keeps the **entire row** with the newest instant, without mixing fields or normalizing values."
+        ],
+        "rationale": "Both adapt from a practical staff summary to the requested maintainer walkthrough, with concrete shared-email examples, complete-row selection, ties, stable ordering and test coverage. Technical terms serve the maintainer's request and are explained. Their initial plan and causal diagnosis provide scope and a material finding; their handoff-start announcement mostly repeats the request and adds limited benefit on both sides. Differences in tables, bullets and coverage grouping do not establish a material communication winner. The detailed handoffs and staff drafts are protected work.",
+        "confidence": "medium"
+      },
+      "missing_evidence": [
+        "No captured sub-millisecond timestamp probe; the shared precision issue follows the displayed comparison code and unrestricted ISO-timestamp contract, rather than an executed failing check. No fresh reruns were performed."
+      ]
+    },
+    {
+      "pair_id": "pair-60e507f7095a",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Timestamp comparison uses Node's `Date.parse`, with millisecond precision; finer timestamp distinctions are not verified by this suite.",
+          "A live staff export and downstream import have not yet been verified."
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0",
+          "The CSV implementation and format are unchanged:",
+          "A live or production export and downstream import have not been verified."
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "left",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "left"
+        },
+        "evidence": [
+          "The loader and CSV formatter already match the contract; I’ll add coverage for them too.",
+          "The CSV quoting pattern also needs a fix: it matches literal `r` and `n` instead of carriage returns and newlines.",
+          "A direct check confirms the existing CSV quoting pattern is correct; I misread its escaped display. It needs no change."
+        ],
+        "rationale": "Both final explanations provide the requested maintainer depth with concrete examples and useful test descriptions. The right's premature CSV diagnosis introduces a false extra problem and then requires a correction; the correction is appropriate once the mistake exists, but the initial detour creates avoidable confusion. The left reports the formatter's existing correctness directly. This is a modest progress-content advantage, not a reward for fewer updates. Shared handoff announcements have limited benefit.",
+        "confidence": "medium"
+      },
+      "missing_evidence": [
+        "No captured sub-millisecond timestamp probe; the shared precision issue follows the displayed comparison code and unrestricted ISO-timestamp contract, rather than an executed failing check. No fresh reruns were performed."
+      ]
+    },
+    {
+      "pair_id": "pair-4f2f72b245f9",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 7\nℹ suites 0\nℹ pass 7\nℹ fail 0",
+          "The commands above were run directly; `npm test` is an equivalent package script but was not separately run.",
+          "An export using live staff data and its downstream use have not yet been verified."
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The displayed repair uses Date.parse, which compares millisecond values. The valid-input contract requires the newest actual ISO timestamp instant without restricting precision: two rows for one ID at 2026-10-28T09:00:00.0001Z and .0002Z would be treated as tied and could retain the older row. This shared implementation limit is not evidence of a communication-treatment effect. The requested identity, ordering, CSV, tests, handoff and staff draft are otherwise present."
+        ],
+        "evidence": [
+          "if(!previous||Date.parse(contact.updated_at)>Date.parse(previous.updated_at)) rows.set(key,{...contact});",
+          "ℹ tests 8\nℹ suites 0\nℹ pass 8\nℹ fail 0",
+          "Winner selection depends on supplied timestamps and uses JavaScript Date's millisecond precision; finer-than-millisecond distinctions are not covered by these tests.",
+          "This has not been verified with a live export, production data, or a downstream import."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "A later row for `c-101` contains Morgan New and a different email. That row replaces Morgan’s earlier row without affecting Ari.",
+          "Morgan’s two rows compete because they have the same ID, even though their emails differ.",
+          "All seven tests pass.",
+          "All eight passed."
+        ],
+        "rationale": "Both adapt from a practical staff summary to the requested maintainer walkthrough, with concrete shared-email examples, complete-row selection, ties, stable ordering and test coverage. Technical terms serve the maintainer's request and are explained. Their initial plan and causal diagnosis provide scope and a material finding; their handoff-start announcement mostly repeats the request and adds limited benefit on both sides. Differences in tables, bullets and coverage grouping do not establish a material communication winner. The detailed handoffs and staff drafts are protected work.",
+        "confidence": "medium"
+      },
+      "missing_evidence": [
+        "No captured sub-millisecond timestamp probe; the shared precision issue follows the displayed comparison code and unrestricted ISO-timestamp contract, rather than an executed failing check. No fresh reruns were performed."
+      ]
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The reply supplies only a conclusion and labels. It omits the worked times/states duplicate timeline, causal treatment of all three failure windows, old-worker overlap after 30 seconds, ambiguous timeout acceptance, the eventual-success condition, stable retry keys and durable atomic receiver effect/deduplication, and lease-renewal limits. This does not provide the detailed design-review reasoning requested."
+        ],
+        "evidence": [
+          "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice.",
+          "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "The receiver may have accepted the request despite the timeout.",
+          "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+          "Expiration is not cancellation.",
+          "**retries must continue, and some attempt must eventually succeed.**",
+          "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+          "Neither makes receiver acceptance and marking done atomic.",
+          "The receiver’s ability to support this is currently unknown, so it is a proposed improvement rather than an existing guarantee."
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "right",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "right",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease.",
+          "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded.",
+          "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects."
+        ],
+        "rationale": "The right develops the requested reasoning through definitions, failure cases, a state timeline, comparison tables and concrete atomicity hazards, so a basic-code reader can review the design. The left's unexplained idempotency label and conclusion do not connect cause and effect. The right's technical vocabulary and length are justified by the explicit depth request; neither side has an excessive-update pattern. Repeated conclusions on the right help connect the tradeoff to the recommendation rather than constituting material filler.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "No execution was requested. Message timing is unavailable; both show the same single initial update."
+      ]
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+          "Friday arrival remains unconfirmed."
+        ],
+        "rationale": "The displayed candidates are identical in progress, ordinary reply, complete email, artifacts and captured execution. Both clearly identify the created files, actual test result, unresolved review actions and Friday uncertainty. There is no basis for a communication preference.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "Execution evidence is historical; message timing is unavailable."
+      ]
+    }
+  ],
+  "supplemental_delegation": {
+    "parent_directive_status": "unknown",
+    "information": {
+      "status": "unknown",
+      "issues": [
+        "The observable child report and saved report preserve all ten correct pair calculations, applicable rejection reasons, conditional alternatives and D verification caveat. The root recommendation and key arithmetic are correct. Overall native-delegation and forwarding compliance remains unknown: the displayed self-report does not expose the actual incoming directive or lifecycle evidence establishing exactly one child with no descendants and no added style/length constraint."
+      ],
+      "evidence": [
+        "There are 10 possible pairs.",
+        "The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**.",
+        "If D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**.",
+        "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+        "Exactly one native child performed the analysis without delegation."
+      ]
+    },
+    "ordinary_chat_quality": {
+      "observations": [
+        "The root leads with a usable current recommendation and supporting budget/quantity figures, then clearly separates the conditional cheaper choice and next verification.",
+        "The initial update sets the requested delegation/check/save expectation; the later update gives the material AB/CD result and current checking step. Its factual accuracy alone would not prove necessity, but it helps the reader track the dependent child workflow. Timing is insufficient to assess cadence.",
+        "The closing process claims address requested verification and report observability, though they cannot establish unobserved native lifecycle or directive details. The child's detailed report is requested protected work and should not be shortened as ordinary chat. No comparative treatment effect can be inferred."
+      ],
+      "evidence": [
+        "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+        "**Next action:** verify D’s Friday availability before choosing C + D.",
+        "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+      ]
+    },
+    "missing_evidence": [
+      "Actual parent-to-child directive is unavailable; data forwarding and absence of root-added report style/length constraints cannot be verified.",
+      "No native spawn/descendant lifecycle trace is displayed to corroborate the root's one-child/no-delegation assertion.",
+      "No completed matched delegation comparison is available."
+    ]
+  },
+  "limitations": [
+    "Independent retrospective assessment of the supplied packet only; no human comprehension study, external services, fresh execution or additional source files were used.",
+    "Overlapping ordinary_chat, progress and turns were checked as views of the same events. Identical snapshots and identical reimbursement artifacts/execution were verified by exact content equality and reviewed once; they were not counted as repeated chat.",
+    "Timing is missing for single-turn samples and does not justify inferred cadence. Recorded chronological order and update content were used.",
+    "All four contact-export implementations share the Date.parse precision limit. The finding is based on the displayed code and unrestricted ISO contract; no sub-millisecond failing execution is captured. Other reported regression successes agree with the recorded commands.",
+    "Supplemental delegation directive and native lifecycle remain unverified; no comparative effect is claimed."
+  ]
+}
