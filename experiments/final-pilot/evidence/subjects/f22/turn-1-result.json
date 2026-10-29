@@ -1,0 +1,17 @@
+{
+  "turn": 1,
+  "expected_thread": null,
+  "thread": "thread-708421dfa3f5aac9",
+  "observed_thread": "thread-708421dfa3f5aac9",
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "input_tokens": 33920,
+    "cached_input_tokens": 21888,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 407,
+    "reasoning_output_tokens": 0
+  },
+  "continuation_observed": true
+}

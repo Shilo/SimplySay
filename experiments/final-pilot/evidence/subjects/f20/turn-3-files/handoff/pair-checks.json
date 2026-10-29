@@ -1,0 +1,105 @@
+{
+  "pairs": [
+    {
+      "pair": "A+B",
+      "price": 175,
+      "kits": 30,
+      "mats": 25,
+      "budget_ok": true,
+      "quantity_ok": true,
+      "friday_ok": true,
+      "qualifies": true
+    },
+    {
+      "pair": "A+C",
+      "price": 150,
+      "kits": 34,
+      "mats": 18,
+      "budget_ok": true,
+      "quantity_ok": false,
+      "friday_ok": true,
+      "qualifies": false
+    },
+    {
+      "pair": "A+D",
+      "price": 170,
+      "kits": 32,
+      "mats": 22,
+      "budget_ok": true,
+      "quantity_ok": true,
+      "friday_ok": true,
+      "qualifies": true
+    },
+    {
+      "pair": "A+E",
+      "price": 140,
+      "kits": 28,
+      "mats": 25,
+      "budget_ok": true,
+      "quantity_ok": false,
+      "friday_ok": false,
+      "qualifies": false
+    },
+    {
+      "pair": "B+C",
+      "price": 165,
+      "kits": 28,
+      "mats": 23,
+      "budget_ok": true,
+      "quantity_ok": false,
+      "friday_ok": true,
+      "qualifies": false
+    },
+    {
+      "pair": "B+D",
+      "price": 185,
+      "kits": 26,
+      "mats": 27,
+      "budget_ok": false,
+      "quantity_ok": false,
+      "friday_ok": true,
+      "qualifies": false
+    },
+    {
+      "pair": "B+E",
+      "price": 155,
+      "kits": 22,
+      "mats": 30,
+      "budget_ok": true,
+      "quantity_ok": false,
+      "friday_ok": false,
+      "qualifies": false
+    },
+    {
+      "pair": "C+D",
+      "price": 160,
+      "kits": 30,
+      "mats": 20,
+      "budget_ok": true,
+      "quantity_ok": true,
+      "friday_ok": true,
+      "qualifies": true
+    },
+    {
+      "pair": "C+E",
+      "price": 130,
+      "kits": 26,
+      "mats": 23,
+      "budget_ok": true,
+      "quantity_ok": false,
+      "friday_ok": false,
+      "qualifies": false
+    },
+    {
+      "pair": "D+E",
+      "price": 150,
+      "kits": 24,
+      "mats": 27,
+      "budget_ok": true,
+      "quantity_ok": false,
+      "friday_ok": false,
+      "qualifies": false
+    }
+  ],
+  "selected_pair": "C+D"
+}

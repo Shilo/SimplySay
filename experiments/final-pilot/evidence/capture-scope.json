@@ -1,0 +1,10 @@
+{
+  "public_event_whitelist": "Existing export-evidence.cjs visibleEvent",
+  "path_scrubber": "Existing export-evidence.cjs scrubber",
+  "raw_protected_artifact_bytes": true,
+  "raw_profiles_histories_auth_excluded": true,
+  "source_hashes": "Every selected source file is bound below; redacted public metadata may differ in byte hash.",
+  "new_subject_conversations": 3,
+  "same_id_turns_each": 3,
+  "auth_copies_remaining": 0
+}

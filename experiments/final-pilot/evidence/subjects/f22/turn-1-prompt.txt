@@ -1,0 +1,1 @@
+We're buying supplies for Saturday's community craft event. The existing analyst report is in analyst-report.txt. We have to place one order today, and no supplier status has changed. Which pair should I approve, and is there a cheaper option worth checking first? Put a purchase note for the event coordinator in purchase-note.md.

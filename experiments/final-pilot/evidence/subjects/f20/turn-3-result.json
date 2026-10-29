@@ -1,0 +1,17 @@
+{
+  "turn": 3,
+  "expected_thread": "thread-615e74f51d046f9f",
+  "thread": "thread-615e74f51d046f9f",
+  "observed_thread": "thread-615e74f51d046f9f",
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "input_tokens": 88720,
+    "cached_input_tokens": 61312,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2149,
+    "reasoning_output_tokens": 0
+  },
+  "continuation_observed": true
+}

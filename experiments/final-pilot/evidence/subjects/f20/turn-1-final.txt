@@ -1,0 +1,5 @@
+Approve **A + B at $175**: 30 kits, 25 mats, both confirmed for Friday.
+
+First, check whether D can be explicitly confirmed for Friday before ordering today. If confirmed, **C + D at $160** meets the minimums and saves $15. Otherwise, proceed with A + B.
+
+Saved in [purchase-note.md](purchase-note.md).

@@ -1,0 +1,5 @@
+Handoff complete. **C+D costs $160**, supplies **30 kits and 20 mats**, and leaves **$20**. Switching saves $15 and gives up five spare mats.
+
+- [Purchase decision](handoff/decision.md)
+- [All ten pair checks](handoff/pair-checks.json), using D’s confirmed Friday status
+- [Original analyst report](handoff/analyst-report.txt), verified as an unchanged copy

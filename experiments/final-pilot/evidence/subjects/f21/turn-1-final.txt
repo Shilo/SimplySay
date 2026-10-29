@@ -1,0 +1,3 @@
+Approve **A + B at $175**. Check **C + D at $160** first—it saves $15, but requires explicit confirmation of D’s Friday availability before today’s order deadline. Otherwise, proceed with A + B.
+
+Saved the coordinator’s [purchase note](purchase-note.md).

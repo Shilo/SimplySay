@@ -1,0 +1,30 @@
+The spreadsheet should mark a pair eligible only when **every requirement passes independently**:
+
+- Exactly two different crates, with at most one of each.
+- At least **30 kits**.
+- At least **20 mats**.
+- Total price **no more than $180**.
+- **Both crates confirmed available by Friday**, before Saturday’s event.
+
+Use an `AND` rule, not a score that lets one strength cancel a failure. Kits and mats serve different needs: extra kits cannot fill a mat shortage, and extra mats cannot fill a kit shortage. Likewise, enough supplies at a good price do not help if their availability before the event is unconfirmed. “Tentative” must count as failing the confirmation check.
+
+| Pair | Price check | Kit check | Mat check | Friday check | Result |
+|---|---|---|---|---|---|
+| **A + C** | $80 + $70 = **$150**: passes | 18 + 16 = **34**: passes | 10 + 8 = **18**: fails, 2 short | Both confirmed: passes | **Ineligible.** The 4 extra kits cannot replace the 2 missing mats. |
+| **B + D** | $95 + $90 = **$185**: fails, $5 over | 12 + 14 = **26**: fails, 4 short | 15 + 12 = **27**: passes | D tentative: fails | **Ineligible.** The 7 extra mats cannot fix the kit shortage, excess cost, or timing uncertainty. |
+| **C + D** | $70 + $90 = **$160**: passes | 16 + 14 = **30**: passes exactly | 8 + 12 = **20**: passes exactly | D tentative: fails | **Currently ineligible solely because D is unconfirmed.** |
+
+If D becomes explicitly confirmed for Friday **before today’s order must be placed**, C + D becomes eligible and is the cheapest qualifying pair. A + D also becomes eligible at **$170**, with **32 kits and 22 mats**. B + D still fails: confirmation fixes its timing check, but leaves it $5 over budget and 4 kits short. A + C is unaffected.
+
+The **$15 saving** from choosing C + D instead of A + B has this trade-off:
+
+| | A + B | C + D, once confirmed |
+|---|---:|---:|
+| Cost | $175 | $160 |
+| Kits | 30 | 30 |
+| Mats | 25 | 20 |
+| Budget remaining | $5 | $20 |
+
+You keep the same number of kits and free up **$15**, but give up **five spare mats**. C + D meets both quantity minimums exactly; A + B provides a five-mat cushion.
+
+With statuses unchanged, **A + B remains the only eligible choice**. Check D’s confirmation before ordering today; if it remains tentative at the order deadline, approve A + B.

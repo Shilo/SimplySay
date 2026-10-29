@@ -1,0 +1,5 @@
+Approve **A + B at $175**, the only currently qualifying pair.
+
+Check **C + D at $160** first only if D’s Friday availability can be explicitly confirmed before today’s order deadline. Otherwise, order A + B today.
+
+Saved the coordinator’s [purchase note](purchase-note.md).

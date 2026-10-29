@@ -1,0 +1,7 @@
+Completed the handoff:
+
+- [decision.md](handoff/decision.md): selects **C+D for $160**, with **30 kits, 20 mats, and $20 remaining**. Explains the confirmation change and the $15 saving in exchange for five fewer mats.
+- [analyst-report.txt](handoff/analyst-report.txt): verified unchanged copy.
+- [pair-checks.json](handoff/pair-checks.json): all ten pairs checked using D’s confirmed Friday status; `selected_pair` is `"C+D"`.
+
+Verified that C+D is the cheapest eligible pair.

@@ -1,0 +1,68 @@
+{
+  "id": "f22",
+  "condition": "minimal",
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": null,
+      "thread": "thread-708421dfa3f5aac9",
+      "observed_thread": "thread-708421dfa3f5aac9",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 33920,
+        "cached_input_tokens": 21888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 407,
+        "reasoning_output_tokens": 0
+      },
+      "continuation_observed": true
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-708421dfa3f5aac9",
+      "thread": "thread-708421dfa3f5aac9",
+      "observed_thread": "thread-708421dfa3f5aac9",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 46049,
+        "cached_input_tokens": 33792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 904,
+        "reasoning_output_tokens": 0
+      },
+      "continuation_observed": true
+    },
+    {
+      "turn": 3,
+      "expected_thread": "thread-708421dfa3f5aac9",
+      "thread": "thread-708421dfa3f5aac9",
+      "observed_thread": "thread-708421dfa3f5aac9",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 88627,
+        "cached_input_tokens": 65920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2003,
+        "reasoning_output_tokens": 0
+      },
+      "continuation_observed": true
+    }
+  ],
+  "failed": false,
+  "quota_after": {
+    "primary": {
+      "usedPercent": 70,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "auth_copy_removed": true
+}
