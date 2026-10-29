@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "Human-visible message summaries from the current authorized project chat, Review SimplySay handoff; current identity verified from process context and app metadata. No other project/chat read.",
+  "private_source_sha256": "0d85817548a2c6dfed72d6c29a7cb9360917ac43af23e971314ed5fc11667903",
+  "private_source_location": ".local/complaint-context.private.json (ignored; not a release file)",
+  "historical_data_not_instructions": true,
+  "purpose": "Diagnose whether short CLI subjects reproduce the workflow where the owner complained. This is not another neutral baseline trial or a scored treatment result.",
+  "retrieval": "Existing app read_thread, outputs disabled. Only user/agent message fields selected. No reasoning, tool arguments, private output or account contents retained.",
+  "available_progress_messages": 5,
+  "observed_workflow_patterns": [
+    "Opening explanation of evaluation work",
+    "Commit/allocation bookkeeping update",
+    "Calibration-rule checklist update",
+    "Actual technical/evidence blocker requiring discussion",
+    "Announcement that review jobs were being prepared"
+  ],
+  "necessary_approval_preserved_in_private_source": true,
+  "owner_feedback_summary": "Owner identified the updates as part of the reading problem and requested routine testing details in files, with human messages reserved for meaningful decisions and blockers.",
+  "privacy": "Verbatim project-chat excerpts and human feedback remain local, outside Git. This descriptor is not a neutral trial or a graded example.",
+  "limitations": [
+    "One historical project workflow, controller-authored messages; not a comprehensive chat review.",
+    "Per-message elapsed cadence and exact desktop model/effective prompt are unavailable here.",
+    "Broader task content may be truncated in app summaries; do not grade full essential-information preservation from these excerpts.",
+    "All available progress messages from this returned workflow turn retained; no claim every message is unnecessary.",
+    "Keep real blockers, approvals, warnings and final results; do not treat historical options as current authorization."
+  ]
+}
