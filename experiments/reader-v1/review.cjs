@@ -5,6 +5,7 @@ const base=require('../development-v1/assess.cjs');
 const {validateReview,calibrated}=require('../assessment-v2/assess.cjs');
 const ROOT=path.resolve(__dirname,'../..'),CAL=path.join(__dirname,'calibration.json');
 const LEGACY=['clarity','relevance','filler','repetition','unnecessary_jargon','excessive_updates'],GOALS=[...LEGACY,'unnecessary_explanation'],CHOICES=['left','right','tie','unknown'],TIES=['both_satisfactory','both_problem','insufficient_evidence'];
+const JOINT='joint-v1',INDEPENDENT='independent-goals-v1';
 const read=p=>fs.readFileSync(p),json=p=>JSON.parse(read(p).toString().replace(/^\uFEFF/,'')),sha=b=>crypto.createHash('sha256').update(b).digest('hex'),clone=x=>structuredClone(x);
 const put=(p,x)=>{fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,Buffer.isBuffer(x)||typeof x==='string'?x:JSON.stringify(x,null,2)+'\n');};
 const text=x=>typeof x==='string'?x:Array.isArray(x)?x.map(text).join('\n'):x&&typeof x==='object'?Object.values(x).map(text).join('\n'):'';
@@ -21,6 +22,8 @@ function prepare(manifestFile,out,cohort){
   assert(!fs.existsSync(path.join(out,'reader-freeze.json')),'Refuse packet overwrite');
   const baseOut=path.join(out,'base');base.prepare(manifestFile,baseOut,cohort);
   const manifest=json(path.resolve(ROOT,manifestFile));
+  const calibrationMode=manifest.goal_calibration_mode||JOINT;
+  assert([JOINT,INDEPENDENT].includes(calibrationMode),'Unknown calibration mode');
   const calibrationFile=path.resolve(ROOT,manifest.calibration_file||path.relative(ROOT,CAL));
   assert(calibrationFile.startsWith(__dirname+path.sep),'Calibration must remain inside this experimental adapter');
   const calibration=json(calibrationFile),map=json(path.join(baseOut,'controller-map.json')),det=json(path.join(baseOut,'deterministic.json')),jobs=[];
@@ -50,7 +53,7 @@ function prepare(manifestFile,out,cohort){
     jobs.push({reviewer_id:id,packet:path.join(out,id,'packet.json'),template:path.join(out,id,'response-template.json'),output:path.join(out,'reviews',id+'.json')});
   }
   put(path.join(out,'controller-map.json'),map);put(path.join(out,'deterministic.json'),det);put(path.join(out,'chat-content-screens.json'),chatScreens);put(path.join(out,'jobs.json'),jobs);
-  put(path.join(out,'reader-freeze.json'),{adapter_sha256:sha(read(__filename)),calibration_file:path.relative(ROOT,calibrationFile).replaceAll('\\','/'),calibration_sha256:sha(read(calibrationFile)),validator_sha256:sha(read(path.join(ROOT,'experiments/assessment-v2/assess.cjs'))),base_adapter_sha256:sha(read(path.join(ROOT,'experiments/development-v1/assess.cjs'))),checks_sha256:sha(read(path.join(ROOT,'experiments/development-v1/cases/checks.cjs'))),manifest_sha256:sha(read(path.resolve(ROOT,manifestFile))),map_sha256:sha(read(path.join(out,'controller-map.json'))),deterministic_sha256:sha(read(path.join(out,'deterministic.json'))),chat_screens_sha256:sha(read(path.join(out,'chat-content-screens.json'))),reviewers:map.reviewers});
+  put(path.join(out,'reader-freeze.json'),{manifest_file:path.relative(ROOT,path.resolve(ROOT,manifestFile)).replaceAll('\\','/'),goal_calibration_mode:calibrationMode,adapter_sha256:sha(read(__filename)),calibration_file:path.relative(ROOT,calibrationFile).replaceAll('\\','/'),calibration_sha256:sha(read(calibrationFile)),validator_sha256:sha(read(path.join(ROOT,'experiments/assessment-v2/assess.cjs'))),base_adapter_sha256:sha(read(path.join(ROOT,'experiments/development-v1/assess.cjs'))),checks_sha256:sha(read(path.join(ROOT,'experiments/development-v1/cases/checks.cjs'))),manifest_sha256:sha(read(path.resolve(ROOT,manifestFile))),map_sha256:sha(read(path.join(out,'controller-map.json'))),deterministic_sha256:sha(read(path.join(out,'deterministic.json'))),chat_screens_sha256:sha(read(path.join(out,'chat-content-screens.json'))),reviewers:map.reviewers});
   console.log(JSON.stringify({prepared:cohort,real_pairs:map.pairs.length,legacy_controls:4,new_diagnostics:calibration.diagnostics.length,reviewers:2,model_sessions_started:0}));
 }
 function validate(wrapper,packet){
@@ -73,7 +76,8 @@ function validate(wrapper,packet){
   }
   return true;
 }
-function diagnose(wrapper,mapping,packet,calibrationFile=CAL){
+function diagnose(wrapper,mapping,packet,calibrationFile=CAL,mode=JOINT){
+  assert([JOINT,INDEPENDENT].includes(mode),'Unknown calibration mode');
   const legacy=calibrated(wrapper.review,mapping),diagnostics={},calibration=json(calibrationFile);
   for(const m of mapping.pairs.filter(p=>p.kind==='diagnostic-control')){
     const d=calibration.diagnostics.find(d=>d.id===m.diagnostic_id),p=wrapper.review.pair_reviews.find(p=>p.pair_id===m.pair_id),notes=wrapper.goal_notes.find(p=>p.pair_id===m.pair_id).goals,good=m.left_source===m.good_source?'left':'right',bad=good==='left'?'right':'left',mp=packet.pairs.find(p=>p.pair_id===m.pair_id),goodText=ordinary(packet.candidates.find(c=>c.alias===mp[good])),badText=ordinary(packet.candidates.find(c=>c.alias===mp[bad]));
@@ -86,19 +90,44 @@ function diagnose(wrapper,mapping,packet,calibrationFile=CAL){
       pass=p[good+'_information'].status==='preserved'&&p[bad+'_information'].status==='omitted-essential'&&/ask|choice|question|decision|archiv|cancel/i.test(p[bad+'_information'].issues.join(' '))&&p.communication.preference!==bad&&p.communication.preference!=='unknown'&&notes.excessive_updates.choice!==bad&&notes.excessive_updates.choice!=='unknown'&&specific&&confidence;
     }
     diagnostics[d.id]={pass:Boolean(pass),type:d.expected.type,eligible_claims:d.expected.eligibility,confidence:p.communication.confidence};
+    if(mode===INDEPENDENT&&d.expected.type==='style'){
+      const goodCandidate=packet.candidates.find(c=>c.alias===mp[good]),badCandidate=packet.candidates.find(c=>c.alias===mp[bad]);
+      const common=p.left_information.status==='preserved'&&p.right_information.status==='preserved'&&p.communication.preference===good&&confidence;
+      const expectedSurface=d.expected.surface||(d.expected.goals.includes('excessive_updates')?'progress':'final');
+      const goalPasses={};
+      for(const goal of d.expected.goals){
+        const n=notes[goal],surfaceMatches=n.surface===expectedSurface||n.surface==='both';
+        const goodSurface=surfaceText(goodCandidate,expectedSurface),badSurface=surfaceText(badCandidate,expectedSurface);
+        const specific=n.evidence.some(q=>q.trim().length>=8&&!goodSurface.includes(q)&&badSurface.includes(q)&&d.expected.mutant_changed_text.some(s=>s.includes(q)||q.includes(s)));
+        goalPasses[goal]={pass:Boolean(common&&n.choice===good&&surfaceMatches&&specific),common_preservation_direction_confidence:Boolean(common),intended_goal_choice:n.choice===good,changed_surface_evidence:Boolean(surfaceMatches&&specific),expected_surface:expectedSurface};
+      }
+      diagnostics[d.id].goal_passes=goalPasses;
+      if(d.id==='d5')diagnostics[d.id].payload_recognized={pass:common&&['filler','unnecessary_explanation'].some(g=>goalPasses[g]?.pass===true),meaning:'Supplementary progress-payload recognition, not a filler/repetition/update winner or cadence proof'};
+    }
   }
-  const pass=id=>diagnostics[id]?.pass===true,eligible={information:legacy.pass&&pass('d4'),clarity:legacy.pass&&pass('d3'),relevance:legacy.pass,filler:legacy.pass&&pass('d2'),repetition:legacy.pass&&pass('d2'),unnecessary_jargon:legacy.pass&&pass('d3'),excessive_updates:legacy.pass&&pass('d1')&&pass('d4'),unnecessary_explanation:legacy.pass&&pass('d2')};
-  return {legacy,diagnostics,eligible_claims:eligible};
+  const pass=id=>diagnostics[id]?.pass===true,own=(id,g)=>mode===JOINT?pass(id):diagnostics[id]?.goal_passes?.[g]?.pass===true;
+  const eligible={information:legacy.pass&&pass('d4'),clarity:legacy.pass&&own('d3','clarity'),relevance:legacy.pass,filler:legacy.pass&&own('d2','filler'),repetition:legacy.pass&&own('d2','repetition'),unnecessary_jargon:legacy.pass&&own('d3','unnecessary_jargon'),excessive_updates:legacy.pass&&own('d1','excessive_updates')&&pass('d4'),unnecessary_explanation:legacy.pass&&own('d2','unnecessary_explanation')};
+  return {...mode===INDEPENDENT?{calibration_mode:mode}:{},legacy,diagnostics,eligible_claims:eligible};
 }
 function eligibleOnSurface(calibration,goal,surface){
   if(!calibration.eligible_claims[goal])return false;
   // This prospective diagnostic concerns optional payload, not required presence.
   // Final-only claims continue to use the unchanged final-answer controls.
-  if(['progress','both'].includes(surface)&&['excessive_updates','filler','repetition','unnecessary_explanation'].includes(goal)&&calibration.diagnostics.d5)return calibration.diagnostics.d5.pass;
+  if(['progress','both'].includes(surface)&&['excessive_updates','filler','repetition','unnecessary_explanation'].includes(goal)&&calibration.diagnostics.d5){
+    const d5=calibration.diagnostics.d5;
+    if(calibration.calibration_mode===INDEPENDENT)return ['filler','unnecessary_explanation'].includes(goal)?d5.goal_passes[goal]?.pass===true:d5.payload_recognized.pass;
+    return d5.pass;
+  }
   return true;
 }
 function report(out){
   const freeze=json(path.join(out,'reader-freeze.json')),map=json(path.join(out,'controller-map.json'));
+  if(freeze.manifest_file){
+    const manifestFile=path.resolve(ROOT,freeze.manifest_file);
+    assert(manifestFile.startsWith(ROOT+path.sep),'Manifest must remain inside the project');
+    assert.equal(sha(read(manifestFile)),freeze.manifest_sha256,'Frozen manifest changed');
+    assert.equal(json(manifestFile).goal_calibration_mode||JOINT,freeze.goal_calibration_mode||JOINT,'Frozen scoring mode differs from its hashed manifest');
+  }
   const calibrationFile=freeze.calibration_file?path.resolve(ROOT,freeze.calibration_file):CAL;
   assert(calibrationFile.startsWith(__dirname+path.sep),'Calibration must remain inside this experimental adapter');
   for(const[p,h]of[[__filename,freeze.adapter_sha256],[calibrationFile,freeze.calibration_sha256],[path.join(ROOT,'experiments/assessment-v2/assess.cjs'),freeze.validator_sha256],[path.join(ROOT,'experiments/development-v1/assess.cjs'),freeze.base_adapter_sha256],[path.join(ROOT,'experiments/development-v1/cases/checks.cjs'),freeze.checks_sha256],[path.join(out,'controller-map.json'),freeze.map_sha256],[path.join(out,'deterministic.json'),freeze.deterministic_sha256],[path.join(out,'chat-content-screens.json'),freeze.chat_screens_sha256]])assert.equal(sha(read(p)),h,'Frozen input changed');
@@ -106,7 +135,7 @@ function report(out){
   for(const[id,mapping]of Object.entries(map.reviewers)){
     const p=path.join(out,id,'packet.json');assert.equal(sha(read(p)),mapping.packet_sha256);const packet=json(p),file=path.join(out,'reviews',id+'.json');
     if(!fs.existsSync(file)){reviewers.push({id,status:'missing/unverified'});continue;}
-    try{const response=json(file);validate(response,packet);reviewers.push({id,status:'received',calibration:diagnose(response,mapping,packet,calibrationFile),response,raw_sha256:sha(read(file))});}catch(e){reviewers.push({id,status:'invalid/unverified',error:e.message,raw_output_retained:true});}
+    try{const response=json(file);validate(response,packet);reviewers.push({id,status:'received',calibration:diagnose(response,mapping,packet,calibrationFile,freeze.goal_calibration_mode||JOINT),response,raw_sha256:sha(read(file))});}catch(e){reviewers.push({id,status:'invalid/unverified',error:e.message,raw_output_retained:true});}
   }
   const comparisons=map.pairs.map(p=>({key:p.key,votes:reviewers.filter(r=>r.response).map(r=>{const m=map.reviewers[r.id].pairs.find(m=>m.key===p.key),judgment=r.response.review.pair_reviews.find(x=>x.pair_id===m.pair_id),notes=r.response.goal_notes.find(x=>x.pair_id===m.pair_id).goals;return {reviewer:r.id,left_source:m.left_source,right_source:m.right_source,overall_preference_descriptive:judgment.communication.preference,information:{left:judgment.left_information,right:judgment.right_information,calibration_eligible:r.calibration.eligible_claims.information},goals:Object.fromEntries(GOALS.map(g=>[g,{...notes[g],preferred_source:['left','right'].includes(notes[g].choice)?m[notes[g].choice+'_source']:notes[g].choice,claim_eligible:eligibleOnSurface(r.calibration,g,notes[g].surface)&&judgment.communication.confidence!=='low'&&notes[g].choice!=='unknown'&&notes[g].tie_basis!=='insufficient_evidence'}])),missing_evidence:judgment.missing_evidence};})}));
   const result={label:'Automated experimental assessments, not measured human comprehension',deterministic:json(path.join(out,'deterministic.json')),chat_content_screens:json(path.join(out,'chat-content-screens.json')),reviewers,comparisons,original_child_instructions:'unverified',limits:['New diagnostic eligibility is claim-specific; old four-control results and thresholds remain unchanged.','Opposite orientation/order checks sensitivity but does not establish absence of order bias.','Overall preference or shorter text does not prove every goal.','Protected files/copy and necessary technical depth are separate from ordinary-chat style.']};put(path.join(out,'assessment.json'),result);console.log(JSON.stringify({reviewers:reviewers.map(r=>({id:r.id,status:r.status,eligible:r.calibration?.eligible_claims})),real_pairs:comparisons.length}));return result;

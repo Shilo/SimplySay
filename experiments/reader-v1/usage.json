@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-4-diagnostic-preparation",
+  "status": "unit-4-local-calibration-correction-complete",
   "new_conversations": 24,
   "new_task_starts": 59,
   "starts": [
@@ -17,7 +17,7 @@
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "allocated-unit4-diagnosis",
+      "status": "completed-diagnosis-and-local-verification",
       "agent": "/root/reader_policy_challenge",
       "turns": 7,
       "max_turns": 7,
@@ -268,7 +268,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "One recorded diagnostic follow-up only; further response/reviewer work unallocated",
+  "block_reason": "Prospective per-goal correction independently verified; next response experiment still requires recorded allocation and freeze",
   "checkpoint": "experiments/reader-v1/evidence/unit3/first-pair-checkpoint.json",
   "diagnostics": [
     {
