@@ -1,0 +1,46 @@
+{
+  "frozen_before_subjects": true,
+  "source_revision": "b4bf879bb28c6a0fc8a33b2b3a7a326d659ec888",
+  "fingerprints": {
+    "experiments/final-pilot/case.json": "a10f66483885b959068cfdef34fffbaa56ef9e708ef3fc7b8a4de8a0fc9e4a9c",
+    "experiments/final-pilot/run.cjs": "1897e68529735449f985a80c621faa0e7051b4c6fe36af8d98a194081d89d308",
+    "experiments/final-pilot/assess-round.cjs": "f6c444eca79634777c73b9abb25d086f939821d964d5e88c897a7c55f2cdf308",
+    "experiments/final-pilot/allocation.json": "698e433ce148690e7bf6ecf8697fd56afa058f43551efb5db5b063cfc25e0716",
+    "docs/final-pilot-plan.md": "6a10604f38ef4cbab662bfe2bb83e47adc6bba992b56e696f63bafa00826ee5d",
+    "experiments/pilot/codex-rpc.cjs": "f23694574dd553b3345dbce56ec7183f88043b398c38e4df1261144519d64067",
+    "experiments/pilot/export-evidence.cjs": "a5bba8023a8456b6d5388406cdadefa1d1148d1e585eb8acb1c434f79f33d9fd",
+    "experiments/pilot/policy.txt": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+    "experiments/pilot/minimal.txt": "250389bbeff5250d424e317993aabeadf65bc63b574201f58d5c071d0004afb5",
+    "experiments/assessment-v2/assess.cjs": "5b3d3235146284d6e31d516bc0d8f245638ec1b8c22ee75923157f7453718732",
+    "experiments/assessment-v2/calibration-spec.json": "2aeed8457a87d49b3d6e92e034c12cabcc75dfdc6fabe272edad263c25f1c6bd",
+    "experiments/assessment-v2/results/controller-map.json": "a1e648dc9c4c1726416fefe80936f9aefd706f57f7638eb1781c6666b051198b",
+    "experiments/assessment-v2/results/review-1/packet.json": "94accd22ac9034ff5c902722d59acfd61232cc541d15b80ec6865412d213eaf5",
+    "experiments/assessment-v2/results/review-1/response-template.json": "e40afc4a049cbe4b5a40a9bc847ea0cd59db0e2b731d3573c8abc1195bba0a18",
+    "experiments/assessment-v2/results/review-2/packet.json": "6733852445ff044811d72899f510deac7d9bb779117f645b3df7cd02208a70c9",
+    "experiments/assessment-v2/results/review-2/response-template.json": "358cb51cbaae14ec281ae5d8a9abd97976a28a71a13f78ef905073f557901e18",
+    "prior-reviewed-package/.codex-plugin/plugin.json": "bdae4b8b04de1892d071d568805a17dcadf9fb86efac268b504900d42ec1f55c",
+    "prior-reviewed-package/hooks/hooks.json": "ea24207c8fe2e05bc972fb8133ae70ab86dc9a481fc793525ea98bb22e7b2a7c",
+    "prior-reviewed-package/session-start.cjs": "93019ae91bb34abdc8246e53dc09030313941d989b029a8d34d73b8bd27a41ef",
+    "prior-reviewed-package/policy.txt": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd"
+  },
+  "host": "codex-cli 0.163.0",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "order": [
+    [
+      "f22",
+      "minimal"
+    ],
+    [
+      "f20",
+      "absent"
+    ],
+    [
+      "f21",
+      "enabled"
+    ]
+  ],
+  "turns_per_conversation": 3,
+  "no_retries": true,
+  "no_native_delegation": true
+}
