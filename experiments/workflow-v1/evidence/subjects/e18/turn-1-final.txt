@@ -1,0 +1,5 @@
+Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.
+
+Wrote [findings.md](/<TASK_ROOT>/audit/findings.md) and [inventory.json](/<TASK_ROOT>/audit/inventory.json) with byte/hash results and reconciled claims. All supplied files remain unchanged.
+
+Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.

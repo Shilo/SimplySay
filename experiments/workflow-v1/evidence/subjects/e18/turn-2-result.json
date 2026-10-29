@@ -1,0 +1,17 @@
+{
+  "turn": 2,
+  "expected_thread": "thread-bfec9bc2bb388700",
+  "observed_thread": "thread-bfec9bc2bb388700",
+  "thread": "thread-bfec9bc2bb388700",
+  "started_utc": "2026-10-29T10:58:13.253Z",
+  "continuation_observed": false,
+  "failed": true,
+  "exit_code": null,
+  "error": "Included subscription permission/headroom gate; stop without paid fallback",
+  "timed_out": false,
+  "usage": null,
+  "public_message_phases": [],
+  "ended_utc": "2026-10-29T10:58:13.512Z",
+  "snapshot_issues": [],
+  "case_turn_id": "t2_practical_decision"
+}

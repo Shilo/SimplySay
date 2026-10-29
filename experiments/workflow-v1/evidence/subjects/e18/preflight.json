@@ -1,0 +1,38 @@
+{
+  "version": "codex-cli 0.165.0-alpha.1.2",
+  "condition": "absent",
+  "subscription_only": true,
+  "policy_sha256": null,
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "config_hash": "2cbad1bfb170df2bddc5fc22c26bb409f685f69d0b2f200605a7987dabfdea04",
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 94,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "installed_package": null,
+  "effective_isolation": {
+    "apps": false,
+    "multi_agent": false,
+    "agents": false,
+    "default_plugins": false
+  },
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh"
+}

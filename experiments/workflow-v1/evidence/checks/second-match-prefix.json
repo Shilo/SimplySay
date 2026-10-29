@@ -1,0 +1,23 @@
+{
+  "subjects": [
+    {
+      "id": "e18",
+      "model_turns_completed": 1,
+      "attempted_turns": 2,
+      "final_conversation_check": "fail",
+      "later_work": "unverified-pre-model-resource-stop",
+      "auth_copy_removed": true
+    },
+    {
+      "id": "e20",
+      "model_turns_completed": 1,
+      "attempted_turns": 2,
+      "final_conversation_check": "fail",
+      "later_work": "unverified-pre-model-resource-stop",
+      "auth_copy_removed": true
+    }
+  ],
+  "checks": "Only observed prefix; later required work unverified",
+  "source_and_staging_byte_checks": 44,
+  "missing_layout_checks": 4
+}

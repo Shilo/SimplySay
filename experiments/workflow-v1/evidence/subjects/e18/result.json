@@ -1,0 +1,261 @@
+{
+  "id": "e18",
+  "condition": "absent",
+  "case_id": "w2-archive-copy-audit",
+  "policy": null,
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": "thread-bfec9bc2bb388700",
+      "observed_thread": "thread-bfec9bc2bb388700",
+      "thread": "thread-bfec9bc2bb388700",
+      "started_utc": "2026-10-29T10:54:55.917Z",
+      "continuation_observed": true,
+      "failed": false,
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "last": {
+          "inputTokens": 25591,
+          "cachedInputTokens": 21504,
+          "outputTokens": 370,
+          "reasoningOutputTokens": 234,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 25961
+        },
+        "total": {
+          "inputTokens": 134300,
+          "cachedInputTokens": 107392,
+          "outputTokens": 7789,
+          "reasoningOutputTokens": 2507,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 142089
+        }
+      },
+      "quota_before": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 94,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793818132
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      },
+      "accepted_turn_id": "thread-3c9c5a5ab7cba989",
+      "native_turn_id": "thread-3c9c5a5ab7cba989",
+      "usage_snapshots": [
+        {
+          "last": {
+            "inputTokens": 10293,
+            "cachedInputTokens": 0,
+            "outputTokens": 137,
+            "reasoningOutputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 10430
+          },
+          "total": {
+            "inputTokens": 10293,
+            "cachedInputTokens": 0,
+            "outputTokens": 137,
+            "reasoningOutputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 10430
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 11066,
+            "cachedInputTokens": 10112,
+            "outputTokens": 147,
+            "reasoningOutputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 11213
+          },
+          "total": {
+            "inputTokens": 21359,
+            "cachedInputTokens": 10112,
+            "outputTokens": 284,
+            "reasoningOutputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 21643
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 12356,
+            "cachedInputTokens": 10880,
+            "outputTokens": 1222,
+            "reasoningOutputTokens": 516,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 13578
+          },
+          "total": {
+            "inputTokens": 33715,
+            "cachedInputTokens": 20992,
+            "outputTokens": 1506,
+            "reasoningOutputTokens": 516,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 35221
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 16014,
+            "cachedInputTokens": 12160,
+            "outputTokens": 1035,
+            "reasoningOutputTokens": 516,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 17049
+          },
+          "total": {
+            "inputTokens": 49729,
+            "cachedInputTokens": 33152,
+            "outputTokens": 2541,
+            "reasoningOutputTokens": 1032,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 52270
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 17385,
+            "cachedInputTokens": 15872,
+            "outputTokens": 2488,
+            "reasoningOutputTokens": 516,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 19873
+          },
+          "total": {
+            "inputTokens": 67114,
+            "cachedInputTokens": 49024,
+            "outputTokens": 5029,
+            "reasoningOutputTokens": 1548,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 72143
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 19897,
+            "cachedInputTokens": 17152,
+            "outputTokens": 1593,
+            "reasoningOutputTokens": 516,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 21490
+          },
+          "total": {
+            "inputTokens": 87011,
+            "cachedInputTokens": 66176,
+            "outputTokens": 6622,
+            "reasoningOutputTokens": 2064,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 93633
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 21698,
+            "cachedInputTokens": 19712,
+            "outputTokens": 797,
+            "reasoningOutputTokens": 209,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 22495
+          },
+          "total": {
+            "inputTokens": 108709,
+            "cachedInputTokens": 85888,
+            "outputTokens": 7419,
+            "reasoningOutputTokens": 2273,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 116128
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 25591,
+            "cachedInputTokens": 21504,
+            "outputTokens": 370,
+            "reasoningOutputTokens": 234,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 25961
+          },
+          "total": {
+            "inputTokens": 134300,
+            "cachedInputTokens": 107392,
+            "outputTokens": 7789,
+            "reasoningOutputTokens": 2507,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 142089
+          }
+        }
+      ],
+      "native_status": "completed",
+      "public_message_phases": [
+        {
+          "id": "msg_0cefe7b2fd0d1f80016ae32600ad9c819b91732db3874ada4a",
+          "phase": "commentary"
+        },
+        {
+          "id": "msg_0cefe7b2fd0d1f80016ae326337d28819babce22fce1ac843b",
+          "phase": "commentary"
+        },
+        {
+          "id": "msg_0cefe7b2fd0d1f80016ae326c196a0819ba9711dd1a47f80f2",
+          "phase": "final_answer"
+        }
+      ],
+      "ended_utc": "2026-10-29T10:58:13.196Z",
+      "snapshot_issues": [],
+      "case_turn_id": "t1_copy_audit"
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-bfec9bc2bb388700",
+      "observed_thread": "thread-bfec9bc2bb388700",
+      "thread": "thread-bfec9bc2bb388700",
+      "started_utc": "2026-10-29T10:58:13.253Z",
+      "continuation_observed": false,
+      "failed": true,
+      "exit_code": null,
+      "error": "Included subscription permission/headroom gate; stop without paid fallback",
+      "timed_out": false,
+      "usage": null,
+      "public_message_phases": [],
+      "ended_utc": "2026-10-29T10:58:13.512Z",
+      "snapshot_issues": [],
+      "case_turn_id": "t2_practical_decision"
+    }
+  ],
+  "failed": true,
+  "hook_notifications": [],
+  "observed_thread": "thread-bfec9bc2bb388700",
+  "started_thread_ids": [
+    "thread-bfec9bc2bb388700"
+  ],
+  "loading_events": [],
+  "startup_gate": {
+    "pass": true,
+    "meaning": "No owned startup in absent profile"
+  },
+  "quota_after": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 95,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "further_dispatch_blocked": true,
+  "stderr_sha256": "85602b3014267570cf4a220efb55f865ef161b00d65d9a7160bfa28d9bc102c6",
+  "stderr_bytes": 500,
+  "auth_copy_removed": true,
+  "unexpected_threads": []
+}
