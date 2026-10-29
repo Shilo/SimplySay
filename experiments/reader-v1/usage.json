@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-simplification-preparation",
+  "status": "core-preparation-complete",
   "new_conversations": 31,
   "new_task_starts": 76,
   "starts": [
@@ -311,7 +311,7 @@
       "purpose": "Diagnose exclusive-stage regression and challenge one meaningfully different full-goal mechanism before further response tests",
       "turns": 2,
       "max_turns": 2,
-      "status": "reserved-core-simplification-followup",
+      "status": "completed-core-preparation",
       "agent": "/root/full_goal_mechanism_challenge",
       "followup_purpose": "Author and challenge one original compact full-goal replacement; compare historical clauses without a novelty gate"
     },
@@ -321,7 +321,7 @@
       "purpose": "Inspect actual baseline constraints and propose at most two natural unused development conversations without forcing verbosity",
       "turns": 2,
       "max_turns": 2,
-      "status": "reserved-core-simplification-followup",
+      "status": "completed-core-preparation",
       "agent": "/root/natural_case_challenge",
       "followup_purpose": "Implement photo-advice conversation and neutral-chat W1 derivative with restrained request-derived essentials in the existing case format"
     }

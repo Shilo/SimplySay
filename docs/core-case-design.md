@@ -4,7 +4,7 @@
 
 ## D: ordinary photo advice and requested teaching
 
-`d.case.json` implements the exact three D prompts proposed in `reader-unit5-case-challenge.md`: an explanation/recommendation, a narrow contextual follow-up, then substantial teaching in chat. No brevity instruction, length target or condition-specific expectation is added. There is one preserved UTF-8 fixture, `image-notes.md`; no actual images or generated files are requested.
+`d.case.json` implements the three D prompts proposed in `reader-unit5-case-challenge.md`: an explanation/recommendation, a narrow contextual follow-up, then substantial teaching in chat. No brevity instruction, length target or condition-specific expectation is added. There is one preserved UTF-8 fixture, `image-notes.md`; no actual images or generated files are requested.
 
 The ordinary export note records an original of 4000 × 3000 pixels and a downsampled web copy of 1000 × 750, both with 300-pixels-per-inch metadata. The website accepts up to 1200 pixels on the longest edge; the display area is 10 × 7.5 inches with a stated minimum of 240 image pixels per printed inch. It explains the metadata-only operation, preserves the original and states that no actual image/sample print has been inspected. These are closed fictional production facts, not a live print-quality claim.
 
@@ -50,8 +50,8 @@ Only local JSON/hash/contract consistency checks ran; there are no response outc
 
 - Both JSON files parse with schema version 1 and three unique turn IDs each; all 13 essential records have unique IDs within their case and nonempty requirement/request-clause/location fields.
 - All 11 fixture UTF-8 SHA-256 values match their content. Preserved/captured paths are local, every preserved input is captured, expected outputs reference existing turn IDs, and exact-copy sources exist in the fixture contract.
-- D's three prompts exactly equal the earlier proposed D turns. Neither case adds the removed chat-brevity cues. D has no expected output files or executable probes.
+- D1/D2 exactly equal the earlier proposed D turns. Before freezing, root corrected only D3's grammar from 'choices that would create' to 'choices this would require'; the same aspect-ratio question and substantive essentials remain. Neither case adds the removed chat-brevity cues. D has no expected output files or executable probes.
 - W1-neutral's fixture block and expected-files/capture/objective footer equal the original serialized text verbatim. Parsed contracts also match; T1 essentials and the whole T3 turn are unchanged. The only T2 essential changes are its revised clause mapping and wording described above.
 - Original W1 is unchanged at SHA-256 `36c15a6c73ee31387f0a7330ae0225c96299032f0fc5dffe8458e51ce398186b`.
 
-Prepared case hashes: D `2845741383c12eb6f8dd32fd6504e6c8bb368345301ea9fa3865dcb0bd15eb9a`; W1-neutral `5b660228ada68459cd51becaa16eb16ac32bd951955bf19ab09ccfd9001f1603`. D fixture hash: `3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39`.
+Prepared case hashes: D `88e1ce719c2aff605ff424204db22422b6f80ff4c4c3a061620d25c0f3a3b104`; W1-neutral `5b660228ada68459cd51becaa16eb16ac32bd951955bf19ab09ccfd9001f1603`. D fixture hash: `3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39`.
