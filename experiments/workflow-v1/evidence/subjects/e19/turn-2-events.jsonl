@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-dc02b7f40687650c"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0fb7c39396c8228e016ae323af4040819b94b3487e741cf5e4","type":"agent_message","text":"No. The records show **12.1% less recorded time across seven eligible pairs** and **equal first-selection accuracy: 7/8 for both formats**.\n\nDecide whether to authorize a limited, staffed check, with its scope and acceptance criteria agreed before starting. The current evidence does not justify standardizing the guide."}}
+{"type":"turn.completed","usage":{}}
