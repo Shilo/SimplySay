@@ -38,6 +38,8 @@ Do not manually decrypt, search keys, force a hidden plaintext flag, substitute 
 
 ## Scope and exclusions
 
+Subsequent owner decision: keep native delegation verification pending and continue assessing existing output evidence. Do not repeat the blocked native test or create a different testing setup yet. The unreadable helper instructions are **unverified**, not a passing preservation result. The explicit-handoff alternative and unreminded case remain unapproved, unrun proposals.
+
 Inspected: the two owned r08 rollout files through selected public message/tool metadata fields; the previously exported child messages; original delegation prompt/fixture/check definitions; native guard source; existing controller/RPC and diagnostic records; current official hook/app-server documentation; and the specific router, tool runtime, V2 messaging, hook serialization and public-history sections cited above. Thirteen source files were downloaded from the pinned tag and hashed; downloading a file does not mean its entire contents or transitive dependencies were reviewed.
 
 Excluded: private reasoning and retained-context content; sign-in caches, environment secrets and key material; encrypted message content beyond encoding/length/hash; unrelated local projects; broader Codex storage/decryption implementations, backend services and model internals; all Claude execution; new native hook/model trials; and unrelated source files/tests. Remaining uncertainty includes future host/model plaintext behavior, possible other supported observability routes, and whether any hypothetical replacement route preserves native semantics.
