@@ -1,0 +1,19 @@
+{
+  "label":"automated assessments, not measured human comprehension",
+  "round_status":"complete; stop",
+  "decision":"specific explanation-completeness defect prevents qualification",
+  "deterministic_file_checks":{"absent":"pass","enabled":"pass","minimal":"pass"},
+  "semantic_preservation":{"absent":"omitted-essential","enabled":"omitted-essential","minimal":"omitted-essential"},
+  "shared_omission":"Turn-two explanation omits D+E remaining ineligible due to kit shortage and E timing",
+  "additional_absent_omission":"Newly eligible A+D and explicit conditional cheapest-choice conclusion",
+  "policy_caused_loss_established":false,
+  "actual_existing_agent_report_retained_exactly_in_all_conditions":true,
+  "original_incoming_child_instructions":"unverified",
+  "new_live_interagent_boundary_test":"not run",
+  "calibrated_reviewers":2,"frozen_controls_passed":8,
+  "communication_votes":{"absent_enabled":{"enabled":2},"absent_minimal":{"minimal":2},"enabled_minimal":{"tie":2}},
+  "filler_repetition_jargon_updates_dimensions":"all six real comparisons tie",
+  "opposite_orientation_normalized_choices":"agree; does not prove absence of order bias",
+  "policy_selection":"No fully qualified winner; 31-word text remains the smallest tested candidate",
+  "next_work":"Concrete design/correction decision and separately agreed release-test scope/budget; no automatic pilot round"
+}

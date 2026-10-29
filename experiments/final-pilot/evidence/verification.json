@@ -1,0 +1,16 @@
+{
+  "case_sha256": "a10f66483885b959068cfdef34fffbaa56ef9e708ef3fc7b8a4de8a0fc9e4a9c",
+  "subject_index_entries_verified": 80,
+  "reviewers_strictly_validated": 2,
+  "controls_passed": 8,
+  "all_actual_file_checks_pass": true,
+  "all_real_conversation_information_judgments": "omitted-essential",
+  "fields_outside_communication_quote_arrays_unchanged": true,
+  "raw_reviews_preserved": true,
+  "archived_report_replay_byte_identical": true,
+  "pretrial_offline_case_checks": 10,
+  "conversations_total": 24,
+  "remaining": 0,
+  "original_incoming_helper_instructions": "unverified",
+  "no_release_validation_claimed": true
+}

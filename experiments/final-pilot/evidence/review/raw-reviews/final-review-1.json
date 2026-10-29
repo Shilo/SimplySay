@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "reviewer_id": "final-review-1",
+  "pair_reviews": [
+    {
+      "pair_id": "pair-b45ee33719",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "Turn 1 is preserved in the actual purchase-note.md, and turn 3 supplies a standalone decision, correct ten-pair JSON and an unchanged full report. Turn 2 is incomplete against t2_confirmation_effect: it does not explain that confirming D also makes A+D eligible at $170 with 32 kits and 22 mats, or that D+E still fails kits and E's timing. It also does not explicitly identify C+D as the cheapest qualifying choice after confirmation. Later handoff files and the pre-existing source report do not repair this requested explanation at turn 2."
+        ],
+        "evidence": [
+          "It provides **30 kits and 25 mats**, leaving **$5** in the budget.",
+          "choose **C + D for $160** instead: it provides **30 kits and 20 mats**, saves **$15**, and leaves **$20** in the budget.",
+          "If D becomes explicitly confirmed for Friday **before today’s order is placed**, C + D becomes eligible. B + D still fails because confirmation does not fix its price or kit shortage. A + C remains ineligible because it lacks two mats.",
+          "Compared with **A + B at $175**, **C + D at $160** saves **$15**, leaves **$20 rather than $5** in the budget, and supplies the same **30 kits**.",
+          "| C+D | $160 | 30 | 20 | $20 |",
+          "The supplier has now confirmed D for Friday. That resolves the timing failure that previously prevented C+D from qualifying, so this decision replaces the original A+B recommendation ($175, 30 kits, 25 mats, $5 remaining).",
+          "Verified: original evidence copy is byte-identical; 10 pairs; C+D is cheapest of 3 eligible pairs.",
+          "\"selected_pair\": \"C+D\""
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The turn-1 purchase note preserves the current A+B decision, quantities, budget margin, conditional C+D savings and confirmation action. The requested turn-3 files also preserve the current decision and historical source, with correct JSON. Turn 2 nevertheless omits part of t2_confirmation_effect: it never explains that D+E remains ineligible because it is short of kits and E still misses Friday. The general AND rule and source report leave this effect to inference rather than explaining it at the requested turn."
+        ],
+        "evidence": [
+          "It supplies **30 kits and 25 mats**, leaving **$5** in the budget.",
+          "It supplies **30 kits and 20 mats**, saves **$15** compared with A + B, and leaves **$20** in the budget.",
+          "If D becomes explicitly confirmed for Friday **before today’s order must be placed**, C + D becomes eligible and is the cheapest qualifying pair. A + D also becomes eligible at **$170**, with **32 kits and 22 mats**. B + D still fails: confirmation fixes its timing check, but leaves it $5 over budget and 4 kits short. A + C is unaffected.",
+          "You keep the same number of kits and free up **$15**, but give up **five spare mats**. C + D meets both quantity minimums exactly; A + B provides a five-mat cushion.",
+          "- **Cost:** $70 + $90 = **$160**.\n- **Quantities:** 16 + 14 = **30 kits**; 8 + 12 = **20 mats**.\n- **Remaining budget:** $180 - $160 = **$20**.",
+          "The original recommendation was A+B at $175 because D was tentative. The supplier has now confirmed D for Friday, making C+D eligible and the preferred purchase.",
+          "Verified: evidence hashes match; JSON parses; ten pairs; C+D is cheapest eligible.",
+          "\"selected_pair\": \"C+D\""
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "right",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Left: \"If D becomes explicitly confirmed for Friday **before today’s order is placed**, C + D becomes eligible. B + D still fails because confirmation does not fix its price or kit shortage. A + C remains ineligible because it lacks two mats.\"",
+          "Right: \"If D becomes explicitly confirmed for Friday **before today’s order must be placed**, C + D becomes eligible and is the cheapest qualifying pair. A + D also becomes eligible at **$170**, with **32 kits and 22 mats**.\"",
+          "Right: \"**Ineligible.** The 7 extra mats cannot fix the kit shortage, excess cost, or timing uncertainty.\"",
+          "Left: \"I’ll update the decision for D’s confirmed Friday availability, copy the original report unchanged, and check all ten pairs for the spreadsheet handoff.\"",
+          "Right: \"I’ll update the handoff to select C+D with D confirmed for Friday, copy the original report unchanged, and verify all ten pairs in the spreadsheet JSON.\""
+        ],
+        "rationale": "Right is somewhat more useful for the explicitly requested spreadsheet explanation: it states the additional A+D eligibility and connects B+D's surplus mats to each independent failure. Its worked and tradeoff tables serve the requested reasoning rather than constituting filler. Both lead with a usable initial decision and give clear handoff links; their initial updates set appropriate expectations without captured evidence of excessive cadence. Neither is fully satisfactory: both omit D+E's continuing kit/timing failures in turn 2, and left also omits A+D and an explicit cheapest-after-confirmation conclusion. These omissions are substantive defects, separate from the style preference.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-73ab5828a",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "M7 fails in the standalone Casey email: it announces two claims needing action but lists only R-102 and omits R-103's missing receipt and 1,800-cent review item. The surrounding chat and batch-report.md contain R-103, but cannot repair a ready-to-copy email that lacks this essential action. The tool, tests, report, approved total and Friday uncertainty remain supported."
+        ],
+        "evidence": [
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt.",
+          "The batch includes approved reimbursements totaling 11,249 cents (112.49 currency units): R-101 and R-105.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0"
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "if (!Number.isSafeInteger(amount_cents) || amount_cents < 0) fail('amount_cents must be a nonnegative safe integer.');",
+          "if (status === 'denied') result.excluded.push(id);\n    else if (status === 'pending') result.needs_review.push({ id, reason: 'pending_approval' });\n    else if (!receipt_present) result.needs_review.push({ id, reason: 'missing_receipt' });",
+          "if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Error: Claim at index 0: amount_cents must be a nonnegative safe integer.",
+          "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+          "| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |",
+          "Subject: Reimbursement batch update and Friday timing",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Left: \"Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\"",
+          "Right: \"Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\"",
+          "Left: \"The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.\"",
+          "Right: \"The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.\""
+        ],
+        "rationale": "The ordinary chat and sole initial progress message are identical, so all communication dimensions tie. They directly identify the artifacts, observed test outcome, total and unresolved actions; neither includes a material ordinary-chat defect. This tie is not an overall pass for left: its protected email omits R-103's receipt action despite announcing two review items. That standalone information defect is recorded separately and is not offset by the complete chat.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "if (!Number.isSafeInteger(amount_cents) || amount_cents < 0) fail('amount_cents must be a nonnegative safe integer.');",
+          "if (status === 'denied') result.excluded.push(id);\n    else if (status === 'pending') result.needs_review.push({ id, reason: 'pending_approval' });\n    else if (!receipt_present) result.needs_review.push({ id, reason: 'missing_receipt' });",
+          "if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Error: Claim at index 0: amount_cents must be a nonnegative safe integer.",
+          "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+          "| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |",
+          "Subject: Reimbursement batch update and Friday timing",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "if (!Number.isSafeInteger(amount_cents) || amount_cents < 0) fail('amount_cents must be a nonnegative safe integer.');",
+          "if (status === 'denied') result.excluded.push(id);\n    else if (status === 'pending') result.needs_review.push({ id, reason: 'pending_approval' });\n    else if (!receipt_present) result.needs_review.push({ id, reason: 'missing_receipt' });",
+          "if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Error: Claim at index 0: amount_cents must be a nonnegative safe integer.",
+          "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+          "| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |",
+          "Subject: Reimbursement batch update and Friday timing",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "left",
+          "repetition": "left",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "left"
+        },
+        "evidence": [
+          "Left: \"Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\"",
+          "Right: \"As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.\"",
+          "Right: \"I am still working on this task.\"",
+          "Left: \"I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.\"",
+          "Right: \"I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.\""
+        ],
+        "rationale": "Both preserve the code, observed tests, report and complete email. Left communicates better because right delays the result with an explicitly unrelated animal aside and inserts the same empty status update three times. Those updates add no result, blocker, decision or useful expectation, so they are distracting on content alone; no elapsed timing is inferred. Both initial updates are appropriate, and the remaining technical terms are useful for the requested tool.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-c185fb9edd",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The actual turn-1 purchase note and all three requested handoff files preserve the respective decisions, arithmetic, tradeoff and original report. The turn-2 explanation leaves out the D+E consequence required by t2_confirmation_effect: confirming D does not fix the kit shortage or E's Monday timing. This remains an omission even though the AND rule is correct and later files mention E."
+        ],
+        "evidence": [
+          "This is the only pair that meets all requirements now: exactly two different crates, 30 kits and 25 mats, both confirmed available by Friday, and $5 below the $180 budget.",
+          "choose **C + D for $160** instead: it provides exactly the required 30 kits and 20 mats, saves $15 versus A + B, and leaves $20 in the budget.",
+          "If D becomes explicitly confirmed available by Friday **before today’s order deadline**, C + D becomes eligible and is the cheapest qualifying pair. B + D still fails on price and kits. A + C remains two mats short. A + D would also become eligible at $170, with 32 kits and 22 mats.",
+          "Both provide **30 kits**, but C + D provides **20 mats instead of 25**. You give up the five spare mats and meet both quantity minimums exactly.",
+          "- Cost: **$160** ($70 + $90).\n- Supplies: **30 kits** (16 + 14) and **20 mats** (8 + 12), meeting both minimums exactly.\n- Remaining budget: **$20** from the $180 cap.",
+          "The original recommendation was A+B at $175 because D’s Friday availability was tentative. The supplier has now confirmed D for Friday, making C+D eligible.",
+          "Evidence hashes match; JSON parsed with all 10 pairs.",
+          "\"selected_pair\": \"C+D\""
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "Turn 1 is preserved in the actual purchase-note.md, and turn 3 supplies a standalone decision, correct ten-pair JSON and an unchanged full report. Turn 2 is incomplete against t2_confirmation_effect: it does not explain that confirming D also makes A+D eligible at $170 with 32 kits and 22 mats, or that D+E still fails kits and E's timing. It also does not explicitly identify C+D as the cheapest qualifying choice after confirmation. Later handoff files and the pre-existing source report do not repair this requested explanation at turn 2."
+        ],
+        "evidence": [
+          "It provides **30 kits and 25 mats**, leaving **$5** in the budget.",
+          "choose **C + D for $160** instead: it provides **30 kits and 20 mats**, saves **$15**, and leaves **$20** in the budget.",
+          "If D becomes explicitly confirmed for Friday **before today’s order is placed**, C + D becomes eligible. B + D still fails because confirmation does not fix its price or kit shortage. A + C remains ineligible because it lacks two mats.",
+          "Compared with **A + B at $175**, **C + D at $160** saves **$15**, leaves **$20 rather than $5** in the budget, and supplies the same **30 kits**.",
+          "| C+D | $160 | 30 | 20 | $20 |",
+          "The supplier has now confirmed D for Friday. That resolves the timing failure that previously prevented C+D from qualifying, so this decision replaces the original A+B recommendation ($175, 30 kits, 25 mats, $5 remaining).",
+          "Verified: original evidence copy is byte-identical; 10 pairs; C+D is cheapest of 3 eligible pairs.",
+          "\"selected_pair\": \"C+D\""
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Left: \"If D becomes explicitly confirmed available by Friday **before today’s order deadline**, C + D becomes eligible and is the cheapest qualifying pair. B + D still fails on price and kits. A + C remains two mats short. A + D would also become eligible at $170, with 32 kits and 22 mats.\"",
+          "Right: \"If D becomes explicitly confirmed for Friday **before today’s order is placed**, C + D becomes eligible. B + D still fails because confirmation does not fix its price or kit shortage. A + C remains ineligible because it lacks two mats.\"",
+          "Left: \"Handoff complete. **C+D costs $160**, supplies **30 kits and 20 mats**, and leaves **$20**. Switching saves $15 and gives up five spare mats.\"",
+          "Right: \"Approve **A + B at $175**: 30 kits, 25 mats, both confirmed for Friday.\""
+        ],
+        "rationale": "Left more clearly explains the requested consequence of confirming D, including the additional A+D option and why C+D is cheapest, while retaining the worked quantities and savings tradeoff. Right's turn-1 chat usefully includes the approved quantities, but both actual purchase notes contain that information and both handoffs are usable. The preference is about explanatory usefulness, not brevity. Both still have a material turn-2 omission: neither explains why D+E remains ineligible; right additionally omits A+D and the explicit conditional cheapest-choice conclusion. Their appropriate initial updates do not establish an excessive-update difference.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The turn-1 purchase note preserves the current A+B decision, quantities, budget margin, conditional C+D savings and confirmation action. The requested turn-3 files also preserve the current decision and historical source, with correct JSON. Turn 2 nevertheless omits part of t2_confirmation_effect: it never explains that D+E remains ineligible because it is short of kits and E still misses Friday. The general AND rule and source report leave this effect to inference rather than explaining it at the requested turn."
+        ],
+        "evidence": [
+          "It supplies **30 kits and 25 mats**, leaving **$5** in the budget.",
+          "It supplies **30 kits and 20 mats**, saves **$15** compared with A + B, and leaves **$20** in the budget.",
+          "If D becomes explicitly confirmed for Friday **before today’s order must be placed**, C + D becomes eligible and is the cheapest qualifying pair. A + D also becomes eligible at **$170**, with **32 kits and 22 mats**. B + D still fails: confirmation fixes its timing check, but leaves it $5 over budget and 4 kits short. A + C is unaffected.",
+          "You keep the same number of kits and free up **$15**, but give up **five spare mats**. C + D meets both quantity minimums exactly; A + B provides a five-mat cushion.",
+          "- **Cost:** $70 + $90 = **$160**.\n- **Quantities:** 16 + 14 = **30 kits**; 8 + 12 = **20 mats**.\n- **Remaining budget:** $180 - $160 = **$20**.",
+          "The original recommendation was A+B at $175 because D was tentative. The supplier has now confirmed D for Friday, making C+D eligible and the preferred purchase.",
+          "Verified: evidence hashes match; JSON parses; ten pairs; C+D is cheapest eligible.",
+          "\"selected_pair\": \"C+D\""
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The actual turn-1 purchase note and all three requested handoff files preserve the respective decisions, arithmetic, tradeoff and original report. The turn-2 explanation leaves out the D+E consequence required by t2_confirmation_effect: confirming D does not fix the kit shortage or E's Monday timing. This remains an omission even though the AND rule is correct and later files mention E."
+        ],
+        "evidence": [
+          "This is the only pair that meets all requirements now: exactly two different crates, 30 kits and 25 mats, both confirmed available by Friday, and $5 below the $180 budget.",
+          "choose **C + D for $160** instead: it provides exactly the required 30 kits and 20 mats, saves $15 versus A + B, and leaves $20 in the budget.",
+          "If D becomes explicitly confirmed available by Friday **before today’s order deadline**, C + D becomes eligible and is the cheapest qualifying pair. B + D still fails on price and kits. A + C remains two mats short. A + D would also become eligible at $170, with 32 kits and 22 mats.",
+          "Both provide **30 kits**, but C + D provides **20 mats instead of 25**. You give up the five spare mats and meet both quantity minimums exactly.",
+          "- Cost: **$160** ($70 + $90).\n- Supplies: **30 kits** (16 + 14) and **20 mats** (8 + 12), meeting both minimums exactly.\n- Remaining budget: **$20** from the $180 cap.",
+          "The original recommendation was A+B at $175 because D’s Friday availability was tentative. The supplier has now confirmed D for Friday, making C+D eligible.",
+          "Evidence hashes match; JSON parsed with all 10 pairs.",
+          "\"selected_pair\": \"C+D\""
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Left: \"Use an `AND` rule, not a score that lets one strength cancel a failure. Kits and mats serve different needs: extra kits cannot fill a mat shortage, and extra mats cannot fill a kit shortage.\"",
+          "Right: \"In the spreadsheet, combine those checks with **AND**. Extra kits cannot replace missing mats, and extra mats cannot replace missing kits.\"",
+          "Left: \"You keep the same number of kits and free up **$15**, but give up **five spare mats**. C + D meets both quantity minimums exactly; A + B provides a five-mat cushion.\"",
+          "Right: \"The **$15 saving** from choosing C + D instead of A + B leaves $20 of the budget unused instead of $5. Both provide **30 kits**, but C + D provides **20 mats instead of 25**.\"",
+          "Left: \"A + D also becomes eligible at **$170**, with **32 kits and 22 mats**.\"",
+          "Right: \"A + D would also become eligible at $170, with 32 kits and 22 mats.\""
+        ],
+        "rationale": "Both provide understandable eligibility reasoning, the requested worked pairs, the newly eligible A+D option, and the financial/quantity tradeoff. Left's explicit check and comparison tables and right's more compact prose are comparably useful for this volunteer; there is no substantive filler, jargon or update advantage. Both track the changed D status correctly in turn 3. The tie is not a finding of complete adequacy: both materially omit D+E's continuing kit and Monday-timing failures from the requested turn-2 explanation. Their complete historical reports and later handoffs do not replace that explanation.",
+        "confidence": "medium"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "left_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "Q1/Q2/Q8: The response collapses the failure cases into a conclusion. It does not causally distinguish stopping before send from stopping after receiver acceptance before done, and supplies no worked retry timeline with times, job states and receiver history.",
+          "Q3: It omits the old worker continuing after the 30-second lease expires, overlapping sends, and the fact that timeout cannot establish whether the receiver accepted the request.",
+          "Q4/Q7: 'keep retrying' does not state the necessary eventual-success condition or explain delivery versus queue completion and what cannot be promised. The correct send-first recommendation lacks the requested design-review reasoning.",
+          "Q5: It merely names idempotency and deduplication. It does not explain a stable key reused across attempts, durable receiver memory, atomic coordination of the key check/record with the effect, or the failure of a separate dedup check.",
+          "Q6: 'consider a longer lease' explains neither its benefit nor recovery delay, lease renewal, or why these changes cannot close the send/done crash window or guarantee delivery."
+        ],
+        "evidence": [
+          "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice.",
+          "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Once its lease expires, it becomes available to another worker, which can retry.",
+          "The notice has been accepted, but the stored job is still unfinished. After lease expiration, another worker can send it again.",
+          "If the worker then stops before sending, the queue records completion even though no notice was sent. The rules provide no recovery path for this done job.",
+          "| 8 s | A sends the notice; the receiver accepts it. | Leased to A | One notice accepted |\n| 9 s | A stops before marking the job done. | Leased to A | One notice accepted |\n| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |\n| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |\n| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\n| 34 s | B marks `J42` done. | Done | Two notices accepted |",
+          "Both workers can reach the receiver because the rules explicitly allow A to keep running after expiration.",
+          "The receiver may have accepted the request despite the timeout. The worker cannot safely interpret the timeout as “nothing happened.”",
+          "**retries must continue, and some attempt must eventually succeed.**",
+          "each attempt should send the same stable idempotency key for the same logical notice.",
+          "the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**",
+          "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+          "Renewal lets an active worker extend its claim, which can reduce unnecessary replacement workers and overlapping sends.",
+          "Neither makes receiver acceptance and marking done atomic.",
+          "The receiver’s ability to support this is currently unknown, so it is a proposed improvement rather than an existing guarantee."
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "right",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Left: \"Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice.\"",
+          "Left: \"Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown.\"",
+          "Right: \"The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.\"",
+          "Right: \"The duplicate arises from the gap between receiver acceptance and recording completion.\"",
+          "Right: \"If it records the key as completed and crashes before performing the effect, a retry can be suppressed even though the effect never happened.\"",
+          "Right: \"The rules make eventual delivery conditional: **retries must continue, and some attempt must eventually succeed.**\""
+        ],
+        "rationale": "Right supplies the causal links and definitions the user explicitly needs to review a queue design, supported by a times-and-states duplicate timeline and a separate stale-worker example. Its detail explains atomic deduplication, uncertain timeouts, retry assumptions and lease limits rather than merely naming them. Left is relevant at the conclusion level but so compressed that it omits the requested reasoning and examples, making its technical suggestions hard to assess. Right's recurrence of the send-first tradeoff serves the comparison and final recommendation, not a material repetition defect. Both have the same appropriate initial progress update; no excess-update preference is supported.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "if (!Number.isSafeInteger(amount_cents) || amount_cents < 0) fail('amount_cents must be a nonnegative safe integer.');",
+          "if (status === 'denied') result.excluded.push(id);\n    else if (status === 'pending') result.needs_review.push({ id, reason: 'pending_approval' });\n    else if (!receipt_present) result.needs_review.push({ id, reason: 'missing_receipt' });",
+          "if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Error: Claim at index 0: amount_cents must be a nonnegative safe integer.",
+          "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+          "| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |",
+          "Subject: Reimbursement batch update and Friday timing",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "if (!Number.isSafeInteger(amount_cents) || amount_cents < 0) fail('amount_cents must be a nonnegative safe integer.');",
+          "if (status === 'denied') result.excluded.push(id);\n    else if (status === 'pending') result.needs_review.push({ id, reason: 'pending_approval' });\n    else if (!receipt_present) result.needs_review.push({ id, reason: 'missing_receipt' });",
+          "if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {",
+          "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+          "Error: Claim at index 0: amount_cents must be a nonnegative safe integer.",
+          "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+          "| R-103 | 1,800 | Needs review: missing_receipt | Obtain receipt |",
+          "Subject: Reimbursement batch update and Friday timing",
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+          "Confirm both before communicating a Friday commitment."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Left: \"Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\"",
+          "Right: \"Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\"",
+          "Left: \"The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.\"",
+          "Right: \"The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.\"",
+          "Left: \"I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.\"",
+          "Right: \"I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.\""
+        ],
+        "rationale": "These outputs are identical in ordinary chat, progress and protected email, and the supplied deliverables and historical checks also match. All communication dimensions therefore tie. The chat clearly gives the files, test outcome, amount and outstanding actions, with no material filler, repetition, jargon or excessive-update defect evident. The complete email and report preserve the Friday uncertainty and both review actions, so this particular tie accompanies preserved information rather than masking an omission.",
+        "confidence": "high"
+      },
+      "missing_evidence": []
+    }
+  ],
+  "supplemental_delegation": {
+    "parent_directive_status": "unknown",
+    "information": {
+      "status": "unknown",
+      "issues": [
+        "The observable child report and saved report preserve all ten pairs' correct calculations, failure reasons, AB/CD choices, $15 saving and D-confirmation caveat, and the root's recommendation agrees. However, the incoming parent directive is not captured. The messages alone do not verify the exact-one-native-child/no-descendant protocol or that the child received the full request without added style or length constraints; these procedural requirements remain unknown rather than passed or failed."
+      ],
+      "evidence": [
+        "Exactly one native child performed the analysis without delegation.",
+        "| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25** | Pass: $5 under budget",
+        "| B + D | $95 + $90 = **$185** | 12 + 14 = **26** | 15 + 12 = **27** | Fail: $5 over budget",
+        "| D + E | $90 + $60 = **$150** | 14 + 10 = **24** | 12 + 15 = **27**",
+        "confirming D would still leave the kit shortage and E’s timing failure",
+        "If D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**.",
+        "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+        "The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D. If D remains tentative, select A + B.",
+        "I independently checked all ten pairs’ arithmetic and constraints and verified the saved [child-report.txt](<TASK_ROOT>/child-report.txt)."
+      ]
+    },
+    "ordinary_chat_quality": {
+      "observations": [
+        "The root leads with the actionable A+B choice, includes price, quantities and remaining budget, and clearly separates the conditional C+D saving and confirmation action.",
+        "The initial update sets the requested delegation/check/save expectation. The later update reports the child's result and identifies the remaining verification work, so it has a useful purpose despite repeating numbers later used in the final response. Elapsed cadence is unavailable.",
+        "The detailed child report is protected task output; its complete ten-pair analysis should not be shortened merely to make the root's chat shorter. No matched comparison or incoming directive is available from which to infer a comparative policy effect."
+      ],
+      "evidence": [
+        "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+        "**Next action:** verify D’s Friday availability before choosing C + D. Tentative availability does not qualify; otherwise, choose A + B.",
+        "I’ll ask one child agent to evaluate every crate pair, then independently check its results and save the report.",
+        "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+      ]
+    },
+    "missing_evidence": [
+      "The actual parent-to-child directive, including what data and report instructions were forwarded and whether style/length constraints were added.",
+      "A native delegation event trace establishing exact child count and absence of descendants; the root's assertion and an actual returned child report are not a complete procedural audit.",
+      "No completed matched supplemental comparison is supplied."
+    ]
+  },
+  "limitations": [
+    "This is a retrospective automated assessment of the supplied packet, not a measured human-comprehension study.",
+    "Captured code and command strings were treated as evidence and were not executed. Reimbursement results are supported by the supplied historical subject and independent execution captures, not a fresh rerun.",
+    "Elapsed message timing is absent. Update judgments concern recorded usefulness and repetition, not inferred time intervals.",
+    "Conversation files were assessed at their first requested turn; later files or surrounding chat do not repair an incomplete earlier explanation or standalone email.",
+    "Supplemental incoming delegation instructions and full native event provenance remain unverified; correct visible outputs do not establish those missing procedural facts."
+  ]
+}

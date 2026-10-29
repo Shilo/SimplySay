@@ -1,0 +1,333 @@
+{
+  "original_sha256": "68c3e838f4df323323f6839334e0006145742214dba5cb97e7f6f55ae3ed9366",
+  "accepted_sha256": "90828332debe51123bb2a23dbf3b432f69c318b5b7924a0a36bf4982d4a05433",
+  "label_wrappers": [
+    {
+      "pair_id": "pair-b45ee33719",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-b45ee33719",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-b45ee33719",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-b45ee33719",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-b45ee33719",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-73ab5828a",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-73ab5828a",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-73ab5828a",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-73ab5828a",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-5ff3ef47e",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-c185fb9edd",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-c185fb9edd",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-c185fb9edd",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-c185fb9edd",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-188b6b2a99",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-dcf59ddf3",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "side": "Right",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "side": "Left",
+      "literal_text_changed": false
+    },
+    {
+      "pair_id": "pair-a9491d80f",
+      "side": "Right",
+      "literal_text_changed": false
+    }
+  ],
+  "existing_adapter_changes": [
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/0/communication/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/1/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/2/communication/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/3/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/4/communication/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/5/communication/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/0",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/1",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/2",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/3",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/4",
+      "conversion": "extract exact quote; rich original retained"
+    },
+    {
+      "pointer": "/pair_reviews/6/communication/evidence/5",
+      "conversion": "extract exact quote; rich original retained"
+    }
+  ],
+  "verdicts_dimensions_confidence_rationale_changed": false
+}

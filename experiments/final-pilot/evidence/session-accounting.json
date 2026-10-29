@@ -1,0 +1,18 @@
+{
+  "prior_conversations_used":18,
+  "round_conversations":[
+    {"id":"f19","role":"independent-case-author-and-verifier","count":1},
+    {"id":"f22","role":"minimal-subject","count":1,"observed_turns":3},
+    {"id":"f20","role":"absent-subject","count":1,"observed_turns":3},
+    {"id":"f21","role":"enabled-subject","count":1,"observed_turns":3},
+    {"id":"f23","role":"fresh-blinded-reviewer-one","count":1},
+    {"id":"f24","role":"fresh-blinded-reviewer-two","count":1}
+  ],
+  "combined_used":24,"authorized_ceiling":24,"remaining":0,
+  "new_native_children":0,"unexpected_conversations":0,"subject_failures":0,
+  "replacement_or_diagnostic_conversations":0,
+  "direct_claude_execution":false,"new_paid_services":false,
+  "temporary_auth_copies_remaining":0,
+  "weekly_account_meter":{"before_first_subject":70,"after_last_subject":71,"isolated_pilot_cost_measurement":false},
+  "further_round_authorized":false,"production_and_publication":"hold"
+}

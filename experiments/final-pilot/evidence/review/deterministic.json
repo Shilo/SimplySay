@@ -1,0 +1,590 @@
+{
+  "q1": {
+    "deterministic_pass": true,
+    "details": [
+      {
+        "name": "all_three_turns",
+        "status": "pass",
+        "note": "An incomplete/failed conversation is not a successful matched cell"
+      },
+      {
+        "name": "t1_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t1_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t1_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t1_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "t2_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t2_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t2_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t2_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "t3_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t3_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t3_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t3_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "purchase-note.md exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/decision.md exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/analyst-report.txt exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/pair-checks.json exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "full_original_agent_report_retained",
+        "status": "pass",
+        "note": "Raw-byte hash of exact requested copy; not evidence of new routing"
+      },
+      {
+        "name": "pair_json_parse",
+        "status": "pass",
+        "note": "Actual saved top-level structured object"
+      },
+      {
+        "name": "selected_pair",
+        "status": "pass",
+        "note": "Current confirmed-D decision"
+      },
+      {
+        "name": "ten_unique_pairs",
+        "status": "pass",
+        "note": "No silently omitted pair"
+      },
+      {
+        "name": "pair A+B",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+C",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+C",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair C+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair C+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair D+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "temporary_auth_removed",
+        "status": "pass",
+        "note": "Subscription copy must not remain"
+      }
+    ],
+    "actual_file_hashes": [
+      {
+        "turn": 1,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "ee9ef8447af93bd2f86f84aea4f96906abf0f37ff2d311ab93e1dac70fd3aff2"
+        },
+        "snapshot_observed": true
+      },
+      {
+        "turn": 2,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "ee9ef8447af93bd2f86f84aea4f96906abf0f37ff2d311ab93e1dac70fd3aff2"
+        },
+        "snapshot_observed": true
+      },
+      {
+        "turn": 3,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "ee9ef8447af93bd2f86f84aea4f96906abf0f37ff2d311ab93e1dac70fd3aff2",
+          "handoff/decision.md": "6b0c0b63bf72066d0cc5cb841b451245409c32522aebb35a0f9fffc47ddaab41",
+          "handoff/analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "handoff/pair-checks.json": "8b7e6bbe5582ea5800b48c177bedfb5cf111448848dc92c4c209e4cfa8597db6"
+        },
+        "snapshot_observed": true
+      }
+    ],
+    "semantic_essentials": "Independent review required, not supplied by lexical hits",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "q2": {
+    "deterministic_pass": true,
+    "details": [
+      {
+        "name": "all_three_turns",
+        "status": "pass",
+        "note": "An incomplete/failed conversation is not a successful matched cell"
+      },
+      {
+        "name": "t1_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t1_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t1_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t1_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "t2_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t2_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t2_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t2_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "t3_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t3_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t3_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t3_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "purchase-note.md exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/decision.md exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/analyst-report.txt exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/pair-checks.json exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "full_original_agent_report_retained",
+        "status": "pass",
+        "note": "Raw-byte hash of exact requested copy; not evidence of new routing"
+      },
+      {
+        "name": "pair_json_parse",
+        "status": "pass",
+        "note": "Actual saved top-level structured object"
+      },
+      {
+        "name": "selected_pair",
+        "status": "pass",
+        "note": "Current confirmed-D decision"
+      },
+      {
+        "name": "ten_unique_pairs",
+        "status": "pass",
+        "note": "No silently omitted pair"
+      },
+      {
+        "name": "pair A+B",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+C",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+C",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair C+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair C+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair D+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "temporary_auth_removed",
+        "status": "pass",
+        "note": "Subscription copy must not remain"
+      }
+    ],
+    "actual_file_hashes": [
+      {
+        "turn": 1,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "8fb2d87ae31ef6b9d8d8b275ee9158c96560d36bb58190e19e5815c41324215d"
+        },
+        "snapshot_observed": true
+      },
+      {
+        "turn": 2,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "8fb2d87ae31ef6b9d8d8b275ee9158c96560d36bb58190e19e5815c41324215d"
+        },
+        "snapshot_observed": true
+      },
+      {
+        "turn": 3,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "8fb2d87ae31ef6b9d8d8b275ee9158c96560d36bb58190e19e5815c41324215d",
+          "handoff/decision.md": "33380d076cf6181ba9fa49a9fee9f16ed100811d632819d236974d8038ebde2e",
+          "handoff/analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "handoff/pair-checks.json": "8b7e6bbe5582ea5800b48c177bedfb5cf111448848dc92c4c209e4cfa8597db6"
+        },
+        "snapshot_observed": true
+      }
+    ],
+    "semantic_essentials": "Independent review required, not supplied by lexical hits",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "q3": {
+    "deterministic_pass": true,
+    "details": [
+      {
+        "name": "all_three_turns",
+        "status": "pass",
+        "note": "An incomplete/failed conversation is not a successful matched cell"
+      },
+      {
+        "name": "t1_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t1_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t1_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t1_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "t2_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t2_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t2_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t2_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "t3_event_capture",
+        "status": "pass",
+        "note": "Malformed/missing capture remains unverified"
+      },
+      {
+        "name": "t3_final_capture",
+        "status": "pass",
+        "note": "Final must be observed, not inferred from a summary"
+      },
+      {
+        "name": "t3_same_conversation",
+        "status": "pass",
+        "note": "Explicit host thread observation"
+      },
+      {
+        "name": "t3_original_fixture",
+        "status": "pass",
+        "note": "Actual supplied source work remains intact"
+      },
+      {
+        "name": "purchase-note.md exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/decision.md exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/analyst-report.txt exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "handoff/pair-checks.json exists at requested turn",
+        "status": "pass",
+        "note": "Actual turn snapshot, no later backfill"
+      },
+      {
+        "name": "full_original_agent_report_retained",
+        "status": "pass",
+        "note": "Raw-byte hash of exact requested copy; not evidence of new routing"
+      },
+      {
+        "name": "pair_json_parse",
+        "status": "pass",
+        "note": "Actual saved top-level structured object"
+      },
+      {
+        "name": "selected_pair",
+        "status": "pass",
+        "note": "Current confirmed-D decision"
+      },
+      {
+        "name": "ten_unique_pairs",
+        "status": "pass",
+        "note": "No silently omitted pair"
+      },
+      {
+        "name": "pair A+B",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+C",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair A+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+C",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair B+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair C+D",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair C+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "pair D+E",
+        "status": "pass",
+        "note": "All exact values and booleans, not source-string presence"
+      },
+      {
+        "name": "temporary_auth_removed",
+        "status": "pass",
+        "note": "Subscription copy must not remain"
+      }
+    ],
+    "actual_file_hashes": [
+      {
+        "turn": 1,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "5df6166d7820d8f75c21f2c01a1bd303e4943873e7fe9c3f675e36781ef60ce8"
+        },
+        "snapshot_observed": true
+      },
+      {
+        "turn": 2,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "5df6166d7820d8f75c21f2c01a1bd303e4943873e7fe9c3f675e36781ef60ce8"
+        },
+        "snapshot_observed": true
+      },
+      {
+        "turn": 3,
+        "hashes": {
+          "analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "purchase-note.md": "5df6166d7820d8f75c21f2c01a1bd303e4943873e7fe9c3f675e36781ef60ce8",
+          "handoff/decision.md": "e1a10e1f6b88ede7fea8ed8d03950c10b6de47e71ccdebd08d70fef0bb0f89cd",
+          "handoff/analyst-report.txt": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+          "handoff/pair-checks.json": "8b7e6bbe5582ea5800b48c177bedfb5cf111448848dc92c4c209e4cfa8597db6"
+        },
+        "snapshot_observed": true
+      }
+    ],
+    "semantic_essentials": "Independent review required, not supplied by lexical hits",
+    "original_incoming_child_instructions": "unverified"
+  }
+}
