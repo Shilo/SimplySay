@@ -1,0 +1,7 @@
+Saved [methods.md](<TASK_ROOT>/handoff/methods.md) with reproducible calculations, the independence reasoning, P5/P7 walkthroughs, and a proposed next-check plan. [original-summary.md](<TASK_ROOT>/handoff/original-summary.md) is a byte-for-byte copy of the full draft. All existing files remain unchanged.
+
+Committee message to copy; **not sent**:
+
+> We will keep the current reference card in place while planning a limited staffed check. The corrected evidence comes from four volunteers completing eight paired tasks, with seven complete timing pairs. Across those seven pairs, total time fell from 910 to 800 seconds—a 110-second saving, or 12.1%. The guide was faster in five pairs and slower in two. First-selection accuracy was 7/8 for both formats, so no accuracy improvement was observed.
+>
+> The claim of “30 percent faster and more accurate” is unsupported. Repeated tasks, coaching, one missing timing and the small single-session sample leave uncertainty about the guide’s effect and ordinary-work performance. We will agree the next check’s scope and review criteria before collecting further observations. No new check has started; standardization remains a later decision.

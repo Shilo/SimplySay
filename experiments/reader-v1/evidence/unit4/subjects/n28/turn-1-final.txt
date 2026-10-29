@@ -1,0 +1,5 @@
+Recommend a **limited, staffed next check before standardizing**. The audited time saving is **12.09% across seven complete pairs**, with first-selection accuracy unchanged at **7/8 for both formats**. Four volunteers, repeated tasks, coaching and missing timing limit the conclusion.
+
+Written: [findings and corrected summary](<TASK_ROOT>/audit/findings.md) and [protocol metrics](<TASK_ROOT>/audit/metrics.json).
+
+All supplied sources remain unchanged. Before a next check, the coordinator needs to agree on its scope and acceptance criteria. No study was started.

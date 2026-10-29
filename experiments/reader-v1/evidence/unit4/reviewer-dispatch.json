@@ -1,0 +1,31 @@
+{
+  "attempt_ids": [
+    "n30",
+    "n31"
+  ],
+  "new_model_conversations": 2,
+  "new_task_starts": 2,
+  "fork_turns": "none",
+  "model_effort": "unknown",
+  "brief_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
+  "signature": "validate(wrapper, packet): parsed JSON objects, returns true or throws",
+  "scoring": "independent-goals-v1 selected before trials; no retrospective change",
+  "rows": [
+    {
+      "reviewer": "reader-unit4-review-1",
+      "packet_sha256": "044205892aafe5f3d6c31d9a0423a271a8cc662450b057dea4e41918b6ef5561",
+      "bytes": 658765,
+      "pairs": 11,
+      "treatment_labels_exposed": false,
+      "common_host_facts_sha256": "45468c8a16ccd5c877b8d64ed1f9f4d73025f1d99dcd267832c0d151b0bbb154"
+    },
+    {
+      "reviewer": "reader-unit4-review-2",
+      "packet_sha256": "43ad011fb8386bc28a26ef24d203e89d3cd24e81e6cd38f752c5d12619138651",
+      "bytes": 658765,
+      "pairs": 11,
+      "treatment_labels_exposed": false,
+      "common_host_facts_sha256": "45468c8a16ccd5c877b8d64ed1f9f4d73025f1d99dcd267832c0d151b0bbb154"
+    }
+  ]
+}

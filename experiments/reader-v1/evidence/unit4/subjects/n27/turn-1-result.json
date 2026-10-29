@@ -1,0 +1,190 @@
+{
+  "turn": 1,
+  "expected_thread": "thread-fa72a754d36f8ed3",
+  "observed_thread": "thread-fa72a754d36f8ed3",
+  "thread": "thread-fa72a754d36f8ed3",
+  "started_utc": "2026-10-29T18:19:44.812Z",
+  "continuation_observed": true,
+  "failed": false,
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "last": {
+      "inputTokens": 22641,
+      "cachedInputTokens": 22400,
+      "outputTokens": 492,
+      "reasoningOutputTokens": 354,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 23133
+    },
+    "total": {
+      "inputTokens": 114387,
+      "cachedInputTokens": 87552,
+      "outputTokens": 7889,
+      "reasoningOutputTokens": 2024,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 122276
+    }
+  },
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 5,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "accepted_turn_id": "thread-2de835ce56557251",
+  "native_turn_id": "thread-2de835ce56557251",
+  "usage_snapshots": [
+    {
+      "last": {
+        "inputTokens": 10300,
+        "cachedInputTokens": 0,
+        "outputTokens": 152,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 10452
+      },
+      "total": {
+        "inputTokens": 10300,
+        "cachedInputTokens": 0,
+        "outputTokens": 152,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 10452
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 10766,
+        "cachedInputTokens": 10240,
+        "outputTokens": 220,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 10986
+      },
+      "total": {
+        "inputTokens": 21066,
+        "cachedInputTokens": 10240,
+        "outputTokens": 372,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 21438
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 13003,
+        "cachedInputTokens": 10752,
+        "outputTokens": 1447,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 14450
+      },
+      "total": {
+        "inputTokens": 34069,
+        "cachedInputTokens": 20992,
+        "outputTokens": 1819,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 35888
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 16213,
+        "cachedInputTokens": 14208,
+        "outputTokens": 3158,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 19371
+      },
+      "total": {
+        "inputTokens": 50282,
+        "cachedInputTokens": 35200,
+        "outputTokens": 4977,
+        "reasoningOutputTokens": 1032,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 55259
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 19395,
+        "cachedInputTokens": 8832,
+        "outputTokens": 1872,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 21267
+      },
+      "total": {
+        "inputTokens": 69677,
+        "cachedInputTokens": 44032,
+        "outputTokens": 6849,
+        "reasoningOutputTokens": 1548,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 76526
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 22069,
+        "cachedInputTokens": 21120,
+        "outputTokens": 548,
+        "reasoningOutputTokens": 122,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 22617
+      },
+      "total": {
+        "inputTokens": 91746,
+        "cachedInputTokens": 65152,
+        "outputTokens": 7397,
+        "reasoningOutputTokens": 1670,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 99143
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 22641,
+        "cachedInputTokens": 22400,
+        "outputTokens": 492,
+        "reasoningOutputTokens": 354,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 23133
+      },
+      "total": {
+        "inputTokens": 114387,
+        "cachedInputTokens": 87552,
+        "outputTokens": 7889,
+        "reasoningOutputTokens": 2024,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 122276
+      }
+    }
+  ],
+  "native_status": "completed",
+  "public_message_phases": [
+    {
+      "id": "msg_0789684434fac991016ae38e438868819bae7977bf6040ba7e",
+      "phase": "commentary"
+    },
+    {
+      "id": "msg_0789684434fac991016ae38e791ce4819b88f70145860c6a95",
+      "phase": "commentary"
+    },
+    {
+      "id": "msg_0789684434fac991016ae38ee9b668819b8facfa26a452ca39",
+      "phase": "final_answer"
+    }
+  ],
+  "ended_utc": "2026-10-29T18:22:35.735Z",
+  "snapshot_issues": [],
+  "case_turn_id": "t1_evidence_audit"
+}

@@ -1,0 +1,5 @@
+FINDING-PARTS GUIDE
+1. Choose the part category on the aisle map.
+2. Find the part name inside that category.
+3. Follow the listed bin code and check the physical label.
+4. Ask the shift helper if the label is unclear.

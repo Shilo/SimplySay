@@ -1,0 +1,4 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
+
+
+Please audit the finding-parts guide study in this local pack before I use its draft summary. Reconcile the protocol, observations and records, independently check the calculations, and write audit/findings.md plus audit/metrics.json in the protocol format. Tell me whether the evidence supports standardizing the guide now or a limited next check. Leave all supplied sources unchanged. Keep detailed findings and routine testing notes in the files; keep chat focused on the decision and anything I need to resolve. Do not contact volunteers or start another study.

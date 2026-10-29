@@ -1,0 +1,9 @@
+Saved [methods.md](<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, interpretation limits and a proposed next-check plan. Saved the full draft unchanged as [original-summary.md](<TASK_ROOT>/handoff/original-summary.md). All existing files remain unchanged.
+
+Copyable committee message—not sent:
+
+> We will keep the current reference card in place while planning a limited, staffed check. The audit does not support the draft claim that the reorganized guide is 30% faster and more accurate.
+>
+> Four volunteers contributed eight paired lookup tasks. Seven pairs had usable times: recorded total time fell from 910 to 800 seconds, a reduction of 12.1%. The guide was faster in five pairs and slower in two. Both formats had 7/8 correct first selections; later coaching does not change those outcomes. The pair with a missing guide time remains included in accuracy.
+>
+> The small group, repeated tasks and coaching leave practice effects and ordinary-work performance uncertain. Before scheduling a limited check, we need to agree its scope, staffing, measurement rules and review criteria. No new check has started, and the evidence does not yet support standardization.

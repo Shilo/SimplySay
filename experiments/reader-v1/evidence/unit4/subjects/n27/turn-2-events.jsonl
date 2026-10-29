@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-fa72a754d36f8ed3"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0789684434fac991016ae38ef28ec8819b866ba8487dd76f5a","type":"agent_message","text":"No—the evidence supports neither “30% faster” nor “more accurate.” Recorded lookup time was 12.1% lower across seven usable pairs; both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."}}
+{"type":"turn.completed","usage":{}}

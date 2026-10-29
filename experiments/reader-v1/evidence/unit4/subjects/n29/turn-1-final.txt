@@ -1,0 +1,5 @@
+Recommend a **limited staffed check before standardizing**. Seven complete timing pairs show a **12.1% saving**, with five faster and two slower. First-selection accuracy was **7/8 for both formats**. The draft overstates the evidence.
+
+Created [findings.md](<TASK_ROOT>/audit/findings.md), including a corrected summary, and [metrics.json](<TASK_ROOT>/audit/metrics.json) in the protocol format.
+
+All supplied sources remain unchanged. No further study was started.

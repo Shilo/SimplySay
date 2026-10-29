@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-4-ready",
-  "new_conversations": 24,
-  "new_task_starts": 61,
+  "status": "unit-4-review",
+  "new_conversations": 29,
+  "new_task_starts": 72,
   "starts": [
     {
       "id": "n01",
@@ -256,6 +256,54 @@
       "status": "completed-partial-calibration-d2-d5",
       "purpose": "Independent blinded assessment of saved stopped pair, all goals and protected work; no response rerun",
       "agent": "/root/reader_unit3_blind_2"
+    },
+    {
+      "id": "n27",
+      "role": "study-absent-exclusive-fallback",
+      "condition": "absent",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T18:19:43.782Z"
+    },
+    {
+      "id": "n28",
+      "role": "study-enabled-exclusive-fallback",
+      "condition": "enabled",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T18:20:04.642Z"
+    },
+    {
+      "id": "n29",
+      "role": "study-disabled-exclusive-fallback",
+      "condition": "disabled",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T18:31:46.806Z"
+    },
+    {
+      "id": "n30",
+      "role": "fresh-blinded-exclusive-status-reviewer-one",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "running-review",
+      "purpose": "Independent blinded assessment of all three saved conditions with prospective goal-specific controls and shared host facts",
+      "agent": "/root/reader_unit4_blind_1"
+    },
+    {
+      "id": "n31",
+      "role": "fresh-blinded-exclusive-status-reviewer-reversed",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "running-review",
+      "purpose": "Independent blinded assessment of all three saved conditions with prospective goal-specific controls and shared host facts",
+      "agent": "/root/reader_unit4_blind_2"
     }
   ],
   "new_paid_services": false,
@@ -268,12 +316,9 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": false,
-  "allowed_subjects": [
-    "n27",
-    "n28"
-  ],
-  "block_reason": null,
+  "dispatch_blocked": true,
+  "allowed_subjects": [],
+  "block_reason": "All planned responses complete; only the allocated two fresh blinded reviews pending",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {

@@ -1,0 +1,12 @@
+{
+  "eligible_time_pairs": 7,
+  "reference_seconds": 910,
+  "guide_seconds": 800,
+  "time_saved_seconds": 110,
+  "faster_pairs": 5,
+  "slower_pairs": 2,
+  "tied_pairs": 0,
+  "accuracy_pairs": 8,
+  "reference_correct": 7,
+  "guide_correct": 7
+}

@@ -1,0 +1,44 @@
+{
+  "version": "codex-cli 0.165.0-alpha.1.2",
+  "condition": "disabled",
+  "subscription_only": true,
+  "policy_sha256": "a527fd6c4993e31bf77e2458b889aefe1ada5e6ccd354724d72c30c7c2969a5e",
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "config_hash": "784d94999815375a46249edc8aa299a5dc2d2ea45b10143ce9faa3defd3dc650",
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 5,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "installed_roots_verified": 1,
+  "installed_package": {
+    ".codex-plugin/plugin.json": "bdae4b8b04de1892d071d568805a17dcadf9fb86efac268b504900d42ec1f55c",
+    "hooks/hooks.json": "ea24207c8fe2e05bc972fb8133ae70ab86dc9a481fc793525ea98bb22e7b2a7c",
+    "session-start.cjs": "93019ae91bb34abdc8246e53dc09030313941d989b029a8d34d73b8bd27a41ef",
+    "policy.txt": "a527fd6c4993e31bf77e2458b889aefe1ada5e6ccd354724d72c30c7c2969a5e"
+  },
+  "effective_isolation": {
+    "apps": false,
+    "multi_agent": false,
+    "agents": false,
+    "default_plugins": false
+  },
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh"
+}

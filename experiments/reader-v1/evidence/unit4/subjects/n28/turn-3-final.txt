@@ -1,0 +1,9 @@
+Saved the [methods handoff](<TASK_ROOT>/handoff/methods.md), including reproducible calculations, P5/P7 examples and the proposed next-check plan. The [original draft](<TASK_ROOT>/handoff/original-summary.md) is preserved byte for byte. All existing files remain unchanged.
+
+[Committee message](<TASK_ROOT>/handoff/committee-message.md), ready to copy and not sent:
+
+> We will keep the current reference card in place while planning a limited, staffed check of the reorganized finding-parts guide. The earlier draft overstated the evidence: it does not support saying the guide is 30 percent faster or more accurate.
+>
+> Four volunteers contributed eight task pairs. Seven pairs had both timing measurements. Across those matched pairs, recorded time totaled 910 seconds with the reference card and 800 seconds with the guide, a reduction of 110 seconds (12.09%). The guide was faster in five pairs and slower in two. First-selection accuracy was 7 out of 8 for each format. Later coaching does not turn an incorrect first selection into a correct one, and the missing guide time does not remove the retained accuracy observation.
+>
+> These results suggest a local time benefit, but repeated tasks, practice, coaching, one missing time and the small group leave uncertainty about performance in ordinary work. Equal observed accuracy does not establish that the formats are equally accurate. We will agree on the next check’s scope, recording rules and criteria for accuracy and usability before it starts. Standardization remains a later decision. No further study has been launched.

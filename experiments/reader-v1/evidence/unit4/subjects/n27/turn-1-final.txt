@@ -1,0 +1,8 @@
+Recommend a **limited, staffed next check before standardizing**. The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats. The draft overstates the evidence.
+
+Written:
+
+- [findings.md](<TASK_ROOT>/audit/findings.md), including a corrected summary.
+- [metrics.json](<TASK_ROOT>/audit/metrics.json), in the protocol format.
+
+All supplied sources remain unchanged.
