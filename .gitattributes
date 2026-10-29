@@ -7,4 +7,5 @@
 /experiments/pilot/evidence/** -text -whitespace
 /experiments/assessment-v2/*.cjs text eol=lf
 /experiments/assessment-v2/*.json text eol=lf
+/docs/automated-evaluation.md text eol=lf
 /experiments/assessment-v2/results/** -text -whitespace
