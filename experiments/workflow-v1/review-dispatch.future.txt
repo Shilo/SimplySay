@@ -1,0 +1,8 @@
+Future dispatch clarification only; not served in the completed replication and not a regrade.
+Reuse experiments/development-v1/review-dispatch.txt and the unchanged packet/schema/validator/calibration.
+
+Evidence and issues are both STRING arrays, with different purposes:
+- Evidence: exact literal quotations from the relevant displayed sample. Do not paraphrase or add side labels inside a quotation.
+- Issues: your explanatory descriptions of missing or incorrect required content. Name the specific missing information and affected deliverable; these descriptions do not need to be literal quotations.
+
+Preserve independent substantive judgments, ties, uncertainty and missing evidence. Do not move or edit completed judgments to obtain a passing calibration result. Validate format and exact evidence quotes within the originally authorized reviewer task. This clarification adds no reviewer, retry, live subject, evaluation dimension or changed grading threshold.

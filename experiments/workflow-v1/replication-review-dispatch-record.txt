@@ -1,0 +1,5 @@
+Actual common wording served to both fresh reviewers, preserved after dispatch:
+
+"Fill every pair in the strict template (one real pair and four retained controls). Evidence/issues are STRING arrays: exact literal sample substrings only, no side labels/paraphrases/extra fields."
+
+This controller instruction was too restrictive for the unchanged contract. Evidence arrays need exact quotes; issues arrays need explanatory descriptions of omissions. Both reviewers placed the specific missing receipt explanation in their rationale but used only an excerpt in issues, so both raw reviews failed the frozen omission-control gate. Full packets, raw judgments and the failed calibration results are retained. This record does not replace or amend what the reviewers received.
