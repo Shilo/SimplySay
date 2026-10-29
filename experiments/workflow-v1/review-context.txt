@@ -1,0 +1,9 @@
+Record of the common neutral context supplied to both existing reviewer conversations at dispatch, before judgments. Each received its own packet/template/output paths only. Existing experiments/development-v1/review-dispatch.txt instructions and the unchanged validator/schema/controls remain the assessment basis.
+
+Both subjects share host requirements for an opening on tool work and periodic updates; timing receipt is not desktop notifications, and missing updates alone is not a success. Judge reader value of authored content separately from required presence. Do not assume every update was required.
+
+One matched case has only its initial model turn completed; later attempted turns stopped at a common pre-model resource guard. Missing responses/work are UNKNOWN, never passing or proof that a model chose concision. Review available evidence but do not grade unobserved repair/follow-up as completed. The packet retains failures; no scoring criteria were changed.
+
+Full request-derived essential information and actual work are assessed separately from communication quality. Overlapping transcript views and repeated snapshots are not extra user-visible messages. Requested useful detail, technical precision and copy-ready content are protected. Ties, disagreement and missing evidence are legitimate; fewer words/messages alone do not establish improvement. The output is an automated assessment, not measured human comprehension.
+
+Each reviewer was assigned this third/final task in its existing counted context, with no helper, model session, external service, policy/reveal-map access or source editing. Validation and literal-quote checking were required before completion. Controls are retained from earlier review rounds and therefore are not novel holdout calibration examples.

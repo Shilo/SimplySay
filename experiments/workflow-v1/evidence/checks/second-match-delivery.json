@@ -1,0 +1,84 @@
+{
+  "evidence": "Supported persisted context only; no wire or model attention proof",
+  "records": [
+    {
+      "id": "e18",
+      "condition": "absent",
+      "developer_messages": [
+        {
+          "line": 4,
+          "role": "developer",
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "characters": 21546,
+          "exact_authored_policy": false
+        },
+        {
+          "line": 5,
+          "role": "developer",
+          "sha256": "08faf10efd7f1bd13809bdbfb9b31815e2db48f2c95c0dd3fedca0651f750efa",
+          "characters": 3619,
+          "exact_authored_policy": false
+        }
+      ],
+      "requested_user_turns": [
+        {
+          "line": 10,
+          "turn": 1,
+          "role": "user",
+          "sha256": "1839466ee1a1eb4dba4ae30aa21545270e9f9ac85aa954c0389a01f8ea3b5755",
+          "exact_captured_request": true
+        }
+      ],
+      "top_level_compaction_records": 0,
+      "outgoing_model_requests": "unverified",
+      "reasoning_content": "excluded",
+      "followup_delivery": "unverified-pre-model-resource-stop",
+      "source_journal_sha256": [
+        "1328e07147de2f5b9792ccfbd7c666afa30af68fcee11316d98bf72ae50adb49"
+      ]
+    },
+    {
+      "id": "e20",
+      "condition": "enabled",
+      "developer_messages": [
+        {
+          "line": 4,
+          "role": "developer",
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "characters": 21546,
+          "exact_authored_policy": false
+        },
+        {
+          "line": 5,
+          "role": "developer",
+          "sha256": "19aae64465250cb5d41cf6df54e2bd540342230d0110f7af3a65fdca67847ff4",
+          "characters": 3619,
+          "exact_authored_policy": false
+        },
+        {
+          "line": 10,
+          "role": "developer",
+          "sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+          "characters": 837,
+          "exact_authored_policy": true
+        }
+      ],
+      "requested_user_turns": [
+        {
+          "line": 11,
+          "turn": 1,
+          "role": "user",
+          "sha256": "1839466ee1a1eb4dba4ae30aa21545270e9f9ac85aa954c0389a01f8ea3b5755",
+          "exact_captured_request": true
+        }
+      ],
+      "top_level_compaction_records": 0,
+      "outgoing_model_requests": "unverified",
+      "reasoning_content": "excluded",
+      "followup_delivery": "unverified-pre-model-resource-stop",
+      "source_journal_sha256": [
+        "0563eaf9f7aa4d0bd34d729285e30fcccc19d771e79c1980aaacd428b892883e"
+      ]
+    }
+  ]
+}
