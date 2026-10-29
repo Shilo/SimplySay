@@ -1,0 +1,32 @@
+{
+  "label": "Offline preparation only, not model results",
+  "authorization": "docs/reader-development-authorization.md",
+  "candidate_sha256": "8c22c75424018bc8ccb1cddbfc0d2bc715b7bf94eb1a0672ad9217e5ab968bc5",
+  "cases": {
+    "a": "8429c5b999a43fa11ddc4587b0c15df55925f5a7fb23c30ff11a29e15388b3e1",
+    "b": "53cf6bf9ed34beae9b1d6d87778afd1ccb2aff326d4ceaa4833ea5c1ec1b054f"
+  },
+  "source_files": {
+    "experiments/reader-v1/review.cjs": "80f85b40a662f757797a6de91f79a0cc6cce4c42e8d0f970f020ed88d9467c5f",
+    "experiments/reader-v1/calibration.json": "f8ee4e71efd6d9b6c459ea0fda80c30dbb3ed6601dbbc669bb39295f54b9f828",
+    "experiments/workflow-v1/run.cjs": "e2f2fc531713109fe092d8bf3dc88bb0e4295cd5ff9bfc888ad4bef82a70c04e"
+  },
+  "synthetic_evaluation_checks": 47,
+  "synthetic_runner_checks": 17,
+  "existing_capture_checks": 18,
+  "existing_resume_scenarios": 7,
+  "historical_files_unchanged": 287,
+  "independent_reports": [
+    "docs/reader-instruction-challenge.md",
+    "docs/reader-case-evaluation-challenge.md",
+    "docs/reader-reference-delta.md",
+    "docs/reader-runner-verification.md",
+    "docs/reader-evaluation-verification.md"
+  ],
+  "new_development_conversations": 3,
+  "new_task_starts": 6,
+  "native_trials_so_far": 0,
+  "sealed_cases_opened": false,
+  "production": "hold",
+  "publication": "hold"
+}

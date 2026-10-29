@@ -1,0 +1,77 @@
+// Offline contract/oracle checks only; all graded examples here are synthetic.
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const review=require('./review.cjs');
+const ROOT=path.resolve(__dirname,'../..'),OUT=path.join(ROOT,'.local','reader-review-smoke-'+Date.now()),OLD=path.join(__dirname,'../workflow-v1/evidence/replication'),sha=b=>crypto.createHash('sha256').update(b).digest('hex'),read=p=>fs.readFileSync(p),j=p=>JSON.parse(read(p));
+const copy=x=>structuredClone(x),put=(p,x)=>{fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,typeof x==='string'?x:JSON.stringify(x,null,2)+'\n');};
+const simpleNote=(choice,surface,evidence=[])=>({choice,surface,tie_basis:choice==='tie'?'both_satisfactory':choice==='unknown'?'insufficient_evidence':null,rationale:'Synthetic contract fixture; no live grading result.',evidence});
+let checks=0;const ok=(name,fn)=>{fn();checks++;};
+const a=j(path.join(__dirname,'cases/a.case.json')),b=j(path.join(__dirname,'cases/b.case.json'));
+for(const c of [a,b])for(const f of c.fixture_files)assert.equal(sha(Buffer.from(f.content)),f.sha256);
+ok('three turns per case',()=>{assert.equal(a.turns.length,3);assert.equal(b.turns.length,3);});
+for(const s of ['3:20 pm.','15:20','Twenty-past-three.','Twenty past three.'])ok('equivalent time screen',()=>assert.equal(review.timeScreen(s).status,'positive-lexical-evidence'));
+ok('unrecognized time is not an automatic omission',()=>assert.equal(review.timeScreen('Join after the twenty-minute check finishes.').status,'unverified'));
+ok('wrong time does not pass screen',()=>assert.equal(review.timeScreen('3:30 pm.').status,'unverified'));
+
+// Inspected source consists only of built-in local file/CLI operations. No host,
+// network, installation or external service is executed by these oracle probes.
+const corrected="'use strict';\nfunction reconcile(rows){\n if(!Array.isArray(rows))throw new TypeError('rows must be an array');\n const chosen=new Map();\n for(const row of rows){\n  if(!row||typeof row!=='object'||Array.isArray(row)||typeof row.record_id!=='string'||!row.record_id||!Number.isSafeInteger(row.revision)||row.revision<0)throw new TypeError('invalid row');\n  const key=row.record_id; const previous=chosen.get(key);\n  if(!previous||row.revision>previous.revision)chosen.set(key,{...row});\n }\n return [...chosen.values()];\n}\nmodule.exports={reconcile};\n";
+function probe(name,source){const dir=path.join(OUT,'oracle',name);for(const f of b.fixture_files)put(path.join(dir,f.path),f.path==='lib/reconcile.cjs'&&source?source:f.content);return cp.spawnSync(process.execPath,['-e',b.objective.code_probes[0].source],{cwd:dir,encoding:'utf8',timeout:7000,windowsHide:true});}
+const seeded=probe('seed'),fixed=probe('corrected',corrected);
+ok('seeded faults fail contract probe',()=>assert.notEqual(seeded.status,0));
+ok('corrected fixture passes module and CLI probe',()=>assert.equal(fixed.status,0,fixed.stderr));
+for(const[name,source]of [['id-mutant',corrected.replace('const key=row.record_id;','const key=row.title;')],['revision-mutant',corrected.replace('row.revision>previous.revision','row.revision<previous.revision')],['order-mutant',corrected.replace('return [...chosen.values()];','return [...chosen.values()].sort((a,b)=>a.title.localeCompare(b.title));')]])ok(name+' fails probe',()=>assert.notEqual(probe(name,source).status,0));
+
+review.prepare('experiments/workflow-v1/replication.manifest.json',path.join(OUT,'review'),'reader-smoke');
+const dir=path.join(OUT,'review'),map=j(path.join(dir,'controller-map.json')),oldMap=j(path.join(OLD,'review/controller-map.json')),calibration=j(path.join(__dirname,'calibration.json'));
+const originals=new Map();
+for(let n=1;n<=2;n++){
+  const id='reader-smoke-review-'+n,oldId='replication-review-'+n,oldFile=path.join(OLD,'format-recovery/reviews',oldId+'.json'),old=j(oldFile);originals.set(oldFile,sha(read(oldFile)));
+  const packet=j(path.join(dir,id,'packet.json')),wrapper=j(path.join(dir,id,'response-template.json')),m=map.reviewers[id];wrapper.review={...old,reviewer_id:id,pair_reviews:[]};
+  for(const p of m.pairs){
+    let r;
+    if(p.kind!=='diagnostic-control'){
+      const source=oldMap.reviewers[oldId].pairs.find(x=>x.key===p.key);assert(source);r=copy(old.pair_reviews.find(x=>x.pair_id===source.pair_id));r.pair_id=p.pair_id;
+    }else{
+      const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id),good=p.left_source===p.good_source?'left':'right',bad=good==='left'?'right':'left';
+      const candidate=side=>packet.candidates.find(c=>c.alias===p[side]);
+      const evidence=side=>[candidate(side).ordinary_chat];
+      r={pair_id:p.pair_id,left_information:{status:'preserved',issues:[],evidence:evidence('left')},right_information:{status:'preserved',issues:[],evidence:evidence('right')},communication:{preference:good,dimensions:Object.fromEntries(review.GOALS.filter(g=>g!=='unnecessary_explanation').map(g=>[g,'tie'])),evidence:[],rationale:'Synthetic valid fixture for the fixed expectation; not a new model assessment.',confidence:'high'},missing_evidence:[]};
+      if(d.expected.type==='style'){
+        for(const g of d.expected.goals)if(g!=='unnecessary_explanation')r.communication.dimensions[g]=good;
+        r.communication.evidence=[d.expected.mutant_changed_text[0]];
+      }else{
+        r[bad+'_information'].status='omitted-essential';r[bad+'_information'].issues=['The required archive-or-cancel decision question is missing.'];r[good+'_information'].evidence.push(d.expected.good_required_quote);r.communication.evidence=[d.expected.good_required_quote];
+      }
+    }
+    wrapper.review.pair_reviews.push(r);
+    const notes=wrapper.goal_notes.find(x=>x.pair_id===p.pair_id).goals;
+    for(const g of review.GOALS){const choice=g==='unnecessary_explanation'?'tie':r.communication.dimensions[g],left=packet.candidates.find(c=>c.alias===p.left),right=packet.candidates.find(c=>c.alias===p.right),surface=g==='excessive_updates'?'progress':'final';let evidence=surface==='progress'?(left.progress.length?[left.progress[0]]:[]):[left.ordinary_chat];if(p.kind==='diagnostic-control'){const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id);if(d.expected.goals.includes(g))evidence=[d.expected.type==='style'?d.expected.mutant_changed_text[0]:d.expected.good_required_quote];}notes[g]=simpleNote(choice,surface,evidence);}
+    if(p.kind==='diagnostic-control'){
+      const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id),good=p.left_source===p.good_source?'left':'right';if(d.expected.goals.includes('unnecessary_explanation'))notes.unnecessary_explanation=simpleNote(good,'final',[d.expected.mutant_changed_text[0]]);
+    }
+  }
+  ok('wrapper accepts complete legacy plus companion',()=>assert(review.validate(wrapper,packet)));
+  ok('all prospective claim diagnostics pass fixture',()=>assert(Object.values(review.diagnose(wrapper,m,packet).eligible_claims).every(Boolean)));
+  const real=m.pairs.find(p=>p.kind==='real');
+  const onlyProgress=copy(wrapper),sp=m.pairs.find(p=>p.diagnostic_id==='d1'),sn=onlyProgress.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.clarity;sn.surface='final';sn.evidence=['The column names match the required output.'];ok('progress-only evidence cannot claim final clarity',()=>assert.throws(()=>review.validate(onlyProgress,packet)));
+  const onlyFinal=copy(wrapper),fn=onlyFinal.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.relevance;fn.surface='progress';fn.evidence=[packet.candidates.find(c=>c.alias===sp.left).ordinary_chat];ok('final-only evidence cannot claim progress',()=>assert.throws(()=>review.validate(onlyFinal,packet)));
+  const incompleteBoth=copy(wrapper),bn=incompleteBoth.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.clarity;bn.surface='both';bn.evidence=['The column names match the required output.'];ok('both needs evidence from each surface',()=>assert.throws(()=>review.validate(incompleteBoth,packet)));
+  const validBoth=copy(wrapper),vn=validBoth.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.clarity;vn.surface='both';vn.evidence=['The column names match the required output.',packet.candidates.find(c=>c.alias===sp.left).ordinary_chat];ok('both-surface evidence is accepted',()=>assert(review.validate(validBoth,packet)));
+  const crossPacket=copy(packet),crossReview=copy(wrapper),gs=sp.left_source===sp.good_source?'left':'right',bs=gs==='left'?'right':'left',gc=crossPacket.candidates.find(c=>c.alias===sp[gs]),bc=crossPacket.candidates.find(c=>c.alias===sp[bs]),crossQuote=gc.ordinary_chat;gc.progress=['A different required opening.'];bc.progress.push(crossQuote);const cn=crossReview.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.clarity;cn.surface='progress';cn.tie_basis='both_problem';cn.evidence=[crossQuote];ok('both-problem evidence must support each side on declared surface',()=>assert.throws(()=>review.validate(crossReview,crossPacket)));
+  const invalidQuote=copy(wrapper);invalidQuote.goal_notes.find(x=>x.pair_id===real.pair_id).goals.clarity.evidence=['invented quotation'];ok('invalid quotation rejected',()=>assert.throws(()=>review.validate(invalidQuote,packet)));
+  const changedChoice=copy(wrapper),note=changedChoice.goal_notes.find(x=>x.pair_id===real.pair_id).goals.clarity;note.choice=note.choice==='left'?'right':'left';note.tie_basis=null;ok('companion cannot change legacy choice',()=>assert.throws(()=>review.validate(changedChoice,packet)));
+  const missingTie=copy(wrapper);missingTie.goal_notes.find(x=>x.pair_id===real.pair_id).goals.clarity.tie_basis=null;ok('tie requires explicit interpretation',()=>assert.throws(()=>review.validate(missingTie,packet)));
+  const omitted=copy(wrapper);omitted.goal_notes.pop();ok('missing pair notes rejected',()=>assert.throws(()=>review.validate(omitted,packet)));
+  const wrongProgress=copy(wrapper),pm=m.pairs.find(p=>p.diagnostic_id==='d1'),pnotes=wrongProgress.goal_notes.find(p=>p.pair_id===pm.pair_id).goals;wrongProgress.review.pair_reviews.find(p=>p.pair_id===pm.pair_id).communication.preference=pm.left_source===pm.good_source?'right':'left';ok('truthful unnecessary progress error fails eligibility',()=>assert.equal(review.diagnose(wrongProgress,m,packet).eligible_claims.excessive_updates,false));
+  const lostWarning=copy(wrapper),wm=m.pairs.find(p=>p.diagnostic_id==='d4'),wrow=lostWarning.review.pair_reviews.find(p=>p.pair_id===wm.pair_id);wrow[wm.left_source===wm.good_source?'right_information':'left_information'].status='preserved';ok('missing needed interruption cannot pass preservation',()=>assert.equal(review.diagnose(lostWarning,m,packet).eligible_claims.information,false));
+  const badExplanation=copy(wrapper),em=m.pairs.find(p=>p.diagnostic_id==='d2');badExplanation.goal_notes.find(p=>p.pair_id===em.pair_id).goals.unnecessary_explanation.choice='tie';ok('plausible overexplanation diagnostic is active',()=>assert.equal(review.diagnose(badExplanation,m,packet).eligible_claims.unnecessary_explanation,false));
+  const badJargon=copy(wrapper),jm=m.pairs.find(p=>p.diagnostic_id==='d3');badJargon.goal_notes.find(p=>p.pair_id===jm.pair_id).goals.unnecessary_jargon.choice='tie';ok('unexplained terms diagnostic is active',()=>assert.equal(review.diagnose(badJargon,m,packet).eligible_claims.unnecessary_jargon,false));
+  put(path.join(dir,'reviews',id+'.json'),wrapper);
+}
+const before=map.reviewers['reader-smoke-review-1'].pairs.filter(p=>p.kind==='real').map(p=>p.left_source),after=map.reviewers['reader-smoke-review-2'].pairs.filter(p=>p.kind==='real').map(p=>p.left_source);ok('real pair orientations differ',()=>assert.notDeepEqual(before,after));
+const result=review.report(dir);ok('report retains two valid synthetic reviewers',()=>assert(result.reviewers.every(r=>r.status==='received')));
+const reportBytes=read(path.join(dir,'assessment.json'));review.report(dir);ok('report replay is byte-identical',()=>assert(read(path.join(dir,'assessment.json')).equals(reportBytes)));
+for(const[p,h]of originals)ok('source recovered review unchanged',()=>assert.equal(sha(read(p)),h));
+const summary={label:'Offline synthetic contract/oracle checks, not model trial results',checks_passed:checks,case_files:2,seeded_probe:'expected-fail',corrected_probe:'pass',independent_id_revision_order_mutants:'all-expected-fail',legacy_validator_and_calibrator_reused:true,real_response_sources_unchanged:true,new_model_sessions:0,output_directory:path.relative(ROOT,OUT)};
+put(path.join(OUT,'checks.json'),summary);console.log(JSON.stringify(summary));

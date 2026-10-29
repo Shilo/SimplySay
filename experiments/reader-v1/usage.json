@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "preparation-in-progress",
+  "status": "unit-1-ready",
   "new_conversations": 3,
-  "new_task_starts": 5,
+  "new_task_starts": 6,
   "starts": [
     {
       "id": "n01",
@@ -19,15 +19,18 @@
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
       "status": "completed",
       "agent": "/root/reader_policy_challenge",
-      "turns": 2,
-      "max_turns": 2,
-      "followup_purpose": "Independent verification of new-phase ledger isolation and installed-disabled runner support"
+      "turns": 3,
+      "max_turns": 3,
+      "followup_purposes": [
+        "Independent verification of new-phase ledger isolation and installed-disabled runner support",
+        "Independent verification of new cases, realistic calibration and companion field contract before live subjects"
+      ]
     },
     {
       "id": "n02",
       "role": "independent-case-and-evaluation-challenger",
       "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
-      "status": "case-and-evaluation-implementation-running",
+      "status": "completed",
       "agent": "/root/reader_case_eval_challenge",
       "turns": 2,
       "max_turns": 2,
@@ -43,9 +46,20 @@
       "max_turns": 1
     }
   ],
-  "native_response_trials": 0,
   "new_paid_services": false,
   "direct_claude": false,
   "production": "hold",
-  "publication": "hold"
+  "publication": "hold",
+  "native_trials_before_unit": 0,
+  "reader_development": {
+    "authorization": "owner-reader-development-2026-10-29",
+    "record": "docs/reader-development-authorization.md",
+    "unit": "experiments/reader-v1/unit.json"
+  },
+  "dispatch_blocked": false,
+  "allowed_subjects": [
+    "n05",
+    "n06"
+  ],
+  "block_reason": null
 }

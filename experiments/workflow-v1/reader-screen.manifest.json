@@ -1,0 +1,81 @@
+{
+  "subjects": [
+    {
+      "id": "n05",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/a.case.json"
+    },
+    {
+      "id": "n06",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/a.case.json"
+    },
+    {
+      "id": "n07",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/a.case.json"
+    },
+    {
+      "id": "n08",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/b.case.json"
+    },
+    {
+      "id": "n09",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/b.case.json"
+    },
+    {
+      "id": "n10",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/b.case.json"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "a-enabled-absent",
+      "a": "n05",
+      "b": "n06"
+    },
+    {
+      "key": "a-disabled-absent",
+      "a": "n05",
+      "b": "n07"
+    },
+    {
+      "key": "b-enabled-absent",
+      "a": "n08",
+      "b": "n09"
+    },
+    {
+      "key": "b-disabled-absent",
+      "a": "n08",
+      "b": "n10"
+    }
+  ],
+  "dispatch_order": [
+    "n05",
+    "n06",
+    "n07",
+    "n08",
+    "n09",
+    "n10"
+  ],
+  "checkpoint": "Inspect the first absent/enabled outputs and actual work before launching the rest; do not tune frozen inputs",
+  "extra_input_files": [
+    "experiments/reader-v1/run.cjs",
+    "experiments/reader-v1/unit.json",
+    "experiments/reader-v1/review.cjs",
+    "experiments/reader-v1/calibration.json",
+    "docs/reader-pretrial.md",
+    "docs/reader-development-authorization.md",
+    "experiments/assessment-v2/assess.cjs",
+    "experiments/reader-v1/review-check.cjs",
+    "docs/reader-case-evaluation-challenge.md",
+    "docs/reader-evaluation-verification.md"
+  ]
+}

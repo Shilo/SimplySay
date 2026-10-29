@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "reader-a-shared-files",
+  "title": "A coordinator asks practical questions about shared files and recovery",
+  "fixture_files": [
+    {
+      "path": "shared-files-notes.md",
+      "content": "# Shared files and recovery\n\nThe coordinator team uses a shared folder that synchronizes edits and deletions between its laptops. It is for day-to-day collaboration, not an independent retained copy.\n\nA separate backup runs daily and retains earlier copies for 30 days. Its files are stored outside the shared folder. The job dashboard says recent jobs succeeded, but nobody has yet restored a file to check whether the retained copies can actually be used. The exact time of the last usable backup is not established.\n\nThe next coordinator needs access to the current shared files and a practical recovery route. This pack does not establish that a particular deleted file can be recovered. No live folder or backup service is accessible from this exercise.\n",
+      "encoding": "utf-8",
+      "sha256": "28159ab3f62d0204271ebcd1a196e157ceb7b4a441e7b561cb79e53f441114c9"
+    }
+  ],
+  "turns": [
+    {
+      "id": "a1_explain",
+      "prompt": "Read shared-files-notes.md. Our shared folder syncs changes between laptops. If someone deletes a file, is that the same as losing the backup? I coordinate the volunteers and do not manage IT.",
+      "essentials": [
+        {
+          "id": "a1_distinction",
+          "requirement": "Explain that deletion propagates through the shared folder but does not by itself erase the separate retained backup. Distinguish synchronization from a recoverable retained copy in terms useful to this coordinator.",
+          "request_clause": "If someone deletes a file, is that the same as losing the backup?",
+          "location": "ordinary answer"
+        },
+        {
+          "id": "a1_uncertainty",
+          "requirement": "Do not promise recovery of a particular file: jobs succeeded but no restore has been tested and the exact usable backup time is not established.",
+          "request_clause": "Read shared-files-notes.md",
+          "location": "ordinary answer"
+        }
+      ]
+    },
+    {
+      "id": "a2_recommend",
+      "prompt": "For handing these files to the next coordinator, would you rely on the shared folder, the backup, or both? What needs checking before we rely on it?",
+      "essentials": [
+        {
+          "id": "a2_roles",
+          "requirement": "Give a practical justified recommendation: use the shared workspace for current collaboration and retain a separate recovery route; they serve different purposes.",
+          "request_clause": "would you rely on the shared folder, the backup, or both?",
+          "location": "ordinary answer"
+        },
+        {
+          "id": "a2_check",
+          "requirement": "Identify a restore check and usable access for the next coordinator as the immediate verification needs, without claiming a live service was tested.",
+          "request_clause": "What needs checking before we rely on it?",
+          "location": "ordinary answer"
+        }
+      ]
+    },
+    {
+      "id": "a3_simple_time",
+      "prompt": "The restore check starts at 3:00 pm and takes 20 minutes. When should I be available to check the restored files?",
+      "essentials": [
+        {
+          "id": "a3_time",
+          "requirement": "Answer 3:20 pm (15:20 or an equivalent correct expression). No timezone assumption or expanded checklist is requested.",
+          "request_clause": "starts at 3:00 pm and takes 20 minutes",
+          "location": "ordinary answer"
+        }
+      ]
+    }
+  ],
+  "expected_files": [],
+  "capture_files": [
+    "shared-files-notes.md"
+  ],
+  "objective": {
+    "preserve_fixture_paths": [
+      "shared-files-notes.md"
+    ]
+  }
+}
