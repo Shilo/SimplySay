@@ -1,0 +1,101 @@
+{
+  "subjects": [
+    {
+      "id": "n34",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/d.case.json"
+    },
+    {
+      "id": "n35",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/core.v1.txt",
+      "case_file": "experiments/reader-v1/cases/d.case.json"
+    },
+    {
+      "id": "n36",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/core.v1.txt",
+      "case_file": "experiments/reader-v1/cases/d.case.json"
+    },
+    {
+      "id": "n37",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/w1-neutral.case.json"
+    },
+    {
+      "id": "n38",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/core.v1.txt",
+      "case_file": "experiments/reader-v1/cases/w1-neutral.case.json"
+    },
+    {
+      "id": "n39",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/core.v1.txt",
+      "case_file": "experiments/reader-v1/cases/w1-neutral.case.json"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "photo-core-enabled-absent",
+      "a": "n34",
+      "b": "n35"
+    },
+    {
+      "key": "photo-core-disabled-absent",
+      "a": "n34",
+      "b": "n36"
+    },
+    {
+      "key": "neutral-study-core-enabled-absent",
+      "a": "n37",
+      "b": "n38"
+    },
+    {
+      "key": "neutral-study-core-disabled-absent",
+      "a": "n37",
+      "b": "n39"
+    }
+  ],
+  "dispatch_order": [
+    "n34",
+    "n35",
+    "n36",
+    "n37",
+    "n38",
+    "n39"
+  ],
+  "checkpoint": "D: pause affected launches on evident essential/depth/setup loss; satisfactory ties may proceed to the separate planned workflow question. W1-neutral: skip n39 on evident loss or same narration with no plausible benefit; retain all observed outputs.",
+  "goal_calibration_mode": "independent-goals-v1",
+  "calibration_file": "experiments/reader-v1/calibration-v2.json",
+  "extra_input_files": [
+    "experiments/reader-v1/run.cjs",
+    "experiments/reader-v1/unit.json",
+    "experiments/reader-v1/review.cjs",
+    "experiments/reader-v1/review-check.cjs",
+    "experiments/reader-v1/calibration-v2.json",
+    "experiments/assessment-v2/assess.cjs",
+    "docs/core-experiment-plan.md",
+    "docs/core-policy-challenge.md",
+    "docs/core-case-design.md",
+    "docs/review-33e1767-assessment.md",
+    "docs/core-simplification-preparation.md",
+    "docs/reader-development-authorization.md"
+  ],
+  "assessor_host_facts": {
+    "case_ids": [
+      "reader-d-photo-advice",
+      "reader-w1-neutral-study-evidence-audit"
+    ],
+    "summary": "The applicable stock host guidance requires an opening commentary message before tool work and commentary during ongoing work with a stated 60-second upper gap.",
+    "source_role": "developer",
+    "source_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+    "provenance": "Supported saved stock developer-message records; docs/workflow-instruction-review.md and docs/instruction-delivery-diagnosis.md.",
+    "limits": [
+      "Completed-message receipt timestamps are not exact authoring timestamps or UI notification times and do not prove compliance with the stated cadence.",
+      "No desktop notification or reader-comprehension measurement is supplied.",
+      "These facts do not reveal incoming native parent-to-child instructions or verify inter-agent boundaries.",
+      "The source is developer-role history; it does not expose the complete upstream system layer, final outgoing request assembly or model attention."
+    ]
+  }
+}

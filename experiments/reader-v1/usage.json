@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-preparation-complete",
+  "status": "core-unit1-allocated",
   "new_conversations": 31,
   "new_task_starts": 76,
   "starts": [
@@ -336,9 +336,12 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": true,
-  "allowed_subjects": [],
-  "block_reason": "Preparation follow-ups only; record/freeze a concrete matched native comparison before dispatch.",
+  "dispatch_blocked": false,
+  "allowed_subjects": [
+    "n34",
+    "n35"
+  ],
+  "block_reason": "Only first matched D pair authorized for current checkpoint; remaining planned subjects await its saved-evidence inspection.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -360,5 +363,5 @@
       "reason": "Apply prospective stopping rule: skip n24 and send all saved pair evidence to the two allocated blinded reviewers. No further response pair."
     }
   ],
-  "decision": "docs/core-simplification-preparation.md"
+  "decision": "docs/core-experiment-plan.md"
 }
