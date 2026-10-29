@@ -1,0 +1,14 @@
+{
+  "id": "e17",
+  "condition": "absent",
+  "case_id": "w1-study-evidence-audit",
+  "policy": null,
+  "turns": [],
+  "failed": true,
+  "hook_notifications": [],
+  "error": "Subscription quota evidence unavailable",
+  "stderr_sha256": "4b4962e00469ce7ea133ea3615bed37b09c8314f8aed6d6a38e73993267d708d",
+  "stderr_bytes": 284,
+  "auth_copy_removed": true,
+  "unexpected_threads": []
+}

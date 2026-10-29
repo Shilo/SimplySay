@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "path": "subjects/e17/result.json",
+      "bytes": 383,
+      "source_sha256": "d530c11db112e0fe907f84b66171af432ed687498095da0aa59f14ed43f89dbf",
+      "archive_sha256": "d530c11db112e0fe907f84b66171af432ed687498095da0aa59f14ed43f89dbf",
+      "mode": "selected-public-metadata"
+    }
+  ],
+  "policy": "Exact raw artifacts; selected public metadata/events scrubbed by existing exporter. Profiles, auth, private reasoning and account inventories excluded."
+}
