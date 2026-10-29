@@ -1,0 +1,920 @@
+{
+  "label": "Original automated judgments retained; calibration failure is not overwritten",
+  "archive": [
+    {
+      "path": "assessment.json",
+      "sha256": "6eb0a91535cd8bc9c5531860ad457d40c4e76a8734c65f59d9de4a98c4b5b02c",
+      "bytes": 287131
+    },
+    {
+      "path": "controller-map.json",
+      "sha256": "2bfb922db916b41dd88d0587e13749c2679f5ecf8312cc3143bb2a6359de3ec3",
+      "bytes": 8299
+    },
+    {
+      "path": "deterministic.json",
+      "sha256": "b6a642cf396c234b34abe1ff71c4a9f85d3ae0a0ab2a61f60f0f5097de52c3ed",
+      "bytes": 7956
+    },
+    {
+      "path": "reader-freeze.json",
+      "sha256": "03c19c4fbb0ad783493b74b1e2aee3933b1362c96141a1901488d4ffe795d246",
+      "bytes": 8656
+    },
+    {
+      "path": "chat-content-screens.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "bytes": 3
+    },
+    {
+      "path": "reader-core-chat1-review-1/packet.json",
+      "sha256": "510920c0f14248734ba64255eaf4b97d11e87cdfa2a62388c38d3e1897f63a15",
+      "bytes": 196049
+    },
+    {
+      "path": "reader-core-chat1-review-1/response-template.json",
+      "sha256": "40eea588172df093d8f00493718a19244f40f95ca7746f2c8871c6ce8766360c",
+      "bytes": 25449
+    },
+    {
+      "path": "reviews/reader-core-chat1-review-1.json",
+      "sha256": "f1ffc179cf4b3263012bf68a4039ff173b66ceafe53826ac82fb30d011e7403a",
+      "bytes": 96108
+    },
+    {
+      "path": "reader-core-chat1-review-2/packet.json",
+      "sha256": "3e1f193361d050a801dcb1229a0558d761d7bf26a06ee740cb24971a6c64ef28",
+      "bytes": 196049
+    },
+    {
+      "path": "reader-core-chat1-review-2/response-template.json",
+      "sha256": "6ab408ce975a3031600f9bdcfd74e84ddcb49a1f8dcdae9f170f9c93b20790a4",
+      "bytes": 25449
+    },
+    {
+      "path": "reviews/reader-core-chat1-review-2.json",
+      "sha256": "8bc6a304ca066fe4150679b4ada9e77af3934660f0696f53d6aea2927ee1b2e6",
+      "bytes": 113750
+    }
+  ],
+  "completed_corrected_subjects": 3,
+  "response_tasks": 9,
+  "reviewer_contexts": 2,
+  "reviewer_tasks": 2,
+  "preparation_followups_in_corrected_unit": 0,
+  "retries": 0,
+  "subject_export_entries": 63,
+  "raw_artifacts": 0,
+  "reviewers": [
+    {
+      "id": "reader-core-chat1-review-1",
+      "status": "received",
+      "calibration": {
+        "calibration_mode": "independent-goals-v1",
+        "legacy": {
+          "pass": true,
+          "controls": {
+            "omission": {
+              "pass": true,
+              "information": {
+                "left": "omitted-essential",
+                "right": "preserved"
+              },
+              "preference": "tie"
+            },
+            "filler": {
+              "pass": true,
+              "information": {
+                "left": "preserved",
+                "right": "preserved"
+              },
+              "preference": "left"
+            },
+            "depth": {
+              "pass": true,
+              "information": {
+                "left": "omitted-essential",
+                "right": "preserved"
+              },
+              "preference": "right"
+            },
+            "identity": {
+              "pass": true,
+              "information": {
+                "left": "preserved",
+                "right": "preserved"
+              },
+              "preference": "tie"
+            }
+          }
+        },
+        "diagnostics": {
+          "d1": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "excessive_updates"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "excessive_updates": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "progress"
+              }
+            }
+          },
+          "d2": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "unnecessary_explanation",
+              "filler",
+              "repetition"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "unnecessary_explanation": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              },
+              "filler": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              },
+              "repetition": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              }
+            }
+          },
+          "d3": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "unnecessary_jargon",
+              "clarity"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "unnecessary_jargon": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              },
+              "clarity": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              }
+            }
+          },
+          "d4": {
+            "pass": true,
+            "type": "necessary-interruption",
+            "eligible_claims": [
+              "information",
+              "excessive_updates"
+            ],
+            "confidence": "high"
+          },
+          "d5": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "excessive_updates",
+              "filler",
+              "repetition",
+              "unnecessary_explanation"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "filler": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "progress"
+              },
+              "unnecessary_explanation": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "progress"
+              }
+            },
+            "payload_recognized": {
+              "pass": true,
+              "meaning": "Supplementary progress-payload recognition, not a filler/repetition/update winner or cadence proof"
+            }
+          }
+        },
+        "eligible_claims": {
+          "information": true,
+          "clarity": true,
+          "relevance": true,
+          "filler": true,
+          "repetition": true,
+          "unnecessary_jargon": true,
+          "excessive_updates": true,
+          "unnecessary_explanation": true
+        }
+      }
+    },
+    {
+      "id": "reader-core-chat1-review-2",
+      "status": "received",
+      "calibration": {
+        "calibration_mode": "independent-goals-v1",
+        "legacy": {
+          "pass": false,
+          "controls": {
+            "omission": {
+              "pass": true,
+              "information": {
+                "left": "preserved",
+                "right": "omitted-essential"
+              },
+              "preference": "tie"
+            },
+            "filler": {
+              "pass": true,
+              "information": {
+                "left": "preserved",
+                "right": "preserved"
+              },
+              "preference": "right"
+            },
+            "depth": {
+              "pass": true,
+              "information": {
+                "left": "preserved",
+                "right": "omitted-essential"
+              },
+              "preference": "left"
+            },
+            "identity": {
+              "pass": false,
+              "information": {
+                "left": "preserved",
+                "right": "preserved"
+              },
+              "preference": "tie"
+            }
+          }
+        },
+        "diagnostics": {
+          "d5": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "excessive_updates",
+              "filler",
+              "repetition",
+              "unnecessary_explanation"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "filler": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "progress"
+              },
+              "unnecessary_explanation": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "progress"
+              }
+            },
+            "payload_recognized": {
+              "pass": true,
+              "meaning": "Supplementary progress-payload recognition, not a filler/repetition/update winner or cadence proof"
+            }
+          },
+          "d4": {
+            "pass": true,
+            "type": "necessary-interruption",
+            "eligible_claims": [
+              "information",
+              "excessive_updates"
+            ],
+            "confidence": "high"
+          },
+          "d3": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "unnecessary_jargon",
+              "clarity"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "unnecessary_jargon": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              },
+              "clarity": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              }
+            }
+          },
+          "d2": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "unnecessary_explanation",
+              "filler",
+              "repetition"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "unnecessary_explanation": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              },
+              "filler": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              },
+              "repetition": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "final"
+              }
+            }
+          },
+          "d1": {
+            "pass": true,
+            "type": "style",
+            "eligible_claims": [
+              "excessive_updates"
+            ],
+            "confidence": "high",
+            "goal_passes": {
+              "excessive_updates": {
+                "pass": true,
+                "common_preservation_direction_confidence": true,
+                "intended_goal_choice": true,
+                "changed_surface_evidence": true,
+                "expected_surface": "progress"
+              }
+            }
+          }
+        },
+        "eligible_claims": {
+          "information": false,
+          "clarity": false,
+          "relevance": false,
+          "filler": false,
+          "repetition": false,
+          "unnecessary_jargon": false,
+          "excessive_updates": false,
+          "unnecessary_explanation": false
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "inline-photo-core-enabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-core-chat1-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Changing that value with resampling disabled leaves the pixels unchanged.",
+                "| Original | 4000 × 3000 | 4000 ÷ 10 = **400 ppi** | 3000 ÷ 7.5 = **400 ppi** | Yes |",
+                "| Web | 1000 × 750 | 1000 ÷ 10 = **100 ppi** | 750 ÷ 7.5 = **100 ppi** | No |",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4.",
+                "Upsampling creates additional pixels by estimating their values."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Changing that value with resampling disabled leaves the stored pixels unchanged.",
+                "The minimum is therefore **2400 × 1800 pixels**.",
+                "| Original | 4000 × 3000 | 4000 ÷ 10 = **400 PPI** | 3000 ÷ 7.5 = **400 PPI** | Yes |",
+                "| Web | 1000 × 750 | 1000 ÷ 10 = **100 PPI** | 750 ÷ 7.5 = **100 PPI** | No |",
+                "Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+                "Stretching the photo directly to 10 × 8 would distort its shapes."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both chronologies distinguish the label from stored pixels, answer the narrow follow-up directly, and then use worked arithmetic and explicit layout choices for the requested teaching. The alternative tables and wording are comparably readable.",
+              "evidence": [
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. At 10 × 7.5 inches, it still supplies **100 ppi**, below the required 240 ppi.",
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both select the website and display copies using the supplied limits, then respond to the later request for calculations, resampling distinctions and a changed aspect ratio. Their extra worked examples serve the coordinator’s teaching task.",
+              "evidence": [
+                "The recommendation comes from the **stored pixel dimensions divided by the intended print size**. The “dpi” label does not enter that calculation.",
+                "Use the **4000 × 3000 original** for the display. It exceeds the required pixel density at 10 × 7.5 inches; the web copy falls below it."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both devote their explanations to the pixel-density decision and its stated limitations; neither relies on pleasantries, generic praise or empty task narration.",
+              "evidence": [
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels unchanged.",
+                "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness. Changing that value with resampling disabled leaves the stored pixels unchanged."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The later calculation revisits the earlier recommendation because the user explicitly asks how it was reached. The second-turn answer resolves a new metadata question. This is useful chronological teaching rather than redundant snapshots or unsolicited recap.",
+              "evidence": [
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. At 10 × 7.5 inches, it still supplies **100 ppi**, below the required 240 ppi.",
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both explain PPI and resampling through what changes in the stored image. Those terms are useful to the requested production decision and are not left as unexplained specialist shorthand.",
+              "evidence": [
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels unchanged.",
+                "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness. Changing that value with resampling disabled leaves the stored pixels unchanged."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "not-observed",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "Neither chronology contains a progress message to assess. No tool work is recorded and the missing progress surface is not positive evidence of better communication.",
+              "evidence": [],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The third request explicitly asks for enough worked reasoning to teach another coordinator. The density calculations, crop dimensions and resampling consequences answer that request; neither answer merits a penalty merely for retaining this depth.",
+              "evidence": [
+                "The minimum is therefore **2400 × 1800 pixels**.",
+                "The minimum is therefore **2400 × 1800 pixels**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "No image files or sample print are supplied; finished appearance remains unverified, as the answers acknowledge.",
+            "Incoming child instructions and UI notifications are not observable; overlapping ordinary_chat and turn snapshots are one chronology."
+          ]
+        },
+        {
+          "reviewer": "reader-core-chat1-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+                "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+                "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+                "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+                "These calculations establish that it meets the print’s pixel requirement; without inspecting the files or a sample print, they cannot establish how the finished print will look."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+                "Changing the label cannot restore the detail lost during downsampling.",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+                "Keep the original unchanged for future uses. These calculations establish which file meets the resolution requirement; without inspecting the image or a sample print, they don’t establish the finished print’s visual quality."
+              ]
+            },
+            "calibration_eligible": false
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both chronological conversations answer the first choice, the label-only follow-up and the later detailed teaching request clearly. Each teaches the required multiplication and file-density comparison with a worked table.",
+              "evidence": [
+                "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+                "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both adapt to the current turn: the metadata follow-up stays narrow, and the later explanation expands to the explicitly requested calculations, resampling and future borderless layout.",
+              "evidence": [
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+                "Changing the label cannot restore the detail lost during downsampling.",
+                "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The worked calculations, sample-creation explanation and aspect-ratio options support teaching the next coordinator. Neither fills the answers with unrelated material.",
+              "evidence": [
+                "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+                "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Repeating the correct dimensions and original-file recommendation across these separate human follow-ups is responsive. The user explicitly asks the third turn to work through the previous conclusion; overlapping packet views are not additional messages.",
+              "evidence": [
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+                "Changing the label cannot restore the detail lost during downsampling.",
+                "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both introduce PPI as pixels per inch and explain resampling through what happens to the stored pixels. The terms provide necessary precision without leaving the reader with unexplained labels.",
+              "evidence": [
+                "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+                "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "not-observed",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "No progress messages or tool work are displayed in these chronological photo answers. There is no update payload or cadence to compare, and silence is not scored as an improvement.",
+              "evidence": [],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The third turn expressly asks for teaching depth and shape choices. The crop, margins, distortion and resampling explanations are useful to that request, so their substantive detail is not unnecessary merely because both answers are long.",
+              "evidence": [
+                "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+                "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            }
+          },
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "key": "inline-photo-core-disabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-core-chat1-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Changing that value with resampling disabled leaves the pixels and image detail unchanged.",
+                "So the image needs at least **2400 × 1800 pixels** for this print.",
+                "| Original | 4000 × 3000 | 4000 ÷ 10 = **400 PPI** | 3000 ÷ 7.5 = **400 PPI** | Yes |",
+                "| Web copy | 1000 × 750 | 1000 ÷ 10 = **100 PPI** | 750 ÷ 7.5 = **100 PPI** | No |",
+                "Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality.",
+                "That layout is **5:4**, while the photograph is **4:3**."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Changing that value with resampling disabled leaves the pixels unchanged.",
+                "| Original | 4000 × 3000 | 4000 ÷ 10 = **400 ppi** | 3000 ÷ 7.5 = **400 ppi** | Yes |",
+                "| Web | 1000 × 750 | 1000 ÷ 10 = **100 ppi** | 750 ÷ 7.5 = **100 ppi** | No |",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4.",
+                "Upsampling creates additional pixels by estimating their values."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both chronologies distinguish the label from stored pixels, answer the narrow follow-up directly, and then use worked arithmetic and explicit layout choices for the requested teaching. The alternative tables and wording are comparably readable.",
+              "evidence": [
+                "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. At 10 × 7.5 inches, it still supplies **100 ppi**, below the required 240 ppi."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both select the website and display copies using the supplied limits, then respond to the later request for calculations, resampling distinctions and a changed aspect ratio. Their extra worked examples serve the coordinator’s teaching task.",
+              "evidence": [
+                "Use the **original for the display** because its stored pixels provide enough resolution at the requested print size.",
+                "The recommendation comes from the **stored pixel dimensions divided by the intended print size**. The “dpi” label does not enter that calculation."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both devote their explanations to the pixel-density decision and its stated limitations; neither relies on pleasantries, generic praise or empty task narration.",
+              "evidence": [
+                "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels and image detail unchanged.",
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels unchanged."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The later calculation revisits the earlier recommendation because the user explicitly asks how it was reached. The second-turn answer resolves a new metadata question. This is useful chronological teaching rather than redundant snapshots or unsolicited recap.",
+              "evidence": [
+                "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+                "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. At 10 × 7.5 inches, it still supplies **100 ppi**, below the required 240 ppi."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both explain PPI and resampling through what changes in the stored image. Those terms are useful to the requested production decision and are not left as unexplained specialist shorthand.",
+              "evidence": [
+                "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels and image detail unchanged.",
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness. Changing that value with resampling disabled leaves the pixels unchanged."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "not-observed",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "Neither chronology contains a progress message to assess. No tool work is recorded and the missing progress surface is not positive evidence of better communication.",
+              "evidence": [],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The third request explicitly asks for enough worked reasoning to teach another coordinator. The density calculations, crop dimensions and resampling consequences answer that request; neither answer merits a penalty merely for retaining this depth.",
+              "evidence": [
+                "So the image needs at least **2400 × 1800 pixels** for this print.",
+                "The minimum is therefore **2400 × 1800 pixels**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "No image files or sample print are supplied; finished appearance remains unverified, as the answers acknowledge.",
+            "Incoming child instructions and UI notifications are not observable; overlapping ordinary_chat and turn snapshots are one chronology."
+          ]
+        },
+        {
+          "reviewer": "reader-core-chat1-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+                "Changing the label cannot restore the detail lost during downsampling.",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+                "Keep the original unchanged for future uses. These calculations establish which file meets the resolution requirement; without inspecting the image or a sample print, they don’t establish the finished print’s visual quality."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+                "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+                "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**",
+                "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**.",
+                "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality.",
+                "These calculations establish that the original meets the resolution requirement; they don’t establish how the finished print will look."
+              ]
+            },
+            "calibration_eligible": false
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both chronological conversations answer the first choice, the label-only follow-up and the later detailed teaching request clearly. Each teaches the required multiplication and file-density comparison with a worked table.",
+              "evidence": [
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+                "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+                "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both adapt to the current turn: the metadata follow-up stays narrow, and the later explanation expands to the explicitly requested calculations, resampling and future borderless layout.",
+              "evidence": [
+                "Changing the label cannot restore the detail lost during downsampling.",
+                "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+                "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The worked calculations, sample-creation explanation and aspect-ratio options support teaching the next coordinator. Neither fills the answers with unrelated material.",
+              "evidence": [
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+                "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+                "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Repeating the correct dimensions and original-file recommendation across these separate human follow-ups is responsive. The user explicitly asks the third turn to work through the previous conclusion; overlapping packet views are not additional messages.",
+              "evidence": [
+                "Changing the label cannot restore the detail lost during downsampling.",
+                "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+                "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+                "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both introduce PPI as pixels per inch and explain resampling through what happens to the stored pixels. The terms provide necessary precision without leaving the reader with unexplained labels.",
+              "evidence": [
+                "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+                "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+                "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "not-observed",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "No progress messages or tool work are displayed in these chronological photo answers. There is no update payload or cadence to compare, and silence is not scored as an improvement.",
+              "evidence": [],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The third turn expressly asks for teaching depth and shape choices. The crop, margins, distortion and resampling explanations are useful to that request, so their substantive detail is not unnecessary merely because both answers are long.",
+              "evidence": [
+                "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+                "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**.",
+                "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+                "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            }
+          },
+          "missing_evidence": []
+        }
+      ]
+    }
+  ],
+  "old_review_archives_unchanged": true,
+  "locked_history_unchanged": 287,
+  "sealed_content_opened": false,
+  "sealed_hashes_unchanged": true,
+  "auth_profiles_checked": 42,
+  "copied_signins_retained": 0,
+  "protected_file_code_workflow_scope": "unverified for core: not requested in corrected chat and executor unavailable",
+  "native_incoming_helper_instructions": "unverified",
+  "desktop_interface": "unverified",
+  "reviewer_model_effort": "unknown",
+  "production": "hold",
+  "publication": "hold"
+}

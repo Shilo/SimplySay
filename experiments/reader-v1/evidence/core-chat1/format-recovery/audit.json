@@ -1,0 +1,20 @@
+{
+  "label": "Offline format-only recovery; original failed identity gate retained",
+  "operation": "Append one verbatim existing equality sentence from the same identity-control goal rationale into its communication rationale",
+  "raw_review_sha256": "8bc6a304ca066fe4150679b4ada9e77af3934660f0696f53d6aea2927ee1b2e6",
+  "packet_sha256": "3e1f193361d050a801dcb1229a0558d761d7bf26a06ee740cb24971a6c64ef28",
+  "original_assessment_sha256": "6eb0a91535cd8bc9c5531860ad457d40c4e76a8734c65f59d9de4a98c4b5b02c",
+  "source_pointer": "/goal_notes/7/goals/clarity/rationale",
+  "target_pointer": "/review/pair_reviews/7/communication/rationale",
+  "copied_statement": "The ordinary finals are identical and clearly identify the files, observed test result, approved amount and outstanding actions.",
+  "old_communication_rationale": "The displayed ordinary chat, progress, complete email, tool, tests, report and captured outcomes match in substance. All communication goals tie; there is no reason to force a winner.",
+  "scorer_sha256": "5b3d3235146284d6e31d516bc0d8f245638ec1b8c22ee75923157f7453718732",
+  "controls_and_success_criteria_changed": false,
+  "all_other_review_fields_unchanged": true,
+  "all_real_comparisons_unchanged": true,
+  "original_legacy_pass": false,
+  "recovered_legacy_pass": true,
+  "negative_guards_passed": 7,
+  "new_model_sessions": 0,
+  "new_judgments": 0
+}

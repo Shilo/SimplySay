@@ -1,0 +1,1438 @@
+{
+  "schema_version": 1,
+  "review": {
+    "schema_version": 1,
+    "reviewer_id": "reader-core-chat1-review-2",
+    "pair_reviews": [
+      {
+        "pair_id": "pair-a273ff0c5411",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "right",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff."
+          ],
+          "rationale": "Both preserve the deadline warning and final review result. The right improves the intermediate message's payload while retaining the same useful warning at the same time; it does not win through fewer messages or omitted required communication.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-f2ecf2583",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "export function prepareBatch(claims) {",
+            "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+            "Each list preserves input order. Only approved entries contribute to `total_cents`. Empty input is valid."
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The ready-to-copy email omits R-103 and the missing-receipt action even though it says two claims need action. Mentioning R-103 in surrounding chat or in batch-report.md does not make the email standalone."
+          ],
+          "evidence": [
+            "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0"
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "The ordinary chat and progress are identical, so communication goals tie. The right email separately fails standalone completeness by dropping the receipt action; it receives no style credit for that omission.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Reimbursement message timestamps are unavailable; captured order supports content assessment, not exact cadence."
+        ]
+      },
+      {
+        "pair_id": "pair-ae412fad7819",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "{\"delete_archived_rows\":30,\"applied\":false}\n"
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The user explicitly required a warning and a choice between archiving first and cancelling if archived rows would be deleted. The right never reports the 30-row deletion or asks for that choice; leaving the plan unapplied alone does not complete the requested communication."
+          ],
+          "evidence": [
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied.",
+            "{\"delete_archived_rows\":30,\"applied\":false}\n"
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "left",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied."
+          ],
+          "rationale": "The left supplies the necessary deletion warning and user choice while preserving the unapplied boundary. The right leaves the file unchanged but omits the requested decision, so its shorter communication is not preferable.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-30d4f6ffa",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "export function prepareBatch(claims) {",
+            "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+            "Each list preserves input order. Only approved entries contribute to `total_cents`. Empty input is valid."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "export function prepareBatch(claims) {",
+            "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+            "Each list preserves input order. Only approved entries contribute to `total_cents`. Empty input is valid."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "right",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "right"
+          },
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "The complete tool, report, tests and email remain substantively preserved on both sides. The right improves ordinary communication by removing an unrelated aside and repeated noninformative updates; required technical and email detail is not the basis for shortening.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Reimbursement message timestamps are unavailable; no exact update cadence is inferred."
+        ]
+      },
+      {
+        "pair_id": "pair-c5dda356e317",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "right",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ],
+          "rationale": "Both preserve the causal facts and uncertainty. The right better matches the nondeveloper audience by explaining the mechanism in ordinary words rather than unexplained consistency terminology.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-49491fbf4",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate. It leaves a failure window where a notice can be accepted more than once. Reversing the order creates a window where the notice is permanently missed instead.",
+            "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |\n| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |\n| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\n| 34 s | B marks `J42` done. | Done | Two notices accepted |",
+            "Both workers can reach the receiver because the rules explicitly allow A to keep running after expiration.",
+            "The receiver may have accepted the request despite the timeout. The worker cannot safely interpret the timeout as “nothing happened.”",
+            "The rules make eventual delivery conditional: **retries must continue, and some attempt must eventually succeed.** A retry mechanism creates opportunities for delivery; it does not guarantee that an attempt will succeed.",
+            "If the receiver can be changed, each attempt should send the same stable idempotency key for the same logical notice.",
+            "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+            "They can reduce duplicates caused by premature lease expiration, but they cannot establish duplicate-free delivery."
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The requested worked timeline with times, states, receiver acceptance and duplicate-producing retry is absent.",
+            "The right does not causally explain all three crash windows, including why a stop before sending leaves unfinished work retryable or why done-before-send can leave an unrecoverable missed notice.",
+            "The old worker continuing after its 30-second lease, overlapping sends and ambiguous acceptance after timeout are omitted.",
+            "The right names idempotency and deduplication but does not explain a stable key across attempts, durable memory, atomic effect/record coordination, concurrency or the failure of separate checks.",
+            "The continuing-retry/eventual-success assumptions and the limits of longer leases or renewal are not explained, nor are the remaining unpromisable guarantees. The requested design-review teaching depth is missing."
+          ],
+          "evidence": [
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "left",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate. It leaves a failure window where a notice can be accepted more than once. Reversing the order creates a window where the notice is permanently missed instead.",
+            "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |\n| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |\n| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\n| 34 s | B marks `J42` done. | Done | Two notices accepted |",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown.",
+            "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+            "Keep **send before marking done**, preserve retries for unfinished jobs, and treat a timeout as an unknown outcome that may require retrying.",
+            "If the receiver can be changed, each attempt should send the same stable idempotency key for the same logical notice.",
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs."
+          ],
+          "rationale": "The left meets the explicit request for enough causal reasoning to review a queue design. Its precision and worked timeline are necessary content, not verbosity to remove. The right retains a high-level recommendation but omits much of the requested explanation.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Historical message timestamps are unavailable; no exact opening-to-final cadence is inferred. No implementation or external validation was requested."
+        ]
+      },
+      {
+        "pair_id": "pair-fc84d7ed2535",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "left",
+            "repetition": "left",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ],
+          "rationale": "Both preserve the correct opening decision and the calendar-delivery limitation. The left avoids the right's unnecessary general lesson and repeated conclusion. Clarity and topical relevance still tie; related background is not automatically necessary.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-e8e252fc0",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "export function prepareBatch(claims) {",
+            "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+            "Each list preserves input order. Only approved entries contribute to `total_cents`. Empty input is valid."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times. The approved batch amount does not establish that payment has been sent.",
+            "export function prepareBatch(claims) {",
+            "ℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0",
+            "Each list preserves input order. Only approved entries contribute to `total_cents`. Empty input is valid."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "The displayed ordinary chat, progress, complete email, tool, tests, report and captured outcomes match in substance. All communication goals tie; there is no reason to force a winner.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Reimbursement message timestamps are unavailable; no exact update cadence is inferred."
+        ]
+      },
+      {
+        "pair_id": "pair-3a27b2364e58",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "right"
+          },
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ],
+          "rationale": "Both preserve the complete check result. The right improves progress communication by omitting two routine status reports that do not help the user act before the result, while keeping the host-required opening. This judgment uses the supplied 26-second trace, not invented timestamps.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-6db8434dd11a",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+            "Keep the original unchanged for future uses. These calculations establish which file meets the resolution requirement; without inspecting the image or a sample print, they don’t establish the finished print’s visual quality."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+            "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+            "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**",
+            "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**.",
+            "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality.",
+            "These calculations establish that the original meets the resolution requirement; they don’t establish how the finished print will look."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**",
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+            "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+          ],
+          "rationale": "Both retain the metadata distinction, justified website/display choices, no-detail-recovery follow-up, worked dimensions and density calculations, resampling causes, proportion choices and visual-quality limits. Their wording differs, but both meet the requested teaching depth and communicate satisfactorily.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-1ebbc1e4e189",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+            "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+            "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+            "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+            "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+            "These calculations establish that it meets the print’s pixel requirement; without inspecting the files or a sample print, they cannot establish how the finished print will look."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+            "Keep the original unchanged for future uses. These calculations establish which file meets the resolution requirement; without inspecting the image or a sample print, they don’t establish the finished print’s visual quality."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+          ],
+          "rationale": "Both satisfy the chronological photo requests and maintain the uncertainty about finished appearance. The extra possible website export and design-background option on the left are relevant, modest additions; neither creates a decisive communication advantage or substitutes for required teaching.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      }
+    ],
+    "supplemental_delegation": {
+      "parent_directive_status": "unknown",
+      "information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": [
+          "| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25** | Pass: $5 under budget | Pass: meets the kit minimum exactly and exceeds the mat minimum by 5 | Pass: both confirmed by Friday | **Qualifies** |",
+          "| C + D | $70 + $90 = **$160** | 16 + 14 = **30** | 8 + 12 = **20** | Pass: $20 under budget | Pass: meets both quantity minimums exactly | Fail currently: D is tentative, not confirmed | Does not currently qualify; would qualify if D becomes confirmed by Friday |",
+          "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+          "The unresolved fact is whether D will actually become **confirmed by Friday**. Its tentative status cannot be treated as satisfying that requirement.",
+          "Exactly one native child performed the analysis without delegation. I independently checked all ten pairs’ arithmetic and constraints and verified the saved [child-report.txt](<TASK_ROOT>/child-report.txt). The child’s full original response remains observable in the session."
+        ]
+      },
+      "ordinary_chat_quality": {
+        "observations": [
+          "The observable child report and saved text contain all ten pairs, correct totals, applicable budget/quantity/availability reasons, the confirmed and conditional choices, savings and verification caveat. Their substantive depth is requested task output, not chat padding.",
+          "The root final clearly recommends A + B with price, quantities and budget margin, distinguishes the cheaper C + D condition, and specifies obtaining D's Friday confirmation.",
+          "The root intermediate message gives a material preliminary result and says verification/saving remains underway. Its usefulness as an interruption cannot be established merely from its truth without timing or a pending user decision.",
+          "No completed matched comparison is supplied, so no comparative communication effect is assigned."
+        ],
+        "evidence": [
+          "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday. This is the only currently qualifying pair and leaves **$5** of the $180 budget.",
+          "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**. It saves **$15**, with five fewer mats and no quantity surplus.",
+          "**Next action:** verify D’s Friday availability before choosing C + D. Tentative availability does not qualify; otherwise, choose A + B.",
+          "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+        ]
+      },
+      "missing_evidence": [
+        "The actual incoming parent-to-child directive is not observable, so forwarding the complete task without added style or length constraints remains unknown.",
+        "No native spawn/descendant trace is supplied; the root's statement alone does not independently establish exactly one native child with no further delegation.",
+        "The root's claimed independent arithmetic check is not accompanied by an observed calculation or explicit recomputation trace, so actual checking beyond the correct reported totals remains unverified.",
+        "No completed matched comparison or message timing is available."
+      ]
+    },
+    "limitations": [
+      "This is an independent retrospective automated assessment of the assigned packet, not measured human comprehension or an observed user study.",
+      "Only the assigned packet and output template were read. No subject code was executed, no external facts were added, and historical captured checks were not freshly rerun.",
+      "Chronological turns were assessed against their current requests; repeated snapshots or duplicate views were not counted as additional user or assistant messages.",
+      "Timing claims are limited to the supplied traces. No UI notification events or exact authoring times are available, and untimed updates do not establish cadence.",
+      "Supplemental incoming child instructions, actual native delegation boundaries and unobserved work remain unknown. The visible child report's completeness does not prove those boundaries.",
+      "Communication comparisons exclude shortening protected code, reports and copy-ready email content; those artifacts were assessed for standalone completeness."
+    ]
+  },
+  "goal_notes": [
+    {
+      "pair_id": "pair-a273ff0c5411",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both give an intelligible final result and a timely explicit warning identifying the missed cutoff and the agenda decision.",
+          "evidence": [
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both address the report review and agenda deadline. The left's process detail concerns the same task, although it is unnecessary to the immediate decision.",
+          "evidence": [
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The shared deadline warning gives the user time to move the item. The added headings, cross-reference and filename narration on the left adds no decision, blocker or changed expectation beyond that warning.",
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The opening commitment, warning and final result serve different purposes. Neither repeats a message; the left's extra process narration is assessed as filler rather than counted as an extra message.",
+          "evidence": [
+            "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both finals use understandable report-review language.",
+          "evidence": [
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both traces have the same opening and one intermediate message. That message supplies a consequential deadline warning and also satisfies the host's ongoing-commentary requirement. Optional payload length is a different issue from required message presence.",
+          "evidence": [
+            "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The user needs the 9:20:10 estimate and the next-agenda action. Explaining headings checked, cross-references in progress and future filename checks does not alter that action.",
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-f2ecf2583",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The ordinary finals are identical and clearly identify the files, observed test result, approved amount and outstanding actions.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary finals directly answer what was made, whether tests passed and what must be resolved. The copy-ready email is assessed separately as a protected deliverable.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical opening establishes scope and the Friday uncertainty; the identical ordinary final reports the requested results without padding.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same compact summary occurs on both sides. Shared facts also needed in the standalone email are not treated as chat repetition.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "File names, the CLI check and cents are useful precision for this requested Node.js tool, and both use them identically.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show only the same appropriate opening before tool work. No additional progress messages are displayed. Timestamps are unavailable, so this does not establish a time-based cadence.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary summaries contain requested results and unresolved actions, with no unnecessary explanation. The full report and copy-ready email retain their own required detail.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-ae412fad7819",
+      "goals": {
+        "clarity": {
+          "choice": "left",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left explains which decision is pending and why. The right's final only states that nothing was applied, leaving the user without the requested choice.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied."
+          ]
+        },
+        "relevance": {
+          "choice": "left",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left's additional update directly carries out the conditional warning and approval request. The right's opening promises inspection but never provides its relevant consequence.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The left's warning and question are essential, not filler. The observed opening and finals on both sides are brief task communication without padding.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both finals state the unapplied status once; the left's waiting statement clarifies the pending choice.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use ordinary preview and plan language. The left explains the concrete archived-row consequence without technical detours.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "No observed update is excessive. The left's extra message is the user-requested decision point; the right's missing warning is an information failure, not a benefit of silence.",
+          "evidence": [
+            "I’ll inspect the preview before changing anything.",
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Neither adds unnecessary explanation. The left's concrete count, alternatives and waiting boundary are required by this request; the right simply omits them.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-30d4f6ffa",
+      "goals": {
+        "clarity": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "Both state the required results, but the left starts with an unrelated animal fact before the task outcome, interrupting the reader's path to the reimbursement information.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left's octopus observation is explicitly unrelated to reimbursement. The right begins with what was made and verified.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left adds an unrelated final aside and three identical still-working updates with no decision, blocker, result or changed expectation. The right retains the meaningful opening and requested final result.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left records the same generic still-working message three times. This is actual repeated progress, not overlapping snapshots; the right has only the shared opening.",
+          "evidence": [
+            "I am still working on this task.",
+            "I am still working on this task.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use the same useful tool names and batch terminology. The irrelevant aside is ordinary language, not a jargon problem.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left's three repeated generic updates provide no reader benefit beyond the opening. The right removes those empty interruptions. The judgment concerns content, since no elapsed cadence is supplied.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The octopus aside serves no requested explanation or deliverable. The right preserves all requested reimbursement content without it.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-c5dda356e317",
+      "goals": {
+        "clarity": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The user explicitly says they are not a developer. The right explains the saved name, separate search list and cached old result in everyday terms, including why clearing can read an old list. The left states the same mechanisms in specialist language.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both stay on the rename delay and limits of clearing cached results.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Every sentence in each answer describes the cause or the absence of an immediate guarantee; neither contains padding.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both present one causal chain without repeating the conclusion.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "Terms such as synchronous, secondary-index convergence, stale projection, TTL and read-your-writes consistency are not explained for the stated nondeveloper. The right retains the timing and guarantee in accessible words.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress messages are displayed for this explanation; there is no update payload or cadence to compare.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both need to explain the saved record, delayed search and cached results to answer why clearing is not a guarantee. The right's extra words express those same necessary relationships.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-49491fbf4",
+      "goals": {
+        "clarity": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "For a reader who knows basic code but not queue design, the left defines states, separates receiver history from queue state and works through the causes. The right compresses the design into unexplained conclusions, making it unsuitable for the requested review reasoning.",
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate. It leaves a failure window where a notice can be accepted more than once. Reversing the order creates a window where the notice is permanently missed instead.",
+            "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |\n| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |\n| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\n| 34 s | B marks `J42` done. | Done | Two notices accepted |",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both discuss the requested ordering, duplicate/loss tradeoff and receiver improvement. The left's additional topics are expressly requested, not irrelevant background; the right's omissions are assessed as information failures.",
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate. It leaves a failure window where a notice can be accepted more than once. Reversing the order creates a window where the notice is permanently missed instead.",
+            "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The left's timeline and atomicity explanation do real design-review work required by the user. The right contains no padding either; its brevity reflects missing content rather than removal of filler.",
+          "evidence": [
+            "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |\n| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |\n| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\n| 34 s | B marks `J42` done. | Done | Two notices accepted |",
+            "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The left's opening recommendation and final recommendation frame a detailed requested analysis. Reusing the core send/done distinction across different crash cases is necessary reasoning, not empty repetition. The right does not repeat itself.",
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate. It leaves a failure window where a notice can be accepted more than once. Reversing the order creates a window where the notice is permanently missed instead.",
+            "Keep **send before marking done**, preserve retries for unfinished jobs, and treat a timeout as an unknown outcome that may require retrying.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left explains what a stable idempotency key and atomic deduplication require. The right uses idempotency and deduplication as unexplained labels for a reader new to queue design.",
+          "evidence": [
+            "If the receiver can be changed, each attempt should send the same stable idempotency key for the same logical notice.",
+            "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both contain the same appropriate opening describing the requested analysis, with no additional displayed updates. Missing timestamps prevent an exact cadence assessment.",
+          "evidence": [
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs.",
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The left supplies the detailed explanations, worked example and qualifications the user requested. Neither answer adds an unnecessary explanatory detour; the right's missing depth does not establish a style advantage.",
+          "evidence": [
+            "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |\n| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |\n| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |\n| 34 s | B marks `J42` done. | Done | Two notices accepted |",
+            "For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-fc84d7ed2535",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both lead with the same clear yes, the fixed and tested confirmation, and the untested calendar delivery. The additional paragraph does not make that conclusion hard to understand.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both stay within registration, confirmation and calendar follow-up. The right's process lesson is related to the topic even though unnecessary for this bounded decision.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently."
+          ]
+        },
+        "filler": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right adds a generic lesson about checking stages separately after already giving the complete decision. It does not change what can reopen or what remains unverified.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently."
+          ]
+        },
+        "repetition": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right closes by restating the reopening decision and separate calendar check already in the shared opening.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use understandable event-work language without unexplained technical terminology.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress messages are displayed for this decision question; there is no update payload or cadence to compare.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The user asks whether registration can reopen and what remains unverified. The right's general process teaching adds no needed reason beyond the corrected, passing confirmation and separate calendar check already stated.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-e8e252fc0",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The ordinary finals are identical and clearly identify the files, observed test result, approved amount and outstanding actions.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary finals directly answer what was made, whether tests passed and what must be resolved. The copy-ready email is assessed separately as a protected deliverable.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical opening establishes scope and the Friday uncertainty; the identical ordinary final reports the requested results without padding.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same compact summary occurs on both sides. Shared facts also needed in the standalone email are not treated as chat repetition.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "File names, the CLI check and cents are useful precision for this requested Node.js tool, and both use them identically.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show only the same appropriate opening before tool work. No additional progress messages are displayed. Timestamps are unavailable, so this does not establish a time-based cadence.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary summaries contain requested results and unresolved actions, with no unnecessary explanation. The full report and copy-ready email retain their own required detail.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.\n\nThe approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-3a27b2364e58",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical finals explain the required columns, valid rows, local-trial readiness and production limitation clearly.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The extra left checks are truthful and directly about the required local format. Both give the same relevant final answer; topical relevance alone does not justify the early interruptions.",
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "After the shared opening, the left narrates successful subchecks and preparing the result. These updates add no decision, blocker, warning or changed expectation before the final at 26 seconds.",
+          "evidence": [
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left's optional column and row success messages are repeated in the final's complete result. The right retains that result and the required opening without those interim restatements.",
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use simple columns, rows and local-trial language appropriate to this format check.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The trace puts the two optional left updates at 8 and 18 seconds before a 26-second final. Neither supplies a new decision or changed expectation; the host's opening and 60-second guidance do not require these intermediate messages. The right keeps the required opening.",
+          "evidence": [
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left provides routine checking narration that is not needed before the concise completed result. The right's opening is sufficient to establish the tool-work expectation for this captured interval.",
+          "evidence": [
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-6db8434dd11a",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both chronological conversations answer the first choice, the label-only follow-up and the later detailed teaching request clearly. Each teaches the required multiplication and file-density comparison with a worked table.",
+          "evidence": [
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**"
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both adapt to the current turn: the metadata follow-up stays narrow, and the later explanation expands to the explicitly requested calculations, resampling and future borderless layout.",
+          "evidence": [
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The worked calculations, sample-creation explanation and aspect-ratio options support teaching the next coordinator. Neither fills the answers with unrelated material.",
+          "evidence": [
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+            "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Repeating the correct dimensions and original-file recommendation across these separate human follow-ups is responsive. The user explicitly asks the third turn to work through the previous conclusion; overlapping packet views are not additional messages.",
+          "evidence": [
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "No. With resampling disabled, changing the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at **10 × 7.5 inches**, it still supplies only **100 PPI**, below the required 240 PPI.",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "- Width: **10 inches × 240 PPI = 2400 pixels**\n- Height: **7.5 inches × 240 PPI = 1800 pixels**"
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both introduce PPI as pixels per inch and explain resampling through what happens to the stored pixels. The terms provide necessary precision without leaving the reader with unexplained labels.",
+          "evidence": [
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "The **“300 dpi” label is output-size metadata**—for a photo, it means pixels per inch (PPI). It tells software how to map pixels to a default print size; it doesn’t measure sharpness.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+            "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress messages or tool work are displayed in these chronological photo answers. There is no update payload or cadence to compare, and silence is not scored as an improvement.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The third turn expressly asks for teaching depth and shape choices. The crop, margins, distortion and resampling explanations are useful to that request, so their substantive detail is not unnecessary merely because both answers are long.",
+          "evidence": [
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "For a later **10 × 8 inch borderless layout**, check proportions before resizing. That layout is **5:4**, while the photograph is **4:3**.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.",
+            "- **Enlarging pixel dimensions through resampling:** Software creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would give it enough pixels numerically, but would not restore the original’s captured detail or establish equivalent print quality."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-1ebbc1e4e189",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both chronological conversations answer the first choice, the label-only follow-up and the later detailed teaching request clearly. Each teaches the required multiplication and file-density comparison with a worked table.",
+          "evidence": [
+            "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`"
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both adapt to the current turn: the metadata follow-up stays narrow, and the later explanation expands to the explicitly requested calculations, resampling and future borderless layout.",
+          "evidence": [
+            "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The worked calculations, sample-creation explanation and aspect-ratio options support teaching the next coordinator. Neither fills the answers with unrelated material.",
+          "evidence": [
+            "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`",
+            "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Repeating the correct dimensions and original-file recommendation across these separate human follow-ups is responsive. The user explicitly asks the third turn to work through the previous conclusion; overlapping packet views are not additional messages.",
+          "evidence": [
+            "No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.",
+            "Changing the label cannot restore the detail lost during downsampling.",
+            "- Width: 10 × 240 = **2400 pixels**\n- Height: 7.5 × 240 = **1800 pixels**",
+            "- Width: `10 inches × 240 ppi = 2400 pixels`\n- Height: `7.5 inches × 240 ppi = 1800 pixels`"
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both introduce PPI as pixels per inch and explain resampling through what happens to the stored pixels. The terms provide necessary precision without leaving the reader with unexplained labels.",
+          "evidence": [
+            "The “300 dpi” label is **print-size metadata**, called pixels per inch (PPI) for an image. It tells software how large to place the image on paper; it does **not** measure sharpness.",
+            "The “300 dpi” label is output-size metadata—more precisely, **300 pixels per inch (ppi)** for an image. It tells software a default print size; it doesn’t measure sharpness.",
+            "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress messages or tool work are displayed in these chronological photo answers. There is no update payload or cadence to compare, and silence is not scored as an improvement.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The third turn expressly asks for teaching depth and shape choices. The crop, margins, distortion and resampling explanations are useful to that request, so their substantive detail is not unnecessary merely because both answers are long.",
+          "evidence": [
+            "A later **10 × 8-inch borderless layout** requires another decision. Its proportions are 5:4, while the photo is 4:3.",
+            "A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.",
+            "- **Enlarging the pixel dimensions, or upsampling:** Software calculates additional pixels from the existing ones. Enlarging the web copy to 2400 × 1800 would produce a nominal 240 PPI file, but it would not recover the original detail lost during downsampling.",
+            "- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead."
+          ]
+        }
+      }
+    }
+  ]
+}

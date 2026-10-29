@@ -1,0 +1,242 @@
+{
+  "n42": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "reader-d-inline-photo-advice",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d1_explain_recommend",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d2_metadata_followup",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d3_detailed_teaching",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "n43": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "reader-d-inline-photo-advice",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d1_explain_recommend",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d2_metadata_followup",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d3_detailed_teaching",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "n44": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "reader-d-inline-photo-advice",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d1_explain_recommend",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d2_metadata_followup",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "d3_detailed_teaching",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  }
+}
