@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-f4b2b505e57fc8cc"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_024c64499d5e5864016ae320d5bcc08198931339603e9f6165","type":"agent_message","text":"No. The records show **12.1% less total lookup time across seven usable pairs**, with **7/8 correct first selections for both formats**. They support neither “30 percent faster” nor “more accurate.”\n\nYour decision now is whether to authorize a limited staffed check of ordinary-work accuracy and usability. The evidence does not support standardizing the guide yet."}}
+{"type":"turn.completed","usage":{}}

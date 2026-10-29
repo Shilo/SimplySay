@@ -1,0 +1,8 @@
+Recommend a **limited staffed check before standardizing**. Seven usable time pairs from four volunteers show a 12.1% saving; accuracy was 7/8 for both formats. Missing timing, coaching, and repeated tasks leave ordinary-work accuracy and usability unresolved.
+
+The draft needs correction. Both audit files are complete, including a corrected summary and detailed verification notes:
+
+- [findings.md](<TASK_ROOT>/audit/findings.md)
+- [metrics.json](<TASK_ROOT>/audit/metrics.json)
+
+All supplied sources remain unchanged. No volunteers were contacted or further study started.

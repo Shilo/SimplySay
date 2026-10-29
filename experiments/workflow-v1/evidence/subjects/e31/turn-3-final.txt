@@ -1,0 +1,9 @@
+Saved [methods.md](<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, interpretation, and a practical next-check plan. [original-summary.md](<TASK_ROOT>/handoff/original-summary.md) is a verified byte-for-byte copy. All pre-existing files remain unchanged.
+
+Committee message to copy; nothing has been sent:
+
+> We will keep the current reference card in place while planning a limited, staffed check of the reorganized guide. The audit found that four volunteers provided eight task pairs, with seven usable timing comparisons. Across those seven, total lookup time fell from 910 to 800 seconds—a reduction of 110 seconds, or 12.1%. The guide was faster in five pairs and slower in two.
+>
+> First-selection accuracy was 7/8 with each format across all eight pairs. The evidence therefore does not support the draft’s claims of a 30% time saving or improved accuracy.
+>
+> One guide time is missing, tasks were repeated, and coaching occurred within a single staffed exercise. These limitations leave ordinary-work accuracy, assistance needs, and performance uncertain. Before any further sessions begin, we will define the limited check’s scope, staffing, and acceptance and stop criteria. No further study has started.
