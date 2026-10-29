@@ -1,0 +1,9 @@
+{
+  "thread_id": "thread-bfec9bc2bb388700",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "xhigh",
+  "cwd": "<TASK_ROOT>",
+  "approvalPolicy": "never",
+  "instructionSources": [],
+  "collaboration_mode": "default"
+}

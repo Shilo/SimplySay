@@ -1,0 +1,4 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
+
+
+Please audit this reference-pack move before staff rely on the draft status. Check every expected source/staged file using actual bytes and hashes, reconcile the copy and restore claims, and write audit/findings.md plus audit/inventory.json using archive-plan.md. Do not replace staged files yet or change the supplied source/evidence files. Keep the detailed findings and routine check notes in the files; use chat for the decision and anything I need to resolve. Do not delete anything or access external storage.

@@ -1,0 +1,8 @@
+{
+  "operation": "copy reference pack to staging",
+  "exit_code": 0,
+  "reported_files_copied": 3,
+  "reported_status": "complete",
+  "per_file_hashes": null,
+  "run_note": "This log records the earlier operator command result. Verify against actual files before relying on it."
+}

@@ -1,0 +1,59 @@
+{
+  "subjects": [
+    {
+      "id": "e18",
+      "observed_completed_requests": [
+        "t3_repair_handoff"
+      ],
+      "quota_after": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 97,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793818132
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      },
+      "ignored_historical_usage": [
+        1
+      ],
+      "guide_raw_sha256": "70474befd60885a293c789b3a76b07a363d0b996740978d526dcde8932b4934a",
+      "guide_bytes": 16062,
+      "auth_copy_removed": true
+    },
+    {
+      "id": "e20",
+      "observed_completed_requests": [
+        "t2_practical_decision",
+        "t3_repair_handoff"
+      ],
+      "quota_after": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 97,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793818132
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      },
+      "ignored_historical_usage": [
+        0,
+        0
+      ],
+      "guide_raw_sha256": "944f49d7f6f25ded522863551995629c60d952177b65a785f7fa2603e21428e0",
+      "guide_bytes": 18623,
+      "auth_copy_removed": true
+    }
+  ],
+  "raw_files_inspected": true,
+  "protected_fixture_checks": 20,
+  "initial_audit_checks": 4,
+  "repaired_byte_equal_pairs": 6,
+  "unknown_absent_practical_reply": true
+}

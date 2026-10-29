@@ -1,0 +1,35 @@
+{
+  "files": [
+    {
+      "path": "labels.csv",
+      "source_bytes": 60,
+      "source_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+      "staged_bytes": 60,
+      "staged_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+      "status": "matching"
+    },
+    {
+      "path": "layout.svg",
+      "source_bytes": 196,
+      "source_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+      "staged_bytes": 196,
+      "staged_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+      "status": "matching"
+    },
+    {
+      "path": "manual.txt",
+      "source_bytes": 122,
+      "source_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+      "staged_bytes": 122,
+      "staged_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+      "status": "matching"
+    }
+  ],
+  "summary": {
+    "expected_files": 3,
+    "present_files": 3,
+    "matching_files": 3,
+    "mismatched_files": 0,
+    "missing_files": 0
+  }
+}

@@ -1,0 +1,4 @@
+Archive handling note
+Set: service-bench reference pack
+Read the matching label sheet before using a drawing.
+Revision: 3

@@ -1,0 +1,68 @@
+{
+  "turn": 2,
+  "expected_thread": "thread-bfec9bc2bb388700",
+  "observed_thread": "thread-bfec9bc2bb388700",
+  "thread": "thread-bfec9bc2bb388700",
+  "started_utc": "2026-10-29T11:24:18.063Z",
+  "continuation_observed": false,
+  "failed": true,
+  "exit_code": null,
+  "error": "Accepted/observed native turn IDs differ",
+  "timed_out": false,
+  "usage": {
+    "last": {
+      "inputTokens": 25591,
+      "cachedInputTokens": 21504,
+      "outputTokens": 370,
+      "reasoningOutputTokens": 234,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 25961
+    },
+    "total": {
+      "inputTokens": 134300,
+      "cachedInputTokens": 107392,
+      "outputTokens": 7789,
+      "reasoningOutputTokens": 2507,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 142089
+    }
+  },
+  "native_turn_id": "thread-3c9c5a5ab7cba989",
+  "usage_snapshots": [
+    {
+      "last": {
+        "inputTokens": 25591,
+        "cachedInputTokens": 21504,
+        "outputTokens": 370,
+        "reasoningOutputTokens": 234,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 25961
+      },
+      "total": {
+        "inputTokens": 134300,
+        "cachedInputTokens": 107392,
+        "outputTokens": 7789,
+        "reasoningOutputTokens": 2507,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 142089
+      }
+    }
+  ],
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 96,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "accepted_turn_id": "thread-1afad1a87650c58e",
+  "public_message_phases": [],
+  "ended_utc": "2026-10-29T11:24:18.355Z",
+  "case_turn_id": "t2_practical_decision",
+  "snapshot_issues": []
+}

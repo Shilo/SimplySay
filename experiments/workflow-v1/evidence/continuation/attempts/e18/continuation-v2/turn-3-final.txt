@@ -1,0 +1,5 @@
+Repaired and verified all three files. Saved [verification.json](/<TASK_ROOT>/handoff/verification.json) and [restore-guide.md](/<TASK_ROOT>/handoff/restore-guide.md). The source, logs, and initial audit remain unchanged.
+
+Copy to staff:
+
+> The staged reference pack is repaired. All three expected files match the retained source byte for byte and by SHA-256. This verifies the current local copy. Independent backup, clean-directory restoration, media-failure recovery, and permission recovery remain unverified. We will keep the old source. The next decision is to assign responsibility for an independent backup and a documented full restore rehearsal.

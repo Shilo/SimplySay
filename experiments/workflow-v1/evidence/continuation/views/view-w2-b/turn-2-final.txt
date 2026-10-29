@@ -1,0 +1,3 @@
+No. The success log does not establish a complete copy: one staged file differs and another is missing.
+
+Keep the old folder. The next decision is whether to authorize staging repairs and full verification. Retirement requires a later decision after independent backup and restore evidence is established.

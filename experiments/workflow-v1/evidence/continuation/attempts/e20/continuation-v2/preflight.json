@@ -1,0 +1,49 @@
+{
+  "same_config_sha256": "022d73a2ee9ffb95e65467c8c9fcd5aef7bf704084e232db70a9abb1001dc030",
+  "condition": "enabled",
+  "policy_sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 96,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "actual_installed_package_unchanged": true,
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [
+          {
+            "key": "ss-feasibility@ss-feasibility-catalog:hooks/hooks.json:session_start:0:0",
+            "eventName": "sessionStart",
+            "handlerType": "command",
+            "command": "node -e \"require(process.env.PLUGIN_ROOT + '/session-start.cjs')\"",
+            "async": false,
+            "matcher": "startup",
+            "timeoutSec": 10,
+            "statusMessage": null,
+            "additionalContextLimit": null,
+            "sourcePath": "<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+            "source": "plugin",
+            "pluginId": "ss-feasibility@ss-feasibility-catalog",
+            "displayOrder": 0,
+            "enabled": true,
+            "isManaged": false,
+            "currentHash": "sha256:95413dd9c205a0a3025ef2403f47fe226336c1263655a43bcec4148f6cc047ef/sha256:41bcb1d97a5c1233bff790368b47605aac38e9c04b206ec5cabac3a072bd949d",
+            "trustStatus": "trusted"
+          }
+        ],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "original_task_tree_matches": true
+}

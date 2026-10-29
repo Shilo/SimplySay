@@ -1,0 +1,27 @@
+{
+  "stage": "Completed captured continuation; projection IDs are not model conversations",
+  "subjects": [
+    {
+      "id": "view-w2-a",
+      "case_file": "experiments/workflow-v1/cases/w2.case.json",
+      "condition": "absent",
+      "source_existing_chat": "e18",
+      "evidence_projection_only": true
+    },
+    {
+      "id": "view-w2-b",
+      "case_file": "experiments/workflow-v1/cases/w2.case.json",
+      "condition": "enabled",
+      "policy": "experiments/workflow-v1/candidates/workflow.v4.txt",
+      "source_existing_chat": "e20",
+      "evidence_projection_only": true
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "w2-continuation-absent-v4",
+      "a": "view-w2-a",
+      "b": "view-w2-b"
+    }
+  ]
+}

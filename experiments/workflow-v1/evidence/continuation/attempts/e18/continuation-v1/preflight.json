@@ -1,0 +1,29 @@
+{
+  "same_config_sha256": "2cbad1bfb170df2bddc5fc22c26bb409f685f69d0b2f200605a7987dabfdea04",
+  "condition": "absent",
+  "policy_sha256": null,
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 96,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "actual_installed_package_unchanged": false,
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "original_task_tree_matches": true
+}
