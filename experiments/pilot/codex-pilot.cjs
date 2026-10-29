@@ -17,8 +17,10 @@ const minimal = fs.readFileSync(path.join(__dirname, 'minimal.txt'), 'utf8');
 const selector = 'ss-feasibility@ss-feasibility-catalog';
 const originalManifestPath = path.join(base, 'launch-manifest.json');
 const amendedManifestPath = path.join(base, 'launch-manifest-v2.json');
-const manifestPath = fs.existsSync(amendedManifestPath) ? amendedManifestPath : originalManifestPath;
-const runsDirectory = fs.existsSync(amendedManifestPath) ? 'runs-v2' : 'runs';
+const captureManifestPath = path.join(base, 'launch-manifest-v3.json');
+const manifestPath = fs.existsSync(captureManifestPath) ? captureManifestPath : fs.existsSync(amendedManifestPath) ? amendedManifestPath : originalManifestPath;
+const runsDirectory = fs.existsSync(captureManifestPath) ? 'runs-v3' : fs.existsSync(amendedManifestPath) ? 'runs-v2' : 'runs';
+const spawnMatcher = '^(spawn_agent|collaborationspawn_agent)$';
 const env = { ...process.env };
 for (const key of Object.keys(env)) {
   if (/API_KEY|AUTH_TOKEN|ACCESS_TOKEN|GITHUB_TOKEN|GH_TOKEN/.test(key) ||
@@ -43,7 +45,7 @@ function config(condition, caseId, profile) {
   text += `[sandbox_workspace_write]\nnetwork_access = false\nexclude_tmpdir_env_var = true\nexclude_slash_tmp = true\n[windows]\nsandbox = "mxc"\n[features]\napps = false\nmulti_agent = ${delegation}\n[agents]\nenabled = ${delegation}\nmax_threads = 1\nmax_depth = ${delegation ? 1 : 0}\n[plugins._default]\nenabled = false\n`;
   if (delegation) {
     const command=`node "${path.join(profile,'spawn-guard.cjs').replaceAll('\\','/')}"`;
-    text += `\n[hooks]\nPreToolUse = [{ matcher = "spawn_agent", hooks = [{ type = "command", command = ${JSON.stringify(command)}, timeout = 5 }] }]\n`;
+    text += `\n[hooks]\nPreToolUse = [{ matcher = ${JSON.stringify(spawnMatcher)}, hooks = [{ type = "command", command = ${JSON.stringify(command)}, timeout = 5 }] }]\n`;
   }
   return text;
 }
@@ -95,7 +97,7 @@ async function prepare(id) {
   }
   put(path.join(trial, 'prompt.txt'), subject.input.prompt);
   put(path.join(profile, 'config.toml'), config(condition, caseId, profile));
-  if(caseId==='crate_pair_delegation') put(path.join(profile,'spawn-guard.cjs'),`const fs=require('node:fs'),path=require('node:path');let s='';process.stdin.on('data',b=>s+=b);function deny(){const reason='This synthetic task permits one root child and no descendants.';process.stdout.write(JSON.stringify({hookSpecificOutput:{hookEventName:'PreToolUse',permissionDecision:'deny',permissionDecisionReason:reason}}));process.stderr.write(reason);process.exitCode=2;}process.stdin.on('end',()=>{try{const i=JSON.parse(s);if(i.tool_name!=='spawn_agent')return;if(i.agent_id)return deny();fs.writeFileSync(path.join(__dirname,'spawn-used'),'1',{flag:'wx'});}catch(e){deny();}});\n`);
+  if(caseId==='crate_pair_delegation') put(path.join(profile,'spawn-guard.cjs'),`const fs=require('node:fs'),path=require('node:path');let s='';process.stdin.on('data',b=>s+=b);function deny(){const reason='This synthetic task permits one root child and no descendants.';process.stdout.write(JSON.stringify({hookSpecificOutput:{hookEventName:'PreToolUse',permissionDecision:'deny',permissionDecisionReason:reason}}));process.stderr.write(reason);process.exitCode=2;}process.stdin.on('end',()=>{try{const i=JSON.parse(s);if(!['spawn_agent','collaborationspawn_agent'].includes(i.tool_name))return;fs.appendFileSync(path.join(__dirname,'spawn-guard-events.jsonl'),JSON.stringify({tool:i.tool_name,child:!!i.agent_id})+'\\n');if(i.agent_id)return deny();fs.writeFileSync(path.join(__dirname,'spawn-used'),'1',{flag:'wx'});}catch(e){deny();}});\n`);
   const evidence = { id, caseId, condition, policyHash: plan.policyHash, installation: [] };
   try {
   const auth = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.codex/auth.json'), 'utf8'));
@@ -130,7 +132,7 @@ async function prepare(id) {
       const guards=evidence.hooksBefore.data.flatMap(x=>x.hooks).filter(h=>h.eventName==='preToolUse'&&h.source==='user');
       if(guards.length!==1)throw new Error('Missing one-child budget guard');
       const guard=guards[0],expected=`node "${path.join(profile,'spawn-guard.cjs').replaceAll('\\','/')}"`;
-      if(guard.command!==expected||guard.matcher!=='spawn_agent'||guard.timeoutSec!==5)throw new Error('Unexpected budget guard');
+      if(guard.command!==expected||guard.matcher!==spawnMatcher||guard.timeoutSec!==5)throw new Error('Unexpected budget guard');
       await rpc.request('config/batchWrite',{edits:[{keyPath:'hooks.state',value:{[guard.key]:{trusted_hash:guard.currentHash}},mergeStrategy:'upsert'}],filePath:path.join(profile,'config.toml'),reloadUserConfig:true});
     }
     evidence.hooksEffective=await rpc.request('hooks/list',{cwds:[cwd]});
@@ -208,4 +210,13 @@ function amendSandbox() {
   put(amendedManifestPath,JSON.stringify(next,null,2));
   console.log(JSON.stringify({amendedManifestPath,originalPreserved:true,remainingDiagnosticSlots:1}));
 }
-(async () => { if (action === 'freeze') freeze(); else if(action==='amend-sandbox')amendSandbox();else if (action === 'prepare') await prepare(id); else if (action === 'run') await run(id); else throw new Error('Use freeze, amend-sandbox, prepare ID, or run ID'); })().catch(e => { console.error(e.message); process.exitCode = 1; });
+function amendCapture(){
+  if(fs.existsSync(captureManifestPath))throw new Error('Capture amendment already frozen');
+  const ledger=JSON.parse(fs.readFileSync(path.join(root,'.local/pilot-sessions.json'),'utf8'));
+  if(ledger.reservations.reduce((n,r)=>n+r.slots,0)!==9||!ledger.reservations.some(r=>r.id==='r07')||ledger.reservations.some(r=>r.id==='r08'))throw new Error('Unexpected capture amendment point');
+  const old=JSON.parse(fs.readFileSync(amendedManifestPath,'utf8'));
+  if(old.policyHash!==hash(policy)||old.caseHash!==hash(fs.readFileSync(path.join(__dirname,'cases.json'))))throw new Error('Policy/task changed');
+  put(captureManifestPath,JSON.stringify({...old,frozenBeforeTrials:false,parentManifestHash:hash(fs.readFileSync(amendedManifestPath)),sourceCommit:cp.spawnSync('git',['-C',root,'rev-parse','HEAD'],{encoding:'utf8'}).stdout.trim(),controllerHashes:controllerHashes(),amendment:'r07 root+native child started then capacity failure. CLI JSON omitted V2 spawn activity and incoming directive is not exposed. Correct budget hook canonical name for V2 collaboration namespace; only remaining r08 runs with repaired controller. Policy/tasks unchanged. No baseline rerun fits remaining one-slot reserve; r08 is unpaired output evidence only.',order:old.order.filter(r=>r[0]==='r08')},null,2));
+  console.log(JSON.stringify({captureManifestPath,priorEvidencePreserved:true,remainingDiagnosticSlots:1}));
+}
+(async () => { if (action === 'freeze') freeze(); else if(action==='amend-sandbox')amendSandbox();else if(action==='amend-capture')amendCapture();else if (action === 'prepare') await prepare(id); else if (action === 'run') await run(id); else throw new Error('Use freeze, amend-sandbox, amend-capture, prepare ID, or run ID'); })().catch(e => { console.error(e.message); process.exitCode = 1; });

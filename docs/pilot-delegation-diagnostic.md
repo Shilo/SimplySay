@@ -1,0 +1,13 @@
+# Native delegation failure and capture limitation
+
+The absent delegation task r07 started one real root and one native child, then ended with the provider error “Selected model is at capacity.” No final reply or saved child report exists. This is an infrastructure failure and leaves protected inter-agent preservation unknown. Both sessions remain charged; the first attempt is not discarded.
+
+The CLI JSON stream showed an empty receiver list and no spawn item. Selected native session metadata and the supported local `thread/read` API independently confirm the child and its interrupted state. An empty CLI child list therefore does not prove that no child ran. The public API exposes `subAgentActivity` that the CLI JSON renderer omits. It can recover ordinary public agent messages when they exist, but special inter-agent communication/incoming directives are not necessarily exposed. No secret-key access or manual prompt decryption is authorized or attempted.
+
+The budget guard's marker was absent. Independent source investigation corrected an earlier static assumption: in Codex 0.163.0, the V2 `collaboration` namespace is concatenated with `spawn_agent` as `collaborationspawn_agent` for hook matching. The bare matcher and script did not cover it. Synthetic tests of the bare name had passed, but they did not validate this native V2 route. That earlier clearance is explicitly narrowed by contrary runtime evidence.
+
+Before the remaining planned enabled task r08, the controller accepts both exact supported hook names and records only safe name/child-context metadata to verify actual execution. The core policy, fixtures, grading criteria, model and effort remain unchanged. A separate v3 manifest binds this control repair and fresh profile; all prior manifests/results remain intact. The candidate plugin is unchanged.
+
+r08 remains an **unpaired** enabled-output observation: the failed baseline cannot establish comparative preservation or clarity. One remaining diagnostic slot cannot cover a replacement root plus child, so r07 will not be retried. With r08's reserved root/child pair the maximum charged total is 11, leaving one active reserve unused. Do not broaden that allocation or change models to evade capacity without a separate recorded decision.
+
+After r08, verify actual native child identity, guard execution, public child report, per-pair facts, saved-file preservation, and root recommendation where available. Missing capture or opaque incoming directives remain unknown. Instruction inheritance alone is not a failure; inappropriate changes to protected output are. No result here is release validation or permission for production implementation.
