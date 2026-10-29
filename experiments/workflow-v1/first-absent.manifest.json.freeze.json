@@ -1,0 +1,30 @@
+{
+  "manifest_sha256": "c22764a254ad998d66c1e529afe1c7870140b76e2e78f1d81de24ffcc153e2ae",
+  "fingerprints": {
+    "experiments/workflow-v1/run.cjs": "962c1087aafcf042cf48393b3106c74231b02fa15532777994a3ac7454b88976",
+    "experiments/workflow-v1/capture.cjs": "02d24283c632f347e23105c2baac673b9cadacc06123e44778c0f945f502db34",
+    "experiments/workflow-v1/allocation.approved.json": "27a5ade9402b843ad4d89976313c4685a645e7ed738ab099c1405a169831d11c",
+    "experiments/workflow-v1/environment.json": "dd11e3931c5677cde80661c294b3a7a9a0cee911f54fb02c54cc23bf6795981c",
+    "experiments/workflow-v1/cases/manifest.json": "60c40518a50d7ea4ec4ce7437e01f8db9e28d59190270a3a7b0833640a1acac4",
+    "docs/workflow-authorization.md": "88015b6d73b798a875387a4dc2e1fe65bce2367df380a806bd84d1bbe045e5bf",
+    "docs/workflow-pretrial.md": "6d509a183f6255b1ba4574d0cad8eb805af8c24e94fffd736b591f02f91208ca",
+    "experiments/development-v1/assess.cjs": "175a5bb2bd7a5120762ed601d76eda916ea797196cef2280a30308ce815b7a5d",
+    "experiments/development-v1/cases/checks.cjs": "da6c8cfb9b219f03ebf78b300f61ee11e50e50a10dc1d216e84a02b808e694f0",
+    "experiments/development-v1/audience-context.txt": "c01ff2694765023221b3581b0c2d30ebf3dd5e2d5001932c4563529eae9c59b5",
+    "experiments/development-v1/run.cjs": "8ad6e50dd6937d2a4a0707934f4afd963fe0e4022c1eb88180c8636f4f23a7ca",
+    "experiments/pilot/codex-rpc.cjs": "f23694574dd553b3345dbce56ec7183f88043b398c38e4df1261144519d64067",
+    "experiments/final-pilot/run.cjs": "1897e68529735449f985a80c621faa0e7051b4c6fe36af8d98a194081d89d308",
+    "experiments/workflow-v1/cases/w1.case.json": "36c15a6c73ee31387f0a7330ae0225c96299032f0fc5dffe8458e51ce398186b",
+    "runtime-source/.codex-plugin/plugin.json": "bdae4b8b04de1892d071d568805a17dcadf9fb86efac268b504900d42ec1f55c",
+    "runtime-source/hooks/hooks.json": "ea24207c8fe2e05bc972fb8133ae70ab86dc9a481fc793525ea98bb22e7b2a7c",
+    "runtime-source/session-start.cjs": "93019ae91bb34abdc8246e53dc09030313941d989b029a8d34d73b8bd27a41ef",
+    "catalog-source": "0f5d5c3642276d8271758c221d369e322ee5f4304f4445cfb4c07ef10e2c15a0"
+  },
+  "binary_sha256": "0c09e45bc76433756eb2d492f6db0ce6f269967e6618f4a6ae73e2fa239694b8",
+  "host": "codex-cli 0.165.0-alpha.1.2",
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh",
+  "transport": "app-server",
+  "source_revision": "4d338ae68ce5628abc9876b4bed8e21b38fe5299",
+  "frozen_utc": "2026-10-29T10:27:28.151Z"
+}
