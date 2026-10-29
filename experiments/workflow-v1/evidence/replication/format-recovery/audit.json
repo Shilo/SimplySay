@@ -1,0 +1,185 @@
+{
+  "label": "Owner-authorized post-hoc offline format recovery; original failed grading retained",
+  "plan_sha256": "b5cc2b0b662a04b8ee0976980821e80c449927fc63cff62d91dabe7ec459dca9",
+  "scorer_sha256": "5b3d3235146284d6e31d516bc0d8f245638ec1b8c22ee75923157f7453718732",
+  "scoring_thresholds_and_success_definition_changed": false,
+  "new_model_sessions": 0,
+  "new_judgments": 0,
+  "raw_assessment_sha256": "36f9b4c825b2616c95904bb7cf86948381ead744899c55d2a586c95ca5ec2ff6",
+  "raw_reviews_and_packets_unchanged": true,
+  "negative_guard_tests_passed": 10,
+  "entries": [
+    {
+      "reviewer_id": "replication-review-1",
+      "raw_review_sha256": "4f03303ef57ebe365b3c6fe89bc351623470751928c552bddab7cb23c8237efd",
+      "packet_sha256": "2f6623af555c914524c6b55079a3de8ccd785a1e9d5000b3c3cfaae279c60853",
+      "recovered_review_sha256": "be0223c9a3a28329fa8f1d7d6d96f9bf0f8f340c94e0c689ba206493cf73fa39",
+      "original_calibration": {
+        "pass": false,
+        "controls": {
+          "omission": {
+            "pass": false,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "recovered_calibration": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "operation": "Append verbatim existing same-pair rationale sentence; retain original excerpt and rationale",
+      "source_pointer": "/pair_reviews/1/communication/rationale",
+      "target_pointer": "/pair_reviews/1/left_information/issues/-",
+      "copied_statement": "The left standalone email omits the requested R-103 receipt review item even though its introduction promises two claims.",
+      "all_other_fields_unchanged": true,
+      "real_comparison_unchanged": true
+    },
+    {
+      "reviewer_id": "replication-review-2",
+      "raw_review_sha256": "7fd4e98d14d6a13c409b79be7dd4b5c5f0003dc3ce3ccae03a4a2fe2b4587583",
+      "packet_sha256": "0cb7341da9340f1c082722ea9eef9b94d9d116e8857932d7e860471c2dd22c7c",
+      "recovered_review_sha256": "d8f84b638f160d07c40df7755d4b1da24c1d65d2ef0da8d7725797056d88d9f7",
+      "original_calibration": {
+        "pass": false,
+        "controls": {
+          "omission": {
+            "pass": false,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "recovered_calibration": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "operation": "Append verbatim existing same-pair rationale sentence; retain original excerpt and rationale",
+      "source_pointer": "/pair_reviews/0/communication/rationale",
+      "target_pointer": "/pair_reviews/0/right_information/issues/-",
+      "copied_statement": "Separately, the right standalone email omits R-103 and its receipt action even while announcing two review claims.",
+      "all_other_fields_unchanged": true,
+      "real_comparison_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "authorization": "Owner requested offline recovery of existing judgments when the defect is formatting only, 2026-10-29",
+  "scope": "Copy an already explicit omission explanation from each same-pair rationale into its issues array. Preserve all original text, judgments, evidence and failures. No new judgments or model sessions.",
+  "entries": [
+    {
+      "reviewer_id": "replication-review-1",
+      "raw_review_sha256": "4f03303ef57ebe365b3c6fe89bc351623470751928c552bddab7cb23c8237efd",
+      "packet_sha256": "2f6623af555c914524c6b55079a3de8ccd785a1e9d5000b3c3cfaae279c60853",
+      "pair_id": "pair-73ab5828a",
+      "side": "left",
+      "verbatim_existing_statement": "The left standalone email omits the requested R-103 receipt review item even though its introduction promises two claims."
+    },
+    {
+      "reviewer_id": "replication-review-2",
+      "raw_review_sha256": "7fd4e98d14d6a13c409b79be7dd4b5c5f0003dc3ce3ccae03a4a2fe2b4587583",
+      "packet_sha256": "0cb7341da9340f1c082722ea9eef9b94d9d116e8857932d7e860471c2dd22c7c",
+      "pair_id": "pair-f2ecf2583",
+      "side": "right",
+      "verbatim_existing_statement": "Separately, the right standalone email omits R-103 and its receipt action even while announcing two review claims."
+    }
+  ]
+}

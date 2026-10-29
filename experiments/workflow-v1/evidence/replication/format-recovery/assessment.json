@@ -1,0 +1,73 @@
+{
+  "label": "Automated assessments, not measured human comprehension",
+  "status": "tie-after-owner-authorized-format-only-recovery",
+  "original_dispatch_result": "inconclusive; both original omission field gates failed",
+  "recovered_reviewers": 2,
+  "original_failed_control_judgments": 2,
+  "recovered_controls_passed": 8,
+  "recovered_controls_total": 8,
+  "judgments_changed": false,
+  "success_definition_changed": false,
+  "scope": "Consistency check on the same used W1 workflow; not whole-product validation",
+  "votes": [
+    {
+      "reviewer": "replication-review-1",
+      "left_source": "e21",
+      "right_source": "e22",
+      "format_recovered_calibration": true,
+      "preference": "tie",
+      "dimensions": {
+        "clarity": "tie",
+        "relevance": "tie",
+        "filler": "tie",
+        "repetition": "tie",
+        "unnecessary_jargon": "tie",
+        "excessive_updates": "tie"
+      },
+      "information": {
+        "left": "preserved",
+        "right": "preserved"
+      },
+      "confidence": "medium",
+      "rationale": "Both follow the changing requests: a decision and file links in turn 1, a direct rejection and next decision in turn 2, and a substantial saved handoff plus complete copy-ready committee message in turn 3. The protected detail is useful requested work, not chatter. The right first final makes the next decision and uncertainty slightly more explicit; the left first final gives the mixed timing result immediately. Both openings set the tool-work scope. Both audit progress messages convey a material corrected result, then repeat it in the required final. Both later progress messages mainly preview or recap handoff contents; their reader benefit is modest, and neither shows a material reduction in unnecessary narration. Technical terms are relevant and understandable on both sides. Recorded order/timing does not justify treating gaps or fewer words as a communication gain: both tool turns have intervals exceeding the host update cadence. The ordinary_chat, progress and turns fields overlap and were counted once. The differences do not establish a meaningful overall winner or a separate improvement on every communication dimension.",
+      "missing_evidence": [
+        "No observation of reader comprehension, perceived interruptions, or desktop notification delivery is supplied; this is a retrospective content judgment.",
+        "The native child directive mentioned by capture limitations is not observable and was not inferred from these study outputs."
+      ]
+    },
+    {
+      "reviewer": "replication-review-2",
+      "left_source": "e22",
+      "right_source": "e21",
+      "format_recovered_calibration": true,
+      "preference": "tie",
+      "dimensions": {
+        "clarity": "tie",
+        "relevance": "tie",
+        "filler": "tie",
+        "repetition": "tie",
+        "unnecessary_jargon": "tie",
+        "excessive_updates": "tie"
+      },
+      "information": {
+        "left": "preserved",
+        "right": "preserved"
+      },
+      "confidence": "medium",
+      "rationale": "Both chronological conversations are already focused on the current request: turn 1 gives a limited-check decision and material corrected results, turn 2 answers the narrow committee claim with the next decision, and turn 3 supplies the requested detailed handoff and standalone committee text. The left gives scope and acceptance criteria directly in its first final; the right adds the slower-pair count and points to conditions in the findings. Both contain some work-description language in progress, and both repeat preliminary results in the final, where the user needs a definitive answer. Their mid-work result updates have a reader benefit, while the later handoff summaries mostly preview requested content; neither demonstrates a systematic reduction in unnecessary narration. The left highlights timing endpoints, while the right highlights dependence of repeated observations. These are modest tradeoffs, not evidence that one solves filler, jargon, interruptions or general readability. Useful technical detail in the requested files and committee copy is protected. Both have long recorded tool turns with only one intermediate update; silence or fewer interruptions is not credited as a benefit or proof of periodic cadence compliance. No clear communication winner is supported.",
+      "missing_evidence": [
+        "No measured reader-comprehension or desktop notification evidence is supplied. Host event timing does not establish the effect of updates on the user.",
+        "The packet does not establish any causal connection between the observed wording and a particular source policy or intervention."
+      ]
+    }
+  ],
+  "information_and_work": "Both original judgments preserved; unchanged deterministic/actual-work checks retained",
+  "original_child_instructions": "unverified",
+  "desktop_notifications_and_human_comprehension": "unverified",
+  "order_bias": "Opposite orientations agree; two reviewers do not establish absence of bias",
+  "conversations_used": 25,
+  "task_starts_used": 78,
+  "new_model_sessions": 0,
+  "production": "hold",
+  "publication": "hold"
+}
