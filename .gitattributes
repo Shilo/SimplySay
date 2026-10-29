@@ -5,3 +5,6 @@
 /docs/pilot-criteria.md text eol=lf
 # Evidence keeps original line endings and Markdown hard breaks byte-for-byte.
 /experiments/pilot/evidence/** -text -whitespace
+/experiments/assessment-v2/*.cjs text eol=lf
+/experiments/assessment-v2/*.json text eol=lf
+/experiments/assessment-v2/results/** -text -whitespace

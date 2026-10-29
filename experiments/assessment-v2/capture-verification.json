@@ -1,0 +1,154 @@
+{
+  "status": "offline-assessment-native-parent-directive-unobservable",
+  "model_sessions_started": 0,
+  "auth_access": false,
+  "decryption_attempted": false,
+  "source_tag": "rust-v0.163.0",
+  "source_sha256": {
+    "codex-rs/app-server-protocol/src/protocol/thread_history.rs": "73334586efa8b67c1f2037de2c78b49e72a7ec3f3339cf305bfafd54d4bdf2ac",
+    "codex-rs/core/src/agent/types.rs": "4729dcd8112d0d7b465dece66921ab05a82a75807460f0176471a2d46223d8c4",
+    "codex-rs/core/src/hook_runtime.rs": "90a53b9fdee731457a81979796b405967312c402236221c16683db7246e5dbfe",
+    "codex-rs/core/src/tools/context.rs": "9a9acc6daab2112bd9ca1a07a1e1f2105b20a7f565878157c726ee0d7a3e00cc",
+    "codex-rs/core/src/tools/handlers/multi_agents_v2/followup_task.rs": "d6b3542f063401a614fcda05fd598be22477dfabee6a26e7fac6e09b4976b8c2",
+    "codex-rs/core/src/tools/handlers/multi_agents_v2/message_tool.rs": "bcd9b05f785196f211f7e36a072b99c6ec7c332702b677d6ba64f12a675cd27f",
+    "codex-rs/core/src/tools/handlers/multi_agents_v2/send_message.rs": "4c45adff32a96519dfaa3ff36c02ddc9ce300bfe0f9039b449f2ac9dd30f3e86",
+    "codex-rs/core/src/tools/handlers/multi_agents_v2/spawn.rs": "440d1558ccd53dcf49ae08979a35cb44db5e8c55a7068b5cb00ac5add20a4504",
+    "codex-rs/core/src/tools/handlers/multi_agents_v2.rs": "5caddf356c6e004b5206c2eaa51050ce00b1ff6e019d83c2c23e900b3f75b10a",
+    "codex-rs/core/src/tools/mod.rs": "838a9ac1e45fa30fb1baea0eba32b46f220ccf5ad66af5fa0abaa3401a611b6f",
+    "codex-rs/core/src/tools/registry.rs": "fc37acd056a78779aeeff497d30bcbba759ea55f469ae2c9e7b8f37f3aeb2dae",
+    "codex-rs/core/src/tools/router.rs": "f97420f8a7b117563faad165ae7ad0d020545a2dfffbc46dbbfbdc5251fd939d",
+    "codex-rs/hooks/src/events/pre_tool_use.rs": "944ff4e27e569564d8e240100cf076df79f91730b8f4ea4983445b30259bf323"
+  },
+  "synthetic_probe": {
+    "passed": true,
+    "syntheticCases": 17,
+    "realDirectiveCaptureProven": false,
+    "modelSessionsStarted": 0
+  },
+  "existing_r08_rollouts": [
+    {
+      "file": "rollout-2026-10-28T20-34-57-01a185b9-9ee6-7ea3-973c-23b953b59f07.jsonl",
+      "sha256": "2a49a59ca1bf00e11fff5243f50105bcad219626ba36a1ebccd59aed5dc0da49",
+      "selected": [
+        {
+          "line": 15,
+          "type": "message-tool-call",
+          "name": "spawn_agent",
+          "namespace": "collaboration",
+          "argumentKeys": [
+            "task_name",
+            "message"
+          ],
+          "message": {
+            "observable": false,
+            "kind": "opaque-observed-encoding",
+            "length": 1124,
+            "sha256": "367570dfa742d5dce4ca975c6853015d5a80aa7a375f1e22f4653f127e912c09"
+          }
+        },
+        {
+          "line": 41,
+          "type": "inter_agent_communication_metadata",
+          "keys": [
+            "trigger_turn"
+          ]
+        },
+        {
+          "line": 61,
+          "type": "message-tool-call",
+          "name": "followup_task",
+          "namespace": "collaboration",
+          "argumentKeys": [
+            "target",
+            "message"
+          ],
+          "message": {
+            "observable": false,
+            "kind": "opaque-observed-encoding",
+            "length": 460,
+            "sha256": "46c23b9004a977883b267861d7e7fe999c0c01e84f0c6480a5faef7131ae7271"
+          }
+        },
+        {
+          "line": 93,
+          "type": "inter_agent_communication_metadata",
+          "keys": [
+            "trigger_turn"
+          ]
+        }
+      ],
+      "publicMessages": [
+        {
+          "line": 14,
+          "phase": "commentary",
+          "length": 112,
+          "sha256": "75f9cb8c291ee9ed182d66724c24e2a5e12eca5707d007646337305fbcf2ff23"
+        },
+        {
+          "line": 50,
+          "phase": "commentary",
+          "length": 195,
+          "sha256": "49cadfb395adeaacd0b66777b5fcdd5b2af04045fbdcc9fedc3b58dfeb5a1df9"
+        },
+        {
+          "line": 96,
+          "phase": "final_answer",
+          "length": 829,
+          "sha256": "adb352f023615c08f562ca5f51f7e91f7d7bebbd047439967a555b71a2d558c0"
+        }
+      ]
+    },
+    {
+      "file": "rollout-2026-10-28T20-35-05-01a185b9-c1fe-7121-9c56-f3f4f7c9944e.jsonl",
+      "sha256": "0387d8c6ca7e7b75db06dc6e11a46472bfa9a0dc676dcc103444c22e1f3bbdb4",
+      "selected": [
+        {
+          "line": 16,
+          "type": "inter_agent_communication_metadata",
+          "keys": [
+            "trigger_turn"
+          ]
+        },
+        {
+          "line": 32,
+          "type": "inter_agent_communication_metadata",
+          "keys": [
+            "trigger_turn"
+          ]
+        }
+      ],
+      "publicMessages": [
+        {
+          "line": 26,
+          "phase": "final_answer",
+          "length": 4508,
+          "sha256": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51"
+        },
+        {
+          "line": 40,
+          "phase": "final_answer",
+          "length": 117,
+          "sha256": "ca5212e60f80c7f75e09c743b1b9cfd003ba50fe47f322e9cac8ee26d9c48bb9"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Only selected public message/tool metadata is exported; no private reasoning, auth caches or keys.",
+    "Opaque encoding detection recognizes the observed prefix and never declares arbitrary text authentic plaintext.",
+    "No live PreToolUse input was retained in the original pilot; hook conclusions are source-backed, not new runtime capture."
+  ],
+  "captured_public_messages": [
+    {
+      "file": "child-1-message-1.txt",
+      "sha256": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+      "length": 4508
+    },
+    {
+      "file": "child-1-message-2.txt",
+      "sha256": "ca5212e60f80c7f75e09c743b1b9cfd003ba50fe47f322e9cac8ee26d9c48bb9",
+      "length": 117
+    }
+  ],
+  "public_child_recovery_matches": true
+}
