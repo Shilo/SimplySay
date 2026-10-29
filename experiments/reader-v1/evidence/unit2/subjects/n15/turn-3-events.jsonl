@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-52015337af3bc73f"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0495c341d5d76193016ae377472ddc819abce7fcc93d97a0f2","type":"agent_message","text":"It finishes at 9:55 am."}}
+{"type":"turn.completed","usage":{}}

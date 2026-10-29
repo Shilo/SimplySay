@@ -1,0 +1,144 @@
+{
+  "method": "Existing supported developer/user/turn-context records only; no repeated loading probe",
+  "rows": [
+    {
+      "id": "n14",
+      "condition": "absent",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "5b2c5cd35b3ca7e1f3a3beeb5409d06449e14e9635eef664ae6c8a30cb3d8863"
+        },
+        {
+          "turn": 2,
+          "line": 30,
+          "sha256": "eeaf41b04263eac3f92d8836a0ec32479638ebeec6f61eec2f11dd9bf1de6679"
+        },
+        {
+          "turn": 3,
+          "line": 49,
+          "sha256": "22a2d0169906c7ebc278a2300a56cc70914f5bc02e15b4e2345b5368f6e82296"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "ead0f7bcc938a62f46b6bb0c4c85167a20f64484e6e4819141ca98d77c41bee7",
+          "exact_policy": false
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "no exact candidate in observed developer context",
+      "original_hook_events": 0,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    },
+    {
+      "id": "n15",
+      "condition": "enabled",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 11,
+          "sha256": "5b2c5cd35b3ca7e1f3a3beeb5409d06449e14e9635eef664ae6c8a30cb3d8863"
+        },
+        {
+          "turn": 2,
+          "line": 30,
+          "sha256": "eeaf41b04263eac3f92d8836a0ec32479638ebeec6f61eec2f11dd9bf1de6679"
+        },
+        {
+          "turn": 3,
+          "line": 44,
+          "sha256": "22a2d0169906c7ebc278a2300a56cc70914f5bc02e15b4e2345b5368f6e82296"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "013da98167f2ba4ac5b937e090cbe10bcb566d33cb9308d5fd5cbb6a37bac2d0",
+          "exact_policy": false
+        },
+        {
+          "line": 10,
+          "characters": 935,
+          "sha256": "0fbed43ecc615956063c0b43c5aa2176e4b9b45f0ee1fcad4bf684ec72134b1e",
+          "exact_policy": true
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "exact policy in developer history before all requests",
+      "original_hook_events": 1,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    }
+  ],
+  "retained_pre_model_failures": [],
+  "reviewer_model_effort": "unknown",
+  "new_model_sessions": 0
+}

@@ -1,0 +1,15 @@
+**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**
+
+In this demo, green means the QR’s signed details are authentic and unchanged, its dates look valid according to that phone’s clock, and the ticket appears in neither the phone’s cancellation list nor its list of tickets already admitted.
+
+There are three practical gaps:
+
+- **Cancellations can be missing.** Both phones downloaded cancellations at 09:00. T-41 was canceled at 09:10, but both phones will still show green at 10:00.
+- **Offline phones do not share admissions.** After phone A accepts T-41, phone B can accept the same QR. Scanning it again on phone A would be rejected.
+- **A wrong phone clock can accept an expired ticket.** T-99 expires at 09:59. At actual 10:00, phone A rejects it, but phone B—whose clock says 09:58—accepts it.
+
+The green tick shows no separate warning that cancellation information is out of date. Reconnecting later sends admission records for review; it cannot undo people already admitted.
+
+**For two-phone duplicate protection, both phones need the working online admission check.** The server checks current cancellations and records each ticket’s use in one operation, so a competing scan is rejected.
+
+If you must work offline, one designated scanning phone prevents repeat acceptance on that phone in this demo. It still needs an accurate clock and cannot detect cancellations made after its last download.

@@ -1,0 +1,235 @@
+{
+  "purpose": "Required first-pair checkpoint; controller inspection, not blinded communication result",
+  "rows": [
+    {
+      "id": "n14",
+      "turns": 3,
+      "checks": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "pass",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-c-door-scanner",
+          "deterministic_status": "pass",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "source_bytes:scanner-notes.md",
+              "turn_id": "c1_green_meaning",
+              "status": "pass",
+              "expected_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+              "actual_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "c1_green_meaning",
+              "status": "observed",
+              "commands_count": 2,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "source_bytes:scanner-notes.md",
+              "turn_id": "c2_maintainer_reasoning",
+              "status": "pass",
+              "expected_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+              "actual_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "c2_maintainer_reasoning",
+              "status": "observed",
+              "commands_count": 1,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "source_bytes:scanner-notes.md",
+              "turn_id": "c3_brief_time",
+              "status": "pass",
+              "expected_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+              "actual_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "c3_brief_time",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "protected_source_unchanged": true,
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "host": "0.165.0-alpha.1.2"
+    },
+    {
+      "id": "n15",
+      "turns": 3,
+      "checks": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "pass",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-c-door-scanner",
+          "deterministic_status": "pass",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "source_bytes:scanner-notes.md",
+              "turn_id": "c1_green_meaning",
+              "status": "pass",
+              "expected_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+              "actual_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "c1_green_meaning",
+              "status": "observed",
+              "commands_count": 1,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "source_bytes:scanner-notes.md",
+              "turn_id": "c2_maintainer_reasoning",
+              "status": "pass",
+              "expected_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+              "actual_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "c2_maintainer_reasoning",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "source_bytes:scanner-notes.md",
+              "turn_id": "c3_brief_time",
+              "status": "pass",
+              "expected_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+              "actual_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "c3_brief_time",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "protected_source_unchanged": true,
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "host": "0.165.0-alpha.1.2"
+    }
+  ],
+  "observation": "Both first answers explain local green, missing cancellations, independent offline ledgers and clock limits in plain terms; no obvious information loss. Similar structure, no efficacy claim before blind review.",
+  "meaningful_next_question": "The new explicit no-preview progress hypothesis still requires its separately frozen long-study triad; do not tune the source conversation or policy in this unit.",
+  "matching": "Identical source case/task/audience; pinned model/effort/host/tools. Exact developer-policy delivery only in enabled from saved supported records.",
+  "no_repeated_loading_probe": true,
+  "proceed": [
+    "n16",
+    "n17",
+    "n18",
+    "n19"
+  ],
+  "production": "hold",
+  "publication": "hold"
+}

@@ -1,0 +1,1 @@
+I will maintain this prototype. Work through T-41 on the two offline phones and T-99 with the two clock readings. Explain what the signature check proves, how cancellation and duplicate-use state enter those examples, and what changes when a working server connection returns. I need the reasoning as well as the conclusions.

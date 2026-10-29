@@ -1,0 +1,341 @@
+{
+  "entries": [
+    {
+      "path": "subjects/n14/preflight.json",
+      "bytes": 892,
+      "source_sha256": "f9588dfdc93369abf870239f783762b5413420c73129e9bcf7eabdbbde2e7be0",
+      "archive_sha256": "aa3681e4e1e7d85acd89bffa0783a7fbfc4bb5e3fd8613e9bf1870b0b4e0a0be",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/result.json",
+      "bytes": 8742,
+      "source_sha256": "dd1f690951adb167e60949cca02032657c04e2e94b1c22c10540722086a1908d",
+      "archive_sha256": "9bfd2c3fc31fe0a9a9443451b9928ecde0acce1be2f774aff6620a880b84e7e3",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/thread-start.json",
+      "bytes": 375,
+      "source_sha256": "d21e32ffb978739016c6f1f876d441e7616e6531fd9dee853d19045ae42296f2",
+      "archive_sha256": "6d07345bdb641e991dfae98ae855e900731d40f44e2107e52f550317fd9e5530",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-1-events.jsonl",
+      "bytes": 5422,
+      "source_sha256": "b66d8b965fe4b052858f7a8b6229bcdea23b4aff01f02ad39d39f193215cdb87",
+      "archive_sha256": "aa83ab12d649505ab906d227b92072a2e0c540dd9e1f499b82df7e31e57e49dc",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-1-files/scanner-notes.md",
+      "bytes": 2598,
+      "source_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "archive_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "mode": "raw-actual-artifact"
+    },
+    {
+      "path": "subjects/n14/turn-1-final.txt",
+      "bytes": 1554,
+      "source_sha256": "11bf52ffba39348210c4a49c148bbba47bb5b916446bea9a0062e952e477d2cb",
+      "archive_sha256": "11bf52ffba39348210c4a49c148bbba47bb5b916446bea9a0062e952e477d2cb",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-1-prompt.txt",
+      "bytes": 468,
+      "source_sha256": "5b2c5cd35b3ca7e1f3a3beeb5409d06449e14e9635eef664ae6c8a30cb3d8863",
+      "archive_sha256": "5b2c5cd35b3ca7e1f3a3beeb5409d06449e14e9635eef664ae6c8a30cb3d8863",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-1-result.json",
+      "bytes": 2452,
+      "source_sha256": "ff1aadfc835363bb40ec6de814e089117620d9613bb142979109969a1bf8ad35",
+      "archive_sha256": "915b4ac2b1b6bacfa680a90f0f8adf088dda04361f90641e4d39b0f55ca47644",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-1-stderr.txt",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-1-timing.jsonl",
+      "bytes": 751,
+      "source_sha256": "2addf771ee6cc0bdadfaab3f7c6d5b5ce80e0bed2f4a9d1aec183a16a5466dfc",
+      "archive_sha256": "28b84eb565f0e3934af8a72e4296f0965e110f75fd1ca5fcba1916addfcc11dc",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-2-events.jsonl",
+      "bytes": 7081,
+      "source_sha256": "94ca3d863f0c7890b07dba6e9124a2515a1171c23cd8e69538eb31cb348b9840",
+      "archive_sha256": "dcf567a18fb06b9d3fe376966971d2fe5ac1034c995244e1a07c65a2a073fcdb",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-2-files/scanner-notes.md",
+      "bytes": 2598,
+      "source_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "archive_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "mode": "raw-actual-artifact"
+    },
+    {
+      "path": "subjects/n14/turn-2-final.txt",
+      "bytes": 3580,
+      "source_sha256": "ac68c719e6b604d0d56800b38786787a6b75937ae38cb319b777eedb2930f528",
+      "archive_sha256": "ac68c719e6b604d0d56800b38786787a6b75937ae38cb319b777eedb2930f528",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-2-prompt.txt",
+      "bytes": 325,
+      "source_sha256": "eeaf41b04263eac3f92d8836a0ec32479638ebeec6f61eec2f11dd9bf1de6679",
+      "archive_sha256": "eeaf41b04263eac3f92d8836a0ec32479638ebeec6f61eec2f11dd9bf1de6679",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-2-result.json",
+      "bytes": 2462,
+      "source_sha256": "b1e974aeccbd6256f83ac4f6257a8e245a2ae551b9ce409e799a57382212048d",
+      "archive_sha256": "2d49f42db390a08c9020c533081db941d9389c272521408749659015b2eb4797",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-2-stderr.txt",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-2-timing.jsonl",
+      "bytes": 633,
+      "source_sha256": "ae13a4fa97c304b880e5766483b4fcce169d0a95c5a06b06fc1cd5f78d03d7d5",
+      "archive_sha256": "3d67e676b37340c3675ea539900943b25bbd71983b777ca3fdff72aa76cda260",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-3-events.jsonl",
+      "bytes": 282,
+      "source_sha256": "e81f106e286b660513077012cdd44870bb627fd1a543df30545cf5420258ad6c",
+      "archive_sha256": "aaee07da2dccf82d0c529898eaa209bc22c9826cf4c1ee3eecef41ac0fb7af50",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-3-files/scanner-notes.md",
+      "bytes": 2598,
+      "source_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "archive_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "mode": "raw-actual-artifact"
+    },
+    {
+      "path": "subjects/n14/turn-3-final.txt",
+      "bytes": 27,
+      "source_sha256": "932929ff4b1b5c330b3722d54895c0e2fd07b9a42110d6800c295c2166783aee",
+      "archive_sha256": "932929ff4b1b5c330b3722d54895c0e2fd07b9a42110d6800c295c2166783aee",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-3-prompt.txt",
+      "bytes": 83,
+      "source_sha256": "22a2d0169906c7ebc278a2300a56cc70914f5bc02e15b4e2345b5368f6e82296",
+      "archive_sha256": "22a2d0169906c7ebc278a2300a56cc70914f5bc02e15b4e2345b5368f6e82296",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-3-result.json",
+      "bytes": 1881,
+      "source_sha256": "db3f94bc28e9652ce93e4154b572f0c7e5ad40155f95cb51c8e1b4e10138ed95",
+      "archive_sha256": "207a69b4461ac4d78c98189713feb244964996e43cb11da2967097d1af30ddf5",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-3-stderr.txt",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n14/turn-3-timing.jsonl",
+      "bytes": 369,
+      "source_sha256": "cda395922ccd43b778ff20292d9883a76df351447fd61e6482918320d8f1f4f7",
+      "archive_sha256": "cda395922ccd43b778ff20292d9883a76df351447fd61e6482918320d8f1f4f7",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/preflight.json",
+      "bytes": 2325,
+      "source_sha256": "d299d9ea6bdc24a17e8b39505f54db31cf7c4cd2eb42d3646c9b1e0f4a05b25a",
+      "archive_sha256": "4cd7228fc660fcbda00329938fc5ee3e06ee8598b29e23caef892d13f6aa9e85",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/result.json",
+      "bytes": 9960,
+      "source_sha256": "42f05de29eaeb5496f11ddb69059ed8d80806b0ad172b896d49518bbf15d53cc",
+      "archive_sha256": "b4eecf0e3c37d317ee17e7d571bf3adea48330fd1fc039cb09fa7737a0e0ed7d",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/thread-start.json",
+      "bytes": 375,
+      "source_sha256": "f707bfa35687f847d3aa1c46ddeeb834135ede2e07e4af08e6c8ca47abf7cacb",
+      "archive_sha256": "787abbd97fc35901dd440ae2f8ac3cf213c2bf2fcd5553ab21f2aab42a878397",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-1-events.jsonl",
+      "bytes": 4955,
+      "source_sha256": "cb5c089cb95c27f70b821f066d3c0e504fe0c960358cce002f93ab2086cd5424",
+      "archive_sha256": "39d6346a47cd188ddd7ee0c876ebbb6fe8f91258c87a2170bf5735a61f4a2ff1",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-1-files/scanner-notes.md",
+      "bytes": 2598,
+      "source_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "archive_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "mode": "raw-actual-artifact"
+    },
+    {
+      "path": "subjects/n15/turn-1-final.txt",
+      "bytes": 1502,
+      "source_sha256": "fd5dcec598020640284f16e4e3e3aaa5cebc2a73dc590c195355a0c6e76b753c",
+      "archive_sha256": "fd5dcec598020640284f16e4e3e3aaa5cebc2a73dc590c195355a0c6e76b753c",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-1-prompt.txt",
+      "bytes": 468,
+      "source_sha256": "5b2c5cd35b3ca7e1f3a3beeb5409d06449e14e9635eef664ae6c8a30cb3d8863",
+      "archive_sha256": "5b2c5cd35b3ca7e1f3a3beeb5409d06449e14e9635eef664ae6c8a30cb3d8863",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-1-result.json",
+      "bytes": 2450,
+      "source_sha256": "acf97a7139aa9d1ede67656463416414c87c75ea1613007f6c5ec4f41414210d",
+      "archive_sha256": "ab0b8c95d2a92f13f166a9dc1b08841e0e6dc22030f15b11d57cf07794e3e6cc",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-1-stderr.txt",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-1-timing.jsonl",
+      "bytes": 633,
+      "source_sha256": "03963e48290c032907d58bda213d4ed1f86e71bfee98ac9a02ffe034433a0208",
+      "archive_sha256": "1fbc18b987dc5604aa1d06deaaf2546ed555a633696676860370beeb5541e671",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-2-events.jsonl",
+      "bytes": 3718,
+      "source_sha256": "73a34e993909b95e67f2d46df7cea67474c164ea0ab3db93eb0983970de399a0",
+      "archive_sha256": "c3175f086defc0776c21ec94b30b6b6254f8f459c61bc582cdfdbea8178620d3",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-2-files/scanner-notes.md",
+      "bytes": 2598,
+      "source_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "archive_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "mode": "raw-actual-artifact"
+    },
+    {
+      "path": "subjects/n15/turn-2-final.txt",
+      "bytes": 3434,
+      "source_sha256": "d458a3d357a44b83fab42be2214cd399c3b2e93bc4251bb5f72ee98e83abb63a",
+      "archive_sha256": "d458a3d357a44b83fab42be2214cd399c3b2e93bc4251bb5f72ee98e83abb63a",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-2-prompt.txt",
+      "bytes": 325,
+      "source_sha256": "eeaf41b04263eac3f92d8836a0ec32479638ebeec6f61eec2f11dd9bf1de6679",
+      "archive_sha256": "eeaf41b04263eac3f92d8836a0ec32479638ebeec6f61eec2f11dd9bf1de6679",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-2-result.json",
+      "bytes": 1901,
+      "source_sha256": "be6ad22d5d20b524fd2d4a4bd223ffef31b9ed9095abcdb9eef514326043d7b1",
+      "archive_sha256": "ec7e30d3a22d76a5fd23cfaf7d4be12f77d232489829f809476d54a26d03270c",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-2-stderr.txt",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-2-timing.jsonl",
+      "bytes": 371,
+      "source_sha256": "202879ab2e1c2c98b3d06248d9f22eea38f0e33b3c9d7408a9fb312f1f3eee1c",
+      "archive_sha256": "202879ab2e1c2c98b3d06248d9f22eea38f0e33b3c9d7408a9fb312f1f3eee1c",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-3-events.jsonl",
+      "bytes": 278,
+      "source_sha256": "47c99e2492d30fd9a5dfe9b82da935583ab20abd7f248368054b90d5f0153bd7",
+      "archive_sha256": "90d6df87b3db782f980436595fa804f21b8b96285d2c4cfab9f050a975aabe14",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-3-files/scanner-notes.md",
+      "bytes": 2598,
+      "source_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "archive_sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77",
+      "mode": "raw-actual-artifact"
+    },
+    {
+      "path": "subjects/n15/turn-3-final.txt",
+      "bytes": 23,
+      "source_sha256": "0e961c377e3d16febdafbf0e0d65609f2052d77b301082e5ecd7916d5553c124",
+      "archive_sha256": "0e961c377e3d16febdafbf0e0d65609f2052d77b301082e5ecd7916d5553c124",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-3-prompt.txt",
+      "bytes": 83,
+      "source_sha256": "22a2d0169906c7ebc278a2300a56cc70914f5bc02e15b4e2345b5368f6e82296",
+      "archive_sha256": "22a2d0169906c7ebc278a2300a56cc70914f5bc02e15b4e2345b5368f6e82296",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-3-result.json",
+      "bytes": 1883,
+      "source_sha256": "929fee64143010990946d269b7be2112bc3a45f5632b1eb612dfd00036d5e0fc",
+      "archive_sha256": "a994cfc960d257b17407fe507417b5c2c1ab627baecd4920c6fcbd57820e813f",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-3-stderr.txt",
+      "bytes": 0,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "selected-public-metadata"
+    },
+    {
+      "path": "subjects/n15/turn-3-timing.jsonl",
+      "bytes": 369,
+      "source_sha256": "b831696f5188a541fdb4421e1d2c51ac5ec9ecd0c191c8d08273f0dd8babbc11",
+      "archive_sha256": "b831696f5188a541fdb4421e1d2c51ac5ec9ecd0c191c8d08273f0dd8babbc11",
+      "mode": "selected-public-metadata"
+    }
+  ],
+  "policy": "Exact raw artifacts; selected public metadata/events scrubbed by existing exporter. Profiles, auth, private reasoning and account inventories excluded."
+}

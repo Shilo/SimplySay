@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-2-ready",
-  "new_conversations": 12,
-  "new_task_starts": 29,
+  "status": "unit-2-first-pair-reviewed",
+  "new_conversations": 15,
+  "new_task_starts": 36,
   "starts": [
     {
       "id": "n01",
@@ -136,6 +136,36 @@
       "max_turns": 1,
       "status": "completed-valid-calibration",
       "agent": "/root/reader_unit1_blind_2"
+    },
+    {
+      "id": "n14",
+      "role": "technical-source-absent",
+      "condition": "absent",
+      "case_id": "reader-c-door-scanner",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T16:38:32.859Z"
+    },
+    {
+      "id": "n15",
+      "role": "technical-source-enabled-v2",
+      "condition": "enabled",
+      "case_id": "reader-c-door-scanner",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T16:40:09.018Z"
+    },
+    {
+      "id": "n16",
+      "role": "technical-source-disabled-v2",
+      "condition": "disabled",
+      "case_id": "reader-c-door-scanner",
+      "turns": 1,
+      "max_turns": 3,
+      "status": "running",
+      "reserved_utc": "2026-10-29T16:42:31.511Z"
     }
   ],
   "new_paid_services": false,
@@ -150,8 +180,10 @@
   },
   "dispatch_blocked": false,
   "allowed_subjects": [
-    "n14",
-    "n15"
+    "n16",
+    "n17",
+    "n18",
+    "n19"
   ],
   "block_reason": null,
   "checkpoint": "experiments/reader-v1/evidence/unit2/first-pair-checkpoint.json",
