@@ -93,11 +93,11 @@ async function prepare(id) {
   put(path.join(trial, 'prompt.txt'), subject.input.prompt);
   put(path.join(profile, 'config.toml'), config(condition, caseId, profile));
   if(caseId==='crate_pair_delegation') put(path.join(profile,'spawn-guard.cjs'),`const fs=require('node:fs'),path=require('node:path');let s='';process.stdin.on('data',b=>s+=b);function deny(){const reason='This synthetic task permits one root child and no descendants.';process.stdout.write(JSON.stringify({hookSpecificOutput:{hookEventName:'PreToolUse',permissionDecision:'deny',permissionDecisionReason:reason}}));process.stderr.write(reason);process.exitCode=2;}process.stdin.on('end',()=>{try{const i=JSON.parse(s);if(i.tool_name!=='spawn_agent')return;if(i.agent_id)return deny();fs.writeFileSync(path.join(__dirname,'spawn-used'),'1',{flag:'wx'});}catch(e){deny();}});\n`);
+  const evidence = { id, caseId, condition, policyHash: plan.policyHash, installation: [] };
+  try {
   const auth = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.codex/auth.json'), 'utf8'));
   if (auth.auth_mode !== 'chatgpt' || auth.OPENAI_API_KEY || !auth.tokens?.access_token) throw new Error('Subscription auth gate failed');
   put(path.join(profile, 'auth.json'), JSON.stringify({ auth_mode: auth.auth_mode, tokens: auth.tokens, last_refresh: auth.last_refresh }));
-  const evidence = { id, caseId, condition, policyHash: plan.policyHash, installation: [] };
-  try {
   if (['disabled', 'enabled'].includes(condition)) {
     evidence.installation.push(native(profile, cwd, ['plugin', 'marketplace', 'add', path.join(base, 'catalog'), '--json']));
     evidence.installation.push(native(profile, cwd, ['plugin', 'add', selector, '--json']));
@@ -164,13 +164,16 @@ async function run(id) {
   if (reservation.status !== 0) { removeAuth(profile); throw new Error(reservation.stderr); }
   const args = ['--no-daemon', 'exec', '--skip-git-repo-check', '--json', '--color', 'never', '-C', cwd, '-o', path.join(trial, 'final.txt'), '-'];
   const started = Date.now();
-  let code = null, error = null, timeout;
+  let code = null, error = null, timeout, timedOut = false, termination = null;
+  let stopTree=()=>{};
   const observedChildren = new Set();
   let budgetViolation = false;
   try {
-    const child = cp.spawn(binary, args, { cwd, env: { ...env, CODEX_HOME: profile }, windowsHide: true, stdio: ['pipe', 'pipe', 'pipe'] });
-    const stopTree = () => { if (child.pid) cp.spawnSync('taskkill.exe', ['/PID', String(child.pid), '/T', '/F'], { windowsHide: true, encoding: 'utf8', timeout: 10000 }); };
     put(path.join(trial, 'events.jsonl'),'');put(path.join(trial,'stderr.txt'),'');
+    const prompt=fs.readFileSync(path.join(trial,'prompt.txt'));
+    const child = cp.spawn(binary, args, { cwd, env: { ...env, CODEX_HOME: profile }, windowsHide: true, stdio: ['pipe', 'pipe', 'pipe'] });
+    stopTree = () => { if (child.pid) {const stopped=cp.spawnSync('taskkill.exe', ['/PID', String(child.pid), '/T', '/F'], { windowsHide: true, encoding: 'utf8', timeout: 10000 });termination={pid:child.pid,status:stopped.status,error:stopped.error?.message||null};} };
+    timeout = setTimeout(()=>{timedOut=true;stopTree();}, 240000);
     const ioFailure=failure=>{error=failure.message;stopTree();};
     child.stdout.on('data',chunk=>{try{fs.appendFileSync(path.join(trial,'events.jsonl'),chunk);}catch(failure){ioFailure(failure);}});
     child.stderr.on('data',chunk=>{try{fs.appendFileSync(path.join(trial,'stderr.txt'),chunk);}catch(failure){ioFailure(failure);}});
@@ -183,12 +186,11 @@ async function run(id) {
         if (observedChildren.size > row[3] - 1) { budgetViolation = true; stopTree(); }
       }
     });
-    child.stdin.end(fs.readFileSync(path.join(trial, 'prompt.txt')));
-    timeout = setTimeout(stopTree, 240000);
+    child.stdin.end(prompt);
     code = await new Promise((resolve, reject) => { child.once('error', reject); child.once('close', resolve); });
-  } catch (failure) { error = failure.message; }
+  } catch (failure) { error = failure.message;stopTree(); }
   finally { clearTimeout(timeout); removeAuth(profile); }
-  put(path.join(trial, 'result.json'), JSON.stringify({ id, code, error, budgetViolation, observedChildren: [...observedChildren], durationMs: Date.now() - started, model: plan.model, effort: plan.effort, plannedSlots: row[3], authCopyRemoved: !fs.existsSync(path.join(profile, 'auth.json')) }, null, 2));
+  put(path.join(trial, 'result.json'), JSON.stringify({ id, code, error, timedOut, termination, budgetViolation, observedChildren: [...observedChildren], durationMs: Date.now() - started, model: plan.model, effort: plan.effort, plannedSlots: row[3], authCopyRemoved: !fs.existsSync(path.join(profile, 'auth.json')) }, null, 2));
   cp.spawnSync(process.execPath, [path.join(__dirname, 'session-budget.cjs'), 'finish', id, code === 0 && !error && !budgetViolation ? 'completed' : 'failed'], { cwd: root, encoding: 'utf8' });
   console.log(JSON.stringify({ id, code, error, budgetViolation, durationMs: Date.now() - started }));
 }
