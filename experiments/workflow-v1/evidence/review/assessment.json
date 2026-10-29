@@ -1,0 +1,2299 @@
+{
+  "label": "Automated experimental assessments, not measured human comprehension",
+  "deterministic": {
+    "e31": {
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "pass",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t3_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t3_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "case_checks": {
+        "schema_version": 1,
+        "case_id": "w1-study-evidence-audit",
+        "deterministic_status": "pass",
+        "semantic_status": "requires_blinded_review",
+        "checks": [
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "bytes": 12156,
+            "sha256": "598d74498c057282306127f82348643e35b1d309444cf2dbe995d103f8431784"
+          },
+          {
+            "id": "file:audit/metrics.json",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "bytes": 244,
+            "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+          },
+          {
+            "id": "json:audit/metrics.json",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+            "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+          },
+          {
+            "id": "source_bytes:study/protocol.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+            "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+          },
+          {
+            "id": "source_bytes:evidence/pairs.csv",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+            "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+          },
+          {
+            "id": "source_bytes:evidence/reference.csv",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+            "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+          },
+          {
+            "id": "source_bytes:evidence/guide.csv",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+            "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+          },
+          {
+            "id": "source_bytes:evidence/capture-notes.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+            "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+          },
+          {
+            "id": "source_bytes:draft-summary.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:guides/reference-card.txt",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+            "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+          },
+          {
+            "id": "source_bytes:guides/reorganized-guide.txt",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+            "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+          },
+          {
+            "id": "source_bytes:tools/check-evidence.cjs",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+            "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t1_evidence_audit",
+            "status": "observed",
+            "commands_count": 9,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "bytes": 12156,
+            "sha256": "598d74498c057282306127f82348643e35b1d309444cf2dbe995d103f8431784"
+          },
+          {
+            "id": "file:audit/metrics.json",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "bytes": 244,
+            "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+          },
+          {
+            "id": "json:audit/metrics.json",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+            "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+          },
+          {
+            "id": "source_bytes:study/protocol.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+            "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+          },
+          {
+            "id": "source_bytes:evidence/pairs.csv",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+            "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+          },
+          {
+            "id": "source_bytes:evidence/reference.csv",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+            "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+          },
+          {
+            "id": "source_bytes:evidence/guide.csv",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+            "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+          },
+          {
+            "id": "source_bytes:evidence/capture-notes.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+            "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+          },
+          {
+            "id": "source_bytes:draft-summary.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:guides/reference-card.txt",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+            "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+          },
+          {
+            "id": "source_bytes:guides/reorganized-guide.txt",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+            "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+          },
+          {
+            "id": "source_bytes:tools/check-evidence.cjs",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+            "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t2_narrow_decision",
+            "status": "unverified",
+            "commands_count": 0,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 12156,
+            "sha256": "598d74498c057282306127f82348643e35b1d309444cf2dbe995d103f8431784"
+          },
+          {
+            "id": "file:audit/metrics.json",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 244,
+            "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+          },
+          {
+            "id": "json:audit/metrics.json",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "file:handoff/methods.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 22883,
+            "sha256": "77e77c67bc0e7521904b18cddc41f3a0f3e8ebf0114d752d75545b67b004ffd3"
+          },
+          {
+            "id": "file:handoff/original-summary.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 632,
+            "sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "exact_copy:handoff/original-summary.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+            "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+          },
+          {
+            "id": "source_bytes:study/protocol.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+            "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+          },
+          {
+            "id": "source_bytes:evidence/pairs.csv",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+            "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+          },
+          {
+            "id": "source_bytes:evidence/reference.csv",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+            "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+          },
+          {
+            "id": "source_bytes:evidence/guide.csv",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+            "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+          },
+          {
+            "id": "source_bytes:evidence/capture-notes.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+            "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+          },
+          {
+            "id": "source_bytes:draft-summary.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:guides/reference-card.txt",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+            "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+          },
+          {
+            "id": "source_bytes:guides/reorganized-guide.txt",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+            "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+          },
+          {
+            "id": "source_bytes:tools/check-evidence.cjs",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+            "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t3_methods_handoff",
+            "status": "observed",
+            "commands_count": 5,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          }
+        ]
+      },
+      "semantic_essentials": "Independent review required; no lexical pass substitute",
+      "original_incoming_child_instructions": "unverified"
+    },
+    "e19": {
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "pass",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t3_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t3_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "case_checks": {
+        "schema_version": 1,
+        "case_id": "w1-study-evidence-audit",
+        "deterministic_status": "pass",
+        "semantic_status": "requires_blinded_review",
+        "checks": [
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "bytes": 12630,
+            "sha256": "93b55c9bea36179f883cdb45ee5fcac3bd31ee14e81502a7fbe8dea82e3efb03"
+          },
+          {
+            "id": "file:audit/metrics.json",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "bytes": 244,
+            "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+          },
+          {
+            "id": "json:audit/metrics.json",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+            "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+          },
+          {
+            "id": "source_bytes:study/protocol.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+            "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+          },
+          {
+            "id": "source_bytes:evidence/pairs.csv",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+            "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+          },
+          {
+            "id": "source_bytes:evidence/reference.csv",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+            "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+          },
+          {
+            "id": "source_bytes:evidence/guide.csv",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+            "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+          },
+          {
+            "id": "source_bytes:evidence/capture-notes.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+            "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+          },
+          {
+            "id": "source_bytes:draft-summary.md",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:guides/reference-card.txt",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+            "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+          },
+          {
+            "id": "source_bytes:guides/reorganized-guide.txt",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+            "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+          },
+          {
+            "id": "source_bytes:tools/check-evidence.cjs",
+            "turn_id": "t1_evidence_audit",
+            "status": "pass",
+            "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+            "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t1_evidence_audit",
+            "status": "observed",
+            "commands_count": 10,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "bytes": 12630,
+            "sha256": "93b55c9bea36179f883cdb45ee5fcac3bd31ee14e81502a7fbe8dea82e3efb03"
+          },
+          {
+            "id": "file:audit/metrics.json",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "bytes": 244,
+            "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+          },
+          {
+            "id": "json:audit/metrics.json",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+            "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+          },
+          {
+            "id": "source_bytes:study/protocol.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+            "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+          },
+          {
+            "id": "source_bytes:evidence/pairs.csv",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+            "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+          },
+          {
+            "id": "source_bytes:evidence/reference.csv",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+            "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+          },
+          {
+            "id": "source_bytes:evidence/guide.csv",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+            "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+          },
+          {
+            "id": "source_bytes:evidence/capture-notes.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+            "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+          },
+          {
+            "id": "source_bytes:draft-summary.md",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:guides/reference-card.txt",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+            "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+          },
+          {
+            "id": "source_bytes:guides/reorganized-guide.txt",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+            "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+          },
+          {
+            "id": "source_bytes:tools/check-evidence.cjs",
+            "turn_id": "t2_narrow_decision",
+            "status": "pass",
+            "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+            "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t2_narrow_decision",
+            "status": "unverified",
+            "commands_count": 0,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 12630,
+            "sha256": "93b55c9bea36179f883cdb45ee5fcac3bd31ee14e81502a7fbe8dea82e3efb03"
+          },
+          {
+            "id": "file:audit/metrics.json",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 244,
+            "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+          },
+          {
+            "id": "json:audit/metrics.json",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "file:handoff/methods.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 22766,
+            "sha256": "f45a7cf0359b9a5f8f16ab9e27966d9a5628ceefeef4e65428eee6ffea66ccc9"
+          },
+          {
+            "id": "file:handoff/original-summary.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "bytes": 632,
+            "sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "exact_copy:handoff/original-summary.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+            "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+          },
+          {
+            "id": "source_bytes:study/protocol.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+            "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+          },
+          {
+            "id": "source_bytes:evidence/pairs.csv",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+            "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+          },
+          {
+            "id": "source_bytes:evidence/reference.csv",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+            "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+          },
+          {
+            "id": "source_bytes:evidence/guide.csv",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+            "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+          },
+          {
+            "id": "source_bytes:evidence/capture-notes.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+            "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+          },
+          {
+            "id": "source_bytes:draft-summary.md",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+            "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+          },
+          {
+            "id": "source_bytes:guides/reference-card.txt",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+            "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+          },
+          {
+            "id": "source_bytes:guides/reorganized-guide.txt",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+            "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+          },
+          {
+            "id": "source_bytes:tools/check-evidence.cjs",
+            "turn_id": "t3_methods_handoff",
+            "status": "pass",
+            "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+            "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t3_methods_handoff",
+            "status": "observed",
+            "commands_count": 6,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          }
+        ]
+      },
+      "semantic_essentials": "Independent review required; no lexical pass substitute",
+      "original_incoming_child_instructions": "unverified"
+    },
+    "e18": {
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "fail",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "unverified",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "fail",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "case_checks": {
+        "schema_version": 1,
+        "case_id": "w2-archive-copy-audit",
+        "deterministic_status": "unverified",
+        "semantic_status": "requires_blinded_review",
+        "checks": [
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 11117,
+            "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t1_copy_audit",
+            "status": "observed",
+            "commands_count": 6,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "capture_completeness",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "issues": [
+              "Final not observed separately."
+            ]
+          },
+          {
+            "id": "native_turn_completion",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 11117,
+            "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "commands_count": 0,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "turn_capture",
+            "turn_id": "t3_repair_handoff",
+            "status": "unverified",
+            "reason": "No capture for the requested turn; later files cannot backfill it."
+          }
+        ]
+      },
+      "semantic_essentials": "Independent review required; no lexical pass substitute",
+      "original_incoming_child_instructions": "unverified"
+    },
+    "e20": {
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "fail",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "unverified",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "fail",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "case_checks": {
+        "schema_version": 1,
+        "case_id": "w2-archive-copy-audit",
+        "deterministic_status": "unverified",
+        "semantic_status": "requires_blinded_review",
+        "checks": [
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 8554,
+            "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t1_copy_audit",
+            "status": "observed",
+            "commands_count": 9,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "capture_completeness",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "issues": [
+              "Final not observed separately."
+            ]
+          },
+          {
+            "id": "native_turn_completion",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 8554,
+            "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "commands_count": 0,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "turn_capture",
+            "turn_id": "t3_repair_handoff",
+            "status": "unverified",
+            "reason": "No capture for the requested turn; later files cannot backfill it."
+          }
+        ]
+      },
+      "semantic_essentials": "Independent review required; no lexical pass substitute",
+      "original_incoming_child_instructions": "unverified"
+    }
+  },
+  "reviewers": [
+    {
+      "id": "workflow-review-1",
+      "status": "received",
+      "calibration": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "review": {
+        "schema_version": 1,
+        "reviewer_id": "workflow-review-1",
+        "pair_reviews": [
+          {
+            "pair_id": "pair-111403afd46c",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "\"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7",
+                "The eight pairs are useful units for matching observations, but they are not eight independent people.",
+                "Its contribution is `140 - 150 = -10` seconds: the guide took ten seconds longer.",
+                "Both first selections were observed and correct, so P7 contributes one correct observation to each numerator and one pair to each accuracy denominator.",
+                "The PowerShell reproduction block above was executed against this pack and reproduced all ten audit metrics and the 12.1% rounded time reduction.",
+                "\"pre_existing_files_unchanged\": 12,\n  \"archive_identical_bytes\": 632",
+                "One guide time is missing, tasks were repeated, and coaching occurred within a single staffed exercise.",
+                "No further study has started."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "\"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7",
+                "One pair means **one person performing the same lookup task with both formats**.",
+                "Its saving is `140 − 150 = −10` seconds: the guide was ten seconds slower.",
+                "**Include P7 in accuracy** as one success for each format and retain its guide assistance.",
+                "{\"archive_byte_comparison\":\"PASS\",\"bytes\":632",
+                "Compared SHA-256 hashes of all ten supplied source files and both existing audit files before and after creating the handoff; they were unchanged.",
+                "Repeated tasks, practice, coaching, one missing guide time and the small nonrandom sample leave performance in ordinary shifts uncertain.",
+                "No further study or rollout has begun."
+              ]
+            },
+            "communication": {
+              "preference": "right",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "right",
+                "filler": "right",
+                "repetition": "right",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "right"
+              },
+              "evidence": [
+                "The calculation is confirmed: 910 matched reference seconds versus 800 guide seconds, a 12.1% saving. Both audit files are written. I’m checking that the JSON matches the protocol and every supplied source remains unchanged.",
+                "The handoff is written, and its reproduction instructions returned all ten audit metrics correctly.",
+                "I’m finishing the byte comparison and source checks;",
+                "The records do not define exactly when timing stopped relative to coaching. The proposed check defines that endpoint explicitly and keeps its results separate from the historical timings."
+              ],
+              "rationale": "Both give clear decision-focused finals and retain substantial, reproducible findings and handoffs. Their committee drafts are protected outputs and complete; neither is rewarded for shorter draft or file text. The right has a modest advantage in the observed progress content: its timing-endpoint finding identifies an interpretation question and a concrete change to the proposed check. Several left update clauses instead narrate routine JSON/byte/source checks and repeat the same totals and recommendation, despite the request to keep routine testing notes in files. The left's first adverse finding is useful, and both openings appropriately orient the user. This preference concerns avoidable narration and repetition within observed messages, not fewer messages or missing periodic updates. Shared host update requirements explain potential presence but do not make every clause useful; recorded receipt intervals do not establish desktop-notification or attention burden.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "The packet records message receipt order/times, not desktop notifications or user attention. No human-comprehension effect was measured. Long observed gaps are not credited as a benefit; the preference compares available message content."
+            ]
+          },
+          {
+            "pair_id": "pair-a70d8f7987f7",
+            "left_information": {
+              "status": "unknown",
+              "issues": [
+                "The completed initial audit preserves the requested byte/hash inventory, source and initial staging, and rejects the draft's completion/restore/deletion claims. Overall preservation is unknown because the practical follow-up response and requested repair, verification, restore guide and staff message are unobserved after the common pre-model resource guard. The empty turn-two final and repeated snapshot are not evidence of completed follow-up work or intentional concision."
+              ],
+              "evidence": [
+                "Do not rely on the draft. Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing. Retain the source; full restore capability remains unproven.",
+                "\"expected_files\": 3,\n    \"present_files\": 2,\n    \"matching_files\": 1,\n    \"mismatched_files\": 1,\n    \"missing_files\": 1",
+                "\"supplied_files_unchanged\": 11,\n  \"staged_layout_still_absent\": true",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "right_information": {
+              "status": "unknown",
+              "issues": [
+                "The completed initial audit preserves the requested byte/hash inventory, source and initial staging, and rejects the draft's completion/restore/deletion claims. Overall preservation is unknown because later model responses and the requested repair, current verification, restore guide and standalone staff message are unobserved after the common pre-model resource guard. The missing work is not graded as a model omission or successful completion."
+              ],
+              "evidence": [
+                "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+                "\"expected_files\": 3,\n    \"present_files\": 2,\n    \"matching_files\": 1,\n    \"mismatched_files\": 1,\n    \"missing_files\": 1",
+                "\"supplied_files_preserved\": 11",
+                "No staged file was repaired or replaced",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "The restore evidence is only a spot check.",
+                "Staff should not rely on the draft: the staged pack is incomplete, and the restore evidence does not support its claims."
+              ],
+              "rationale": "For the completed first turn, both lead with a usable retain-source decision, keep detailed byte/hash evidence and routine checks in files, and give an appropriate opening plus a material finding update. The left supplies more concrete file-level reasons immediately; the right explicitly names the next authorization/ownership decisions. Both are clear and relevant, with no material overall communication winner. Accurate recording-work clauses add little on either side, but do not establish excessive repetition. This comparison is limited to the completed initial turn: the common pre-model guard left later responses unobserved. Empty captured finals and fewer later messages are neither intentional concision nor a communication success.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "Only the initial model turn completed in each candidate. Turn two has no observed final or continuation and turn three is absent after the common pre-model resource guard.",
+              "The practical follow-up, staged repair, repaired-state inventory, detailed restore guide and copy-ready staff message cannot be assessed. Repeated initial-state snapshots do not supply these results.",
+              "No desktop-notification or user-attention evidence is available; later silence is not treated as a preference."
+            ]
+          },
+          {
+            "pair_id": "pair-73ab5828a",
+            "left_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The standalone Casey email omits R-103 and its missing-receipt action, despite saying two claims need action. Complete surrounding chat and report do not repair the requested copy-ready email. The code, tests and report are otherwise present and agree with captured execution."
+              ],
+              "evidence": [
+                "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The ordinary reply and initial progress update are identical. They clearly state files, actual tests, unresolved actions and Friday uncertainty. The protected email omission is assessed separately and is not rewarded as concise ordinary communication.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Execution evidence is historical; no fresh rerun or message timing is supplied."
+            ]
+          },
+          {
+            "pair_id": "pair-5ff3ef47e",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "communication": {
+              "preference": "left",
+              "dimensions": {
+                "clarity": "left",
+                "relevance": "left",
+                "filler": "left",
+                "repetition": "left",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "left"
+              },
+              "evidence": [
+                "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+                "I am still working on this task.",
+                "The approved total is **11,249 cents (112.49 currency units)**."
+              ],
+              "rationale": "The right adds an unrelated fact before the reimbursement result and three identical status updates without a decision, blocker, new result or useful wait expectation. The left stays on the work and actions. The preference follows irrelevant and repeated content, not message count alone. Both retain complete protected work and the same suitable initial expectation.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; the update assessment concerns content rather than inferred cadence or desktop interruptions."
+            ]
+          },
+          {
+            "pair_id": "pair-dcf59ddf3",
+            "left_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The reply provides a conclusion and technique names but omits the requested worked times/states timeline and causal detail for the three failure windows. It also omits old-worker overlap, ambiguous timeout acceptance, an explicit eventual-success condition, stable retry keys with durable atomic receiver deduplication/effect, and the benefits and limits of renewal. This does not supply the requested reasoning for a basic-code reader to review the design."
+              ],
+              "evidence": [
+                "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice.",
+                "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The receiver may have accepted the request despite the timeout.",
+                "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+                "Expiration is not cancellation.",
+                "**retries must continue, and some attempt must eventually succeed.**",
+                "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+                "Neither makes receiver acceptance and marking done atomic.",
+                "The receiver’s ability to support this is currently unknown, so it is a proposed improvement rather than an existing guarantee."
+              ]
+            },
+            "communication": {
+              "preference": "right",
+              "dimensions": {
+                "clarity": "right",
+                "relevance": "right",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "right",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease.",
+                "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded.",
+                "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects."
+              ],
+              "rationale": "The right develops the requested design reasoning through definitions, failure cases, a timeline and concrete atomicity hazards. The left's unexplained technique labels and recommendation do not connect cause and effect for the stated reader. The right's technical vocabulary and length serve the explicit depth request, and its structure makes the explanation navigable. Both have the same initial update. Repeated conclusions that connect the tradeoff to the recommendation are not a material filler disadvantage.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "No execution was requested. Message timing is unavailable."
+            ]
+          },
+          {
+            "pair_id": "pair-a9491d80f",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+                "Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The displayed progress, ordinary reply, complete email, files and captured execution are identical. Both clearly communicate the work, real checks, pending actions and timing limitation. There is no basis for a communication preference.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Execution evidence is historical; message timing is unavailable."
+            ]
+          }
+        ],
+        "supplemental_delegation": {
+          "parent_directive_status": "unknown",
+          "information": {
+            "status": "unknown",
+            "issues": [
+              "The displayed child response and saved report preserve all ten correct pair calculations, applicable rejection reasons, alternatives, savings and D verification caveat. The root recommendation and key arithmetic are correct. Overall native-delegation and forwarding compliance is unknown because the actual incoming directive and lifecycle evidence are absent; the root's self-report cannot establish exactly one child/no descendants or absence of added style/length constraints."
+            ],
+            "evidence": [
+              "There are 10 possible pairs.",
+              "The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**.",
+              "If D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**.",
+              "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+              "Exactly one native child performed the analysis without delegation."
+            ]
+          },
+          "ordinary_chat_quality": {
+            "observations": [
+              "The root leads with the current recommendation and supporting quantities, then separates the conditional cheaper choice and next verification. Tentative D is never treated as confirmed.",
+              "The initial update sets the requested delegation/check/save expectation. The later material result helps the reader track the dependent child workflow, although routine checking/saving narration adds limited information beyond that result. Factual accuracy and host update requirements do not establish that all wording is useful.",
+              "The closing process claims relate to requested verification and observability but do not verify unobserved native lifecycle or directive details. The child's detailed report is protected requested work. No comparative treatment effect can be inferred."
+            ],
+            "evidence": [
+              "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+              "**Next action:** verify D’s Friday availability before choosing C + D.",
+              "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+            ]
+          },
+          "missing_evidence": [
+            "Actual parent-to-child directive is unavailable; forwarding and absence of root-added report style/length constraints cannot be verified.",
+            "Native spawn/descendant lifecycle evidence is not displayed to corroborate the one-child/no-delegation claim.",
+            "No completed matched delegation comparison is available; timing does not establish desktop notifications."
+          ]
+        },
+        "limitations": [
+          "Independent retrospective review of the assigned neutral packet and template only, plus the explicitly authorized validator. No external services, fresh subject execution, source project inspection, helpers or new model sessions were used.",
+          "Overlapping ordinary_chat, progress and turns were treated as views of the same events. Exact equality checks identified repeated file snapshots and shared artifacts/execution; these were reviewed once and never counted as repeated chat.",
+          "The archive pair is only partially observed. Both initial audits can be assessed; later responses and repair/handoff work are UNKNOWN after the common pre-model resource guard, not passing or model-chosen omissions.",
+          "Recorded message receipt times/order are not desktop notifications or measured user attention. Both workflow subjects share opening/periodic-update host requirements; missing updates alone receives no benefit, and required presence does not establish content usefulness.",
+          "Requested findings, methods depth, original-byte preservation and standalone copy-ready drafts were assessed as protected work. More detailed files or useful technical vocabulary were not penalized solely for length.",
+          "Historical execution establishes only the captured local results. Supplemental delegation directives/lifecycle are unverified, and no matched delegation effect is available."
+        ]
+      }
+    },
+    {
+      "id": "workflow-review-2",
+      "status": "received",
+      "calibration": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "review": {
+        "schema_version": 1,
+        "reviewer_id": "workflow-review-2",
+        "pair_reviews": [
+          {
+            "pair_id": "pair-f2ecf2583",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "right_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The standalone Casey email omits R-103 and the missing-receipt action while saying two claims need action. The surrounding chat and report include it, but do not repair the copy-ready email."
+              ],
+              "evidence": [
+                "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+              ],
+              "rationale": "Ordinary chat and progress are identical and clearly report the work, checks, result, and unresolved actions. The right's protected email loses an essential action; that is an information failure, not an ordinary-chat improvement from shorter text.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; no cadence or notification comparison is supported."
+            ]
+          },
+          {
+            "pair_id": "pair-30d4f6ffa",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "communication": {
+              "preference": "right",
+              "dimensions": {
+                "clarity": "right",
+                "relevance": "right",
+                "filler": "right",
+                "repetition": "right",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "right"
+              },
+              "evidence": [
+                "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+                "I am still working on this task.",
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`."
+              ],
+              "rationale": "Both preserve the same completed work and complete email. The left opens with irrelevant trivia and repeats a generic work-status message three times without a finding, blocker, decision, or useful wait expectation. The right keeps the relevant result prominent. This preference concerns distraction and repeated empty content; it does not infer timing or reward missing a host-required update. A potentially required message's presence would not make its generic content useful.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "No message timing or specific cadence explanation is captured; the repeated generic content's lack of reader benefit remains observable."
+            ]
+          },
+          {
+            "pair_id": "pair-49491fbf4",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Once its lease expires, it becomes available to another worker, which can retry.",
+                "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+                "Expiration is not cancellation.",
+                "retries must continue, and some attempt must eventually succeed.",
+                "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+                "Neither makes receiver acceptance and marking done atomic."
+              ]
+            },
+            "right_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The response supplies a conclusion without separate causal explanations of all three failure windows or the requested timeline with times and states.",
+                "It does not explain the old worker after expiry, overlapping sends, or acceptance remaining unknown after a timeout.",
+                "Idempotency and deduplication are named without explaining stable keys across attempts, durable receiver memory, atomic coordination with the effect, or failures of separate checks.",
+                "It omits the eventual-success condition, lease-renewal tradeoffs and limits, and enough reasoning about remaining guarantees for the stated reader."
+              ],
+              "evidence": [
+                "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+              ]
+            },
+            "communication": {
+              "preference": "left",
+              "dimensions": {
+                "clarity": "left",
+                "relevance": "left",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+                "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded.",
+                "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+                "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease."
+              ],
+              "rationale": "The left gives definitions, causal transitions, worked states, and atomicity counterexamples that make the design review understandable. Its depth and useful technical terms serve the explicit request. The right is readable as a summary but leaves its recommendations unexplained. That is a clarity and relevance loss for this request, not a concision benefit. Both have the same appropriate initial progress message.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; no cadence or notification inference is made."
+            ]
+          },
+          {
+            "pair_id": "pair-e8e252fc0",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The displayed progress, ordinary chat, complete final, email, actual deliverables, and execution evidence are identical. Both clearly convey the result and unresolved actions. There is no communication difference to prefer.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; no cadence comparison is supported."
+            ]
+          },
+          {
+            "pair_id": "pair-fcaaafd8044f",
+            "left_information": {
+              "status": "unknown",
+              "issues": [
+                "The observed initial audit is complete: actual byte/hash checks identify labels.csv as mismatched, layout.svg as missing, and manual.txt as matching; the files reject the draft's full-copy, restore, and deletion claims and preserve the initial source/staging/evidence.",
+                "The practical follow-up has no model response, and the repair/handoff turn is unobserved after a common pre-model resource guard. These later requirements are unknown, not completed and not an omission attributable to a model's communication choice."
+              ],
+              "evidence": [
+                "| labels.csv | 60 | 44 | mismatched |",
+                "| layout.svg | 196 | absent | missing |",
+                "| manual.txt | 122 | 122 | matching |",
+                "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+                "\"supplied_files_preserved\": 11",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "right_information": {
+              "status": "unknown",
+              "issues": [
+                "The observed initial audit is complete: all expected paths were checked with bytes/hashes, the exact inventory schema and initial mismatched/missing/matching state are recorded, and the draft's restore/deletion claims are rejected without replacing supplied files.",
+                "The practical follow-up has no model response, and the repair, repaired-state verification, restore guide, and staff draft were not observed after a common pre-model resource guard. Those later requirements remain unknown rather than passing or model-caused failures."
+              ],
+              "evidence": [
+                "| labels.csv | 60 | 44 | mismatched |",
+                "| layout.svg | 196 | absent | missing |",
+                "| manual.txt | 122 | 122 | matching |",
+                "Do not rely on the draft. Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "\"supplied_files_unchanged\": 11",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "right",
+                "relevance": "left",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "The restore evidence is only a spot check.",
+                "Do not rely on the draft or retire the source."
+              ],
+              "rationale": "For the initial turn, both keep routine checks and detailed evidence in files and give a clear retain-source decision. The right makes the immediate reason more concrete with the three file states and the spot-check limit; the left more explicitly names the decisions needed next. These useful tradeoffs do not justify an overall winner. Both have an opening and a material-result update under shared host requirements; fewer messages or missing later responses are not benefits. Later-turn communication cannot be judged because no model response exists.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "Turn 2's model response: only thread start and failed host completion are recorded.",
+              "Turn 3 repair, current verification, restore handoff, staff draft, and corresponding execution evidence are absent.",
+              "The common pre-model resource guard prevents attributing the unavailable later work to either model's choice.",
+              "Receipt timings do not establish desktop notification delivery; exact host cadence compliance is not inferred.",
+              "Original incoming native child instructions remain unverified."
+            ]
+          },
+          {
+            "pair_id": "pair-8a1c26a7504c",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Reference seconds = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910",
+                "Guide seconds     =  90 +  95 + 100 + 75 + 150 + 160 + 130 = 800",
+                "Faster / slower / tied = 5 / 2 / 0; total = 7 eligible pairs",
+                "First-selection accuracy was **7/8 (87.5%) for each format**",
+                "Its saving is `140 − 150 = −10` seconds: the guide was ten seconds slower.",
+                "Both first selections are recorded correct, and the guide has a later assistance flag.",
+                "Eight pair differences therefore cannot be treated as eight independent volunteers in a population precision calculation.",
+                "\"archive_byte_comparison\":\"PASS\",\"bytes\":632",
+                "Repeated tasks, practice, coaching, one missing guide time and the small nonrandom sample leave performance in ordinary shifts uncertain.",
+                "No further study or rollout has begun."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Matched reference = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910 seconds",
+                "Matched guide     =  90 +  95 + 100 + 75 + 150 + 160 + 130 = 800 seconds",
+                "Direction counts  = 5 faster + 2 slower + 0 tied = 7 eligible pairs",
+                "First-selection accuracy was 7/8 with each format across all eight pairs.",
+                "Its contribution is `140 - 150 = -10` seconds: the guide took ten seconds longer.",
+                "Both first selections were observed and correct, so P7 contributes one correct observation to each numerator and one pair to each accuracy denominator.",
+                "The eight pairs are useful units for matching observations, but they are not eight independent people.",
+                "\"archive_identical_bytes\": 632",
+                "An initial Python invocation was unavailable on this machine; it produced no calculations or file changes, and the calculation was completed with installed PowerShell instead.",
+                "These limitations leave ordinary-work accuracy, assistance needs, and performance uncertain."
+              ]
+            },
+            "communication": {
+              "preference": "left",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "left",
+                "filler": "left",
+                "repetition": "left",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "The records do not define exactly when timing stopped relative to coaching. The proposed check defines that endpoint explicitly and keeps its results separate from the historical timings.",
+                "Both audit files are written. I’m checking that the JSON matches the protocol and every supplied source remains unchanged.",
+                "The handoff is written, and its reproduction instructions returned all ten audit metrics correctly.",
+                "I’m finishing the byte comparison and source checks; the handoff includes an unsent committee message and a bounded next-check plan."
+              ],
+              "rationale": "Both preserve the full requested technical methods, examples, source copy, and standalone committee message; the final decisions are clear on both sides. The left's timing-endpoint update flags a material uncertainty that affects planning. The right also gives useful early findings, but later updates narrate routine JSON/reproduction/byte checks and repeat deliverable status and the recommendation, despite the request to keep routine testing notes in files. That gives the left a modest relevance and repetition advantage in update content. Shared host requirements can explain message presence; the preference does not reward fewer updates, unobserved desktop notifications, or missing cadence. Requested technical depth and protected drafts are not treated as filler.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "Exact original host cadence rules and desktop notification delivery are not captured. Timing receipt alone is not notification evidence; no cadence-compliance advantage is claimed.",
+              "Original incoming native child instructions remain unverified.",
+              "No new study, ordinary-shift observation, or generalization evidence exists; both candidates correctly present the next check as a proposal."
+            ]
+          }
+        ],
+        "supplemental_delegation": {
+          "parent_directive_status": "unknown",
+          "information": {
+            "status": "unknown",
+            "issues": [
+              "The public child report and saved report substantively preserve every pair's correct totals, applicable rejection reasons, confirmed A+B, conditional C+D, the $15 difference, and the Friday verification caveat. No content omission is observed.",
+              "The actual parent-to-child directive is not captured, so forwarding the full request without added style/length constraints cannot be verified.",
+              "Native invocation/count and descendant records, and independent parent recomputation evidence beyond the final assertion, are absent. Full delegation compliance therefore remains unknown."
+            ],
+            "evidence": [
+              "| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25**",
+              "| C + D | $70 + $90 = **$160** | 16 + 14 = **30** | 8 + 12 = **20**",
+              "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+              "The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D.",
+              "Exactly one native child performed the analysis without delegation.",
+              "I independently checked all ten pairs’ arithmetic and constraints"
+            ]
+          },
+          "ordinary_chat_quality": {
+            "observations": [
+              "The root gives a clear numerical recommendation, identifies the conditional alternative, and names the next verification without treating tentative availability as confirmation.",
+              "The initial update sets the requested process expectation; the later update gives a material confirmed-versus-conditional result and pending independent verification. This is more useful than generic activity narration.",
+              "The detailed child report is protected requested work, not ordinary chatter to shorten. Its public and saved forms preserve the calculations and caveats.",
+              "Lifecycle and verification assertions address requested auditability but are not independently established by this packet. No matched comparison supports a causal communication-effect claim."
+            ],
+            "evidence": [
+              "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+              "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**.",
+              "**Next action:** verify D’s Friday availability before choosing C + D.",
+              "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+            ]
+          },
+          "missing_evidence": [
+            "The actual parent-to-child directive and any added style/length constraints.",
+            "Native child starts/count and descendant activity.",
+            "Independent parent recomputation or local calculation beyond the final assertion.",
+            "A completed matched comparison."
+          ]
+        },
+        "limitations": [
+          "Independent retrospective packet-only automated review, not a measured human-comprehension study. Only the assigned packet/template and the expressly permitted validation export were accessed as review inputs; no candidate project execution, helpers, model sessions, or external services were used.",
+          "Full requests, chronological replies, progress, protected files, and recorded commands were inspected in bounded chunks. Exact duplicate snapshots and repeated file contents in command outputs were equality-checked and read once; ordinary_chat/progress/turns were counted as overlapping views of the same messages.",
+          "The archive pair has only the initial model turn completed. The later attempt stopped at a common pre-model resource guard and repair/handoff work was not observed. Initial audit preservation does not make unavailable later work pass, and empty captured responses do not demonstrate a choice to be concise.",
+          "The study pair's substantial methods files, P5/P7 reasoning, full original-draft copies, and committee messages are protected deliverables. Their requested depth was evaluated for completeness, not reduced to a word-count preference.",
+          "Both workflow subjects share opening and periodic-update host requirements. Potentially required message presence was separated from the reader benefit of its content; missing updates were not rewarded. Recorded timing receipt does not establish desktop notification delivery.",
+          "Captured execution supports the study metrics, source preservation, archival byte copies, and initial archive inventories. The right study candidate documents its unavailable Python attempt and successful fallback; no fresh rerun was performed here.",
+          "Batch/queue message timings are unavailable. No cadence, notification, or comparative time-cost inference is made from those controls.",
+          "Supplemental delegation preserves the observable report, but incoming directive, native lifecycle, and parent recomputation evidence remain incomplete. No treatment-effect or full delegation-compliance conclusion is inferred.",
+          "Communication judgments are task-specific and independent of preservation. The archive initial exchange ties overall because concrete explanation and explicit next decisions trade off; study-update preferences are modest and do not establish measured reader benefit."
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "w1-absent-v4-installed",
+      "votes": [
+        {
+          "reviewer": "workflow-review-1",
+          "calibrated": true,
+          "preferred_source": "e19",
+          "left_source": "e31",
+          "right_source": "e19",
+          "judgment": {
+            "pair_id": "pair-111403afd46c",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "\"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7",
+                "The eight pairs are useful units for matching observations, but they are not eight independent people.",
+                "Its contribution is `140 - 150 = -10` seconds: the guide took ten seconds longer.",
+                "Both first selections were observed and correct, so P7 contributes one correct observation to each numerator and one pair to each accuracy denominator.",
+                "The PowerShell reproduction block above was executed against this pack and reproduced all ten audit metrics and the 12.1% rounded time reduction.",
+                "\"pre_existing_files_unchanged\": 12,\n  \"archive_identical_bytes\": 632",
+                "One guide time is missing, tasks were repeated, and coaching occurred within a single staffed exercise.",
+                "No further study has started."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "\"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7",
+                "One pair means **one person performing the same lookup task with both formats**.",
+                "Its saving is `140 − 150 = −10` seconds: the guide was ten seconds slower.",
+                "**Include P7 in accuracy** as one success for each format and retain its guide assistance.",
+                "{\"archive_byte_comparison\":\"PASS\",\"bytes\":632",
+                "Compared SHA-256 hashes of all ten supplied source files and both existing audit files before and after creating the handoff; they were unchanged.",
+                "Repeated tasks, practice, coaching, one missing guide time and the small nonrandom sample leave performance in ordinary shifts uncertain.",
+                "No further study or rollout has begun."
+              ]
+            },
+            "communication": {
+              "preference": "right",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "right",
+                "filler": "right",
+                "repetition": "right",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "right"
+              },
+              "evidence": [
+                "The calculation is confirmed: 910 matched reference seconds versus 800 guide seconds, a 12.1% saving. Both audit files are written. I’m checking that the JSON matches the protocol and every supplied source remains unchanged.",
+                "The handoff is written, and its reproduction instructions returned all ten audit metrics correctly.",
+                "I’m finishing the byte comparison and source checks;",
+                "The records do not define exactly when timing stopped relative to coaching. The proposed check defines that endpoint explicitly and keeps its results separate from the historical timings."
+              ],
+              "rationale": "Both give clear decision-focused finals and retain substantial, reproducible findings and handoffs. Their committee drafts are protected outputs and complete; neither is rewarded for shorter draft or file text. The right has a modest advantage in the observed progress content: its timing-endpoint finding identifies an interpretation question and a concrete change to the proposed check. Several left update clauses instead narrate routine JSON/byte/source checks and repeat the same totals and recommendation, despite the request to keep routine testing notes in files. The left's first adverse finding is useful, and both openings appropriately orient the user. This preference concerns avoidable narration and repetition within observed messages, not fewer messages or missing periodic updates. Shared host update requirements explain potential presence but do not make every clause useful; recorded receipt intervals do not establish desktop-notification or attention burden.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "The packet records message receipt order/times, not desktop notifications or user attention. No human-comprehension effect was measured. Long observed gaps are not credited as a benefit; the preference compares available message content."
+            ]
+          }
+        },
+        {
+          "reviewer": "workflow-review-2",
+          "calibrated": true,
+          "preferred_source": "e19",
+          "left_source": "e19",
+          "right_source": "e31",
+          "judgment": {
+            "pair_id": "pair-8a1c26a7504c",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Reference seconds = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910",
+                "Guide seconds     =  90 +  95 + 100 + 75 + 150 + 160 + 130 = 800",
+                "Faster / slower / tied = 5 / 2 / 0; total = 7 eligible pairs",
+                "First-selection accuracy was **7/8 (87.5%) for each format**",
+                "Its saving is `140 − 150 = −10` seconds: the guide was ten seconds slower.",
+                "Both first selections are recorded correct, and the guide has a later assistance flag.",
+                "Eight pair differences therefore cannot be treated as eight independent volunteers in a population precision calculation.",
+                "\"archive_byte_comparison\":\"PASS\",\"bytes\":632",
+                "Repeated tasks, practice, coaching, one missing guide time and the small nonrandom sample leave performance in ordinary shifts uncertain.",
+                "No further study or rollout has begun."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Matched reference = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910 seconds",
+                "Matched guide     =  90 +  95 + 100 + 75 + 150 + 160 + 130 = 800 seconds",
+                "Direction counts  = 5 faster + 2 slower + 0 tied = 7 eligible pairs",
+                "First-selection accuracy was 7/8 with each format across all eight pairs.",
+                "Its contribution is `140 - 150 = -10` seconds: the guide took ten seconds longer.",
+                "Both first selections were observed and correct, so P7 contributes one correct observation to each numerator and one pair to each accuracy denominator.",
+                "The eight pairs are useful units for matching observations, but they are not eight independent people.",
+                "\"archive_identical_bytes\": 632",
+                "An initial Python invocation was unavailable on this machine; it produced no calculations or file changes, and the calculation was completed with installed PowerShell instead.",
+                "These limitations leave ordinary-work accuracy, assistance needs, and performance uncertain."
+              ]
+            },
+            "communication": {
+              "preference": "left",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "left",
+                "filler": "left",
+                "repetition": "left",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "The records do not define exactly when timing stopped relative to coaching. The proposed check defines that endpoint explicitly and keeps its results separate from the historical timings.",
+                "Both audit files are written. I’m checking that the JSON matches the protocol and every supplied source remains unchanged.",
+                "The handoff is written, and its reproduction instructions returned all ten audit metrics correctly.",
+                "I’m finishing the byte comparison and source checks; the handoff includes an unsent committee message and a bounded next-check plan."
+              ],
+              "rationale": "Both preserve the full requested technical methods, examples, source copy, and standalone committee message; the final decisions are clear on both sides. The left's timing-endpoint update flags a material uncertainty that affects planning. The right also gives useful early findings, but later updates narrate routine JSON/reproduction/byte checks and repeat deliverable status and the recommendation, despite the request to keep routine testing notes in files. That gives the left a modest relevance and repetition advantage in update content. Shared host requirements can explain message presence; the preference does not reward fewer updates, unobserved desktop notifications, or missing cadence. Requested technical depth and protected drafts are not treated as filler.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "Exact original host cadence rules and desktop notification delivery are not captured. Timing receipt alone is not notification evidence; no cadence-compliance advantage is claimed.",
+              "Original incoming native child instructions remain unverified.",
+              "No new study, ordinary-shift observation, or generalization evidence exists; both candidates correctly present the next check as a proposal."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "w2-absent-v4-installed",
+      "votes": [
+        {
+          "reviewer": "workflow-review-1",
+          "calibrated": true,
+          "preferred_source": "tie",
+          "left_source": "e20",
+          "right_source": "e18",
+          "judgment": {
+            "pair_id": "pair-a70d8f7987f7",
+            "left_information": {
+              "status": "unknown",
+              "issues": [
+                "The completed initial audit preserves the requested byte/hash inventory, source and initial staging, and rejects the draft's completion/restore/deletion claims. Overall preservation is unknown because the practical follow-up response and requested repair, verification, restore guide and staff message are unobserved after the common pre-model resource guard. The empty turn-two final and repeated snapshot are not evidence of completed follow-up work or intentional concision."
+              ],
+              "evidence": [
+                "Do not rely on the draft. Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing. Retain the source; full restore capability remains unproven.",
+                "\"expected_files\": 3,\n    \"present_files\": 2,\n    \"matching_files\": 1,\n    \"mismatched_files\": 1,\n    \"missing_files\": 1",
+                "\"supplied_files_unchanged\": 11,\n  \"staged_layout_still_absent\": true",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "right_information": {
+              "status": "unknown",
+              "issues": [
+                "The completed initial audit preserves the requested byte/hash inventory, source and initial staging, and rejects the draft's completion/restore/deletion claims. Overall preservation is unknown because later model responses and the requested repair, current verification, restore guide and standalone staff message are unobserved after the common pre-model resource guard. The missing work is not graded as a model omission or successful completion."
+              ],
+              "evidence": [
+                "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+                "\"expected_files\": 3,\n    \"present_files\": 2,\n    \"matching_files\": 1,\n    \"mismatched_files\": 1,\n    \"missing_files\": 1",
+                "\"supplied_files_preserved\": 11",
+                "No staged file was repaired or replaced",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "The restore evidence is only a spot check.",
+                "Staff should not rely on the draft: the staged pack is incomplete, and the restore evidence does not support its claims."
+              ],
+              "rationale": "For the completed first turn, both lead with a usable retain-source decision, keep detailed byte/hash evidence and routine checks in files, and give an appropriate opening plus a material finding update. The left supplies more concrete file-level reasons immediately; the right explicitly names the next authorization/ownership decisions. Both are clear and relevant, with no material overall communication winner. Accurate recording-work clauses add little on either side, but do not establish excessive repetition. This comparison is limited to the completed initial turn: the common pre-model guard left later responses unobserved. Empty captured finals and fewer later messages are neither intentional concision nor a communication success.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "Only the initial model turn completed in each candidate. Turn two has no observed final or continuation and turn three is absent after the common pre-model resource guard.",
+              "The practical follow-up, staged repair, repaired-state inventory, detailed restore guide and copy-ready staff message cannot be assessed. Repeated initial-state snapshots do not supply these results.",
+              "No desktop-notification or user-attention evidence is available; later silence is not treated as a preference."
+            ]
+          }
+        },
+        {
+          "reviewer": "workflow-review-2",
+          "calibrated": true,
+          "preferred_source": "tie",
+          "left_source": "e18",
+          "right_source": "e20",
+          "judgment": {
+            "pair_id": "pair-fcaaafd8044f",
+            "left_information": {
+              "status": "unknown",
+              "issues": [
+                "The observed initial audit is complete: actual byte/hash checks identify labels.csv as mismatched, layout.svg as missing, and manual.txt as matching; the files reject the draft's full-copy, restore, and deletion claims and preserve the initial source/staging/evidence.",
+                "The practical follow-up has no model response, and the repair/handoff turn is unobserved after a common pre-model resource guard. These later requirements are unknown, not completed and not an omission attributable to a model's communication choice."
+              ],
+              "evidence": [
+                "| labels.csv | 60 | 44 | mismatched |",
+                "| layout.svg | 196 | absent | missing |",
+                "| manual.txt | 122 | 122 | matching |",
+                "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+                "\"supplied_files_preserved\": 11",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "right_information": {
+              "status": "unknown",
+              "issues": [
+                "The observed initial audit is complete: all expected paths were checked with bytes/hashes, the exact inventory schema and initial mismatched/missing/matching state are recorded, and the draft's restore/deletion claims are rejected without replacing supplied files.",
+                "The practical follow-up has no model response, and the repair, repaired-state verification, restore guide, and staff draft were not observed after a common pre-model resource guard. Those later requirements remain unknown rather than passing or model-caused failures."
+              ],
+              "evidence": [
+                "| labels.csv | 60 | 44 | mismatched |",
+                "| layout.svg | 196 | absent | missing |",
+                "| manual.txt | 122 | 122 | matching |",
+                "Do not rely on the draft. Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "\"supplied_files_unchanged\": 11",
+                "Final not observed separately.",
+                "Turn 3 capture missing or not attempted."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "right",
+                "relevance": "left",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "The restore evidence is only a spot check.",
+                "Do not rely on the draft or retire the source."
+              ],
+              "rationale": "For the initial turn, both keep routine checks and detailed evidence in files and give a clear retain-source decision. The right makes the immediate reason more concrete with the three file states and the spot-check limit; the left more explicitly names the decisions needed next. These useful tradeoffs do not justify an overall winner. Both have an opening and a material-result update under shared host requirements; fewer messages or missing later responses are not benefits. Later-turn communication cannot be judged because no model response exists.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "Turn 2's model response: only thread start and failed host completion are recorded.",
+              "Turn 3 repair, current verification, restore handoff, staff draft, and corresponding execution evidence are absent.",
+              "The common pre-model resource guard prevents attributing the unavailable later work to either model's choice.",
+              "Receipt timings do not establish desktop notification delivery; exact host cadence compliance is not inferred.",
+              "Original incoming native child instructions remain unverified."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "original_incoming_child_instructions": "unverified"
+}

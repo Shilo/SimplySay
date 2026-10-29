@@ -1,0 +1,196 @@
+{
+  "phase": "Additional32-conversation allowance; controller excluded as previously disclosed",
+  "conversation_cap": 32,
+  "task_turn_cap": 108,
+  "counted_conversations": 21,
+  "counted_task_turn_starts": 64,
+  "remaining_conversations": 11,
+  "original24": "exhausted before this allowance",
+  "starts": [
+    {
+      "id": "e01",
+      "role": "independent-instruction-and-scope-challenger",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e02",
+      "role": "independent-case-evaluation-and-holdout-author",
+      "status": "errored-after-producing-files",
+      "turns": 4,
+      "max_turns": 4,
+      "failure": "Selected model is at capacity; fourth task artifacts retained; no retry or replacement."
+    },
+    {
+      "id": "e05",
+      "role": "screen-d1-candidate-b-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e03",
+      "role": "screen-d1-absent",
+      "condition": "absent",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e06",
+      "role": "screen-d1-simple-manual",
+      "condition": "minimal",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e04",
+      "role": "screen-d1-candidate-a-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e08",
+      "role": "screen-d2-candidate-a-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e10",
+      "role": "screen-d2-simple-manual",
+      "condition": "minimal",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e07",
+      "role": "screen-d2-absent",
+      "condition": "absent",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e09",
+      "role": "screen-d2-candidate-b-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e11",
+      "role": "blinded-development-reviewer-one",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e12",
+      "role": "blinded-development-reviewer-reversed",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e14",
+      "role": "development-revision-d1-a-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e16",
+      "role": "development-revision-d2-prefix-b-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair-prefix",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e15",
+      "role": "development-revision-d1-b-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e13",
+      "role": "development-revision-d2-prefix-a-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair-prefix",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e17",
+      "role": "targeted-development-absent",
+      "condition": "absent",
+      "case_id": "w1-study-evidence-audit",
+      "status": "failed",
+      "turns": 0,
+      "max_turns": 3
+    },
+    {
+      "id": "e31",
+      "role": "failure-reserves",
+      "condition": "absent",
+      "case_id": "w1-study-evidence-audit",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 4
+    },
+    {
+      "id": "e19",
+      "role": "targeted-development-enabled-matches",
+      "condition": "enabled",
+      "case_id": "w1-study-evidence-audit",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e18",
+      "role": "targeted-development-absent",
+      "condition": "absent",
+      "case_id": "w2-archive-copy-audit",
+      "status": "failed",
+      "turns": 2,
+      "max_turns": 3
+    },
+    {
+      "id": "e20",
+      "role": "targeted-development-enabled-matches",
+      "condition": "enabled",
+      "case_id": "w2-archive-copy-audit",
+      "status": "failed",
+      "turns": 2,
+      "max_turns": 3
+    }
+  ],
+  "native_subject_dispatch": "stopped at recorded95-percent reserve",
+  "new_paid_services": false,
+  "direct_claude": false
+}

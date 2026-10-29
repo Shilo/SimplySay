@@ -1,0 +1,58 @@
+{
+  "label": "Automated assessments; no measured human-comprehension improvement",
+  "additional_conversations": 21,
+  "additional_cap": 32,
+  "task_turn_starts": 64,
+  "task_turn_cap": 108,
+  "unused_conversations": 11,
+  "reviewer_contexts": 2,
+  "new_review_tasks_in_existing_contexts": 2,
+  "valid_review_responses": 2,
+  "controls_passed": 8,
+  "controls_reused_not_novel": true,
+  "opposite_sides_and_order": true,
+  "assessment_replay": "byte-identical",
+  "review_format_conversions": 0,
+  "comparisons": [
+    {
+      "key": "w1-absent-v4-installed",
+      "votes": [
+        {
+          "preferred": "e19",
+          "calibrated": true
+        },
+        {
+          "preferred": "e19",
+          "calibrated": true
+        }
+      ]
+    },
+    {
+      "key": "w2-absent-v4-installed",
+      "votes": [
+        {
+          "preferred": "tie",
+          "calibrated": true
+        },
+        {
+          "preferred": "tie",
+          "calibrated": true
+        }
+      ]
+    }
+  ],
+  "archived_subject_entries": 199,
+  "actual_artifact_entries": 128,
+  "all_subject_hashes_match": true,
+  "unchanged_historical_files": 287,
+  "disposable_profiles_checked": 17,
+  "copied_auth_retained": 0,
+  "holdout_hashes_unchanged": true,
+  "holdout_content_not_opened": true,
+  "original_native_child_directive": "unverified",
+  "native_reserve_stop": "95 percent; backend still permits ordinary included usage",
+  "production": "hold",
+  "publication": "hold",
+  "new_model_sessions_in_this_verifier": 0,
+  "privacy": "Existing targeted scanner only, not comprehensive release/history clearance"
+}

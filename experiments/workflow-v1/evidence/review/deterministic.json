@@ -1,0 +1,1242 @@
+{
+  "e31": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "w1-study-evidence-audit",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "bytes": 12156,
+          "sha256": "598d74498c057282306127f82348643e35b1d309444cf2dbe995d103f8431784"
+        },
+        {
+          "id": "file:audit/metrics.json",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "bytes": 244,
+          "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+        },
+        {
+          "id": "json:audit/metrics.json",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+          "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "id": "source_bytes:study/protocol.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+          "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "id": "source_bytes:evidence/pairs.csv",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+          "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "id": "source_bytes:evidence/reference.csv",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+          "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "id": "source_bytes:evidence/guide.csv",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+          "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "id": "source_bytes:evidence/capture-notes.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+          "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "id": "source_bytes:draft-summary.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:guides/reference-card.txt",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+          "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "id": "source_bytes:guides/reorganized-guide.txt",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+          "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "id": "source_bytes:tools/check-evidence.cjs",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+          "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_evidence_audit",
+          "status": "observed",
+          "commands_count": 9,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "bytes": 12156,
+          "sha256": "598d74498c057282306127f82348643e35b1d309444cf2dbe995d103f8431784"
+        },
+        {
+          "id": "file:audit/metrics.json",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "bytes": 244,
+          "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+        },
+        {
+          "id": "json:audit/metrics.json",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+          "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "id": "source_bytes:study/protocol.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+          "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "id": "source_bytes:evidence/pairs.csv",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+          "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "id": "source_bytes:evidence/reference.csv",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+          "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "id": "source_bytes:evidence/guide.csv",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+          "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "id": "source_bytes:evidence/capture-notes.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+          "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "id": "source_bytes:draft-summary.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:guides/reference-card.txt",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+          "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "id": "source_bytes:guides/reorganized-guide.txt",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+          "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "id": "source_bytes:tools/check-evidence.cjs",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+          "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_narrow_decision",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 12156,
+          "sha256": "598d74498c057282306127f82348643e35b1d309444cf2dbe995d103f8431784"
+        },
+        {
+          "id": "file:audit/metrics.json",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 244,
+          "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+        },
+        {
+          "id": "json:audit/metrics.json",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "file:handoff/methods.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 22883,
+          "sha256": "77e77c67bc0e7521904b18cddc41f3a0f3e8ebf0114d752d75545b67b004ffd3"
+        },
+        {
+          "id": "file:handoff/original-summary.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 632,
+          "sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "exact_copy:handoff/original-summary.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+          "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "id": "source_bytes:study/protocol.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+          "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "id": "source_bytes:evidence/pairs.csv",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+          "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "id": "source_bytes:evidence/reference.csv",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+          "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "id": "source_bytes:evidence/guide.csv",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+          "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "id": "source_bytes:evidence/capture-notes.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+          "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "id": "source_bytes:draft-summary.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:guides/reference-card.txt",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+          "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "id": "source_bytes:guides/reorganized-guide.txt",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+          "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "id": "source_bytes:tools/check-evidence.cjs",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+          "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_methods_handoff",
+          "status": "observed",
+          "commands_count": 5,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e19": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "w1-study-evidence-audit",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "bytes": 12630,
+          "sha256": "93b55c9bea36179f883cdb45ee5fcac3bd31ee14e81502a7fbe8dea82e3efb03"
+        },
+        {
+          "id": "file:audit/metrics.json",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "bytes": 244,
+          "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+        },
+        {
+          "id": "json:audit/metrics.json",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+          "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "id": "source_bytes:study/protocol.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+          "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "id": "source_bytes:evidence/pairs.csv",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+          "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "id": "source_bytes:evidence/reference.csv",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+          "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "id": "source_bytes:evidence/guide.csv",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+          "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "id": "source_bytes:evidence/capture-notes.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+          "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "id": "source_bytes:draft-summary.md",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:guides/reference-card.txt",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+          "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "id": "source_bytes:guides/reorganized-guide.txt",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+          "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "id": "source_bytes:tools/check-evidence.cjs",
+          "turn_id": "t1_evidence_audit",
+          "status": "pass",
+          "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+          "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_evidence_audit",
+          "status": "observed",
+          "commands_count": 10,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "bytes": 12630,
+          "sha256": "93b55c9bea36179f883cdb45ee5fcac3bd31ee14e81502a7fbe8dea82e3efb03"
+        },
+        {
+          "id": "file:audit/metrics.json",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "bytes": 244,
+          "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+        },
+        {
+          "id": "json:audit/metrics.json",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+          "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "id": "source_bytes:study/protocol.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+          "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "id": "source_bytes:evidence/pairs.csv",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+          "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "id": "source_bytes:evidence/reference.csv",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+          "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "id": "source_bytes:evidence/guide.csv",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+          "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "id": "source_bytes:evidence/capture-notes.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+          "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "id": "source_bytes:draft-summary.md",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:guides/reference-card.txt",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+          "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "id": "source_bytes:guides/reorganized-guide.txt",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+          "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "id": "source_bytes:tools/check-evidence.cjs",
+          "turn_id": "t2_narrow_decision",
+          "status": "pass",
+          "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+          "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_narrow_decision",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 12630,
+          "sha256": "93b55c9bea36179f883cdb45ee5fcac3bd31ee14e81502a7fbe8dea82e3efb03"
+        },
+        {
+          "id": "file:audit/metrics.json",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 244,
+          "sha256": "40faf769f01c0621edf17d1bad82a51b62772c6204cd7b2aab2dccfcd409f58f"
+        },
+        {
+          "id": "json:audit/metrics.json",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "file:handoff/methods.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 22766,
+          "sha256": "f45a7cf0359b9a5f8f16ab9e27966d9a5628ceefeef4e65428eee6ffea66ccc9"
+        },
+        {
+          "id": "file:handoff/original-summary.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "bytes": 632,
+          "sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "exact_copy:handoff/original-summary.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732",
+          "actual_sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "id": "source_bytes:study/protocol.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e",
+          "actual_sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "id": "source_bytes:evidence/pairs.csv",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74",
+          "actual_sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "id": "source_bytes:evidence/reference.csv",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670",
+          "actual_sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "id": "source_bytes:evidence/guide.csv",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a",
+          "actual_sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "id": "source_bytes:evidence/capture-notes.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448",
+          "actual_sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "id": "source_bytes:draft-summary.md",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4",
+          "actual_sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "id": "source_bytes:guides/reference-card.txt",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492",
+          "actual_sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "id": "source_bytes:guides/reorganized-guide.txt",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5",
+          "actual_sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "id": "source_bytes:tools/check-evidence.cjs",
+          "turn_id": "t3_methods_handoff",
+          "status": "pass",
+          "expected_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f",
+          "actual_sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_methods_handoff",
+          "status": "observed",
+          "commands_count": 6,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e18": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "fail",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "unverified",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "fail",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "w2-archive-copy-audit",
+      "deterministic_status": "unverified",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 11117,
+          "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_copy_audit",
+          "status": "observed",
+          "commands_count": 6,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "capture_completeness",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "issues": [
+            "Final not observed separately."
+          ]
+        },
+        {
+          "id": "native_turn_completion",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 11117,
+          "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "turn_capture",
+          "turn_id": "t3_repair_handoff",
+          "status": "unverified",
+          "reason": "No capture for the requested turn; later files cannot backfill it."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e20": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "fail",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "unverified",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "fail",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "w2-archive-copy-audit",
+      "deterministic_status": "unverified",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 8554,
+          "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_copy_audit",
+          "status": "observed",
+          "commands_count": 9,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "capture_completeness",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "issues": [
+            "Final not observed separately."
+          ]
+        },
+        {
+          "id": "native_turn_completion",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 8554,
+          "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "turn_capture",
+          "turn_id": "t3_repair_handoff",
+          "status": "unverified",
+          "reason": "No capture for the requested turn; later files cannot backfill it."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  }
+}
