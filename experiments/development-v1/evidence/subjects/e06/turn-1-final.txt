@@ -1,0 +1,7 @@
+Not yet. First, correct the confirmation text from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration. The workshop is in **room Cedar**.
+
+The 40-place capacity limit and repeat-click protection passed. Shared email addresses are intentionally allowed for different people. No other failed launch check is recorded.
+
+Calendar-invite delivery remains untested; don’t assume attendees receive a working invite. Volunteers can check attendees in using the confirmed registration list.
+
+No real registration service is connected or changed in this local exercise.

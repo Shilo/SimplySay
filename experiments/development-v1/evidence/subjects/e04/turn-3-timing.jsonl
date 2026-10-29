@@ -1,0 +1,4 @@
+{"line":1,"utc":"2026-10-29T07:56:29.286Z","type":"thread.started"}
+{"line":2,"utc":"2026-10-29T07:56:29.481Z","type":"turn.started"}
+{"line":3,"utc":"2026-10-29T07:56:34.221Z","type":"item.completed","item_id":"item_0"}
+{"line":4,"utc":"2026-10-29T07:56:34.340Z","type":"turn.completed"}

@@ -1,0 +1,98 @@
+{
+  "id": "e06",
+  "condition": "minimal",
+  "case_id": "d1-workshop-registration",
+  "policy": null,
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": null,
+      "observed_thread": "thread-30aeef714a7c2a92",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 20865,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 176,
+        "reasoning_output_tokens": 0
+      },
+      "started_utc": "2026-10-29T07:55:37.606Z",
+      "started_ids": [
+        "thread-30aeef714a7c2a92"
+      ],
+      "ended_utc": "2026-10-29T07:55:48.826Z",
+      "unexpected_threads": [],
+      "thread": "thread-30aeef714a7c2a92",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t1_opening_decision"
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-30aeef714a7c2a92",
+      "observed_thread": "thread-30aeef714a7c2a92",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 31625,
+        "cached_input_tokens": 29440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 284,
+        "reasoning_output_tokens": 0
+      },
+      "started_utc": "2026-10-29T07:55:48.838Z",
+      "started_ids": [
+        "thread-30aeef714a7c2a92"
+      ],
+      "ended_utc": "2026-10-29T07:55:56.198Z",
+      "unexpected_threads": [],
+      "thread": "thread-30aeef714a7c2a92",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t2_explain_checks"
+    },
+    {
+      "turn": 3,
+      "expected_thread": "thread-30aeef714a7c2a92",
+      "observed_thread": "thread-30aeef714a7c2a92",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 42539,
+        "cached_input_tokens": 40192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 360,
+        "reasoning_output_tokens": 0
+      },
+      "started_utc": "2026-10-29T07:55:56.215Z",
+      "started_ids": [
+        "thread-30aeef714a7c2a92"
+      ],
+      "ended_utc": "2026-10-29T07:56:09.010Z",
+      "unexpected_threads": [],
+      "thread": "thread-30aeef714a7c2a92",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t3_volunteer_message"
+    }
+  ],
+  "failed": false,
+  "loading_events": [],
+  "quota_after": {
+    "primary": {
+      "usedPercent": 79,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "auth_copy_removed": true
+}

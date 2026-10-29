@@ -1,0 +1,7 @@
+Not yet. First, correct the confirmation message from **Thursday at 10:00** to **Saturday at 10:00 in room Cedar**, then test it. That’s the only recorded launch blocker.
+
+Capacity checks passed: the first 40 places are accepted, and the next registration is rejected. Repeat clicks with the same submission token also passed; shared email addresses are intentionally allowed.
+
+Calendar-invite delivery remains untested. Verify it separately, and don’t assume attendees received working invites. Volunteers can use the confirmed registration list for check-in.
+
+These notes describe a local planning exercise; no real registration service has been changed.

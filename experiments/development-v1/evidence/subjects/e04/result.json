@@ -1,0 +1,105 @@
+{
+  "id": "e04",
+  "condition": "enabled",
+  "case_id": "d1-workshop-registration",
+  "policy": "experiments/development-v1/candidates/a-relevance-gate.v2.txt",
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": null,
+      "observed_thread": "thread-f7a2b62d7a7c37e0",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 21070,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 188,
+        "reasoning_output_tokens": 0
+      },
+      "started_utc": "2026-10-29T07:56:10.338Z",
+      "started_ids": [
+        "thread-f7a2b62d7a7c37e0"
+      ],
+      "ended_utc": "2026-10-29T07:56:22.609Z",
+      "unexpected_threads": [],
+      "thread": "thread-f7a2b62d7a7c37e0",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t1_opening_decision"
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-f7a2b62d7a7c37e0",
+      "observed_thread": "thread-f7a2b62d7a7c37e0",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 31944,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 284,
+        "reasoning_output_tokens": 0
+      },
+      "started_utc": "2026-10-29T07:56:22.632Z",
+      "started_ids": [
+        "thread-f7a2b62d7a7c37e0"
+      ],
+      "ended_utc": "2026-10-29T07:56:29.076Z",
+      "unexpected_threads": [],
+      "thread": "thread-f7a2b62d7a7c37e0",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t2_explain_checks"
+    },
+    {
+      "turn": 3,
+      "expected_thread": "thread-f7a2b62d7a7c37e0",
+      "observed_thread": "thread-f7a2b62d7a7c37e0",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 42960,
+        "cached_input_tokens": 21376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 353,
+        "reasoning_output_tokens": 0
+      },
+      "started_utc": "2026-10-29T07:56:29.102Z",
+      "started_ids": [
+        "thread-f7a2b62d7a7c37e0"
+      ],
+      "ended_utc": "2026-10-29T07:56:34.752Z",
+      "unexpected_threads": [],
+      "thread": "thread-f7a2b62d7a7c37e0",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t3_volunteer_message"
+    }
+  ],
+  "failed": false,
+  "loading_events": [
+    {
+      "event": "SessionStart",
+      "source": "startup",
+      "session_id": "thread-f7a2b62d7a7c37e0",
+      "policyHash": "76f3dafec75d8e1ce847dcbb7a83ea6aa0b2d66e4ec679a8f8e8791d3621cabe"
+    }
+  ],
+  "quota_after": {
+    "primary": {
+      "usedPercent": 79,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "auth_copy_removed": true
+}

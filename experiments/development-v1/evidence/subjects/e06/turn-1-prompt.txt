@@ -1,0 +1,4 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
+
+
+We're opening registration for Saturday's workshop. Read launch-notes.md. Can I switch on registration, and what needs my attention first?

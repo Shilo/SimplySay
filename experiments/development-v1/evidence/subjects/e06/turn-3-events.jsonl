@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-30aeef714a7c2a92"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Hi volunteers! Saturday’s workshop starts at **10:00 in room Cedar**.\n\nAt the door, use the **confirmed registration list** to look up each attendee and mark them checked in.\n\n**Calendar-invite delivery hasn’t been verified**, so don’t assume attendees received a working invite. Please use the event time and room above if anyone needs directions."}}
+{"type":"turn.completed","usage":{"input_tokens":42539,"cached_input_tokens":40192,"cache_write_input_tokens":0,"output_tokens":360,"reasoning_output_tokens":0}}

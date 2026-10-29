@@ -1,0 +1,6 @@
+Neither still blocks opening: both checks passed.
+
+- **Capacity enforcement:** Registration accepts the first 40 places and rejects the next registration once full.
+- **Duplicate submissions:** Repeated clicks with the same submission token return the existing registration instead of creating another. Different people may share an email address, so matching emails alone aren’t treated as duplicates.
+
+With the confirmation time fixed and tested, the notes show no remaining launch blocker. Calendar-invite delivery is still unverified, so don’t assume attendees receive a working invite.

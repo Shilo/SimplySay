@@ -1,0 +1,6 @@
+Neither still blocks opening: both checks passed.
+
+- **Capacity enforcement:** The workshop accepts the first 40 places and rejects the next registration once full.
+- **Duplicate submissions:** Repeat clicks with the same submission token return the existing registration instead of creating another. Different people sharing an email address can still register.
+
+With the confirmation corrected and tested, no recorded launch blocker remains. Calendar-invite delivery is still unverified, so don’t assume attendees received working invites.

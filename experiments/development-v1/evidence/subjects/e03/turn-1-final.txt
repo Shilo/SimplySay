@@ -1,0 +1,8 @@
+Not yet. First, correct the confirmation text from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration. The workshop is in **room Cedar**.
+
+The other priorities are:
+
+- **Calendar invites:** Delivery hasn’t been checked. Verify it before relying on invites; don’t assume attendees received a working one. Volunteers can use the confirmed registration list for check-in.
+- **Passed checks:** The 40-place limit works, and repeat clicks with the same submission token don’t create extra registrations. Shared email addresses are intentionally allowed.
+
+The notes record no other failed launch check. Once the confirmation is corrected and tested, the recorded blocker is cleared. No live registration service was changed.

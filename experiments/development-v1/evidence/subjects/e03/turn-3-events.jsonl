@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-266258825fe59df6"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Hi volunteers! Registration is now open for Saturday’s workshop at **10:00 in room Cedar**.\n\nAt the door, use the **confirmed registration list** to look up each attendee and mark them checked in.\n\n**Calendar-invite delivery is still unverified**, so don’t assume attendees received a working invite. Use the confirmed registration list for check-in even if someone is missing an invite.\n\nThanks for helping!"}}
+{"type":"turn.completed","usage":{"input_tokens":42483,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":413,"reasoning_output_tokens":0}}
