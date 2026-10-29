@@ -9,23 +9,24 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-2-finished-shared-preview-defect",
+  "status": "unit-3-decision-preparation",
   "new_conversations": 20,
-  "new_task_starts": 49,
+  "new_task_starts": 50,
   "starts": [
     {
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "completed",
+      "status": "allocated-next-step-challenge",
       "agent": "/root/reader_policy_challenge",
-      "turns": 5,
-      "max_turns": 5,
+      "turns": 6,
+      "max_turns": 6,
       "followup_purposes": [
         "Independent verification of new-phase ledger isolation and installed-disabled runner support",
         "Independent verification of new cases, realistic calibration and companion field contract before live subjects",
         "Correct rejected CLI disabling using verified supported config API; independent local guard tests",
-        "Independently challenge unit 2 policy, natural case and prospective calibration contract before response dispatch"
+        "Independently challenge unit 2 policy, natural case and prospective calibration contract before response dispatch",
+        "Choose one evidence-backed next experiment after unit2 shared preview failure; positive required-update fallback versus different-model baseline ceiling, no trials"
       ]
     },
     {
@@ -228,7 +229,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "All planned work complete; record the next purposeful work unit before additional model tasks",
+  "block_reason": "One recorded independent decision task only; no further response/reviewer dispatch allocated",
   "checkpoint": "experiments/reader-v1/evidence/unit2/first-pair-checkpoint.json",
   "diagnostics": [
     {
