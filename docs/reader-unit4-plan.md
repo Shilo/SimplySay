@@ -6,6 +6,8 @@
 
 V3 names the current stage but also forecasts future checking. Its wording excludes deliverable-content previews without making the permitted fallback exclusive. Test the independently proposed compact exclusive-stage replacement in concrete.v4. Preserve every final-answer and protected-work clause byte-for-byte. This is a concrete scope correction, not a guaranteed behavioral cure; v2's earlier prohibition also failed.
 
+Here concrete.v4 is the reader-development family's fourth text, not the historical workflow.v4 policy. The latter and V5 remain unchanged; no unchanged-workflow.v4 experiment is resumed.
+
 Keep the full communication goal in the evaluation. Satisfactory finals do not need an invented defect or another arbitrary rewrite. A progress-only gain is partial evidence; it cannot establish jargon/filler/readability gains everywhere or satisfy the earlier full-goal gate. No sealed validation case is opened here.
 
 ## Preparation and allocation

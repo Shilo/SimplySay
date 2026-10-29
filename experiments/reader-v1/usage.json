@@ -9,32 +9,33 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-4-host-context-preparation",
+  "status": "unit-4-ready",
   "new_conversations": 24,
-  "new_task_starts": 60,
+  "new_task_starts": 61,
   "starts": [
     {
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "completed-diagnosis-and-local-verification",
+      "status": "completed-unit4-verification",
       "agent": "/root/reader_policy_challenge",
-      "turns": 7,
-      "max_turns": 7,
+      "turns": 8,
+      "max_turns": 8,
       "followup_purposes": [
         "Independent verification of new-phase ledger isolation and installed-disabled runner support",
         "Independent verification of new cases, realistic calibration and companion field contract before live subjects",
         "Correct rejected CLI disabling using verified supported config API; independent local guard tests",
         "Independently challenge unit 2 policy, natural case and prospective calibration contract before response dispatch",
         "Choose one evidence-backed next experiment after unit2 shared preview failure; positive required-update fallback versus different-model baseline ceiling, no trials",
-        "Diagnose separate-goal calibration coupling and literal fallback scope from unit3 records before more response spending; no rescore or trials"
+        "Diagnose separate-goal calibration coupling and literal fallback scope from unit3 records before more response spending; no rescore or trials",
+        "Independent verification of common canonical host-assessment facts, prospective per-goal/default joint behavior, unchanged evidence and exclusive fallback scope before new native dispatch"
       ]
     },
     {
       "id": "n02",
       "role": "independent-case-and-evaluation-challenger",
       "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
-      "status": "allocated-common-host-context-implementation",
+      "status": "completed-host-context-implementation",
       "agent": "/root/reader_case_eval_challenge",
       "turns": 4,
       "max_turns": 4,
@@ -267,10 +268,13 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": true,
-  "allowed_subjects": [],
-  "block_reason": "Host evidence metadata/local verification pending; no new response or reviewer dispatch yet",
-  "checkpoint": "experiments/reader-v1/evidence/unit3/first-pair-checkpoint.json",
+  "dispatch_blocked": false,
+  "allowed_subjects": [
+    "n27",
+    "n28"
+  ],
+  "block_reason": null,
+  "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
       "purpose": "Inspect supported disabling command and verify native config control after n07 failure",

@@ -1,0 +1,70 @@
+{
+  "subjects": [
+    {
+      "id": "n27",
+      "condition": "absent",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n28",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v4.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n29",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v4.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "w1-exclusive-enabled-absent",
+      "a": "n27",
+      "b": "n28"
+    },
+    {
+      "key": "w1-exclusive-disabled-absent",
+      "a": "n27",
+      "b": "n29"
+    }
+  ],
+  "dispatch_order": [
+    "n27",
+    "n28",
+    "n29"
+  ],
+  "checkpoint": "Apply prospective first-pair stopping rule: skip n29 if target absent on both or enabled still plainly narrates routine forthcoming steps/content; grade every observed output, retain missing disabled evidence.",
+  "goal_calibration_mode": "independent-goals-v1",
+  "calibration_file": "experiments/reader-v1/calibration-v2.json",
+  "extra_input_files": [
+    "experiments/reader-v1/run.cjs",
+    "experiments/reader-v1/unit.json",
+    "experiments/reader-v1/review.cjs",
+    "experiments/reader-v1/review-check.cjs",
+    "experiments/reader-v1/calibration-v2.json",
+    "experiments/assessment-v2/assess.cjs",
+    "docs/reader-unit4-plan.md",
+    "docs/reader-unit4-diagnosis.md",
+    "docs/reader-calibration-mode-change.md",
+    "docs/reader-host-context-correction.md",
+    "docs/reader-unit4-verification.md",
+    "docs/reader-development-authorization.md"
+  ],
+  "assessor_host_facts": {
+    "case_ids": [
+      "w1-study-evidence-audit"
+    ],
+    "summary": "The applicable stock host guidance requires an opening commentary message before tool work and commentary during ongoing work with a stated 60-second upper gap.",
+    "source_role": "developer",
+    "source_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+    "provenance": "Supported saved stock developer-message records; docs/workflow-instruction-review.md and docs/instruction-delivery-diagnosis.md.",
+    "limits": [
+      "Completed-message receipt timestamps are not exact authoring timestamps or UI notification times and do not prove compliance with the stated cadence.",
+      "No desktop notification or reader-comprehension measurement is supplied.",
+      "These facts do not reveal incoming native parent-to-child instructions or verify inter-agent boundaries.",
+      "The source is developer-role history; it does not expose the complete upstream system layer, final outgoing request assembly or model attention."
+    ]
+  }
+}

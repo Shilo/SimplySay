@@ -1,0 +1,59 @@
+{
+  "status": "ready",
+  "authorization": "owner-reader-development-2026-10-29",
+  "record": "docs/reader-unit3-plan.md",
+  "purpose": "Positive current-stage fallback for required status: targeted development, not full-goal validation",
+  "end_conversation_cap": 25,
+  "end_task_cap": 61,
+  "unit_limits_are_not_overall_owner_caps": true,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "n22"
+      ],
+      "role": "study-absent-status-fallback",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n23"
+      ],
+      "role": "study-enabled-status-fallback",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n24"
+      ],
+      "role": "study-disabled-status-fallback",
+      "max_turns_each": 3
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "n25",
+      "max_turns": 1
+    },
+    {
+      "id": "n26",
+      "max_turns": 1
+    }
+  ],
+  "preparation_contexts": 0,
+  "planned_preparation_tasks": 1,
+  "new_native_response_tasks": 9,
+  "new_blinded_reviewer_conversations": 2,
+  "new_blinded_reviewer_tasks": 2,
+  "retries": 0,
+  "replacements": 0,
+  "further_units": "Record a specific evidence-backed purpose before dispatch, under the broader authorization",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false,
+  "manifest": "experiments/workflow-v1/reader-unit3.manifest.json",
+  "native_response_attempt_slots": 3,
+  "planned_completed_response_conversations": 3,
+  "retained_pre_model_failure_slots": 0,
+  "first_pair_stop": "If both satisfactory on target or revised still plainly previews forthcoming detail, skip n24, review savedpair, retain missing disabled evidence."
+}

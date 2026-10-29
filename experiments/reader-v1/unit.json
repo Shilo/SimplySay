@@ -1,46 +1,46 @@
 {
   "status": "ready",
   "authorization": "owner-reader-development-2026-10-29",
-  "record": "docs/reader-unit3-plan.md",
-  "purpose": "Positive current-stage fallback for required status: targeted development, not full-goal validation",
-  "end_conversation_cap": 25,
-  "end_task_cap": 61,
+  "record": "docs/reader-unit4-plan.md",
+  "purpose": "Correct non-exclusive required-status fallback, with prospective independent-goal scoring and common host-assessment facts",
+  "end_conversation_cap": 29,
+  "end_task_cap": 72,
   "unit_limits_are_not_overall_owner_caps": true,
   "exact_fresh_assignments": [
     {
       "ids": [
-        "n22"
+        "n27"
       ],
-      "role": "study-absent-status-fallback",
+      "role": "study-absent-exclusive-fallback",
       "max_turns_each": 3
     },
     {
       "ids": [
-        "n23"
+        "n28"
       ],
-      "role": "study-enabled-status-fallback",
+      "role": "study-enabled-exclusive-fallback",
       "max_turns_each": 3
     },
     {
       "ids": [
-        "n24"
+        "n29"
       ],
-      "role": "study-disabled-status-fallback",
+      "role": "study-disabled-exclusive-fallback",
       "max_turns_each": 3
     }
   ],
   "reviewers": [
     {
-      "id": "n25",
+      "id": "n30",
       "max_turns": 1
     },
     {
-      "id": "n26",
+      "id": "n31",
       "max_turns": 1
     }
   ],
   "preparation_contexts": 0,
-  "planned_preparation_tasks": 1,
+  "planned_preparation_tasks": 2,
   "new_native_response_tasks": 9,
   "new_blinded_reviewer_conversations": 2,
   "new_blinded_reviewer_tasks": 2,
@@ -51,9 +51,10 @@
   "direct_claude": false,
   "production": false,
   "publication": false,
-  "manifest": "experiments/workflow-v1/reader-unit3.manifest.json",
+  "manifest": "experiments/workflow-v1/reader-unit4.manifest.json",
   "native_response_attempt_slots": 3,
   "planned_completed_response_conversations": 3,
   "retained_pre_model_failure_slots": 0,
-  "first_pair_stop": "If both satisfactory on target or revised still plainly previews forthcoming detail, skip n24, review savedpair, retain missing disabled evidence."
+  "first_pair_stop": "If both satisfactory on target or enabled still plainly narrates routine forthcoming steps/content, skip n29, review saved pair and retain missing disabled evidence.",
+  "goal_calibration_mode": "independent-goals-v1"
 }
