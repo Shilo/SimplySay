@@ -1,5 +1,5 @@
 Future dispatch clarification only; not served in the completed replication and not a regrade.
-Reuse experiments/development-v1/review-dispatch.txt and the unchanged packet/schema/validator/calibration.
+Reuse experiments/development-v1/review-dispatch.txt and the existing schema/validator/calibration. The future packet adapter now makes the same evidence/issues distinction. Archived packets and judgments retain their served wording; do not change them or their frozen scores.
 
 Evidence and issues are both STRING arrays, with different purposes:
 - Evidence: exact literal quotations from the relevant displayed sample. Do not paraphrase or add side labels inside a quotation.

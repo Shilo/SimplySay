@@ -1,0 +1,29 @@
+{
+  "offline_only": true,
+  "new_model_sessions": 0,
+  "new_judgments": 0,
+  "completed_replication_regraded": false,
+  "original_adapter_sha256": "175a5bb2bd7a5120762ed601d76eda916ea797196cef2280a30308ce815b7a5d",
+  "future_adapter_sha256": "1dae56dda6fa08a00d8b991f7cfec123efff7ac0b73648182b5b2127388b817d",
+  "validator_and_scoring_code_unchanged": true,
+  "case_checks_unchanged": true,
+  "deterministic_results_unchanged": true,
+  "raw_packets_and_reviews_unchanged": true,
+  "future_packet_checks": [
+    {
+      "packet": "replication-review-1",
+      "historical_sha256": "2f6623af555c914524c6b55079a3de8ccd785a1e9d5000b3c3cfaae279c60853",
+      "future_sha256": "b7cc55ea77f94dd2f6405c919dce9cd297c97f12f2e57e9c6003b7657fe1bb33",
+      "only_change": "Final field-format instruction; tasks, controls, samples, order and criteria unchanged"
+    },
+    {
+      "packet": "replication-review-2",
+      "historical_sha256": "0cb7341da9340f1c082722ea9eef9b94d9d116e8857932d7e860471c2dd22c7c",
+      "future_sha256": "2f547c8a2559654ac2f4a91106d087dc72a29088b203aeab3eb339d8fc19e99f",
+      "only_change": "Final field-format instruction; tasks, controls, samples, order and criteria unchanged"
+    }
+  ],
+  "historical_replay_revision": "d4df771",
+  "historical_replay_note": "The old adapter is retained in Git and completed assessment was replayed byte-identically before this wording correction. Use that revision for its frozen whole-file hash. No hash guard is removed.",
+  "live_effectiveness_of_future_guidance": "unverified; no reviewer retry authorized"
+}
