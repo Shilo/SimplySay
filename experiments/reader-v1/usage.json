@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-chat1-allocated",
-  "new_conversations": 33,
-  "new_task_starts": 82,
+  "status": "core-chat1-disabled-control",
+  "new_conversations": 35,
+  "new_task_starts": 88,
   "starts": [
     {
       "id": "n01",
@@ -344,6 +344,26 @@
       "max_turns": 3,
       "status": "failed",
       "reserved_utc": "2026-10-29T20:35:00.361Z"
+    },
+    {
+      "id": "n42",
+      "role": "inline-photo-absent-core1",
+      "condition": "absent",
+      "case_id": "reader-d-inline-photo-advice",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T20:45:48.715Z"
+    },
+    {
+      "id": "n43",
+      "role": "inline-photo-enabled-core1",
+      "condition": "enabled",
+      "case_id": "reader-d-inline-photo-advice",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T20:45:59.031Z"
     }
   ],
   "new_paid_services": false,
@@ -358,11 +378,10 @@
   },
   "dispatch_blocked": false,
   "allowed_subjects": [
-    "n42",
-    "n43"
+    "n44"
   ],
-  "block_reason": "Only corrected first matched chat pair; no file/workflow launches, no weaker executor.",
-  "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
+  "block_reason": "First corrected pair is valid; only the predeclared disabled control remains allowed before review.",
+  "checkpoint": "experiments/reader-v1/evidence/core-chat1/first-pair-checkpoint.json",
   "diagnostics": [
     {
       "purpose": "Inspect supported disabling command and verify native config control after n07 failure",

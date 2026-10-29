@@ -1,0 +1,3 @@
+No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. At 10 × 7.5 inches, it still supplies **100 ppi**, below the required 240 ppi.
+
+Use the **4000 × 3000 original**, which supplies **400 ppi** at that print size. Changing the label cannot restore the detail lost during downsampling.

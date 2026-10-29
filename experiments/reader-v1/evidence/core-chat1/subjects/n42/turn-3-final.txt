@@ -1,0 +1,33 @@
+The recommendation comes from the **stored pixel dimensions divided by the intended print size**. The “dpi” label does not enter that calculation.
+
+For the **10 × 7.5 inch print**, the requirement is at least 240 image pixels per printed inch:
+
+- Width: `10 inches × 240 ppi = 2400 pixels`
+- Height: `7.5 inches × 240 ppi = 1800 pixels`
+
+The minimum is therefore **2400 × 1800 pixels**. Both files already have the correct 4:3 shape, so neither needs cropping for this layout.
+
+| Copy | Stored dimensions | Horizontal density | Vertical density | Meets 240 ppi? |
+|---|---|---|---|---|
+| Original | 4000 × 3000 | 4000 ÷ 10 = **400 ppi** | 3000 ÷ 7.5 = **400 ppi** | Yes |
+| Web | 1000 × 750 | 1000 ÷ 10 = **100 ppi** | 750 ÷ 7.5 = **100 ppi** | No |
+
+Use the **original**, placed at 10 × 7.5 inches. It supplies 400 ppi without adding any pixels. This meets the numerical requirement; the notes cannot establish how the finished print will look.
+
+These three editing operations have different effects:
+
+- **Changing only the resolution label:** With resampling disabled, the stored pixels stay unchanged. The web copy remains 1000 × 750. Its default print size changes from about 3.33 × 2.5 inches at 300 ppi to 1.67 × 1.25 inches at 600 ppi. If you place it at 10 × 7.5 inches anyway, it still supplies only 100 ppi.
+- **Reducing the image by resampling:** Downsampling removes pixels. The web export has one-quarter of the original’s width and height, leaving one-sixteenth as many pixels overall. This reduces available detail and can explain softness when shown at the same size.
+- **Enlarging the image by resampling:** Upsampling creates additional pixels by estimating their values. Enlarging the web copy to 2400 × 1800 would produce the required pixel count on paper, but would not recover the original’s captured detail. Since the original is available, use it instead.
+
+Enlarging an image’s **physical print size without resampling** is different again: the same pixels cover more inches, so the effective ppi decreases.
+
+A future **10 × 8 inch borderless layout** requires a framing decision. The photograph is 4:3; the new area is 5:4. They cannot match exactly while preserving both the whole photograph and its proportions.
+
+The choices are:
+
+- **Fill the area and crop:** Keep the proportions and remove some image from the left and right. The original can be cropped to **3750 × 3000 pixels**, giving **375 ppi** at 10 × 8 inches. A centered crop removes 125 pixels from each side; choose the crop position based on the subject.
+- **Keep the whole photograph:** Fit it at **10 × 7.5 inches**, leaving half an inch of unused height—¼ inch above and below if centered. This requires margins, an intentional background, or a revised layout to accommodate the full photograph.
+- **Stretch to fill:** Changing width and height independently distorts the photograph. That should be an explicit design decision, never an automatic adjustment.
+
+At 240 ppi, the 10 × 8 layout needs **2400 × 1920 pixels after any cropping**. Preserve the original and make separate exports for each layout. The existing **1000 × 750 web copy** remains suitable for the website’s 1200-pixel limit.

@@ -1,0 +1,160 @@
+{
+  "label": "Unblinded launch checkpoint, not a quality score",
+  "rows": [
+    {
+      "id": "n42",
+      "completed": true,
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "pass",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t3_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t3_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "semantic_essentials": "Root read every actual answer; independent review still required",
+      "progress_counts": [
+        0,
+        0,
+        0
+      ],
+      "actual_files": [
+        [],
+        [],
+        []
+      ],
+      "auth_copy_removed": true
+    },
+    {
+      "id": "n43",
+      "completed": true,
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "pass",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t3_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t3_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "semantic_essentials": "Root read every actual answer; independent review still required",
+      "progress_counts": [
+        0,
+        0,
+        0
+      ],
+      "actual_files": [
+        [],
+        [],
+        []
+      ],
+      "auth_copy_removed": true
+    }
+  ],
+  "request_facts_available": true,
+  "root_read_all_actual_replies": true,
+  "arithmetic_checked": {
+    "minimum_pixels": [
+      2400,
+      1800
+    ],
+    "original_ppi": [
+      400,
+      400
+    ],
+    "web_ppi": [
+      100,
+      100
+    ],
+    "future_minimum": [
+      2400,
+      1920
+    ],
+    "crop": [
+      3750,
+      3000
+    ],
+    "crop_ppi": 375
+  },
+  "observation": "Both use the supplied facts and retain requested teaching. Ordinary finals look broadly similar; enabled adds a fresh-export suggestion. No gain is assumed. No progress messages or protected files are available for a scope/workflow pass.",
+  "decision": "Valid matched source-delivery correction; complete predeclared disabled control and send every observed answer to both blinded reviewers",
+  "original_executor_failures_preserved": true,
+  "no_policy_case_or_criteria_change": true
+}

@@ -1,0 +1,3 @@
+No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.
+
+Use the **4000 × 3000 original**, which provides **400 pixels per inch** at that print size.

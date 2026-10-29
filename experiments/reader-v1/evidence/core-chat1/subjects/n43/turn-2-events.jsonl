@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-71c884e4cb410bc3"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_05a019dda2544027016ae3b09f611081998427f3535f14dc32","type":"agent_message","text":"No. Changing only the label to 600 dpi leaves the web copy at **1000 × 750 pixels**. Printed at 10 × 7.5 inches, it still provides **100 pixels per inch**, below the required 240.\n\nUse the **4000 × 3000 original**, which provides **400 pixels per inch** at that print size."}}
+{"type":"turn.completed","usage":{}}
