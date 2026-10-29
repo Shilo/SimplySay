@@ -1,0 +1,8 @@
+{
+  "stage":"development; enabled version selected only from the completed first baseline",
+  "subjects":[
+    {"id":"e31","case_file":"experiments/workflow-v1/cases/w1.case.json","condition":"absent"},
+    {"id":"e19","case_file":"experiments/workflow-v1/cases/w1.case.json","condition":"enabled","policy":"experiments/workflow-v1/candidates/workflow.v4.txt"}
+  ],
+  "review_pairs":[{"key":"w1-absent-v4-installed","a":"e31","b":"e19"}]
+}
