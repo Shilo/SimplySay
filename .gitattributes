@@ -1,0 +1,7 @@
+# Preserve frozen protocol hashes on Windows checkouts.
+/experiments/pilot/*.cjs text eol=lf
+/experiments/pilot/*.json text eol=lf
+/experiments/pilot/*.txt text eol=lf
+/docs/pilot-criteria.md text eol=lf
+# Evidence hashes refer to exact exported bytes, including original line endings.
+/experiments/pilot/evidence/** -text
