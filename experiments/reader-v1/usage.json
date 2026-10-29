@@ -1,0 +1,49 @@
+{
+  "authorization": "docs/reader-development-authorization.md",
+  "historical_additional_phase": {
+    "conversations": 25,
+    "task_starts": 78,
+    "former_caps": {
+      "conversations": 32,
+      "task_starts": 108
+    },
+    "superseded_by_owner": true
+  },
+  "status": "preparation-in-progress",
+  "new_conversations": 3,
+  "new_task_starts": 3,
+  "starts": [
+    {
+      "id": "n01",
+      "role": "independent-instruction-challenger",
+      "purpose": "Challenge original compact full-goal policies against observed failure modes",
+      "status": "running",
+      "agent": "/root/reader_policy_challenge",
+      "turns": 1,
+      "max_turns": 1
+    },
+    {
+      "id": "n02",
+      "role": "independent-case-and-evaluation-challenger",
+      "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
+      "status": "running",
+      "agent": "/root/reader_case_eval_challenge",
+      "turns": 1,
+      "max_turns": 1
+    },
+    {
+      "id": "n03",
+      "role": "independent-reference-evidence-auditor",
+      "purpose": "Fill specific competitor delivery/benchmark evidence gaps without repeating research",
+      "status": "running",
+      "agent": "/root/reader_reference_delta",
+      "turns": 1,
+      "max_turns": 1
+    }
+  ],
+  "native_response_trials": 0,
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold"
+}
