@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-1d670e5678b97e2e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0903e40ce27fff6d016ae379c780fc819a95153a46d91f5f9b","type":"agent_message","text":"**No—the evidence supports neither claim.** Total lookup time was 12.09% lower across seven complete pairs, and both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."}}
+{"type":"turn.completed","usage":{}}

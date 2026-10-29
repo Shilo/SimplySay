@@ -10,8 +10,8 @@
     "superseded_by_owner": true
   },
   "status": "unit-2-first-pair-reviewed",
-  "new_conversations": 15,
-  "new_task_starts": 36,
+  "new_conversations": 18,
+  "new_task_starts": 47,
   "starts": [
     {
       "id": "n01",
@@ -162,10 +162,40 @@
       "role": "technical-source-disabled-v2",
       "condition": "disabled",
       "case_id": "reader-c-door-scanner",
-      "turns": 1,
+      "turns": 3,
       "max_turns": 3,
-      "status": "running",
+      "status": "completed",
       "reserved_utc": "2026-10-29T16:42:31.511Z"
+    },
+    {
+      "id": "n17",
+      "role": "study-absent",
+      "condition": "absent",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T16:44:05.525Z"
+    },
+    {
+      "id": "n18",
+      "role": "study-enabled-v2",
+      "condition": "enabled",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T16:49:32.774Z"
+    },
+    {
+      "id": "n19",
+      "role": "study-disabled-v2",
+      "condition": "disabled",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T16:50:48.403Z"
     }
   ],
   "new_paid_services": false,

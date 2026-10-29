@@ -1,0 +1,7 @@
+Created [methods.md](<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, limitations and a proposed next-check plan. Saved [original-summary.md](<TASK_ROOT>/handoff/original-summary.md) as a verified, byte-for-byte copy. All existing files remain unchanged.
+
+Committee message to copy; not sent:
+
+> We will keep the current reference card in place while planning a limited, staffed check of the reorganized guide. Four volunteers contributed eight task pairs, with complete timings for seven. Across those seven pairs, recorded lookup time totaled 910 seconds with the reference and 800 seconds with the guide—a reduction of 12.09%. The guide was faster in five pairs and slower in two. Both formats had seven correct first selections out of eight. The evidence does not support the draft’s claims of a 30% time reduction or improved accuracy.
+>
+> Repeated lookups, coaching, one missing guide time and limited participation leave performance in ordinary work uncertain. These results support further checking before standardization. Before starting, we need to agree the check’s scope, staffing, measurement rules and decision criteria for accuracy, usability, assistance and time. No further study has been launched.

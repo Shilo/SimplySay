@@ -1,0 +1,14 @@
+**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**
+
+According to [scanner-notes.md](<TASK_ROOT>/scanner-notes.md), green means the ticket’s signed details check out, its time window matches the phone’s clock, and the ticket is absent from that phone’s cancellation list and used-ticket list. Those lists can be out of date, and the clock can be wrong.
+
+The examples show both problems:
+
+- **Canceled ticket T-41:** canceled at 09:10, after both phones downloaded their cancellation lists at 09:00. At 10:00, **both phones show green**, even though it is canceled.
+- **Expired ticket T-99:** expired at 09:59. At the real time of 10:00, phone A rejects it, but phone B shows green because its clock reads 09:58.
+
+Each offline phone remembers only tickets accepted on that phone. It blocks a repeat scan locally, but the other phone can still accept the same ticket. Green includes no separate warning about outdated cancellation information.
+
+**For reliable duplicate prevention, every admission must use the shared online check-in described in the notes.** It checks current cancellations and records ticket use in one operation, so only one competing scan succeeds. Reconnecting afterward merely uploads offline records; it cannot prevent or undo duplicate admissions.
+
+These notes describe a demo prototype, not a live service.

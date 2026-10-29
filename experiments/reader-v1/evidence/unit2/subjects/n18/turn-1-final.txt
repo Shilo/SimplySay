@@ -1,0 +1,5 @@
+Recommend a **limited, staffed next check before standardizing**. The guide saved 12.09% across seven complete time pairs, was slower twice, and matched reference accuracy at 7/8. The draft overstates the evidence.
+
+Created [findings.md](<TASK_ROOT>/audit/findings.md), including a corrected summary, and [metrics.json](<TASK_ROOT>/audit/metrics.json).
+
+All supplied sources remain unchanged. No volunteers were contacted or further study started.

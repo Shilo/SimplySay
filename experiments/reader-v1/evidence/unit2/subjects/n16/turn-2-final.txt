@@ -1,0 +1,49 @@
+**Offline green means all checks passed using that phone’s clock and stored information. It does not establish current permission to enter or prevent reuse on another offline phone.** Here is the reasoning from [scanner-notes.md](<TASK_ROOT>/scanner-notes.md).
+
+The QR’s `kid` selects a bundled Ed25519 public key. Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed.
+
+That verification does not contact a server. It therefore cannot establish whether the ticket was subsequently canceled or used. Copying an authentic QR also preserves its valid signature.
+
+For offline green, four conditions must all hold:
+
+- The signature verifies.
+- The phone’s clock falls within the signed validity window.
+- The ticket ID is absent from the phone’s last imported cancellation snapshot.
+- The ticket ID is absent from that phone’s local used-ticket set.
+
+**T-41 passes on both offline phones, despite being canceled.**
+
+Both cancellation snapshots date from 09:00. The server canceled T-41 at 09:10, so neither snapshot contains that cancellation. Cancellation does not change the already-issued QR or invalidate its signature.
+
+At actual 10:00, the scans proceed as follows:
+
+| Check | Phone A, scanned first | Phone B, scanned afterward |
+|---|---|---|
+| Signature | Valid | Valid |
+| Phone time within 09:00–13:00 | Yes: 10:00 | Yes: 09:58 |
+| Absent from stored cancellation snapshot | Yes | Yes |
+| Absent from this phone’s used-ticket set | Yes | Yes |
+| Result | Accepts; records T-41 locally | Accepts; records T-41 locally |
+
+A’s acceptance changes only A’s used-ticket set. B receives no update while offline, so its duplicate check still passes. Afterward, another scan on either phone would be rejected by that phone’s local duplicate check.
+
+There are two independent gaps here: stale cancellation information allows a canceled ticket, and separate used-ticket sets allow duplicate admission. Either problem can occur without the other. The prototype shows no separate freshness warning alongside green.
+
+**T-99 produces different results because the phones disagree about time.**
+
+For each phone’s first scan, the signature is valid, the ticket is not canceled, and its ID is absent from the local used-ticket set. That leaves the validity-window check:
+
+| At actual 10:00 | Phone clock | Comparison with expiry at 09:59 | Result |
+|---|---|---|---|
+| Phone A | 10:00 | Already expired | Rejects |
+| Phone B | 09:58 | Still within the window | Accepts; records T-99 locally |
+
+The signature correctly protects the stated expiry time. The error comes from comparing that authentic expiry against B’s slow clock. A’s rejection does not record an admission or affect B.
+
+**With a working server connection, subsequent scans use server time, current cancellations, and the shared admission ledger.**
+
+At or after 10:00, the online path rejects T-41 because it is canceled and T-99 because it has expired. B’s slow clock no longer determines the time check.
+
+For an otherwise allowed, unused ticket, the server checks and records use as one indivisible operation—an *atomic check-and-consume*. Two competing online scans cannot both claim the unused ticket: one succeeds, and the other is rejected.
+
+Reconnection also uploads earlier offline admissions for audit. It cannot undo entry or retroactively prevent the two T-41 admissions. The notes do not specify how those uploaded records are reconciled with the shared ledger, how conflicts are handled, or how long reconnection takes; those behaviors remain unspecified in this prototype.

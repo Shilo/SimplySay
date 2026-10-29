@@ -1,0 +1,5 @@
+The evidence supports **a limited, staffed next check**. Immediate standardization is unsupported: matched time fell 12.1% across seven pairs, while first-selection accuracy was 7/8 for both formats.
+
+Created [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json), including corrected summary wording and verification notes. All supplied sources remain unchanged.
+
+Before any next check, define its scope and accuracy/usability acceptance criteria.

@@ -1,0 +1,7 @@
+Created [methods.md](/<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, interpretation and a proposed next-check plan. Preserved the complete draft unchanged in [original-summary.md](/<TASK_ROOT>/handoff/original-summary.md). All pre-existing files remain unchanged.
+
+Committee message to copy; not sent:
+
+> We will keep the current reference card in place while we plan a limited, staffed check of the reorganized guide. Our audit does not support the earlier claim that the new guide is 30% faster and more accurate. Four volunteers contributed eight task pairs; seven had both times recorded. Across those seven pairs, total time was 910 seconds with the reference and 800 seconds with the guide, an observed reduction of 110 seconds (about 12.1%). The guide was faster in five pairs and slower in two. First-selection accuracy across all eight pairs was 7/8 for each format.
+>
+> These results support further checking but do not establish improved accuracy or readiness for standardization. Repeated tasks, coaching and one missing guide time leave uncertainty about performance across ordinary shifts. Before any next check starts, we will define its scope, measurement rules and acceptance criteria for accuracy, usability, assistance and time. No new check has started.

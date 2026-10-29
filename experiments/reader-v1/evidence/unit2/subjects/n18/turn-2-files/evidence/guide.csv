@@ -1,0 +1,9 @@
+pair_id,seconds,correct,assisted
+P1,90,true,false
+P2,95,true,false
+P3,100,true,false
+P4,75,true,false
+P5,150,false,true
+P6,160,true,false
+P7,,true,true
+P8,130,true,false
