@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-4-local-calibration-correction-complete",
+  "status": "unit-4-host-context-preparation",
   "new_conversations": 24,
-  "new_task_starts": 59,
+  "new_task_starts": 60,
   "starts": [
     {
       "id": "n01",
@@ -34,14 +34,15 @@
       "id": "n02",
       "role": "independent-case-and-evaluation-challenger",
       "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
-      "status": "completed",
+      "status": "allocated-common-host-context-implementation",
       "agent": "/root/reader_case_eval_challenge",
-      "turns": 3,
-      "max_turns": 3,
+      "turns": 4,
+      "max_turns": 4,
       "followup_purpose": "Implement the two frozen development cases and minimal companion/calibration adapter using existing tools",
       "followup_purposes": [
         "Implement the two frozen development cases and minimal companion/calibration adapter using existing tools",
-        "Independently author naturally technical source conversation and same-presence progress-payload diagnostic; preserve old cases/controls"
+        "Independently author naturally technical source conversation and same-presence progress-payload diagnostic; preserve old cases/controls",
+        "Provide already-established common host communication facts in future real-case review packets and local input tests, without altering subjects or historical results"
       ]
     },
     {
@@ -268,7 +269,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "Prospective per-goal correction independently verified; next response experiment still requires recorded allocation and freeze",
+  "block_reason": "Host evidence metadata/local verification pending; no new response or reviewer dispatch yet",
   "checkpoint": "experiments/reader-v1/evidence/unit3/first-pair-checkpoint.json",
   "diagnostics": [
     {
