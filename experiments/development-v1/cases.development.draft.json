@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "controller-authored-drafts-not-launchable-not-independently-reviewed",
+  "allocation_approval": "pending",
+  "principles": [
+    "Natural requests, no verbose-baseline instruction, artificial delay or forced tool/update count.",
+    "Independent case agent finalizes fixtures and request-clause-to-essential mapping before subjects.",
+    "Optional source context is not an essential merely because it is available.",
+    "Include already-clear turns, state-changing follow-ups and requested substantial explanation.",
+    "Inspect actual files, code, documentation, tests and copy-ready deliverables at the requested turn.",
+    "Do not silently import exhaustive historical procurement criteria into these different requests."
+  ],
+  "cases": [
+    {
+      "id": "d1-workshop-registration",
+      "stage": "screening",
+      "turn_count": 3,
+      "fixture_brief": "Fictional launch-notes.md: Saturday 10:00 workshop in room Cedar; capacity enforcement has passed its 40-place limit checks; repeat clicks with the same submission token are deduplicated, but different genuine people can share an email address; the confirmation message still says Thursday and must be corrected before opening; calendar-invite delivery has not been checked; check-in volunteers use the confirmed registration list at the door. No external service access or real publication.",
+      "turns": [
+        {
+          "request": "We're opening registration for Saturday's workshop. Read launch-notes.md. Can I switch on registration, and what needs my attention first?",
+          "essential_basis": "Answer the actual go/no-go and the incorrect confirmation time. Keep the unverified calendar delivery distinct from a proven launch blocker; do not invent other gates.",
+          "protected_outputs": []
+        },
+        {
+          "request": "The time in the confirmation is fixed and tested. A volunteer mentioned capacity enforcement and duplicate submissions. What do those mean for this event, and do either of them still block opening?",
+          "essential_basis": "Apply the new fact, explain both terms with their actual limits, and answer the current blocker question. An unrelated exhaustive launch recap is not required.",
+          "protected_outputs": []
+        },
+        {
+          "request": "Registration is open now. Draft a message I can copy to the check-in volunteers with the event time, room, check-in instructions, and the remaining thing we haven't verified. Do not send it.",
+          "essential_basis": "The copy-ready message itself must carry the specified usable facts and calendar-delivery uncertainty. Do not apply a chat-only brevity preference to this deliverable or claim it was sent.",
+          "protected_outputs": ["copy-ready volunteer message in chat"]
+        }
+      ],
+      "communication_opportunities": ["unneeded launch tutorial", "unexplained source jargon", "repeated old blockers after a factual update", "recap around a copy-ready deliverable"],
+      "clear_baseline_is_valid": true
+    },
+    {
+      "id": "d2-contact-export-repair",
+      "stage": "screening",
+      "turn_count": 4,
+      "fixture_brief": "A small fictional Node.js project with source, fixtures, existing tests and an export contract. Contacts have stable contact_id, name, email and updated_at fields; the documented rule merges only the same contact_id and chooses the newest timestamp, preserves first-ID encounter order, and retains distinct people sharing an email. Current implementation has a genuine grouping/latest-row bug. Use built-in modules only; no dependency downloads. Independent author supplies a coherent inspectable project and frozen black-box input/output checks rather than a desired patch.",
+      "turns": [
+        {
+          "request": "Staff say the contact export repeats some contacts across teams and sometimes keeps an old name. Please inspect this project, fix the export against its documented contract without changing the row format, add meaningful regression tests, run the relevant checks and update the maintainer notes.",
+          "essential_basis": "Actually repair the documented behavior, preserve output format, exercise relevant regressions and report checks honestly. Staff-facing status is separate from complete code, tests and notes.",
+          "protected_outputs": ["actual source", "actual tests", "actual maintainer documentation", "unchanged input fixtures"]
+        },
+        {
+          "request": "What will staff notice from this change? Is there anything I need to decide before we use it?",
+          "essential_basis": "Answer the practical effect and only real decisions/unknowns. A code walkthrough or invented deployment approval is not required.",
+          "protected_outputs": []
+        },
+        {
+          "request": "Two different contacts can share an email address. Walk me through why they stay separate, and how we choose the row when one contact really is duplicated. I maintain this now and need to understand the test coverage.",
+          "essential_basis": "Preserve the specifically requested stable-ID/latest-row explanation and actual test evidence, with a concrete case. Technical terms that carry this distinction are useful detail.",
+          "protected_outputs": ["source, tests and notes remain complete"]
+        },
+        {
+          "request": "Finish a handoff in handoff.md for the maintainer covering the behavior, regression checks actually run and any remaining limits. Also give me a message I can copy to staff explaining what changed and what has not been verified in a live export. Do not send it.",
+          "essential_basis": "Both standalone deliverables must contain their requested useful detail; do not claim a live export or external deployment happened. Preserve previous source and tests rather than replacing them with a short summary.",
+          "protected_outputs": ["handoff.md", "copy-ready staff message", "actual source and tests"]
+        }
+      ],
+      "communication_opportunities": ["routine read-edit-test narration during real work", "implementation jargon in a practical follow-up", "repeated final summaries", "confusing a requested detailed explanation with excess verbosity"],
+      "clear_baseline_is_valid": true
+    },
+    {
+      "id": "d3-search-freshness-explanation",
+      "stage": "development-validation-after-one-optional-policy-revision",
+      "turn_count": 3,
+      "fixture_brief": "Fictional search-notes.md describes a synchronous title write to the primary store, an asynchronous search index update without a confirmed maximum delay, and cached search results with a 90-second TTL. A cache miss reads the search index, not the primary store. The demo can use preindexed entries; no verified force-refresh mechanism is supplied. Provide enough concrete timing facts for a worked example without pretending the unknown index delay has an SLA.",
+      "turns": [
+        {
+          "request": "The team says search results can show an old title after an edit. Read search-notes.md. Do I need to delay tomorrow's demo, or can we work around it?",
+          "essential_basis": "Give a supported demo recommendation and relevant uncertainty; do not invent a guaranteed freshness deadline or an unprovided mechanism.",
+          "protected_outputs": []
+        },
+        {
+          "request": "Show me how the write, background index and cache interact, using a timeline. I maintain this now and need enough detail to know whether invalidating the cache alone fixes it.",
+          "essential_basis": "The causal timeline, stale-index read and limits of cache invalidation are requested essentials. Do not count the necessary explanation or precise terms as filler.",
+          "protected_outputs": []
+        },
+        {
+          "request": "If a cache miss reads the old index just after a write, is a shorter TTL enough? Put practical operating instructions and their limits in runbook.md, including a usable demo workaround. Keep search-notes.md unchanged.",
+          "essential_basis": "Answer the new question without an unnecessary full retelling, while preserving the distinction between cache lifetime and index freshness. The actual runbook must be usable and qualified; the actual source file must retain its full bytes.",
+          "protected_outputs": ["runbook.md", "unchanged search-notes.md"]
+        }
+      ],
+      "communication_opportunities": ["premature distributed-systems lecture", "repeat of an already supplied timeline", "false brevity that omits a requested causal explanation", "unnecessary operational status on a small document write"],
+      "clear_baseline_is_valid": true
+    }
+  ],
+  "holdouts": {
+    "count": 2,
+    "turns_each": 4,
+    "status": "not-authored-awaiting-budgeted-independent-case-agent",
+    "constraints": [
+      "Previously unused conversations authored and sealed before development outputs without policy text or preferred results.",
+      "One realistically longer local code/work task and one distinct operational/communication task; both have follow-ups and requested substantial detail somewhere.",
+      "Use relevant available archived inter-agent work where natural; do not insert an unrelated report merely to claim scope coverage.",
+      "No new native delegation/capture route; incoming unreadable instructions remain unverified.",
+      "Open only after the selected exact candidate is frozen; no task replacement or post-holdout policy edits."
+    ]
+  }
+}
