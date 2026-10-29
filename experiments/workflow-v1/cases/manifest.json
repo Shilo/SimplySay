@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "status": "independently-authored-launchable-before-baselines",
+  "cases": [
+    {
+      "id": "w1-study-evidence-audit",
+      "path": "experiments/workflow-v1/cases/w1.case.json",
+      "turns": 3,
+      "sha256": "36c15a6c73ee31387f0a7330ae0225c96299032f0fc5dffe8458e51ce398186b",
+      "fixture_files": [
+        {
+          "path": "README.md",
+          "bytes": 1385,
+          "sha256": "8a4e73f42045a1670b8d856777664315f7acbc3c4c31739958377e0273fdf732"
+        },
+        {
+          "path": "study/protocol.md",
+          "bytes": 2519,
+          "sha256": "88e3dcebfadee2fcad57fe4777271851501b59587c97c66263ce6be7723a3a3e"
+        },
+        {
+          "path": "evidence/pairs.csv",
+          "bytes": 236,
+          "sha256": "6c0bf3fa53e2fb5e1f8509ad21733b01fbda7a39511f7e55343a269bea5dce74"
+        },
+        {
+          "path": "evidence/reference.csv",
+          "bytes": 175,
+          "sha256": "91109c551fa1fd29a6e5e59b8085a09b6581b2760f5adbca670f799d99818670"
+        },
+        {
+          "path": "evidence/guide.csv",
+          "bytes": 170,
+          "sha256": "bfbb16f5ea6ab33ef26d7cf47125b375d0459e64cc83e628172d95aade87107a"
+        },
+        {
+          "path": "evidence/capture-notes.md",
+          "bytes": 1082,
+          "sha256": "e3a2c31c98402958d8c53a8a46279d64925299670c8ec39fac793fa487c43448"
+        },
+        {
+          "path": "draft-summary.md",
+          "bytes": 632,
+          "sha256": "4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4"
+        },
+        {
+          "path": "guides/reference-card.txt",
+          "bytes": 207,
+          "sha256": "236e2c9c478661eea6c9c5466c1ed7160ae1c283598e3468cd83e8a1decb5492"
+        },
+        {
+          "path": "guides/reorganized-guide.txt",
+          "bytes": 219,
+          "sha256": "94acd3cebd66adbe2aeb94e53163fbde33656d8d7abb28b82c270f2219077fe5"
+        },
+        {
+          "path": "tools/check-evidence.cjs",
+          "bytes": 1345,
+          "sha256": "e149be4444c995be3d61b54fea91913d89025aaeaff962ffea5177ba8ac83e5f"
+        }
+      ]
+    },
+    {
+      "id": "w2-archive-copy-audit",
+      "path": "experiments/workflow-v1/cases/w2.case.json",
+      "turns": 3,
+      "sha256": "3e75797d67281377a228fd150ccfa7c279b41023cde81a255c1aef052ab063ae",
+      "fixture_files": [
+        {
+          "path": "README.md",
+          "bytes": 1008,
+          "sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "path": "archive-plan.md",
+          "bytes": 1878,
+          "sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "path": "evidence/copy-log.json",
+          "bytes": 281,
+          "sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "path": "evidence/restore-note.md",
+          "bytes": 363,
+          "sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "path": "draft-status.md",
+          "bytes": 372,
+          "sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "path": "source-pack/manual.txt",
+          "bytes": 122,
+          "sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "path": "source-pack/labels.csv",
+          "bytes": 60,
+          "sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "path": "source-pack/layout.svg",
+          "bytes": 196,
+          "sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "path": "staged-pack/manual.txt",
+          "bytes": 122,
+          "sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "path": "staged-pack/labels.csv",
+          "bytes": 44,
+          "sha256": "422074ccffc01b2e417fe655ed8d02b952658d5e6f389bd949a0e85a4d4becfa"
+        },
+        {
+          "path": "tools/inspect-pack.cjs",
+          "bytes": 559,
+          "sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        }
+      ]
+    }
+  ],
+  "checker": {
+    "path": "experiments/development-v1/cases/checks.cjs",
+    "sha256": "da6c8cfb9b219f03ebf78b300f61ee11e50e50a10dc1d216e84a02b808e694f0",
+    "changes": false
+  },
+  "private_chat_quoted": false,
+  "holdouts_opened": false,
+  "ordering": "Freeze both cases before any baseline. First W1 matched pair is reviewed before W2 subjects under workflow-authorization.md."
+}
