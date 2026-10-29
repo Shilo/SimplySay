@@ -1,0 +1,31 @@
+{
+  "manifest_sha256": "3358bded166a7dd6b46323a29778d282116fdaa161962cb7a5328423eabfd36f",
+  "fingerprints": {
+    "experiments/development-v1/run.cjs": "8ad6e50dd6937d2a4a0707934f4afd963fe0e4022c1eb88180c8636f4f23a7ca",
+    "experiments/development-v1/assess.cjs": "175a5bb2bd7a5120762ed601d76eda916ea797196cef2280a30308ce815b7a5d",
+    "docs/development-phase-plan.md": "27397543dffd1d1d053df5739f2a3a6d6eb886ecbe6aa5bb216b8e48995425f6",
+    "docs/development-revision-check.md": "2f087805b6b55dbdeac8dfdb8dc8e3c4a3e2535620386bff4050ecc1dcb2a885",
+    "experiments/development-v1/audience-context.txt": "c01ff2694765023221b3581b0c2d30ebf3dd5e2d5001932c4563529eae9c59b5",
+    "experiments/development-v1/allocation.approved.json": "3148d6275c189f0858ceb56aada2a7709935f347840332643151303f0d854eff",
+    "docs/development-phase-authorization.md": "98dbaf473e2227c838f2ef9ae8c2022ac2bf57e37676746c7a5b1e77f9a1c412",
+    "experiments/development-v1/cases/checks.cjs": "da6c8cfb9b219f03ebf78b300f61ee11e50e50a10dc1d216e84a02b808e694f0",
+    "experiments/pilot/codex-rpc.cjs": "f23694574dd553b3345dbce56ec7183f88043b398c38e4df1261144519d64067",
+    "experiments/final-pilot/run.cjs": "1897e68529735449f985a80c621faa0e7051b4c6fe36af8d98a194081d89d308",
+    "experiments/pilot/minimal.txt": "250389bbeff5250d424e317993aabeadf65bc63b574201f58d5c071d0004afb5",
+    "experiments/development-v1/cases/d1.case.json": "b90eeeec28e81bdc58845b7fd283a9006ef36b5a67bb6ee96564ed91a7c2fafb",
+    "experiments/development-v1/candidates/a-relevance-gate.v3.txt": "9f35db9cd6d47659826ea5572df8e92e6afcd9323b522d2da3c874e431b08fe1",
+    "experiments/development-v1/cases/d2-prefix.case.json": "9a9ec2aa162a17cd928deed7dafc5d2cf939245f3fe0cb5e710870c31e7a65d7",
+    "experiments/development-v1/candidates/b-incremental-conversation.v3.txt": "2284bded5d00b9144610abd71a4efcd40fa416fe89eace0d8016ceef159b7b1b",
+    "runtime-source/.codex-plugin/plugin.json": "bdae4b8b04de1892d071d568805a17dcadf9fb86efac268b504900d42ec1f55c",
+    "runtime-source/hooks/hooks.json": "ea24207c8fe2e05bc972fb8133ae70ab86dc9a481fc793525ea98bb22e7b2a7c",
+    "runtime-source/session-start.cjs": "93019ae91bb34abdc8246e53dc09030313941d989b029a8d34d73b8bd27a41ef",
+    "runtime-source/policy.txt": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+    "catalog-source": "0f5d5c3642276d8271758c221d369e322ee5f4304f4445cfb4c07ef10e2c15a0"
+  },
+  "frozen_before_subjects": true,
+  "revision": "722872bfc2363691558f1a8edd54364aa7a275dc",
+  "binary_sha256": "2692c8c7bb2cf8b0aefe638741fc90236f4b824c59578ce84994f9de58200993",
+  "host": "codex-cli 0.163.0",
+  "model": "gpt-6.1-sol",
+  "effort": "low"
+}
