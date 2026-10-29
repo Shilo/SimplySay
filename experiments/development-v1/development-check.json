@@ -1,0 +1,51 @@
+{
+  "batch": "development-check",
+  "fixed_before_subjects": true,
+  "gate_record": "docs/development-screening-results.md",
+  "subjects": [
+    {
+      "id": "e14",
+      "case_file": "experiments/development-v1/cases/d3.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    },
+    {
+      "id": "e16",
+      "case_file": "experiments/development-v1/cases/d3.case.json",
+      "condition": "minimal"
+    },
+    {
+      "id": "e15",
+      "case_file": "experiments/development-v1/cases/d3.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e13",
+      "case_file": "experiments/development-v1/cases/d3.case.json",
+      "condition": "absent"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "d3-abs-a",
+      "a": "e13",
+      "b": "e14"
+    },
+    {
+      "key": "d3-abs-b",
+      "a": "e13",
+      "b": "e15"
+    },
+    {
+      "key": "d3-abs-simple",
+      "a": "e13",
+      "b": "e16"
+    },
+    {
+      "key": "d3-a-b",
+      "a": "e14",
+      "b": "e15"
+    }
+  ]
+}
