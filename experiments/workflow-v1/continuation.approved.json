@@ -1,0 +1,23 @@
+{
+  "authorization":"owner-confirmed-2026-10-29; repeated confirmations are one allowance",
+  "record":"docs/workflow-continuation-authorization.md",
+  "start_conversations":21,
+  "start_task_turns":64,
+  "conversation_cap":32,
+  "task_turn_cap":108,
+  "continuation_max_task_turns":6,
+  "continuation_end_task_turns_max":70,
+  "subjects":["e18","e20"],
+  "reviewers":["e11","e12"],
+  "per_chat_caps":{"e18":4,"e20":4,"e11":4,"e12":4},
+  "remaining_tasks":{"e18":2,"e20":2,"e11":1,"e12":1},
+  "case_file":"experiments/workflow-v1/cases/w2.case.json",
+  "case_sha256":"3e75797d67281377a228fd150ccfa7c279b41023cde81a255c1aef052ab063ae",
+  "policy_file":"experiments/workflow-v1/candidates/workflow.v4.txt",
+  "policy_sha256":"af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "conditions":{"e18":"absent","e20":"enabled"},
+  "reserve_use":"Only these six turns; require included-use permission and provider limits",
+  "automatic_final_case_dispatch":false,
+  "production":false,
+  "publication":false
+}

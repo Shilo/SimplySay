@@ -32,7 +32,7 @@ async function preflight(trial,profile,cwd,row,rpc){
   const e={version:native(profile,cwd,['--version']).trim(),condition:row.condition,subscription_only:true,policy_sha256:policy?hash(policy):null,hooks_effective:hooks,config_hash:hash(fs.readFileSync(path.join(profile,'config.toml'))),quota_before:await quota(rpc),installed_package:installed?Object.fromEntries(FILES.map(p=>[p,hash(fs.readFileSync(path.join(trial,'catalog/plugin',p)))])):null,effective_isolation:{apps:false,multi_agent:false,agents:false,default_plugins:false},model:c.model,effort:c.model_reasoning_effort};
   if(e.version!=='codex-cli 0.165.0-alpha.1.2')throw Error('Pinned desktop backend changed');put(path.join(trial,'preflight.json'),e);return e;
 }
-async function turn(rpc,trial,prompt,index,thread,monitor){
+async function turn(rpc,trial,prompt,index,thread,monitor,admit=quota){
   const stem=path.join(trial,`turn-${index+1}`),start=Date.now(),r={turn:index+1,expected_thread:thread,observed_thread:thread,thread,started_utc:new Date().toISOString(),continuation_observed:false,failed:false,exit_code:null,error:null,timed_out:false,usage:null};
   for(const suffix of ['events.jsonl','timing.jsonl','stderr.txt'])put(stem+'-'+suffix,'');put(stem+'-prompt.txt',prompt);
   let finish,timer;const done=new Promise(resolve=>finish=resolve),seen=new Set(),messages=[];
@@ -52,7 +52,7 @@ async function turn(rpc,trial,prompt,index,thread,monitor){
     if(e.kind==='completed'){if(r.native_turn_id&&e.turn!==r.native_turn_id){fail('Completion for other native turn');return;}r.native_turn_id=e.turn;r.native_status=e.status;r.exit_code=e.status==='completed'?0:1;if(e.status!=='completed')r.error=e.error||'Native turn did not complete';event({type:e.status==='completed'?'turn.completed':'turn.failed',usage:e.status==='completed'?r.usage:undefined});finish();}
   }catch(error){fail('Public capture failed: '+error.message);}};
   event({type:'thread.started',thread_id:thread});
-  try{r.quota_before=await quota(rpc);timer=setTimeout(()=>{r.timed_out=true;fail('Native turn deadline exceeded');},600000);const response=await rpc.request('turn/start',{threadId:thread,input:[{type:'text',text:prompt}],model:'gpt-6.1-sol',effort:'xhigh',summary:'none',serviceTierForTurn:'default'});r.accepted_turn_id=response.turn?.id;if(!r.accepted_turn_id||r.native_turn_id&&r.native_turn_id!==r.accepted_turn_id)fail('Accepted/observed native turn IDs differ');else r.native_turn_id=r.accepted_turn_id;await done;if(r.error||r.timed_out){try{await rpc.request('turn/interrupt',{threadId:thread,turnId:r.native_turn_id});}catch{}}}
+  try{r.quota_before=await admit(rpc);timer=setTimeout(()=>{r.timed_out=true;fail('Native turn deadline exceeded');},600000);const response=await rpc.request('turn/start',{threadId:thread,input:[{type:'text',text:prompt}],model:'gpt-6.1-sol',effort:'xhigh',summary:'none',serviceTierForTurn:'default'});r.accepted_turn_id=response.turn?.id;if(!r.accepted_turn_id||r.native_turn_id&&r.native_turn_id!==r.accepted_turn_id)fail('Accepted/observed native turn IDs differ');else r.native_turn_id=r.accepted_turn_id;await done;if(r.error||r.timed_out){try{await rpc.request('turn/interrupt',{threadId:thread,turnId:r.native_turn_id});}catch{}}}
   catch(e){r.error=e.message;r.failed=true;}finally{clearTimeout(timer);monitor.current=null;}
   const finals=messages.filter(m=>m.phase==='final_answer');r.public_message_phases=messages.map(m=>({id:m.id,phase:m.phase}));if(finals.length===1)put(stem+'-final.txt',finals[0].text);else{r.error||='Missing or ambiguous final_answer phase';r.failed=true;}
   r.ended_utc=new Date().toISOString();r.failed=r.failed||!!r.error||r.exit_code!==0||!r.continuation_observed;put(stem+'-result.json',r);return r;
@@ -76,4 +76,4 @@ async function run(file,id){
   console.log(JSON.stringify({id,failed:result.failed,error:result.error,turns:result.turns.length,auth_copy_removed:result.auth_copy_removed,hooks:result.hook_notifications.length}));
 }
 if(require.main===module){const[action,file,id]=process.argv.slice(2);(async()=>{if(action==='freeze')freeze(file);else if(action==='run')await run(file,id);else throw Error('Use freeze MANIFEST or run MANIFEST ID');})().catch(e=>{console.error(e.message);process.exitCode=1;});}
-module.exports={freeze,run,fingerprints,forbiddenCommand};
+module.exports={freeze,run,fingerprints,forbiddenCommand,turn};
