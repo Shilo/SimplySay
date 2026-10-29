@@ -1,0 +1,5 @@
+Created [handoff.md](<TASK_ROOT>/handoff.md) with repaired behavior, reproducible checks and results, and remaining limits. Saved and verified a byte-for-byte copy at [handoff/original-note.md](<TASK_ROOT>/handoff/original-note.md). All 16 tests, syntax checks, and CLI checks passed.
+
+Staff message to copy; **not sent**:
+
+> We repaired the local work-order merger. Separate work orders with matching titles now survive by ID, and each ID keeps its complete row with the highest numeric revision. Equal revisions keep the first row, and work-order order remains stable. All 16 local tests passed, and the supplied sample matched expectations. The supplied input data and original intake note are unchanged. No live import has been performed or verified, so we have not confirmed that missing work orders are restored or that live owners and statuses are correct.

@@ -1,0 +1,5 @@
+Fixed reconciliation to use record IDs and highest numeric revisions, preserve first-seen order and ties, copy complete winning rows, and validate inputs without mutation. CLI and row shape remain unchanged; only built-in Node modules are used.
+
+Added regression tests in `test/reconcile.test.cjs` and updated `docs/maintainer.md`.
+
+All 16 tests, syntax checks, and CLI fixture checks pass. Hash checks confirm the supplied data, `CONTRACT.md`, and `original-note.md` are unchanged. Verification was local only.

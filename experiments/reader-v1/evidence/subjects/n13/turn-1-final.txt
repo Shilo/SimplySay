@@ -1,0 +1,8 @@
+**Deleting a shared file is not the same as deleting the separate backup.** Your notes describe two different things:
+
+- **Shared folder:** Deletions spread between laptops, just like edits. The other laptops therefore don’t provide a safe backup copy.
+- **Separate backup:** Runs daily, stores copies outside the shared folder, and keeps earlier copies for 30 days. A deleted file may still be there if it was included in a backup and remains within that period.
+
+The uncertainty is whether those backups actually work. Recent jobs report success, but nobody has tested restoring a file, so recovery of a particular file isn’t guaranteed.
+
+You don’t need to manage IT yourself. Ask whoever handles backups: “Please test restoring a file, confirm the newest usable backup, and give the coordinators simple instructions for requesting recovery.”

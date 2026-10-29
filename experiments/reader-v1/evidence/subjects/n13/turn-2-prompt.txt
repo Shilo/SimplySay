@@ -1,0 +1,1 @@
+For handing these files to the next coordinator, would you rely on the shared folder, the backup, or both? What needs checking before we rely on it?

@@ -1,0 +1,464 @@
+{
+  "label": "Actual inspected baseline work; functional probes are evaluator execution",
+  "subject": "n08",
+  "inspection": "Read all unique module/CLI/test code, complete maintainer/handoff and technical explanation before probes",
+  "source_hashes": {
+    "lib/reconcile.cjs": "51dea736225903ada5b42947216b76d0025c74cca1796046bf86a671761a677f",
+    "bin/reconcile.cjs": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364",
+    "test/reconcile.test.cjs": "46f04d830c8fc7ff7e91a912223ae888d173b0bf281d59596d4e1f42548a3e87"
+  },
+  "deterministic": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "reader-b-work-order-repair",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:lib/reconcile.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 914,
+          "sha256": "51dea736225903ada5b42947216b76d0025c74cca1796046bf86a671761a677f"
+        },
+        {
+          "id": "file:bin/reconcile.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 392,
+          "sha256": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364"
+        },
+        {
+          "id": "file:test/reconcile.test.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 7512,
+          "sha256": "46f04d830c8fc7ff7e91a912223ae888d173b0bf281d59596d4e1f42548a3e87"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 2262,
+          "sha256": "de6e6c649464f78ebaf9168be72e046d94fd64c9b89dfd96103c9a848173d3f2"
+        },
+        {
+          "id": "source_bytes:CONTRACT.md",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "expected_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e",
+          "actual_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e"
+        },
+        {
+          "id": "source_bytes:data/work-orders.json",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "expected_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4",
+          "actual_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4"
+        },
+        {
+          "id": "source_bytes:original-note.md",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "test_file_changed:test/reconcile.test.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:work-order-public-contract",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "Contract probe passed.\n",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "b1_repair",
+          "status": "observed",
+          "commands_count": 13,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:lib/reconcile.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 914,
+          "sha256": "51dea736225903ada5b42947216b76d0025c74cca1796046bf86a671761a677f"
+        },
+        {
+          "id": "file:bin/reconcile.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 392,
+          "sha256": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364"
+        },
+        {
+          "id": "file:test/reconcile.test.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 7512,
+          "sha256": "46f04d830c8fc7ff7e91a912223ae888d173b0bf281d59596d4e1f42548a3e87"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 2262,
+          "sha256": "de6e6c649464f78ebaf9168be72e046d94fd64c9b89dfd96103c9a848173d3f2"
+        },
+        {
+          "id": "source_bytes:CONTRACT.md",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "expected_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e",
+          "actual_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e"
+        },
+        {
+          "id": "source_bytes:data/work-orders.json",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "expected_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4",
+          "actual_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4"
+        },
+        {
+          "id": "source_bytes:original-note.md",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "test_file_changed:test/reconcile.test.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:work-order-public-contract",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "Contract probe passed.\n",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "b2_reasoning",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:lib/reconcile.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 914,
+          "sha256": "51dea736225903ada5b42947216b76d0025c74cca1796046bf86a671761a677f"
+        },
+        {
+          "id": "file:bin/reconcile.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 392,
+          "sha256": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364"
+        },
+        {
+          "id": "file:test/reconcile.test.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 7512,
+          "sha256": "46f04d830c8fc7ff7e91a912223ae888d173b0bf281d59596d4e1f42548a3e87"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 2262,
+          "sha256": "de6e6c649464f78ebaf9168be72e046d94fd64c9b89dfd96103c9a848173d3f2"
+        },
+        {
+          "id": "file:handoff.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 6211,
+          "sha256": "1db4df2ad16ab766d994206d0e31ffc379a13a14b682220d729066425589ebb5"
+        },
+        {
+          "id": "file:handoff/original-note.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 205,
+          "sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "exact_copy:handoff/original-note.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "source_bytes:CONTRACT.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e",
+          "actual_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e"
+        },
+        {
+          "id": "source_bytes:data/work-orders.json",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4",
+          "actual_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4"
+        },
+        {
+          "id": "source_bytes:original-note.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "test_file_changed:test/reconcile.test.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:work-order-public-contract",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "Contract probe passed.\n",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "b3_handoff",
+          "status": "observed",
+          "commands_count": 10,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "subject_execution": [
+    {
+      "turn": 1,
+      "commands": [
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command \"Get-Location; rg --files -g '\"'!node_modules'\"' -g '\"'!'\"\\\\.git' -g '\"'!.git'\"'\"",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'Get-Content CONTRACT.md; Get-Content lib/reconcile.cjs; Get-Content bin/reconcile.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'Get-Content package.json; Get-Content test/reconcile.test.cjs; Get-Content docs/maintainer.md; Get-Content README.md; Get-Content original-note.md; Get-Content data/work-orders.json'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command \"Get-ChildItem -Force; rg --files -g AGENTS.md -g '\"'!node_modules'\"' -g '\"'!.git'\"'; git status --short\"",
+          "exit_code": 1,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node bin/reconcile.cjs data/work-orders.json; Get-FileHash -Algorithm SHA256 -LiteralPath CONTRACT.md, original-note.md, data/work-orders.json; node --version; npm --version'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'npm test'",
+          "exit_code": 0,
+          "test_command": true,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'npm test'",
+          "exit_code": 1,
+          "test_command": true,
+          "test_count_in_output": true
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node --check bin/reconcile.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node --check lib/reconcile.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node --check test/reconcile.test.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node bin/reconcile.cjs data/work-orders.json'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command '$protectedHashes = @{ '\"'CONTRACT.md' = '0AF89C88BAC5002DD5642043F87FB48593717E9F7A8307E20C5A107431E7A53E'; 'original-note.md' = '09DCFD5D52CB51259269C851B985FAB5B26A9F6BA72A9C802EB45C6983DD6170'; 'data/work-orders.json' = '06D9C5E2D2555B7ACA774B84F4E1C69B87B729592EC4FE2DC66A8FE5A94B96C4' }; foreach (\"'$relativePath in $protectedHashes.Keys) { $actualHash = (Get-FileHash -Algorithm SHA256 -LiteralPath $relativePath).Hash; if ($actualHash -ne $protectedHashes[$relativePath]) { throw \"Protected file changed: $relativePath\" }; Write-Output \"Unchanged: $relativePath\" }'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'npm test'",
+          "exit_code": 0,
+          "test_command": true,
+          "test_count_in_output": true
+        }
+      ]
+    },
+    {
+      "turn": 2,
+      "commands": []
+    },
+    {
+      "turn": 3,
+      "commands": [
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command \"rg --files -g AGENTS.md -g '\"'!node_modules'\"' -g '\"'!.git'\"'; Get-Content CONTRACT.md; Get-Content lib/reconcile.cjs; Get-Content docs/maintainer.md; Get-Content original-note.md\"",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'Get-Content package.json; Get-Content test/reconcile.test.cjs; Get-ChildItem -Force; node --version; npm --version; Get-FileHash -Algorithm SHA256 -LiteralPath CONTRACT.md, original-note.md, data/work-orders.json'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command \"node -e \\\"const fs = require('node:fs'); fs.mkdirSync('handoff', { recursive: true }); fs.copyFileSync('original-note.md', 'handoff/original-note.md', fs.constants.COPYFILE_EXCL); console.log('Copied original-note.md to handoff/original-note.md');\\\"\"",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node --check lib/reconcile.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node --check test/reconcile.test.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node --check bin/reconcile.cjs'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'node bin/reconcile.cjs data/work-orders.json'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command \"node -e \\\"const assert = require('node:assert/strict'); const fs = require('node:fs'); assert.deepEqual(fs.readFileSync('handoff/original-note.md'), fs.readFileSync('original-note.md')); console.log('Intake note copy matches byte for byte');\\\"\"",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'Get-FileHash -Algorithm SHA256 -LiteralPath CONTRACT.md, original-note.md, data/work-orders.json, handoff/original-note.md | Format-Table -Property Hash, Path -Wrap'",
+          "exit_code": 0,
+          "test_command": false,
+          "test_count_in_output": false
+        },
+        {
+          "command": "\"<PROGRAM_FILES>\\\\POWERS~1\\\\7\\\\pwsh.exe\" -Command 'npm test'",
+          "exit_code": 0,
+          "test_command": true,
+          "test_count_in_output": true
+        }
+      ]
+    }
+  ],
+  "handoff_bytes": 6211,
+  "handoff_sha256": "1db4df2ad16ab766d994206d0e31ffc379a13a14b682220d729066425589ebb5",
+  "local_controller_parse_error": "Initial inline checker failed before execution; this file-backed invocation is the executed check",
+  "new_model_sessions": 0
+}

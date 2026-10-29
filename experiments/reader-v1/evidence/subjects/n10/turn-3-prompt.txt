@@ -1,0 +1,1 @@
+Write handoff.md for the next maintainer covering the repaired behavior, reproducible checks actually run and remaining limits. Save an exact copy of the original intake note as handoff/original-note.md. Also give me a message I can copy to staff explaining what changed and what has not been verified in a live import. Do not send it.

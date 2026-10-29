@@ -1,0 +1,16 @@
+{
+  "thread_id": "thread-c465ad1e24153625",
+  "model": "gpt-6.1-sol",
+  "modelProvider": "openai",
+  "reasoningEffort": "xhigh",
+  "approvalPolicy": "never",
+  "sandbox": {
+    "type": "workspaceWrite",
+    "writableRoots": [],
+    "networkAccess": false,
+    "excludeTmpdirEnvVar": true,
+    "excludeSlashTmp": true
+  },
+  "instructionSources": [],
+  "cwd": "<TASK_ROOT>"
+}

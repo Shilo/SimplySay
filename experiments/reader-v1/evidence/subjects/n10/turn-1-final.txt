@@ -1,0 +1,5 @@
+Fixed reconciliation to use `record_id`, select the highest numeric revision, preserve first-seen order and ties, and copy complete winning rows with contract validation. CLI and row shape remain unchanged.
+
+Expanded regression coverage to 17 passing tests and updated `docs/maintainer.md`. Syntax checks and CLI verification passed. Only built-in Node modules are used.
+
+SHA-256 checks confirm the supplied data, `CONTRACT.md`, and `original-note.md` are unchanged. No live import was tested.

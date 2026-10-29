@@ -1,0 +1,5 @@
+Fixed reconciliation to group by `record_id`, select the highest numeric revision, preserve first-seen order and first-row ties, copy complete winning rows, and validate inputs against the contract.
+
+Expanded regression coverage to 17 tests; all pass. Syntax checks and the fixture CLI check also pass. Updated [maintainer.md](/<TASK_ROOT>/docs/maintainer.md).
+
+The CLI and row shape are preserved, using built-in Node modules only. SHA-256 checks confirm the supplied data, contract, and original note are unchanged. No live import was verified.

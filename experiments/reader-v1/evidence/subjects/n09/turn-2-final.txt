@@ -1,0 +1,27 @@
+`record_id` identifies a work order. A title is just a field, so matching titles do not make two rows the same work order.
+
+Suppose these complete rows arrive in this order:
+
+| record_id | revision | title | status | owner |
+|---|---:|---|---|---|
+| W-9 | 2 | Paint benches | open | Ari |
+| W-3 | 1 | Paint benches | queued | Bo |
+| W-9 | 12 | Paint benches | assigned | Cy |
+
+After the first two rows, both work orders survive: their IDs differ. The output order is `W-9`, then `W-3`.
+
+The third row updates `W-9`. Revision **12 is numerically greater than 2**, so the entire third row wins: title `Paint benches`, status `assigned`, owner `Cy`, and revision `12`. `W-3` keeps its complete original row. If an earlier row had an extra field that the winning row omitted, that field would disappear; the merger does not blend revisions.
+
+If another `W-9` row arrives with revision `12` and owner `Dee`, Cy’s row still wins. **Equal revisions keep the first encountered row at that revision.** The comparison requires a strictly greater revision before replacing a winner.
+
+Output order remains `W-9`, then `W-3`. The implementation stores winners in a JavaScript `Map`, which remembers when each ID first appeared. Replacing the value for an existing ID does not move it. Changing a title also cannot change that position.
+
+The regression tests protect those rules:
+
+- **Shared titles:** two different IDs must both survive. The old title-based grouping loses one.
+- **Numeric revisions:** revisions arrive across different digit lengths and out of order; the highest must win. The old text comparison and smaller-revision selection fail this.
+- **Stable order:** titles deliberately differ from alphabetical order, and later updates change them. The old title sort fails.
+- **Complete rows:** an old-only field must vanish when a newer row wins, preventing stale fields from leaking through.
+- **Ties:** competing equal revisions must retain the first row, including after an upgrade.
+
+Separate tests also check input validation, unchanged inputs, independent output copies, and the CLI’s complete JSON output and trailing newline.

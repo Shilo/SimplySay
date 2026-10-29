@@ -1,0 +1,32 @@
+Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group.
+
+Consider these rows arriving in order:
+
+| Arrival | record_id | revision | title | status | owner |
+| --- | --- | --- | --- | --- | --- |
+| 1 | W-9 | 2 | Paint benches | open | Ari |
+| 2 | W-3 | 1 | Paint benches | queued | Bo |
+| 3 | W-9 | 12 | Paint benches | assigned | Cy |
+| 4 | W-9 | 12 | Paint benches | closed | Dee |
+
+After arrivals 1 and 2, **both work orders survive**. Their different IDs identify separate orders, despite the shared title. W-3’s revision is compared only with other W-3 revisions.
+
+Arrival 3 replaces W-9’s revision 2 with revision 12. The **entire third row wins**, including `status: 'assigned'` and `owner: 'Cy'`. Fields present only in the older row would disappear; the merger copies the winning row rather than combining fields.
+
+Arrival 4 ties the current highest revision. It is ignored: the first encountered revision-12 row remains the winner, so Cy stays the owner.
+
+The final output is:
+
+1. W-9, revision 12, assigned to Cy.
+2. W-3, revision 1, queued with Bo.
+
+Output order follows each ID’s **first appearance**. The implementation uses a `Map`; replacing an existing key’s value preserves its position. There is no title sorting, so later revisions and renamed titles cannot move an order.
+
+The tests catch the earlier mistakes in several ways:
+
+- **Shared titles:** require both distinct IDs to survive.
+- **Numeric revisions:** compare revisions 0, 2, 9, and 12 in different encounter orders, exposing string comparisons and choosing the wrong revision.
+- **Ties:** require the first row at the winning revision to survive, including when that revision replaced an earlier one.
+- **Complete rows:** require older-only fields to disappear, catching accidental field blending.
+- **Stable order and renamed titles:** assert the exact output sequence and one row per ID.
+- **Supplied fixture and CLI:** compare complete expected output. Checking only the row count would miss the original result, which dropped W-9 but returned W-3 twice.

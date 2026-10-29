@@ -1,0 +1,7 @@
+Created [handoff.md](<TASK_ROOT>/handoff.md) covering the repair, reproducible checks and remaining limits. Saved [handoff/original-note.md](<TASK_ROOT>/handoff/original-note.md) and verified it matches the original byte for byte. Protected inputs remain unchanged.
+
+Staff message to copy; not sent:
+
+> We repaired the local work-order merger so orders sharing a title remain separate when their IDs differ. Updates now keep the complete row with the highest revision number, retain the first row on equal revisions, and preserve the order IDs first appeared.
+>
+> All 17 local regression tests, syntax checks and the supplied-data CLI check passed. The CLI interface and row format remain unchanged. No live import was performed, and live records or downstream import results have not been verified.

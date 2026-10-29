@@ -1,0 +1,150 @@
+{
+  "turn": 3,
+  "expected_thread": "thread-b2d0b89950802114",
+  "observed_thread": "thread-b2d0b89950802114",
+  "thread": "thread-b2d0b89950802114",
+  "started_utc": "2026-10-29T15:10:28.529Z",
+  "continuation_observed": true,
+  "failed": false,
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "last": {
+      "inputTokens": 37383,
+      "cachedInputTokens": 37120,
+      "outputTokens": 1175,
+      "reasoningOutputTokens": 951,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 38558
+    },
+    "total": {
+      "inputTokens": 329228,
+      "cachedInputTokens": 284672,
+      "outputTokens": 13042,
+      "reasoningOutputTokens": 4950,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 342270
+    }
+  },
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 3,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "accepted_turn_id": "thread-7308a15496a23d9d",
+  "native_turn_id": "thread-7308a15496a23d9d",
+  "usage_snapshots": [
+    {
+      "last": {
+        "inputTokens": 28190,
+        "cachedInputTokens": 27904,
+        "outputTokens": 219,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 28409
+      },
+      "total": {
+        "inputTokens": 190236,
+        "cachedInputTokens": 152320,
+        "outputTokens": 8704,
+        "reasoningOutputTokens": 2967,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 198940
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 32906,
+        "cachedInputTokens": 28288,
+        "outputTokens": 615,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 33521
+      },
+      "total": {
+        "inputTokens": 223142,
+        "cachedInputTokens": 180608,
+        "outputTokens": 9319,
+        "reasoningOutputTokens": 3483,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 232461
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 33590,
+        "cachedInputTokens": 33280,
+        "outputTokens": 302,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 33892
+      },
+      "total": {
+        "inputTokens": 256732,
+        "cachedInputTokens": 213888,
+        "outputTokens": 9621,
+        "reasoningOutputTokens": 3483,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 266353
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 35113,
+        "cachedInputTokens": 33664,
+        "outputTokens": 2246,
+        "reasoningOutputTokens": 516,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 37359
+      },
+      "total": {
+        "inputTokens": 291845,
+        "cachedInputTokens": 247552,
+        "outputTokens": 11867,
+        "reasoningOutputTokens": 3999,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 303712
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 37383,
+        "cachedInputTokens": 37120,
+        "outputTokens": 1175,
+        "reasoningOutputTokens": 951,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 38558
+      },
+      "total": {
+        "inputTokens": 329228,
+        "cachedInputTokens": 284672,
+        "outputTokens": 13042,
+        "reasoningOutputTokens": 4950,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 342270
+      }
+    }
+  ],
+  "native_status": "completed",
+  "public_message_phases": [
+    {
+      "id": "msg_01f58d895e6eb24f016ae361e5c954819984d95a0ac962d3b0",
+      "phase": "commentary"
+    },
+    {
+      "id": "msg_01f58d895e6eb24f016ae3625a49348199bb94a9ab34dbb0c2",
+      "phase": "final_answer"
+    }
+  ],
+  "ended_utc": "2026-10-29T15:12:31.940Z",
+  "snapshot_issues": [],
+  "case_turn_id": "b3_handoff"
+}

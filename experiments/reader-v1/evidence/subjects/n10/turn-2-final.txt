@@ -1,0 +1,32 @@
+`record_id` determines which work order a row belongs to. `revision` determines which row wins for that ID.
+
+Start with two rows sharing a title:
+
+```js
+{ record_id: 'W-9', revision: 2, title: 'Paint benches', status: 'open', owner: 'Ari' }
+{ record_id: 'W-3', revision: 1, title: 'Paint benches', status: 'queued', owner: 'Bo' }
+```
+
+Both survive because their IDs differ. The output contains W-9 first, then W-3. Their revisions are never compared against each other.
+
+Now another row arrives for W-9:
+
+```js
+{ record_id: 'W-9', revision: 12, title: 'Paint benches', status: 'assigned', owner: 'Cy' }
+```
+
+For W-9, revision **12 beats 2 numerically**. The complete revision-12 row wins: its title, status, owner, and any extra fields are copied together. Fields present only in revision 2 disappear; the merger does not combine fields from different revisions.
+
+If another W-9 row arrives at revision 12 with a different owner or title, the first revision-12 row still wins. Replacement happens only for a strictly greater revision. A later revision 9 also loses.
+
+Output order remains **W-9, W-3**. The `Map` records each ID’s position when it first appears. Replacing W-9’s value leaves that position intact, and there is no final title sort.
+
+The tests catch the earlier mistakes in several ways:
+
+- **Grouping by title:** distinct IDs with the same title must both survive. A changed title must still produce just one row for its ID.
+- **String revision comparisons:** revisions `2, 12, 9, 1` must select `12`. Choosing the smallest string would select `1`; choosing the largest string would select `9`.
+- **Blending rows:** the replacement test omits old fields and adds new ones, then checks the complete expected winner.
+- **Replacing on ties:** equal revisions with different contents must retain the first row.
+- **Reordering output:** tests deliberately use an order different from alphabetical title order and check that later updates preserve it.
+
+The fixture and CLI tests also check the actual resulting rows—not merely the row count, which could miss one missing ID and one duplicated ID.

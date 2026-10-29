@@ -1,0 +1,30 @@
+{
+  "actual_disposable_installed_package": true,
+  "files": [
+    {
+      "file": ".codex-plugin/plugin.json",
+      "bytes": 141
+    },
+    {
+      "file": "hooks/hooks.json",
+      "bytes": 298
+    },
+    {
+      "file": "session-start.cjs",
+      "bytes": 696
+    },
+    {
+      "file": "policy.txt",
+      "bytes": 866
+    }
+  ],
+  "total_bytes": 2001,
+  "runtime_evaluator": false,
+  "extra_model_calls_in_plugin": 0,
+  "rewriting_service": false,
+  "dependencies": [
+    "Node.js"
+  ],
+  "phase": "experimental, not production approval",
+  "measurement_source": "n06 catalog bytes, verified byte-identical to installed cache by preflight"
+}

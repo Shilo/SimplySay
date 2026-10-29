@@ -1,0 +1,9 @@
+Created [handoff.md](/<TASK_ROOT>/handoff.md) with repaired behavior, reproducible checks, actual results, and remaining limits. Saved [handoff/original-note.md](/<TASK_ROOT>/handoff/original-note.md) and verified it matches the source byte for byte.
+
+All 17 tests, syntax checks, and the fixture CLI check passed again. Protected inputs remain unchanged.
+
+Staff message to copy; nothing was sent:
+
+> We repaired the local work-order merger so separate orders with the same title are retained and each order’s highest revision number supplies its complete record. Equal revisions keep the first record encountered, and work orders retain their original order. The command and output format are unchanged.
+>
+> All 17 local regression tests passed. No live import has been performed or verified, so we have not confirmed that missing orders have been recovered or outdated records corrected in the live system.

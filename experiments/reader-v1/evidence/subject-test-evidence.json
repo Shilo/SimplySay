@@ -1,0 +1,119 @@
+{
+  "label": "Captured subject execution, distinct from evaluator probes",
+  "rows": [
+    {
+      "id": "n08",
+      "runs": [
+        {
+          "turn": 1,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 1",
+            "ℹ pass 1",
+            "ℹ fail 0"
+          ]
+        },
+        {
+          "turn": 1,
+          "exit_code": 1,
+          "footer": [
+            "ℹ tests 16",
+            "ℹ pass 4",
+            "ℹ fail 12"
+          ]
+        },
+        {
+          "turn": 1,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 16",
+            "ℹ pass 16",
+            "ℹ fail 0"
+          ]
+        },
+        {
+          "turn": 3,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 16",
+            "ℹ pass 16",
+            "ℹ fail 0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n09",
+      "runs": [
+        {
+          "turn": 1,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 1",
+            "ℹ pass 1",
+            "ℹ fail 0"
+          ]
+        },
+        {
+          "turn": 1,
+          "exit_code": 1,
+          "footer": [
+            "# tests 17",
+            "# pass 3",
+            "# fail 14"
+          ]
+        },
+        {
+          "turn": 1,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 17",
+            "ℹ pass 17",
+            "ℹ fail 0"
+          ]
+        },
+        {
+          "turn": 3,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 17",
+            "ℹ pass 17",
+            "ℹ fail 0"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "runs": [
+        {
+          "turn": 1,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 1",
+            "ℹ pass 1",
+            "ℹ fail 0"
+          ]
+        },
+        {
+          "turn": 1,
+          "exit_code": 1,
+          "footer": [
+            "ℹ tests 17",
+            "ℹ pass 4",
+            "ℹ fail 13"
+          ]
+        },
+        {
+          "turn": 1,
+          "exit_code": 0,
+          "footer": [
+            "ℹ tests 17",
+            "ℹ pass 17",
+            "ℹ fail 0"
+          ]
+        }
+      ]
+    }
+  ]
+}

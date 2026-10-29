@@ -1,0 +1,6 @@
+/*.cjs text eol=lf
+/*.json text eol=lf
+/cases/*.json text eol=lf
+/candidates/*.txt text eol=lf
+# Evidence hashes and protected Markdown hard breaks describe original bytes.
+/evidence/** -text -whitespace

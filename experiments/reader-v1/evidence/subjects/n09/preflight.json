@@ -1,0 +1,64 @@
+{
+  "version": "codex-cli 0.165.0-alpha.1.2",
+  "condition": "enabled",
+  "subscription_only": true,
+  "policy_sha256": "8c22c75424018bc8ccb1cddbfc0d2bc715b7bf94eb1a0672ad9217e5ab968bc5",
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [
+          {
+            "key": "ss-feasibility@ss-feasibility-catalog:hooks/hooks.json:session_start:0:0",
+            "eventName": "sessionStart",
+            "handlerType": "command",
+            "command": "node -e \"require(process.env.PLUGIN_ROOT + '/session-start.cjs')\"",
+            "async": false,
+            "matcher": "startup",
+            "timeoutSec": 10,
+            "statusMessage": null,
+            "additionalContextLimit": null,
+            "sourcePath": "<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+            "source": "plugin",
+            "pluginId": "ss-feasibility@ss-feasibility-catalog",
+            "displayOrder": 0,
+            "enabled": true,
+            "isManaged": false,
+            "currentHash": "sha256:95413dd9c205a0a3025ef2403f47fe226336c1263655a43bcec4148f6cc047ef/sha256:7dae73a246972e55806094716dc6d2b6ec58567dc1edda7dcbdfb3b722deee3b",
+            "trustStatus": "trusted"
+          }
+        ],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "config_hash": "78d9d24d298f3f45efd719a5f25d5f100a585477cb1796d7edbdec3d12acc958",
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 3,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "installed_roots_verified": 1,
+  "installed_package": {
+    ".codex-plugin/plugin.json": "bdae4b8b04de1892d071d568805a17dcadf9fb86efac268b504900d42ec1f55c",
+    "hooks/hooks.json": "ea24207c8fe2e05bc972fb8133ae70ab86dc9a481fc793525ea98bb22e7b2a7c",
+    "session-start.cjs": "93019ae91bb34abdc8246e53dc09030313941d989b029a8d34d73b8bd27a41ef",
+    "policy.txt": "8c22c75424018bc8ccb1cddbfc0d2bc715b7bf94eb1a0672ad9217e5ab968bc5"
+  },
+  "effective_isolation": {
+    "apps": false,
+    "multi_agent": false,
+    "agents": false,
+    "default_plugins": false
+  },
+  "model": "gpt-6.1-sol",
+  "effort": "xhigh"
+}

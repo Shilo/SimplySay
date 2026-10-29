@@ -1,0 +1,1 @@
+I maintain this now. Walk me through two work orders with the same title but different IDs, then two revisions of one ID. Explain which complete row wins, what happens on an equal revision, why output order stays stable, and how the tests would catch the earlier mistakes.

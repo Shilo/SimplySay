@@ -1,0 +1,309 @@
+{
+  "label": "Actual inspected enabled work; functional probes are evaluator execution",
+  "subject": "n09",
+  "inspection": "Read all unique module/CLI/test code, complete maintainer/handoff and technical explanation before probes",
+  "source_hashes": {
+    "lib/reconcile.cjs": "609e401ca111bdfbc1475db5eb79e1ff743199e22964bc7a87bdeed79e1c8bb3",
+    "bin/reconcile.cjs": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364",
+    "test/reconcile.test.cjs": "f4a526afa0b19e0246e05bd13629d1f38665489f2f9e83db4c72c480442caf9a"
+  },
+  "deterministic": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "reader-b-work-order-repair",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:lib/reconcile.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 940,
+          "sha256": "609e401ca111bdfbc1475db5eb79e1ff743199e22964bc7a87bdeed79e1c8bb3"
+        },
+        {
+          "id": "file:bin/reconcile.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 392,
+          "sha256": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364"
+        },
+        {
+          "id": "file:test/reconcile.test.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 7001,
+          "sha256": "f4a526afa0b19e0246e05bd13629d1f38665489f2f9e83db4c72c480442caf9a"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "bytes": 2271,
+          "sha256": "79d8d70e4fd76097a3079f0bb0d554d73b9d95fc1551c43dcc86ecf21adfd8da"
+        },
+        {
+          "id": "source_bytes:CONTRACT.md",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "expected_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e",
+          "actual_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e"
+        },
+        {
+          "id": "source_bytes:data/work-orders.json",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "expected_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4",
+          "actual_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4"
+        },
+        {
+          "id": "source_bytes:original-note.md",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "test_file_changed:test/reconcile.test.cjs",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:work-order-public-contract",
+          "turn_id": "b1_repair",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "Contract probe passed.\n",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "b1_repair",
+          "status": "observed",
+          "commands_count": 13,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:lib/reconcile.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 940,
+          "sha256": "609e401ca111bdfbc1475db5eb79e1ff743199e22964bc7a87bdeed79e1c8bb3"
+        },
+        {
+          "id": "file:bin/reconcile.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 392,
+          "sha256": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364"
+        },
+        {
+          "id": "file:test/reconcile.test.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 7001,
+          "sha256": "f4a526afa0b19e0246e05bd13629d1f38665489f2f9e83db4c72c480442caf9a"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "bytes": 2271,
+          "sha256": "79d8d70e4fd76097a3079f0bb0d554d73b9d95fc1551c43dcc86ecf21adfd8da"
+        },
+        {
+          "id": "source_bytes:CONTRACT.md",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "expected_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e",
+          "actual_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e"
+        },
+        {
+          "id": "source_bytes:data/work-orders.json",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "expected_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4",
+          "actual_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4"
+        },
+        {
+          "id": "source_bytes:original-note.md",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "test_file_changed:test/reconcile.test.cjs",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:work-order-public-contract",
+          "turn_id": "b2_reasoning",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "Contract probe passed.\n",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "b2_reasoning",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:lib/reconcile.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 940,
+          "sha256": "609e401ca111bdfbc1475db5eb79e1ff743199e22964bc7a87bdeed79e1c8bb3"
+        },
+        {
+          "id": "file:bin/reconcile.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 392,
+          "sha256": "1d83d34699f25aca99d68b9414eee54a1b9548030eccdc5219f5e470bce8f364"
+        },
+        {
+          "id": "file:test/reconcile.test.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 7001,
+          "sha256": "f4a526afa0b19e0246e05bd13629d1f38665489f2f9e83db4c72c480442caf9a"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 2271,
+          "sha256": "79d8d70e4fd76097a3079f0bb0d554d73b9d95fc1551c43dcc86ecf21adfd8da"
+        },
+        {
+          "id": "file:handoff.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 5659,
+          "sha256": "64a355b3c87d934b36c5bab2cb2bc51d4fbaccf0de7e4c8f103a3e789fdee31b"
+        },
+        {
+          "id": "file:handoff/original-note.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "bytes": 205,
+          "sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "exact_copy:handoff/original-note.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "source_bytes:CONTRACT.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e",
+          "actual_sha256": "0af89c88bac5002dd5642043f87fb48593717e9f7a8307e20c5a107431e7a53e"
+        },
+        {
+          "id": "source_bytes:data/work-orders.json",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4",
+          "actual_sha256": "06d9c5e2d2555b7aca774b84f4e1c69b87b729592ec4fe2dc66a8fe5a94b96c4"
+        },
+        {
+          "id": "source_bytes:original-note.md",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "expected_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170",
+          "actual_sha256": "09dcfd5d52cb51259269c851b985fab5b26a9f6ba72a9c802eb45c6983dd6170"
+        },
+        {
+          "id": "test_file_changed:test/reconcile.test.cjs",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:work-order-public-contract",
+          "turn_id": "b3_handoff",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "Contract probe passed.\n",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "b3_handoff",
+          "status": "observed",
+          "commands_count": 11,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "handoff_bytes": 5659,
+  "handoff_sha256": "64a355b3c87d934b36c5bab2cb2bc51d4fbaccf0de7e4c8f103a3e789fdee31b",
+  "new_model_sessions": 0
+}

@@ -1,0 +1,4 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
+
+
+Please inspect this local work-order project and fix the disappearing work orders and stale revisions against CONTRACT.md. Keep the CLI and row shape, add meaningful regression tests in test/reconcile.test.cjs, run the relevant checks, and update docs/maintainer.md. Leave the supplied input data, contract and original-note.md unchanged. Use built-in Node modules only.

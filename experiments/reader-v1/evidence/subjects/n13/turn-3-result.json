@@ -1,0 +1,74 @@
+{
+  "turn": 3,
+  "expected_thread": "thread-8f87f524cdc57f3f",
+  "observed_thread": "thread-8f87f524cdc57f3f",
+  "thread": "thread-8f87f524cdc57f3f",
+  "started_utc": "2026-10-29T15:05:01.354Z",
+  "continuation_observed": true,
+  "failed": false,
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "last": {
+      "inputTokens": 11520,
+      "cachedInputTokens": 0,
+      "outputTokens": 20,
+      "reasoningOutputTokens": 0,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 11540
+    },
+    "total": {
+      "inputTokens": 43234,
+      "cachedInputTokens": 29696,
+      "outputTokens": 1023,
+      "reasoningOutputTokens": 561,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 44257
+    }
+  },
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 3,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "accepted_turn_id": "thread-86fa03cbb36b4367",
+  "native_turn_id": "thread-86fa03cbb36b4367",
+  "usage_snapshots": [
+    {
+      "last": {
+        "inputTokens": 11520,
+        "cachedInputTokens": 0,
+        "outputTokens": 20,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 11540
+      },
+      "total": {
+        "inputTokens": 43234,
+        "cachedInputTokens": 29696,
+        "outputTokens": 1023,
+        "reasoningOutputTokens": 561,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 44257
+      }
+    }
+  ],
+  "native_status": "completed",
+  "public_message_phases": [
+    {
+      "id": "msg_03cb6cb7c6670378016ae3609d94a0819ab76cc08d667cc397",
+      "phase": "final_answer"
+    }
+  ],
+  "ended_utc": "2026-10-29T15:05:04.319Z",
+  "snapshot_issues": [],
+  "case_turn_id": "a3_simple_time"
+}

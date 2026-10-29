@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-8f87f524cdc57f3f"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_03cb6cb7c6670378016ae3609d94a0819ab76cc08d667cc397","type":"agent_message","text":"Be available at **3:20 pm**, when the restore check should finish."}}
+{"type":"turn.completed","usage":{}}
