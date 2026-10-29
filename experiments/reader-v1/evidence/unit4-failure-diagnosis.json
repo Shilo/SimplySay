@@ -1,0 +1,79 @@
+{
+  "label": "Offline source-bound diagnosis; no new quality grades or causal identification",
+  "policy": {
+    "path": "experiments/reader-v1/candidates/concrete.v4.txt",
+    "bytes": 961,
+    "sha256": "a527fd6c4993e31bf77e2458b889aefe1ada5e6ccd354724d72c30c7c2969a5e",
+    "exact_document_quote": true
+  },
+  "examples": [
+    {
+      "purpose": "audit extra finishing report",
+      "turn": 1,
+      "absent": {
+        "id": "n27",
+        "ordinal": 2,
+        "quote": "Across seven usable time pairs, the guide saved 12.1% overall but was slower in two pairs.",
+        "event_file": "experiments/reader-v1/evidence/unit4/subjects/n27/turn-1-events.jsonl",
+        "event_file_sha256": "0bfeff7c82de0a5735b564f89c8f3462369624620402db8ccd9fc590c585213d",
+        "message_type": "saved model-authored agent_message",
+        "illustration_only_not_new_grade": true
+      },
+      "enabled": {
+        "id": "n28",
+        "ordinal": 3,
+        "quote": "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+        "event_file": "experiments/reader-v1/evidence/unit4/subjects/n28/turn-1-events.jsonl",
+        "event_file_sha256": "0c8357b91d3615a38f9b1a69973bccc4e4499215f8d6aebf3526a419992c7d6c",
+        "message_type": "saved model-authored agent_message",
+        "illustration_only_not_new_grade": true
+      }
+    },
+    {
+      "purpose": "handoff repeated opening inventory",
+      "turn": 3,
+      "absent": {
+        "id": "n27",
+        "ordinal": 2,
+        "quote": "P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+        "event_file": "experiments/reader-v1/evidence/unit4/subjects/n27/turn-3-events.jsonl",
+        "event_file_sha256": "e62df6f1ba2d4955c74bebc32aaeece277f8d9b6d921f2edb291b71a534e43b3",
+        "message_type": "saved model-authored agent_message",
+        "illustration_only_not_new_grade": true
+      },
+      "enabled": {
+        "id": "n28",
+        "ordinal": 2,
+        "quote": "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan.",
+        "event_file": "experiments/reader-v1/evidence/unit4/subjects/n28/turn-3-events.jsonl",
+        "event_file_sha256": "fedf27f261e875bbb58c915b8b340a55561a9945e03841f80db6c9347b03b868",
+        "message_type": "saved model-authored agent_message",
+        "illustration_only_not_new_grade": true
+      }
+    }
+  ],
+  "matched_settings": {
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "mode": "default",
+    "host": "0.165.0-alpha.1.2",
+    "same_stock_developer_hash": true,
+    "same_audience_task_fixture_tools": true,
+    "interface": "app-server research client; actual desktop-interface behavior unverified"
+  },
+  "source_assessment_sha256": "17f00588b071bb35d1b6d0205ef8dcba0f4c1065ab60cc37c069c70085b5bb52",
+  "reviewer_agreement": "Both qualified reviewers prefer absent progress on relevance, filler, repetition and unnecessary explanation; cause remains unknown",
+  "desktop_specific_explanation": "None established for this regression; real context/permission/tool differences are not identified causes",
+  "new_model_conversations": 0,
+  "new_task_starts": 0,
+  "new_host_calls": 0,
+  "new_framework": false,
+  "usage_unchanged": {
+    "attempts": 31,
+    "tasks": 74
+  },
+  "locked_historical_files_unchanged": 287,
+  "unit4_review_archive_unchanged": true,
+  "production": "hold",
+  "publication": "hold"
+}
