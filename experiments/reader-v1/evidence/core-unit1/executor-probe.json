@@ -1,0 +1,11 @@
+{
+  "purpose": "No-model standalone command health check under unchanged workspace-write/MXC isolation",
+  "new_model_conversations": 0,
+  "new_turns": 0,
+  "auth_copied": false,
+  "config_changed_globally": false,
+  "alternative_or_weaker_isolation": false,
+  "succeeded": false,
+  "error": "{\"code\":-32603,\"message\":\"exec failed: unsupported operation: native MXC is unavailable on this executor\"}",
+  "stderr_sha256": "6c16f1b28cef1321e16b07f8867661d9ef0441814724396195d441e703d927d7"
+}

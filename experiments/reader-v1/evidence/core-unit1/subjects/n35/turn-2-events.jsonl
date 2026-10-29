@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-58209e1ec2fdb71e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0a06f699869de406016ae3ae151cdc81998921421cef75463d","type":"agent_message","text":"No. Changing only the label from 300 to 600 dpi adds no pixels or detail, so it won’t sharpen the print.\n\nAt its default print scale, it would print at **half the width and height**. If you keep the same physical print size, sharpness stays unchanged.\n\nFor the display print, use the higher-resolution original."}}
+{"type":"turn.completed","usage":{}}

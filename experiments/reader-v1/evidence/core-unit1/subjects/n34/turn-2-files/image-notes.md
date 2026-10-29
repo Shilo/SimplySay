@@ -1,0 +1,15 @@
+# Photo export notes for the community display
+
+This is a fictional local production note. The pack describes two JPEG copies of the same photograph; it contains no image files, live website or printer connection.
+
+## Export record
+
+The original is 4000 by 3000 pixels. The web copy was downsampled from it to 1000 by 750 pixels. Both copies retain the same framing and 4:3 shape. Preserve the original for later uses.
+
+Both file headers record a horizontal and vertical resolution of 300 pixels per inch. The export screen labels this field "dpi". This is output-size metadata. Editing only that label with resampling disabled leaves the stored pixel dimensions unchanged.
+
+## Current jobs
+
+The website accepts an image up to 1200 pixels on its longest edge. The display image area is 10 by 7.5 inches. Its stated production requirement is at least 240 image pixels per printed inch.
+
+No sample print has been inspected, and the actual image files are not available for a visual quality check in this pack. The recorded dimensions can support a file-choice calculation; they do not establish how a particular finished print looks.

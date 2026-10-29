@@ -1,0 +1,77 @@
+{
+  "status": "closed-environment-failure",
+  "authorization": "owner-reader-development-2026-10-29",
+  "record": "docs/core-experiment-plan.md",
+  "purpose": "Explicit full-goal replacement without prescribed explanatory construction or current-stage fallback; natural conversations versus explicit-preference history",
+  "end_conversation_cap": 39,
+  "end_task_cap": 96,
+  "unit_limits_are_not_overall_owner_caps": true,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "n34"
+      ],
+      "role": "photo-absent-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n35"
+      ],
+      "role": "photo-enabled-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n36"
+      ],
+      "role": "photo-disabled-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n37"
+      ],
+      "role": "neutral-study-absent-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n38"
+      ],
+      "role": "neutral-study-enabled-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n39"
+      ],
+      "role": "neutral-study-disabled-core1",
+      "max_turns_each": 3
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "n40",
+      "max_turns": 1
+    },
+    {
+      "id": "n41",
+      "max_turns": 1
+    }
+  ],
+  "preparation_contexts": 0,
+  "planned_preparation_tasks": 2,
+  "new_native_response_tasks": 18,
+  "new_blinded_reviewer_conversations": 2,
+  "new_blinded_reviewer_tasks": 2,
+  "retries": 0,
+  "replacements": 0,
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false,
+  "manifest": "experiments/workflow-v1/reader-core-unit1.manifest.json",
+  "goal_calibration_mode": "independent-goals-v1",
+  "first_pair_stop": "D: pause affected launches on evident essential/depth/setup loss; satisfactory ties may proceed to the separate planned workflow question. W1-neutral: skip n39 on evident loss or same narration with no plausible benefit; retain all observed outputs."
+}

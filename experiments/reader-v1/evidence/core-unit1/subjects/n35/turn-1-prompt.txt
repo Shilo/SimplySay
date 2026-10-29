@@ -1,0 +1,4 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
+
+
+Read image-notes.md. I’m preparing photos for our community display and website. Both files say 300 dpi, but the web copy looks softer. What does that label tell me, and which copy should I use for each job?

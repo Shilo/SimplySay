@@ -1,0 +1,1 @@
+If I change only the web copy’s label from 300 to 600 dpi, will that fix the display print?

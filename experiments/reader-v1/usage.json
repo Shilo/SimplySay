@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-unit1-allocated",
-  "new_conversations": 31,
-  "new_task_starts": 76,
+  "status": "core-unit1-closed-environment-failure",
+  "new_conversations": 33,
+  "new_task_starts": 82,
   "starts": [
     {
       "id": "n01",
@@ -324,6 +324,26 @@
       "status": "completed-core-preparation",
       "agent": "/root/natural_case_challenge",
       "followup_purpose": "Implement photo-advice conversation and neutral-chat W1 derivative with restrained request-derived essentials in the existing case format"
+    },
+    {
+      "id": "n34",
+      "role": "photo-absent-core1",
+      "condition": "absent",
+      "case_id": "reader-d-photo-advice",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "failed",
+      "reserved_utc": "2026-10-29T20:34:49.945Z"
+    },
+    {
+      "id": "n35",
+      "role": "photo-enabled-core1",
+      "condition": "enabled",
+      "case_id": "reader-d-photo-advice",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "failed",
+      "reserved_utc": "2026-10-29T20:35:00.361Z"
     }
   ],
   "new_paid_services": false,
@@ -336,12 +356,9 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": false,
-  "allowed_subjects": [
-    "n34",
-    "n35"
-  ],
-  "block_reason": "Only first matched D pair authorized for current checkpoint; remaining planned subjects await its saved-evidence inspection.",
+  "dispatch_blocked": true,
+  "allowed_subjects": [],
+  "block_reason": "Both active D subjects report inability to read their fixture; pause later launches while existing records are inspected. No response/reviewer retries.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -351,6 +368,13 @@
       "native_metadata_only": true,
       "credentials_copied": false,
       "evidence": "experiments/reader-v1/evidence/disabled-control-diagnosis.json"
+    },
+    {
+      "purpose": "Confirm actual tool failure through supported standalone command/exec under unchanged MXC isolation",
+      "model_contexts": 0,
+      "model_turns": 0,
+      "credentials_copied": false,
+      "evidence": "experiments/reader-v1/evidence/core-unit1/executor-probe.json"
     }
   ],
   "conversation_counting": "Reserved attempts include pre-model failures; completed behavior is recorded separately",
@@ -361,6 +385,42 @@
       "role": "installed-disabled-v3",
       "turns": 0,
       "reason": "Apply prospective stopping rule: skip n24 and send all saved pair evidence to the two allocated blinded reviewers. No further response pair."
+    },
+    {
+      "id": "n36",
+      "unit": "core-unit1",
+      "turns": 0,
+      "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
+    },
+    {
+      "id": "n37",
+      "unit": "core-unit1",
+      "turns": 0,
+      "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
+    },
+    {
+      "id": "n38",
+      "unit": "core-unit1",
+      "turns": 0,
+      "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
+    },
+    {
+      "id": "n39",
+      "unit": "core-unit1",
+      "turns": 0,
+      "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
+    },
+    {
+      "id": "n40",
+      "unit": "core-unit1",
+      "turns": 0,
+      "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
+    },
+    {
+      "id": "n41",
+      "unit": "core-unit1",
+      "turns": 0,
+      "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
     }
   ],
   "decision": "docs/core-experiment-plan.md"

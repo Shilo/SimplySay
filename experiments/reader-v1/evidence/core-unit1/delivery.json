@@ -1,0 +1,144 @@
+{
+  "method": "Existing supported developer/user/turn-context records only; no repeated loading probe",
+  "rows": [
+    {
+      "id": "n34",
+      "condition": "absent",
+      "native_completed": false,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "9ecdeb8e9794d79fc9c2b125c36cb5c1b486baf02144c5610d6ca3ee5e5cc0ec"
+        },
+        {
+          "turn": 2,
+          "line": 40,
+          "sha256": "5f16ff59b35e8cc54c9a2ecc6b910de4e5c7280b07b3490bfe210a4fa65a3b51"
+        },
+        {
+          "turn": 3,
+          "line": 52,
+          "sha256": "6f9441c3504091e0687dd7b626917fd67e8262573bcee529488086ae8af0124d"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "41064dbfff3f33910fe83413236efabcca01fed22c421a013f29e19b2fbd3098",
+          "exact_policy": false
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "unverified",
+      "original_hook_events": 0,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    },
+    {
+      "id": "n35",
+      "condition": "enabled",
+      "native_completed": false,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 11,
+          "sha256": "9ecdeb8e9794d79fc9c2b125c36cb5c1b486baf02144c5610d6ca3ee5e5cc0ec"
+        },
+        {
+          "turn": 2,
+          "line": 42,
+          "sha256": "5f16ff59b35e8cc54c9a2ecc6b910de4e5c7280b07b3490bfe210a4fa65a3b51"
+        },
+        {
+          "turn": 3,
+          "line": 52,
+          "sha256": "6f9441c3504091e0687dd7b626917fd67e8262573bcee529488086ae8af0124d"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "035c8c2338d354d6d3bd09ea7a06a4a51d6eeb3ea31587fb6c2a2dff2dcdb99e",
+          "exact_policy": false
+        },
+        {
+          "line": 10,
+          "characters": 1091,
+          "sha256": "3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8",
+          "exact_policy": true
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "exact policy in developer history before all requests",
+      "original_hook_events": 1,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    }
+  ],
+  "retained_pre_model_failures": [],
+  "reviewer_model_effort": "unknown",
+  "new_model_sessions": 0
+}

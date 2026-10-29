@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-196465a50bd85e50"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_0c8bd9535486c933016ae3ae11ef28819b9466eb4c64bacc9b","type":"agent_message","text":"No. Changing only the label from 300 to 600 dpi adds no pixels and restores no detail.\n\nIt may make the default print size half as wide and half as tall. If you print at the same physical size as before, sharpness stays the same.\n\nFor the display print, use the full-resolution original. What matters is its pixel dimensions relative to the size you want to print."}}
+{"type":"turn.completed","usage":{}}

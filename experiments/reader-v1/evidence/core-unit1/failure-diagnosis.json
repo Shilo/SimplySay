@@ -1,0 +1,411 @@
+{
+  "label": "Offline diagnosis of failed setup; no new model work",
+  "rows": [
+    {
+      "id": "n34",
+      "condition": "absent",
+      "model_tasks": 3,
+      "result_failed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "failed": false,
+          "error": null,
+          "provider_included_allowed": true,
+          "public_message_phases": [
+            {
+              "id": "msg_0c8bd9535486c933016ae3adee5650819bb101cf4c0fa68bbd",
+              "phase": "commentary"
+            },
+            {
+              "id": "msg_0c8bd9535486c933016ae3ae06e0ac819bae8bcb6cd2a6df8a",
+              "phase": "final_answer"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "failed": false,
+          "error": null,
+          "provider_included_allowed": true,
+          "public_message_phases": [
+            {
+              "id": "msg_0c8bd9535486c933016ae3ae11ef28819b9466eb4c64bacc9b",
+              "phase": "final_answer"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "failed": true,
+          "error": "Missing or ambiguous final_answer phase",
+          "provider_included_allowed": true,
+          "public_message_phases": [
+            {
+              "id": "msg_0c8bd9535486c933016ae3ae155128819b8ab6da29bd5749cb",
+              "phase": "commentary"
+            },
+            {
+              "id": "call_5497e04b03634148932c884a08734b32",
+              "phase": "final_answer"
+            },
+            {
+              "id": "msg_0c8bd9535486c933016ae3ae52c530819bae6df17b13988f51",
+              "phase": "final_answer"
+            }
+          ]
+        }
+      ],
+      "tool_failures": [
+        {
+          "line": 16,
+          "call_id": "call_24bd191354f94c118dddea465c33b66d",
+          "output_sha256": "d275f27fd6e2cdb96bea412f6dc69dd64012ffce94cb32688a584e16f6f02984",
+          "error": "native MXC is unavailable on this executor"
+        },
+        {
+          "line": 58,
+          "call_id": "call_0d0facdb824f406a9ef6e1b62fa9b3d0",
+          "output_sha256": "a9204fe2ba56e76f4b1eef60f6983216398b95cb9624acfb533273eb1c517d11",
+          "error": "native MXC is unavailable on this executor"
+        }
+      ],
+      "async_question_records": [
+        {
+          "line": 64,
+          "call_id": "call_5497e04b03634148932c884a08734b32",
+          "tool": "request_user_input_async",
+          "observed_as_public_agent_item": true
+        }
+      ],
+      "deterministic": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "fail",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "unverified",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-d-photo-advice",
+          "deterministic_status": "unverified",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "source_bytes:image-notes.md",
+              "turn_id": "d1_explain_recommend",
+              "status": "pass",
+              "expected_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39",
+              "actual_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d1_explain_recommend",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "source_bytes:image-notes.md",
+              "turn_id": "d2_metadata_followup",
+              "status": "pass",
+              "expected_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39",
+              "actual_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d2_metadata_followup",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "capture_completeness",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "issues": [
+                "Final not observed separately."
+              ]
+            },
+            {
+              "id": "native_turn_completion",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+            },
+            {
+              "id": "source_bytes:image-notes.md",
+              "turn_id": "d3_detailed_teaching",
+              "status": "pass",
+              "expected_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39",
+              "actual_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "valid_quality_comparison": false,
+      "blinded_review_not_launched": true,
+      "auth_copy_removed": true,
+      "role": "Environment/capture failure retained, not policy efficacy or scope pass"
+    },
+    {
+      "id": "n35",
+      "condition": "enabled",
+      "model_tasks": 3,
+      "result_failed": true,
+      "turns": [
+        {
+          "turn": 1,
+          "failed": false,
+          "error": null,
+          "provider_included_allowed": true,
+          "public_message_phases": [
+            {
+              "id": "msg_0a06f699869de406016ae3adf7bb5c81998a9854be3e7fc184",
+              "phase": "commentary"
+            },
+            {
+              "id": "msg_0a06f699869de406016ae3ae0df9ec819984a25c8b46c118dd",
+              "phase": "final_answer"
+            }
+          ]
+        },
+        {
+          "turn": 2,
+          "failed": false,
+          "error": null,
+          "provider_included_allowed": true,
+          "public_message_phases": [
+            {
+              "id": "msg_0a06f699869de406016ae3ae151cdc81998921421cef75463d",
+              "phase": "final_answer"
+            }
+          ]
+        },
+        {
+          "turn": 3,
+          "failed": true,
+          "error": "Missing or ambiguous final_answer phase",
+          "provider_included_allowed": true,
+          "public_message_phases": [
+            {
+              "id": "msg_0a06f699869de406016ae3ae1983388199a38943f913529695",
+              "phase": "commentary"
+            },
+            {
+              "id": "call_c316e56155624ea5879fd49fe633c837",
+              "phase": "final_answer"
+            },
+            {
+              "id": "msg_0a06f699869de406016ae3ae5ecd3c81998de395146cef363d",
+              "phase": "final_answer"
+            }
+          ]
+        }
+      ],
+      "tool_failures": [
+        {
+          "line": 17,
+          "call_id": "call_f0fc7c59557f426cb72387ee3ed609cc",
+          "output_sha256": "d275f27fd6e2cdb96bea412f6dc69dd64012ffce94cb32688a584e16f6f02984",
+          "error": "native MXC is unavailable on this executor"
+        },
+        {
+          "line": 30,
+          "call_id": "call_df0ead26a9c940cb8820a01e051fe6e1",
+          "output_sha256": "a3f8e18b2cffcf7cdefaba34cf208f84a0f69aa0d626b3b3a173c0cce089d835",
+          "error": "native MXC is unavailable on this executor"
+        },
+        {
+          "line": 58,
+          "call_id": "call_99a21b9285514de1a238beac9f2030cc",
+          "output_sha256": "a9204fe2ba56e76f4b1eef60f6983216398b95cb9624acfb533273eb1c517d11",
+          "error": "native MXC is unavailable on this executor"
+        }
+      ],
+      "async_question_records": [
+        {
+          "line": 62,
+          "call_id": "call_c316e56155624ea5879fd49fe633c837",
+          "tool": "request_user_input_async",
+          "observed_as_public_agent_item": true
+        }
+      ],
+      "deterministic": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "fail",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "unverified",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-d-photo-advice",
+          "deterministic_status": "unverified",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "source_bytes:image-notes.md",
+              "turn_id": "d1_explain_recommend",
+              "status": "pass",
+              "expected_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39",
+              "actual_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d1_explain_recommend",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "source_bytes:image-notes.md",
+              "turn_id": "d2_metadata_followup",
+              "status": "pass",
+              "expected_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39",
+              "actual_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d2_metadata_followup",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "capture_completeness",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "issues": [
+                "Final not observed separately."
+              ]
+            },
+            {
+              "id": "native_turn_completion",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+            },
+            {
+              "id": "source_bytes:image-notes.md",
+              "turn_id": "d3_detailed_teaching",
+              "status": "pass",
+              "expected_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39",
+              "actual_sha256": "3bbbbd14bdb9c04a501a0778376721c5720b281946e1246b03b9b02298967c39"
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "valid_quality_comparison": false,
+      "blinded_review_not_launched": true,
+      "auth_copy_removed": true,
+      "role": "Environment/capture failure retained, not policy efficacy or scope pass"
+    }
+  ],
+  "confirmed_executor_error": "native MXC is unavailable on this executor",
+  "no_model_probe": "executor-probe.json",
+  "multiple_final_phase": "Async user-question items are also surfaced as final_answer; existing strict capture rejects the ambiguous turn. Original records are unchanged; no final guessed/replaced and no grade recovered.",
+  "new_model_work": 0,
+  "no_weaker_isolation": true,
+  "no_paid_fallback": true
+}
