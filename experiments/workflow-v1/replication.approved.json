@@ -1,0 +1,32 @@
+{
+  "authorization":"owner-approved-2026-10-29-targeted-replication",
+  "record":"docs/v4-replication-authorization.md",
+  "start_conversations":21,
+  "start_task_starts":70,
+  "end_conversation_cap":25,
+  "end_task_cap":78,
+  "overall_conversation_cap":32,
+  "overall_task_cap":108,
+  "new_conversations_max":4,
+  "new_task_starts_max":8,
+  "exact_fresh_assignments":[
+    {"ids":["e21"],"role":"w1-consistency-absent","max_turns_each":3},
+    {"ids":["e22"],"role":"w1-consistency-installed-v4","max_turns_each":3},
+    {"ids":["e29","e30"],"role":"fresh-blinded-consistency-reviewer","max_turns_each":1}
+  ],
+  "subject_order":["e21","e22"],
+  "retries":0,
+  "replacement_chats":0,
+  "diagnostic_model_sessions":0,
+  "extra_helpers":0,
+  "local_reserve_exception":"Only e21/e22; require explicit provider permission for included use and valid reported limits below100 percent",
+  "case_file":"experiments/workflow-v1/cases/w1.case.json",
+  "case_sha256":"36c15a6c73ee31387f0a7330ae0225c96299032f0fc5dffe8458e51ce398186b",
+  "policy_sha256":"af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "scope":"Consistency on the used W1 workflow; not fresh validation of the entire product",
+  "automatic_next_round":false,
+  "new_paid_services":false,
+  "direct_claude":false,
+  "production":false,
+  "publication":false
+}

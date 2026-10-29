@@ -1,0 +1,15 @@
+{
+  "stage":"Approved narrow consistency check; no policy tuning or final-case validation",
+  "extra_input_files":[
+    "experiments/workflow-v1/replicate.cjs",
+    "experiments/workflow-v1/replication.approved.json",
+    "docs/v4-replication-authorization.md",
+    "experiments/workflow-v1/continue.cjs",
+    "experiments/workflow-v1/resume-capture-check.cjs"
+  ],
+  "subjects":[
+    {"id":"e21","case_file":"experiments/workflow-v1/cases/w1.case.json","condition":"absent"},
+    {"id":"e22","case_file":"experiments/workflow-v1/cases/w1.case.json","condition":"enabled","policy":"experiments/workflow-v1/candidates/workflow.v4.txt"}
+  ],
+  "review_pairs":[{"key":"w1-consistency-absent-v4","a":"e21","b":"e22"}]
+}
