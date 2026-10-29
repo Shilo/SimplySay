@@ -1,0 +1,15 @@
+{
+  "id": "r04",
+  "method": "Exact full candidate/minimal text matches in stored developer messages; no other message bodies collected",
+  "developerPolicyMatches": 0,
+  "minimalDeveloperMatches": 0,
+  "inheritedPolicyIsNotFailure": true,
+  "threadFiles": [
+    {
+      "file": "rollout-2026-10-28T20-06-04-thread-8dc6568eb37aa69d.jsonl",
+      "candidateMatches": 0,
+      "minimalMatches": 0,
+      "threadAlias": "thread-8dc6568eb37aa69d"
+    }
+  ]
+}

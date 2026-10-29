@@ -1,0 +1,86 @@
+{
+  "id": "r07",
+  "caseId": "crate_pair_delegation",
+  "condition": "absent",
+  "runDirectory": "runs-v2",
+  "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+  "host": "codex-cli 0.163.0",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "caseHash": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+  "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+  "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+  "classification": "provider_capacity_failure_and_interagent_capture_unknown",
+  "result": {
+    "code": 1,
+    "error": null,
+    "timedOut": false,
+    "budgetViolation": false,
+    "durationMs": 30316,
+    "plannedSlots": 2
+  },
+  "usage": [],
+  "visibleEventCount": 11,
+  "omittedEventCounts": {},
+  "finalAvailable": false,
+  "ownSessionStartRecordAvailable": false,
+  "artifacts": [
+    {
+      "path": "input.json",
+      "present": false
+    },
+    {
+      "path": "settle.mjs",
+      "present": false
+    },
+    {
+      "path": "settle.test.mjs",
+      "present": false
+    },
+    {
+      "path": "batch-report.md",
+      "present": false
+    },
+    {
+      "path": "child-report.txt",
+      "present": false
+    },
+    {
+      "path": "queue-rules.txt",
+      "present": false
+    },
+    {
+      "path": "crates.json",
+      "present": true,
+      "sourceBytes": 974,
+      "sourceSha256": "08ad8410168ed0b83afae6f5a1f1f33464cf5b2d8b44fa23276b3f6a6970476a",
+      "exportedSha256": "08ad8410168ed0b83afae6f5a1f1f33464cf5b2d8b44fa23276b3f6a6970476a",
+      "privacyScrubbed": false
+    }
+  ],
+  "independentCheckAvailable": true,
+  "loadingEvidenceAvailable": false,
+  "developerPolicyMatches": null,
+  "minimalDeveloperMatches": null,
+  "loadingThreadPresence": [],
+  "nativePublicMessages": [],
+  "independentFunctionalPass": null,
+  "nativeChildCapture": {
+    "actualChildSessions": 1,
+    "actualCreatedSessions": 2,
+    "cliObservedChildren": 0,
+    "actualCountSource": "Separate controller session-metadata audit, not the incomplete CLI child-event capture",
+    "childDirectiveObservable": false,
+    "childReportAvailable": false,
+    "budgetGuardMarkerPresent": false,
+    "limitation": "Counts and available public messages do not reveal an unavailable root-to-child directive or establish task quality. No rollout/private/encrypted payload was exported."
+  },
+  "limits": [
+    "No model subject or generated code executed by exporter.",
+    "Only explicit visible-event fields exported; private reasoning, rollouts, credentials and raw profiles excluded.",
+    "Numeric reasoning-token usage is accounting metadata, not reasoning content.",
+    "Path literals and thread UUIDs may be scrubbed; original artifact bytes remain unchanged at source.",
+    "Process completion is not a task-quality, activation, release, or human-comprehension verdict."
+  ]
+}

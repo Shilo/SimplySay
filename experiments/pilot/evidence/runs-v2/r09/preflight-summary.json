@@ -1,0 +1,53 @@
+{
+  "id": "r09",
+  "caseId": "reimbursement_batch",
+  "condition": "absent",
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "configHash": "187c93dbe3e79a49f5798d74e8ec7825ce54b60684e2a79de5aeb15e6b74b221",
+  "fingerprints": {
+    "config": "187c93dbe3e79a49f5798d74e8ec7825ce54b60684e2a79de5aeb15e6b74b221",
+    "prompt": "d022cffa0b6972c126e5a17805c2002c9f2fc53402f665b3d8d1e446578a2630",
+    "fixture:input.json": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091"
+  },
+  "candidate": {
+    "pluginId": "ss-feasibility@ss-feasibility-catalog",
+    "installed": false,
+    "enabled": null
+  },
+  "ownedHooks": [],
+  "nativeChildBudgetGuard": [],
+  "settings": {
+    "model": "gpt-6.1-sol",
+    "model_reasoning_effort": "low",
+    "approval_policy": "never",
+    "sandbox_mode": "workspace-write",
+    "web_search": "disabled",
+    "project_doc_max_bytes": 32768,
+    "include_apps_instructions": true,
+    "sandboxWorkspaceWrite": {
+      "network_access": false,
+      "exclude_tmpdir_env_var": true,
+      "exclude_slash_tmp": true
+    },
+    "windows": {
+      "sandbox": "mxc",
+      "allow_mxc": null
+    },
+    "features": {
+      "apps": false,
+      "multi_agent": false,
+      "memories": false
+    },
+    "agents": {
+      "enabled": false,
+      "max_concurrent_threads_per_session": 1,
+      "max_depth": 0
+    },
+    "otherPluginsDefaultEnabled": false,
+    "developerInstruction": {
+      "present": false,
+      "sha256": null
+    }
+  },
+  "limitation": "Selected configuration and own-hook readback only; not proof of loaded policy, adherence, comprehension, or preserved task quality."
+}

@@ -1,0 +1,10 @@
+This is a toy notification queue. Use only these rules.
+A stored job has a stable job_id and one state: ready, leased, or done.
+A worker leases a ready job for 30 seconds. A lease that expires before the job is done makes that job available to another worker.
+A worker sends a notice to a separate receiver and then marks the stored job done. These are separate operations; there is no transaction spanning them.
+A worker may stop at any point, and an old worker may continue running after its lease expires.
+A send request may time out even if the receiver accepted it. The sender cannot infer acceptance from a timeout.
+In the current design the receiver does not deduplicate requests.
+We do not yet know whether the receiver can be changed to support durable idempotency keys.
+Jobs can be retried. Eventual delivery requires that retries continue and some attempt eventually succeeds.
+For this project a missed notice is worse than a duplicate, but duplicates should be prevented where the rules allow.

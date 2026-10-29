@@ -1,0 +1,17 @@
+{
+  "rootThreadId": "thread-203c5ef6f747ccaa",
+  "childThreadIds": [
+    "thread-35cb27bb3419e89e"
+  ],
+  "actualCreatedSessions": 2,
+  "source": "Own local native session metadata and supported credential-free thread/read API; inherited root metadata inside child history is not another subject.",
+  "rootStatus": "failed",
+  "childStatus": "interrupted",
+  "providerError": "Selected model is at capacity. Please try a different model.",
+  "childReportAvailable": false,
+  "childDirectiveObservable": false,
+  "cliObservedChildren": [],
+  "budgetGuardMarkerPresent": false,
+  "scopePreservation": "unknown; no completed protected child report",
+  "classification": "Provider capacity failure plus CLI V2 capture gap and unmatched controller hook namespace. Not an observed style-policy failure."
+}

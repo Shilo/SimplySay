@@ -1,0 +1,18 @@
+Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **7 tests passed**, and the command produced the expected JSON.
+
+Approved total: **11,249 cents (112.49)**. Resolve R-102’s pending approval and R-103’s missing receipt. R-104 is denied and excluded. Friday arrival remains unconfirmed.
+
+Ready-to-copy email (not sent):
+
+To: casey@example.invalid  
+Subject: Reimbursement batch update and Friday timing
+
+Hi Casey,
+
+The batch currently includes approved reimbursements totaling 11,249 cents (112.49): R-101 and R-105.
+
+R-102 (24.00) is awaiting approval, and R-103 (18.00) needs a receipt before inclusion. R-104 was denied and is excluded.
+
+We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and bank arrival times before promising a date.
+
+Best,

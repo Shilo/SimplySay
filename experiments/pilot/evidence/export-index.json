@@ -1,0 +1,908 @@
+{
+  "producer": "SimplySay explicit-whitelist evidence exporter v1",
+  "completedCells": [
+    {
+      "id": "r01",
+      "runDirectory": "runs",
+      "caseId": "reimbursement_batch",
+      "condition": "absent",
+      "classification": "infrastructure_workspace_readonly_reported_by_amendment",
+      "durationMs": 26095,
+      "usage": [
+        {
+          "input_tokens": 46358,
+          "cached_input_tokens": 22784,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 437,
+          "reasoning_output_tokens": 65
+        }
+      ],
+      "sourceCommit": "3e3c8e92be91e3515d7cd01924304214c6efabed",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "parentManifestHash": null,
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": null,
+      "loadingEvidenceAvailable": false,
+      "minimalDeveloperMatches": null,
+      "loadingThreadPresence": [],
+      "independentCheckAvailable": false
+    },
+    {
+      "id": "r09",
+      "runDirectory": "runs-v2",
+      "caseId": "reimbursement_batch",
+      "condition": "absent",
+      "classification": "process_completed_not_quality_graded",
+      "durationMs": 57932,
+      "usage": [
+        {
+          "input_tokens": 61085,
+          "cached_input_tokens": 38528,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3352,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": 0,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 0,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-3ef112e9049167f8",
+          "candidateMatches": 0,
+          "minimalMatches": 0
+        }
+      ],
+      "independentCheckAvailable": true
+    },
+    {
+      "id": "r02",
+      "runDirectory": "runs-v2",
+      "caseId": "reimbursement_batch",
+      "condition": "enabled",
+      "classification": "process_completed_not_quality_graded",
+      "durationMs": 68391,
+      "usage": [
+        {
+          "input_tokens": 62658,
+          "cached_input_tokens": 29056,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3480,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": 1,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 0,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-9411508f02a72996",
+          "candidateMatches": 1,
+          "minimalMatches": 0
+        }
+      ],
+      "independentCheckAvailable": true
+    },
+    {
+      "id": "r03",
+      "runDirectory": "runs-v2",
+      "caseId": "queue_failure_explanation",
+      "condition": "enabled",
+      "classification": "process_completed_not_quality_graded",
+      "durationMs": 80086,
+      "usage": [
+        {
+          "input_tokens": 21742,
+          "cached_input_tokens": 10624,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2030,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": 1,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 0,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-811b59ce7e339053",
+          "candidateMatches": 1,
+          "minimalMatches": 0
+        }
+      ],
+      "independentCheckAvailable": false
+    },
+    {
+      "id": "r04",
+      "runDirectory": "runs-v2",
+      "caseId": "reimbursement_batch",
+      "condition": "disabled",
+      "classification": "process_completed_not_quality_graded",
+      "durationMs": 98004,
+      "usage": [
+        {
+          "input_tokens": 64458,
+          "cached_input_tokens": 35072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3692,
+          "reasoning_output_tokens": 37
+        }
+      ],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": 0,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 0,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-8dc6568eb37aa69d",
+          "candidateMatches": 0,
+          "minimalMatches": 0
+        }
+      ],
+      "independentCheckAvailable": true
+    },
+    {
+      "id": "r05",
+      "runDirectory": "runs-v2",
+      "caseId": "queue_failure_explanation",
+      "condition": "absent",
+      "classification": "process_completed_not_quality_graded",
+      "durationMs": 67885,
+      "usage": [
+        {
+          "input_tokens": 21216,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1791,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": 0,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 0,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-23c2157e9f95774c",
+          "candidateMatches": 0,
+          "minimalMatches": 0
+        }
+      ],
+      "independentCheckAvailable": false
+    },
+    {
+      "id": "r06",
+      "runDirectory": "runs-v2",
+      "caseId": "reimbursement_batch",
+      "condition": "minimal",
+      "classification": "process_completed_not_quality_graded",
+      "durationMs": 69339,
+      "usage": [
+        {
+          "input_tokens": 62020,
+          "cached_input_tokens": 49792,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3789,
+          "reasoning_output_tokens": 0
+        }
+      ],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": null,
+        "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+      },
+      "developerPolicyMatches": 0,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 1,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-12f4836ec4986cb5",
+          "candidateMatches": 0,
+          "minimalMatches": 1
+        }
+      ],
+      "independentCheckAvailable": true
+    },
+    {
+      "id": "r07",
+      "runDirectory": "runs-v2",
+      "caseId": "crate_pair_delegation",
+      "condition": "absent",
+      "classification": "provider_capacity_failure_and_interagent_capture_unknown",
+      "durationMs": 30316,
+      "usage": [],
+      "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+      "nativeChildCapture": {
+        "actualChildSessions": 1,
+        "actualCreatedSessions": 2,
+        "cliObservedChildren": 0,
+        "actualCountSource": "Separate controller session-metadata audit, not the incomplete CLI child-event capture",
+        "childDirectiveObservable": false,
+        "childReportAvailable": false,
+        "budgetGuardMarkerPresent": false,
+        "limitation": "Counts and available public messages do not reveal an unavailable root-to-child directive or establish task quality. No rollout/private/encrypted payload was exported."
+      },
+      "developerPolicyMatches": null,
+      "loadingEvidenceAvailable": false,
+      "minimalDeveloperMatches": null,
+      "loadingThreadPresence": [],
+      "independentCheckAvailable": true
+    },
+    {
+      "id": "r08",
+      "runDirectory": "runs-v3",
+      "caseId": "crate_pair_delegation",
+      "condition": "enabled",
+      "classification": "process_completed_public_child_messages_directive_unknown",
+      "durationMs": 139537,
+      "usage": [
+        {
+          "input_tokens": 186423,
+          "cached_input_tokens": 164864,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2561,
+          "reasoning_output_tokens": 114
+        }
+      ],
+      "sourceCommit": "de1bd7cb505881c3d79fe31908603c61e230e157",
+      "host": "codex-cli 0.163.0",
+      "model": "gpt-6.1-sol",
+      "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+      "manifestSha256": "1187c2a6b1f7748b56e575a2b33e5decc12d6d16ad80671b2c696cd3a308bb45",
+      "parentManifestHash": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+      "nativeChildCapture": {
+        "actualChildSessions": 1,
+        "actualCreatedSessions": 2,
+        "cliObservedChildren": 0,
+        "actualCountSource": "Separate controller session-metadata audit, not the incomplete CLI child-event capture",
+        "childDirectiveObservable": false,
+        "childReportAvailable": true,
+        "budgetGuardMarkerPresent": true,
+        "limitation": "Counts and available public messages do not reveal an unavailable root-to-child directive or establish task quality. No rollout/private/encrypted payload was exported."
+      },
+      "developerPolicyMatches": 2,
+      "loadingEvidenceAvailable": true,
+      "minimalDeveloperMatches": 0,
+      "loadingThreadPresence": [
+        {
+          "threadAlias": "thread-eec73344bf4694d6",
+          "candidateMatches": 1,
+          "minimalMatches": 0
+        },
+        {
+          "threadAlias": "thread-0a21ea19a55aa1e0",
+          "candidateMatches": 1,
+          "minimalMatches": 0
+        }
+      ],
+      "independentCheckAvailable": true
+    }
+  ],
+  "sessionAccounting": {
+    "overallOwnerCeiling": 24,
+    "fixedControllerCeiling": 12,
+    "chargedSlots": 11,
+    "remainingOverallSlots": 13,
+    "remainingControllerSlots": 1,
+    "rootReservations": 9,
+    "metadataConfirmedNativeChildren": 2,
+    "remainingAuthCopiesReportedByCleanup": 0,
+    "directClaudeRootReservations": 0,
+    "limitation": "Counts reflect the supplied ledger and cleanup audit. The owner global cap and narrower fixed controller allocation are different scopes; remaining capacity does not automatically authorize another run. No model call was made by this exporter."
+  },
+  "finalAudits": [
+    "cleanup-audit.json",
+    "session-ledger-final.json",
+    "usage-before.json",
+    "usage-before-final.json",
+    "usage-after.json",
+    "uninstall-audit.json"
+  ],
+  "originalsUnchanged": true,
+  "privacyScan": "passed_explicit_patterns_not_release_audit",
+  "files": [
+    {
+      "path": "launch-manifest.json",
+      "bytes": 1779,
+      "sha256": "e8f226477862505e3ca221028a03493edd634321c76ecb77d477d8d3988b0528"
+    },
+    {
+      "path": "launch-manifest-v2.json",
+      "bytes": 2270,
+      "sha256": "bd1b479517f1c0b0f1f26d5960d6b554c2988faae628faa1fa81b54379fcdea7"
+    },
+    {
+      "path": "launch-manifest-v3.json",
+      "bytes": 1708,
+      "sha256": "19e8fefe8f7c798c4a193e282a16bc81e879c59b6a1c1ebf257f718556801ed8"
+    },
+    {
+      "path": "runs/r01/events.jsonl",
+      "bytes": 1712,
+      "sha256": "7031f6e3a5a82b36b5d7a8ad70c64476b24aaec831850555e0ff0800bf8f2ca1"
+    },
+    {
+      "path": "runs/r01/final.txt",
+      "bytes": 1078,
+      "sha256": "cfeb1cae7010fe7edebb0390d5964bd8b28ba8e5eb363879d17bc97d3b77a322"
+    },
+    {
+      "path": "runs/r01/preflight-summary.json",
+      "bytes": 1611,
+      "sha256": "5656264daee77f06343f52c8c53c3f68721e9dcc184edd060e148f8ab30a0e1e"
+    },
+    {
+      "path": "runs/r01/result.json",
+      "bytes": 239,
+      "sha256": "deebb8eeb2912757e158e07ace861ac9ba704ab175ed4ca2555c6244060ae0d6"
+    },
+    {
+      "path": "runs/r01/files/input.json",
+      "bytes": 540,
+      "sha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091"
+    },
+    {
+      "path": "runs/r01/summary.json",
+      "bytes": 2686,
+      "sha256": "946ddb03691524d0beb03e953ec8c8b315766a9c9b8a4056273b7d6fbc75a16a"
+    },
+    {
+      "path": "runs/r01/README.md",
+      "bytes": 490,
+      "sha256": "f0e28002b1aaf0d920a9be5b3fb7f3a43d8551da534da175fd7162d42e7b6135"
+    },
+    {
+      "path": "runs-v2/r09/events.jsonl",
+      "bytes": 5359,
+      "sha256": "88300a71f2f5af097b38fca7440a0dc096c411ce57d150af1b83b38583261745"
+    },
+    {
+      "path": "runs-v2/r09/final.txt",
+      "bytes": 819,
+      "sha256": "a1927eed2e4b632cd015339e9dc27f9e25931fb58079887dd7bf06699c04dacd"
+    },
+    {
+      "path": "runs-v2/r09/preflight-summary.json",
+      "bytes": 1662,
+      "sha256": "ff57ed65d12bef55f7947918c852584f7904a50d8499a6247650b64be2a6e751"
+    },
+    {
+      "path": "runs-v2/r09/result.json",
+      "bytes": 239,
+      "sha256": "c197d5b4bfcec6d246aa178b6c66d86a650223fb13b13265de4ad2664b3b67dc"
+    },
+    {
+      "path": "runs-v2/r09/files/input.json",
+      "bytes": 540,
+      "sha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091"
+    },
+    {
+      "path": "runs-v2/r09/files/settle.mjs",
+      "bytes": 2179,
+      "sha256": "068f69c06fadc201c7faeba3d24ea4eaa36d1cbb0f0307bfd5b249ebfcc0ebb0"
+    },
+    {
+      "path": "runs-v2/r09/files/settle.test.mjs",
+      "bytes": 4756,
+      "sha256": "b72769a2ada07863d8797f19c7e77658eb151b42f6a13f1cc9fc58fbee8f7926"
+    },
+    {
+      "path": "runs-v2/r09/files/batch-report.md",
+      "bytes": 2552,
+      "sha256": "158edff2adf62a1a7c3aed719a1dc1f0af5332a058cfa9db57a5855110e71613"
+    },
+    {
+      "path": "runs-v2/r09/loading-audit.json",
+      "bytes": 455,
+      "sha256": "b393098497134e5c7f6ff92713f43952a78b2f9834f650994efcc177d9a6d6da"
+    },
+    {
+      "path": "runs-v2/r09/independent-check.json",
+      "bytes": 15182,
+      "sha256": "e7b2766c24a53161f9e2853228d2da549a4e35ebc8c116df95de7cfe946a331c"
+    },
+    {
+      "path": "runs-v2/r09/summary.json",
+      "bytes": 3600,
+      "sha256": "510fe58ecd0394dd71e16101991f6a85512daec2cd7770f7f6fe441805d182ec"
+    },
+    {
+      "path": "runs-v2/r09/README.md",
+      "bytes": 717,
+      "sha256": "5b51ea59d55c51ad3c1e2a6cf9ae7d5f019aa97100fe77bd610d83ccc87007d4"
+    },
+    {
+      "path": "runs-v2/r02/events.jsonl",
+      "bytes": 5754,
+      "sha256": "76570fcfe5043d39dde2512cd7079bae22c0f08943f10e318a8f81f94d7ecd50"
+    },
+    {
+      "path": "runs-v2/r02/final.txt",
+      "bytes": 905,
+      "sha256": "d8d8dc355489d0aad5b2670e53f6455c2fbf2e4f4fd28a367b13e6a6aef159d6"
+    },
+    {
+      "path": "runs-v2/r02/preflight-summary.json",
+      "bytes": 1970,
+      "sha256": "9fb8331dbe51bd247bab34fcaadee30865b54f259e71808db225846d392a43d6"
+    },
+    {
+      "path": "runs-v2/r02/result.json",
+      "bytes": 239,
+      "sha256": "bbe1ba08e559d86b2b1a939b6d152a4702477e4fe4e90bd6f469177018d13619"
+    },
+    {
+      "path": "runs-v2/r02/files/input.json",
+      "bytes": 540,
+      "sha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091"
+    },
+    {
+      "path": "runs-v2/r02/files/settle.mjs",
+      "bytes": 2148,
+      "sha256": "3b6a94f9efb7df727665d0f3cf935adac062d5a82909356bcc2d0f2cc908a5fd"
+    },
+    {
+      "path": "runs-v2/r02/files/settle.test.mjs",
+      "bytes": 4646,
+      "sha256": "af6ec5344c631b9af6e9ae8b567416f7f9e10d65c752789925a430baf27ff249"
+    },
+    {
+      "path": "runs-v2/r02/files/batch-report.md",
+      "bytes": 3162,
+      "sha256": "26e68c47779d250eb79174efe7eb7788f630fc8c760b5a593dfb4a500ab15841"
+    },
+    {
+      "path": "runs-v2/r02/plugin-session-start.jsonl",
+      "bytes": 163,
+      "sha256": "d138927fc3d3a8ee7d6c08bbf7ceabdb83fb341f98f1d482430aa74392d19c1f"
+    },
+    {
+      "path": "runs-v2/r02/loading-audit.json",
+      "bytes": 455,
+      "sha256": "e99176c43296e4d7b1e094ca51ab85d45138c6b067e8c2328bfebb520739a7c8"
+    },
+    {
+      "path": "runs-v2/r02/independent-check.json",
+      "bytes": 15510,
+      "sha256": "d42c1b8a247e8aac8e1e55d41f77890ecb7bbf29c6fb929e9d3e6b1b37aee0c2"
+    },
+    {
+      "path": "runs-v2/r02/summary.json",
+      "bytes": 3600,
+      "sha256": "5727433f66a5a1eedba718e49dd2622f524a985b3561ce25c10ba737a045aae2"
+    },
+    {
+      "path": "runs-v2/r02/README.md",
+      "bytes": 718,
+      "sha256": "77ca970ead4b853aa64092c233905deaed37e23e0405d3ebefba4a5e3bdb9626"
+    },
+    {
+      "path": "runs-v2/r03/events.jsonl",
+      "bytes": 12209,
+      "sha256": "d6f68c3b8e446b9c816bb759c416da9f34a5ae001b0b52e0bbd9843a500b70b0"
+    },
+    {
+      "path": "runs-v2/r03/final.txt",
+      "bytes": 10035,
+      "sha256": "9b10991e11fd903ed5ed8d6548e38423741bce790e93e336d611c01368bafc2c"
+    },
+    {
+      "path": "runs-v2/r03/preflight-summary.json",
+      "bytes": 1981,
+      "sha256": "be650d5ad8218eed51f9ae8be8075aacec73073983139c366b35b953ec89dda3"
+    },
+    {
+      "path": "runs-v2/r03/result.json",
+      "bytes": 239,
+      "sha256": "ba7a86956af83210fa2b024a183c84841f3c23d7c3d88669e3dc558a479eeb39"
+    },
+    {
+      "path": "runs-v2/r03/files/queue-rules.txt",
+      "bytes": 1006,
+      "sha256": "731ce2e3c0c805a40cf067928c38ad963fa881ae66f43e033a63e0fa6d3ca784"
+    },
+    {
+      "path": "runs-v2/r03/plugin-session-start.jsonl",
+      "bytes": 163,
+      "sha256": "efc28b7c8c308847c8df3ab5196739ddd69bf7c16adcb2831f8ce184389d27a5"
+    },
+    {
+      "path": "runs-v2/r03/loading-audit.json",
+      "bytes": 455,
+      "sha256": "927ec841bb6836395a9d58a267dec6b9f4ad27a7aad4716928ac4871683aea82"
+    },
+    {
+      "path": "runs-v2/r03/summary.json",
+      "bytes": 2850,
+      "sha256": "ccc93e02f5df25010fbca1da3f47efc778afba242fe65dc2c1139c07032504cc"
+    },
+    {
+      "path": "runs-v2/r03/README.md",
+      "bytes": 548,
+      "sha256": "2caaee969f84484e07d80f27e9a2abb42e1d9a699b27ac4c3fca18f6ae52a6c2"
+    },
+    {
+      "path": "runs-v2/r04/events.jsonl",
+      "bytes": 7165,
+      "sha256": "60a6134181ff78bc928f094b1655a81fdd080056ca4128decd60aa8feb9d3824"
+    },
+    {
+      "path": "runs-v2/r04/final.txt",
+      "bytes": 929,
+      "sha256": "a536129f5a6b6abdb2184f1b98be8a0b41487dab0fc3fbe058270e5b4116f182"
+    },
+    {
+      "path": "runs-v2/r04/preflight-summary.json",
+      "bytes": 1688,
+      "sha256": "44c582737cb7bf4a8509a6bc1e3ce1fcac1f6df656b21047b0106677de879a55"
+    },
+    {
+      "path": "runs-v2/r04/result.json",
+      "bytes": 239,
+      "sha256": "dac3c7a85fe125a96af462c716515501eea30a7f87c18cf20785ca260a99fb88"
+    },
+    {
+      "path": "runs-v2/r04/files/input.json",
+      "bytes": 540,
+      "sha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091"
+    },
+    {
+      "path": "runs-v2/r04/files/settle.mjs",
+      "bytes": 2072,
+      "sha256": "8f949841e809dfe916ac7fd97217046ce80aaf304b4468cd259c3933b2e0cfbb"
+    },
+    {
+      "path": "runs-v2/r04/files/settle.test.mjs",
+      "bytes": 4453,
+      "sha256": "0136a001d0b906cdafb8e8217426bb7d0cb50b5a333e09e4c29846c8f24e805e"
+    },
+    {
+      "path": "runs-v2/r04/files/batch-report.md",
+      "bytes": 3453,
+      "sha256": "1f188dc4da1045a7d3b84a4c482f6b9cc0495af857c01f2481d924d5d327aa87"
+    },
+    {
+      "path": "runs-v2/r04/loading-audit.json",
+      "bytes": 455,
+      "sha256": "810f6cb44c7c2490f4d05e0707364f13382e8ad793d9826617d76613e4856ba6"
+    },
+    {
+      "path": "runs-v2/r04/independent-check.json",
+      "bytes": 14567,
+      "sha256": "cb702ae27e5532fb722e86fcc49a41baa4e25aafacb530ffd879c09f8fad7a2e"
+    },
+    {
+      "path": "runs-v2/r04/summary.json",
+      "bytes": 3603,
+      "sha256": "e96086c2f85735c538d2f5465836d207a6f35e60de2071aa641efcb35d8b3534"
+    },
+    {
+      "path": "runs-v2/r04/README.md",
+      "bytes": 719,
+      "sha256": "874d7d43adc63ed5817de9647c661979c5ed924d9928b169249ce6bfd8dfb1ee"
+    },
+    {
+      "path": "runs-v2/r05/events.jsonl",
+      "bytes": 10727,
+      "sha256": "57bb1cf7ff2907a3b5da11fd2274f40775b1284735f5cb5233d896048929bb54"
+    },
+    {
+      "path": "runs-v2/r05/final.txt",
+      "bytes": 8613,
+      "sha256": "9b1d0a7a3c44e30df66823a87a07b022797233aa2ce8b6e2fe05d9eae954f17f"
+    },
+    {
+      "path": "runs-v2/r05/preflight-summary.json",
+      "bytes": 1673,
+      "sha256": "9b98f3cdf8a58432c298f7d4c47b083104ca1b6dc604278f7a57698d1b3218a8"
+    },
+    {
+      "path": "runs-v2/r05/result.json",
+      "bytes": 239,
+      "sha256": "193acdb816f8560e2ad724285f160ef5b38b76f46e61ff66aae3d274b0166342"
+    },
+    {
+      "path": "runs-v2/r05/files/queue-rules.txt",
+      "bytes": 1006,
+      "sha256": "731ce2e3c0c805a40cf067928c38ad963fa881ae66f43e033a63e0fa6d3ca784"
+    },
+    {
+      "path": "runs-v2/r05/loading-audit.json",
+      "bytes": 455,
+      "sha256": "8aecd80f62da88f8b68a8615d200f9fd1ea3c0091c3c2ce77ecb29e3eba211dd"
+    },
+    {
+      "path": "runs-v2/r05/summary.json",
+      "bytes": 2846,
+      "sha256": "aa93831b38b5ebd7788a0cb697128a96097f02afc84e9e0555b34e1bc1812723"
+    },
+    {
+      "path": "runs-v2/r05/README.md",
+      "bytes": 547,
+      "sha256": "2676b0fffd51269a9c172bdda037f763f381e98245053efa6c69d96df1365a80"
+    },
+    {
+      "path": "runs-v2/r06/events.jsonl",
+      "bytes": 5878,
+      "sha256": "a68721c5706b4b7444f65d6824dc10ed3ac3e2890a3d434d3ee8b2a3f5352b1a"
+    },
+    {
+      "path": "runs-v2/r06/final.txt",
+      "bytes": 1002,
+      "sha256": "7e2b94d1577ea31de0a9bd1b7dc0c1735c1e10f90599e943107023bd649a60f3"
+    },
+    {
+      "path": "runs-v2/r06/preflight-summary.json",
+      "bytes": 1724,
+      "sha256": "1bb847b710e596cf8c46afc63eef1f435a9be5999ec47784e5cb998dec194163"
+    },
+    {
+      "path": "runs-v2/r06/result.json",
+      "bytes": 239,
+      "sha256": "78998d906e0976ab7eaa1b237d4e17e5407453bc38e6cd5fcb7a74ff0b288cb6"
+    },
+    {
+      "path": "runs-v2/r06/files/input.json",
+      "bytes": 540,
+      "sha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091"
+    },
+    {
+      "path": "runs-v2/r06/files/settle.mjs",
+      "bytes": 2146,
+      "sha256": "5376c126dcf800341e58b6fd9705243cd02fa57c56f194533599682da55b4b72"
+    },
+    {
+      "path": "runs-v2/r06/files/settle.test.mjs",
+      "bytes": 5052,
+      "sha256": "84b2f793c1a4292877aa09e2db4d3eb551f3ce719731a5ee96e9ba7fa6e9c5da"
+    },
+    {
+      "path": "runs-v2/r06/files/batch-report.md",
+      "bytes": 3797,
+      "sha256": "ec03b2352c45a66216537db2ea2426f4f24c06944b39ce1ef3dfea63defc6b1a"
+    },
+    {
+      "path": "runs-v2/r06/loading-audit.json",
+      "bytes": 455,
+      "sha256": "4a865074eabb1495e155cc1d409cd3df029f11de424dee386878ba066bc8f2e6"
+    },
+    {
+      "path": "runs-v2/r06/independent-check.json",
+      "bytes": 15488,
+      "sha256": "84a696a138f5a99f72484d9103ef1de324043b656fa4f5f7d607f3487e78c785"
+    },
+    {
+      "path": "runs-v2/r06/summary.json",
+      "bytes": 3601,
+      "sha256": "6c41ababc578fcf07d1f547e7e4e7040d524faeb7217299ea62680255de217ef"
+    },
+    {
+      "path": "runs-v2/r06/README.md",
+      "bytes": 718,
+      "sha256": "d8ec7798081770cd16d15fd5c6493ba18f7e2b72c1777089d3dc017af67bd9de"
+    },
+    {
+      "path": "runs-v2/r07/events.jsonl",
+      "bytes": 6350,
+      "sha256": "ece6fe429f5223ca7b989949bad8ea0701cc55304a42fa2dbe4c252171a32895"
+    },
+    {
+      "path": "runs-v2/r07/preflight-summary.json",
+      "bytes": 1948,
+      "sha256": "ba08b67d9d8253523156f3db65bd5d5258c45373862b931da0d77804c4c347ae"
+    },
+    {
+      "path": "runs-v2/r07/result.json",
+      "bytes": 239,
+      "sha256": "f40ee7bbfd4ba46685b01794f266c16a7bfc62c57569d52b47edf30437562ad5"
+    },
+    {
+      "path": "runs-v2/r07/files/crates.json",
+      "bytes": 974,
+      "sha256": "08ad8410168ed0b83afae6f5a1f1f33464cf5b2d8b44fa23276b3f6a6970476a"
+    },
+    {
+      "path": "runs-v2/r07/capture-audit.json",
+      "bytes": 800,
+      "sha256": "a65b9ca553b4e86c4561a760789850ba7ecb80d15790288fbabd3c13ac6c663f"
+    },
+    {
+      "path": "runs-v2/r07/independent-check.json",
+      "bytes": 2875,
+      "sha256": "465250749574c5616231406a5b8bc8f3f5ed5e07418e74f67bdce7c69ab29bd0"
+    },
+    {
+      "path": "runs-v2/r07/summary.json",
+      "bytes": 2971,
+      "sha256": "0bb38ce1fd8fa15ce2e95a5c7c4634f135158c8b41b55c7f0f029dfc02044d42"
+    },
+    {
+      "path": "runs-v2/r07/README.md",
+      "bytes": 887,
+      "sha256": "0a2a2b7613ba100b2af9d9b54543511b170328c623ddf41047047448092cfbbf"
+    },
+    {
+      "path": "runs-v3/r08/events.jsonl",
+      "bytes": 15791,
+      "sha256": "5bae4df85c6649e34d47ca09abc25fba4250063ca7034e1cb9861f7abd4bf958"
+    },
+    {
+      "path": "runs-v3/r08/final.txt",
+      "bytes": 770,
+      "sha256": "ebcf20bf14ff0ecc65ee50584df5859579511baac6f50919a8a2b6519a7b303f"
+    },
+    {
+      "path": "runs-v3/r08/preflight-summary.json",
+      "bytes": 2285,
+      "sha256": "594bf8c0aabb872cac1d0339696c136a0b6956fab007e2ad006812eabd457bea"
+    },
+    {
+      "path": "runs-v3/r08/result.json",
+      "bytes": 240,
+      "sha256": "4470b780cc5627fc6f109389ab2617d1184c5e75acc3a8addb4d049d772447b6"
+    },
+    {
+      "path": "runs-v3/r08/files/child-report.txt",
+      "bytes": 4516,
+      "sha256": "4a25a8b7cb967945997302bb78f41c189daee17c0bcdf70c32e2a4c06104f855"
+    },
+    {
+      "path": "runs-v3/r08/files/crates.json",
+      "bytes": 974,
+      "sha256": "08ad8410168ed0b83afae6f5a1f1f33464cf5b2d8b44fa23276b3f6a6970476a"
+    },
+    {
+      "path": "runs-v3/r08/plugin-session-start.jsonl",
+      "bytes": 163,
+      "sha256": "805bb634a69a841a35e3ffe7f599e26646ea6af0179d1a9cc28a25297e7f5b69"
+    },
+    {
+      "path": "runs-v3/r08/native-messages/child-1-message-1.txt",
+      "bytes": 4514,
+      "sha256": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51"
+    },
+    {
+      "path": "runs-v3/r08/native-messages/child-1-message-2.txt",
+      "bytes": 117,
+      "sha256": "ca5212e60f80c7f75e09c743b1b9cfd003ba50fe47f322e9cac8ee26d9c48bb9"
+    },
+    {
+      "path": "runs-v3/r08/capture-audit.json",
+      "bytes": 5522,
+      "sha256": "b4e48b04705fd20fd2e6bcbc4575c55ca2891760a74178b9183d5674e0fb646f"
+    },
+    {
+      "path": "runs-v3/r08/loading-audit.json",
+      "bytes": 646,
+      "sha256": "e1309faa04301b8c6784a621488cbea3568c9c5eac6abfe1a20b3b41bf6d8679"
+    },
+    {
+      "path": "runs-v3/r08/independent-check.json",
+      "bytes": 17723,
+      "sha256": "8f90c6109b766388724d96aa10dfd668c96780e388034e5cec4d5ac2e7c7b823"
+    },
+    {
+      "path": "runs-v3/r08/summary.json",
+      "bytes": 4645,
+      "sha256": "5a3afcd5078ff11f07cb99337e84b7cc789fb1b1c650d19319f794b27a0f2372"
+    },
+    {
+      "path": "runs-v3/r08/README.md",
+      "bytes": 1213,
+      "sha256": "651d52225dc812888ce2b2d4a063ae940cd0349330a266d165c8a0d16bddd7e6"
+    },
+    {
+      "path": "native-probes/evidence.json",
+      "bytes": 646,
+      "sha256": "a757688e8c13ca8df8a8810bc0e22fea8f037df6a52fdb023458da580952c66b"
+    },
+    {
+      "path": "native-probes/evidence-restricted-temp.json",
+      "bytes": 645,
+      "sha256": "6a65c3b4bf51ca68f086b1225862a06a0c3247cb820cd266b52e5a8d6ce6ccc3"
+    },
+    {
+      "path": "final-audits/cleanup-audit.json",
+      "bytes": 368,
+      "sha256": "0c86906a144fa307334f5b6aec7cff12f47bf5956514e3051f9761443f0e2701"
+    },
+    {
+      "path": "final-audits/session-ledger-final.json",
+      "bytes": 2170,
+      "sha256": "a8e2f1ae641eae0447b9c261979106f1a70327f3f36238db17642c8fa1d8e2c1"
+    },
+    {
+      "path": "final-audits/usage-before.json",
+      "bytes": 435,
+      "sha256": "2f17bdbc27803a9bcd7df83e020b427aae4fef5a6ba20795b9dd9aa628933007"
+    },
+    {
+      "path": "final-audits/usage-before-final.json",
+      "bytes": 236,
+      "sha256": "3c55aa86775ced193a28b63191007a3778ee8edc79dbd3c7b197a12f60e70393"
+    },
+    {
+      "path": "final-audits/usage-after.json",
+      "bytes": 314,
+      "sha256": "a1b07bd27fcf9761e1eb142245fc4b18f37f887ca555988bd1377d0b6a948a1a"
+    },
+    {
+      "path": "final-audits/uninstall-audit.json",
+      "bytes": 1215,
+      "sha256": "351994a863920303aac5c33653f5f6ecec3a4f77f911a5a07b05dc14d447a477"
+    },
+    {
+      "path": "source-hashes.json",
+      "bytes": 23062,
+      "sha256": "7513368133b41f3fa31293cd1eb0a006d74712fa6a77257c5c5298a7cde4696f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3608,
+      "sha256": "21cb243021596303e3f90557eba0176f646c5381925f40d03a7ba01116724c57"
+    }
+  ]
+}

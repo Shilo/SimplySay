@@ -1,0 +1,31 @@
+{
+  "kind": "Posttrial native removal, not a new model session",
+  "args": [
+    "plugin",
+    "remove",
+    "ss-feasibility@ss-feasibility-catalog",
+    "--json"
+  ],
+  "status": 0,
+  "remainingCandidateHooks": 0,
+  "taskFilesUnchanged": true,
+  "unrelatedSettingsPreserved": true,
+  "authFilePresent": false,
+  "nativeResult": {
+    "pluginId": "ss-feasibility@ss-feasibility-catalog",
+    "name": "ss-feasibility",
+    "marketplaceName": "ss-feasibility-catalog"
+  },
+  "before": {
+    "batch-report.md": "26e68c47779d250eb79174efe7eb7788f630fc8c760b5a593dfb4a500ab15841",
+    "input.json": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091",
+    "settle.mjs": "3b6a94f9efb7df727665d0f3cf935adac062d5a82909356bcc2d0f2cc908a5fd",
+    "settle.test.mjs": "af6ec5344c631b9af6e9ae8b567416f7f9e10d65c752789925a430baf27ff249"
+  },
+  "after": {
+    "batch-report.md": "26e68c47779d250eb79174efe7eb7788f630fc8c760b5a593dfb4a500ab15841",
+    "input.json": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091",
+    "settle.mjs": "3b6a94f9efb7df727665d0f3cf935adac062d5a82909356bcc2d0f2cc908a5fd",
+    "settle.test.mjs": "af6ec5344c631b9af6e9ae8b567416f7f9e10d65c752789925a430baf27ff249"
+  }
+}

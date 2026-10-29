@@ -1,0 +1,46 @@
+{
+  "scenario": "Fictional craft event; choose exactly two different crates, at most one of each.",
+  "requirements": {
+    "min_kits": 30,
+    "min_mats": 20,
+    "budget_dollars": 180,
+    "availability_required": "confirmed by Friday"
+  },
+  "crates": [
+    {
+      "id": "A",
+      "cost_dollars": 80,
+      "kits": 18,
+      "mats": 10,
+      "availability": "confirmed by Friday"
+    },
+    {
+      "id": "B",
+      "cost_dollars": 95,
+      "kits": 12,
+      "mats": 15,
+      "availability": "confirmed by Friday"
+    },
+    {
+      "id": "C",
+      "cost_dollars": 70,
+      "kits": 16,
+      "mats": 8,
+      "availability": "confirmed by Friday"
+    },
+    {
+      "id": "D",
+      "cost_dollars": 90,
+      "kits": 14,
+      "mats": 12,
+      "availability": "tentative for Friday; not confirmed"
+    },
+    {
+      "id": "E",
+      "cost_dollars": 60,
+      "kits": 10,
+      "mats": 15,
+      "availability": "confirmed for Monday after the event"
+    }
+  ]
+}

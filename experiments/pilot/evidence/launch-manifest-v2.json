@@ -1,0 +1,74 @@
+{
+  "frozenBeforeTrials": true,
+  "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+  "host": "codex-cli 0.163.0",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "controllerHashes": {
+    "codex-pilot.cjs": "8ebcef08f5d5485a0a0f94cc004f91bda3f5319015586de3b2d5ebe7a49889fe",
+    "codex-rpc.cjs": "f23694574dd553b3345dbce56ec7183f88043b398c38e4df1261144519d64067",
+    "session-budget.cjs": "60846785903eb5a11d2ad84bf540a2fc2cc3dbea14a903cfef494cd4939045b0",
+    "policy.txt": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+    "minimal.txt": "250389bbeff5250d424e317993aabeadf65bc63b574201f58d5c071d0004afb5",
+    "cases.json": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+    "criteria": "2ec3075d5b72cc49e09af5a623e03c791583abb1ae951f1b43c17c430784659d"
+  },
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "minimalHash": "250389bbeff5250d424e317993aabeadf65bc63b574201f58d5c071d0004afb5",
+  "caseHash": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+  "ceiling": 12,
+  "diagnosticSlots": 2,
+  "order": [
+    [
+      "r09",
+      "reimbursement_batch",
+      "absent",
+      1
+    ],
+    [
+      "r02",
+      "reimbursement_batch",
+      "enabled",
+      1
+    ],
+    [
+      "r03",
+      "queue_failure_explanation",
+      "enabled",
+      1
+    ],
+    [
+      "r04",
+      "reimbursement_batch",
+      "disabled",
+      1
+    ],
+    [
+      "r05",
+      "queue_failure_explanation",
+      "absent",
+      1
+    ],
+    [
+      "r06",
+      "reimbursement_batch",
+      "minimal",
+      1
+    ],
+    [
+      "r07",
+      "crate_pair_delegation",
+      "absent",
+      2
+    ],
+    [
+      "r08",
+      "crate_pair_delegation",
+      "enabled",
+      2
+    ]
+  ],
+  "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+  "amendment": "r01 intended workspace-write resolved read-only because fresh Windows profile disabled its sandbox backend. Explicit MXC selected after credential-free inside-write/parent-write-denied probe; no account setup, ACL mutation, or fallback. Policy/tasks unchanged; original r01 retained as infrastructure failure. r09 uses one of two diagnostic slots.",
+  "diagnosticSlotsRemaining": 1
+}

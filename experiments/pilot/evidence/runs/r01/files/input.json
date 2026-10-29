@@ -1,0 +1,32 @@
+[
+  {
+    "id": "R-101",
+    "amount_cents": 7250,
+    "status": "approved",
+    "receipt_present": true
+  },
+  {
+    "id": "R-102",
+    "amount_cents": 2400,
+    "status": "pending",
+    "receipt_present": true
+  },
+  {
+    "id": "R-103",
+    "amount_cents": 1800,
+    "status": "approved",
+    "receipt_present": false
+  },
+  {
+    "id": "R-104",
+    "amount_cents": 900,
+    "status": "denied",
+    "receipt_present": true
+  },
+  {
+    "id": "R-105",
+    "amount_cents": 3999,
+    "status": "approved",
+    "receipt_present": true
+  }
+]

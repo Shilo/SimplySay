@@ -1,0 +1,857 @@
+{
+  "schema_version": 1,
+  "run": "r08",
+  "run_version": "runs-v3",
+  "case_id": "crate_pair_delegation",
+  "role": "candidate C as supplied by controller",
+  "method": "Read only public native audit, saved report, root final, and visible command events. No generated source execution, model invocation, hidden reasoning, directive decryption, paid judging, or subjective comprehension score.",
+  "root_thread_id": "thread-eec73344bf4694d6",
+  "child_thread_ids": [
+    "thread-0a21ea19a55aa1e0"
+  ],
+  "actual_created_sessions": 2,
+  "child_turn_status": [
+    "completed",
+    "completed"
+  ],
+  "child_directive_observable": false,
+  "guard_claim": true,
+  "public_report_rows": 10,
+  "saved_report_rows": 10,
+  "overall": "Partial compatibility evidence for observed output preservation. Full forwarding boundary remains unknown; failed baseline r07 means this is unpaired and cannot establish causal improvement.",
+  "artifact_sha256": {
+    "capture-audit.json": "732682af5e195433eeaca1fbfd12d7720be524de1d362069ea3927e90f0c19e4",
+    "task/child-report.txt": "4a25a8b7cb967945997302bb78f41c189daee17c0bcdf70c32e2a4c06104f855",
+    "final.txt": "adb352f023615c08f562ca5f51f7e91f7d7bebbd047439967a555b71a2d558c0",
+    "events.jsonl": "086e604c528d89e9edce9921c9ba68bf7d385e64fe57849f60ea44f4b75025bc"
+  },
+  "guard_events": [
+    {
+      "tool": "collaborationspawn_agent",
+      "child": false
+    }
+  ],
+  "pair_checks": [
+    {
+      "pair": "AB",
+      "expected_expressions": [
+        [
+          80,
+          95,
+          175
+        ],
+        [
+          18,
+          12,
+          30
+        ],
+        [
+          10,
+          15,
+          25
+        ]
+      ],
+      "public_expressions": [
+        [
+          80,
+          95,
+          175
+        ],
+        [
+          18,
+          12,
+          30
+        ],
+        [
+          10,
+          15,
+          25
+        ]
+      ],
+      "saved_expressions": [
+        [
+          80,
+          95,
+          175
+        ],
+        [
+          18,
+          12,
+          30
+        ],
+        [
+          10,
+          15,
+          25
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [],
+      "visible_assessments": [
+        "Pass: $5 under budget",
+        "Pass: meets the kit minimum exactly and exceeds the mat minimum by 5",
+        "Pass: both confirmed by Friday",
+        "**Qualifies**"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "AC",
+      "expected_expressions": [
+        [
+          80,
+          70,
+          150
+        ],
+        [
+          18,
+          16,
+          34
+        ],
+        [
+          10,
+          8,
+          18
+        ]
+      ],
+      "public_expressions": [
+        [
+          80,
+          70,
+          150
+        ],
+        [
+          18,
+          16,
+          34
+        ],
+        [
+          10,
+          8,
+          18
+        ]
+      ],
+      "saved_expressions": [
+        [
+          80,
+          70,
+          150
+        ],
+        [
+          18,
+          16,
+          34
+        ],
+        [
+          10,
+          8,
+          18
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "insufficient mats"
+      ],
+      "visible_assessments": [
+        "Pass: $30 under budget",
+        "Fail: 4 extra kits, but 2 mats short",
+        "Pass: both confirmed by Friday",
+        "Does not qualify: insufficient mats"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "AD",
+      "expected_expressions": [
+        [
+          80,
+          90,
+          170
+        ],
+        [
+          18,
+          14,
+          32
+        ],
+        [
+          10,
+          12,
+          22
+        ]
+      ],
+      "public_expressions": [
+        [
+          80,
+          90,
+          170
+        ],
+        [
+          18,
+          14,
+          32
+        ],
+        [
+          10,
+          12,
+          22
+        ]
+      ],
+      "saved_expressions": [
+        [
+          80,
+          90,
+          170
+        ],
+        [
+          18,
+          14,
+          32
+        ],
+        [
+          10,
+          12,
+          22
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "D unconfirmed"
+      ],
+      "visible_assessments": [
+        "Pass: $10 under budget",
+        "Pass: 2 extra kits and 2 extra mats",
+        "Fail currently: D is tentative, not confirmed",
+        "Does not currently qualify; would qualify if D becomes confirmed by Friday"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "AE",
+      "expected_expressions": [
+        [
+          80,
+          60,
+          140
+        ],
+        [
+          18,
+          10,
+          28
+        ],
+        [
+          10,
+          15,
+          25
+        ]
+      ],
+      "public_expressions": [
+        [
+          80,
+          60,
+          140
+        ],
+        [
+          18,
+          10,
+          28
+        ],
+        [
+          10,
+          15,
+          25
+        ]
+      ],
+      "saved_expressions": [
+        [
+          80,
+          60,
+          140
+        ],
+        [
+          18,
+          10,
+          28
+        ],
+        [
+          10,
+          15,
+          25
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "insufficient kits",
+        "E arrives after event"
+      ],
+      "visible_assessments": [
+        "Pass: $40 under budget",
+        "Fail: 2 kits short, despite 5 extra mats",
+        "Fail: E is confirmed for Monday after the event",
+        "Does not qualify: insufficient kits and E misses Friday"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "BC",
+      "expected_expressions": [
+        [
+          95,
+          70,
+          165
+        ],
+        [
+          12,
+          16,
+          28
+        ],
+        [
+          15,
+          8,
+          23
+        ]
+      ],
+      "public_expressions": [
+        [
+          95,
+          70,
+          165
+        ],
+        [
+          12,
+          16,
+          28
+        ],
+        [
+          15,
+          8,
+          23
+        ]
+      ],
+      "saved_expressions": [
+        [
+          95,
+          70,
+          165
+        ],
+        [
+          12,
+          16,
+          28
+        ],
+        [
+          15,
+          8,
+          23
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "insufficient kits"
+      ],
+      "visible_assessments": [
+        "Pass: $15 under budget",
+        "Fail: 2 kits short, despite 3 extra mats",
+        "Pass: both confirmed by Friday",
+        "Does not qualify: insufficient kits"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "BD",
+      "expected_expressions": [
+        [
+          95,
+          90,
+          185
+        ],
+        [
+          12,
+          14,
+          26
+        ],
+        [
+          15,
+          12,
+          27
+        ]
+      ],
+      "public_expressions": [
+        [
+          95,
+          90,
+          185
+        ],
+        [
+          12,
+          14,
+          26
+        ],
+        [
+          15,
+          12,
+          27
+        ]
+      ],
+      "saved_expressions": [
+        [
+          95,
+          90,
+          185
+        ],
+        [
+          12,
+          14,
+          26
+        ],
+        [
+          15,
+          12,
+          27
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "over budget",
+        "insufficient kits",
+        "D unconfirmed"
+      ],
+      "visible_assessments": [
+        "Fail: $5 over budget",
+        "Fail: 4 kits short, despite 7 extra mats",
+        "Fail currently: D is tentative, not confirmed",
+        "Does not qualify: over budget, insufficient kits, and unconfirmed Friday availability; confirming D would not fix the budget or kit failures"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "BE",
+      "expected_expressions": [
+        [
+          95,
+          60,
+          155
+        ],
+        [
+          12,
+          10,
+          22
+        ],
+        [
+          15,
+          15,
+          30
+        ]
+      ],
+      "public_expressions": [
+        [
+          95,
+          60,
+          155
+        ],
+        [
+          12,
+          10,
+          22
+        ],
+        [
+          15,
+          15,
+          30
+        ]
+      ],
+      "saved_expressions": [
+        [
+          95,
+          60,
+          155
+        ],
+        [
+          12,
+          10,
+          22
+        ],
+        [
+          15,
+          15,
+          30
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "insufficient kits",
+        "E arrives after event"
+      ],
+      "visible_assessments": [
+        "Pass: $25 under budget",
+        "Fail: 8 kits short, despite 10 extra mats",
+        "Fail: E is confirmed for Monday after the event",
+        "Does not qualify: insufficient kits and E misses Friday"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "CD",
+      "expected_expressions": [
+        [
+          70,
+          90,
+          160
+        ],
+        [
+          16,
+          14,
+          30
+        ],
+        [
+          8,
+          12,
+          20
+        ]
+      ],
+      "public_expressions": [
+        [
+          70,
+          90,
+          160
+        ],
+        [
+          16,
+          14,
+          30
+        ],
+        [
+          8,
+          12,
+          20
+        ]
+      ],
+      "saved_expressions": [
+        [
+          70,
+          90,
+          160
+        ],
+        [
+          16,
+          14,
+          30
+        ],
+        [
+          8,
+          12,
+          20
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "D unconfirmed"
+      ],
+      "visible_assessments": [
+        "Pass: $20 under budget",
+        "Pass: meets both quantity minimums exactly",
+        "Fail currently: D is tentative, not confirmed",
+        "Does not currently qualify; would qualify if D becomes confirmed by Friday"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "CE",
+      "expected_expressions": [
+        [
+          70,
+          60,
+          130
+        ],
+        [
+          16,
+          10,
+          26
+        ],
+        [
+          8,
+          15,
+          23
+        ]
+      ],
+      "public_expressions": [
+        [
+          70,
+          60,
+          130
+        ],
+        [
+          16,
+          10,
+          26
+        ],
+        [
+          8,
+          15,
+          23
+        ]
+      ],
+      "saved_expressions": [
+        [
+          70,
+          60,
+          130
+        ],
+        [
+          16,
+          10,
+          26
+        ],
+        [
+          8,
+          15,
+          23
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "insufficient kits",
+        "E arrives after event"
+      ],
+      "visible_assessments": [
+        "Pass: $50 under budget",
+        "Fail: 4 kits short, despite 3 extra mats",
+        "Fail: E is confirmed for Monday after the event",
+        "Does not qualify: insufficient kits and E misses Friday"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    },
+    {
+      "pair": "DE",
+      "expected_expressions": [
+        [
+          90,
+          60,
+          150
+        ],
+        [
+          14,
+          10,
+          24
+        ],
+        [
+          12,
+          15,
+          27
+        ]
+      ],
+      "public_expressions": [
+        [
+          90,
+          60,
+          150
+        ],
+        [
+          14,
+          10,
+          24
+        ],
+        [
+          12,
+          15,
+          27
+        ]
+      ],
+      "saved_expressions": [
+        [
+          90,
+          60,
+          150
+        ],
+        [
+          14,
+          10,
+          24
+        ],
+        [
+          12,
+          15,
+          27
+        ]
+      ],
+      "public_numeric_pass": true,
+      "saved_numeric_pass": true,
+      "required_reasons": [
+        "insufficient kits",
+        "D unconfirmed",
+        "E arrives after event"
+      ],
+      "visible_assessments": [
+        "Pass: $30 under budget",
+        "Fail: 6 kits short, despite 7 extra mats",
+        "Fail: D is tentative and E is confirmed for Monday after the event",
+        "Does not qualify: insufficient kits and neither crate has confirmed Friday availability; confirming D would still leave the kit shortage and E’s timing failure"
+      ],
+      "manual_reason_coverage": "present and correct; independently reviewed against frozen requirements"
+    }
+  ],
+  "root_arithmetic_checks": [
+    {
+      "pair": "AB",
+      "pass": true,
+      "actual": {
+        "Pair": "A+B",
+        "Price": 175,
+        "Kits": 30,
+        "Mats": 25,
+        "Confirmed": true
+      }
+    },
+    {
+      "pair": "AC",
+      "pass": true,
+      "actual": {
+        "Pair": "A+C",
+        "Price": 150,
+        "Kits": 34,
+        "Mats": 18,
+        "Confirmed": true
+      }
+    },
+    {
+      "pair": "AD",
+      "pass": true,
+      "actual": {
+        "Pair": "A+D",
+        "Price": 170,
+        "Kits": 32,
+        "Mats": 22,
+        "Confirmed": false
+      }
+    },
+    {
+      "pair": "AE",
+      "pass": true,
+      "actual": {
+        "Pair": "A+E",
+        "Price": 140,
+        "Kits": 28,
+        "Mats": 25,
+        "Confirmed": false
+      }
+    },
+    {
+      "pair": "BC",
+      "pass": true,
+      "actual": {
+        "Pair": "B+C",
+        "Price": 165,
+        "Kits": 28,
+        "Mats": 23,
+        "Confirmed": true
+      }
+    },
+    {
+      "pair": "BD",
+      "pass": true,
+      "actual": {
+        "Pair": "B+D",
+        "Price": 185,
+        "Kits": 26,
+        "Mats": 27,
+        "Confirmed": false
+      }
+    },
+    {
+      "pair": "BE",
+      "pass": true,
+      "actual": {
+        "Pair": "B+E",
+        "Price": 155,
+        "Kits": 22,
+        "Mats": 30,
+        "Confirmed": false
+      }
+    },
+    {
+      "pair": "CD",
+      "pass": true,
+      "actual": {
+        "Pair": "C+D",
+        "Price": 160,
+        "Kits": 30,
+        "Mats": 20,
+        "Confirmed": false
+      }
+    },
+    {
+      "pair": "CE",
+      "pass": true,
+      "actual": {
+        "Pair": "C+E",
+        "Price": 130,
+        "Kits": 26,
+        "Mats": 23,
+        "Confirmed": false
+      }
+    },
+    {
+      "pair": "DE",
+      "pass": true,
+      "actual": {
+        "Pair": "D+E",
+        "Price": 150,
+        "Kits": 24,
+        "Mats": 27,
+        "Confirmed": false
+      }
+    }
+  ],
+  "transient_arithmetic_failure": {
+    "event": "item_4",
+    "exit_code": 1,
+    "message": "PowerShell ParserError: An empty pipe element is not allowed."
+  },
+  "corrected_arithmetic": {
+    "event": "item_6",
+    "exit_code": 0,
+    "all_ten_pass": true
+  },
+  "checks": {
+    "D1": {
+      "status": "pass",
+      "scope": "One actual native child and two total native sessions are recorded in public capture; no descendant session is recorded. This is observed cardinality, not a general proof of guard enforcement."
+    },
+    "D2": {
+      "status": "unknown",
+      "reason": "Incoming child directive/request is not publicly observable; no style/length-constraint forwarding claim can be verified. Encrypted storage was not decrypted."
+    },
+    "D3": {
+      "status": "pass",
+      "reason": "Actual public child report contains all ten pairs, correct component sums/totals, all rejection reasons, confirmed and conditional choices, savings, and verification caveat."
+    },
+    "D4": {
+      "status": "pass",
+      "reason": "Saved report preserves the full substantive public report: all pair calculations, assessments, conclusions, comparisons, and caveats. No natural-language byte equality is used as a criterion."
+    },
+    "D5": {
+      "status": "pass",
+      "reason": "Root recommends AB at175/30/25, conditional CD at160/30/20, savings15, and confirmation of D before choosing CD."
+    },
+    "D6": {
+      "status": "pass",
+      "reason": "Visible corrected item_6 independently recomputes all ten pairs successfully; earlier item_4 parser failure is retained and distinguished."
+    },
+    "D7": {
+      "status": "pass",
+      "scope": "Observed output boundary only: root recommendation and detailed child/report remain available; incoming request boundary remains unknown under D2. Inheritance alone is not a failure."
+    },
+    "D8": {
+      "status": "pass",
+      "scope": "Native child facility and public returned report are actually observed; missing incoming directive is explicitly unknown rather than fabricated."
+    }
+  }
+}

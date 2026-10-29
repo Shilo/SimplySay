@@ -1,0 +1,32 @@
+{
+  "frozenBeforeTrials": false,
+  "sourceCommit": "de1bd7cb505881c3d79fe31908603c61e230e157",
+  "host": "codex-cli 0.163.0",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "controllerHashes": {
+    "codex-pilot.cjs": "2159812fcb5b122f9e2597df9ec7058b54fedd249627a52d123ee2b74fa4c582",
+    "codex-rpc.cjs": "f23694574dd553b3345dbce56ec7183f88043b398c38e4df1261144519d64067",
+    "session-budget.cjs": "60846785903eb5a11d2ad84bf540a2fc2cc3dbea14a903cfef494cd4939045b0",
+    "policy.txt": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+    "minimal.txt": "250389bbeff5250d424e317993aabeadf65bc63b574201f58d5c071d0004afb5",
+    "cases.json": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+    "criteria": "2ec3075d5b72cc49e09af5a623e03c791583abb1ae951f1b43c17c430784659d"
+  },
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "minimalHash": "250389bbeff5250d424e317993aabeadf65bc63b574201f58d5c071d0004afb5",
+  "caseHash": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+  "ceiling": 12,
+  "diagnosticSlots": 2,
+  "order": [
+    [
+      "r08",
+      "crate_pair_delegation",
+      "enabled",
+      2
+    ]
+  ],
+  "parentManifestHash": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+  "amendment": "r07 root+native child started then capacity failure. CLI JSON omitted V2 spawn activity and incoming directive is not exposed. Correct budget hook canonical name for V2 collaboration namespace; only remaining r08 runs with repaired controller. Policy/tasks unchanged. No baseline rerun fits remaining one-slot reserve; r08 is unpaired output evidence only.",
+  "diagnosticSlotsRemaining": 1
+}

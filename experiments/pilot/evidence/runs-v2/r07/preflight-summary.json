@@ -1,0 +1,63 @@
+{
+  "id": "r07",
+  "caseId": "crate_pair_delegation",
+  "condition": "absent",
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "configHash": "cfe7c4b0cd5b3f851f62e783b6ed4929ca64e6fbe5b25705cf9b1ab4de2fa153",
+  "fingerprints": {
+    "config": "cfe7c4b0cd5b3f851f62e783b6ed4929ca64e6fbe5b25705cf9b1ab4de2fa153",
+    "prompt": "b2f628228d13b922083737c3df2182010b4dd4f51af46c87f84490cd51bb9107",
+    "fixture:crates.json": "08ad8410168ed0b83afae6f5a1f1f33464cf5b2d8b44fa23276b3f6a6970476a"
+  },
+  "candidate": {
+    "pluginId": "ss-feasibility@ss-feasibility-catalog",
+    "installed": false,
+    "enabled": null
+  },
+  "ownedHooks": [],
+  "nativeChildBudgetGuard": [
+    {
+      "eventName": "preToolUse",
+      "handlerType": "command",
+      "enabled": true,
+      "matcher": "spawn_agent",
+      "timeoutSec": 5,
+      "currentHash": "sha256:e26b203dc96bacca68379bdaaacd1a18bb55c3bfa0638fa84b45a0986f8cfe65",
+      "trustStatus": "trusted"
+    }
+  ],
+  "settings": {
+    "model": "gpt-6.1-sol",
+    "model_reasoning_effort": "low",
+    "approval_policy": "never",
+    "sandbox_mode": "workspace-write",
+    "web_search": "disabled",
+    "project_doc_max_bytes": 32768,
+    "include_apps_instructions": true,
+    "sandboxWorkspaceWrite": {
+      "network_access": false,
+      "exclude_tmpdir_env_var": true,
+      "exclude_slash_tmp": true
+    },
+    "windows": {
+      "sandbox": "mxc",
+      "allow_mxc": null
+    },
+    "features": {
+      "apps": false,
+      "multi_agent": true,
+      "memories": false
+    },
+    "agents": {
+      "enabled": true,
+      "max_concurrent_threads_per_session": 1,
+      "max_depth": 1
+    },
+    "otherPluginsDefaultEnabled": false,
+    "developerInstruction": {
+      "present": false,
+      "sha256": null
+    }
+  },
+  "limitation": "Selected configuration and own-hook readback only; not proof of loaded policy, adherence, comprehension, or preserved task quality."
+}

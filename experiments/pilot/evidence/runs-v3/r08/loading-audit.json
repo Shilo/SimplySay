@@ -1,0 +1,21 @@
+{
+  "id": "r08",
+  "method": "Exact full candidate/minimal text matches in stored developer messages; no other message bodies collected",
+  "developerPolicyMatches": 2,
+  "minimalDeveloperMatches": 0,
+  "inheritedPolicyIsNotFailure": true,
+  "threadFiles": [
+    {
+      "file": "rollout-2026-10-28T20-34-57-thread-eec73344bf4694d6.jsonl",
+      "candidateMatches": 1,
+      "minimalMatches": 0,
+      "threadAlias": "thread-eec73344bf4694d6"
+    },
+    {
+      "file": "rollout-2026-10-28T20-35-05-thread-0a21ea19a55aa1e0.jsonl",
+      "candidateMatches": 1,
+      "minimalMatches": 0,
+      "threadAlias": "thread-0a21ea19a55aa1e0"
+    }
+  ]
+}

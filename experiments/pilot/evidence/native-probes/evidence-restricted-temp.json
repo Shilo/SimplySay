@@ -1,0 +1,17 @@
+{
+  "args": [
+    "-c",
+    "sandbox_mode=\"workspace-write\"",
+    "-c",
+    "windows.sandbox=\"mxc\"",
+    "sandbox",
+    "--",
+    "<PROGRAM_FILES>\\nodejs\\node.exe",
+    "<PILOT_ROOT>\\mxc-probe\\task\\probe.cjs"
+  ],
+  "code": 0,
+  "stdout": "{\"read\":\"synthetic fixture\",\"insideWrite\":true,\"outsideWriteDenied\":true}\n",
+  "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Refusing to create helper binaries under temporary dir \"<USER_HOME>\\\\AppData\\\\Local\\\\Temp\\\\\" (codex_home: AbsolutePathBuf(\"<PILOT_ROOT>\\\\mxc-probe\\\\profile\"))\n",
+  "error": null,
+  "credentialFileExists": false
+}

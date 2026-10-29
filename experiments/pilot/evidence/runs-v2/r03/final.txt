@@ -1,0 +1,126 @@
+The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate. It leaves a failure window where a notice can be accepted more than once. Reversing the order creates a window where the notice is permanently missed instead.
+
+The underlying difficulty is that sending to the receiver and updating the stored job are separate operations. The rules provide no transaction that makes those two operations succeed or fail together.
+
+### What the states mean
+
+A job’s stable `job_id` identifies the same job across attempts. Its state tracks the queue’s progress:
+
+- **Ready:** a worker can claim it.
+- **Leased:** a worker has claimed it for 30 seconds.
+- **Done:** the queue considers its work complete.
+
+The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state. In particular, a notice can already be accepted while its job is still leased or available for retry.
+
+A lease provides a way to recover work when a worker stops: after 30 seconds, another worker can take the job. It does **not** stop the old worker from running after expiration.
+
+### The three failure cases
+
+**1. The worker stops before sending.**
+
+The receiver has not received a notice from that attempt. The job remains unfinished. Once its lease expires, it becomes available to another worker, which can retry.
+
+This is the useful recovery case for leases: a stopped worker need not leave a job stuck forever. Delivery still depends on another attempt actually happening and succeeding.
+
+**2. The worker stops after the receiver accepts the notice but before marking the job done.**
+
+The notice has been accepted, but the stored job is still unfinished. After lease expiration, another worker can send it again. Because the current receiver does not deduplicate requests, that retry can produce a duplicate notice.
+
+A timeout creates a similar uncertainty even without a worker stopping. The receiver may have accepted the request despite the timeout. The worker cannot safely interpret the timeout as “nothing happened.” Retrying risks a duplicate; treating it as success risks a missed notice if the receiver actually accepted nothing.
+
+**3. The worker marks the job done before attempting the send.**
+
+If the worker then stops before sending, the queue records completion even though no notice was sent. The rules provide no recovery path for this done job.
+
+A send failure after marking done creates the same problem unless some additional recovery mechanism exists. None is specified here. This order therefore allows a missed notice at precisely the point where the queue has stopped treating the job as unfinished.
+
+### A worked duplicate timeline
+
+Consider job `J42`, with times measured from its first lease:
+
+| Time | Worker action | Stored job state | Receiver history |
+|---|---|---|---|
+| 0 s | Worker A leases `J42` until 30 s. | Leased to A | No notice accepted |
+| 8 s | A sends the notice; the receiver accepts it. | Leased to A | One notice accepted |
+| 9 s | A stops before marking the job done. | Leased to A | One notice accepted |
+| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |
+| 31 s | Worker B leases `J42` until 61 s. | Leased to B | One notice accepted |
+| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |
+| 34 s | B marks `J42` done. | Done | Two notices accepted |
+
+B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded. The duplicate arises from the gap between receiver acceptance and recording completion.
+
+### An old worker can overlap with its replacement
+
+Expiration is not cancellation. For example:
+
+1. At 0 s, A leases a job and then stalls before sending.
+2. At 30 s, its lease expires.
+3. At 31 s, B leases the job.
+4. At 32 s, A resumes and sends; the receiver accepts.
+5. At 33 s, B also sends; the receiver accepts again.
+
+Both workers can reach the receiver because the rules explicitly allow A to keep running after expiration. A need not have sent anything during its original lease for a duplicate to occur.
+
+The rules do not say whether an expired worker’s attempt to mark a job done is rejected, or how ownership is checked during updates. That prevents a complete assessment of stale updates to the queue. Even rejecting those updates would not undo a notice the receiver already accepted.
+
+### Comparing the two operation orders
+
+| Order | Main recovery benefit | Main failure risk |
+|---|---|---|
+| **Send, then mark done** | An unfinished job remains eligible for retry after lease expiration. | An accepted notice can be sent again if completion was not recorded. |
+| **Mark done, then send** | Recording completion first removes the normal unfinished-job retry path. | A stop or unsuccessful send afterward can leave a done job with no delivered notice. |
+
+Sending first favors delivery at the cost of possible duplicates. Marking done first favors avoiding queue-driven retries at the cost of possible loss. Neither order makes the two operations atomic, and marking done first also does not establish that already-running old workers have stopped.
+
+For your stated priority, sending first is the better tradeoff.
+
+### When eventual delivery is plausible
+
+The rules make eventual delivery conditional: **retries must continue, and some attempt must eventually succeed.** A retry mechanism creates opportunities for delivery; it does not guarantee that an attempt will succeed.
+
+For a particular unfinished job, eventual delivery is plausible if it remains stored and available for retry, workers continue taking attempts, and some attempt reaches a receiver that accepts the notice. If workers keep stopping before sending, or no send ever succeeds, delivery need not happen.
+
+Delivery and queue completion are also distinct. A receiver might accept a notice, yet every worker might stop before recording done. That job has been delivered but can keep being retried. For the queue to settle into done, some attempt must also successfully record completion after acceptance.
+
+These rules supply no bound on delivery time or on the number of duplicates. They also do not define whether receiver “acceptance” guarantees durable storage or completion of any downstream effect.
+
+### Stable idempotency keys and durable receiver deduplication
+
+If the receiver can be changed, each attempt should send the same stable idempotency key for the same logical notice. The job’s `job_id` is a natural candidate, provided it uniquely identifies that notice within the receiver’s key scope. Generating a new key for each retry would defeat deduplication.
+
+The receiver would durably remember which keys it has processed. On a repeated key, it would return the previously established result without applying the notification effect again.
+
+For this to prevent duplicate effects, the receiver must make **the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic**—they must commit together or leave a safely recoverable state:
+
+- If the receiver performs the effect and crashes before recording the key, a retry can perform the effect again.
+- If it records the key as completed and crashes before performing the effect, a retry can be suppressed even though the effect never happened.
+- If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.
+
+A database transaction could provide this atomic boundary if the effect and deduplication record are both within that database. If the effect is itself a call to another separate service, a local transaction alone does not cover that external effect; the design would need a further guarantee at that boundary.
+
+The deduplication record must also survive receiver restarts and remain available for as long as old requests or retries can arrive. Deleting it too early permits a later duplicate. These rules give no maximum retry or old-worker lifetime from which to derive a safe retention period.
+
+With those conditions satisfied, retries and overlapping workers could create multiple requests while producing one effect per key. The receiver’s ability to support this is currently unknown, so it is a proposed improvement rather than an existing guarantee.
+
+### What longer leases and renewal help with
+
+A longer lease reduces the chance that legitimate, slow work outlasts its lease. Renewal lets an active worker extend its claim, which can reduce unnecessary replacement workers and overlapping sends.
+
+Both measures have limits:
+
+- A longer lease delays recovery when a worker really has stopped.
+- Renewal can fail or arrive too late, leaving an old worker running after expiration.
+- Neither makes receiver acceptance and marking done atomic.
+- Neither resolves a timeout whose acceptance status is unknown.
+- Neither prevents the accepted-then-stopped failure window.
+
+They can reduce duplicates caused by premature lease expiration, but they cannot establish duplicate-free delivery.
+
+### Recommendation and remaining limits
+
+Keep **send before marking done**, preserve retries for unfinished jobs, and treat a timeout as an unknown outcome that may require retrying. This accepts duplicate risk to protect your higher priority: avoiding missed notices.
+
+Investigate receiver support for stable idempotency keys and durable, atomic deduplication. Use lease duration or renewal to reduce avoidable overlap, while retaining the same failure handling.
+
+From the supplied rules, we cannot promise delivery without continued retries and an eventual successful attempt, duplicate-free behavior with the current receiver, a delivery deadline, or exactly one downstream effect. We also cannot determine receiver durability, deduplication feasibility, or stale-worker update behavior. Those are the remaining design questions that matter before making stronger guarantees.

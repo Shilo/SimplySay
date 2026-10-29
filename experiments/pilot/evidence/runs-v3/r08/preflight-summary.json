@@ -1,0 +1,74 @@
+{
+  "id": "r08",
+  "caseId": "crate_pair_delegation",
+  "condition": "enabled",
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "configHash": "767afdb9ea4870fcb31b8daa51b15cf5e13d3940c13c5e6ccf9f7bafb34c51fd",
+  "fingerprints": {
+    "config": "767afdb9ea4870fcb31b8daa51b15cf5e13d3940c13c5e6ccf9f7bafb34c51fd",
+    "prompt": "b2f628228d13b922083737c3df2182010b4dd4f51af46c87f84490cd51bb9107",
+    "fixture:crates.json": "08ad8410168ed0b83afae6f5a1f1f33464cf5b2d8b44fa23276b3f6a6970476a"
+  },
+  "candidate": {
+    "pluginId": "ss-feasibility@ss-feasibility-catalog",
+    "installed": true,
+    "enabled": true,
+    "version": "0.0.0"
+  },
+  "ownedHooks": [
+    {
+      "eventName": "sessionStart",
+      "handlerType": "command",
+      "enabled": true,
+      "matcher": "startup",
+      "timeoutSec": 10,
+      "currentHash": "sha256:95413dd9c205a0a3025ef2403f47fe226336c1263655a43bcec4148f6cc047ef",
+      "trustStatus": "trusted"
+    }
+  ],
+  "nativeChildBudgetGuard": [
+    {
+      "eventName": "preToolUse",
+      "handlerType": "command",
+      "enabled": true,
+      "matcher": "^(spawn_agent|collaborationspawn_agent)$",
+      "timeoutSec": 5,
+      "currentHash": "sha256:f3a355b7753cdc2cff59590645925757f351d0261746b94f07aebbfbcc9ae9b8",
+      "trustStatus": "trusted"
+    }
+  ],
+  "settings": {
+    "model": "gpt-6.1-sol",
+    "model_reasoning_effort": "low",
+    "approval_policy": "never",
+    "sandbox_mode": "workspace-write",
+    "web_search": "disabled",
+    "project_doc_max_bytes": 32768,
+    "include_apps_instructions": true,
+    "sandboxWorkspaceWrite": {
+      "network_access": false,
+      "exclude_tmpdir_env_var": true,
+      "exclude_slash_tmp": true
+    },
+    "windows": {
+      "sandbox": "mxc",
+      "allow_mxc": null
+    },
+    "features": {
+      "apps": false,
+      "multi_agent": true,
+      "memories": false
+    },
+    "agents": {
+      "enabled": true,
+      "max_concurrent_threads_per_session": 1,
+      "max_depth": 1
+    },
+    "otherPluginsDefaultEnabled": false,
+    "developerInstruction": {
+      "present": false,
+      "sha256": null
+    }
+  },
+  "limitation": "Selected configuration and own-hook readback only; not proof of loaded policy, adherence, comprehension, or preserved task quality."
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "Account-wide subscription percentages, including development activity; not an isolated subject usage or cost measurement.",
+  "subscriptionRateLimits": {
+    "primary": {
+      "usedPercent": 47,
+      "windowDurationMins": 10080
+    },
+    "secondary": null
+  },
+  "byModel": {
+    "codex": {
+      "primary": {
+        "usedPercent": 47,
+        "windowDurationMins": 10080
+      },
+      "secondary": null
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-28",
+  "scope": "Only disposable pilot Codex roots; source sign-in cache not modified",
+  "lateCopiesFound": 0,
+  "lateCopiesRemoved": 0,
+  "remainingPilotAuthCopies": 0,
+  "chargedSessionSlots": 11,
+  "rootReservations": 9,
+  "nativeChildrenConfirmed": 2,
+  "activeCeiling": 12,
+  "originalCeiling": 24,
+  "additionalModelRunsScheduled": false
+}

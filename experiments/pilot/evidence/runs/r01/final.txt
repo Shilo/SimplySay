@@ -1,0 +1,17 @@
+I couldn’t complete the build: this session has read-only filesystem access, and execution policy rejected both attempts to read `input.json`. No files were created, and no tests ran. I can’t verify the approved total or identify the specific review items.
+
+To finish, the workspace needs file-write and command-execution access. Pending claims will need approval; approved claims without receipts will need receipts. Friday arrival also requires confirmation of the payment team’s processing schedule and bank timing.
+
+Ready-to-copy email (not sent):
+
+To: casey@example.invalid  
+Subject: Reimbursement batch status and Friday timing
+
+Hi Casey,
+
+The approved reimbursement amount is still unverified because the batch has not yet been processed. Claims pending approval need approval, and approved claims missing receipts need those receipts before inclusion. The specific review items are also still unverified.
+
+We cannot confirm arrival on Friday. We don’t yet have confirmation of the payment team’s processing schedule or bank arrival times.
+
+Best,  
+[Your name]

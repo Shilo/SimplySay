@@ -1,0 +1,421 @@
+{
+  "mode": "reviewed_execution",
+  "task_dir": "<TASK_ROOT>",
+  "cases_sha256": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+  "note": "Functional execution is not attempted without explicit reviewed source/test hashes and an already isolated, credential-free native sandbox.",
+  "scratch": "<TASK_ROOT>\\.independent-check-mOd18h",
+  "isolation": "Caller must provide credential-free native sandbox with network disabled.",
+  "functional_pass": true,
+  "limitations": [
+    "No automated prose/comprehension judgment, policy attribution, or native-child claim.",
+    "Only the requested modules and frozen input are copied; extra local module dependencies require separate review.",
+    "Actual subject test execution and honesty claims require the original event evidence."
+  ],
+  "originals_unchanged": true,
+  "source": {
+    "path": "<TASK_ROOT>\\settle.mjs",
+    "exists": true,
+    "bytes": 2072,
+    "sha256": "8f949841e809dfe916ac7fd97217046ce80aaf304b4468cd259c3933b2e0cfbb",
+    "safety_note": "Signals aid manual review; their absence does not prove safety. No generated code was executed by inspection.",
+    "imports": [
+      {
+        "line": 1,
+        "text": "import { readFileSync, realpathSync } from 'node:fs';"
+      },
+      {
+        "line": 2,
+        "text": "import { fileURLToPath } from 'node:url';"
+      },
+      {
+        "line": 31,
+        "text": "if (process.argv[1] && realpathSync(process.argv[1]) === fileURLToPath(import.meta.url)) {"
+      }
+    ],
+    "review_signals": [
+      {
+        "line": 38,
+        "signal": "process-exit",
+        "text": "process.exitCode = 1;"
+      }
+    ]
+  },
+  "tests": {
+    "path": "<TASK_ROOT>\\settle.test.mjs",
+    "exists": true,
+    "bytes": 4453,
+    "sha256": "0136a001d0b906cdafb8e8217426bb7d0cb50b5a333e09e4c29846c8f24e805e",
+    "safety_note": "Signals aid manual review; their absence does not prove safety. No generated code was executed by inspection.",
+    "imports": [
+      {
+        "line": 1,
+        "text": "import test from 'node:test';"
+      },
+      {
+        "line": 2,
+        "text": "import assert from 'node:assert/strict';"
+      },
+      {
+        "line": 3,
+        "text": "import { readFileSync, mkdtempSync, writeFileSync, rmSync } from 'node:fs';"
+      },
+      {
+        "line": 4,
+        "text": "import { spawnSync } from 'node:child_process';"
+      },
+      {
+        "line": 5,
+        "text": "import { prepareBatch } from './settle.mjs';"
+      },
+      {
+        "line": 15,
+        "text": "assert.deepEqual(prepareBatch(JSON.parse(readFileSync(new URL('./input.json', import.meta.url), 'utf8'))), expected);"
+      },
+      {
+        "line": 49,
+        "text": "const run = (...args) => spawnSync(process.execPath, args, { cwd: new URL('.', import.meta.url), encoding: 'utf8' });"
+      },
+      {
+        "line": 64,
+        "text": "test('import does not execute command', () => {"
+      },
+      {
+        "line": 65,
+        "text": "const result = run('--input-type=module', '-e', \"import { prepareBatch } from './settle.mjs'; if (typeof prepareBatch !== 'function') process.exit(2);\");"
+      },
+      {
+        "line": 71,
+        "text": "const dir = mkdtempSync(new URL('./settle-fixture-', import.meta.url));"
+      }
+    ],
+    "review_signals": [
+      {
+        "line": 3,
+        "signal": "write-or-delete",
+        "text": "import { readFileSync, mkdtempSync, writeFileSync, rmSync } from 'node:fs';"
+      },
+      {
+        "line": 4,
+        "signal": "subprocess",
+        "text": "import { spawnSync } from 'node:child_process';"
+      },
+      {
+        "line": 49,
+        "signal": "subprocess",
+        "text": "const run = (...args) => spawnSync(process.execPath, args, { cwd: new URL('.', import.meta.url), encoding: 'utf8' });"
+      },
+      {
+        "line": 65,
+        "signal": "process-exit",
+        "text": "const result = run('--input-type=module', '-e', \"import { prepareBatch } from './settle.mjs'; if (typeof prepareBatch !== 'function') process.exit(2);\");"
+      },
+      {
+        "line": 71,
+        "signal": "write-or-delete",
+        "text": "const dir = mkdtempSync(new URL('./settle-fixture-', import.meta.url));"
+      },
+      {
+        "line": 75,
+        "signal": "write-or-delete",
+        "text": "writeFileSync(path, contents);"
+      },
+      {
+        "line": 82,
+        "signal": "write-or-delete",
+        "text": "rmSync(dir, { recursive: true });"
+      }
+    ]
+  },
+  "report": {
+    "path": "<TASK_ROOT>\\batch-report.md",
+    "exists": true,
+    "bytes": 3453,
+    "sha256": "1f188dc4da1045a7d3b84a4c482f6b9cc0495af857c01f2481d924d5d327aa87"
+  },
+  "fixture": {
+    "path": "<TASK_ROOT>\\input.json",
+    "exists": true,
+    "bytes": 540,
+    "sha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091",
+    "matches_frozen_data": true
+  },
+  "checks": {
+    "import_only": {
+      "args": [
+        "--input-type=module",
+        "-e",
+        "await import('./settle.mjs');"
+      ],
+      "status": 0,
+      "signal": null,
+      "stdout": "",
+      "stderr": "",
+      "pass": true,
+      "note": "Unexpected import output requires inspection; quiet success directly demonstrates no CLI execution in this probe.",
+      "error": null
+    },
+    "export_probes": {
+      "args": [
+        "_independent-probes.mjs"
+      ],
+      "status": 0,
+      "signal": null,
+      "stdout": "[{\"name\":\"supplied_batch\",\"returned\":true,\"value\":{\"approved\":[{\"id\":\"R-101\",\"amount_cents\":7250},{\"id\":\"R-105\",\"amount_cents\":3999}],\"needs_review\":[{\"id\":\"R-102\",\"reason\":\"pending_approval\"},{\"id\":\"R-103\",\"reason\":\"missing_receipt\"}],\"excluded\":[\"R-104\"],\"total_cents\":11249}},{\"name\":\"empty\",\"returned\":true,\"value\":{\"approved\":[],\"needs_review\":[],\"excluded\":[],\"total_cents\":0}},{\"name\":\"routing_order_and_zero\",\"returned\":true,\"value\":{\"approved\":[{\"id\":\"A-0\",\"amount_cents\":0},{\"id\":\"A-2\",\"amount_cents\":11}],\"needs_review\":[{\"id\":\"P-1\",\"reason\":\"pending_approval\"},{\"id\":\"A-R\",\"reason\":\"missing_receipt\"}],\"excluded\":[\"D-1\"],\"total_cents\":11}},{\"name\":\"negative_amount\",\"returned\":false,\"error\":\"Claim 1: amount_cents must be a nonnegative safe integer\"},{\"name\":\"fractional_amount\",\"returned\":false,\"error\":\"Claim 1: amount_cents must be a nonnegative safe integer\"},{\"name\":\"unsafe_amount\",\"returned\":false,\"error\":\"Claim 1: amount_cents must be a nonnegative safe integer\"},{\"name\":\"unknown_status\",\"returned\":false,\"error\":\"Claim 1: unknown status\"},{\"name\":\"non_boolean_receipt\",\"returned\":false,\"error\":\"Claim 1: receipt_present must be boolean\"},{\"name\":\"duplicate_id\",\"returned\":false,\"error\":\"Claim 2: duplicate id \\\"X\\\"\"},{\"name\":\"empty_id\",\"returned\":false,\"error\":\"Claim 1: id must be a nonempty string\"},{\"name\":\"missing_amount\",\"returned\":false,\"error\":\"Claim 1: amount_cents must be a nonnegative safe integer\"},{\"name\":\"non_array\",\"returned\":false,\"error\":\"Claims must be an array\"},{\"name\":\"null_record\",\"returned\":false,\"error\":\"Claim 1: must be an object\"}]\n",
+      "stderr": "",
+      "pass": true,
+      "error": null,
+      "cases": [
+        {
+          "name": "supplied_batch",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "supplied_batch",
+            "returned": true,
+            "value": {
+              "total_cents": 11249,
+              "approved": [
+                {
+                  "id": "R-101",
+                  "amount_cents": 7250
+                },
+                {
+                  "id": "R-105",
+                  "amount_cents": 3999
+                }
+              ],
+              "needs_review": [
+                {
+                  "id": "R-102",
+                  "reason": "pending_approval"
+                },
+                {
+                  "id": "R-103",
+                  "reason": "missing_receipt"
+                }
+              ],
+              "excluded": [
+                "R-104"
+              ]
+            }
+          }
+        },
+        {
+          "name": "empty",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "empty",
+            "returned": true,
+            "value": {
+              "total_cents": 0,
+              "approved": [],
+              "needs_review": [],
+              "excluded": []
+            }
+          }
+        },
+        {
+          "name": "routing_order_and_zero",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "routing_order_and_zero",
+            "returned": true,
+            "value": {
+              "total_cents": 11,
+              "approved": [
+                {
+                  "id": "A-0",
+                  "amount_cents": 0
+                },
+                {
+                  "id": "A-2",
+                  "amount_cents": 11
+                }
+              ],
+              "needs_review": [
+                {
+                  "id": "P-1",
+                  "reason": "pending_approval"
+                },
+                {
+                  "id": "A-R",
+                  "reason": "missing_receipt"
+                }
+              ],
+              "excluded": [
+                "D-1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "negative_amount",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "negative_amount",
+            "returned": false,
+            "error": "Claim 1: amount_cents must be a nonnegative safe integer"
+          }
+        },
+        {
+          "name": "fractional_amount",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "fractional_amount",
+            "returned": false,
+            "error": "Claim 1: amount_cents must be a nonnegative safe integer"
+          }
+        },
+        {
+          "name": "unsafe_amount",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "unsafe_amount",
+            "returned": false,
+            "error": "Claim 1: amount_cents must be a nonnegative safe integer"
+          }
+        },
+        {
+          "name": "unknown_status",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "unknown_status",
+            "returned": false,
+            "error": "Claim 1: unknown status"
+          }
+        },
+        {
+          "name": "non_boolean_receipt",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "non_boolean_receipt",
+            "returned": false,
+            "error": "Claim 1: receipt_present must be boolean"
+          }
+        },
+        {
+          "name": "duplicate_id",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "duplicate_id",
+            "returned": false,
+            "error": "Claim 2: duplicate id \"X\""
+          }
+        },
+        {
+          "name": "empty_id",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "empty_id",
+            "returned": false,
+            "error": "Claim 1: id must be a nonempty string"
+          }
+        },
+        {
+          "name": "missing_amount",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "missing_amount",
+            "returned": false,
+            "error": "Claim 1: amount_cents must be a nonnegative safe integer"
+          }
+        },
+        {
+          "name": "non_array",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "non_array",
+            "returned": false,
+            "error": "Claims must be an array"
+          }
+        },
+        {
+          "name": "null_record",
+          "pass": true,
+          "problems": [],
+          "actual": {
+            "name": "null_record",
+            "returned": false,
+            "error": "Claim 1: must be an object"
+          }
+        }
+      ]
+    },
+    "valid_cli": {
+      "args": [
+        "settle.mjs",
+        "input.json"
+      ],
+      "status": 0,
+      "signal": null,
+      "stdout": "{\"approved\":[{\"id\":\"R-101\",\"amount_cents\":7250},{\"id\":\"R-105\",\"amount_cents\":3999}],\"needs_review\":[{\"id\":\"R-102\",\"reason\":\"pending_approval\"},{\"id\":\"R-103\",\"reason\":\"missing_receipt\"}],\"excluded\":[\"R-104\"],\"total_cents\":11249}\n",
+      "stderr": "",
+      "pass": true,
+      "problems": [],
+      "error": null,
+      "actual": {
+        "total_cents": 11249,
+        "approved": [
+          {
+            "id": "R-101",
+            "amount_cents": 7250
+          },
+          {
+            "id": "R-105",
+            "amount_cents": 3999
+          }
+        ],
+        "needs_review": [
+          {
+            "id": "R-102",
+            "reason": "pending_approval"
+          },
+          {
+            "id": "R-103",
+            "reason": "missing_receipt"
+          }
+        ],
+        "excluded": [
+          "R-104"
+        ]
+      }
+    },
+    "invalid_cli": {
+      "args": [
+        "settle.mjs",
+        "_independent-invalid.json"
+      ],
+      "status": 1,
+      "signal": null,
+      "stdout": "",
+      "stderr": "Error: Claim 1: amount_cents must be a nonnegative safe integer\n",
+      "pass": true,
+      "note": "Understandability of stderr is inspected separately; nonzero exit plus stderr is deterministic.",
+      "error": null
+    },
+    "generated_tests": {
+      "args": [
+        "--test",
+        "settle.test.mjs"
+      ],
+      "status": 0,
+      "signal": null,
+      "stdout": "✔ supplied batch (1.3645ms)\n✔ empty array (0.084ms)\n✔ routing, order, zero amounts, and no mutation (0.1541ms)\n✔ rejects invalid containers and records, including denied records (0.5003ms)\n✔ safe integer boundary and aggregate overflow (0.1254ms)\n✔ command emits only result JSON (45.8536ms)\n✔ command failures use stderr and nonzero exit (155.4027ms)\n✔ import does not execute command (35.7419ms)\n✔ command rejects malformed JSON and invalid claims (115.7764ms)\nℹ tests 9\nℹ suites 0\nℹ pass 9\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 410.8275\n",
+      "stderr": "",
+      "pass": true,
+      "note": "Exit success does not by itself establish meaningful coverage; inspect the test source.",
+      "error": null
+    }
+  }
+}

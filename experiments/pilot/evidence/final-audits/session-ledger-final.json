@@ -1,0 +1,86 @@
+{
+  "limit": 24,
+  "reservations": [
+    {
+      "id": "r01",
+      "host": "codex",
+      "caseId": "reimbursement_batch",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T02:43:41.209Z",
+      "finishedAt": "2026-10-29T02:44:07.365Z"
+    },
+    {
+      "id": "r09",
+      "host": "codex",
+      "caseId": "reimbursement_batch",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T02:58:39.231Z",
+      "finishedAt": "2026-10-29T02:59:37.200Z"
+    },
+    {
+      "id": "r02",
+      "host": "codex",
+      "caseId": "reimbursement_batch",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T02:59:55.897Z",
+      "finishedAt": "2026-10-29T03:01:04.328Z"
+    },
+    {
+      "id": "r03",
+      "host": "codex",
+      "caseId": "queue_failure_explanation",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T03:03:14.169Z",
+      "finishedAt": "2026-10-29T03:04:34.302Z"
+    },
+    {
+      "id": "r04",
+      "host": "codex",
+      "caseId": "reimbursement_batch",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T03:06:03.763Z",
+      "finishedAt": "2026-10-29T03:07:41.805Z"
+    },
+    {
+      "id": "r05",
+      "host": "codex",
+      "caseId": "queue_failure_explanation",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T03:08:45.537Z",
+      "finishedAt": "2026-10-29T03:09:53.460Z"
+    },
+    {
+      "id": "r06",
+      "host": "codex",
+      "caseId": "reimbursement_batch",
+      "slots": 1,
+      "state": "completed",
+      "reservedAt": "2026-10-29T03:11:37.211Z",
+      "finishedAt": "2026-10-29T03:12:46.592Z"
+    },
+    {
+      "id": "r07",
+      "host": "codex",
+      "caseId": "crate_pair_delegation",
+      "slots": 2,
+      "state": "failed",
+      "reservedAt": "2026-10-29T03:13:37.988Z",
+      "finishedAt": "2026-10-29T03:14:08.341Z"
+    },
+    {
+      "id": "r08",
+      "host": "codex",
+      "caseId": "crate_pair_delegation",
+      "slots": 2,
+      "state": "completed",
+      "reservedAt": "2026-10-29T03:34:56.333Z",
+      "finishedAt": "2026-10-29T03:37:16.853Z"
+    }
+  ]
+}

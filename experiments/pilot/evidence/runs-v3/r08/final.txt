@@ -1,0 +1,7 @@
+Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday. This is the only currently qualifying pair and leaves **$5** of the $180 budget.
+
+If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**. It saves **$15**, with five fewer mats and no quantity surplus.
+
+**Next action:** verify D’s Friday availability before choosing C + D. Tentative availability does not qualify; otherwise, choose A + B.
+
+Exactly one native child performed the analysis without delegation. I independently checked all ten pairs’ arithmetic and constraints and verified the saved [child-report.txt](<TASK_ROOT>/child-report.txt). The child’s full original response remains observable in the session.

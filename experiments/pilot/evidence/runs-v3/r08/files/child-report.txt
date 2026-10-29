@@ -1,0 +1,24 @@
+Craft-event crate-pair report
+
+The supplied data requires exactly two different crates, at most one of each, with at least 30 kits and 20 mats, a combined price no greater than $180, and availability confirmed by Friday. There are 10 possible pairs. Crates A, B, and C have confirmed Friday availability. D is tentative for Friday and is not confirmed. E is confirmed for Monday after the event, so it does not meet the Friday requirement.
+
+| Pair | Combined price | Kits | Mats | Budget assessment | Quantity assessment | Confirmed-Friday assessment | Overall result |
+|---|---:|---:|---:|---|---|---|---|
+| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25** | Pass: $5 under budget | Pass: meets the kit minimum exactly and exceeds the mat minimum by 5 | Pass: both confirmed by Friday | **Qualifies** |
+| A + C | $80 + $70 = **$150** | 18 + 16 = **34** | 10 + 8 = **18** | Pass: $30 under budget | Fail: 4 extra kits, but 2 mats short | Pass: both confirmed by Friday | Does not qualify: insufficient mats |
+| A + D | $80 + $90 = **$170** | 18 + 14 = **32** | 10 + 12 = **22** | Pass: $10 under budget | Pass: 2 extra kits and 2 extra mats | Fail currently: D is tentative, not confirmed | Does not currently qualify; would qualify if D becomes confirmed by Friday |
+| A + E | $80 + $60 = **$140** | 18 + 10 = **28** | 10 + 15 = **25** | Pass: $40 under budget | Fail: 2 kits short, despite 5 extra mats | Fail: E is confirmed for Monday after the event | Does not qualify: insufficient kits and E misses Friday |
+| B + C | $95 + $70 = **$165** | 12 + 16 = **28** | 15 + 8 = **23** | Pass: $15 under budget | Fail: 2 kits short, despite 3 extra mats | Pass: both confirmed by Friday | Does not qualify: insufficient kits |
+| B + D | $95 + $90 = **$185** | 12 + 14 = **26** | 15 + 12 = **27** | Fail: $5 over budget | Fail: 4 kits short, despite 7 extra mats | Fail currently: D is tentative, not confirmed | Does not qualify: over budget, insufficient kits, and unconfirmed Friday availability; confirming D would not fix the budget or kit failures |
+| B + E | $95 + $60 = **$155** | 12 + 10 = **22** | 15 + 15 = **30** | Pass: $25 under budget | Fail: 8 kits short, despite 10 extra mats | Fail: E is confirmed for Monday after the event | Does not qualify: insufficient kits and E misses Friday |
+| C + D | $70 + $90 = **$160** | 16 + 14 = **30** | 8 + 12 = **20** | Pass: $20 under budget | Pass: meets both quantity minimums exactly | Fail currently: D is tentative, not confirmed | Does not currently qualify; would qualify if D becomes confirmed by Friday |
+| C + E | $70 + $60 = **$130** | 16 + 10 = **26** | 8 + 15 = **23** | Pass: $50 under budget | Fail: 4 kits short, despite 3 extra mats | Fail: E is confirmed for Monday after the event | Does not qualify: insufficient kits and E misses Friday |
+| D + E | $90 + $60 = **$150** | 14 + 10 = **24** | 12 + 15 = **27** | Pass: $30 under budget | Fail: 6 kits short, despite 7 extra mats | Fail: D is tentative and E is confirmed for Monday after the event | Does not qualify: insufficient kits and neither crate has confirmed Friday availability; confirming D would still leave the kit shortage and E’s timing failure |
+
+The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**. It is also the only pair that currently satisfies every requirement. Its budget margin is **$5**.
+
+If D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**. A + D would also become eligible, at $170 with 32 kits and 22 mats, but would cost $10 more than C + D. B + D would remain ineligible.
+
+Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B. Both choices supply 30 kits, but C + D supplies **5 fewer mats**: 20 instead of 25. C + D leaves **$20** of the budget unused, compared with **$5** for A + B. C + D meets both quantity minimums exactly, while A + B has a five-mat surplus.
+
+The unresolved fact is whether D will actually become **confirmed by Friday**. Its tentative status cannot be treated as satisfying that requirement. On the supplied data, A + B can be recommended now; C + D is a conditional cheaper alternative. The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D. If D remains tentative, select A + B. No other factual uncertainty or additional purchasing requirement is specified in the exercise.

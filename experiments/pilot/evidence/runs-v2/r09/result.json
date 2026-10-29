@@ -1,0 +1,13 @@
+{
+  "id": "r09",
+  "code": 0,
+  "error": null,
+  "timedOut": false,
+  "budgetViolation": false,
+  "observedChildren": [],
+  "durationMs": 57932,
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "plannedSlots": 1,
+  "authCopyRemoved": true
+}

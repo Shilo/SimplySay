@@ -1,0 +1,20 @@
+Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md` using only built-in Node.js modules.
+
+All **8 tests passed**. The CLI also returned the expected batch: **11,249 cents approved**.
+
+Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival requires confirmation of payment processing and bank timing.
+
+Ready-to-copy email (not sent):
+
+To: casey@example.invalid  
+Subject: Reimbursement batch status and Friday timing
+
+Hi Casey,
+
+The batch has 11,249 cents approved with receipts across R-101 and R-105—112.49 in the batch’s currency, which the input does not specify.
+
+R-102 (2,400 cents) still needs approval, and R-103 (1,800 cents) needs a receipt. Neither is included in the approved amount. R-104 was denied and is excluded.
+
+We cannot confirm Friday arrival yet. We need confirmation of the payment team’s processing schedule and expected bank arrival times before giving you an arrival date. Batch approval does not confirm payment has been sent.
+
+Best,

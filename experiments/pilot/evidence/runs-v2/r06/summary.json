@@ -1,0 +1,106 @@
+{
+  "id": "r06",
+  "caseId": "reimbursement_batch",
+  "condition": "minimal",
+  "runDirectory": "runs-v2",
+  "sourceCommit": "2ce29f6e63528ad3218379728b14fd2206175b1b",
+  "host": "codex-cli 0.163.0",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd",
+  "caseHash": "26db3a74932254c6c293369c3714f497dc748bbed191652a8d26dd17a628c5db",
+  "manifestSha256": "e9f903210eb27cbf43ae8c16e38ca722891f37f2f04868e98f02af74eb7b9767",
+  "parentManifestHash": "261bed39e98d4de3ce39b8b8c352d378737da2bcddb37269f035b3202288fa5e",
+  "classification": "process_completed_not_quality_graded",
+  "result": {
+    "code": 0,
+    "error": null,
+    "timedOut": false,
+    "budgetViolation": false,
+    "durationMs": 69339,
+    "plannedSlots": 1
+  },
+  "usage": [
+    {
+      "input_tokens": 62020,
+      "cached_input_tokens": 49792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3789,
+      "reasoning_output_tokens": 0
+    }
+  ],
+  "visibleEventCount": 15,
+  "omittedEventCounts": {},
+  "finalAvailable": true,
+  "ownSessionStartRecordAvailable": false,
+  "artifacts": [
+    {
+      "path": "input.json",
+      "present": true,
+      "sourceBytes": 540,
+      "sourceSha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091",
+      "exportedSha256": "8fcbe977ef08b9f3d4bc6acb74a78802cf2bbba2c9d6a942870d1ac110f62091",
+      "privacyScrubbed": false
+    },
+    {
+      "path": "settle.mjs",
+      "present": true,
+      "sourceBytes": 2146,
+      "sourceSha256": "5376c126dcf800341e58b6fd9705243cd02fa57c56f194533599682da55b4b72",
+      "exportedSha256": "5376c126dcf800341e58b6fd9705243cd02fa57c56f194533599682da55b4b72",
+      "privacyScrubbed": false
+    },
+    {
+      "path": "settle.test.mjs",
+      "present": true,
+      "sourceBytes": 5052,
+      "sourceSha256": "84b2f793c1a4292877aa09e2db4d3eb551f3ce719731a5ee96e9ba7fa6e9c5da",
+      "exportedSha256": "84b2f793c1a4292877aa09e2db4d3eb551f3ce719731a5ee96e9ba7fa6e9c5da",
+      "privacyScrubbed": false
+    },
+    {
+      "path": "batch-report.md",
+      "present": true,
+      "sourceBytes": 3797,
+      "sourceSha256": "ec03b2352c45a66216537db2ea2426f4f24c06944b39ce1ef3dfea63defc6b1a",
+      "exportedSha256": "ec03b2352c45a66216537db2ea2426f4f24c06944b39ce1ef3dfea63defc6b1a",
+      "privacyScrubbed": false
+    },
+    {
+      "path": "child-report.txt",
+      "present": false
+    },
+    {
+      "path": "queue-rules.txt",
+      "present": false
+    },
+    {
+      "path": "crates.json",
+      "present": false
+    }
+  ],
+  "independentCheckAvailable": true,
+  "loadingEvidenceAvailable": true,
+  "developerPolicyMatches": 0,
+  "minimalDeveloperMatches": 1,
+  "loadingThreadPresence": [
+    {
+      "threadAlias": "thread-12f4836ec4986cb5",
+      "candidateMatches": 0,
+      "minimalMatches": 1
+    }
+  ],
+  "nativePublicMessages": [],
+  "independentFunctionalPass": true,
+  "nativeChildCapture": {
+    "actualChildSessions": null,
+    "limitation": "No separate metadata audit selected; CLI observedChildren alone is not an authoritative count."
+  },
+  "limits": [
+    "No model subject or generated code executed by exporter.",
+    "Only explicit visible-event fields exported; private reasoning, rollouts, credentials and raw profiles excluded.",
+    "Numeric reasoning-token usage is accounting metadata, not reasoning content.",
+    "Path literals and thread UUIDs may be scrubbed; original artifact bytes remain unchanged at source.",
+    "Process completion is not a task-quality, activation, release, or human-comprehension verdict."
+  ]
+}
