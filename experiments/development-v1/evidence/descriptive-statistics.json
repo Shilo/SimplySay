@@ -1,0 +1,359 @@
+{
+  "not_a_quality_score": true,
+  "rows": [
+    {
+      "id": "e05",
+      "case_id": "d1-workshop-registration",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v2.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 97,
+          "duration_ms": 14225
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 79,
+          "duration_ms": 6752
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 42,
+          "duration_ms": 5244
+        }
+      ]
+    },
+    {
+      "id": "e03",
+      "case_id": "d1-workshop-registration",
+      "condition": "absent",
+      "policy": null,
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 111,
+          "duration_ms": 13150
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 79,
+          "duration_ms": 5867
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 62,
+          "duration_ms": 6957
+        }
+      ]
+    },
+    {
+      "id": "e06",
+      "case_id": "d1-workshop-registration",
+      "condition": "minimal",
+      "policy": null,
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 84,
+          "duration_ms": 11220
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 83,
+          "duration_ms": 7360
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 53,
+          "duration_ms": 12795
+        }
+      ]
+    },
+    {
+      "id": "e04",
+      "case_id": "d1-workshop-registration",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v2.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 94,
+          "duration_ms": 12271
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 74,
+          "duration_ms": 6444
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 50,
+          "duration_ms": 5650
+        }
+      ]
+    },
+    {
+      "id": "e08",
+      "case_id": "d2-contact-export-repair",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v2.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 2,
+          "final_words": 46,
+          "duration_ms": 80132
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 85,
+          "duration_ms": 9342
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 343,
+          "duration_ms": 17096
+        },
+        {
+          "turn": 4,
+          "progress_messages": 1,
+          "final_words": 114,
+          "duration_ms": 35375
+        }
+      ]
+    },
+    {
+      "id": "e10",
+      "case_id": "d2-contact-export-repair",
+      "condition": "minimal",
+      "policy": null,
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 3,
+          "final_words": 47,
+          "duration_ms": 78624
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 100,
+          "duration_ms": 10779
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 291,
+          "duration_ms": 19459
+        },
+        {
+          "turn": 4,
+          "progress_messages": 1,
+          "final_words": 103,
+          "duration_ms": 38806
+        }
+      ]
+    },
+    {
+      "id": "e07",
+      "case_id": "d2-contact-export-repair",
+      "condition": "absent",
+      "policy": null,
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 2,
+          "final_words": 53,
+          "duration_ms": 60557
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 93,
+          "duration_ms": 8954
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 315,
+          "duration_ms": 17862
+        },
+        {
+          "turn": 4,
+          "progress_messages": 1,
+          "final_words": 100,
+          "duration_ms": 39334
+        }
+      ]
+    },
+    {
+      "id": "e09",
+      "case_id": "d2-contact-export-repair",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v2.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 2,
+          "final_words": 56,
+          "duration_ms": 50588
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 77,
+          "duration_ms": 8068
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 303,
+          "duration_ms": 16783
+        },
+        {
+          "turn": 4,
+          "progress_messages": 1,
+          "final_words": 111,
+          "duration_ms": 39675
+        }
+      ]
+    },
+    {
+      "id": "e14",
+      "case_id": "d1-workshop-registration",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 81,
+          "duration_ms": 11747
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 77,
+          "duration_ms": 6831
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 47,
+          "duration_ms": 8899
+        }
+      ]
+    },
+    {
+      "id": "e16",
+      "case_id": "d2-contact-export-repair-prefix",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 2,
+          "final_words": 47,
+          "duration_ms": 70532
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 64,
+          "duration_ms": 6450
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 317,
+          "duration_ms": 12211
+        }
+      ]
+    },
+    {
+      "id": "e15",
+      "case_id": "d1-workshop-registration",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 86,
+          "duration_ms": 12800
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 82,
+          "duration_ms": 6286
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 41,
+          "duration_ms": 5471
+        }
+      ]
+    },
+    {
+      "id": "e13",
+      "case_id": "d2-contact-export-repair-prefix",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt",
+      "turns": [
+        {
+          "turn": 1,
+          "progress_messages": 1,
+          "final_words": 57,
+          "duration_ms": 47856
+        },
+        {
+          "turn": 2,
+          "progress_messages": 0,
+          "final_words": 92,
+          "duration_ms": 12885
+        },
+        {
+          "turn": 3,
+          "progress_messages": 0,
+          "final_words": 351,
+          "duration_ms": 18827
+        }
+      ]
+    }
+  ],
+  "review_stats": [
+    {
+      "cohort": "screen",
+      "reviewer_conversations": 2,
+      "calibrated_responses": 2,
+      "control_judgments": 8,
+      "real_pair_judgments": 16,
+      "ties": 11
+    },
+    {
+      "cohort": "revision",
+      "reviewer_conversations": 2,
+      "calibrated_responses": 2,
+      "control_judgments": 8,
+      "real_pair_judgments": 16,
+      "ties": 12
+    }
+  ]
+}

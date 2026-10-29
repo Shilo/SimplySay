@@ -1,0 +1,160 @@
+{
+  "prior_used": 24,
+  "additional_authorized": 32,
+  "additional_used": 16,
+  "additional_remaining": 16,
+  "total_project_conversations": 40,
+  "native_subject_conversations": 12,
+  "native_subject_task_turns": 40,
+  "independent_challenger_conversations": 2,
+  "blinded_development_reviewer_conversations": 2,
+  "blinded_review_responses": 4,
+  "total_current_task_turns": 50,
+  "failed_or_retried_conversations": 0,
+  "unexpected_descendants_observed": 0,
+  "recovered_tool_failures": "Retained; ordinary shell/patch mistakes are not additional model conversations.",
+  "starts": [
+    {
+      "id": "e01",
+      "role": "independent-instruction-and-scope-challenger",
+      "status": "completed",
+      "max_turns": 3,
+      "turns": 3
+    },
+    {
+      "id": "e02",
+      "role": "independent-case-evaluation-and-holdout-author",
+      "status": "completed",
+      "max_turns": 3,
+      "turns": 3
+    },
+    {
+      "id": "e05",
+      "role": "screen-d1-candidate-b-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e03",
+      "role": "screen-d1-absent",
+      "condition": "absent",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e06",
+      "role": "screen-d1-simple-manual",
+      "condition": "minimal",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e04",
+      "role": "screen-d1-candidate-a-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e08",
+      "role": "screen-d2-candidate-a-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e10",
+      "role": "screen-d2-simple-manual",
+      "condition": "minimal",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e07",
+      "role": "screen-d2-absent",
+      "condition": "absent",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e09",
+      "role": "screen-d2-candidate-b-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed",
+      "turns": 4,
+      "max_turns": 4
+    },
+    {
+      "id": "e11",
+      "role": "blinded-development-reviewer-one",
+      "turns": 2,
+      "max_turns": 2,
+      "status": "completed"
+    },
+    {
+      "id": "e12",
+      "role": "blinded-development-reviewer-reversed",
+      "turns": 2,
+      "max_turns": 2,
+      "status": "completed"
+    },
+    {
+      "id": "e14",
+      "role": "development-revision-d1-a-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e16",
+      "role": "development-revision-d2-prefix-b-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair-prefix",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e15",
+      "role": "development-revision-d1-b-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d1-workshop-registration",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    },
+    {
+      "id": "e13",
+      "role": "development-revision-d2-prefix-a-v3-enabled",
+      "condition": "enabled",
+      "case_id": "d2-contact-export-repair-prefix",
+      "status": "completed",
+      "turns": 3,
+      "max_turns": 3
+    }
+  ],
+  "dispatch_stopped": true,
+  "reason": "Development gate not met; no further subject dispatch without owner-approved reallocation",
+  "reallocation": "pending explicit owner approval",
+  "direct_claude": false,
+  "new_paid_services": false,
+  "ongoing_controller_chat": "Outside additional-conversation count as disclosed in approved proposal"
+}

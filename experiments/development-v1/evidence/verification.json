@@ -1,0 +1,27 @@
+{
+  "historical_files_unchanged": 287,
+  "subject_conversations": 12,
+  "subject_turns": 40,
+  "actual_snapshot_files": 242,
+  "all_export_entries": 506,
+  "all_export_hashes_match": true,
+  "inspected_source_and_record_hash_bindings_rechecked": 512,
+  "assessment_replays": "byte-identical for both cohorts",
+  "reviewer_conversations": 2,
+  "review_responses": 4,
+  "calibration_control_judgments": 16,
+  "all_controls_pass": true,
+  "review_format_conversions": 0,
+  "new_model_sessions_in_this_verifier": 0,
+  "all_12_auth_copies_removed": true,
+  "holdout_case_hashes_match": true,
+  "holdout_content_not_read": true,
+  "source_clearance_metadata_note": {
+    "preparation_recorded_revision_screen_sha256": "266bfcb1d442dd6177fc4f61c32243217352f8750a4e694227b2586e83223424",
+    "final_raw_revision_screen_sha256": "d86bf98327dba1d19bd18a5ea5c23ebd93580004753c82b867d124ad3e65cbea",
+    "initial_report_bytes_retained": false,
+    "author_reported_change": "Descriptive field spacing; actual source/hash records unchanged.",
+    "independent_recheck": "Final listed actual-file/native-record hashes rechecked; no independent byte-diff proof of the unavailable initial report. Frozen subject/case/checker/policy/review packet bytes and all judgments retained."
+  },
+  "private_chat_input": "Ignored local excerpts only; public descriptor/hash, no verbatim chat in Git"
+}

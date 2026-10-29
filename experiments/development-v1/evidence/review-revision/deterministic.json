@@ -1,0 +1,1590 @@
+{
+  "e14": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d1-workshop-registration",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_opening_decision",
+          "status": "observed",
+          "commands_count": 1,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_explain_checks",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_volunteer_message",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e16": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d2-contact-export-repair-prefix",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 379,
+          "sha256": "8278b1b5c6da444ebd9dc929292ac0f8971a7c032240cea82d7b37f4b0d8dd3e"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 3560,
+          "sha256": "0543428d6f56c3c8ef8bc20cbb794742587e906be39e16b17d4c49daa64626f8"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 1109,
+          "sha256": "06ee47959cb0de5e3631b64176ab158c587626cb5265c0bd490857720e1504f1"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_repair",
+          "status": "observed",
+          "commands_count": 4,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 379,
+          "sha256": "8278b1b5c6da444ebd9dc929292ac0f8971a7c032240cea82d7b37f4b0d8dd3e"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 3560,
+          "sha256": "0543428d6f56c3c8ef8bc20cbb794742587e906be39e16b17d4c49daa64626f8"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 1109,
+          "sha256": "06ee47959cb0de5e3631b64176ab158c587626cb5265c0bd490857720e1504f1"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_staff_effect",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 379,
+          "sha256": "8278b1b5c6da444ebd9dc929292ac0f8971a7c032240cea82d7b37f4b0d8dd3e"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 3560,
+          "sha256": "0543428d6f56c3c8ef8bc20cbb794742587e906be39e16b17d4c49daa64626f8"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 1109,
+          "sha256": "06ee47959cb0de5e3631b64176ab158c587626cb5265c0bd490857720e1504f1"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e15": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d1-workshop-registration",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_opening_decision",
+          "status": "observed",
+          "commands_count": 1,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_explain_checks",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_volunteer_message",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e13": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d2-contact-export-repair-prefix",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 3823,
+          "sha256": "4f5a4c9ad578a6151234e020ad59c2200bb9bdd5a40d3598af32badb2cd89987"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 1195,
+          "sha256": "89246a89558d0aae1a3d377804af5a9884bf5818c6ea67b61aff21e5d0e17cdf"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_repair",
+          "status": "observed",
+          "commands_count": 3,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 3823,
+          "sha256": "4f5a4c9ad578a6151234e020ad59c2200bb9bdd5a40d3598af32badb2cd89987"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 1195,
+          "sha256": "89246a89558d0aae1a3d377804af5a9884bf5818c6ea67b61aff21e5d0e17cdf"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_staff_effect",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 3823,
+          "sha256": "4f5a4c9ad578a6151234e020ad59c2200bb9bdd5a40d3598af32badb2cd89987"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 1195,
+          "sha256": "89246a89558d0aae1a3d377804af5a9884bf5818c6ea67b61aff21e5d0e17cdf"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e03": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d1-workshop-registration",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_opening_decision",
+          "status": "observed",
+          "commands_count": 1,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_explain_checks",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_volunteer_message",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e06": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d1-workshop-registration",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_opening_decision",
+          "status": "observed",
+          "commands_count": 1,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_explain_checks",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_volunteer_message",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e07": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d2-contact-export-repair-prefix",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 4106,
+          "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 1246,
+          "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_repair",
+          "status": "observed",
+          "commands_count": 3,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 4106,
+          "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 1246,
+          "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_staff_effect",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 4106,
+          "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 1246,
+          "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "e10": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "d2-contact-export-repair-prefix",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 4215,
+          "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "bytes": 1183,
+          "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t1_repair",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_repair",
+          "status": "observed",
+          "commands_count": 5,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 4215,
+          "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "bytes": 1183,
+          "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t2_staff_effect",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_staff_effect",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:src/merge.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 378,
+          "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+        },
+        {
+          "id": "file:src/load.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 164,
+          "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+        },
+        {
+          "id": "file:src/csv.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 332,
+          "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+        },
+        {
+          "id": "file:bin/export.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 372,
+          "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+        },
+        {
+          "id": "file:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 4215,
+          "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+        },
+        {
+          "id": "file:docs/maintainer.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "bytes": 1183,
+          "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+        },
+        {
+          "id": "source_bytes:fixtures/north.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+          "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+        },
+        {
+          "id": "source_bytes:fixtures/south.json",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+          "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+        },
+        {
+          "id": "source_bytes:EXPORT-CONTRACT.md",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+          "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+        },
+        {
+          "id": "test_file_changed:test/export.test.cjs",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "limitation": "This does not establish meaningful regression coverage or subject execution."
+        },
+        {
+          "id": "black_box:public_merge_and_csv_contract",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "pass",
+          "exit_code": 0,
+          "stdout": "{\"passed\":true,\"checks\":10}",
+          "stderr": "",
+          "error": null,
+          "evidence_owner": "offline evaluator; not subject execution"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_maintainer_reasoning",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  }
+}

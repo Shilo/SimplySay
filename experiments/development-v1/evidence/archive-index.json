@@ -1,0 +1,2685 @@
+{
+  "entries": [
+    {
+      "path": "decision.json",
+      "bytes": 862,
+      "sha256": "106101e51a92a33490d9f4a26b4095187397ffc35f9fc2bd9468e1d752212b2a"
+    },
+    {
+      "path": "descriptive-statistics.json",
+      "bytes": 8247,
+      "sha256": "ec9798e06da8a1027805ce7dd5f85e1f995f7112e409650b057dba1db9b5626f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2987,
+      "sha256": "1730e69d24da834c9d0dd928b74f5467a092f34f92c2d95c5adee35a7cd1c4b3"
+    },
+    {
+      "path": "review-revision/archive-index.json",
+      "bytes": 1874,
+      "sha256": "f8b01fc37779857abbb4f012b545a626bc2520e4db5b0ce295752ddeb9694f03"
+    },
+    {
+      "path": "review-revision/assessment.json",
+      "bytes": 211187,
+      "sha256": "2a41a588591a01a8bac8925095371509603d9b89eb8e2a685c8c004e2f1cb82f"
+    },
+    {
+      "path": "review-revision/controller-map.json",
+      "bytes": 9150,
+      "sha256": "8c6b9087fe8358ef64c44b6c0cc0b57038c0483dce0200af209f69196b42c7ef"
+    },
+    {
+      "path": "review-revision/deterministic.json",
+      "bytes": 57619,
+      "sha256": "a14d6ff126294f6c212859da1111edb59af45eb48e6212d9541d58eb38c7dabe"
+    },
+    {
+      "path": "review-revision/review-dispatch.txt",
+      "bytes": 2139,
+      "sha256": "dad7a9e74bc86a679bec04146144db35fc4f1d4e21a2fe5f9b28997c4dc6820d"
+    },
+    {
+      "path": "review-revision/review-freeze.json",
+      "bytes": 7481,
+      "sha256": "1e432524039333ed3e23358d9a5af39271961cb1016a450a45e8fd2714fb9127"
+    },
+    {
+      "path": "review-revision/reviews/revision-review-1.json",
+      "bytes": 40224,
+      "sha256": "a5abebd85e86cfeb854e4bd3ed3c4bfc928248a91abeca2fd58d2be51866ac10"
+    },
+    {
+      "path": "review-revision/reviews/revision-review-2.json",
+      "bytes": 39748,
+      "sha256": "c7e713ac21cb338c3681a23945f3da5356d86545f771ccae931d75b91549b382"
+    },
+    {
+      "path": "review-revision/revision-review-1/packet.json",
+      "bytes": 413289,
+      "sha256": "a35c4b4b8a5f7f4c3f49999bcc1ef9dc992c7760af84afc6d38f5ae4962fca04"
+    },
+    {
+      "path": "review-revision/revision-review-1/response-template.json",
+      "bytes": 8759,
+      "sha256": "bdc318b245597b6adfd7182c9b565274d904a4a7b3d5e1656343230e9ca744bf"
+    },
+    {
+      "path": "review-revision/revision-review-2/packet.json",
+      "bytes": 413289,
+      "sha256": "4c5a9aef0e35b53bd7f87a6e9f53a9ac1cb6457dd34c3f73a0ad2d5959a1a6cc"
+    },
+    {
+      "path": "review-revision/revision-review-2/response-template.json",
+      "bytes": 8759,
+      "sha256": "c78912d2e6b126034d9c48ced23e55c7454d30d5e3aefcb6a0c5c6d3a2a94ecc"
+    },
+    {
+      "path": "review-screen/archive-index.json",
+      "bytes": 1862,
+      "sha256": "99d7ec550ca5fa34c0eec7001fc5617c68dd5cb071a88e84f613a57795540819"
+    },
+    {
+      "path": "review-screen/assessment.json",
+      "bytes": 222342,
+      "sha256": "acaaf75142359593f5756f73a21784022898d6e02b07e66ee2142f982d97c107"
+    },
+    {
+      "path": "review-screen/controller-map.json",
+      "bytes": 8662,
+      "sha256": "f3f934ad0eabeca25cef5ccd29d0f34548ceed32f854831497ded798b756ebde"
+    },
+    {
+      "path": "review-screen/deterministic.json",
+      "bytes": 72787,
+      "sha256": "d311c8f0db9b0b886df4831e71555503e7f10bb37f1ab500f8ee653307506b58"
+    },
+    {
+      "path": "review-screen/review-dispatch.txt",
+      "bytes": 2139,
+      "sha256": "dad7a9e74bc86a679bec04146144db35fc4f1d4e21a2fe5f9b28997c4dc6820d"
+    },
+    {
+      "path": "review-screen/review-freeze.json",
+      "bytes": 7377,
+      "sha256": "deefe6d91a7638206ec36218d0b34858f5698bb03d06b04f086e2e9da7d6bd11"
+    },
+    {
+      "path": "review-screen/reviews/screen-review-1.json",
+      "bytes": 38633,
+      "sha256": "4019eb64c8670c096b770c23d2e500eff038df60fc01f67b85a375e9fe8dabda"
+    },
+    {
+      "path": "review-screen/reviews/screen-review-2.json",
+      "bytes": 38704,
+      "sha256": "f31f3f4fe42f77510db4fec8f6e8e9a7d5c007ae13079b9589239503943623c7"
+    },
+    {
+      "path": "review-screen/screen-review-1/packet.json",
+      "bytes": 504146,
+      "sha256": "ac7c2dadfcca8adea3916bacbd483bb91c82ea9d64c43c5fbdf3f2c67b5b5497"
+    },
+    {
+      "path": "review-screen/screen-review-1/response-template.json",
+      "bytes": 8757,
+      "sha256": "6b848dd1ab6134b5a1d020eb7839c9f2cbbb94b6b814461bc78a10de0fdbd8ec"
+    },
+    {
+      "path": "review-screen/screen-review-2/packet.json",
+      "bytes": 504146,
+      "sha256": "cd20dc886229230c6dfa71ca09f2db05c57243025896b21e1f2a56486e1a9801"
+    },
+    {
+      "path": "review-screen/screen-review-2/response-template.json",
+      "bytes": 8757,
+      "sha256": "514f316f0c5794978182fb4db4445a73156c8c15f9c534b9c3bbf2751e734555"
+    },
+    {
+      "path": "session-accounting.json",
+      "bytes": 4249,
+      "sha256": "96148b8e0d4c94da62fd840878e38303d9f32e6431745f441890899cf5fc479e"
+    },
+    {
+      "path": "subject-index.json",
+      "bytes": 156278,
+      "sha256": "fad661d6acd9d67420ab7455a864f99e90dff372fa6362e5dcc25d2215c4e404"
+    },
+    {
+      "path": "subjects/e03/preflight.json",
+      "bytes": 734,
+      "sha256": "6bdaaa7d37652e3e2cc571e0fb2882dc2c029ae9a3e4fc8eb043c26a524893c2"
+    },
+    {
+      "path": "subjects/e03/result.json",
+      "bytes": 2662,
+      "sha256": "b9210b2031e3b1c50b75a607319863f0b6745c7092784e1bd8e6fef2795bf789"
+    },
+    {
+      "path": "subjects/e03/turn-1-events.jsonl",
+      "bytes": 2921,
+      "sha256": "4285797069297f554b4ed7e0d17387f220c83a4072b37628b5847731c1e20272"
+    },
+    {
+      "path": "subjects/e03/turn-1-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e03/turn-1-final.txt",
+      "bytes": 762,
+      "sha256": "21af0dd8e544103eec44c25ee792612623d1d5ae7d765bdfdc314664ce94ed0a"
+    },
+    {
+      "path": "subjects/e03/turn-1-prompt.txt",
+      "bytes": 359,
+      "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+    },
+    {
+      "path": "subjects/e03/turn-1-result.json",
+      "bytes": 644,
+      "sha256": "23439aa48a39f78a901ca800520533fd95726ab890989c629776d1937d007238"
+    },
+    {
+      "path": "subjects/e03/turn-1-stderr.txt",
+      "bytes": 520,
+      "sha256": "705b7b70980f1291943e0e0c86a1bbdf305238237e6df05d40b527173edb769c"
+    },
+    {
+      "path": "subjects/e03/turn-1-timing.jsonl",
+      "bytes": 548,
+      "sha256": "f4b36b97448dc55e2f827449ad5e395d508e66dedad244167936868099dfbc2d"
+    },
+    {
+      "path": "subjects/e03/turn-2-events.jsonl",
+      "bytes": 925,
+      "sha256": "086abfb3f15d53c365c3ad54cc68d5d08e7337b3f13f7b283e5281a5e56773ab"
+    },
+    {
+      "path": "subjects/e03/turn-2-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e03/turn-2-final.txt",
+      "bytes": 592,
+      "sha256": "04ecbe41a2c4f3a17dd6a6394535ca50998bb523ab69c168c18de95afe032a4d"
+    },
+    {
+      "path": "subjects/e03/turn-2-prompt.txt",
+      "bytes": 197,
+      "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+    },
+    {
+      "path": "subjects/e03/turn-2-result.json",
+      "bytes": 663,
+      "sha256": "c11d0e4f0f24897aa7783e79cca21a5bfd214af55727daa8edf036da50d1832b"
+    },
+    {
+      "path": "subjects/e03/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "e4e40568dd8aeadddc73b3c0938a4a4d9e74f489565044ae446924d9ee2f02fd"
+    },
+    {
+      "path": "subjects/e03/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "9ddc6d3a60930420736db0beac40f46b508c722aa5aed180e19f05f0437d1963"
+    },
+    {
+      "path": "subjects/e03/turn-3-events.jsonl",
+      "bytes": 746,
+      "sha256": "01258e6fa95ddf3ccfea814f24de40a8cba51423912e608f08f7135d0bca86a1"
+    },
+    {
+      "path": "subjects/e03/turn-3-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e03/turn-3-final.txt",
+      "bytes": 412,
+      "sha256": "c2125bcea16670ff5b6450d77724722e0ce6ccb02c1366eab664523b01a6b64f"
+    },
+    {
+      "path": "subjects/e03/turn-3-prompt.txt",
+      "bytes": 190,
+      "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+    },
+    {
+      "path": "subjects/e03/turn-3-result.json",
+      "bytes": 666,
+      "sha256": "57b124dc0c50d13be5872d92f3f298c218f74e1a84b7f483ff58d573ebe40b21"
+    },
+    {
+      "path": "subjects/e03/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "fb90e82d5a33e78ec5866f1d06ce5bd9762b0d3e69f04294f890dac458e19315"
+    },
+    {
+      "path": "subjects/e03/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "f334e1ed20fd5ac560fb71a6edd59512d8ab46bf3cb5c173a3e1c0d221c1ac2a"
+    },
+    {
+      "path": "subjects/e04/preflight.json",
+      "bytes": 2095,
+      "sha256": "d3eacd29d868d359549a3f680861091e67f876761534f4fb81ec1ebec1ada5e7"
+    },
+    {
+      "path": "subjects/e04/result.json",
+      "bytes": 2937,
+      "sha256": "e899ad464b5e953316b0ebcd5d320eb5f7695ab9533b8471999f1fd2e0731311"
+    },
+    {
+      "path": "subjects/e04/turn-1-events.jsonl",
+      "bytes": 2748,
+      "sha256": "435a785a33ea05af0a8fbe0e84f0532e81d13267aadee244656e6dcedc449b99"
+    },
+    {
+      "path": "subjects/e04/turn-1-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e04/turn-1-final.txt",
+      "bytes": 660,
+      "sha256": "1661a2be80fafa1a644c7e7a190737c9701082ce8d9050c0659aaceff9aa7005"
+    },
+    {
+      "path": "subjects/e04/turn-1-prompt.txt",
+      "bytes": 359,
+      "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+    },
+    {
+      "path": "subjects/e04/turn-1-result.json",
+      "bytes": 644,
+      "sha256": "3f58424f6a7be75fb4e8c095202005001bce1f646fdd248bc2d89c4e6d422765"
+    },
+    {
+      "path": "subjects/e04/turn-1-stderr.txt",
+      "bytes": 366,
+      "sha256": "f7e73d0281357a1cbf1938a3d94ea763b9e1965ea491ecfb366b1740bebd6ce6"
+    },
+    {
+      "path": "subjects/e04/turn-1-timing.jsonl",
+      "bytes": 548,
+      "sha256": "8dac56f5aaafefdb3018087b4483e63ceb99d8b9aba2780471b84ae451751d41"
+    },
+    {
+      "path": "subjects/e04/turn-2-events.jsonl",
+      "bytes": 880,
+      "sha256": "bd9e41d1df966d7286b4b849320ab423586613a695da270d83b756c735e7e440"
+    },
+    {
+      "path": "subjects/e04/turn-2-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e04/turn-2-final.txt",
+      "bytes": 543,
+      "sha256": "aa03ca6faae84d3f64892f22c823aab861b00a07184843ff0dade493f20d1459"
+    },
+    {
+      "path": "subjects/e04/turn-2-prompt.txt",
+      "bytes": 197,
+      "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+    },
+    {
+      "path": "subjects/e04/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "212be5702f69c49fd4023a6218a7e720b4b57da444117b6dbc3e7137192779ca"
+    },
+    {
+      "path": "subjects/e04/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "9df35e64910433d1e3be5f86743d611adf4c5fc6457ecc27f8369c6a0285e9bf"
+    },
+    {
+      "path": "subjects/e04/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "f21ff12d5fc85864940359279ebcf58a239f9510ad48c804d55ee46976ff96f8"
+    },
+    {
+      "path": "subjects/e04/turn-3-events.jsonl",
+      "bytes": 661,
+      "sha256": "15ed5d78dff22f4e13ed69b6272c001a3a15dfeff8ca7ae170f7272e0d78a520"
+    },
+    {
+      "path": "subjects/e04/turn-3-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e04/turn-3-final.txt",
+      "bytes": 325,
+      "sha256": "1dbda3ce7ea20ac4796ac07dfd7cf5e91c411b14233f4e975d85c369cf74894a"
+    },
+    {
+      "path": "subjects/e04/turn-3-prompt.txt",
+      "bytes": 190,
+      "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+    },
+    {
+      "path": "subjects/e04/turn-3-result.json",
+      "bytes": 670,
+      "sha256": "f074c99c90e5efe7062c9dedf3bc5cb4484b831fbf0b63a4e61b71219aa24288"
+    },
+    {
+      "path": "subjects/e04/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "c809cefff3c4168206607b5a85f1cd1a5023dd974ee55b526fffface0be69948"
+    },
+    {
+      "path": "subjects/e04/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "7f9eb477eeec1fd5a1b1de8cc093dfe09a8a890833e4e25b3fb71a0b9a089b43"
+    },
+    {
+      "path": "subjects/e05/preflight.json",
+      "bytes": 2095,
+      "sha256": "766622a8187bf464398ebc52805288a7840d5e44350e32513ce7e03f4857389c"
+    },
+    {
+      "path": "subjects/e05/result.json",
+      "bytes": 2951,
+      "sha256": "fcedf5507eeb70d12ac0e09ff717954888dc98f6197a07e4fc99641598b4d800"
+    },
+    {
+      "path": "subjects/e05/turn-1-events.jsonl",
+      "bytes": 2758,
+      "sha256": "77c54223b3b0d9da04385846f1a650acc089120966865a852f1db566c239c802"
+    },
+    {
+      "path": "subjects/e05/turn-1-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e05/turn-1-final.txt",
+      "bytes": 666,
+      "sha256": "4e0879ee22c3ab44986eb053286d2631a107b5a58555a4abfb75fc7392001c7a"
+    },
+    {
+      "path": "subjects/e05/turn-1-prompt.txt",
+      "bytes": 359,
+      "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+    },
+    {
+      "path": "subjects/e05/turn-1-result.json",
+      "bytes": 648,
+      "sha256": "5df76f170560adbce1577770b191f5121a2a279f7facb2364ece496bc9d7b3b0"
+    },
+    {
+      "path": "subjects/e05/turn-1-stderr.txt",
+      "bytes": 366,
+      "sha256": "629b7e1519c72d6a33e3a1a3cb010fbb1da11a60c327a174eb981e8661af048f"
+    },
+    {
+      "path": "subjects/e05/turn-1-timing.jsonl",
+      "bytes": 548,
+      "sha256": "5ba27bc6af9a9ac7415c08b19d15f422762c36a00e761798fe9ae1f5898e878b"
+    },
+    {
+      "path": "subjects/e05/turn-2-events.jsonl",
+      "bytes": 914,
+      "sha256": "c72adbfbe1d8ed10d11d5a9c2372e4a16c40af8b54f1b5252359c07423c1903f"
+    },
+    {
+      "path": "subjects/e05/turn-2-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e05/turn-2-final.txt",
+      "bytes": 577,
+      "sha256": "e31a4490db1a25de2037d980c5c35d5bf2daf1f728c1aad60c94ef891527fe1c"
+    },
+    {
+      "path": "subjects/e05/turn-2-prompt.txt",
+      "bytes": 197,
+      "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+    },
+    {
+      "path": "subjects/e05/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "049f9d3023f197e0eff7fc96869b6938efe6ff7a4896b365d3ea1b933989e27c"
+    },
+    {
+      "path": "subjects/e05/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "6b356e07550ec3c912e7ea5425f133d88891121c6a7069b56daa23e5faa4be23"
+    },
+    {
+      "path": "subjects/e05/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "c77212c6638872cad31f58dd837e2f7e819a0530a84a4e7fa93b8f725d426498"
+    },
+    {
+      "path": "subjects/e05/turn-3-events.jsonl",
+      "bytes": 616,
+      "sha256": "8f8ba08499f4cdc57ed524d5be1859c9e2c7ead6df1325faef4f550d8a0b4c51"
+    },
+    {
+      "path": "subjects/e05/turn-3-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e05/turn-3-final.txt",
+      "bytes": 280,
+      "sha256": "c89ff8c3a5d05dcf434784bf3e687cafc742cd2782e23e5212e8b3b2637948af"
+    },
+    {
+      "path": "subjects/e05/turn-3-prompt.txt",
+      "bytes": 190,
+      "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+    },
+    {
+      "path": "subjects/e05/turn-3-result.json",
+      "bytes": 670,
+      "sha256": "5a4225f9d465516f4087970d7c9da87562620daafc9a5ea6506c9e7d3b11d59e"
+    },
+    {
+      "path": "subjects/e05/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "78fe137764882fe41d3382fcabca6a90dbfac252a619a6539e128409e8522e27"
+    },
+    {
+      "path": "subjects/e05/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "1056e23fdc921256ab8fc6bf1a5d114977fb0bfec5ec6aa6855168b0efb79a39"
+    },
+    {
+      "path": "subjects/e06/preflight.json",
+      "bytes": 797,
+      "sha256": "4f146ed042478a2089dc3a4ad87c96b76bd5631bcd1913745bf6a7d6332a5b91"
+    },
+    {
+      "path": "subjects/e06/result.json",
+      "bytes": 2675,
+      "sha256": "450472806a318abddf0b3a72680f0dda3d57cdac7498fb6bf5b2a5d9fd26664c"
+    },
+    {
+      "path": "subjects/e06/turn-1-events.jsonl",
+      "bytes": 2691,
+      "sha256": "461546874c7719d9be0526aa60e93dba868f80e30b26ac2feb12b452b96e9e68"
+    },
+    {
+      "path": "subjects/e06/turn-1-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e06/turn-1-final.txt",
+      "bytes": 599,
+      "sha256": "1c63d1e36f3462b99441640e70869cda86e9a96b19285d1825541bd07e81c3a1"
+    },
+    {
+      "path": "subjects/e06/turn-1-prompt.txt",
+      "bytes": 359,
+      "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+    },
+    {
+      "path": "subjects/e06/turn-1-result.json",
+      "bytes": 648,
+      "sha256": "abacdba00cb7ddd23a4b909e66674680a73da458feeed42ffd0570b4fe661f06"
+    },
+    {
+      "path": "subjects/e06/turn-1-stderr.txt",
+      "bytes": 366,
+      "sha256": "f42b48e79f8d0852192e2eb4f8c0e1fdfa452ac87b9ae6886c05e7582dee700b"
+    },
+    {
+      "path": "subjects/e06/turn-1-timing.jsonl",
+      "bytes": 548,
+      "sha256": "09d092cbe01b62bad92198093bd841288bc24a2943a159022cef6031052426b8"
+    },
+    {
+      "path": "subjects/e06/turn-2-events.jsonl",
+      "bytes": 931,
+      "sha256": "d07296957f9449ce62cea6906895e0caa0853d654081f384bbfc748bd5782abc"
+    },
+    {
+      "path": "subjects/e06/turn-2-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e06/turn-2-final.txt",
+      "bytes": 594,
+      "sha256": "1fd1c8f7515d475f2e63b1a0c292f8ddfaba8200ed63b24e454e7b08dc1596af"
+    },
+    {
+      "path": "subjects/e06/turn-2-prompt.txt",
+      "bytes": 197,
+      "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+    },
+    {
+      "path": "subjects/e06/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "b76c42c5416964491e685d1b0ff79cbf3fd5dac642125e4fbae1f5702d7e0ef6"
+    },
+    {
+      "path": "subjects/e06/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "56eff723bf16f036d19f73d927a5cab2b6b7ab1bdf8917603dc6f5ddb91d7171"
+    },
+    {
+      "path": "subjects/e06/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "10f78b63d4e69d06b5b7f41aee873b244c172474cf77aaa164bcd52de8483bb5"
+    },
+    {
+      "path": "subjects/e06/turn-3-events.jsonl",
+      "bytes": 690,
+      "sha256": "b13a28f235d8523e03bf4a088ab91c2dc44ccf6aa8503168eaf8770a20c1a6bd"
+    },
+    {
+      "path": "subjects/e06/turn-3-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e06/turn-3-final.txt",
+      "bytes": 354,
+      "sha256": "e956b1237e501cb9a049fb360c226997be8d75ff4d48a90700d8305c14d76392"
+    },
+    {
+      "path": "subjects/e06/turn-3-prompt.txt",
+      "bytes": 190,
+      "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+    },
+    {
+      "path": "subjects/e06/turn-3-result.json",
+      "bytes": 670,
+      "sha256": "4021bf66fba27c128930232154d467452317c82aee0b52dbe79732bc683d6f17"
+    },
+    {
+      "path": "subjects/e06/turn-3-stderr.txt",
+      "bytes": 485,
+      "sha256": "6afab6bdb6f8c6c2cb28e46f277630b8c8d83ad1c8668ec5182fd1bb26bf4c93"
+    },
+    {
+      "path": "subjects/e06/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "b6e4df1e2d396071f32044a37aaa4e835431524d326783c2a2a13746d32d3547"
+    },
+    {
+      "path": "subjects/e07/preflight.json",
+      "bytes": 734,
+      "sha256": "69048ee865b66acbab63a9337299f8ed79700f819437fa7e1f44ebaa3a5ffeae"
+    },
+    {
+      "path": "subjects/e07/result.json",
+      "bytes": 3440,
+      "sha256": "bd80e6990fffe1c88ec237de3e9c08e1de1b1e2c0ab9bf06afc390e1255788b2"
+    },
+    {
+      "path": "subjects/e07/turn-1-events.jsonl",
+      "bytes": 21683,
+      "sha256": "fa059960a91f62cff855595ccc0ae956f0789c4e16aac75f42af55359a8cb8e2"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/docs/maintainer.md",
+      "bytes": 1246,
+      "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e07/turn-1-files/test/export.test.cjs",
+      "bytes": 4106,
+      "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+    },
+    {
+      "path": "subjects/e07/turn-1-final.txt",
+      "bytes": 378,
+      "sha256": "fc3935f3236eaf4694f51cecae188527f4f5b1536ec25465f7db5327f7e43cd8"
+    },
+    {
+      "path": "subjects/e07/turn-1-prompt.txt",
+      "bytes": 622,
+      "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+    },
+    {
+      "path": "subjects/e07/turn-1-result.json",
+      "bytes": 640,
+      "sha256": "6064fabdc23eaf165b5671c0fb22e786c37eae588d4b9c543c73dfd36f7d9e19"
+    },
+    {
+      "path": "subjects/e07/turn-1-stderr.txt",
+      "bytes": 366,
+      "sha256": "c72f27af91cc0aae7bc571c6f05df1640a35b384a6ba9eed3eb3c8b0139f271b"
+    },
+    {
+      "path": "subjects/e07/turn-1-timing.jsonl",
+      "bytes": 1156,
+      "sha256": "5a2e2ced479ac3a649f1997f899a2872f76d6cf48adf2ee543e66864d58a6d65"
+    },
+    {
+      "path": "subjects/e07/turn-2-events.jsonl",
+      "bytes": 898,
+      "sha256": "4b053b2e9467e0b0dd55398fd4673463361f2a332ebff422c58e1ed7d5fb680c"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/docs/maintainer.md",
+      "bytes": 1246,
+      "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e07/turn-2-files/test/export.test.cjs",
+      "bytes": 4106,
+      "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+    },
+    {
+      "path": "subjects/e07/turn-2-final.txt",
+      "bytes": 560,
+      "sha256": "f57f0bfc0e5f24ac7bf2257afce8eecff25647af5259bd36ed0a569f853d152a"
+    },
+    {
+      "path": "subjects/e07/turn-2-prompt.txt",
+      "bytes": 93,
+      "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+    },
+    {
+      "path": "subjects/e07/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "80e4ebde6c273bf1272cd4eda7716428ded3345a23cea145adac359d8f22152a"
+    },
+    {
+      "path": "subjects/e07/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "f860a77d2098ad37eb547314b095801ba1dea20cdfe6593bd72f0ec942690ba2"
+    },
+    {
+      "path": "subjects/e07/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "7ce8e4988a048b16a2da2e53ec534a169f3e1cb1fc880ba6bf5dccce2bbc71b1"
+    },
+    {
+      "path": "subjects/e07/turn-3-events.jsonl",
+      "bytes": 2445,
+      "sha256": "430a569b765123836359b906e0722ff8945345161aba4fb7ebcf7483fb11622c"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/docs/maintainer.md",
+      "bytes": 1246,
+      "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e07/turn-3-files/test/export.test.cjs",
+      "bytes": 4106,
+      "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+    },
+    {
+      "path": "subjects/e07/turn-3-final.txt",
+      "bytes": 2079,
+      "sha256": "e2fac93fee13affdce440d99f2fc96a46792137df588945e3e6ff4af93d4b0c9"
+    },
+    {
+      "path": "subjects/e07/turn-3-prompt.txt",
+      "bytes": 217,
+      "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+    },
+    {
+      "path": "subjects/e07/turn-3-result.json",
+      "bytes": 675,
+      "sha256": "688badb5c0b19afbd0aa73d3d37cdb87c32643cb79774e6e0b504dbdca9de451"
+    },
+    {
+      "path": "subjects/e07/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "6a55b37c0a3f51a98fb274661e5d0b1a62313252cd33cc65e4f9387e65ba40b9"
+    },
+    {
+      "path": "subjects/e07/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "6a95b7ec9b113f96adc525dba3101b94adc4b17cbe976722a7747ba97491ddb5"
+    },
+    {
+      "path": "subjects/e07/turn-4-events.jsonl",
+      "bytes": 4089,
+      "sha256": "ae6ab96ef8f5503be325b95e93ee113921a65095bdae978ea31ae3bac0cd41f6"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/docs/maintainer.md",
+      "bytes": 1246,
+      "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/handoff.md",
+      "bytes": 3918,
+      "sha256": "92158abf4142e4724383c1d8bf68b9df676d6b632b338fd786edc59d993bb95b"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e07/turn-4-files/test/export.test.cjs",
+      "bytes": 4106,
+      "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3"
+    },
+    {
+      "path": "subjects/e07/turn-4-final.txt",
+      "bytes": 646,
+      "sha256": "d3735787da3cab8a81961cbf1b0e9b0b220ee59832d9bb9fdd0d1a08929004c7"
+    },
+    {
+      "path": "subjects/e07/turn-4-prompt.txt",
+      "bytes": 261,
+      "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+    },
+    {
+      "path": "subjects/e07/turn-4-result.json",
+      "bytes": 664,
+      "sha256": "2a511b7aed01c4ebe22321930dd3f6af6d2f1686c69b043f964655b412a18340"
+    },
+    {
+      "path": "subjects/e07/turn-4-stderr.txt",
+      "bytes": 366,
+      "sha256": "c4740c58662137b6d18200f4739f02b0afac953f09f67a1a2525ca2441b3fc28"
+    },
+    {
+      "path": "subjects/e07/turn-4-timing.jsonl",
+      "bytes": 720,
+      "sha256": "b4e9f76644de0f7f42fb9142276dedbcf5a4ece3a118b2dcc3d7cd18dd8203b0"
+    },
+    {
+      "path": "subjects/e08/preflight.json",
+      "bytes": 2095,
+      "sha256": "a517aea6e9caa8b066f012b3c6fc0ab2ce498830fce94b8426aa36574e3d6b24"
+    },
+    {
+      "path": "subjects/e08/result.json",
+      "bytes": 3708,
+      "sha256": "310edf2c8c1d5fd320471ceada26fffe4115ffd3f58a321c89ae2c3a7cb31215"
+    },
+    {
+      "path": "subjects/e08/turn-1-events.jsonl",
+      "bytes": 21189,
+      "sha256": "0eabfe241fcdef33552d4df32ae0cd29c3a31a1188ed253a1fed3544d33d548c"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/docs/maintainer.md",
+      "bytes": 1342,
+      "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e08/turn-1-files/test/export.test.cjs",
+      "bytes": 4013,
+      "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9"
+    },
+    {
+      "path": "subjects/e08/turn-1-final.txt",
+      "bytes": 343,
+      "sha256": "0346c58a0c128c89c3f0ec3d7033aa071bfbb0ab72a4dd456c73d3bcff34ae6e"
+    },
+    {
+      "path": "subjects/e08/turn-1-prompt.txt",
+      "bytes": 622,
+      "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+    },
+    {
+      "path": "subjects/e08/turn-1-result.json",
+      "bytes": 640,
+      "sha256": "4ac62f6952a32eefc215ef6661b5a974dfa46d6ab5d27c640d4736174e177b48"
+    },
+    {
+      "path": "subjects/e08/turn-1-stderr.txt",
+      "bytes": 541,
+      "sha256": "b024fde05191fe5a7fbd0655e45a583d15e29ed217095717795d654d83279c17"
+    },
+    {
+      "path": "subjects/e08/turn-1-timing.jsonl",
+      "bytes": 1330,
+      "sha256": "2104b34492184c6ea597470b27ca859de14792bd0492ca674ef62cde1bffe3c2"
+    },
+    {
+      "path": "subjects/e08/turn-2-events.jsonl",
+      "bytes": 879,
+      "sha256": "f40957461960d76025f993e5a7720fbbde58ce3d264c03d782e845afb5ae5dde"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/docs/maintainer.md",
+      "bytes": 1342,
+      "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e08/turn-2-files/test/export.test.cjs",
+      "bytes": 4013,
+      "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9"
+    },
+    {
+      "path": "subjects/e08/turn-2-final.txt",
+      "bytes": 541,
+      "sha256": "1e29132b76477b4498202e6ae7ff95dbbd4a22a90381711ef8ed333ee7745ac4"
+    },
+    {
+      "path": "subjects/e08/turn-2-prompt.txt",
+      "bytes": 93,
+      "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+    },
+    {
+      "path": "subjects/e08/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "72cf6538b9306c4f14c3938767fb8c1f186327b54c262da9e33eb7f1ed42cd23"
+    },
+    {
+      "path": "subjects/e08/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "177eae22b50cb83676b60e9b729fb92bb4aebb8eceb4eaec2e22a42dbb3ff2f4"
+    },
+    {
+      "path": "subjects/e08/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "12d8aa0202c326a66ef2a9aaa4aefd9f02281d108de3bb9d18871f517df70a60"
+    },
+    {
+      "path": "subjects/e08/turn-3-events.jsonl",
+      "bytes": 2559,
+      "sha256": "2ff07aa0576d1d0f2b44139570f4afb17b20717406539d64867226f10fa12831"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/docs/maintainer.md",
+      "bytes": 1342,
+      "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e08/turn-3-files/test/export.test.cjs",
+      "bytes": 4013,
+      "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9"
+    },
+    {
+      "path": "subjects/e08/turn-3-final.txt",
+      "bytes": 2190,
+      "sha256": "80b38c7ca66c9054369db5b12102ea1e4951b11d9ff93deefa0c280e47e3f2a5"
+    },
+    {
+      "path": "subjects/e08/turn-3-prompt.txt",
+      "bytes": 217,
+      "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+    },
+    {
+      "path": "subjects/e08/turn-3-result.json",
+      "bytes": 676,
+      "sha256": "a5c07d59eddb0b623b275913b5406e531f142429d64d289487e0bdbdda1f3658"
+    },
+    {
+      "path": "subjects/e08/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "f7801387c69db1bf76355326bfeeb6aee0062fe3f32d77e7da5f57091db238f0"
+    },
+    {
+      "path": "subjects/e08/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "345ecd4ecf6f30c9012cae58c94835054e8d5d5e5c5e0cd0932a2bdf2233315e"
+    },
+    {
+      "path": "subjects/e08/turn-4-events.jsonl",
+      "bytes": 8570,
+      "sha256": "5850d851b2a296cc2fb4a39e543e92622b6e234cd929be758999ed0581f433b0"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/docs/maintainer.md",
+      "bytes": 1342,
+      "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/handoff.md",
+      "bytes": 3260,
+      "sha256": "36d1e2494054799453c7191b3c8e5eb90f516f6f577e4cdb4535fc109b1bcdd7"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e08/turn-4-files/test/export.test.cjs",
+      "bytes": 4013,
+      "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9"
+    },
+    {
+      "path": "subjects/e08/turn-4-final.txt",
+      "bytes": 760,
+      "sha256": "f59636f151d52050b0aa6ca73508de6fdeef81976a5a5321ea38cfe732957d62"
+    },
+    {
+      "path": "subjects/e08/turn-4-prompt.txt",
+      "bytes": 261,
+      "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+    },
+    {
+      "path": "subjects/e08/turn-4-result.json",
+      "bytes": 664,
+      "sha256": "8e46cc8a74ad8045a3c188354a726b2f7c0dac37ed0c6de7e30217e6b42a5e42"
+    },
+    {
+      "path": "subjects/e08/turn-4-stderr.txt",
+      "bytes": 366,
+      "sha256": "20067b9118042761ee1fee0161d464a461424aabfdd56b4a9a47ffc235f2ea75"
+    },
+    {
+      "path": "subjects/e08/turn-4-timing.jsonl",
+      "bytes": 894,
+      "sha256": "fa777389ca40853ff0bf3a0c934660e96d72acf8ce3a612ff22e49a32a3cf93e"
+    },
+    {
+      "path": "subjects/e09/preflight.json",
+      "bytes": 2095,
+      "sha256": "b9880c698a0141de3b7d38f07b70371898b935701d921f1a47f441b467942e48"
+    },
+    {
+      "path": "subjects/e09/result.json",
+      "bytes": 3716,
+      "sha256": "1e8d55de2a1bbfa5588231e1390494d147021a45661bfd5fd4905cf5616e6dcf"
+    },
+    {
+      "path": "subjects/e09/turn-1-events.jsonl",
+      "bytes": 10591,
+      "sha256": "cf97381a1da1d1cedadacc0206698ff0f23581f399f772ba592b4356d8ca95f9"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/docs/maintainer.md",
+      "bytes": 1074,
+      "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e09/turn-1-files/test/export.test.cjs",
+      "bytes": 3949,
+      "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865"
+    },
+    {
+      "path": "subjects/e09/turn-1-final.txt",
+      "bytes": 394,
+      "sha256": "29a805647949441623db247e39ebf7627282a34e8cfde34309f06f2a2dcfc91b"
+    },
+    {
+      "path": "subjects/e09/turn-1-prompt.txt",
+      "bytes": 622,
+      "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+    },
+    {
+      "path": "subjects/e09/turn-1-result.json",
+      "bytes": 640,
+      "sha256": "ccbd5cbeae19e5170f77eea74d2e73a09406c3f57130cdc989bff4b6f01203d5"
+    },
+    {
+      "path": "subjects/e09/turn-1-stderr.txt",
+      "bytes": 366,
+      "sha256": "e969ff069b710e2e3c39bd545d26229f25ccfcf0549a21666594a12637c4ba70"
+    },
+    {
+      "path": "subjects/e09/turn-1-timing.jsonl",
+      "bytes": 1156,
+      "sha256": "c5f08021bb8016c9e59df6c89c5ec8a5209142fec33dee66bbe4785ef8edcf55"
+    },
+    {
+      "path": "subjects/e09/turn-2-events.jsonl",
+      "bytes": 790,
+      "sha256": "ad066b91c326b659aafe90044d89fb4a854a97c5d9e841bc2493e1f954a28d72"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/docs/maintainer.md",
+      "bytes": 1074,
+      "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e09/turn-2-files/test/export.test.cjs",
+      "bytes": 3949,
+      "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865"
+    },
+    {
+      "path": "subjects/e09/turn-2-final.txt",
+      "bytes": 452,
+      "sha256": "f90e840f0528380b8ccb1e5b490cb38ca217942effbe3fa9feb73eb9541a439e"
+    },
+    {
+      "path": "subjects/e09/turn-2-prompt.txt",
+      "bytes": 93,
+      "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+    },
+    {
+      "path": "subjects/e09/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "a1185be419fdfcef098b2c23c66c7a3c8cd13bacb5024bda813ca43b6f3be8ce"
+    },
+    {
+      "path": "subjects/e09/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "9be4815d25cd92385ecb2da0ce64184d133ad905446a1895e5983aa4b922f2a3"
+    },
+    {
+      "path": "subjects/e09/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "955080ca1ba2a83593926260832b338c8bcfcaf19bddf92578f2742ca0e4c3ff"
+    },
+    {
+      "path": "subjects/e09/turn-3-events.jsonl",
+      "bytes": 2273,
+      "sha256": "ebc1d9025fb974867095492ee3f271b094e910606d7619b32cd62119e70b711b"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/docs/maintainer.md",
+      "bytes": 1074,
+      "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e09/turn-3-files/test/export.test.cjs",
+      "bytes": 3949,
+      "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865"
+    },
+    {
+      "path": "subjects/e09/turn-3-final.txt",
+      "bytes": 1911,
+      "sha256": "a9cbc3415e295025d1f0a24b38c2a5cf17e1e9abc3be2d763f5ae3596719cc00"
+    },
+    {
+      "path": "subjects/e09/turn-3-prompt.txt",
+      "bytes": 217,
+      "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+    },
+    {
+      "path": "subjects/e09/turn-3-result.json",
+      "bytes": 675,
+      "sha256": "835e33d463e03da25c08bef7794d1645f2a1cd7b376515196e8bd40f5f9f75c6"
+    },
+    {
+      "path": "subjects/e09/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "0bae2d4a02df5c9eeb99f8bc9a763daae51331e2fd6b500e05416a663d695f64"
+    },
+    {
+      "path": "subjects/e09/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "edb30191cbce3433060c62f1fd5140208dbe62ccc1ab74872955929dcb459da1"
+    },
+    {
+      "path": "subjects/e09/turn-4-events.jsonl",
+      "bytes": 11768,
+      "sha256": "7d2eff9f5b1978d290fc410a32874a4fc2ed6bbc2f504067e3327e9f73e9d271"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/docs/maintainer.md",
+      "bytes": 1074,
+      "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/handoff.md",
+      "bytes": 3331,
+      "sha256": "d07f272fc8d4731d4c39f0d14e6974ebef93834d72bc722d580182356629d0bb"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e09/turn-4-files/test/export.test.cjs",
+      "bytes": 3949,
+      "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865"
+    },
+    {
+      "path": "subjects/e09/turn-4-final.txt",
+      "bytes": 731,
+      "sha256": "8c8b94d78aee1e27429ab5baf301946147c5e9c728d80bc9a5b842f63ca43835"
+    },
+    {
+      "path": "subjects/e09/turn-4-prompt.txt",
+      "bytes": 261,
+      "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+    },
+    {
+      "path": "subjects/e09/turn-4-result.json",
+      "bytes": 663,
+      "sha256": "bcc559a731d50894cf8b8ffd660a9059f832a101d6da4faaa1d510aaba112054"
+    },
+    {
+      "path": "subjects/e09/turn-4-stderr.txt",
+      "bytes": 366,
+      "sha256": "83abfa3227ee6c9a750233ea95307c27cb42912f4c59375f12693ba0a77edebf"
+    },
+    {
+      "path": "subjects/e09/turn-4-timing.jsonl",
+      "bytes": 894,
+      "sha256": "c9bc34c9d087e89560351e8eded32faaa7b1c7f77072a0a5db0306f0e559d6e5"
+    },
+    {
+      "path": "subjects/e10/preflight.json",
+      "bytes": 797,
+      "sha256": "4f146ed042478a2089dc3a4ad87c96b76bd5631bcd1913745bf6a7d6332a5b91"
+    },
+    {
+      "path": "subjects/e10/result.json",
+      "bytes": 3443,
+      "sha256": "c4e177f87aaa4415e02c42549dc9685647f6ef430f1139c044ea99c569b8b424"
+    },
+    {
+      "path": "subjects/e10/turn-1-events.jsonl",
+      "bytes": 12297,
+      "sha256": "f57e2245a930c47e19674607768628de2a888674dd3c26a37de67e10e27807f5"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/docs/maintainer.md",
+      "bytes": 1183,
+      "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e10/turn-1-files/test/export.test.cjs",
+      "bytes": 4215,
+      "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+    },
+    {
+      "path": "subjects/e10/turn-1-final.txt",
+      "bytes": 345,
+      "sha256": "1f2565e9593e4cb5d8a42d9cd057486f9f26a8e3adffff38b5bc135f44a20223"
+    },
+    {
+      "path": "subjects/e10/turn-1-prompt.txt",
+      "bytes": 622,
+      "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+    },
+    {
+      "path": "subjects/e10/turn-1-result.json",
+      "bytes": 640,
+      "sha256": "ab485a158e9b6cf9abd72477c22fc1951c04323f3cd821a0288c0cfc70746883"
+    },
+    {
+      "path": "subjects/e10/turn-1-stderr.txt",
+      "bytes": 634,
+      "sha256": "670bf7bbbf4a01cbcf4247e3e6c6f8b38add34b628aae4ef4771c4d1f0ec48fc"
+    },
+    {
+      "path": "subjects/e10/turn-1-timing.jsonl",
+      "bytes": 1767,
+      "sha256": "21c1c2c3fbf95587c7f0dbc3f1846d25b9fb0396fec9f0c27a2d4d814733287e"
+    },
+    {
+      "path": "subjects/e10/turn-2-events.jsonl",
+      "bytes": 956,
+      "sha256": "ef2209ca8f42258f4b7fd7c5d22a40e635b9c3fa85905aaf56d4ef7b8742290a"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/docs/maintainer.md",
+      "bytes": 1183,
+      "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e10/turn-2-files/test/export.test.cjs",
+      "bytes": 4215,
+      "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+    },
+    {
+      "path": "subjects/e10/turn-2-final.txt",
+      "bytes": 617,
+      "sha256": "c34313dabe008b5cb2d1c6ae0cc42fd9c3e2e61e637c629cbda69b2bf2c37498"
+    },
+    {
+      "path": "subjects/e10/turn-2-prompt.txt",
+      "bytes": 93,
+      "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+    },
+    {
+      "path": "subjects/e10/turn-2-result.json",
+      "bytes": 668,
+      "sha256": "9d40fd7e4a2b1ccf126e19fdfa5356ad57430e239b220c82ca8fa21e69d14f62"
+    },
+    {
+      "path": "subjects/e10/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "14a5030d997dda863d98302ec7fdfe5b5288785a409a4181f052d6f79687d540"
+    },
+    {
+      "path": "subjects/e10/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "40111d00b95280ac7a8686c167ead3f1ddab3e6f73dd68dac9322418c82eed27"
+    },
+    {
+      "path": "subjects/e10/turn-3-events.jsonl",
+      "bytes": 2179,
+      "sha256": "9b95d208960cf088b69236d0e2247ad1d6c513176b57618ec81e6167850fbe3c"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/docs/maintainer.md",
+      "bytes": 1183,
+      "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e10/turn-3-files/test/export.test.cjs",
+      "bytes": 4215,
+      "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+    },
+    {
+      "path": "subjects/e10/turn-3-final.txt",
+      "bytes": 1815,
+      "sha256": "2762a623603f9aecbf031ef61a2c9adb4bd68b50f6575f9ff3483713b0048911"
+    },
+    {
+      "path": "subjects/e10/turn-3-prompt.txt",
+      "bytes": 217,
+      "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+    },
+    {
+      "path": "subjects/e10/turn-3-result.json",
+      "bytes": 676,
+      "sha256": "9da463afd6cbd8c7b2f578a2bf2bd45f1124bca7251da4faa72e151190c1c41d"
+    },
+    {
+      "path": "subjects/e10/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "df4106bc9f1acdd61c9d0308795ffc531a1d9865635191855866f433da7bac3f"
+    },
+    {
+      "path": "subjects/e10/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "3fb6e0ba094bd0a07e88aefdac0a901f678a8e1882dc29d34a28cd9ff5ab2ca4"
+    },
+    {
+      "path": "subjects/e10/turn-4-events.jsonl",
+      "bytes": 4894,
+      "sha256": "09119196ceb8ae00c167c65929a68477a582ab2ed2786fc236be5b71ad811d76"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/docs/maintainer.md",
+      "bytes": 1183,
+      "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/handoff.md",
+      "bytes": 3756,
+      "sha256": "ec06e18203d6ad88a1252712521185672c4bd8ea5fffc9fcf220059126dfb219"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e10/turn-4-files/test/export.test.cjs",
+      "bytes": 4215,
+      "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b"
+    },
+    {
+      "path": "subjects/e10/turn-4-final.txt",
+      "bytes": 699,
+      "sha256": "0cfdf42bf4c30ba66dc283a60cf4d84ceeb998c154d40b234f393df3443edf62"
+    },
+    {
+      "path": "subjects/e10/turn-4-prompt.txt",
+      "bytes": 261,
+      "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+    },
+    {
+      "path": "subjects/e10/turn-4-result.json",
+      "bytes": 664,
+      "sha256": "abb58aec862a681c9bc736ddc0647a21c6b6a0587d08398dfa874cfe2849b7fc"
+    },
+    {
+      "path": "subjects/e10/turn-4-stderr.txt",
+      "bytes": 366,
+      "sha256": "d02651db0610be50f3fe5835ef1197702c7563da037f06962f73b8e9e209ae3d"
+    },
+    {
+      "path": "subjects/e10/turn-4-timing.jsonl",
+      "bytes": 720,
+      "sha256": "dad443bcd22e25d6d51d6456b3a150ccdf65b97aff7d06015d2f9d100e600b9b"
+    },
+    {
+      "path": "subjects/e13/preflight.json",
+      "bytes": 2095,
+      "sha256": "356a9da20fc6b17859751fbbd7b686f4d84a6af662f7309f1b2c5f5e972a5b1b"
+    },
+    {
+      "path": "subjects/e13/result.json",
+      "bytes": 2942,
+      "sha256": "009cef6e3af3d41230d4bf76152ea20e8faed1ecf2e56e2124733e7d38140689"
+    },
+    {
+      "path": "subjects/e13/turn-1-events.jsonl",
+      "bytes": 20229,
+      "sha256": "38fb4c05f6bfa7c8feab09a07cf067df53f060c0154560907455907809d7bc11"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/docs/maintainer.md",
+      "bytes": 1195,
+      "sha256": "89246a89558d0aae1a3d377804af5a9884bf5818c6ea67b61aff21e5d0e17cdf"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e13/turn-1-files/test/export.test.cjs",
+      "bytes": 3823,
+      "sha256": "4f5a4c9ad578a6151234e020ad59c2200bb9bdd5a40d3598af32badb2cd89987"
+    },
+    {
+      "path": "subjects/e13/turn-1-final.txt",
+      "bytes": 439,
+      "sha256": "9203a478edfd6c568d2347d27419a61f79c56470e15e3b359621442723da6e39"
+    },
+    {
+      "path": "subjects/e13/turn-1-prompt.txt",
+      "bytes": 622,
+      "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+    },
+    {
+      "path": "subjects/e13/turn-1-result.json",
+      "bytes": 639,
+      "sha256": "9d6beb59f5a8782bd7752c27ea6a21a9507a63c2320d44932492e24142f41a88"
+    },
+    {
+      "path": "subjects/e13/turn-1-stderr.txt",
+      "bytes": 366,
+      "sha256": "0f0d7329dc46cc1ca7cacb526061a8b95987f4751ff9133c44b188259455125d"
+    },
+    {
+      "path": "subjects/e13/turn-1-timing.jsonl",
+      "bytes": 1068,
+      "sha256": "a43b05d949e29bf9672d9c7046657d4b13184a35c6bfaa3304ff29ff58b7204e"
+    },
+    {
+      "path": "subjects/e13/turn-2-events.jsonl",
+      "bytes": 894,
+      "sha256": "f5058f0bec475411a1a84db263089600b155cc54e25aab6d4a70e8bb46e3d8d2"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/docs/maintainer.md",
+      "bytes": 1195,
+      "sha256": "89246a89558d0aae1a3d377804af5a9884bf5818c6ea67b61aff21e5d0e17cdf"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e13/turn-2-files/test/export.test.cjs",
+      "bytes": 3823,
+      "sha256": "4f5a4c9ad578a6151234e020ad59c2200bb9bdd5a40d3598af32badb2cd89987"
+    },
+    {
+      "path": "subjects/e13/turn-2-final.txt",
+      "bytes": 557,
+      "sha256": "58f98affeee076bf19b166ee093d8b2d9aa53ad0965697cf4a750f78dc01f7cf"
+    },
+    {
+      "path": "subjects/e13/turn-2-prompt.txt",
+      "bytes": 93,
+      "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+    },
+    {
+      "path": "subjects/e13/turn-2-result.json",
+      "bytes": 666,
+      "sha256": "b86b17e02fb16122a2667d213206d0dd7c3bd71e3a1b2830033037041aa6ed25"
+    },
+    {
+      "path": "subjects/e13/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "07ca4b243ad7772cc559c8a886082bbd144c076ba4702145cc9de0231ae75b10"
+    },
+    {
+      "path": "subjects/e13/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "e05ae96e51e534a73651e4b700933ef4e0ec9f02310c81a6037bdaee79e2db47"
+    },
+    {
+      "path": "subjects/e13/turn-3-events.jsonl",
+      "bytes": 2589,
+      "sha256": "cc1c66688b471c09e12da0512474e9390c662a9bb392295a5753cf00e3815f18"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/docs/maintainer.md",
+      "bytes": 1195,
+      "sha256": "89246a89558d0aae1a3d377804af5a9884bf5818c6ea67b61aff21e5d0e17cdf"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/src/merge.cjs",
+      "bytes": 378,
+      "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915"
+    },
+    {
+      "path": "subjects/e13/turn-3-files/test/export.test.cjs",
+      "bytes": 3823,
+      "sha256": "4f5a4c9ad578a6151234e020ad59c2200bb9bdd5a40d3598af32badb2cd89987"
+    },
+    {
+      "path": "subjects/e13/turn-3-final.txt",
+      "bytes": 2225,
+      "sha256": "ee72cf386a097e5a7feab9209523833ba0b690c5edd0176fc975411f1fa5c539"
+    },
+    {
+      "path": "subjects/e13/turn-3-prompt.txt",
+      "bytes": 217,
+      "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+    },
+    {
+      "path": "subjects/e13/turn-3-result.json",
+      "bytes": 674,
+      "sha256": "eb1df9c189483625e38c2e55d9476980fb24a19eaa3e8004e60bb1924a85581e"
+    },
+    {
+      "path": "subjects/e13/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "ca4c542ae1d525e7917c97da3ce27a2468fefac25d40632c948a000521193d43"
+    },
+    {
+      "path": "subjects/e13/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "5f68dcb5d3aed0262b91c051b5726e4364925a29c78eda6d9f7c4ac2050e4a61"
+    },
+    {
+      "path": "subjects/e14/preflight.json",
+      "bytes": 2095,
+      "sha256": "4ffefa0705eb961172e2071e48b40066220428c4a38b35c38209bcace7945c03"
+    },
+    {
+      "path": "subjects/e14/result.json",
+      "bytes": 2941,
+      "sha256": "ff64906b87a6c32974aa0d6e61d0088df93882ace07e98396e6e663ebba45f28"
+    },
+    {
+      "path": "subjects/e14/turn-1-events.jsonl",
+      "bytes": 2640,
+      "sha256": "57178c0713aa58ae77a2ef39d22b75c1a721be6a85580509ae9fd43e5d92bee7"
+    },
+    {
+      "path": "subjects/e14/turn-1-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e14/turn-1-final.txt",
+      "bytes": 572,
+      "sha256": "e77e6eb841ea9a49fc9405267d4a430ff2b226550d33471f15f1cc754bfdec6d"
+    },
+    {
+      "path": "subjects/e14/turn-1-prompt.txt",
+      "bytes": 359,
+      "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+    },
+    {
+      "path": "subjects/e14/turn-1-result.json",
+      "bytes": 648,
+      "sha256": "60b21ea4441c21954bea7ec798c98f4aa49d5ab6c3b68ea3245c06657a333fca"
+    },
+    {
+      "path": "subjects/e14/turn-1-stderr.txt",
+      "bytes": 520,
+      "sha256": "fa31d5c2be7475cc8c5becbdce682c61eb74b06f0695de78fe9abae6cba4d8c8"
+    },
+    {
+      "path": "subjects/e14/turn-1-timing.jsonl",
+      "bytes": 548,
+      "sha256": "5dc674d6b0da1efeb524311cf33ae357310fe419dd48a72ff8911d3e613e38ee"
+    },
+    {
+      "path": "subjects/e14/turn-2-events.jsonl",
+      "bytes": 914,
+      "sha256": "c9be0abe8b64753a59abfb9e7c06aa908337775f5b5857408c8c296696b0535d"
+    },
+    {
+      "path": "subjects/e14/turn-2-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e14/turn-2-final.txt",
+      "bytes": 578,
+      "sha256": "0d55f24b3624f98fe52aeb63a111ae40d0e04fd09045bae65c39af8d6c74deb2"
+    },
+    {
+      "path": "subjects/e14/turn-2-prompt.txt",
+      "bytes": 197,
+      "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+    },
+    {
+      "path": "subjects/e14/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "87d97091127125dae5989864c23feb44e4befda1ea2204db0632bd71c866d9c9"
+    },
+    {
+      "path": "subjects/e14/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "b7fd3ae166f730a7f3b31df82ca5b2dbce0e7e2594c1459dff008955f469c7a1"
+    },
+    {
+      "path": "subjects/e14/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "7b84194a4758814be1a60ee2e11f77fd0afd50616049cb4916b8f70229307d17"
+    },
+    {
+      "path": "subjects/e14/turn-3-events.jsonl",
+      "bytes": 655,
+      "sha256": "fb0a066d59cac94798a05e9bc08d18bf7a4cc7e936e6716683e9c247564e2bbd"
+    },
+    {
+      "path": "subjects/e14/turn-3-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e14/turn-3-final.txt",
+      "bytes": 319,
+      "sha256": "b85eb03a09c9d223b6f9a2ff5c328f83d93bb5d9c72deaac97f76432be563253"
+    },
+    {
+      "path": "subjects/e14/turn-3-prompt.txt",
+      "bytes": 190,
+      "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+    },
+    {
+      "path": "subjects/e14/turn-3-result.json",
+      "bytes": 670,
+      "sha256": "f967f7bad4124cd2c1fe36d9d4fa562aa09d2a15e074131d89dd904099a153a4"
+    },
+    {
+      "path": "subjects/e14/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "151dd928a7df646e816293d846ecf17c645a956375dfdd0263d7510e3b731268"
+    },
+    {
+      "path": "subjects/e14/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "a1c442714ee6bf5a48d0cb1e633d25730c29a2901e41da26f995bece406eaef8"
+    },
+    {
+      "path": "subjects/e15/preflight.json",
+      "bytes": 2095,
+      "sha256": "3f5ba679de33e57e8a9032bf631e37e68785e6247b38f0ebe09bb91d035f5ddb"
+    },
+    {
+      "path": "subjects/e15/result.json",
+      "bytes": 2951,
+      "sha256": "4aeecc358d11bc3f4f237ac7b1c11d47e2f7867d06fb021022fa543ce8be5d23"
+    },
+    {
+      "path": "subjects/e15/turn-1-events.jsonl",
+      "bytes": 2685,
+      "sha256": "17c6302869f7d6fcd0820069fe3429533fb51e9e07abf928093ab6f64e67580a"
+    },
+    {
+      "path": "subjects/e15/turn-1-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e15/turn-1-final.txt",
+      "bytes": 591,
+      "sha256": "94551710a7832502b1ba65a1e13c7dad06e14492a79643a747b18aca62258b58"
+    },
+    {
+      "path": "subjects/e15/turn-1-prompt.txt",
+      "bytes": 359,
+      "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+    },
+    {
+      "path": "subjects/e15/turn-1-result.json",
+      "bytes": 648,
+      "sha256": "88c1480d892b643933138fd04d0e851911219e1948323fc7f87335c1b93b8de0"
+    },
+    {
+      "path": "subjects/e15/turn-1-stderr.txt",
+      "bytes": 520,
+      "sha256": "8ef48ddf891098227e6da8dd8658970be5b87107cfc68f88fbcf03dfba139408"
+    },
+    {
+      "path": "subjects/e15/turn-1-timing.jsonl",
+      "bytes": 548,
+      "sha256": "19772e23137ad15ae2ab3abed3d2bab1574ee2a8f0533358707b51ef7d2f2577"
+    },
+    {
+      "path": "subjects/e15/turn-2-events.jsonl",
+      "bytes": 933,
+      "sha256": "e6c542ea77aff2ce7c57b173b8478f1d407195508d95f97ad54bfd5523fe1841"
+    },
+    {
+      "path": "subjects/e15/turn-2-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e15/turn-2-final.txt",
+      "bytes": 596,
+      "sha256": "1af1badc06d3a457456271721aff6200b850494f0a165ef1f65c381825d48c4a"
+    },
+    {
+      "path": "subjects/e15/turn-2-prompt.txt",
+      "bytes": 197,
+      "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+    },
+    {
+      "path": "subjects/e15/turn-2-result.json",
+      "bytes": 667,
+      "sha256": "2573c44f053d249102086573eb4895f0b78906e1593797f46664666a1cbd1b71"
+    },
+    {
+      "path": "subjects/e15/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "a53299ea98730a2ce7ad78d5fa3a8af9bf48bb511e4f4ddcfa503538ea01bd5b"
+    },
+    {
+      "path": "subjects/e15/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "27ab11b4174678d000d333c44be974c623cd41d75e13d5c491dac12e17680cc8"
+    },
+    {
+      "path": "subjects/e15/turn-3-events.jsonl",
+      "bytes": 609,
+      "sha256": "710228bb4e00f3773ed01e97020ba091267a9e3954abacb98b8334929616d775"
+    },
+    {
+      "path": "subjects/e15/turn-3-files/launch-notes.md",
+      "bytes": 1056,
+      "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42"
+    },
+    {
+      "path": "subjects/e15/turn-3-final.txt",
+      "bytes": 273,
+      "sha256": "4ca912572cab889aebf79ac3be1e660c887a3ae683a086563ad643fdd5452629"
+    },
+    {
+      "path": "subjects/e15/turn-3-prompt.txt",
+      "bytes": 190,
+      "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+    },
+    {
+      "path": "subjects/e15/turn-3-result.json",
+      "bytes": 670,
+      "sha256": "b83fe58d6b6beff7e2ead0804dfeee941a8ab6a577d50735db66697eeca35cc0"
+    },
+    {
+      "path": "subjects/e15/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "6448a0d1fbef50d54bc6bd17d640c6abf6cb25d97fe76d31647892bd26a25614"
+    },
+    {
+      "path": "subjects/e15/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "29caf33b5fa40d45834a2333d0de3b4d46d9347c4d0ea7dff4e2d6f47dc8280a"
+    },
+    {
+      "path": "subjects/e16/preflight.json",
+      "bytes": 2095,
+      "sha256": "b828f6d5714f6b8a6bad9570b97240415feeefd6987d0d3e4df8a3dd93cebe6a"
+    },
+    {
+      "path": "subjects/e16/result.json",
+      "bytes": 2958,
+      "sha256": "aef7df8709b8450600b917aadb303bcc34d1b9afb120735a236832d3deaf4015"
+    },
+    {
+      "path": "subjects/e16/turn-1-events.jsonl",
+      "bytes": 21009,
+      "sha256": "dcd5eecb748346df9561f5b2632eae18e254ad6444a6cf0170e1666b03717c0b"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/docs/maintainer.md",
+      "bytes": 1109,
+      "sha256": "06ee47959cb0de5e3631b64176ab158c587626cb5265c0bd490857720e1504f1"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/src/merge.cjs",
+      "bytes": 379,
+      "sha256": "8278b1b5c6da444ebd9dc929292ac0f8971a7c032240cea82d7b37f4b0d8dd3e"
+    },
+    {
+      "path": "subjects/e16/turn-1-files/test/export.test.cjs",
+      "bytes": 3560,
+      "sha256": "0543428d6f56c3c8ef8bc20cbb794742587e906be39e16b17d4c49daa64626f8"
+    },
+    {
+      "path": "subjects/e16/turn-1-final.txt",
+      "bytes": 340,
+      "sha256": "fda59a192e81bd9117fe6cd4aabd81bfc607d66542cc47f3685f09b16c49b5d6"
+    },
+    {
+      "path": "subjects/e16/turn-1-prompt.txt",
+      "bytes": 622,
+      "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+    },
+    {
+      "path": "subjects/e16/turn-1-result.json",
+      "bytes": 640,
+      "sha256": "51e5af82518189373da2503268d1c6585e855e90a844eaaadca1fe69b3551a2e"
+    },
+    {
+      "path": "subjects/e16/turn-1-stderr.txt",
+      "bytes": 695,
+      "sha256": "84f49149fc504b83383979c4ca2b3206bd1153a0e1baa3ecd95f4f867822de80"
+    },
+    {
+      "path": "subjects/e16/turn-1-timing.jsonl",
+      "bytes": 1156,
+      "sha256": "3778dfd217de81b1788b77208de3ddb995d7412b1336b08773631af771687eba"
+    },
+    {
+      "path": "subjects/e16/turn-2-events.jsonl",
+      "bytes": 742,
+      "sha256": "58c80132ad6ecb770a31fe1c3aa018e8e885222caf39fc5270791b782a055dd5"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/docs/maintainer.md",
+      "bytes": 1109,
+      "sha256": "06ee47959cb0de5e3631b64176ab158c587626cb5265c0bd490857720e1504f1"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/src/merge.cjs",
+      "bytes": 379,
+      "sha256": "8278b1b5c6da444ebd9dc929292ac0f8971a7c032240cea82d7b37f4b0d8dd3e"
+    },
+    {
+      "path": "subjects/e16/turn-2-files/test/export.test.cjs",
+      "bytes": 3560,
+      "sha256": "0543428d6f56c3c8ef8bc20cbb794742587e906be39e16b17d4c49daa64626f8"
+    },
+    {
+      "path": "subjects/e16/turn-2-final.txt",
+      "bytes": 405,
+      "sha256": "535a91b0a02b16a2f5d5cb354adb1d13f9d00d829df2ecb8a209ececcf403654"
+    },
+    {
+      "path": "subjects/e16/turn-2-prompt.txt",
+      "bytes": 93,
+      "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+    },
+    {
+      "path": "subjects/e16/turn-2-result.json",
+      "bytes": 668,
+      "sha256": "05a504509c74d24e50ae653f14de3369d6c9da1e2b43dc4484efd4f04830cb20"
+    },
+    {
+      "path": "subjects/e16/turn-2-stderr.txt",
+      "bytes": 366,
+      "sha256": "9d131308955d7a2484bf865a6bc67e424965c89d31758e5311fb8af6857ff8ca"
+    },
+    {
+      "path": "subjects/e16/turn-2-timing.jsonl",
+      "bytes": 289,
+      "sha256": "2ff04a8e44b7a0d51fe432ddb0c2c2f0eeea9e518aadefbfa4b32784f5000a7c"
+    },
+    {
+      "path": "subjects/e16/turn-3-events.jsonl",
+      "bytes": 2374,
+      "sha256": "8d190c52c2fdb0d3d4760f6ab1de0787dae95b35a9f707f283331386ef47a5b6"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/bin/export.cjs",
+      "bytes": 372,
+      "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/docs/maintainer.md",
+      "bytes": 1109,
+      "sha256": "06ee47959cb0de5e3631b64176ab158c587626cb5265c0bd490857720e1504f1"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/EXPORT-CONTRACT.md",
+      "bytes": 1616,
+      "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/fixtures/north.json",
+      "bytes": 348,
+      "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/fixtures/south.json",
+      "bytes": 345,
+      "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/package.json",
+      "bytes": 222,
+      "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/src/csv.cjs",
+      "bytes": 332,
+      "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/src/load.cjs",
+      "bytes": 164,
+      "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/src/merge.cjs",
+      "bytes": 379,
+      "sha256": "8278b1b5c6da444ebd9dc929292ac0f8971a7c032240cea82d7b37f4b0d8dd3e"
+    },
+    {
+      "path": "subjects/e16/turn-3-files/test/export.test.cjs",
+      "bytes": 3560,
+      "sha256": "0543428d6f56c3c8ef8bc20cbb794742587e906be39e16b17d4c49daa64626f8"
+    },
+    {
+      "path": "subjects/e16/turn-3-final.txt",
+      "bytes": 2013,
+      "sha256": "679dc3f1933cc27582cbad5e9af3407977a4649b6f40c064dbec0460886e57e9"
+    },
+    {
+      "path": "subjects/e16/turn-3-prompt.txt",
+      "bytes": 217,
+      "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+    },
+    {
+      "path": "subjects/e16/turn-3-result.json",
+      "bytes": 677,
+      "sha256": "4278ff132f5ea70a514ba644e7af6bbc44d5f90eba569cf447f9e1a6ed307cf6"
+    },
+    {
+      "path": "subjects/e16/turn-3-stderr.txt",
+      "bytes": 366,
+      "sha256": "8a3d755d165adc58eec2d1ac7f65929b15e6a6360b9b022f71d3ac28fe39c544"
+    },
+    {
+      "path": "subjects/e16/turn-3-timing.jsonl",
+      "bytes": 289,
+      "sha256": "cee050a1135a57754c08cdbd6dc474b9fda28412b2d38e14f0f50485aa4eb634"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 1375,
+      "sha256": "1673cd3f8055b0af216184070dbaaed530bfed74cfe38f6c45d73d1175d421db"
+    }
+  ],
+  "scope": "Development evidence only; actual chat excerpts/profile/auth/raw private histories excluded."
+}

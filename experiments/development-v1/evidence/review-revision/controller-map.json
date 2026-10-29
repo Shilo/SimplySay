@@ -1,0 +1,332 @@
+{
+  "sources": [
+    {
+      "id": "e14",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    },
+    {
+      "id": "e16",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e15",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/b-incremental-conversation.v3.txt"
+    },
+    {
+      "id": "e13",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "enabled",
+      "policy": "experiments/development-v1/candidates/a-relevance-gate.v3.txt"
+    },
+    {
+      "id": "e03",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "absent",
+      "existing_capture_reference": true
+    },
+    {
+      "id": "e06",
+      "case_file": "experiments/development-v1/cases/d1.case.json",
+      "condition": "minimal",
+      "existing_capture_reference": true
+    },
+    {
+      "id": "e07",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "absent",
+      "existing_capture_reference": true,
+      "projection_turns": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "e10",
+      "case_file": "experiments/development-v1/cases/d2-prefix.case.json",
+      "condition": "minimal",
+      "existing_capture_reference": true,
+      "projection_turns": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "key": "d1-abs-a-v3",
+      "a": "e03",
+      "b": "e14"
+    },
+    {
+      "key": "d1-abs-b-v3",
+      "a": "e03",
+      "b": "e15"
+    },
+    {
+      "key": "d1-a-v3-b-v3",
+      "a": "e14",
+      "b": "e15"
+    },
+    {
+      "key": "d1-a-v3-simple",
+      "a": "e14",
+      "b": "e06"
+    },
+    {
+      "key": "d2prefix-abs-a-v3",
+      "a": "e07",
+      "b": "e13"
+    },
+    {
+      "key": "d2prefix-abs-b-v3",
+      "a": "e07",
+      "b": "e16"
+    },
+    {
+      "key": "d2prefix-a-v3-b-v3",
+      "a": "e13",
+      "b": "e16"
+    },
+    {
+      "key": "d2prefix-b-v3-simple",
+      "a": "e16",
+      "b": "e10"
+    }
+  ],
+  "reviewers": {
+    "revision-review-1": {
+      "pairs": [
+        {
+          "key": "d1-abs-a-v3",
+          "kind": "real",
+          "pair_id": "pair-fa2e2fd627c3",
+          "left": "sample-a87e90aa0726",
+          "right": "sample-36b3193b4c78",
+          "left_source": "e03",
+          "right_source": "e14"
+        },
+        {
+          "key": "d1-abs-b-v3",
+          "kind": "real",
+          "pair_id": "pair-a6991b027509",
+          "left": "sample-bed9f9a772e3",
+          "right": "sample-a87e90aa0726",
+          "left_source": "e15",
+          "right_source": "e03"
+        },
+        {
+          "pair_id": "pair-73ab5828a",
+          "left": "sample-2576ab1cf",
+          "right": "sample-86c7faf6c",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "cMissing",
+          "right_source": "mC"
+        },
+        {
+          "pair_id": "pair-5ff3ef47e",
+          "left": "sample-86c7faf6c",
+          "right": "sample-b3828c97b",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cFiller"
+        },
+        {
+          "key": "d1-a-v3-b-v3",
+          "kind": "real",
+          "pair_id": "pair-e6d2dbf39ca9",
+          "left": "sample-36b3193b4c78",
+          "right": "sample-bed9f9a772e3",
+          "left_source": "e14",
+          "right_source": "e15"
+        },
+        {
+          "key": "d1-a-v3-simple",
+          "kind": "real",
+          "pair_id": "pair-39a9efc1bc7e",
+          "left": "sample-516acebf92b3",
+          "right": "sample-36b3193b4c78",
+          "left_source": "e06",
+          "right_source": "e14"
+        },
+        {
+          "key": "d2prefix-abs-a-v3",
+          "kind": "real",
+          "pair_id": "pair-671c1b57c4f0",
+          "left": "sample-615235bc3f15",
+          "right": "sample-cd99384d6ef5",
+          "left_source": "e07",
+          "right_source": "e13"
+        },
+        {
+          "key": "d2prefix-abs-b-v3",
+          "kind": "real",
+          "pair_id": "pair-4e32aba82dfc",
+          "left": "sample-055a1819d9fb",
+          "right": "sample-615235bc3f15",
+          "left_source": "e16",
+          "right_source": "e07"
+        },
+        {
+          "key": "d2prefix-a-v3-b-v3",
+          "kind": "real",
+          "pair_id": "pair-39f0d15ff529",
+          "left": "sample-cd99384d6ef5",
+          "right": "sample-055a1819d9fb",
+          "left_source": "e13",
+          "right_source": "e16"
+        },
+        {
+          "key": "d2prefix-b-v3-simple",
+          "kind": "real",
+          "pair_id": "pair-cf97681f329b",
+          "left": "sample-838710bb187e",
+          "right": "sample-055a1819d9fb",
+          "left_source": "e10",
+          "right_source": "e16"
+        },
+        {
+          "pair_id": "pair-dcf59ddf3",
+          "left": "sample-c33d41d55",
+          "right": "sample-e9a313b83",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "cTerse",
+          "right_source": "dB"
+        },
+        {
+          "pair_id": "pair-a9491d80f",
+          "left": "sample-86c7faf6c",
+          "right": "sample-cbe806cd1",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cIdentical"
+        }
+      ],
+      "packet_sha256": "a35c4b4b8a5f7f4c3f49999bcc1ef9dc992c7760af84afc6d38f5ae4962fca04"
+    },
+    "revision-review-2": {
+      "pairs": [
+        {
+          "pair_id": "pair-f2ecf2583",
+          "left": "sample-f896a3879",
+          "right": "sample-fe159c2f8",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cMissing"
+        },
+        {
+          "pair_id": "pair-30d4f6ffa",
+          "left": "sample-914adb43c",
+          "right": "sample-f896a3879",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "cFiller",
+          "right_source": "mC"
+        },
+        {
+          "key": "d2prefix-b-v3-simple",
+          "kind": "real",
+          "pair_id": "pair-5fe49376e15d",
+          "left": "sample-d0c13901b2a3",
+          "right": "sample-33a6a7ce8ecf",
+          "left_source": "e16",
+          "right_source": "e10"
+        },
+        {
+          "key": "d2prefix-a-v3-b-v3",
+          "kind": "real",
+          "pair_id": "pair-cff6a15ea028",
+          "left": "sample-d0c13901b2a3",
+          "right": "sample-ad3ec4fb650d",
+          "left_source": "e16",
+          "right_source": "e13"
+        },
+        {
+          "key": "d2prefix-abs-b-v3",
+          "kind": "real",
+          "pair_id": "pair-c8aecc004d6c",
+          "left": "sample-a2574570dbe2",
+          "right": "sample-d0c13901b2a3",
+          "left_source": "e07",
+          "right_source": "e16"
+        },
+        {
+          "key": "d2prefix-abs-a-v3",
+          "kind": "real",
+          "pair_id": "pair-14150fbfe1d9",
+          "left": "sample-ad3ec4fb650d",
+          "right": "sample-a2574570dbe2",
+          "left_source": "e13",
+          "right_source": "e07"
+        },
+        {
+          "key": "d1-a-v3-simple",
+          "kind": "real",
+          "pair_id": "pair-6e3fe5bdf3d0",
+          "left": "sample-434ca45e0299",
+          "right": "sample-d746073003c4",
+          "left_source": "e14",
+          "right_source": "e06"
+        },
+        {
+          "key": "d1-a-v3-b-v3",
+          "kind": "real",
+          "pair_id": "pair-a34b9a356043",
+          "left": "sample-a5fcbcb7d50b",
+          "right": "sample-434ca45e0299",
+          "left_source": "e15",
+          "right_source": "e14"
+        },
+        {
+          "pair_id": "pair-49491fbf4",
+          "left": "sample-95842651b",
+          "right": "sample-89813e901",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "dB",
+          "right_source": "cTerse"
+        },
+        {
+          "pair_id": "pair-e8e252fc0",
+          "left": "sample-73cbcc024",
+          "right": "sample-f896a3879",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "cIdentical",
+          "right_source": "mC"
+        },
+        {
+          "key": "d1-abs-b-v3",
+          "kind": "real",
+          "pair_id": "pair-f768c51ffed8",
+          "left": "sample-bb3274ac9b0c",
+          "right": "sample-a5fcbcb7d50b",
+          "left_source": "e03",
+          "right_source": "e15"
+        },
+        {
+          "key": "d1-abs-a-v3",
+          "kind": "real",
+          "pair_id": "pair-fc28977216d2",
+          "left": "sample-434ca45e0299",
+          "right": "sample-bb3274ac9b0c",
+          "left_source": "e14",
+          "right_source": "e03"
+        }
+      ],
+      "packet_sha256": "4c5a9aef0e35b53bd7f87a6e9f53a9ac1cb6457dd34c3f73a0ad2d5959a1a6cc"
+    }
+  }
+}
