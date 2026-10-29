@@ -13,6 +13,20 @@ const ordinary=c=>[c.ordinary_chat,...c.progress,c.complete_final||''].join('\n'
 const finalText=c=>[c.ordinary_chat,c.complete_final||''].join('\n'),progressText=c=>c.progress.join('\n');
 const surfaceText=(c,s)=>s==='final'?finalText(c):s==='progress'?progressText(c):s==='both'?ordinary(c):'';
 const note=()=>({choice:'unknown',surface:'not-observed',tie_basis:'insufficient_evidence',rationale:'',evidence:[]});
+// Optional assessment data from already established host records, never a
+// subject instruction or a candidate-dependent grading rule.
+const HOST_FACTS={summary:'The applicable stock host guidance requires an opening commentary message before tool work and commentary during ongoing work with a stated 60-second upper gap.',source_role:'developer',source_sha256:'2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a',provenance:'Supported saved stock developer-message records; docs/workflow-instruction-review.md and docs/instruction-delivery-diagnosis.md.',limits:['Completed-message receipt timestamps are not exact authoring timestamps or UI notification times and do not prove compliance with the stated cadence.','No desktop notification or reader-comprehension measurement is supplied.','These facts do not reveal incoming native parent-to-child instructions or verify inter-agent boundaries.','The source is developer-role history; it does not expose the complete upstream system layer, final outgoing request assembly or model attention.']};
+function hostAssessmentFacts(caseIds){return {case_ids:clone(caseIds),...clone(HOST_FACTS)};}
+function checkedHostFacts(value,observedIds){
+  if(value===undefined)return null;
+  assert(value&&typeof value==='object'&&!Array.isArray(value),'Malformed assessor host facts');
+  assert.deepEqual(Object.keys(value).sort(),['case_ids',...Object.keys(HOST_FACTS)].sort(),'Unexpected assessor host-fact fields');
+  assert(Array.isArray(value.case_ids)&&value.case_ids.length&&new Set(value.case_ids).size===value.case_ids.length,'Host facts need unique case IDs');
+  assert(value.case_ids.every(id=>typeof id==='string'&&/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(id)),'Malformed assessor host case ID');
+  if(observedIds)assert(value.case_ids.every(id=>observedIds.has(id)),'Assessor host facts name an unknown or unobserved case');
+  for(const[k,v]of Object.entries(HOST_FACTS))assert.deepEqual(value[k],v,'Host facts must match established neutral provenance/requirements/limits');
+  return hostAssessmentFacts(value.case_ids);
+}
 function timeScreen(answer,clock='3:20 pm'){
   const forms=clock==='3:20 pm'?[/\b3[:.]20\s*(?:p\.?\s*m\.?)?\b/i,/\b15:20\b/,/\btwenty[ -]past[ -]three\b/i]:clock==='9:55 am'?[/\b0?9[:.]55\s*(?:a\.?\s*m\.?)?\b/i,/\bfive[ -]to[ -]ten\b/i]:null;
   assert(forms,'Unsupported request-derived clock check');
@@ -20,8 +34,10 @@ function timeScreen(answer,clock='3:20 pm'){
 }
 function prepare(manifestFile,out,cohort){
   assert(!fs.existsSync(path.join(out,'reader-freeze.json')),'Refuse packet overwrite');
-  const baseOut=path.join(out,'base');base.prepare(manifestFile,baseOut,cohort);
   const manifest=json(path.resolve(ROOT,manifestFile));
+  const observedIds=manifest.assessor_host_facts===undefined?null:new Set(manifest.subjects.map(s=>base.capture(s)).filter(c=>c.turns.some(t=>t.final_observed||t.progress.length)).map(c=>c.task.id));
+  const hostFacts=checkedHostFacts(manifest.assessor_host_facts,observedIds);
+  const baseOut=path.join(out,'base');base.prepare(manifestFile,baseOut,cohort);
   const calibrationMode=manifest.goal_calibration_mode||JOINT;
   assert([JOINT,INDEPENDENT].includes(calibrationMode),'Unknown calibration mode');
   const calibrationFile=path.resolve(ROOT,manifest.calibration_file||path.relative(ROOT,CAL));
@@ -42,6 +58,10 @@ function prepare(manifestFile,out,cohort){
     if(n===2)pairs.reverse();
     packet.candidates.push(...(n===2?newCandidates.reverse():newCandidates));
     packet.pairs=pairs.map(({pair_id,left,right})=>({pair_id,left,right}));
+    if(hostFacts){
+      const controlCases=new Set(pairs.filter(p=>p.kind!=='real').flatMap(p=>[p.left,p.right]).map(alias=>packet.candidates.find(c=>c.alias===alias).case_id));
+      for(const caseId of hostFacts.case_ids){assert(!controlCases.has(caseId),'Host facts must not change control task data');assert(packet.tasks[caseId],'Missing observed task');packet.tasks[caseId].host_communication_facts=clone(HOST_FACTS);}
+    }
     packet.instructions.push('Return the supplied wrapper: review uses the original strict template; goal_notes records each goal separately. These required wrapper/goal objects are part of this template. The no-rich-objects restriction applies to evidence/issues STRING array entries, not the required template structure. Evidence arrays contain exact sample quotations. Issues and rationales explain judgments in your own words. Never put side labels inside an evidence quotation.',
       'Clarity means readability/ease of understanding for this request and audience. Separately judge unnecessary explanation: relevant background can still be unnecessary for the current question; required depth and causal reasoning remain benefits. Do not infer all goals from an overall preference.',
       'For every goal identify whether the decisive content is ordinary final answer, progress, both, or not observed. Quote the declared surface only; both needs support from final and progress. Do not score requested copy-ready text or file contents as chat verbosity. Distinguish host-required message presence from optional narration. A truthful task-related update still needs reader benefit before completion; a decision, blocker, consequential warning or changed expectation can justify interruption.',
@@ -53,7 +73,7 @@ function prepare(manifestFile,out,cohort){
     jobs.push({reviewer_id:id,packet:path.join(out,id,'packet.json'),template:path.join(out,id,'response-template.json'),output:path.join(out,'reviews',id+'.json')});
   }
   put(path.join(out,'controller-map.json'),map);put(path.join(out,'deterministic.json'),det);put(path.join(out,'chat-content-screens.json'),chatScreens);put(path.join(out,'jobs.json'),jobs);
-  put(path.join(out,'reader-freeze.json'),{manifest_file:path.relative(ROOT,path.resolve(ROOT,manifestFile)).replaceAll('\\','/'),goal_calibration_mode:calibrationMode,adapter_sha256:sha(read(__filename)),calibration_file:path.relative(ROOT,calibrationFile).replaceAll('\\','/'),calibration_sha256:sha(read(calibrationFile)),validator_sha256:sha(read(path.join(ROOT,'experiments/assessment-v2/assess.cjs'))),base_adapter_sha256:sha(read(path.join(ROOT,'experiments/development-v1/assess.cjs'))),checks_sha256:sha(read(path.join(ROOT,'experiments/development-v1/cases/checks.cjs'))),manifest_sha256:sha(read(path.resolve(ROOT,manifestFile))),map_sha256:sha(read(path.join(out,'controller-map.json'))),deterministic_sha256:sha(read(path.join(out,'deterministic.json'))),chat_screens_sha256:sha(read(path.join(out,'chat-content-screens.json'))),reviewers:map.reviewers});
+  put(path.join(out,'reader-freeze.json'),{manifest_file:path.relative(ROOT,path.resolve(ROOT,manifestFile)).replaceAll('\\','/'),goal_calibration_mode:calibrationMode,...hostFacts?{assessor_host_facts_sha256:sha(JSON.stringify(hostFacts))}:{},adapter_sha256:sha(read(__filename)),calibration_file:path.relative(ROOT,calibrationFile).replaceAll('\\','/'),calibration_sha256:sha(read(calibrationFile)),validator_sha256:sha(read(path.join(ROOT,'experiments/assessment-v2/assess.cjs'))),base_adapter_sha256:sha(read(path.join(ROOT,'experiments/development-v1/assess.cjs'))),checks_sha256:sha(read(path.join(ROOT,'experiments/development-v1/cases/checks.cjs'))),manifest_sha256:sha(read(path.resolve(ROOT,manifestFile))),map_sha256:sha(read(path.join(out,'controller-map.json'))),deterministic_sha256:sha(read(path.join(out,'deterministic.json'))),chat_screens_sha256:sha(read(path.join(out,'chat-content-screens.json'))),reviewers:map.reviewers});
   console.log(JSON.stringify({prepared:cohort,real_pairs:map.pairs.length,legacy_controls:4,new_diagnostics:calibration.diagnostics.length,reviewers:2,model_sessions_started:0}));
 }
 function validate(wrapper,packet){
@@ -122,11 +142,14 @@ function eligibleOnSurface(calibration,goal,surface){
 }
 function report(out){
   const freeze=json(path.join(out,'reader-freeze.json')),map=json(path.join(out,'controller-map.json'));
+  let hostFacts=null;
   if(freeze.manifest_file){
     const manifestFile=path.resolve(ROOT,freeze.manifest_file);
     assert(manifestFile.startsWith(ROOT+path.sep),'Manifest must remain inside the project');
     assert.equal(sha(read(manifestFile)),freeze.manifest_sha256,'Frozen manifest changed');
     assert.equal(json(manifestFile).goal_calibration_mode||JOINT,freeze.goal_calibration_mode||JOINT,'Frozen scoring mode differs from its hashed manifest');
+    hostFacts=checkedHostFacts(json(manifestFile).assessor_host_facts);
+    assert.equal(freeze.assessor_host_facts_sha256,hostFacts?sha(JSON.stringify(hostFacts)):undefined,'Frozen assessor host facts differ from their hashed manifest');
   }
   const calibrationFile=freeze.calibration_file?path.resolve(ROOT,freeze.calibration_file):CAL;
   assert(calibrationFile.startsWith(__dirname+path.sep),'Calibration must remain inside this experimental adapter');
@@ -138,7 +161,7 @@ function report(out){
     try{const response=json(file);validate(response,packet);reviewers.push({id,status:'received',calibration:diagnose(response,mapping,packet,calibrationFile,freeze.goal_calibration_mode||JOINT),response,raw_sha256:sha(read(file))});}catch(e){reviewers.push({id,status:'invalid/unverified',error:e.message,raw_output_retained:true});}
   }
   const comparisons=map.pairs.map(p=>({key:p.key,votes:reviewers.filter(r=>r.response).map(r=>{const m=map.reviewers[r.id].pairs.find(m=>m.key===p.key),judgment=r.response.review.pair_reviews.find(x=>x.pair_id===m.pair_id),notes=r.response.goal_notes.find(x=>x.pair_id===m.pair_id).goals;return {reviewer:r.id,left_source:m.left_source,right_source:m.right_source,overall_preference_descriptive:judgment.communication.preference,information:{left:judgment.left_information,right:judgment.right_information,calibration_eligible:r.calibration.eligible_claims.information},goals:Object.fromEntries(GOALS.map(g=>[g,{...notes[g],preferred_source:['left','right'].includes(notes[g].choice)?m[notes[g].choice+'_source']:notes[g].choice,claim_eligible:eligibleOnSurface(r.calibration,g,notes[g].surface)&&judgment.communication.confidence!=='low'&&notes[g].choice!=='unknown'&&notes[g].tie_basis!=='insufficient_evidence'}])),missing_evidence:judgment.missing_evidence};})}));
-  const result={label:'Automated experimental assessments, not measured human comprehension',deterministic:json(path.join(out,'deterministic.json')),chat_content_screens:json(path.join(out,'chat-content-screens.json')),reviewers,comparisons,original_child_instructions:'unverified',limits:['New diagnostic eligibility is claim-specific; old four-control results and thresholds remain unchanged.','Opposite orientation/order checks sensitivity but does not establish absence of order bias.','Overall preference or shorter text does not prove every goal.','Protected files/copy and necessary technical depth are separate from ordinary-chat style.']};put(path.join(out,'assessment.json'),result);console.log(JSON.stringify({reviewers:reviewers.map(r=>({id:r.id,status:r.status,eligible:r.calibration?.eligible_claims})),real_pairs:comparisons.length}));return result;
+  const result={label:'Automated experimental assessments, not measured human comprehension',...hostFacts?{assessor_host_facts:hostFacts}:{},deterministic:json(path.join(out,'deterministic.json')),chat_content_screens:json(path.join(out,'chat-content-screens.json')),reviewers,comparisons,original_child_instructions:'unverified',limits:['New diagnostic eligibility is claim-specific; old four-control results and thresholds remain unchanged.','Opposite orientation/order checks sensitivity but does not establish absence of order bias.','Overall preference or shorter text does not prove every goal.','Protected files/copy and necessary technical depth are separate from ordinary-chat style.']};put(path.join(out,'assessment.json'),result);console.log(JSON.stringify({reviewers:reviewers.map(r=>({id:r.id,status:r.status,eligible:r.calibration?.eligible_claims})),real_pairs:comparisons.length}));return result;
 }
 if(require.main===module){try{const[action,a,b,c]=process.argv.slice(2);if(action==='prepare')prepare(a,path.resolve(b),c);else if(action==='report')report(path.resolve(a));else throw Error('Use prepare MANIFEST OUT COHORT or report OUT');}catch(e){console.error(e.stack);process.exitCode=1;}}
-module.exports={prepare,report,validate,diagnose,timeScreen,eligibleOnSurface,GOALS};
+module.exports={prepare,report,validate,diagnose,timeScreen,eligibleOnSurface,hostAssessmentFacts,GOALS};

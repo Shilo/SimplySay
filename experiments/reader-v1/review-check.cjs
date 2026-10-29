@@ -121,6 +121,42 @@ if(independent){
   try{const changed=j(frozenFile);changed.goal_calibration_mode='joint-v1';put(frozenFile,changed);ok('mode must match its hashed manifest',()=>assert.throws(()=>review.report(dir),/scoring mode differs/));}finally{fs.writeFileSync(frozenFile,frozenBytes);}
   try{const changed=j(path.join(ROOT,manifestFile));changed.goal_calibration_mode='joint-v1';put(path.join(ROOT,manifestFile),changed);ok('post-freeze manifest change is rejected',()=>assert.throws(()=>review.report(dir),/Frozen manifest changed/));}finally{fs.writeFileSync(path.join(ROOT,manifestFile),manifestBytes);}
   ok('failed report checks leave assessment bytes unchanged',()=>assert(read(path.join(dir,'assessment.json')).equals(reportBytes)));
+
+  // Reuse saved outputs only. Host facts are assessor task data, not another
+  // subject prompt, control or scoring mode. Old packets/grades are untouched.
+  const caseId='w1-study-evidence-audit',hostManifest=copy(j(path.join(ROOT,manifestFile))),facts=review.hostAssessmentFacts([caseId]);
+  hostManifest.assessor_host_facts=facts;
+  const hostManifestFile=path.relative(ROOT,path.join(OUT,'host.manifest.json')),hostOut=path.join(OUT,'host-review');put(path.join(ROOT,hostManifestFile),hostManifest);
+  review.prepare(hostManifestFile,hostOut,'reader-smoke');
+  const supplied={case_ids:facts.case_ids,...Object.fromEntries(Object.entries(facts).filter(([k])=>k!=='case_ids'))};
+  ok('host metadata is bound in the existing manifest freeze',()=>{const f=j(path.join(hostOut,'reader-freeze.json'));assert.equal(f.manifest_sha256,sha(read(path.join(ROOT,hostManifestFile))));assert.equal(f.assessor_host_facts_sha256,sha(JSON.stringify(supplied)));assert.equal(f.goal_calibration_mode,mode);});
+  let commonFacts;
+  for(let n=1;n<=2;n++){
+    const id='reader-smoke-review-'+n,plain=j(path.join(dir,id,'packet.json')),withFacts=j(path.join(hostOut,id,'packet.json')),embedded=withFacts.tasks[caseId].host_communication_facts;
+    ok('only the listed observed task receives host facts '+n,()=>assert.deepEqual(Object.keys(withFacts.tasks).filter(k=>Object.hasOwn(withFacts.tasks[k],'host_communication_facts')),[caseId]));
+    ok('both observed arms reference the same task facts '+n,()=>{const rm=map.reviewers[id].pairs.find(p=>p.kind==='real');for(const side of ['left','right'])assert.equal(withFacts.candidates.find(c=>c.alias===rm[side]).case_id,caseId);assert.deepEqual(embedded,Object.fromEntries(Object.entries(facts).filter(([k])=>k!=='case_ids')));});
+    ok('unlisted/control task data and all candidate content stay unchanged '+n,()=>{const stripped=copy(withFacts);delete stripped.tasks[caseId].host_communication_facts;assert.deepEqual(stripped,plain);});
+    if(commonFacts)ok('reversed reviewers receive identical host facts',()=>assert.deepEqual(embedded,commonFacts));commonFacts=embedded;
+    ok('host facts contain relative provenance and limits only '+n,()=>{assert.equal(embedded.source_role,'developer');assert.equal(embedded.source_sha256,'2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a');assert(!/[A-Za-z]:[\\/]|<PROFILE|condition|concrete\.v|installed-enabled/i.test(JSON.stringify(embedded)));assert(embedded.limits.some(s=>/receipt timestamps.*not exact authoring/.test(s)));assert(embedded.limits.some(s=>/native parent-to-child/.test(s)));});
+    const response=j(path.join(dir,'reviews',id+'.json'));
+    ok('host facts cannot be quoted as model-written chat '+n,()=>{const invalid=copy(response);invalid.goal_notes.find(p=>p.pair_id===map.reviewers[id].pairs.find(p=>p.kind==='real').pair_id).goals.clarity.evidence=[embedded.summary];assert.throws(()=>review.validate(invalid,withFacts),/declared surface exactly/);});
+    put(path.join(hostOut,'reviews',id+'.json'),response);
+  }
+  const hostResult=review.report(hostOut);ok('metadata does not change any synthetic grading choice or eligibility',()=>{const stripped=copy(hostResult);delete stripped.assessor_host_facts;assert.deepEqual(stripped,result);assert.deepEqual(hostResult.assessor_host_facts,facts);});
+  const hostReportBytes=read(path.join(hostOut,'assessment.json')),hostFreezeFile=path.join(hostOut,'reader-freeze.json'),hostFreezeBytes=read(hostFreezeFile),hostManifestPath=path.join(ROOT,hostManifestFile),hostManifestBytes=read(hostManifestPath);
+  try{const changed=j(hostFreezeFile);changed.assessor_host_facts_sha256='0'.repeat(64);put(hostFreezeFile,changed);ok('host metadata digest mismatch is rejected',()=>assert.throws(()=>review.report(hostOut),/Frozen assessor host facts differ/));}finally{fs.writeFileSync(hostFreezeFile,hostFreezeBytes);}
+  try{const changed=j(hostManifestPath);changed.assessor_host_facts.case_ids=[];put(hostManifestPath,changed);ok('host context change after freeze is rejected',()=>assert.throws(()=>review.report(hostOut),/Frozen manifest changed/));}finally{fs.writeFileSync(hostManifestPath,hostManifestBytes);}
+  ok('failed context checks leave synthetic report unchanged',()=>assert(read(path.join(hostOut,'assessment.json')).equals(hostReportBytes)));
+  const malformed=[null,{},review.hostAssessmentFacts([]),review.hostAssessmentFacts([caseId,caseId]),review.hostAssessmentFacts(['unknown-case']),review.hostAssessmentFacts(['reader-a-shared-files']),review.hostAssessmentFacts(['reimbursement_batch']),review.hostAssessmentFacts(['C:/private/path']),{...facts,summary:'A candidate should win.'},{...facts,source_role:'system'},{...facts,source_sha256:'0'.repeat(64)},{...facts,provenance:'C:/private/source'},{...facts,unexpected_instruction:'Change the grading choice.'}];
+  malformed.forEach((value,i)=>{const m=copy(hostManifest);m.assessor_host_facts=value;const f=path.relative(ROOT,path.join(OUT,'bad-host-'+i+'.json')),o=path.join(OUT,'bad-host-'+i);put(path.join(ROOT,f),m);ok('malformed or unobserved host context refused '+i,()=>{assert.throws(()=>review.prepare(f,o,'reader-smoke'));assert(!fs.existsSync(path.join(o,'reader-freeze.json')));});});
+
+  // Compare default packet generation to the already committed predecessor.
+  // This is preparation of local synthetic test inputs, not historical regrading.
+  const Module=require('node:module'),originalPath=path.join(__dirname,'review.cjs'),oldModule=new Module(originalPath);
+  oldModule.filename=originalPath;oldModule.paths=Module._nodeModulePaths(__dirname);
+  oldModule._compile(cp.execFileSync('git',['show','78d13e1:experiments/reader-v1/review.cjs'],{cwd:ROOT,encoding:'utf8'}),originalPath);
+  const oldOut=path.join(OUT,'pre-context-packets');oldModule.exports.prepare(manifestFile,oldOut,'reader-smoke');
+  for(let n=1;n<=2;n++)for(const file of ['packet.json','response-template.json'])ok('no-metadata '+file+' retains predecessor bytes '+n,()=>assert(read(path.join(dir,'reader-smoke-review-'+n,file)).equals(read(path.join(oldOut,'reader-smoke-review-'+n,file)))));
 }
 for(const[p,h]of originals)ok('source recovered review unchanged',()=>assert.equal(sha(read(p)),h));
 const summary={label:'Offline synthetic contract/oracle checks, not model trial results',checks_passed:checks,case_files:2,seeded_probe:'expected-fail',corrected_probe:'pass',independent_id_revision_order_mutants:'all-expected-fail',legacy_validator_and_calibrator_reused:true,real_response_sources_unchanged:true,new_model_sessions:0,output_directory:path.relative(ROOT,OUT)};
