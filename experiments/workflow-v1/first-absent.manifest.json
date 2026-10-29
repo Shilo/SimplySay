@@ -1,0 +1,6 @@
+{
+  "subjects": [
+    {"id":"e17","case_file":"experiments/workflow-v1/cases/w1.case.json","condition":"absent"}
+  ],
+  "review_pairs": []
+}
