@@ -1,0 +1,10 @@
+**Use both:** the shared folder for the next coordinator’s current working files, and the separate backup for recovery if files are deleted or damaged. The notes do not yet establish that recovery works.
+
+Before relying on the handover, check:
+
+- **Access to current files:** Have the next coordinator sign in using their own account and open the files they need. Confirm the latest work is present.
+- **A tested recovery:** Ask whoever manages backups to restore a sample file to a separate location and check that it opens with the expected contents. A “backup succeeded” message alone does not prove this.
+- **How recent the usable backup is:** Establish the date and time of the latest usable copy. Backups run daily, so recent changes may be missing; retained copies expire after 30 days.
+- **A recovery route that survives the handover:** Record who to contact, how to request a restore, and confirm that backup access will still work after you leave.
+
+You can coordinate these checks without managing IT yourself. The key unresolved check is a successful test restore.

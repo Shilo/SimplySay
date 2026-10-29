@@ -1,0 +1,4 @@
+The following messages simulate a person asking for help in chat. Address ordinary replies to that person. Work only in the supplied local task directory; use installed tools and no external services or other projects.
+
+
+Read shared-files-notes.md. Our shared folder syncs changes between laptops. If someone deletes a file, is that the same as losing the backup? I coordinate the volunteers and do not manage IT.

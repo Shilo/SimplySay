@@ -1,0 +1,96 @@
+{
+  "turn": 1,
+  "expected_thread": "thread-bd8fbad876b1a739",
+  "observed_thread": "thread-bd8fbad876b1a739",
+  "thread": "thread-bd8fbad876b1a739",
+  "started_utc": "2026-10-29T14:46:32.582Z",
+  "continuation_observed": true,
+  "failed": false,
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "last": {
+      "inputTokens": 10511,
+      "cachedInputTokens": 10112,
+      "outputTokens": 489,
+      "reasoningOutputTokens": 313,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 11000
+    },
+    "total": {
+      "inputTokens": 20747,
+      "cachedInputTokens": 18944,
+      "outputTokens": 554,
+      "reasoningOutputTokens": 313,
+      "cacheWriteInputTokens": 0,
+      "totalTokens": 21301
+    }
+  },
+  "quota_before": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 2,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "accepted_turn_id": "thread-e6846782ddc4e6b0",
+  "native_turn_id": "thread-e6846782ddc4e6b0",
+  "usage_snapshots": [
+    {
+      "last": {
+        "inputTokens": 10236,
+        "cachedInputTokens": 8832,
+        "outputTokens": 65,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 10301
+      },
+      "total": {
+        "inputTokens": 10236,
+        "cachedInputTokens": 8832,
+        "outputTokens": 65,
+        "reasoningOutputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 10301
+      }
+    },
+    {
+      "last": {
+        "inputTokens": 10511,
+        "cachedInputTokens": 10112,
+        "outputTokens": 489,
+        "reasoningOutputTokens": 313,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 11000
+      },
+      "total": {
+        "inputTokens": 20747,
+        "cachedInputTokens": 18944,
+        "outputTokens": 554,
+        "reasoningOutputTokens": 313,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 21301
+      }
+    }
+  ],
+  "native_status": "completed",
+  "public_message_phases": [
+    {
+      "id": "msg_023d4b21bac91838016ae35c4bb484819aad827cea728534cc",
+      "phase": "commentary"
+    },
+    {
+      "id": "msg_023d4b21bac91838016ae35c5a0bd0819aa44d1deda11729ab",
+      "phase": "final_answer"
+    }
+  ],
+  "ended_utc": "2026-10-29T14:46:58.322Z",
+  "snapshot_issues": [],
+  "case_turn_id": "a1_explain"
+}

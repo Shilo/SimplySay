@@ -1,0 +1,5 @@
+No. According to your notes, deleting a file in the shared folder also deletes it from the other synced laptops. **That does not by itself erase the separate backup**, which is stored outside the shared folder.
+
+The backup runs daily and keeps earlier copies for 30 days. A deleted file may be recoverable if the backup captured it before deletion and that copy has not expired. Changes made since the last backup could be missing.
+
+The uncertainty is whether recovery actually works: recent backup jobs reported success, but nobody has tested restoring a file. Your practical next step is to ask whoever manages backups to **restore a sample file** and give coordinators a clear contact and instructions for recovering missing files. If something is already missing, ask promptly because older copies expire.

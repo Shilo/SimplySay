@@ -1,0 +1,12 @@
+{
+  "id": "n07",
+  "condition": "disabled",
+  "case_id": "reader-a-shared-files",
+  "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+  "turns": [],
+  "failed": true,
+  "hook_notifications": [],
+  "error": "Native metadata operation failed: plugin disable status 2",
+  "auth_copy_removed": true,
+  "unexpected_threads": []
+}

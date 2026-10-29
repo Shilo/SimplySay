@@ -2,9 +2,10 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const engine=require('../workflow-v1/run.cjs'),{included}=require('../workflow-v1/continue.cjs');
-const ROOT=path.resolve(__dirname,'../..'),LEDGER=path.join(__dirname,'usage.json'),MANIFEST='experiments/workflow-v1/reader-screen.manifest.json';
+const ROOT=path.resolve(__dirname,'../..'),LEDGER=path.join(__dirname,'usage.json');
 const j=p=>JSON.parse(fs.readFileSync(p,'utf8')),sha=p=>crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 async function main(){const[action,id]=process.argv.slice(2),unit=j(path.join(__dirname,'unit.json')),old=j(path.join(ROOT,'experiments/workflow-v1/replication.manifest.json.freeze.json'));
+  const MANIFEST=unit.manifest||'experiments/workflow-v1/reader-screen.manifest.json';
   assert.equal(unit.authorization,'owner-reader-development-2026-10-29');assert.equal(unit.status,'ready');
   assert.equal(sha(process.env.CODEX_APP_RUNTIME_CLI_PATH),old.binary_sha256,'Pinned host changed; record a new integration check before dispatch');
   if(action==='freeze')engine.freeze(MANIFEST);

@@ -1,31 +1,17 @@
 {
   "status": "ready",
   "authorization": "owner-reader-development-2026-10-29",
-  "record": "docs/reader-pretrial.md",
+  "record": "docs/reader-control-amendment.md",
   "purpose": "Concrete final explanations plus a narrow optional-progress gate, preserving work; two natural development triads",
-  "end_conversation_cap": 11,
-  "end_task_cap": 26,
+  "end_conversation_cap": 12,
+  "end_task_cap": 27,
   "unit_limits_are_not_overall_owner_caps": true,
   "exact_fresh_assignments": [
     {
       "ids": [
-        "n05"
+        "n13"
       ],
-      "role": "shared-files-absent",
-      "max_turns_each": 3
-    },
-    {
-      "ids": [
-        "n06"
-      ],
-      "role": "shared-files-installed-concrete",
-      "max_turns_each": 3
-    },
-    {
-      "ids": [
-        "n07"
-      ],
-      "role": "shared-files-installed-disabled",
+      "role": "shared-files-corrected-installed-disabled",
       "max_turns_each": 3
     },
     {
@@ -61,9 +47,8 @@
     }
   ],
   "preparation_contexts": 3,
-  "planned_preparation_tasks": 6,
-  "additional_preparation_task": "Independent verification of the new evaluation companion/calibration before live subjects; reuse n01, do not create a helper context",
-  "new_native_response_conversations": 6,
+  "planned_preparation_tasks": 7,
+  "additional_preparation_task": "Independent correction/verification of rejected disabling CLI with supported settings API",
   "new_native_response_tasks": 18,
   "new_blinded_reviewer_conversations": 2,
   "new_blinded_reviewer_tasks": 2,
@@ -73,5 +58,12 @@
   "new_paid_services": false,
   "direct_claude": false,
   "production": false,
-  "publication": false
+  "publication": false,
+  "manifest": "experiments/workflow-v1/reader-screen-v2.manifest.json",
+  "retained_pre_model_failures": [
+    "n07"
+  ],
+  "native_response_attempt_slots": 7,
+  "planned_completed_response_conversations": 6,
+  "retained_pre_model_failure_slots": 1
 }

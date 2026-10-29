@@ -1,0 +1,143 @@
+{
+  "method": "Existing supported developer/user/turn-context records only; no repeated loading probe",
+  "rows": [
+    {
+      "id": "n05",
+      "condition": "absent",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "8a115a7986e54ef7c306828f9c8f1ef579a3567c4b657f5b059907e469b06dee"
+        },
+        {
+          "turn": 2,
+          "line": 29,
+          "sha256": "a3c3e4d6cb2f90bf3d29c096058e38f1027027f54d40e7acb7b8a32d4d9cb4ee"
+        },
+        {
+          "turn": 3,
+          "line": 41,
+          "sha256": "58c93e3d072a1e3ad26c0c1c16fd6034e83310efafa0e65b1eae562e8542a8f7"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "d276f5971ac8b2feae61dc27032edbbfce29ebc47c9015a88edefed1d3d52d5a",
+          "exact_policy": false
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "no exact candidate in observed developer context",
+      "original_hook_events": 0,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    },
+    {
+      "id": "n06",
+      "condition": "enabled",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 11,
+          "sha256": "8a115a7986e54ef7c306828f9c8f1ef579a3567c4b657f5b059907e469b06dee"
+        },
+        {
+          "turn": 2,
+          "line": 30,
+          "sha256": "a3c3e4d6cb2f90bf3d29c096058e38f1027027f54d40e7acb7b8a32d4d9cb4ee"
+        },
+        {
+          "turn": 3,
+          "line": 42,
+          "sha256": "58c93e3d072a1e3ad26c0c1c16fd6034e83310efafa0e65b1eae562e8542a8f7"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "2e6a3d1b2183ab6e40514cf4fe962fd083417b980c61e7609c168abd5d688b2b",
+          "exact_policy": false
+        },
+        {
+          "line": 10,
+          "characters": 866,
+          "sha256": "8c22c75424018bc8ccb1cddbfc0d2bc715b7bf94eb1a0672ad9217e5ab968bc5",
+          "exact_policy": true
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "exact policy in developer history before all requests",
+      "original_hook_events": 1,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
+    }
+  ],
+  "reviewer_model_effort": "unknown",
+  "new_model_sessions": 0
+}

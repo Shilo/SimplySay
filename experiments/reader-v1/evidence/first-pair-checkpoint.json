@@ -1,0 +1,55 @@
+{
+  "label": "Unblinded controller development checkpoint, not independent quality grading",
+  "subjects": [
+    {
+      "id": "n05",
+      "completed_turns": 3,
+      "all_capture_checks": "pass",
+      "source_byte_checks": "pass",
+      "ordinary_progress": [
+        {
+          "turn": 1,
+          "count": 1
+        },
+        {
+          "turn": 2,
+          "count": 0
+        },
+        {
+          "turn": 3,
+          "count": 0
+        }
+      ],
+      "quota_final": 2,
+      "included_permission": true
+    },
+    {
+      "id": "n06",
+      "completed_turns": 3,
+      "all_capture_checks": "pass",
+      "source_byte_checks": "pass",
+      "ordinary_progress": [
+        {
+          "turn": 1,
+          "count": 1
+        },
+        {
+          "turn": 2,
+          "count": 0
+        },
+        {
+          "turn": 3,
+          "count": 0
+        }
+      ],
+      "quota_final": 2,
+      "included_permission": true
+    }
+  ],
+  "delivery": "Candidate exact developer context precedes each matched task; absent has no candidate",
+  "obedience": "Both use only one tool-work opening; no optional intermediate update opportunity in this short case",
+  "usefulness": "Pending blinded review. Both short time answers already focused; no clear controller-observed gain in practical explanations",
+  "no_within_unit_policy_or_case_change": true,
+  "next_purpose": "Complete disabled control and the predeclared real-work/depth conversation, which covers different goals",
+  "new_model_sessions_in_check": 0
+}

@@ -1,0 +1,77 @@
+{
+  "status": "ready",
+  "authorization": "owner-reader-development-2026-10-29",
+  "record": "docs/reader-pretrial.md",
+  "purpose": "Concrete final explanations plus a narrow optional-progress gate, preserving work; two natural development triads",
+  "end_conversation_cap": 11,
+  "end_task_cap": 26,
+  "unit_limits_are_not_overall_owner_caps": true,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "n05"
+      ],
+      "role": "shared-files-absent",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n06"
+      ],
+      "role": "shared-files-installed-concrete",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n07"
+      ],
+      "role": "shared-files-installed-disabled",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n08"
+      ],
+      "role": "workorders-absent",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n09"
+      ],
+      "role": "workorders-installed-concrete",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n10"
+      ],
+      "role": "workorders-installed-disabled",
+      "max_turns_each": 3
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "n11",
+      "max_turns": 1
+    },
+    {
+      "id": "n12",
+      "max_turns": 1
+    }
+  ],
+  "preparation_contexts": 3,
+  "planned_preparation_tasks": 6,
+  "additional_preparation_task": "Independent verification of the new evaluation companion/calibration before live subjects; reuse n01, do not create a helper context",
+  "new_native_response_conversations": 6,
+  "new_native_response_tasks": 18,
+  "new_blinded_reviewer_conversations": 2,
+  "new_blinded_reviewer_tasks": 2,
+  "retries": 0,
+  "replacements": 0,
+  "further_units": "Record a specific evidence-backed purpose before dispatch, under the broader authorization",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false
+}

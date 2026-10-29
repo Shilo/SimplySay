@@ -1,0 +1,331 @@
+{
+  "id": "n06",
+  "condition": "enabled",
+  "case_id": "reader-a-shared-files",
+  "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": "thread-2a2fcdd2bebd8019",
+      "observed_thread": "thread-2a2fcdd2bebd8019",
+      "thread": "thread-2a2fcdd2bebd8019",
+      "started_utc": "2026-10-29T14:48:09.520Z",
+      "continuation_observed": true,
+      "failed": false,
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "last": {
+          "inputTokens": 10662,
+          "cachedInputTokens": 10240,
+          "outputTokens": 515,
+          "reasoningOutputTokens": 357,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 11177
+        },
+        "total": {
+          "inputTokens": 21050,
+          "cachedInputTokens": 14976,
+          "outputTokens": 579,
+          "reasoningOutputTokens": 357,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 21629
+        }
+      },
+      "quota_before": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 2,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793885771
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      },
+      "accepted_turn_id": "thread-ba0a299fb2aafc3a",
+      "native_turn_id": "thread-ba0a299fb2aafc3a",
+      "usage_snapshots": [
+        {
+          "last": {
+            "inputTokens": 10388,
+            "cachedInputTokens": 4736,
+            "outputTokens": 64,
+            "reasoningOutputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 10452
+          },
+          "total": {
+            "inputTokens": 10388,
+            "cachedInputTokens": 4736,
+            "outputTokens": 64,
+            "reasoningOutputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 10452
+          }
+        },
+        {
+          "last": {
+            "inputTokens": 10662,
+            "cachedInputTokens": 10240,
+            "outputTokens": 515,
+            "reasoningOutputTokens": 357,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 11177
+          },
+          "total": {
+            "inputTokens": 21050,
+            "cachedInputTokens": 14976,
+            "outputTokens": 579,
+            "reasoningOutputTokens": 357,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 21629
+          }
+        }
+      ],
+      "native_status": "completed",
+      "public_message_phases": [
+        {
+          "id": "msg_0ac3f0c51d2ed4d6016ae35caae6bc819bb7e0889a0e417ea0",
+          "phase": "commentary"
+        },
+        {
+          "id": "msg_0ac3f0c51d2ed4d6016ae35cbd909c819b96e9a342ad7076a8",
+          "phase": "final_answer"
+        }
+      ],
+      "ended_utc": "2026-10-29T14:48:35.208Z",
+      "snapshot_issues": [],
+      "case_turn_id": "a1_explain"
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-2a2fcdd2bebd8019",
+      "observed_thread": "thread-2a2fcdd2bebd8019",
+      "thread": "thread-2a2fcdd2bebd8019",
+      "started_utc": "2026-10-29T14:48:35.245Z",
+      "continuation_observed": true,
+      "failed": false,
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "last": {
+          "inputTokens": 11215,
+          "cachedInputTokens": 0,
+          "outputTokens": 690,
+          "reasoningOutputTokens": 470,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 11905
+        },
+        "total": {
+          "inputTokens": 32265,
+          "cachedInputTokens": 14976,
+          "outputTokens": 1269,
+          "reasoningOutputTokens": 827,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 33534
+        }
+      },
+      "quota_before": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 2,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793885771
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      },
+      "accepted_turn_id": "thread-3eb1fbde64da744d",
+      "native_turn_id": "thread-3eb1fbde64da744d",
+      "usage_snapshots": [
+        {
+          "last": {
+            "inputTokens": 11215,
+            "cachedInputTokens": 0,
+            "outputTokens": 690,
+            "reasoningOutputTokens": 470,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 11905
+          },
+          "total": {
+            "inputTokens": 32265,
+            "cachedInputTokens": 14976,
+            "outputTokens": 1269,
+            "reasoningOutputTokens": 827,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 33534
+          }
+        }
+      ],
+      "native_status": "completed",
+      "public_message_phases": [
+        {
+          "id": "msg_0ac3f0c51d2ed4d6016ae35cdc1dc8819ba3b0c2ce1fab797f",
+          "phase": "final_answer"
+        }
+      ],
+      "ended_utc": "2026-10-29T14:49:08.820Z",
+      "snapshot_issues": [],
+      "case_turn_id": "a2_recommend"
+    },
+    {
+      "turn": 3,
+      "expected_thread": "thread-2a2fcdd2bebd8019",
+      "observed_thread": "thread-2a2fcdd2bebd8019",
+      "thread": "thread-2a2fcdd2bebd8019",
+      "started_utc": "2026-10-29T14:49:08.825Z",
+      "continuation_observed": true,
+      "failed": false,
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "last": {
+          "inputTokens": 11938,
+          "cachedInputTokens": 11008,
+          "outputTokens": 52,
+          "reasoningOutputTokens": 31,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 11990
+        },
+        "total": {
+          "inputTokens": 44203,
+          "cachedInputTokens": 25984,
+          "outputTokens": 1321,
+          "reasoningOutputTokens": 858,
+          "cacheWriteInputTokens": 0,
+          "totalTokens": 45524
+        }
+      },
+      "quota_before": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 2,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793885771
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      },
+      "accepted_turn_id": "thread-9ccaf424b2395267",
+      "native_turn_id": "thread-9ccaf424b2395267",
+      "usage_snapshots": [
+        {
+          "last": {
+            "inputTokens": 11938,
+            "cachedInputTokens": 11008,
+            "outputTokens": 52,
+            "reasoningOutputTokens": 31,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 11990
+          },
+          "total": {
+            "inputTokens": 44203,
+            "cachedInputTokens": 25984,
+            "outputTokens": 1321,
+            "reasoningOutputTokens": 858,
+            "cacheWriteInputTokens": 0,
+            "totalTokens": 45524
+          }
+        }
+      ],
+      "native_status": "completed",
+      "public_message_phases": [
+        {
+          "id": "msg_0ac3f0c51d2ed4d6016ae35ce6d270819ba4bf1c0ed3a9abeb",
+          "phase": "final_answer"
+        }
+      ],
+      "ended_utc": "2026-10-29T14:49:14.559Z",
+      "snapshot_issues": [],
+      "case_turn_id": "a3_simple_time"
+    }
+  ],
+  "failed": false,
+  "hook_notifications": [
+    {
+      "kind": "hook",
+      "thread": "thread-2a2fcdd2bebd8019",
+      "turn": "thread-ba0a299fb2aafc3a",
+      "method": "hook/started",
+      "hook": {
+        "id": "session-start:0:<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+        "eventName": "sessionStart",
+        "sourcePath": "<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+        "source": "plugin",
+        "status": "running",
+        "statusMessage": null,
+        "scope": "thread",
+        "handlerType": "command",
+        "executionMode": "sync",
+        "durationMs": null,
+        "entries": []
+      }
+    },
+    {
+      "kind": "hook",
+      "thread": "thread-2a2fcdd2bebd8019",
+      "turn": "thread-ba0a299fb2aafc3a",
+      "method": "hook/completed",
+      "hook": {
+        "id": "session-start:0:<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+        "eventName": "sessionStart",
+        "sourcePath": "<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+        "source": "plugin",
+        "status": "completed",
+        "statusMessage": null,
+        "scope": "thread",
+        "handlerType": "command",
+        "executionMode": "sync",
+        "durationMs": 265,
+        "entries": [
+          {
+            "kind": "context",
+            "text_sha256": "8c22c75424018bc8ccb1cddbfc0d2bc715b7bf94eb1a0672ad9217e5ab968bc5"
+          }
+        ]
+      }
+    }
+  ],
+  "observed_thread": "thread-2a2fcdd2bebd8019",
+  "started_thread_ids": [
+    "thread-2a2fcdd2bebd8019"
+  ],
+  "loading_events": [
+    {
+      "event": "SessionStart",
+      "source": "startup",
+      "session_id": "thread-2a2fcdd2bebd8019",
+      "policyHash": "8c22c75424018bc8ccb1cddbfc0d2bc715b7bf94eb1a0672ad9217e5ab968bc5"
+    }
+  ],
+  "startup_gate": {
+    "pass": true,
+    "meaning": "Exact owned execution plus completed native handler; semantic acceptance/adherence unverified"
+  },
+  "quota_after": {
+    "ordinaryUsageAllowed": true,
+    "primary": {
+      "usedPercent": 2,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793885771
+    },
+    "secondary": null,
+    "limitId": "codex",
+    "spendControlReached": false,
+    "rateLimitReachedType": null
+  },
+  "further_dispatch_blocked": false,
+  "stderr_sha256": "0b49e0c1a80a7c0f800bea0b6f2f85f130cb43e07dec2212b8554a15d2985369",
+  "stderr_bytes": 500,
+  "auth_copy_removed": true,
+  "unexpected_threads": []
+}

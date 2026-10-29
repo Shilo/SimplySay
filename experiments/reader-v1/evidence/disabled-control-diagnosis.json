@@ -1,0 +1,17 @@
+{
+  "label": "Native metadata-only control correction; no response trial",
+  "failed_attempt": "n07",
+  "original_failure_retained": true,
+  "original_result_sha256": "5d8c10056f9cb086dcece83b5f07497f76dd7b21451aa890ec09c03c7fea9962",
+  "before_config_sha256": "1fdc9c9725a0e7772c993b10d41ca01d23a9d5cfc1da75326dac04c39b8423b2",
+  "after_config_sha256": "fedc60d25068d3406b785f65baeaae3a6bf0c395093801c273674c2e169ac435",
+  "unsupported_command": "plugin disable",
+  "supported_mechanism": "config/batchWrite plugins entry enabled=false with reloadUserConfig",
+  "owned_enabled_before": true,
+  "owned_enabled_after": false,
+  "active_owned_hooks": 0,
+  "unrelated_default_unchanged": true,
+  "native_threads_created": 0,
+  "model_turns_started": 0,
+  "credentials_read_or_copied": false
+}

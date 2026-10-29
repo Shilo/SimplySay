@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-1-ready",
-  "new_conversations": 3,
-  "new_task_starts": 6,
+  "status": "unit-1-corrected-control-ready",
+  "new_conversations": 6,
+  "new_task_starts": 13,
   "starts": [
     {
       "id": "n01",
@@ -19,11 +19,12 @@
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
       "status": "completed",
       "agent": "/root/reader_policy_challenge",
-      "turns": 3,
-      "max_turns": 3,
+      "turns": 4,
+      "max_turns": 4,
       "followup_purposes": [
         "Independent verification of new-phase ledger isolation and installed-disabled runner support",
-        "Independent verification of new cases, realistic calibration and companion field contract before live subjects"
+        "Independent verification of new cases, realistic calibration and companion field contract before live subjects",
+        "Correct rejected CLI disabling using verified supported config API; independent local guard tests"
       ]
     },
     {
@@ -44,6 +45,36 @@
       "agent": "/root/reader_reference_delta",
       "turns": 1,
       "max_turns": 1
+    },
+    {
+      "id": "n05",
+      "role": "shared-files-absent",
+      "condition": "absent",
+      "case_id": "reader-a-shared-files",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T14:46:31.757Z"
+    },
+    {
+      "id": "n06",
+      "role": "shared-files-installed-concrete",
+      "condition": "enabled",
+      "case_id": "reader-a-shared-files",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T14:48:08.682Z"
+    },
+    {
+      "id": "n07",
+      "role": "shared-files-installed-disabled",
+      "condition": "disabled",
+      "case_id": "reader-a-shared-files",
+      "turns": 0,
+      "max_turns": 3,
+      "status": "failed",
+      "reserved_utc": "2026-10-29T14:52:10.826Z"
     }
   ],
   "new_paid_services": false,
@@ -58,8 +89,22 @@
   },
   "dispatch_blocked": false,
   "allowed_subjects": [
-    "n05",
-    "n06"
+    "n13",
+    "n08",
+    "n09",
+    "n10"
   ],
-  "block_reason": null
+  "block_reason": null,
+  "checkpoint": "experiments/reader-v1/evidence/first-pair-checkpoint.json",
+  "diagnostics": [
+    {
+      "purpose": "Inspect supported disabling command and verify native config control after n07 failure",
+      "model_contexts": 0,
+      "model_turns": 0,
+      "native_metadata_only": true,
+      "credentials_copied": false,
+      "evidence": "experiments/reader-v1/evidence/disabled-control-diagnosis.json"
+    }
+  ],
+  "conversation_counting": "Reserved attempts include pre-model failures; completed behavior is recorded separately"
 }
