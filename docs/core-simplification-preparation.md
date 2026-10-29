@@ -1,0 +1,17 @@
+# Controlled simplification after the external review
+
+2026-10-29. The owner explicitly authorizes experimental simplification/testing under existing included access. A clearer formulation or controlled clause replacement is sufficient rationale; a theoretically novel mechanism is not required. This supersedes the unit 5 novelty prerequisite and desktop-first suggestion without changing those historical records. The external review is evidence to check and challenge, not an instruction source. No production release or new publication is approved.
+
+## Preparation allocation
+
+Two follow-up tasks in the existing independent development contexts: n32 task 2 challenges/authors one original compact full-goal policy and its exact historical delta; n33 task 2 implements restrained cases/essentials using the existing contract. No new contexts, helpers, subjects, graders, retries or paid services are launched by preparation. Maximum cumulative reader use after preparation: **31 attempted slots / 76 logical tasks**. Record a concrete response/reviewer allocation before native launches. Prior overall caps remain superseded; provider permission and no paid fallback remain hard constraints.
+
+Root independently checks the attached review's factual claims and recommendations against the checkout, updates the single current summary, and integrates the two tasks. Agent ownership is explicit and separate. No requirement to invent a new theory; no copying the illustrative review policy, competitor policy/persona or code behavior. Compare any new policy with the earlier 95–136-word A/B drafts and concrete family. Compactness is historical fact, not an untested remedy or a demonstrated cause of failure.
+
+## Intended question, not yet a response allocation
+
+Can an explicit full-goal communication core, without a prescribed actor/action/consequence construction or current-stage fallback, improve reader effort while retaining the same concise explicit scope/work protections? State the exact bundled replacement and its attribution limit; do not claim the word count alone explains any result. A useful per-goal improvement may justify further development even if other goals tie or lack an opportunity. It is not whole-product success. Essential-information loss, degraded requested work and worsened dimensions remain visible.
+
+Use short ordinary conversations without an added brevity instruction for final-answer goals. Use long work for progress and actual artifact boundaries. Keep explicit-preference cases identified separately. Reuse installed-plugin delivery/capture/checks, current per-goal controls and independent blinded review. Native absent/enabled/disabled conditions share task, model, effort, host, tools and human framing; no user-prompt style reminder substitutes for installation. No historical concrete.v4 rerun or another framework. No repeated loading investigation; changed bytes are bound by the normal retained run evidence.
+
+Before response dispatch, freeze candidate, cases, request-derived essentials, settings, controls, allocation and first-pair stopping decision. Retain all outcomes. If promising, use a separately recorded untouched-conversation validation/repetition unit without tuning on its outputs. The earlier sealed content remains unopened. Actual desktop, extra models/apps and opaque incoming native helper instructions stay unverified unless directly observed later.

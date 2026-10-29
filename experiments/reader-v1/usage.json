@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-5-preparation-complete-no-response-dispatch",
+  "status": "core-simplification-preparation",
   "new_conversations": 31,
-  "new_task_starts": 74,
+  "new_task_starts": 76,
   "starts": [
     {
       "id": "n01",
@@ -309,19 +309,21 @@
       "id": "n32",
       "role": "fresh-full-goal-policy-challenger",
       "purpose": "Diagnose exclusive-stage regression and challenge one meaningfully different full-goal mechanism before further response tests",
-      "turns": 1,
-      "max_turns": 1,
-      "status": "completed",
-      "agent": "/root/full_goal_mechanism_challenge"
+      "turns": 2,
+      "max_turns": 2,
+      "status": "reserved-core-simplification-followup",
+      "agent": "/root/full_goal_mechanism_challenge",
+      "followup_purpose": "Author and challenge one original compact full-goal replacement; compare historical clauses without a novelty gate"
     },
     {
       "id": "n33",
       "role": "fresh-case-and-baseline-challenger",
       "purpose": "Inspect actual baseline constraints and propose at most two natural unused development conversations without forcing verbosity",
-      "turns": 1,
-      "max_turns": 1,
-      "status": "completed",
-      "agent": "/root/natural_case_challenge"
+      "turns": 2,
+      "max_turns": 2,
+      "status": "reserved-core-simplification-followup",
+      "agent": "/root/natural_case_challenge",
+      "followup_purpose": "Implement photo-advice conversation and neutral-chat W1 derivative with restrained request-derived essentials in the existing case format"
     }
   ],
   "new_paid_services": false,
@@ -336,7 +338,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "Two independent challenges find no justified new policy comparison. Establish representative desktop-isolation feasibility before further subject spending; no new candidate or subject allocation.",
+  "block_reason": "Preparation follow-ups only; record/freeze a concrete matched native comparison before dispatch.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -358,5 +360,5 @@
       "reason": "Apply prospective stopping rule: skip n24 and send all saved pair evidence to the two allocated blinded reviewers. No further response pair."
     }
   ],
-  "decision": "docs/reader-unit5-decision.md"
+  "decision": "docs/core-simplification-preparation.md"
 }
