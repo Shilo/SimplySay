@@ -1,0 +1,324 @@
+{
+  "id": "final-pilot-craft-procurement-v1",
+  "frozen_before_subject_outputs": true,
+  "design": {
+    "same_conversation_turns": 3,
+    "same_inputs_for_all_subjects": true,
+    "scenario": "Fictional Saturday community craft-event procurement with one later supplier-status update.",
+    "fixture_provenance": "Exact returned report from an existing actual child message. Original incoming child instructions remain unverified. This case exercises reuse and preservation of that existing work, not live child routing.",
+    "allowed_subject_work": "Read supplied local report; reason, calculate, and write local requested files. No downloads, dependencies, fresh delegation, or new capture setup.",
+    "progress_assessment": "Judge recorded progress by whether it conveys a result, blocker, decision, or necessary expectation. No required progress-message count, word count, delay, or artificial long-running operation."
+  },
+  "fixture_files": [
+    {
+      "path": "analyst-report.txt",
+      "content": "Craft-event crate-pair report\n\nThe supplied data requires exactly two different crates, at most one of each, with at least 30 kits and 20 mats, a combined price no greater than $180, and availability confirmed by Friday. There are 10 possible pairs. Crates A, B, and C have confirmed Friday availability. D is tentative for Friday and is not confirmed. E is confirmed for Monday after the event, so it does not meet the Friday requirement.\n\n| Pair | Combined price | Kits | Mats | Budget assessment | Quantity assessment | Confirmed-Friday assessment | Overall result |\n|---|---:|---:|---:|---|---|---|---|\n| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25** | Pass: $5 under budget | Pass: meets the kit minimum exactly and exceeds the mat minimum by 5 | Pass: both confirmed by Friday | **Qualifies** |\n| A + C | $80 + $70 = **$150** | 18 + 16 = **34** | 10 + 8 = **18** | Pass: $30 under budget | Fail: 4 extra kits, but 2 mats short | Pass: both confirmed by Friday | Does not qualify: insufficient mats |\n| A + D | $80 + $90 = **$170** | 18 + 14 = **32** | 10 + 12 = **22** | Pass: $10 under budget | Pass: 2 extra kits and 2 extra mats | Fail currently: D is tentative, not confirmed | Does not currently qualify; would qualify if D becomes confirmed by Friday |\n| A + E | $80 + $60 = **$140** | 18 + 10 = **28** | 10 + 15 = **25** | Pass: $40 under budget | Fail: 2 kits short, despite 5 extra mats | Fail: E is confirmed for Monday after the event | Does not qualify: insufficient kits and E misses Friday |\n| B + C | $95 + $70 = **$165** | 12 + 16 = **28** | 15 + 8 = **23** | Pass: $15 under budget | Fail: 2 kits short, despite 3 extra mats | Pass: both confirmed by Friday | Does not qualify: insufficient kits |\n| B + D | $95 + $90 = **$185** | 12 + 14 = **26** | 15 + 12 = **27** | Fail: $5 over budget | Fail: 4 kits short, despite 7 extra mats | Fail currently: D is tentative, not confirmed | Does not qualify: over budget, insufficient kits, and unconfirmed Friday availability; confirming D would not fix the budget or kit failures |\n| B + E | $95 + $60 = **$155** | 12 + 10 = **22** | 15 + 15 = **30** | Pass: $25 under budget | Fail: 8 kits short, despite 10 extra mats | Fail: E is confirmed for Monday after the event | Does not qualify: insufficient kits and E misses Friday |\n| C + D | $70 + $90 = **$160** | 16 + 14 = **30** | 8 + 12 = **20** | Pass: $20 under budget | Pass: meets both quantity minimums exactly | Fail currently: D is tentative, not confirmed | Does not currently qualify; would qualify if D becomes confirmed by Friday |\n| C + E | $70 + $60 = **$130** | 16 + 10 = **26** | 8 + 15 = **23** | Pass: $50 under budget | Fail: 4 kits short, despite 3 extra mats | Fail: E is confirmed for Monday after the event | Does not qualify: insufficient kits and E misses Friday |\n| D + E | $90 + $60 = **$150** | 14 + 10 = **24** | 12 + 15 = **27** | Pass: $30 under budget | Fail: 6 kits short, despite 7 extra mats | Fail: D is tentative and E is confirmed for Monday after the event | Does not qualify: insufficient kits and neither crate has confirmed Friday availability; confirming D would still leave the kit shortage and E’s timing failure |\n\nThe least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**. It is also the only pair that currently satisfies every requirement. Its budget margin is **$5**.\n\nIf D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**. A + D would also become eligible, at $170 with 32 kits and 22 mats, but would cost $10 more than C + D. B + D would remain ineligible.\n\nChoosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B. Both choices supply 30 kits, but C + D supplies **5 fewer mats**: 20 instead of 25. C + D leaves **$20** of the budget unused, compared with **$5** for A + B. C + D meets both quantity minimums exactly, while A + B has a five-mat surplus.\n\nThe unresolved fact is whether D will actually become **confirmed by Friday**. Its tentative status cannot be treated as satisfying that requirement. On the supplied data, A + B can be recommended now; C + D is a conditional cheaper alternative. The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D. If D remains tentative, select A + B. No other factual uncertainty or additional purchasing requirement is specified in the exercise.",
+      "encoding": "utf-8",
+      "source_path": "experiments/pilot/evidence/runs-v3/r08/native-messages/child-1-message-1.txt",
+      "source_sha256": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51",
+      "utf8_content_sha256": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t1_initial_purchase",
+      "prompt": "We're buying supplies for Saturday's community craft event. The existing analyst report is in analyst-report.txt. We have to place one order today, and no supplier status has changed. Which pair should I approve, and is there a cheaper option worth checking first? Put a purchase note for the event coordinator in purchase-note.md.",
+      "essentials": [
+        {
+          "id": "t1_current_decision",
+          "requirement": "Recommend A+B as the only currently confirmed qualifying pair: $175, 30 kits, 25 mats, $5 left under the $180 cap."
+        },
+        {
+          "id": "t1_conditional_option",
+          "requirement": "Identify C+D as a cheaper conditional choice at $160 for 30 kits and 20 mats, saving $15; D is tentative and explicit Friday confirmation is required before choosing it."
+        },
+        {
+          "id": "t1_action",
+          "requirement": "The next useful action is to obtain D Friday confirmation; if D stays tentative, proceed with A+B. Do not treat tentative availability as confirmed."
+        },
+        {
+          "id": "t1_file",
+          "requirement": "Actually create purchase-note.md containing a standalone coordinator note with the current decision, its totals, the conditional cheaper option and the next action. A promise or chat-only draft does not satisfy the file request."
+        }
+      ]
+    },
+    {
+      "id": "t2_requested_reasoning",
+      "prompt": "I need to understand the check before I approve spending. Explain the eligibility rule as you would to the volunteer who maintains our purchasing spreadsheet, including why quantities cannot compensate for each other or for timing. Work through A+C, B+D, and C+D with the actual figures, and explain what changes if D is confirmed for Friday. Also explain what the $15 saving buys or gives up compared with A+B.",
+      "essentials": [
+        {
+          "id": "t2_rule",
+          "requirement": "Explain that eligibility requires exactly two different crates, at most one of each, total price <= $180, kits >= 30, mats >= 20, and both crates confirmed for Friday. All tests must pass; extra kits or mats do not offset a shortage of the other item, excess price, or failed timing."
+        },
+        {
+          "id": "t2_ac",
+          "requirement": "A+C costs $150 and supplies 34 kits and 18 mats: $30 under budget and 4 extra kits do not fix a 2-mat shortage, despite confirmed Friday availability."
+        },
+        {
+          "id": "t2_bd",
+          "requirement": "B+D costs $185 and supplies 26 kits and 27 mats: $5 over budget, 4 kits short, and D currently tentative. Its 7 extra mats do not cure those failures; confirming D fixes only availability."
+        },
+        {
+          "id": "t2_cd",
+          "requirement": "C+D costs $160 and supplies exactly 30 kits and 20 mats. It is $20 under budget and fails currently only because D is tentative; explicit Friday confirmation makes it eligible."
+        },
+        {
+          "id": "t2_confirmation_effect",
+          "requirement": "If D becomes confirmed for Friday, A+D ($170, 32 kits, 22 mats) and C+D become newly eligible; C+D is then cheapest. B+D still fails price and kits, and D+E still fails kits and E timing. A+B remains eligible. A named all-pair restatement is unnecessary if these effects are explained."
+        },
+        {
+          "id": "t2_tradeoff",
+          "requirement": "Compared with A+B, C+D saves $15, leaves $20 rather than $5, provides the same 30 kits, and gives up 5 mats (20 rather than 25). C+D has no quantity surplus; A+B has five surplus mats. Do not invent probabilities, extra attendance requirements, or supplier guarantees."
+        }
+      ]
+    },
+    {
+      "id": "t3_confirmed_handoff",
+      "prompt": "The supplier has now confirmed D for Friday. The quantity requirements and $180 cap haven't changed. Please finish the handoff for the coordinator. Use handoff/decision.md for the purchase decision and its cost, quantities and remaining budget; include what changed from the original recommendation and what we give up by switching. Keep the original evidence in handoff/analyst-report.txt as an unchanged copy of the supplied analyst-report.txt. Our check-in spreadsheet also needs handoff/pair-checks.json: a top-level object with a pairs array and selected_pair. Include one object for each of the ten unordered pairs, using these exact field names: pair (such as A+B), price, kits, mats, budget_ok, quantity_ok, friday_ok, qualifies. Use numbers for price and quantities and booleans for the four checks. Use the newly confirmed status of D in those checks. Set selected_pair to the chosen pair in the same A+B notation.",
+      "essentials": [
+        {
+          "id": "t3_decision",
+          "requirement": "Select C+D now that D is confirmed for Friday: $160, 30 kits, 20 mats, and $20 remaining. Explain that the availability update permits switching from the originally valid A+B recommendation."
+        },
+        {
+          "id": "t3_tradeoff",
+          "requirement": "The switch saves $15 and loses 5 mats while keeping 30 kits. C+D exactly meets both quantity minima; no extra quantity reserve is supplied."
+        },
+        {
+          "id": "t3_files",
+          "requirement": "Actually create all three requested handoff files. decision.md must be standalone and usable by the coordinator; pair-checks.json must be valid JSON matching the numeric/boolean contract for all ten unique pairs and select C+D."
+        },
+        {
+          "id": "t3_preservation",
+          "requirement": "handoff/analyst-report.txt is an exact unchanged copy of the full supplied report, retaining every original pair calculation and caveat, even though its original tentative-D state is historical. Do not rewrite that source report to match the new status; use decision.md and JSON for the current decision."
+        }
+      ]
+    }
+  ],
+  "expected_files": [
+    {
+      "path": "purchase-note.md",
+      "first_required_after_turn": "t1_initial_purchase",
+      "kind": "markdown",
+      "semantic_essentials": [
+        "t1_current_decision",
+        "t1_conditional_option",
+        "t1_action"
+      ]
+    },
+    {
+      "path": "handoff/decision.md",
+      "first_required_after_turn": "t3_confirmed_handoff",
+      "kind": "markdown",
+      "semantic_essentials": [
+        "t3_decision",
+        "t3_tradeoff"
+      ]
+    },
+    {
+      "path": "handoff/analyst-report.txt",
+      "first_required_after_turn": "t3_confirmed_handoff",
+      "kind": "exact_utf8_fixture_copy",
+      "equals_fixture": "analyst-report.txt"
+    },
+    {
+      "path": "handoff/pair-checks.json",
+      "first_required_after_turn": "t3_confirmed_handoff",
+      "kind": "json",
+      "expected_selected_pair": "C+D",
+      "expected_pairs": [
+        {
+          "pair": "A+B",
+          "price": 175,
+          "kits": 30,
+          "mats": 25,
+          "budget_ok": true,
+          "quantity_ok": true,
+          "friday_ok": true,
+          "qualifies": true
+        },
+        {
+          "pair": "A+C",
+          "price": 150,
+          "kits": 34,
+          "mats": 18,
+          "budget_ok": true,
+          "quantity_ok": false,
+          "friday_ok": true,
+          "qualifies": false
+        },
+        {
+          "pair": "A+D",
+          "price": 170,
+          "kits": 32,
+          "mats": 22,
+          "budget_ok": true,
+          "quantity_ok": true,
+          "friday_ok": true,
+          "qualifies": true
+        },
+        {
+          "pair": "A+E",
+          "price": 140,
+          "kits": 28,
+          "mats": 25,
+          "budget_ok": true,
+          "quantity_ok": false,
+          "friday_ok": false,
+          "qualifies": false
+        },
+        {
+          "pair": "B+C",
+          "price": 165,
+          "kits": 28,
+          "mats": 23,
+          "budget_ok": true,
+          "quantity_ok": false,
+          "friday_ok": true,
+          "qualifies": false
+        },
+        {
+          "pair": "B+D",
+          "price": 185,
+          "kits": 26,
+          "mats": 27,
+          "budget_ok": false,
+          "quantity_ok": false,
+          "friday_ok": true,
+          "qualifies": false
+        },
+        {
+          "pair": "B+E",
+          "price": 155,
+          "kits": 22,
+          "mats": 30,
+          "budget_ok": true,
+          "quantity_ok": false,
+          "friday_ok": false,
+          "qualifies": false
+        },
+        {
+          "pair": "C+D",
+          "price": 160,
+          "kits": 30,
+          "mats": 20,
+          "budget_ok": true,
+          "quantity_ok": true,
+          "friday_ok": true,
+          "qualifies": true
+        },
+        {
+          "pair": "C+E",
+          "price": 130,
+          "kits": 26,
+          "mats": 23,
+          "budget_ok": true,
+          "quantity_ok": false,
+          "friday_ok": false,
+          "qualifies": false
+        },
+        {
+          "pair": "D+E",
+          "price": 150,
+          "kits": 24,
+          "mats": 27,
+          "budget_ok": true,
+          "quantity_ok": false,
+          "friday_ok": false,
+          "qualifies": false
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "file_presence",
+      "type": "deterministic",
+      "rule": "Verify each expected file exists and is nonempty at its first_required_after_turn. Capture t1 purchase-note.md before sending t2 so a later write cannot backfill a missed request."
+    },
+    {
+      "id": "report_preservation",
+      "type": "deterministic",
+      "rule": "Decode UTF-8 without changing content; handoff/analyst-report.txt content must equal fixture content exactly, including all text and line endings. Record byte hash too. No whitespace normalization, subset comparison, or claims-only substitute.",
+      "expected_utf8_sha256": "2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51"
+    },
+    {
+      "id": "all_pair_audit",
+      "type": "deterministic",
+      "rule": "Parse JSON. Require top-level pairs array and selected_pair=C+D. Require exactly ten unique expected pair IDs, no extra pair IDs, numeric values for price/kits/mats, booleans for check fields, and every expected value shown in expected_files. Do not mistake JSON booleans for numbers. Array order and harmless extra object fields are not failures."
+    },
+    {
+      "id": "independent_arithmetic",
+      "type": "deterministic",
+      "rule": "Recompute each unordered pair from crate_data; budget_ok is price<=180, quantity_ok is kits>=30 AND mats>=20, friday_ok is both friday_final=true, qualifies is the conjunction. Among qualifiers the unique minimum-price pair is C+D. This confirms the frozen expected table without judging prose style."
+    },
+    {
+      "id": "semantic_essentials",
+      "type": "blinded_review",
+      "rule": "Judge every turn essential against the response and the actual requested file at that turn. Accept equivalent wording and correct calculation forms; do not require exact phrases. An accurate final chat does not repair a deficient requested standalone artifact."
+    },
+    {
+      "id": "honest_evidence",
+      "type": "blinded_review",
+      "rule": "Claims that files were written or checks were performed need captured file/tool evidence. Missing capture is unverified. Preserve failures, ties, disagreements, unavailable reviews, and uncertainty about the unreadable original child instructions."
+    },
+    {
+      "id": "communication",
+      "type": "blinded_review",
+      "rule": "Assess unnecessary explanation, unexplained jargon, redundant recaps and avoidable interruptions relative to each current request. Preserve requested technical depth in t2 and material caveats. Correctness/preservation and communication are separate; no word-count target or forced brevity rule."
+    }
+  ],
+  "crate_data": {
+    "A": {
+      "price": 80,
+      "kits": 18,
+      "mats": 10,
+      "friday_initial": true,
+      "friday_final": true
+    },
+    "B": {
+      "price": 95,
+      "kits": 12,
+      "mats": 15,
+      "friday_initial": true,
+      "friday_final": true
+    },
+    "C": {
+      "price": 70,
+      "kits": 16,
+      "mats": 8,
+      "friday_initial": true,
+      "friday_final": true
+    },
+    "D": {
+      "price": 90,
+      "kits": 14,
+      "mats": 12,
+      "friday_initial": false,
+      "friday_final": true
+    },
+    "E": {
+      "price": 60,
+      "kits": 10,
+      "mats": 15,
+      "friday_initial": false,
+      "friday_final": false
+    }
+  },
+  "requirements": {
+    "exact_distinct_crates": 2,
+    "max_each_crate": 1,
+    "min_kits": 30,
+    "min_mats": 20,
+    "max_price": 180,
+    "deadline": "Friday"
+  },
+  "frozen_expected_initial_qualifiers": [
+    "A+B"
+  ],
+  "frozen_expected_final_qualifiers": [
+    "A+B",
+    "A+D",
+    "C+D"
+  ]
+}

@@ -9,3 +9,7 @@
 /experiments/assessment-v2/*.json text eol=lf
 /docs/automated-evaluation.md text eol=lf
 /experiments/assessment-v2/results/** -text -whitespace
+/experiments/final-pilot/*.cjs text eol=lf
+/experiments/final-pilot/*.json text eol=lf
+/experiments/final-pilot/evidence/** -text -whitespace
+/docs/final-pilot-plan.md text eol=lf
