@@ -1,0 +1,9 @@
+{
+  "same_six_turn_allowance":true,
+  "spent_subject_attempts":1,
+  "remaining_subject_attempts":3,
+  "reviewer_attempts_remaining":2,
+  "e18":{"raw_dir":"continuation-v2","turn_indices":[2],"retained_failed_attempt":"continuation-v1","unverified_request":"t2_practical_decision"},
+  "e20":{"raw_dir":"continuation-v2","turn_indices":[1,2]},
+  "reason":"A known completed-turn usage replay caused a capture-ID failure before any observed resumed answer. No repeat of the interrupted reply; retain its unknown status and use the last absent slot for the original repair/handoff request."
+}

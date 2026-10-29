@@ -1,7 +1,7 @@
 // No host/model calls. Privacy/phase regression checks for the transport only.
 'use strict';
 const assert=require('node:assert/strict'),{publicEvent}=require('./capture.cjs');
-const {forbiddenCommand}=require('./run.cjs');
+const {forbiddenCommand,historicalUsage}=require('./run.cjs');
 const hidden='DO_NOT_PERSIST_PRIVATE_CONTENT';
 const fixtures=[
   {method:'item/completed',params:{threadId:'t',turnId:'u',item:{id:'a',type:'agentMessage',phase:'commentary',text:'A useful finding.',reasoning:hidden}}},
@@ -17,4 +17,5 @@ const outputs=fixtures.map(publicEvent);assert(!JSON.stringify(outputs).includes
 assert.equal(publicEvent({method:'item/started',params:{item:{type:'collabAgentToolCall'}}}).kind,'unexpected-delegation');
 const rejected=publicEvent({method:'item/completed',params:{item:{type:'agentMessage',phase:'analysis',text:hidden}}});assert.equal(rejected.kind,'invalid-public-message');assert(!JSON.stringify(rejected).includes(hidden));assert.equal(publicEvent({method:'item/completed',params:{item:{type:'agentMessage',text:{hidden}}}}).kind,'invalid-public-message');
 assert(forbiddenCommand('codex app-server --listen stdio://'));assert(forbiddenCommand('claude -p example'));assert(!forbiddenCommand('node tools/check-evidence.cjs'));
-console.log(JSON.stringify({offline_only:true,checks:14,passed:true,private_nested_content_excluded:true}));
+const old=new Set(['past']);assert(historicalUsage({kind:'usage',thread:'t',turn:'past'},'t',old));assert(!historicalUsage({kind:'usage',thread:'t',turn:'current'},'t',old));assert(!historicalUsage({kind:'usage',thread:'other',turn:'past'},'t',old));assert(!historicalUsage({kind:'item',thread:'t',turn:'past'},'t',old));
+console.log(JSON.stringify({offline_only:true,checks:18,passed:true,private_nested_content_excluded:true}));

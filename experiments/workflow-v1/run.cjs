@@ -13,6 +13,7 @@ const SELECTOR='ss-feasibility@ss-feasibility-catalog',FILES=['.codex-plugin/plu
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex'),read=p=>fs.readFileSync(p,'utf8').replace(/^\uFEFF/,''),json=p=>JSON.parse(read(p));
 const env={...process.env};for(const k of Object.keys(env))if(/^CODEX_|API_KEY|AUTH_TOKEN|ACCESS_TOKEN|GITHUB_TOKEN|GH_TOKEN/i.test(k))delete env[k];
 const forbiddenCommand=s=>/\b(?:codex|claude)(?:\.exe)?\s+(?:exec|resume|fork|chat|app-server|[-])/i.test(s||'');
+const historicalUsage=(e,thread,ids)=>e.kind==='usage'&&e.thread===thread&&typeof e.turn==='string'&&ids?.has(e.turn)===true;
 function ledger(fn){const l=LEDGER+'.lock';let fd;try{fd=fs.openSync(l,'wx');const x=json(LEDGER);fn(x);put(LEDGER,x);}finally{if(fd!==undefined){fs.closeSync(fd);fs.unlinkSync(l);}}}
 function update(id,patch){ledger(x=>Object.assign(x.starts.find(s=>s.id===id),patch));}
 function native(profile,cwd,args){const r=cp.spawnSync(BINARY,args,{cwd,env:{...env,CODEX_HOME:profile},encoding:'utf8',timeout:30000,windowsHide:true});if(r.status!==0)throw Error('Native metadata operation failed: '+args.slice(0,2).join(' ')+' status '+r.status);return r.stdout;}
@@ -42,6 +43,7 @@ async function turn(rpc,trial,prompt,index,thread,monitor,admit=quota){
     if(e.kind==='invalid-public-message'){fail('Unexpected public message phase/text; content excluded');return;}
     if(e.kind==='blocked-request'||e.kind==='unexpected-delegation'){r.blocked_native_request=e.kind==='blocked-request'?{method:e.method,id:e.id}:e.kind;fail('Unexpected approval/input/delegation request; no expanded access');return;}
     if(e.thread&&e.thread!==thread){monitor.unexpected.add(e.thread);fail('Unexpected native conversation; stop and reconcile');return;}
+    if(historicalUsage(e,thread,monitor.historyTurnIds)){r.ignored_historical_usage_snapshots=(r.ignored_historical_usage_snapshots||0)+1;return;}
     if(e.turn){if(r.native_turn_id&&e.turn!==r.native_turn_id){fail('Notification for another native turn');return;}r.native_turn_id=e.turn;}
     else if(['started','completed','usage','item','command-start'].includes(e.kind)){fail('Turn-scoped notification missing native turn ID');return;}
     if(e.kind==='command-start'&&forbiddenCommand(e.command)){fail('Unexpected model-host command');return;}
@@ -76,4 +78,4 @@ async function run(file,id){
   console.log(JSON.stringify({id,failed:result.failed,error:result.error,turns:result.turns.length,auth_copy_removed:result.auth_copy_removed,hooks:result.hook_notifications.length}));
 }
 if(require.main===module){const[action,file,id]=process.argv.slice(2);(async()=>{if(action==='freeze')freeze(file);else if(action==='run')await run(file,id);else throw Error('Use freeze MANIFEST or run MANIFEST ID');})().catch(e=>{console.error(e.message);process.exitCode=1;});}
-module.exports={freeze,run,fingerprints,forbiddenCommand,turn};
+module.exports={freeze,run,fingerprints,forbiddenCommand,turn,historicalUsage};
