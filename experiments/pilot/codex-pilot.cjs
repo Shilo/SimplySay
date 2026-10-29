@@ -15,7 +15,10 @@ if (hash(fs.readFileSync(path.join(__dirname, 'cases.json'))) !== '26db3a7493225
 const policy = fs.readFileSync(path.join(__dirname, 'policy.txt'), 'utf8');
 const minimal = fs.readFileSync(path.join(__dirname, 'minimal.txt'), 'utf8');
 const selector = 'ss-feasibility@ss-feasibility-catalog';
-const manifestPath = path.join(base, 'launch-manifest.json');
+const originalManifestPath = path.join(base, 'launch-manifest.json');
+const amendedManifestPath = path.join(base, 'launch-manifest-v2.json');
+const manifestPath = fs.existsSync(amendedManifestPath) ? amendedManifestPath : originalManifestPath;
+const runsDirectory = fs.existsSync(amendedManifestPath) ? 'runs-v2' : 'runs';
 const env = { ...process.env };
 for (const key of Object.keys(env)) {
   if (/API_KEY|AUTH_TOKEN|ACCESS_TOKEN|GITHUB_TOKEN|GH_TOKEN/.test(key) ||
@@ -37,7 +40,7 @@ function config(condition, caseId, profile) {
   let text = 'model = "gpt-6.1-sol"\nmodel_reasoning_effort = "low"\nforced_login_method = "chatgpt"\ncli_auth_credentials_store = "file"\nweb_search = "disabled"\nsandbox_mode = "workspace-write"\napproval_policy = "never"\n';
   if (condition === 'minimal') text += `developer_instructions = ${JSON.stringify(minimal)}\n`;
   const delegation = caseId === 'crate_pair_delegation';
-  text += `[sandbox_workspace_write]\nnetwork_access = false\n[features]\napps = false\nmulti_agent = ${delegation}\n[agents]\nenabled = ${delegation}\nmax_threads = 1\nmax_depth = ${delegation ? 1 : 0}\n[plugins._default]\nenabled = false\n`;
+  text += `[sandbox_workspace_write]\nnetwork_access = false\nexclude_tmpdir_env_var = true\nexclude_slash_tmp = true\n[windows]\nsandbox = "mxc"\n[features]\napps = false\nmulti_agent = ${delegation}\n[agents]\nenabled = ${delegation}\nmax_threads = 1\nmax_depth = ${delegation ? 1 : 0}\n[plugins._default]\nenabled = false\n`;
   if (delegation) {
     const command=`node "${path.join(profile,'spawn-guard.cjs').replaceAll('\\','/')}"`;
     text += `\n[hooks]\nPreToolUse = [{ matcher = "spawn_agent", hooks = [{ type = "command", command = ${JSON.stringify(command)}, timeout = 5 }] }]\n`;
@@ -81,7 +84,7 @@ async function prepare(id) {
   const row = plan.order.find(r => r[0] === id);
   if (!row) throw new Error('Unknown planned ID');
   const [, caseId, condition] = row;
-  const trial = path.join(base, 'runs', id), profile = path.join(trial, 'profile'), cwd = path.join(trial, 'task');
+  const trial = path.join(base, runsDirectory, id), profile = path.join(trial, 'profile'), cwd = path.join(trial, 'task');
   if (fs.existsSync(trial)) throw new Error('Fresh profile required');
   fs.mkdirSync(profile, { recursive: true }); fs.mkdirSync(cwd);
   const subject = frozen.cases.find(c => c.id === caseId);
@@ -154,7 +157,7 @@ async function run(id) {
   const plan = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
   const row = plan.order.find(r => r[0] === id);
   if (!row) throw new Error('Unknown planned ID');
-  const trial = path.join(base, 'runs', id), profile = path.join(trial, 'profile'), cwd = path.join(trial, 'task');
+  const trial = path.join(base, runsDirectory, id), profile = path.join(trial, 'profile'), cwd = path.join(trial, 'task');
   if (!fs.existsSync(path.join(trial, 'preflight.json')) || fs.existsSync(path.join(trial, 'result.json'))) throw new Error('Not prepared or already run');
   const preflight=JSON.parse(fs.readFileSync(path.join(trial,'preflight.json'),'utf8'));
   const subject=frozen.cases.find(c=>c.id===row[1]);
@@ -195,4 +198,14 @@ async function run(id) {
   console.log(JSON.stringify({ id, code, error, budgetViolation, durationMs: Date.now() - started }));
 }
 const [action, id] = process.argv.slice(2);
-(async () => { if (action === 'freeze') freeze(); else if (action === 'prepare') await prepare(id); else if (action === 'run') await run(id); else throw new Error('Use freeze, prepare ID, or run ID'); })().catch(e => { console.error(e.message); process.exitCode = 1; });
+function amendSandbox() {
+  if(fs.existsSync(amendedManifestPath))throw new Error('Sandbox amendment already frozen');
+  const ledger=JSON.parse(fs.readFileSync(path.join(root,'.local/pilot-sessions.json'),'utf8'));
+  if(ledger.reservations.length!==1||ledger.reservations[0].id!=='r01')throw new Error('Unexpected diagnostic point');
+  const old=JSON.parse(fs.readFileSync(originalManifestPath,'utf8'));
+  if(old.policyHash!==hash(policy)||old.minimalHash!==hash(minimal)||old.caseHash!==hash(fs.readFileSync(path.join(__dirname,'cases.json'))))throw new Error('Cannot alter frozen policy/tasks');
+  const next={...old,parentManifestHash:hash(fs.readFileSync(originalManifestPath)),sourceCommit:cp.spawnSync('git',['-C',root,'rev-parse','HEAD'],{encoding:'utf8'}).stdout.trim(),controllerHashes:controllerHashes(),amendment:'r01 intended workspace-write resolved read-only because fresh Windows profile disabled its sandbox backend. Explicit MXC selected after credential-free inside-write/parent-write-denied probe; no account setup, ACL mutation, or fallback. Policy/tasks unchanged; original r01 retained as infrastructure failure. r09 uses one of two diagnostic slots.',diagnosticSlotsRemaining:1,order:[['r09','reimbursement_batch','absent',1],...old.order.filter(r=>r[0]!=='r01')]};
+  put(amendedManifestPath,JSON.stringify(next,null,2));
+  console.log(JSON.stringify({amendedManifestPath,originalPreserved:true,remainingDiagnosticSlots:1}));
+}
+(async () => { if (action === 'freeze') freeze(); else if(action==='amend-sandbox')amendSandbox();else if (action === 'prepare') await prepare(id); else if (action === 'run') await run(id); else throw new Error('Use freeze, amend-sandbox, prepare ID, or run ID'); })().catch(e => { console.error(e.message); process.exitCode = 1; });
