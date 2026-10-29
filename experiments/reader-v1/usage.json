@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-4-complete-regression",
-  "new_conversations": 29,
-  "new_task_starts": 72,
+  "status": "unit-5-preparation",
+  "new_conversations": 31,
+  "new_task_starts": 74,
   "starts": [
     {
       "id": "n01",
@@ -304,6 +304,22 @@
       "status": "completed-valid-calibration",
       "purpose": "Independent blinded assessment of all three saved conditions with prospective goal-specific controls and shared host facts",
       "agent": "/root/reader_unit4_blind_2"
+    },
+    {
+      "id": "n32",
+      "role": "fresh-full-goal-policy-challenger",
+      "purpose": "Diagnose exclusive-stage regression and challenge one meaningfully different full-goal mechanism before further response tests",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "reserved"
+    },
+    {
+      "id": "n33",
+      "role": "fresh-case-and-baseline-challenger",
+      "purpose": "Inspect actual baseline constraints and propose at most two natural unused development conversations without forcing verbosity",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "reserved"
     }
   ],
   "new_paid_services": false,
@@ -318,7 +334,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "Unit complete; no automatic response repeats. Record a different evidence-backed purpose before further model work.",
+  "block_reason": "Preparation only: two independent challengers; all native response dispatch remains blocked pending a recorded evidence-backed comparison.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {
