@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "reader-c-door-scanner",
+  "title": "A coordinator interprets a technical scanner note, then asks for maintenance reasoning",
+  "fixture_files": [
+    {
+      "path": "scanner-notes.md",
+      "content": "# Door scanner: local demo implementation notes\n\nThis is a fictional community open-house prototype, with no live service connected to this pack. All example times are local times on the same demo day. Doors open at 10:00.\n\n## Verification path\n\nQR v2 payload: event_id, ticket_id, nbf, exp, kid, sig. kid selects a bundled Ed25519 public key. sig covers the canonical event/ticket/time payload. Successful signature verification establishes that the trusted issuer signed those fields and that they were not altered; it does not query an admission or cancellation service. nbf and exp are the payload validity window.\n\nThe offline green predicate is: signature verifies with a bundled key; the phone clock is inside the signed validity window; ticket_id is absent from the last imported cancellation snapshot; and ticket_id is absent from this phone’s local consumed-ID set. A successful offline admission adds the ID to that local set. The two phones have independent consumed-ID sets. There is no peer-to-peer exchange while offline. A second scan on the same phone is rejected after its first acceptance.\n\n## State freshness\n\nBoth phones last imported the cancellation snapshot at 09:00. An offline signature check does not fetch a newer snapshot. A cancellation after 09:00 does not alter the already-issued QR payload or signature. The prototype does not display a separate freshness warning when it shows offline green.\n\nAt actual 10:00 phone A reads 10:00 and phone B reads 09:58. No clock correction occurs while offline. Both local consumed-ID sets initially contain no IDs.\n\nT-41: event matches, signature valid, nbf 09:00, exp 13:00. The server canceled T-41 at 09:10. At actual 10:00 its holder presents the same QR to phone A and then phone B while both remain offline.\n\nT-99: event matches, signature valid, nbf 09:00, exp 09:59, not canceled. Consider a first scan on each phone at actual 10:00.\n\n## Online path\n\nWith a working server connection, a scan uses server time and the current cancellation state. The server’s admission endpoint performs an atomic check-and-consume of a shared ticket-ID ledger: it accepts an otherwise allowed unused ticket and records that use as one indivisible operation. A later competing online scan of that ID is rejected. The offline green check is not this endpoint.\n\nReconnecting sends local offline admission records for audit. It does not undo entries already allowed through a door and cannot retroactively prevent two earlier offline admissions. The pack supplies no guarantee about reconnect duration or the handling of real incidents.\n",
+      "encoding": "utf-8",
+      "sha256": "474b85ae3c7b3aae475cf0627d38055bf3b7aba598f25b40a47a26b72fd78e77"
+    }
+  ],
+  "turns": [
+    {
+      "id": "c1_green_meaning",
+      "prompt": "Read scanner-notes.md. I coordinate the volunteers at our community open house and do not write code. The door crew see a green tick. Does that mean a person is allowed in, and can we use two offline phones without admitting the same ticket twice?",
+      "essentials": [
+        {
+          "id": "c1_green_limits",
+          "requirement": "Explain the practical meaning and limits of offline green: it is a local verification result, not confirmation of current admission permission. In particular, the phones do not know the later cancellation in the note.",
+          "request_clause": "Does that mean a person is allowed in?",
+          "location": "ordinary answer"
+        },
+        {
+          "id": "c1_cross_phone",
+          "requirement": "Explain that independent offline phone ledgers cannot guarantee one admission across the two phones. The same ticket can pass once on each; do not claim that the per-phone duplicate check is shared.",
+          "request_clause": "can we use two offline phones without admitting the same ticket twice?",
+          "location": "ordinary answer"
+        }
+      ]
+    },
+    {
+      "id": "c2_maintainer_reasoning",
+      "prompt": "I will maintain this prototype. Work through T-41 on the two offline phones and T-99 with the two clock readings. Explain what the signature check proves, how cancellation and duplicate-use state enter those examples, and what changes when a working server connection returns. I need the reasoning as well as the conclusions.",
+      "essentials": [
+        {
+          "id": "c2_t41_trace",
+          "requirement": "Explain that successful signature verification establishes that the trusted issuer signed the covered fields and they were not altered; it does not establish current admission permission. Work through T-41: the unchanged signed payload remains locally valid at both phone times; the post-import cancellation is unavailable offline; independent empty ledgers allow first acceptance on each phone, while a repeat on an already-used phone is rejected.",
+          "request_clause": "Work through T-41 on the two offline phones ... how cancellation and duplicate-use state enter those examples",
+          "location": "ordinary detailed explanation"
+        },
+        {
+          "id": "c2_t99_trace",
+          "requirement": "Work through T-99 at actual 10:00: phone A’s 10:00 clock is outside the 09:59 expiry; phone B’s 09:58 clock is within the signed window. Signature validity does not establish clock correctness or make the already-expired ticket currently valid.",
+          "request_clause": "T-99 with the two clock readings ... Explain what the signature check proves",
+          "location": "ordinary detailed explanation"
+        },
+        {
+          "id": "c2_online_limits",
+          "requirement": "Explain that online scans use server time, current cancellations and atomic shared check-and-consume, preventing future competing online use of an otherwise allowed ticket. Reconnection/audit upload does not undo or retroactively prevent earlier offline entries. Do not invent a reconnect-time guarantee or claim a live system was tested.",
+          "request_clause": "what changes when a working server connection returns",
+          "location": "ordinary detailed explanation"
+        }
+      ]
+    },
+    {
+      "id": "c3_brief_time",
+      "prompt": "The gate briefing starts at 9:40 am and lasts 15 minutes. What time does it finish?",
+      "essentials": [
+        {
+          "id": "c3_time",
+          "requirement": "Answer 9:55 am, 09:55 or an equivalent correct expression. No timezone or extra gate checklist is requested.",
+          "request_clause": "starts at 9:40 am and lasts 15 minutes",
+          "location": "ordinary answer"
+        }
+      ]
+    }
+  ],
+  "expected_files": [],
+  "capture_files": [
+    "scanner-notes.md"
+  ],
+  "objective": {
+    "preserve_fixture_paths": [
+      "scanner-notes.md"
+    ]
+  }
+}

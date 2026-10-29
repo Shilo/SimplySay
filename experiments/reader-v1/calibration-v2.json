@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "label": "Prospective synthetic diagnostic controls; not response-trial outcomes",
+  "historical_controls": "The original four controls and their calibrator remain unchanged.",
+  "diagnostics": [
+    {
+      "id": "d1",
+      "task_id": "reader-scenario-71",
+      "task": {
+        "request": "Check this local import preview against the required columns and row format, then tell me whether it is ready for a local trial. No file changes are needed.",
+        "facts": "Required columns are record_id, revision and title. The supplied CSV is: record_id,revision,title / W-1,0,Check door / W-2,2,Paint rail / W-3,1,Clear path. A valid row has a nonempty ID/title and a nonnegative safe-integer revision. A captured local check confirms the headers at 8 seconds and all three rows at 18 seconds; the final arrives at 26 seconds. Live production import is unverified. The host requires an opening for tool work and commentary during ongoing work with a stated 60-second upper gap."
+      },
+      "good": {
+        "ordinary_chat": "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+        "progress": [
+          "I’ll compare the supplied preview with its local format requirements."
+        ],
+        "protected_email": "",
+        "protected_deliverables": {},
+        "trace": [
+          {
+            "elapsed_seconds": 0,
+            "type": "opening"
+          },
+          {
+            "elapsed_seconds": 26,
+            "type": "final"
+          }
+        ]
+      },
+      "mutant": {
+        "ordinary_chat": "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+        "progress": [
+          "I’ll compare the supplied preview with its local format requirements.",
+          "The column names match the required output.",
+          "All three rows satisfy the format checks. I’m preparing the result now."
+        ],
+        "protected_email": "",
+        "protected_deliverables": {},
+        "trace": [
+          {
+            "elapsed_seconds": 0,
+            "type": "opening"
+          },
+          {
+            "elapsed_seconds": 8,
+            "type": "progress"
+          },
+          {
+            "elapsed_seconds": 18,
+            "type": "progress"
+          },
+          {
+            "elapsed_seconds": 26,
+            "type": "final"
+          }
+        ]
+      },
+      "expected": {
+        "type": "style",
+        "goals": [
+          "excessive_updates"
+        ],
+        "mutant_changed_text": [
+          "The column names match the required output.",
+          "All three rows satisfy the format checks. I’m preparing the result now."
+        ],
+        "information": "both-preserved",
+        "eligibility": [
+          "excessive_updates"
+        ]
+      }
+    },
+    {
+      "id": "d2",
+      "task_id": "reader-scenario-42",
+      "task": {
+        "request": "The wrong workshop time is fixed and the confirmation test passed. Can we reopen registration now, and what remains unverified?",
+        "facts": "The recorded launch rule blocks opening for an incorrect confirmation time. Capacity enforcement and duplicate-submission checks already passed. The confirmation is now correct and tested. Calendar-invite delivery has not been tested and is a separate follow-up, not an established opening blocker."
+      },
+      "good": {
+        "ordinary_chat": "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+        "progress": [],
+        "protected_email": "",
+        "protected_deliverables": {}
+      },
+      "mutant": {
+        "ordinary_chat": "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.\n\nLooking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently. The practical point is that registration can reopen now, and the calendar message should be checked separately.",
+        "progress": [],
+        "protected_email": "",
+        "protected_deliverables": {}
+      },
+      "expected": {
+        "type": "style",
+        "goals": [
+          "unnecessary_explanation",
+          "filler",
+          "repetition"
+        ],
+        "mutant_changed_text": [
+          "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected. Those are different pieces of the same process. Checking them separately helps a team avoid assuming that a correct page guarantees a correct message. This is a useful habit for event work because different stages can succeed or fail independently. The practical point is that registration can reopen now, and the calendar message should be checked separately."
+        ],
+        "information": "both-preserved",
+        "eligibility": [
+          "unnecessary_explanation",
+          "filler",
+          "repetition"
+        ]
+      }
+    },
+    {
+      "id": "d3",
+      "task_id": "reader-scenario-86",
+      "task": {
+        "request": "I coordinate volunteers and am not a developer. Why can search still show the old name after I rename an item, and would clearing the cache guarantee it is fixed?",
+        "facts": "The primary saved record changes immediately. A separate search index can take up to 30 seconds to reflect it. Search results can then be cached for 30 seconds after population. A cache miss may read an old index. No immediate read-your-writes guarantee exists."
+      },
+      "good": {
+        "ordinary_chat": "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately.",
+        "progress": [],
+        "protected_email": "",
+        "protected_deliverables": {}
+      },
+      "mutant": {
+        "ordinary_chat": "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+        "progress": [],
+        "protected_email": "",
+        "protected_deliverables": {}
+      },
+      "expected": {
+        "type": "style",
+        "goals": [
+          "unnecessary_jargon",
+          "clarity"
+        ],
+        "mutant_changed_text": [
+          "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency."
+        ],
+        "information": "both-preserved",
+        "eligibility": [
+          "unnecessary_jargon",
+          "clarity"
+        ]
+      }
+    },
+    {
+      "id": "d4",
+      "task_id": "reader-scenario-53",
+      "task": {
+        "request": "Inspect the local change preview first. If it would delete any archived rows, stop and ask whether I want to archive those rows first or cancel. Do not apply the plan before I answer.",
+        "facts": "The preview deletes 30 archived rows. Both shown outputs leave migration-plan.json unchanged and no change is applied. The user has not answered."
+      },
+      "good": {
+        "ordinary_chat": "The plan remains unapplied; I’m waiting for your choice.",
+        "progress": [
+          "I’ll inspect the preview before changing anything.",
+          "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose."
+        ],
+        "protected_email": "",
+        "protected_deliverables": {
+          "migration-plan.json": "{\"delete_archived_rows\":30,\"applied\":false}\n"
+        }
+      },
+      "mutant": {
+        "ordinary_chat": "The plan remains unapplied.",
+        "progress": [
+          "I’ll inspect the preview before changing anything."
+        ],
+        "protected_email": "",
+        "protected_deliverables": {
+          "migration-plan.json": "{\"delete_archived_rows\":30,\"applied\":false}\n"
+        }
+      },
+      "expected": {
+        "type": "necessary-interruption",
+        "goals": [
+          "excessive_updates"
+        ],
+        "good_required_quote": "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+        "information": "mutant-omitted-essential",
+        "eligibility": [
+          "information",
+          "excessive_updates"
+        ]
+      }
+    },
+    {
+      "id": "d5",
+      "task_id": "reader-scenario-94",
+      "task": {
+        "request": "Review this local report pack before I attach it to the 9:20 agenda. If it cannot be ready by 9:20, tell me while I still have time to move the item to the next agenda. Do not change the documents.",
+        "facts": "The review starts at 9:18:30. The host requires a tool-work opening and commentary during ongoing work with a stated 60-second upper gap. At 9:19:25 (55 seconds), the reviewer knows completion is expected around 9:20:10. The page headings have been checked, the sections are in order and cross-reference checking is under way. Preparing the final note and checking filenames are the remaining steps. The final arrives at 9:20:10 (100 seconds). It confirms the required sections and cross-references. No document changes occur. Both traces have the same opening, one intermediate message and the same final at the same times."
+      },
+      "good": {
+        "ordinary_chat": "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+        "progress": [
+          "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff.",
+          "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+        ],
+        "protected_email": "",
+        "protected_deliverables": {},
+        "trace": [
+          {
+            "elapsed_seconds": 0,
+            "type": "opening"
+          },
+          {
+            "elapsed_seconds": 55,
+            "type": "required-progress"
+          },
+          {
+            "elapsed_seconds": 100,
+            "type": "final"
+          }
+        ]
+      },
+      "mutant": {
+        "ordinary_chat": "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+        "progress": [
+          "I’ll review the local report pack and tell you if it cannot meet the agenda cutoff.",
+          "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda. I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more."
+        ],
+        "protected_email": "",
+        "protected_deliverables": {},
+        "trace": [
+          {
+            "elapsed_seconds": 0,
+            "type": "opening"
+          },
+          {
+            "elapsed_seconds": 55,
+            "type": "required-progress"
+          },
+          {
+            "elapsed_seconds": 100,
+            "type": "final"
+          }
+        ]
+      },
+      "expected": {
+        "type": "style",
+        "goals": [
+          "filler",
+          "unnecessary_explanation"
+        ],
+        "mutant_changed_text": [
+          "I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more."
+        ],
+        "information": "both-preserved",
+        "eligibility": [
+          "excessive_updates",
+          "filler",
+          "repetition",
+          "unnecessary_explanation"
+        ],
+        "surface": "progress",
+        "timing_presence_identical": true,
+        "final_identical": true,
+        "needed_status_identical": "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+      }
+    }
+  ],
+  "eligibility_rule": "Keep legacy all-four calibration separate. Added diagnostic eligibility is claim-specific; no changed thresholds after outcomes. Synthetic controls are not measured human comprehension.",
+  "unit2_addition": {
+    "diagnostic": "d5",
+    "scope": "Optional payload inside a message whose presence and timely status are required; no expected message-count reduction",
+    "historical_diagnostics_retained": 4
+  }
+}

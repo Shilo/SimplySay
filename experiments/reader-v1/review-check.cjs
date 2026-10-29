@@ -12,6 +12,8 @@ ok('three turns per case',()=>{assert.equal(a.turns.length,3);assert.equal(b.tur
 for(const s of ['3:20 pm.','15:20','Twenty-past-three.','Twenty past three.'])ok('equivalent time screen',()=>assert.equal(review.timeScreen(s).status,'positive-lexical-evidence'));
 ok('unrecognized time is not an automatic omission',()=>assert.equal(review.timeScreen('Join after the twenty-minute check finishes.').status,'unverified'));
 ok('wrong time does not pass screen',()=>assert.equal(review.timeScreen('3:30 pm.').status,'unverified'));
+for(const s of ['9:55 am.','09:55','Five to ten.'])ok('case C equivalent time screen',()=>assert.equal(review.timeScreen(s,'9:55 am').status,'positive-lexical-evidence'));
+ok('case C wrong time does not pass screen',()=>assert.equal(review.timeScreen('10:55 am.','9:55 am').status,'unverified'));
 
 // Inspected source consists only of built-in local file/CLI operations. No host,
 // network, installation or external service is executed by these oracle probes.
@@ -22,8 +24,11 @@ ok('seeded faults fail contract probe',()=>assert.notEqual(seeded.status,0));
 ok('corrected fixture passes module and CLI probe',()=>assert.equal(fixed.status,0,fixed.stderr));
 for(const[name,source]of [['id-mutant',corrected.replace('const key=row.record_id;','const key=row.title;')],['revision-mutant',corrected.replace('row.revision>previous.revision','row.revision<previous.revision')],['order-mutant',corrected.replace('return [...chosen.values()];','return [...chosen.values()].sort((a,b)=>a.title.localeCompare(b.title));')]])ok(name+' fails probe',()=>assert.notEqual(probe(name,source).status,0));
 
-review.prepare('experiments/workflow-v1/replication.manifest.json',path.join(OUT,'review'),'reader-smoke');
-const dir=path.join(OUT,'review'),map=j(path.join(dir,'controller-map.json')),oldMap=j(path.join(OLD,'review/controller-map.json')),calibration=j(path.join(__dirname,'calibration.json'));
+const v2=process.argv.includes('--calibration-v2'),calibrationFile=path.join(__dirname,v2?'calibration-v2.json':'calibration.json');
+let manifestFile='experiments/workflow-v1/replication.manifest.json';
+if(v2){const smoke=copy(j(path.join(ROOT,manifestFile)));smoke.calibration_file='experiments/reader-v1/calibration-v2.json';manifestFile=path.relative(ROOT,path.join(OUT,'prospective.manifest.json'));put(path.join(ROOT,manifestFile),smoke);}
+review.prepare(manifestFile,path.join(OUT,'review'),'reader-smoke');
+const dir=path.join(OUT,'review'),map=j(path.join(dir,'controller-map.json')),oldMap=j(path.join(OLD,'review/controller-map.json')),calibration=j(calibrationFile);
 const originals=new Map();
 for(let n=1;n<=2;n++){
   const id='reader-smoke-review-'+n,oldId='replication-review-'+n,oldFile=path.join(OLD,'format-recovery/reviews',oldId+'.json'),old=j(oldFile);originals.set(oldFile,sha(read(oldFile)));
@@ -46,13 +51,13 @@ for(let n=1;n<=2;n++){
     }
     wrapper.review.pair_reviews.push(r);
     const notes=wrapper.goal_notes.find(x=>x.pair_id===p.pair_id).goals;
-    for(const g of review.GOALS){const choice=g==='unnecessary_explanation'?'tie':r.communication.dimensions[g],left=packet.candidates.find(c=>c.alias===p.left),right=packet.candidates.find(c=>c.alias===p.right),surface=g==='excessive_updates'?'progress':'final';let evidence=surface==='progress'?(left.progress.length?[left.progress[0]]:[]):[left.ordinary_chat];if(p.kind==='diagnostic-control'){const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id);if(d.expected.goals.includes(g))evidence=[d.expected.type==='style'?d.expected.mutant_changed_text[0]:d.expected.good_required_quote];}notes[g]=simpleNote(choice,surface,evidence);}
+    for(const g of review.GOALS){const choice=g==='unnecessary_explanation'?'tie':r.communication.dimensions[g],left=packet.candidates.find(c=>c.alias===p.left),right=packet.candidates.find(c=>c.alias===p.right),surface=(p.diagnostic_id==='d5'&&calibration.diagnostics.find(d=>d.id===p.diagnostic_id).expected.goals.includes(g))||g==='excessive_updates'?'progress':'final';let evidence=surface==='progress'?(left.progress.length?[left.progress[0]]:[]):[left.ordinary_chat];if(p.kind==='diagnostic-control'){const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id);if(d.expected.goals.includes(g))evidence=[d.expected.type==='style'?d.expected.mutant_changed_text[0]:d.expected.good_required_quote];}notes[g]=simpleNote(choice,surface,evidence);}
     if(p.kind==='diagnostic-control'){
-      const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id),good=p.left_source===p.good_source?'left':'right';if(d.expected.goals.includes('unnecessary_explanation'))notes.unnecessary_explanation=simpleNote(good,'final',[d.expected.mutant_changed_text[0]]);
+      const d=calibration.diagnostics.find(d=>d.id===p.diagnostic_id),good=p.left_source===p.good_source?'left':'right';if(d.expected.goals.includes('unnecessary_explanation'))notes.unnecessary_explanation=simpleNote(good,d.id==='d5'?'progress':'final',[d.expected.mutant_changed_text[0]]);
     }
   }
   ok('wrapper accepts complete legacy plus companion',()=>assert(review.validate(wrapper,packet)));
-  ok('all prospective claim diagnostics pass fixture',()=>assert(Object.values(review.diagnose(wrapper,m,packet).eligible_claims).every(Boolean)));
+  ok('all prospective claim diagnostics pass fixture',()=>{const d=review.diagnose(wrapper,m,packet,calibrationFile);assert(Object.values(d.eligible_claims).every(Boolean));assert(Object.values(d.diagnostics).every(d=>d.pass));});
   const real=m.pairs.find(p=>p.kind==='real');
   const onlyProgress=copy(wrapper),sp=m.pairs.find(p=>p.diagnostic_id==='d1'),sn=onlyProgress.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.clarity;sn.surface='final';sn.evidence=['The column names match the required output.'];ok('progress-only evidence cannot claim final clarity',()=>assert.throws(()=>review.validate(onlyProgress,packet)));
   const onlyFinal=copy(wrapper),fn=onlyFinal.goal_notes.find(p=>p.pair_id===sp.pair_id).goals.relevance;fn.surface='progress';fn.evidence=[packet.candidates.find(c=>c.alias===sp.left).ordinary_chat];ok('final-only evidence cannot claim progress',()=>assert.throws(()=>review.validate(onlyFinal,packet)));
@@ -63,10 +68,20 @@ for(let n=1;n<=2;n++){
   const changedChoice=copy(wrapper),note=changedChoice.goal_notes.find(x=>x.pair_id===real.pair_id).goals.clarity;note.choice=note.choice==='left'?'right':'left';note.tie_basis=null;ok('companion cannot change legacy choice',()=>assert.throws(()=>review.validate(changedChoice,packet)));
   const missingTie=copy(wrapper);missingTie.goal_notes.find(x=>x.pair_id===real.pair_id).goals.clarity.tie_basis=null;ok('tie requires explicit interpretation',()=>assert.throws(()=>review.validate(missingTie,packet)));
   const omitted=copy(wrapper);omitted.goal_notes.pop();ok('missing pair notes rejected',()=>assert.throws(()=>review.validate(omitted,packet)));
-  const wrongProgress=copy(wrapper),pm=m.pairs.find(p=>p.diagnostic_id==='d1'),pnotes=wrongProgress.goal_notes.find(p=>p.pair_id===pm.pair_id).goals;wrongProgress.review.pair_reviews.find(p=>p.pair_id===pm.pair_id).communication.preference=pm.left_source===pm.good_source?'right':'left';ok('truthful unnecessary progress error fails eligibility',()=>assert.equal(review.diagnose(wrongProgress,m,packet).eligible_claims.excessive_updates,false));
-  const lostWarning=copy(wrapper),wm=m.pairs.find(p=>p.diagnostic_id==='d4'),wrow=lostWarning.review.pair_reviews.find(p=>p.pair_id===wm.pair_id);wrow[wm.left_source===wm.good_source?'right_information':'left_information'].status='preserved';ok('missing needed interruption cannot pass preservation',()=>assert.equal(review.diagnose(lostWarning,m,packet).eligible_claims.information,false));
-  const badExplanation=copy(wrapper),em=m.pairs.find(p=>p.diagnostic_id==='d2');badExplanation.goal_notes.find(p=>p.pair_id===em.pair_id).goals.unnecessary_explanation.choice='tie';ok('plausible overexplanation diagnostic is active',()=>assert.equal(review.diagnose(badExplanation,m,packet).eligible_claims.unnecessary_explanation,false));
-  const badJargon=copy(wrapper),jm=m.pairs.find(p=>p.diagnostic_id==='d3');badJargon.goal_notes.find(p=>p.pair_id===jm.pair_id).goals.unnecessary_jargon.choice='tie';ok('unexplained terms diagnostic is active',()=>assert.equal(review.diagnose(badJargon,m,packet).eligible_claims.unnecessary_jargon,false));
+  const wrongProgress=copy(wrapper),pm=m.pairs.find(p=>p.diagnostic_id==='d1'),pnotes=wrongProgress.goal_notes.find(p=>p.pair_id===pm.pair_id).goals;wrongProgress.review.pair_reviews.find(p=>p.pair_id===pm.pair_id).communication.preference=pm.left_source===pm.good_source?'right':'left';ok('truthful unnecessary progress error fails eligibility',()=>assert.equal(review.diagnose(wrongProgress,m,packet,calibrationFile).eligible_claims.excessive_updates,false));
+  const lostWarning=copy(wrapper),wm=m.pairs.find(p=>p.diagnostic_id==='d4'),wrow=lostWarning.review.pair_reviews.find(p=>p.pair_id===wm.pair_id);wrow[wm.left_source===wm.good_source?'right_information':'left_information'].status='preserved';ok('missing needed interruption cannot pass preservation',()=>assert.equal(review.diagnose(lostWarning,m,packet,calibrationFile).eligible_claims.information,false));
+  const badExplanation=copy(wrapper),em=m.pairs.find(p=>p.diagnostic_id==='d2');badExplanation.goal_notes.find(p=>p.pair_id===em.pair_id).goals.unnecessary_explanation.choice='tie';ok('plausible overexplanation diagnostic is active',()=>assert.equal(review.diagnose(badExplanation,m,packet,calibrationFile).eligible_claims.unnecessary_explanation,false));
+  const badJargon=copy(wrapper),jm=m.pairs.find(p=>p.diagnostic_id==='d3');badJargon.goal_notes.find(p=>p.pair_id===jm.pair_id).goals.unnecessary_jargon.choice='tie';ok('unexplained terms diagnostic is active',()=>assert.equal(review.diagnose(badJargon,m,packet,calibrationFile).eligible_claims.unnecessary_jargon,false));
+  if(v2){
+    const oldCalibration=j(path.join(__dirname,'calibration.json'));ok('old diagnostic objects unchanged',()=>assert.deepEqual(calibration.diagnostics.slice(0,4),oldCalibration.diagnostics));
+    const dm=m.pairs.find(p=>p.diagnostic_id==='d5'),d=calibration.diagnostics.find(d=>d.id==='d5');
+    ok('required presence and timing are matched',()=>{assert.equal(d.good.progress.length,d.mutant.progress.length);assert.deepEqual(d.good.trace,d.mutant.trace);assert.equal(d.good.ordinary_chat,d.mutant.ordinary_chat);});
+    const missed=copy(wrapper);for(const g of d.expected.goals)missed.goal_notes.find(p=>p.pair_id===dm.pair_id).goals[g].choice='tie';
+    const eligibility=review.diagnose(missed,m,packet,calibrationFile);
+    ok('required progress payload error blocks progress claims',()=>assert.equal(review.eligibleOnSurface(eligibility,'unnecessary_explanation','progress'),false));
+    ok('progress payload gate leaves final claims unchanged',()=>assert.equal(review.eligibleOnSurface(eligibility,'unnecessary_explanation','final'),true));
+    ok('both-surface claims also need progress sensitivity',()=>assert.equal(review.eligibleOnSurface(eligibility,'filler','both'),false));
+  }
   put(path.join(dir,'reviews',id+'.json'),wrapper);
 }
 const before=map.reviewers['reader-smoke-review-1'].pairs.filter(p=>p.kind==='real').map(p=>p.left_source),after=map.reviewers['reader-smoke-review-2'].pairs.filter(p=>p.kind==='real').map(p=>p.left_source);ok('real pair orientations differ',()=>assert.notDeepEqual(before,after));

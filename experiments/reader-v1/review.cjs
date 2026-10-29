@@ -12,16 +12,20 @@ const ordinary=c=>[c.ordinary_chat,...c.progress,c.complete_final||''].join('\n'
 const finalText=c=>[c.ordinary_chat,c.complete_final||''].join('\n'),progressText=c=>c.progress.join('\n');
 const surfaceText=(c,s)=>s==='final'?finalText(c):s==='progress'?progressText(c):s==='both'?ordinary(c):'';
 const note=()=>({choice:'unknown',surface:'not-observed',tie_basis:'insufficient_evidence',rationale:'',evidence:[]});
-function timeScreen(answer){
-  const forms=[/\b3[:.]20\s*(?:p\.?\s*m\.?)?\b/i,/\b15:20\b/,/\btwenty[ -]past[ -]three\b/i];
-  return {status:forms.some(r=>r.test(answer))?'positive-lexical-evidence':'unverified',expected:'3:20 pm or an equivalent correct expression',recognized_correct_form:forms.some(r=>r.test(answer)),clock_tokens:answer.match(/\b\d{1,2}[:.]\d{2}\s*(?:[ap]\.?\s*m\.?)?/gi)||[],limitation:'A conservative text screen, not a semantic pass. Unrecognized equivalent wording or contradictions require independent review.'};
+function timeScreen(answer,clock='3:20 pm'){
+  const forms=clock==='3:20 pm'?[/\b3[:.]20\s*(?:p\.?\s*m\.?)?\b/i,/\b15:20\b/,/\btwenty[ -]past[ -]three\b/i]:clock==='9:55 am'?[/\b0?9[:.]55\s*(?:a\.?\s*m\.?)?\b/i,/\bfive[ -]to[ -]ten\b/i]:null;
+  assert(forms,'Unsupported request-derived clock check');
+  return {status:forms.some(r=>r.test(answer))?'positive-lexical-evidence':'unverified',expected:clock+' or an equivalent correct expression',recognized_correct_form:forms.some(r=>r.test(answer)),clock_tokens:answer.match(/\b\d{1,2}[:.]\d{2}\s*(?:[ap]\.?\s*m\.?)?/gi)||[],limitation:'A conservative text screen, not a semantic pass. Unrecognized equivalent wording or contradictions require independent review.'};
 }
 function prepare(manifestFile,out,cohort){
   assert(!fs.existsSync(path.join(out,'reader-freeze.json')),'Refuse packet overwrite');
   const baseOut=path.join(out,'base');base.prepare(manifestFile,baseOut,cohort);
-  const calibration=json(CAL),map=json(path.join(baseOut,'controller-map.json')),det=json(path.join(baseOut,'deterministic.json')),jobs=[];
   const manifest=json(path.resolve(ROOT,manifestFile));
-  const chatScreens={};for(const s of manifest.subjects){const c=base.capture(s);if(c.task.id==='reader-a-shared-files'){const t=c.turns.find(t=>t.id==='a3_simple_time');chatScreens[s.id]=t?timeScreen(t.final):{status:'unverified',reason:'A3 response capture missing'};}}
+  const calibrationFile=path.resolve(ROOT,manifest.calibration_file||path.relative(ROOT,CAL));
+  assert(calibrationFile.startsWith(__dirname+path.sep),'Calibration must remain inside this experimental adapter');
+  const calibration=json(calibrationFile),map=json(path.join(baseOut,'controller-map.json')),det=json(path.join(baseOut,'deterministic.json')),jobs=[];
+  const chatScreens={},clockCases={'reader-a-shared-files':{turn:'a3_simple_time',clock:'3:20 pm'},'reader-c-door-scanner':{turn:'c3_brief_time',clock:'9:55 am'}};
+  for(const s of manifest.subjects){const c=base.capture(s),spec=clockCases[c.task.id];if(spec){const t=c.turns.find(t=>t.id===spec.turn);chatScreens[s.id]=t?timeScreen(t.final,spec.clock):{status:'unverified',reason:'Requested clock-answer capture missing'};}}
   for(let n=1;n<=2;n++){
     const id=cohort+'-review-'+n,packet=json(path.join(baseOut,id,'packet.json')),oldTemplate=json(path.join(baseOut,id,'response-template.json')),m=map.reviewers[id];
     const pairs=n===2?[...m.pairs].reverse():[...m.pairs],newCandidates=[];
@@ -46,8 +50,8 @@ function prepare(manifestFile,out,cohort){
     jobs.push({reviewer_id:id,packet:path.join(out,id,'packet.json'),template:path.join(out,id,'response-template.json'),output:path.join(out,'reviews',id+'.json')});
   }
   put(path.join(out,'controller-map.json'),map);put(path.join(out,'deterministic.json'),det);put(path.join(out,'chat-content-screens.json'),chatScreens);put(path.join(out,'jobs.json'),jobs);
-  put(path.join(out,'reader-freeze.json'),{adapter_sha256:sha(read(__filename)),calibration_sha256:sha(read(CAL)),validator_sha256:sha(read(path.join(ROOT,'experiments/assessment-v2/assess.cjs'))),base_adapter_sha256:sha(read(path.join(ROOT,'experiments/development-v1/assess.cjs'))),checks_sha256:sha(read(path.join(ROOT,'experiments/development-v1/cases/checks.cjs'))),manifest_sha256:sha(read(path.resolve(ROOT,manifestFile))),map_sha256:sha(read(path.join(out,'controller-map.json'))),deterministic_sha256:sha(read(path.join(out,'deterministic.json'))),chat_screens_sha256:sha(read(path.join(out,'chat-content-screens.json'))),reviewers:map.reviewers});
-  console.log(JSON.stringify({prepared:cohort,real_pairs:map.pairs.length,legacy_controls:4,new_diagnostics:4,reviewers:2,model_sessions_started:0}));
+  put(path.join(out,'reader-freeze.json'),{adapter_sha256:sha(read(__filename)),calibration_file:path.relative(ROOT,calibrationFile).replaceAll('\\','/'),calibration_sha256:sha(read(calibrationFile)),validator_sha256:sha(read(path.join(ROOT,'experiments/assessment-v2/assess.cjs'))),base_adapter_sha256:sha(read(path.join(ROOT,'experiments/development-v1/assess.cjs'))),checks_sha256:sha(read(path.join(ROOT,'experiments/development-v1/cases/checks.cjs'))),manifest_sha256:sha(read(path.resolve(ROOT,manifestFile))),map_sha256:sha(read(path.join(out,'controller-map.json'))),deterministic_sha256:sha(read(path.join(out,'deterministic.json'))),chat_screens_sha256:sha(read(path.join(out,'chat-content-screens.json'))),reviewers:map.reviewers});
+  console.log(JSON.stringify({prepared:cohort,real_pairs:map.pairs.length,legacy_controls:4,new_diagnostics:calibration.diagnostics.length,reviewers:2,model_sessions_started:0}));
 }
 function validate(wrapper,packet){
   assert.deepEqual(Object.keys(wrapper).sort(),['goal_notes','review','schema_version']);assert.equal(wrapper.schema_version,1);validateReview(wrapper.review,packet);
@@ -69,8 +73,8 @@ function validate(wrapper,packet){
   }
   return true;
 }
-function diagnose(wrapper,mapping,packet){
-  const legacy=calibrated(wrapper.review,mapping),diagnostics={},calibration=json(CAL);
+function diagnose(wrapper,mapping,packet,calibrationFile=CAL){
+  const legacy=calibrated(wrapper.review,mapping),diagnostics={},calibration=json(calibrationFile);
   for(const m of mapping.pairs.filter(p=>p.kind==='diagnostic-control')){
     const d=calibration.diagnostics.find(d=>d.id===m.diagnostic_id),p=wrapper.review.pair_reviews.find(p=>p.pair_id===m.pair_id),notes=wrapper.goal_notes.find(p=>p.pair_id===m.pair_id).goals,good=m.left_source===m.good_source?'left':'right',bad=good==='left'?'right':'left',mp=packet.pairs.find(p=>p.pair_id===m.pair_id),goodText=ordinary(packet.candidates.find(c=>c.alias===mp[good])),badText=ordinary(packet.candidates.find(c=>c.alias===mp[bad]));
     const quotes=[...p.communication.evidence,...d.expected.goals.flatMap(g=>notes[g].evidence)],confidence=p.communication.confidence!=='low';let pass;
@@ -86,17 +90,26 @@ function diagnose(wrapper,mapping,packet){
   const pass=id=>diagnostics[id]?.pass===true,eligible={information:legacy.pass&&pass('d4'),clarity:legacy.pass&&pass('d3'),relevance:legacy.pass,filler:legacy.pass&&pass('d2'),repetition:legacy.pass&&pass('d2'),unnecessary_jargon:legacy.pass&&pass('d3'),excessive_updates:legacy.pass&&pass('d1')&&pass('d4'),unnecessary_explanation:legacy.pass&&pass('d2')};
   return {legacy,diagnostics,eligible_claims:eligible};
 }
+function eligibleOnSurface(calibration,goal,surface){
+  if(!calibration.eligible_claims[goal])return false;
+  // This prospective diagnostic concerns optional payload, not required presence.
+  // Final-only claims continue to use the unchanged final-answer controls.
+  if(['progress','both'].includes(surface)&&['excessive_updates','filler','repetition','unnecessary_explanation'].includes(goal)&&calibration.diagnostics.d5)return calibration.diagnostics.d5.pass;
+  return true;
+}
 function report(out){
   const freeze=json(path.join(out,'reader-freeze.json')),map=json(path.join(out,'controller-map.json'));
-  for(const[p,h]of[[__filename,freeze.adapter_sha256],[CAL,freeze.calibration_sha256],[path.join(ROOT,'experiments/assessment-v2/assess.cjs'),freeze.validator_sha256],[path.join(ROOT,'experiments/development-v1/assess.cjs'),freeze.base_adapter_sha256],[path.join(ROOT,'experiments/development-v1/cases/checks.cjs'),freeze.checks_sha256],[path.join(out,'controller-map.json'),freeze.map_sha256],[path.join(out,'deterministic.json'),freeze.deterministic_sha256],[path.join(out,'chat-content-screens.json'),freeze.chat_screens_sha256]])assert.equal(sha(read(p)),h,'Frozen input changed');
+  const calibrationFile=freeze.calibration_file?path.resolve(ROOT,freeze.calibration_file):CAL;
+  assert(calibrationFile.startsWith(__dirname+path.sep),'Calibration must remain inside this experimental adapter');
+  for(const[p,h]of[[__filename,freeze.adapter_sha256],[calibrationFile,freeze.calibration_sha256],[path.join(ROOT,'experiments/assessment-v2/assess.cjs'),freeze.validator_sha256],[path.join(ROOT,'experiments/development-v1/assess.cjs'),freeze.base_adapter_sha256],[path.join(ROOT,'experiments/development-v1/cases/checks.cjs'),freeze.checks_sha256],[path.join(out,'controller-map.json'),freeze.map_sha256],[path.join(out,'deterministic.json'),freeze.deterministic_sha256],[path.join(out,'chat-content-screens.json'),freeze.chat_screens_sha256]])assert.equal(sha(read(p)),h,'Frozen input changed');
   const reviewers=[];
   for(const[id,mapping]of Object.entries(map.reviewers)){
     const p=path.join(out,id,'packet.json');assert.equal(sha(read(p)),mapping.packet_sha256);const packet=json(p),file=path.join(out,'reviews',id+'.json');
     if(!fs.existsSync(file)){reviewers.push({id,status:'missing/unverified'});continue;}
-    try{const response=json(file);validate(response,packet);reviewers.push({id,status:'received',calibration:diagnose(response,mapping,packet),response,raw_sha256:sha(read(file))});}catch(e){reviewers.push({id,status:'invalid/unverified',error:e.message,raw_output_retained:true});}
+    try{const response=json(file);validate(response,packet);reviewers.push({id,status:'received',calibration:diagnose(response,mapping,packet,calibrationFile),response,raw_sha256:sha(read(file))});}catch(e){reviewers.push({id,status:'invalid/unverified',error:e.message,raw_output_retained:true});}
   }
-  const comparisons=map.pairs.map(p=>({key:p.key,votes:reviewers.filter(r=>r.response).map(r=>{const m=map.reviewers[r.id].pairs.find(m=>m.key===p.key),judgment=r.response.review.pair_reviews.find(x=>x.pair_id===m.pair_id),notes=r.response.goal_notes.find(x=>x.pair_id===m.pair_id).goals;return {reviewer:r.id,left_source:m.left_source,right_source:m.right_source,overall_preference_descriptive:judgment.communication.preference,information:{left:judgment.left_information,right:judgment.right_information,calibration_eligible:r.calibration.eligible_claims.information},goals:Object.fromEntries(GOALS.map(g=>[g,{...notes[g],preferred_source:['left','right'].includes(notes[g].choice)?m[notes[g].choice+'_source']:notes[g].choice,claim_eligible:r.calibration.eligible_claims[g]&&judgment.communication.confidence!=='low'&&notes[g].choice!=='unknown'&&notes[g].tie_basis!=='insufficient_evidence'}])),missing_evidence:judgment.missing_evidence};})}));
+  const comparisons=map.pairs.map(p=>({key:p.key,votes:reviewers.filter(r=>r.response).map(r=>{const m=map.reviewers[r.id].pairs.find(m=>m.key===p.key),judgment=r.response.review.pair_reviews.find(x=>x.pair_id===m.pair_id),notes=r.response.goal_notes.find(x=>x.pair_id===m.pair_id).goals;return {reviewer:r.id,left_source:m.left_source,right_source:m.right_source,overall_preference_descriptive:judgment.communication.preference,information:{left:judgment.left_information,right:judgment.right_information,calibration_eligible:r.calibration.eligible_claims.information},goals:Object.fromEntries(GOALS.map(g=>[g,{...notes[g],preferred_source:['left','right'].includes(notes[g].choice)?m[notes[g].choice+'_source']:notes[g].choice,claim_eligible:eligibleOnSurface(r.calibration,g,notes[g].surface)&&judgment.communication.confidence!=='low'&&notes[g].choice!=='unknown'&&notes[g].tie_basis!=='insufficient_evidence'}])),missing_evidence:judgment.missing_evidence};})}));
   const result={label:'Automated experimental assessments, not measured human comprehension',deterministic:json(path.join(out,'deterministic.json')),chat_content_screens:json(path.join(out,'chat-content-screens.json')),reviewers,comparisons,original_child_instructions:'unverified',limits:['New diagnostic eligibility is claim-specific; old four-control results and thresholds remain unchanged.','Opposite orientation/order checks sensitivity but does not establish absence of order bias.','Overall preference or shorter text does not prove every goal.','Protected files/copy and necessary technical depth are separate from ordinary-chat style.']};put(path.join(out,'assessment.json'),result);console.log(JSON.stringify({reviewers:reviewers.map(r=>({id:r.id,status:r.status,eligible:r.calibration?.eligible_claims})),real_pairs:comparisons.length}));return result;
 }
 if(require.main===module){try{const[action,a,b,c]=process.argv.slice(2);if(action==='prepare')prepare(a,path.resolve(b),c);else if(action==='report')report(path.resolve(a));else throw Error('Use prepare MANIFEST OUT COHORT or report OUT');}catch(e){console.error(e.stack);process.exitCode=1;}}
-module.exports={prepare,report,validate,diagnose,timeScreen,GOALS};
+module.exports={prepare,report,validate,diagnose,timeScreen,eligibleOnSurface,GOALS};
