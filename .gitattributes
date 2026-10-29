@@ -3,5 +3,5 @@
 /experiments/pilot/*.json text eol=lf
 /experiments/pilot/*.txt text eol=lf
 /docs/pilot-criteria.md text eol=lf
-# Evidence hashes refer to exact exported bytes, including original line endings.
-/experiments/pilot/evidence/** -text
+# Evidence keeps original line endings and Markdown hard breaks byte-for-byte.
+/experiments/pilot/evidence/** -text -whitespace

@@ -2,6 +2,8 @@
 
 Date: 2026-10-28. This is initial evidence, not release validation or production implementation. Owner authorization covers at most 24 evaluation sessions using existing Claude/Codex sign-ins, including child sessions, failures, and diagnostics. No new paid API usage, paid model judging, permanent preference override, production configuration, final marketplace naming, or publication is authorized.
 
+Completion update: the initial pilot used 11 sessions (nine roots and two actual native children), including retained failures. One active slot and 13 original owner-cap slots remain unspent; no further model run is scheduled. Cases, criteria, and policy stayed unchanged. Read [results, matched examples and unresolved concerns](pilot-results.md) before proposing further work.
+
 **Subsequent owner steering, before trials:** do not invoke Claude directly. Defer its live trials and provide a standalone handoff the owner can run. Focus live experimentation on Codex while preserving an agent-agnostic policy and the same task requirements. The original allocation below is retained for provenance; the active Codex-only allocation is 4 mixed-task roots, 2 detailed-task roots, 2 delegation roots plus their 2 children, and at most 2 diagnostic sessions: **12 maximum**, within the overall 24 authorization. The other planned sessions stay unspent; no direct Claude call or silent host substitution is permitted. This is still feasibility work, not approval to implement production.
 
 ## Allocation, before any model trial
