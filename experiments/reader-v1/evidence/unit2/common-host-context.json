@@ -1,0 +1,52 @@
+{
+  "method": "Saved supported developer records; stock text unchanged byte-for-byte. Second environment/permission context equal after replacing only the explicitly owned per-subject trial path, in slash/backslash spellings.",
+  "rows": [
+    {
+      "id": "n14",
+      "stock_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "context_raw_sha256": "ead0f7bcc938a62f46b6bb0c4c85167a20f64484e6e4819141ca98d77c41bee7",
+      "context_owned_path_normalized_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed",
+      "path_normalization_changed": true
+    },
+    {
+      "id": "n15",
+      "stock_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "context_raw_sha256": "013da98167f2ba4ac5b937e090cbe10bcb566d33cb9308d5fd5cbb6a37bac2d0",
+      "context_owned_path_normalized_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed",
+      "path_normalization_changed": true
+    },
+    {
+      "id": "n16",
+      "stock_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "context_raw_sha256": "01f01222f4507c3fd6ae9d925565a441a404aedb026cacba636e7c45ae673b6b",
+      "context_owned_path_normalized_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed",
+      "path_normalization_changed": true
+    },
+    {
+      "id": "n17",
+      "stock_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "context_raw_sha256": "8a769f06ebc67be04986c36708cbca3b447eb92a4c17d7e0cb0ee5658de2fed7",
+      "context_owned_path_normalized_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed",
+      "path_normalization_changed": true
+    },
+    {
+      "id": "n18",
+      "stock_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "context_raw_sha256": "40450b7be75f40346d87e21553f33e1ac3ea27530b7124efb5157f13eed5053a",
+      "context_owned_path_normalized_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed",
+      "path_normalization_changed": true
+    },
+    {
+      "id": "n19",
+      "stock_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "context_raw_sha256": "c011e553d19b02479bf5c17ffd28763f65e0f8e28cfb21f984bb2fdf15e9a20e",
+      "context_owned_path_normalized_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed",
+      "path_normalization_changed": true
+    }
+  ],
+  "all_stock_hashes_equal": true,
+  "all_owned_path_normalized_contexts_equal": true,
+  "new_host_calls": 0,
+  "new_model_sessions": 0,
+  "offline_check_correction": "An initial all-raw-context-equal assertion was too strict: isolated workspace paths necessarily differ. No subject settings or captures were changed."
+}

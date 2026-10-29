@@ -1,0 +1,5 @@
+The evidence supports a **limited, staffed next check**. Standardizing now is not justified: four volunteers supplied seven usable time pairs, showing 12.1% total time savings, two slower pairs, and unchanged accuracy of 7/8 for both formats.
+
+Wrote [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json), including draft corrections and verification details.
+
+Before another check, define its scope and acceptance criteria. All supplied sources remain unchanged; no volunteers were contacted or study started.

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-2140e92c3dd7f2e8"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_01a0768c581d1fae016ae37a359d408198a285d6e1be721124","type":"agent_message","text":"**No—the evidence does not support that claim.** The guide reduced matched total time by **12.1% across seven usable pairs**, and first-selection accuracy was **7/8 for both formats**.\n\nYour decision now is whether to authorize a **limited, staffed next check**, with its scope and success criteria agreed beforehand. The current evidence does not justify standardizing the guide."}}
+{"type":"turn.completed","usage":{}}

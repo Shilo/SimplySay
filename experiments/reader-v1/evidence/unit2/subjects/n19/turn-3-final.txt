@@ -1,0 +1,7 @@
+Saved [methods.md](/<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, interpretation and a proposed next-check plan. [original-summary.md](/<TASK_ROOT>/handoff/original-summary.md) is an exact copy of the full original draft. All existing files remain unchanged.
+
+Message to copy, not sent:
+
+> We will keep the current reference card in place while planning a limited, staffed check of the reorganized guide. The audit does not support the draft claim that the guide is 30 percent faster and more accurate. Four volunteers completed eight task comparisons; seven had both recorded times. In those seven, total time fell from 910 to 800 seconds, a saving of 110 seconds or about 12.1%. The guide was faster in five comparisons and slower in two. First-selection accuracy was 7 out of 8 for both formats.
+>
+> These results suggest a possible local time benefit, but repeated tasks, practice, coaching, one missing time and the small number of volunteers leave ordinary-work performance uncertain. Equal observed accuracy does not establish equivalent accuracy or safety. We should agree the scope, staff support and success criteria for a limited next check before launching it; the current evidence does not justify standardizing the guide. No new check has started.

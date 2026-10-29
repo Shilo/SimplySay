@@ -1,0 +1,8 @@
+{
+  "owner": "offline evaluator, not evidence that the subject executed it",
+  "methods_sha256": "cacca307256807c2a0a1687adab626572f309c8481f602f2c6827ffe574d5c3a",
+  "inspection": "Complete code block inspected: built-in local reads/assertions/calculation only.",
+  "exit_code": 0,
+  "stdout": "{\n  \"eligible_time_ids\": [\n    \"P1\",\n    \"P2\",\n    \"P3\",\n    \"P4\",\n    \"P5\",\n    \"P6\",\n    \"P8\"\n  ],\n  \"missing_time_ids\": [\n    \"P7\"\n  ],\n  \"metrics\": {\n    \"eligible_time_pairs\": 7,\n    \"reference_seconds\": 910,\n    \"guide_seconds\": 800,\n    \"time_saved_seconds\": 110,\n    \"faster_pairs\": 5,\n    \"slower_pairs\": 2,\n    \"tied_pairs\": 0,\n    \"accuracy_pairs\": 8,\n    \"reference_correct\": 7,\n    \"guide_correct\": 7\n  },\n  \"percentage_saving\": 12.087912087912088\n}\n",
+  "stderr": ""
+}

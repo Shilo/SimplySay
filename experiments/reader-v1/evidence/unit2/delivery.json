@@ -337,6 +337,71 @@
       "outgoing_wire": "unverified",
       "full_desktop_ui": "unverified",
       "new_host_calls": 0
+    },
+    {
+      "id": "n19",
+      "condition": "disabled",
+      "native_completed": true,
+      "requests": [
+        {
+          "turn": 1,
+          "line": 10,
+          "sha256": "dc3a2c2c3fd7d767f922a1511dd810e8094a49ef0c96722c7e16522e79620ad8"
+        },
+        {
+          "turn": 2,
+          "line": 62,
+          "sha256": "6046f14c501da0b0c417c17072fd9deaa6b497f72f572ed5feca6c3eb39a641f"
+        },
+        {
+          "turn": 3,
+          "line": 74,
+          "sha256": "284b90b468e434ee42b27303e8890eab6d825e64a6e2378502fe5bb824660fae"
+        }
+      ],
+      "expected_request_count": 3,
+      "matching_tasks": true,
+      "developer_messages": [
+        {
+          "line": 4,
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "exact_policy": false
+        },
+        {
+          "line": 5,
+          "characters": 3619,
+          "sha256": "c011e553d19b02479bf5c17ffd28763f65e0f8e28cfb21f984bb2fdf15e9a20e",
+          "exact_policy": false
+        }
+      ],
+      "settings": [
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        },
+        {
+          "model": "gpt-6.1-sol",
+          "effort": "xhigh",
+          "summary": "none",
+          "mode": "default"
+        }
+      ],
+      "compactions": 0,
+      "delivery": "no exact candidate in observed developer context",
+      "original_hook_events": 0,
+      "actual_model_attention": "unverified",
+      "outgoing_wire": "unverified",
+      "full_desktop_ui": "unverified",
+      "new_host_calls": 0
     }
   ],
   "retained_pre_model_failures": [],

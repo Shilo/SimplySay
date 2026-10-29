@@ -1,0 +1,31 @@
+{
+  "new_model_conversations": 2,
+  "new_task_starts": 2,
+  "attempt_ids": [
+    "n20",
+    "n21"
+  ],
+  "fork_turns": "none",
+  "reviewer_model": "unknown",
+  "reviewer_reasoning": "unknown",
+  "brief_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
+  "signature_clarification": "validate(wrapper, packet): parsed JSON objects, returns true or throws",
+  "rows": [
+    {
+      "reviewer": "reader-unit2-review-1",
+      "packet_sha256": "fb5d5dd9e8c3047dcb9be1d171538700670c607b27f0e09eb0848a0e05a86591",
+      "bytes": 763828,
+      "candidates": 22,
+      "pairs": 13,
+      "treatment_labels_exposed": false
+    },
+    {
+      "reviewer": "reader-unit2-review-2",
+      "packet_sha256": "725d13cbf4dc3ea7dc43959322559fa0b3b309abf209f5caa4fa9f1b631c06b3",
+      "bytes": 763828,
+      "candidates": 22,
+      "pairs": 13,
+      "treatment_labels_exposed": false
+    }
+  ]
+}

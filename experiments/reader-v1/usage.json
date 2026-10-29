@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-2-first-pair-reviewed",
-  "new_conversations": 18,
-  "new_task_starts": 47,
+  "status": "unit-2-review",
+  "new_conversations": 20,
+  "new_task_starts": 49,
   "starts": [
     {
       "id": "n01",
@@ -196,6 +196,24 @@
       "max_turns": 3,
       "status": "completed",
       "reserved_utc": "2026-10-29T16:50:48.403Z"
+    },
+    {
+      "id": "n20",
+      "role": "fresh-blinded-reader-reviewer-one-unit2",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "running-review",
+      "purpose": "Independent blinded judgment of saved unit2 responses and protected work; no response rerun",
+      "agent": "/root/reader_unit2_blind_1"
+    },
+    {
+      "id": "n21",
+      "role": "fresh-blinded-reader-reviewer-reversed-unit2",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "running-review",
+      "purpose": "Independent blinded judgment of saved unit2 responses and protected work; no response rerun",
+      "agent": "/root/reader_unit2_blind_2"
     }
   ],
   "new_paid_services": false,
@@ -208,14 +226,9 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": false,
-  "allowed_subjects": [
-    "n16",
-    "n17",
-    "n18",
-    "n19"
-  ],
-  "block_reason": null,
+  "dispatch_blocked": true,
+  "allowed_subjects": [],
+  "block_reason": "All planned response conversations complete; only recorded blinded reviews pending",
   "checkpoint": "experiments/reader-v1/evidence/unit2/first-pair-checkpoint.json",
   "diagnostics": [
     {
