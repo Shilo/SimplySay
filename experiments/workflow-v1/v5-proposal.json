@@ -1,0 +1,38 @@
+{
+  "status": "approval-required-not-an-execution-authorization",
+  "record": "docs/v5-progress-revision-proposal.md",
+  "policy": "experiments/workflow-v1/candidates/workflow.v5.txt",
+  "policy_sha256": "df5f24beb1c85fcbef3d273813fe68790c5a2dfd198791cfdf6dc5af64bb7796",
+  "historical_policy_unchanged": "experiments/workflow-v1/candidates/workflow.v4.txt",
+  "historical_policy_sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "case_file": "experiments/workflow-v1/cases/w1.case.json",
+  "case_sha256": "36c15a6c73ee31387f0a7330ae0225c96299032f0fc5dffe8458e51ce398186b",
+  "proposed_subjects": [
+    { "id": "e23", "condition": "absent", "max_turns": 3 },
+    { "id": "e24", "condition": "enabled", "max_turns": 3 }
+  ],
+  "proposed_reviewers": [
+    { "id": "e25", "role": "fresh-blinded-reviewer", "max_turns": 1 },
+    { "id": "e26", "role": "fresh-blinded-reviewer-reversed", "max_turns": 1 }
+  ],
+  "subject_dispatch_order_if_approved": ["e23", "e24"],
+  "current_conversations": 25,
+  "current_task_starts": 78,
+  "proposed_new_conversations_max": 4,
+  "proposed_new_task_starts_max": 8,
+  "projected_conversations_max": 29,
+  "projected_task_starts_max": 86,
+  "overall_caps": { "conversations": 32, "task_starts": 108 },
+  "retries": 0,
+  "replacements": 0,
+  "extra_helpers": 0,
+  "diagnostic_model_sessions": 0,
+  "reviewer_followups": 0,
+  "local_reserve_exception_requested": "Only proposed subjects e23/e24, if explicitly provider-permitted included access is available",
+  "new_model_sessions_in_preparation": 0,
+  "automatic_next_round": false,
+  "production": false,
+  "publication": false,
+  "direct_claude": false,
+  "new_paid_services": false
+}

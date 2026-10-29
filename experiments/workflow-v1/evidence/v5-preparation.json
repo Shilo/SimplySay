@@ -1,0 +1,75 @@
+{
+  "status": "local-preparation-verified-awaiting-approval",
+  "v4_sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "v5_sha256": "df5f24beb1c85fcbef3d273813fe68790c5a2dfd198791cfdf6dc5af64bb7796",
+  "v4_words": 112,
+  "v5_words": 116,
+  "v5_bytes": 890,
+  "changed_section": {
+    "old": "Put detail where requested; avoid duplicating artifact explanations in progress messages or narrating routine preparation and checks. Updates should add a material result, needed decision, blocker or meaningful wait for the reader. Follow host-required openings and cadence. ",
+    "new": "Work without optional progress narration. During work, interrupt only for information the user needs before completion: a decision, blocker, consequential finding or delay that changes expectations. Follow host-required openings and cadence with minimal text; omit optional preparation, routine-checking and finishing previews. "
+  },
+  "audience_answer_and_protected_work_guards_verbatim": true,
+  "source_messages": [
+    {
+      "subject": "e21",
+      "turn": 1,
+      "source": "experiments/workflow-v1/evidence/subjects/e21/turn-1-events.jsonl",
+      "sha256": "5fedf14a9f590116a68bc0409a788bfa982d151cc4c7181ede5eec945993d987",
+      "progress": [
+        "I’ll check the local protocol, observations, and records, recalculate the results, and write the audit files. I’ll leave the supplied sources unchanged and keep the decision tied to the evidence.",
+        "The records support a limited staffed check, not standardization now. Across seven usable time pairs, the guide saved 12.1%; it was slower in two pairs, and both formats had 7/8 correct first selections. I’m recording the corrections and uncertainties in the audit files."
+      ]
+    },
+    {
+      "subject": "e21",
+      "turn": 3,
+      "source": "experiments/workflow-v1/evidence/subjects/e21/turn-3-events.jsonl",
+      "sha256": "db9c703752a0328862c4c5640419cf98b17cc492fd6c34ed5df4f5bd95b2d65c",
+      "progress": [
+        "I’ll write the reproducible methods handoff and a bounded next-check plan, preserve the original draft exactly, and provide committee wording for you to copy. I won’t launch the check or send the message.",
+        "The handoff will make the two key cases explicit: P5 stays in both analyses and remains a guide error despite later help; P7 stays in accuracy counts but is excluded from both timing totals. I’m also spelling out how repeated tasks and shared volunteers limit what the results establish."
+      ]
+    },
+    {
+      "subject": "e22",
+      "turn": 1,
+      "source": "experiments/workflow-v1/evidence/subjects/e22/turn-1-events.jsonl",
+      "sha256": "115237f7929a48fb9bc42e1a8608f07ca2310cdcd03bf826100aa25ac31efb98",
+      "progress": [
+        "I’ll reconcile the local study records, check the calculations, and write the two audit files with a recommendation on standardizing the guide or running a limited next check.",
+        "The records show four volunteers and one missing guide time. Across the seven usable pairs, the guide saved 12.1% overall but was slower twice; first-selection accuracy was 7/8 for both formats. This supports a limited staffed check, rather than standardizing the guide now."
+      ]
+    },
+    {
+      "subject": "e22",
+      "turn": 3,
+      "source": "experiments/workflow-v1/evidence/subjects/e22/turn-3-events.jsonl",
+      "sha256": "dd9605d9486aeda83d2d43c374ca6cf7974826ead583032771bb2624c22052f6",
+      "progress": [
+        "I’ll write the methods handoff, preserve an exact copy of the original draft, and prepare a committee message you can copy. The next-check plan will remain a proposal; I won’t launch it or send anything.",
+        "The handoff explains P5 and P7 separately: P5 remains a timed guide error despite later coaching; P7 stays in the accuracy comparison but is excluded from timing. The next-check plan also calls for explicit timing endpoints before collecting new records."
+      ]
+    }
+  ],
+  "host_rule_source": "Existing saved e22 stock developer message, previously recorded SHA 2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a; selected communication requirements only",
+  "host_presence": "Tool-work opening and periodic communication required; detailed previews not prescribed",
+  "presence_of_each_intermediate_message": "Not classified as optional from its content alone",
+  "timing_and_ui_limits": "Receipt timing does not establish exact host-cadence compliance or desktop notification behavior",
+  "original_review_archive_files_unchanged": 10,
+  "historical_files_unchanged": 287,
+  "new_model_sessions": 0,
+  "installation_or_loading_probes": 0,
+  "ledger_unchanged": true,
+  "current_conversations": 25,
+  "current_task_starts": 78,
+  "proposed_new_conversations": 4,
+  "proposed_new_task_starts": 8,
+  "proposed_totals": {
+    "conversations": 29,
+    "task_starts": 86
+  },
+  "dispatch_blocked": true,
+  "production": "hold",
+  "publication": "hold"
+}
