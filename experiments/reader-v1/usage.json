@@ -11,31 +11,33 @@
   },
   "status": "preparation-in-progress",
   "new_conversations": 3,
-  "new_task_starts": 3,
+  "new_task_starts": 5,
   "starts": [
     {
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "running",
+      "status": "completed",
       "agent": "/root/reader_policy_challenge",
-      "turns": 1,
-      "max_turns": 1
+      "turns": 2,
+      "max_turns": 2,
+      "followup_purpose": "Independent verification of new-phase ledger isolation and installed-disabled runner support"
     },
     {
       "id": "n02",
       "role": "independent-case-and-evaluation-challenger",
       "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
-      "status": "running",
+      "status": "case-and-evaluation-implementation-running",
       "agent": "/root/reader_case_eval_challenge",
-      "turns": 1,
-      "max_turns": 1
+      "turns": 2,
+      "max_turns": 2,
+      "followup_purpose": "Implement the two frozen development cases and minimal companion/calibration adapter using existing tools"
     },
     {
       "id": "n03",
       "role": "independent-reference-evidence-auditor",
       "purpose": "Fill specific competitor delivery/benchmark evidence gaps without repeating research",
-      "status": "running",
+      "status": "completed",
       "agent": "/root/reader_reference_delta",
       "turns": 1,
       "max_turns": 1
