@@ -1,0 +1,5 @@
+Recommend a **limited, staffed next check before standardization**. The guide saved 12.1% across seven usable time pairs; both formats had 7/8 correct first selections. Four volunteers participated, so the draft overstates the evidence.
+
+Created [findings.md](<TASK_ROOT>/audit/findings.md) and [metrics.json](<TASK_ROOT>/audit/metrics.json), including corrected summary text and verification notes.
+
+Before another check, define its scope and acceptance criteria for accuracy and usability. Supplied sources remain unchanged; no volunteers were contacted or study started.

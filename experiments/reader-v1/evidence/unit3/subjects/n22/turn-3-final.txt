@@ -1,0 +1,9 @@
+Created [methods.md](<TASK_ROOT>/handoff/methods.md) with reproducible calculations, the explanation of repeated observations, P5/P7 worked examples, and a proposed next-check plan.
+
+Saved [original-summary.md](<TASK_ROOT>/handoff/original-summary.md) as an exact copy of the full original draft. All existing files remain unchanged.
+
+You can copy this message to the committee; it has not been sent:
+
+> We will keep the current guide in place while planning a limited, staffed check. The audit found 12.1% less total lookup time across seven usable task pairs: 910 seconds with the reference card versus 800 with the new guide. The guide was faster in five pairs and slower in two. Both formats had seven correct first selections out of eight, so “30 percent faster and more accurate” is unsupported.
+>
+> The eight task pairs came from four volunteers in one staffed exercise. Repeated-task practice, coaching, one missing timing measurement and the small group limit the conclusion. These results support further checking before standardization. Before scheduling that check, we need to define its scope, staffing, measurement rules and accuracy/usability acceptance criteria. No next check has been launched.

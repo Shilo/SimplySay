@@ -1,0 +1,49 @@
+{
+  "subjects": [
+    {
+      "id": "n22",
+      "condition": "absent",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n23",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v3.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    }
+  ],
+  "review_pairs": [
+    {
+      "key": "w1-v3-enabled-absent",
+      "a": "n22",
+      "b": "n23"
+    }
+  ],
+  "dispatch_order": [
+    "n22",
+    "n23",
+    "n24"
+  ],
+  "checkpoint": "If both satisfactory on target or revised still plainly previews forthcoming detail, skip n24, review savedpair, retain missing disabled evidence.",
+  "calibration_file": "experiments/reader-v1/calibration-v2.json",
+  "extra_input_files": [
+    "experiments/reader-v1/run.cjs",
+    "experiments/reader-v1/unit.json",
+    "experiments/reader-v1/review.cjs",
+    "experiments/reader-v1/review-check.cjs",
+    "experiments/reader-v1/calibration-v2.json",
+    "experiments/assessment-v2/assess.cjs",
+    "docs/reader-unit3-plan.md",
+    "docs/reader-unit3-preparation.md",
+    "docs/reader-next-step-challenge.md",
+    "docs/reader-development-authorization.md"
+  ],
+  "launch_manifest": "experiments/workflow-v1/reader-unit3.manifest.json",
+  "unattempted_subjects": [
+    {
+      "id": "n24",
+      "reason": "Prospective stop for remaining routine preview; see first-pair checkpoint"
+    }
+  ],
+  "role": "Derivative review inputs only; original frozen launch manifest and all actual outcomes retained"
+}

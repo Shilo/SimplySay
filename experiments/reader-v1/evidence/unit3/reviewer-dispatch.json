@@ -1,0 +1,28 @@
+{
+  "attempt_ids": [
+    "n25",
+    "n26"
+  ],
+  "new_model_conversations": 2,
+  "new_task_starts": 2,
+  "fork_turns": "none",
+  "model_effort": "unknown",
+  "brief_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
+  "signature": "validate(wrapper, packet): parsed JSON objects, returns true or throws",
+  "rows": [
+    {
+      "reviewer": "reader-unit3-review-1",
+      "packet_sha256": "ab4571456ac94599ae60aebb1749ab5101f00fc3d91ca59e31293e5a001ba1e7",
+      "bytes": 506600,
+      "pairs": 10,
+      "treatment_labels_exposed": false
+    },
+    {
+      "reviewer": "reader-unit3-review-2",
+      "packet_sha256": "d0fdd56a448351012ebd84977ef488a40bae9f5b2eabdde6629f1a868f960b4f",
+      "bytes": 506600,
+      "pairs": 10,
+      "treatment_labels_exposed": false
+    }
+  ]
+}

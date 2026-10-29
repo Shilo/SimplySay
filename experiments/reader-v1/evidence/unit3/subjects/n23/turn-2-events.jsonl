@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-e507e3403f9a80bd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"msg_097f960223ec761b016ae3818946ac81999b0196051c2afce5","type":"agent_message","text":"No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now."}}
+{"type":"turn.completed","usage":{}}

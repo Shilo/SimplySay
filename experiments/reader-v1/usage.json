@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-3-ready",
-  "new_conversations": 20,
-  "new_task_starts": 50,
+  "status": "unit-3-response-stop-review-saved-pair",
+  "new_conversations": 24,
+  "new_task_starts": 58,
   "starts": [
     {
       "id": "n01",
@@ -215,6 +215,44 @@
       "status": "completed-valid-calibration",
       "purpose": "Independent blinded judgment of saved unit2 responses and protected work; no response rerun",
       "agent": "/root/reader_unit2_blind_2"
+    },
+    {
+      "id": "n22",
+      "role": "study-absent-status-fallback",
+      "condition": "absent",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T17:21:43.918Z"
+    },
+    {
+      "id": "n23",
+      "role": "study-enabled-status-fallback",
+      "condition": "enabled",
+      "case_id": "w1-study-evidence-audit",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T17:22:13.076Z"
+    },
+    {
+      "id": "n25",
+      "role": "fresh-blinded-status-fallback-reviewer-one",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "running-review",
+      "purpose": "Independent blinded assessment of saved stopped pair, all goals and protected work; no response rerun",
+      "agent": "/root/reader_unit3_blind_1"
+    },
+    {
+      "id": "n26",
+      "role": "fresh-blinded-status-fallback-reviewer-reversed",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "running-review",
+      "purpose": "Independent blinded assessment of saved stopped pair, all goals and protected work; no response rerun",
+      "agent": "/root/reader_unit3_blind_2"
     }
   ],
   "new_paid_services": false,
@@ -227,12 +265,9 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": false,
-  "allowed_subjects": [
-    "n22",
-    "n23"
-  ],
-  "block_reason": null,
+  "dispatch_blocked": true,
+  "allowed_subjects": [],
+  "block_reason": "Prospective first-pair stop: routine verification preview remains; n24 unattempted, reviewers still allocated",
   "checkpoint": "experiments/reader-v1/evidence/unit3/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -244,5 +279,14 @@
       "evidence": "experiments/reader-v1/evidence/disabled-control-diagnosis.json"
     }
   ],
-  "conversation_counting": "Reserved attempts include pre-model failures; completed behavior is recorded separately"
+  "conversation_counting": "Reserved attempts include pre-model failures; completed behavior is recorded separately",
+  "unattempted_allocations": [
+    {
+      "id": "n24",
+      "unit": "unit3",
+      "role": "installed-disabled-v3",
+      "turns": 0,
+      "reason": "Apply prospective stopping rule: skip n24 and send all saved pair evidence to the two allocated blinded reviewers. No further response pair."
+    }
+  ]
 }

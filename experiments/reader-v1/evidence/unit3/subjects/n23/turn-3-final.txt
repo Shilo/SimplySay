@@ -1,0 +1,7 @@
+Saved [methods.md](<TASK_ROOT>/handoff/methods.md) with reproducible calculations, P5/P7 examples, interpretation limits and a practical next-check plan. [original-summary.md](<TASK_ROOT>/handoff/original-summary.md) preserves the full draft byte for byte. All existing files remain unchanged.
+
+Copy to the committee:
+
+> We will keep the current reference card in place while we plan a limited, staffed check of the reorganized guide. The corrected audit covers eight task pairs from four volunteers. Seven pairs had usable times for both formats: 910 seconds with the reference card and 800 seconds with the guide, a saving of 110 seconds, or about 12.09% less total recorded time. The guide was faster on five pairs and slower on two. First-selection accuracy was equal at seven correct out of eight for each format, so the records do not support the draft’s claim of a 30% time saving or improved accuracy.
+>
+> The tasks were repeated, coaching occurred, and one guide time was missing. These limits leave the guide’s effect on ordinary-shift speed, accuracy and need for help uncertain. The results support planning a limited check before standardization. Before it starts, we need to agree its scope and the accuracy, assistance and useful time-saving criteria that will govern the next decision. No further check has started.
