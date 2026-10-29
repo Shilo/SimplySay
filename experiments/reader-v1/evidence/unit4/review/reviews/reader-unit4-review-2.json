@@ -1,0 +1,1364 @@
+{
+  "schema_version": 1,
+  "review": {
+    "schema_version": 1,
+    "reviewer_id": "reader-unit4-review-2",
+    "pair_reviews": [
+      {
+        "pair_id": "pair-5d8f2f131f5a",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "right",
+            "filler": "right",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ],
+          "rationale": "Both warn at 55 seconds before the cutoff and have the same final. The right ends after the needed agenda action; the left checklist adds no information that improves that immediate decision. This is a content judgment, not a reward for fewer required messages.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-f2ecf2583",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+            "export function prepareBatch(claims) {"
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The standalone email omits R-103 and its missing-receipt action while claiming two claims need action. Surrounding chat/report cannot repair the copy-ready email."
+          ],
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+            "export function prepareBatch(claims) {"
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "Ordinary final and progress are identical. The right email defect is a substantive standalone-deliverable omission, not an ordinary chat style difference.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timestamps are unavailable; update content and order, not elapsed cadence, are assessable."
+        ]
+      },
+      {
+        "pair_id": "pair-710340f90a3e",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "\"applied\":false"
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The user is never told that 30 archived rows would be deleted and never asked the required archive-first-or-cancel question. The unchanged plan preserves the hold but leaves the requested decision unavailable."
+          ],
+          "evidence": [
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied.",
+            "\"delete_archived_rows\":30"
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "left",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "left"
+          },
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "The plan remains unapplied."
+          ],
+          "rationale": "The left gives the consequential preview and requested choice before waiting. The right stops at an unexplained hold. The added left message is required communication.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "No message timestamps; elapsed cadence cannot be inferred."
+        ]
+      },
+      {
+        "pair_id": "pair-30d4f6ffa",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+            "export function prepareBatch(claims) {"
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+            "export function prepareBatch(claims) {"
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "right",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "right"
+          },
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "I am still working on this task.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "Both preserve substantive work and complete copy. The left adds an unrelated animal aside and three actual identical generic working messages. The right keeps the useful opening/results. No elapsed cadence is inferred.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timing unavailable; interruption intervals and notification burden are unknown."
+        ]
+      },
+      {
+        "pair_id": "pair-4ee5f25466c9",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "right",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ],
+          "rationale": "Both preserve the saved-record, delayed-index and cache limits. The right expresses them in ordinary terms for a nondeveloper and explains why clearing can read an old list. The left compresses those facts into unexplained specialist terms.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-49491fbf4",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "At 32 s, A resumes and sends; the receiver accepts.",
+            "The receiver may have accepted the request despite the timeout.",
+            "| 30 s | A’s lease expires; the job becomes available. | Ready | One notice accepted |",
+            "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+            "retries must continue, and some attempt must eventually succeed."
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The requested timed/state worked duplicate timeline is absent.",
+            "No separate causal treatment of stopping before send versus after acceptance, timeout ambiguity, or expired old-worker overlap is given.",
+            "Idempotency/deduplication are named without stable keys, durable memory, concurrency, or atomic coordination of key record and effect.",
+            "The longer-lease suggestion lacks renewal and the limits of lease tuning on the send/done crash window.",
+            "The explicit eventual-success condition and requested review-depth reasoning are missing."
+          ],
+          "evidence": [
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "left",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "left",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Expiration is not cancellation.",
+            "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ],
+          "rationale": "The requested definitions, causal windows, timeline and atomicity explanation make the left suitable for reviewing the design. The right omits that reasoning and leaves unexplained labels. Reducing substantive requested depth is not improvement.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timestamps unavailable; actual update cadence cannot be established."
+        ]
+      },
+      {
+        "pair_id": "pair-933fb0c4d594",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "left",
+            "filler": "left",
+            "repetition": "left",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ],
+          "rationale": "Both give the correct reopening decision and separate untested calendar delivery. The right adds a generic lesson about process stages and restates the answer; that background does not aid the current go/no-go question.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-e8e252fc0",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+            "export function prepareBatch(claims) {"
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times.",
+            "export function prepareBatch(claims) {"
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "Ordinary final, progress, complete email, protected files and captured execution are identical. There is no observed communication difference.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timestamps unavailable; elapsed update cadence cannot be established."
+        ]
+      },
+      {
+        "pair_id": "pair-06fbaca303c5",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "right",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "right"
+          },
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ],
+          "rationale": "Both keep the host-required opening and precise local-trial result with production caveat. The left updates at 8 and 18 seconds report routine partial checks without enabling a decision or changing expectations before the 26-second final. The 60-second host rule does not require them.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-4bf176c47a6f",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "No—the evidence supports neither “30% faster” nor “more accurate.”",
+            "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+            "the guide was slower by ten seconds.",
+            "Both P7 first-selection cards say correct",
+            "No new check has started, and the evidence does not yet support standardization."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "No—the claim is unsupported.",
+            "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+            "The guide was ten seconds slower on this observed task.",
+            "P7's first selections are recorded correct for both formats",
+            "No new check has started; standardization remains a later decision."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+            "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+          ],
+          "rationale": "Both focus ordinary finals on decisions, created files and unresolved next-check authorization. Complete methods, P5/P7 reasoning, unchanged draft and standalone committee copy survive. Intermediates carry material reconciliations or a design-comparability consequence. There is no decisive style winner; required commentary and requested protected depth are not excess.",
+          "confidence": "medium"
+        },
+        "missing_evidence": [
+          "Completion receipts are not exact authoring or desktop-notification times. Incoming native child instructions remain unverified."
+        ]
+      },
+      {
+        "pair_id": "pair-de826571d057",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "**No—the claim is unsupported.**",
+            "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+            "the guide took ten seconds longer.",
+            "Retain P7 in accuracy because both first selections were observed as correct.",
+            "Standardization remains a later decision. No further study has been launched."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "No—the evidence supports neither “30% faster” nor “more accurate.”",
+            "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+            "the guide was slower by ten seconds.",
+            "Both P7 first-selection cards say correct",
+            "No new check has started, and the evidence does not yet support standardization."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "right",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+            "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+          ],
+          "rationale": "Both preserve the full audit, detailed handoff and committee copy, with clear ordinary finals. The right has a modest progress-content advantage: it gives material inclusion findings while the left repeats its writing list and routine verification the user requested in files. This is not an inference from length or count; longer work can require more host commentary.",
+          "confidence": "medium"
+        },
+        "missing_evidence": [
+          "Completion receipts do not prove exact authoring cadence or notifications. Incoming native child instructions remain unverified."
+        ]
+      }
+    ],
+    "supplemental_delegation": {
+      "parent_directive_status": "unknown",
+      "information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": [
+          "The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**.",
+          "If D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**.",
+          "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+          "Exactly one native child performed the analysis without delegation."
+        ]
+      },
+      "ordinary_chat_quality": {
+        "observations": [
+          "The root clearly recommends AB now and CD only after explicit Friday confirmation, with supporting quantities, $15 difference and next action.",
+          "The displayed actual returned report evaluates all ten pairs with correct combined prices, kits/mats, budget/Friday rejection reasons and conditional choices. Its saved version preserves substantive calculations and caveats.",
+          "Opening scope is appropriate. The intermediate identifies the material confirmed-versus-conditional choice. No matched comparison or incoming directive supports a comparative treatment claim."
+        ],
+        "evidence": [
+          "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+          "**Next action:** verify D’s Friday availability before choosing C + D.",
+          "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday."
+        ]
+      },
+      "missing_evidence": [
+        "Actual parent-to-child directive is unavailable, so complete forwarding and absence of added style/length restrictions remain unknown.",
+        "No native spawn/tree capture verifies exactly one child and no descendants; the root assertion alone cannot establish that boundary.",
+        "No separate root calculation trace or explicit recomputation substantiates the claim of independently checking all ten pairs. Its numerical conclusions agree with the supplied data.",
+        "No completed matched comparison is available."
+      ]
+    },
+    "limitations": [
+      "Independent automated assessment, not measured human comprehension or notification burden.",
+      "Read actual chronological requests/finals/progress, complete unique protected file/copy text, command outputs and supplied receipt timing. Repeated snapshot and identical execution views were deduplicated, not actual messages. Long inline command bodies were read by purpose and bounded prefix where saved code/output was already visible; subject code was not executed.",
+      "Reimbursement execution is historical captured evidence bound to displayed artifacts, not a fresh reviewer rerun.",
+      "Common host facts support required openings and ongoing commentary. Completion receipts do not establish exact authoring cadence or desktop notifications.",
+      "The two exit-1 source/search commands in the longer study trace end with no-match rg searches; they are not failed substantive verification checks. Captured arithmetic, schema and preservation checks pass.",
+      "Supplemental incoming delegation instructions, native tree and independent-root-check evidence are unavailable. No policy cause or matched delegation effect is inferred."
+    ]
+  },
+  "goal_notes": [
+    {
+      "pair_id": "pair-5d8f2f131f5a",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same warning and action come first and are understandable. Both finals are identical.",
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "relevance": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The warning enables moving the item in time; the left checklist adds no deadline or action information.",
+          "evidence": [
+            "I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "Opening files, checking headings and preparing a note are routine narration after a complete actionable warning.",
+          "evidence": [
+            "I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same final confirms completion and the missed cutoff; it has a distinct role from the earlier warning.",
+          "evidence": [
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed.",
+            "The review is complete. The report pack has the required sections and consistent cross-references. The 9:20 agenda cutoff was missed; no document was changed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use familiar agenda/review language. Procedural detail is not specialist jargon.",
+          "evidence": [
+            "I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both have the same opening and one intermediate at the same times. Host-required presence and the time-sensitive warning justify the interruption.",
+          "evidence": [
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The checking sequence does not explain or change the cutoff consequence the user must act on.",
+          "evidence": [
+            "I’ve opened the report files and checked the page headings. The sections are in order, and I’m checking their cross-references against the contents list. After that I’ll prepare the final note and check the filenames once more.",
+            "The review will finish around 9:20:10, after your 9:20 agenda cutoff. Please move this item to the next agenda."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-f2ecf2583",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Identical ordinary text plainly states files, tests, amount and unresolved actions.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same opening sets the work and timing caveat; the same final directly answers the requested result and actions. Protected email completeness is judged separately.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary surfaces contain useful scope/results without an aside or process padding.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Opening intentions become completed results in the final; this phase change is useful, not redundant narration.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "File names and cents are appropriate precision for the requested local tool.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show one appropriate opening and no additional update. Unavailable timestamps do not establish cadence.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Neither ordinary final adds an unrequested tutorial. Required standalone email detail is protected work.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-710340f90a3e",
+      "goals": {
+        "clarity": {
+          "choice": "left",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left names the consequence and two choices; the right opening only states an intention.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "relevance": {
+          "choice": "left",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left carries the requested decision in progress and confirms waiting in final. The right does not resolve the conditional request.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both closing sentences are economical statuses; the right defect is omission, not padding.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Each final confirms the hold without needless extended restatement.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Consequence, archive and cancel choices use plain language.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "left",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The extra warning is explicitly required after detecting archived deletions. Omitting required communication cannot be rewarded as fewer updates.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Neither closing sentence adds unrequested background; the missing preview explanation is a required action aid.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-30d4f6ffa",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The reimbursement result remains equally plain; the isolated aside is primarily a relevance/filler defect.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The animal aside has no relationship to reimbursements or the requested decision.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The aside adds no task value; generic working messages add no result, blocker or changed expectation.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The same generic sentence occurs three times as actual messages, with no new fact. These are not repeated snapshot views.",
+          "evidence": [
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use the same accessible task language; the aside does not introduce specialist jargon.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "Three generic duplicate statuses offer no visible decision, blocker, warning or changed expectation before completion. The useful opening survives on the right. Cadence is unmeasured.",
+          "evidence": [
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The substantive reimbursement explanation is the same and brief. The unrelated aside is filler; neither adds an unnecessary reimbursement tutorial.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-4ee5f25466c9",
+      "goals": {
+        "clarity": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "Saved name, separate search list and cached result make the two delays and cache-clearing limit understandable for this audience.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both address the old search name and the absent immediate guarantee without departing from the question.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both devote sentences to mechanisms and the requested guarantee, with no generic preamble.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Saving, index delay, cache delay and invalidation limits are distinct facts, each covered once.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "Synchronous write, secondary-index convergence, stale projection, TTL and read-your-writes burden the stated nondeveloper. The right keeps precision in familiar words.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress messages are displayed; there is no authored update content or timing to compare.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both delay mechanisms are needed for the cache-guarantee question. The longer plain causal explanation is useful.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-49491fbf4",
+      "goals": {
+        "clarity": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "Concrete states and causal transitions let a reader new to queues follow the design; the short labels require inference.",
+          "evidence": [
+            "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "relevance": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left addresses the actual request for design-review reasoning and worked examples; the right is on topic but underaddresses it.",
+          "evidence": [
+            "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Definitions and causal qualifications serve the requested detailed explanation. The short answer also has no filler; its defect is absent substance.",
+          "evidence": [
+            "The underlying difficulty is that sending to the receiver and updating the stored job are separate operations.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The opening/final recommendation orients and concludes the requested long explanation. Neither answer has clearly needless restatement.",
+          "evidence": [
+            "Keep **send before marking done**, preserve retries for unfinished jobs, and treat a timeout as an unknown outcome that may require retrying.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left explains stable keys and atomic behavior through failure cases. The right presents idempotency/deduplication as unexplained solutions to a novice.",
+          "evidence": [
+            "Generating a new key for each retry would defeat deduplication.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both have the same relevant opening and no additional displayed update. Missing timestamps prevent elapsed-cadence claims.",
+          "evidence": [
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs.",
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The long atomicity/lease discussion is explicitly requested. Missing depth on the right is not evidence that the left explains too much.",
+          "evidence": [
+            "A database transaction could provide this atomic boundary if the effect and deduplication record are both within that database.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-933fb0c4d594",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same opening clearly answers yes and identifies the untested follow-up. The extra paragraph does not change that clear answer.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "relevance": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The generic lesson adds no new blocker, decision or unverified check to the requested current launch answer.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected."
+          ]
+        },
+        "filler": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The step-by-step preface and general habit advice pad an already complete answer.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "This is a useful habit for event work because different stages can succeed or fail independently."
+          ]
+        },
+        "repetition": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right closes by repeating the opening decision and calendar follow-up.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use ordinary event-registration terms without unexplained specialist language.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress messages are displayed, so authored update content or cadence cannot be compared.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The user needs the current decision and remaining check, not a conceptual lesson after the complete answer.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-e8e252fc0",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Identical ordinary text plainly states files, tests, amount and unresolved actions.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The same opening sets scope and uncertainty; the same final answers work, tests and unresolved actions.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary surfaces contain useful scope/results without process padding or an aside.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The opening states intention and final states completed result. This phase change is useful.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "File names and cents are appropriate precision for the requested local tool.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both display one appropriate opening and no extra update; no elapsed cadence is established.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both give the requested result without a tutorial. Required copy-ready email detail is protected work.",
+          "evidence": [
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "The approved total is **11,249 cents (112.49 currency units)**. Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-06fbaca303c5",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Messages are plain and finals make the same local-trial versus production distinction.",
+          "evidence": [
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "relevance": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The partial successes do not enable an action before the imminent complete result. The opening already sets expectations.",
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "Preparing the result is routine narration; no warning or changed expectation accompanies these partial checks.",
+          "evidence": [
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left announces row validity shortly before repeating it in the same final, without a visible need for an earlier partial result. The right moves from scope to completion.",
+          "evidence": [
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Columns, valid rows and local trial are appropriate terms for this request.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "Both preserve the required opening. Two extra partial-check messages within the stated 26 seconds supply no blocker, decision, consequential warning or changed expectation and are unnecessary for the 60-second rule.",
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both finals include just readiness and the material production limit; the difference is update narration, not final overexplanation.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-4bf176c47a6f",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both reject the claim and plainly identify a limited check rather than standardization. Equivalent wording and rounding do not change readability.",
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both finals focus on the decision; progress identifies important inclusion results or a proposed design’s comparability limit before completing the handoff.",
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+            "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Short ordinary finals carry decision/file information. Requested substantial methods and copy-ready committee text are protected work, not filler.",
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "both",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The human’s new narrow question justifies restating the relevant result. Material intermediate findings and completion summaries have distinct roles.",
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+            "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use accessible check/standardization terms; quantitative precision is needed to correct the committee claim.",
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Each tool-work turn has an opening and a substantive intermediate; neither adds updates to the short decision-only turn. Host commentary is required. Receipt timestamps cannot prove exact authored cadence or notifications.",
+          "evidence": [
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+            "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both narrow decisions are brief. Later detailed methods and standalone copy answer an explicit request for reasoning and should not be shortened as chat overexplanation.",
+          "evidence": [
+            "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+            "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-de826571d057",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both clearly reject the unsupported claim and identify the limited-check decision. The left’s correction-versus-authorization distinction is useful, and the right is also understandable.",
+          "evidence": [
+            "No further decision is needed to correct the committee summary.",
+            "Your decision now is whether to authorize a limited, staffed next check."
+          ]
+        },
+        "relevance": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left uses progress for routine verification/writing stages despite the request for routine notes in files; the right gives the consequential P5/P7 inclusion result.",
+          "evidence": [
+            "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "Stating that requested sections are being written adds no before-completion decision, blocker or changed expectation. Host-required presence does not require that checklist.",
+          "evidence": [
+            "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left’s intermediate list repeats its opening task list. The right advances from intention to concrete inclusion findings.",
+          "evidence": [
+            "I’ll write the methods handoff and copy the original draft unchanged. I’ll include P5 and P7 examples, a practical plan for the limited check, and a committee message you can copy.",
+            "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both decisions use accessible words. Technical calculation detail is explained in the requested files.",
+          "evidence": [
+            "No further decision is needed to correct the committee summary.",
+            "Your decision now is whether to authorize a limited, staffed next check."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Longer left work may require additional host commentary. Counts and receipt timestamps do not establish excessive interruptions; low-value content is assessed separately.",
+          "evidence": [
+            "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The verification-stage explanation changes no decision or expectation, and routine checks were requested in files. The right instead reports a material inclusion distinction.",
+          "evidence": [
+            "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+            "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+          ]
+        }
+      }
+    }
+  ]
+}

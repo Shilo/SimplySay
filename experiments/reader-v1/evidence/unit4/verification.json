@@ -1,0 +1,902 @@
+{
+  "label": "Automated experimental judgments, not measured human comprehension",
+  "archive": [
+    {
+      "path": "assessment.json",
+      "sha256": "17f00588b071bb35d1b6d0205ef8dcba0f4c1065ab60cc37c069c70085b5bb52",
+      "bytes": 274320
+    },
+    {
+      "path": "controller-map.json",
+      "sha256": "bfbe746a50ed343dcadec5f691c177ecda75a2f15aa40fc566523b7ace98a2cf",
+      "bytes": 8255
+    },
+    {
+      "path": "deterministic.json",
+      "sha256": "b92ec879a0cca3cb5897839972bac9a72f3f2a7e75e9aeb9e3a2231fbb66d6f6",
+      "bytes": 46537
+    },
+    {
+      "path": "reader-freeze.json",
+      "sha256": "e8774c9691a8e4f3e371c529d5e8fae5f505b28d154f8e428260b22a9dc235eb",
+      "bytes": 8621
+    },
+    {
+      "path": "chat-content-screens.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "bytes": 3
+    },
+    {
+      "path": "reader-unit4-review-1/packet.json",
+      "sha256": "044205892aafe5f3d6c31d9a0423a271a8cc662450b057dea4e41918b6ef5561",
+      "bytes": 658765
+    },
+    {
+      "path": "reader-unit4-review-1/response-template.json",
+      "sha256": "f2a703393aeb5e4baecc29a40616612d36e4463ab141e0d1372fd52caa845f81",
+      "bytes": 25444
+    },
+    {
+      "path": "reviews/reader-unit4-review-1.json",
+      "sha256": "daf6386f79bd9feedc73adebc11f79e77342d8f15ad10ec72316fff66ff95a21",
+      "bytes": 79694
+    },
+    {
+      "path": "reader-unit4-review-2/packet.json",
+      "sha256": "43ad011fb8386bc28a26ef24d203e89d3cd24e81e6cd38f752c5d12619138651",
+      "bytes": 658765
+    },
+    {
+      "path": "reader-unit4-review-2/response-template.json",
+      "sha256": "3cbd85193678bcc72d4101ba14e704c0f95951e33e6e3ee336c1869f001dbc37",
+      "bytes": 25444
+    },
+    {
+      "path": "reviews/reader-unit4-review-2.json",
+      "sha256": "87e9eb7429e7caf160ed50afa5b0172a2faccf4acdb6f6f80b30fe3174aec8f4",
+      "bytes": 85938
+    }
+  ],
+  "completed_response_conversations": 3,
+  "response_task_starts": 9,
+  "new_reviewer_conversations": 2,
+  "reviewer_task_starts": 2,
+  "preparation_followup_tasks": 2,
+  "fresh_response_failures": 0,
+  "retries": 0,
+  "all_objective_checks": "pass",
+  "generated_reproduction_commands_checked": 3,
+  "original_unit1_review_archive_unchanged": true,
+  "original_unit2_review_archive_unchanged": true,
+  "original_unit3_review_archive_unchanged": true,
+  "historical_locked_files_unchanged": 287,
+  "sealed_content_opened": false,
+  "sealed_hashes_unchanged": true,
+  "auth_profiles_checked": 37,
+  "copied_signins_retained": 0,
+  "subject_export_files": 178,
+  "raw_byte_exact_artifacts": 115,
+  "reviewers": [
+    {
+      "id": "reader-unit4-review-1",
+      "status": "received",
+      "legacy": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "diagnostics": {
+        "d1": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "excessive_updates": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "progress"
+            }
+          }
+        },
+        "d2": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_explanation",
+            "filler",
+            "repetition"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "unnecessary_explanation": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            },
+            "filler": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            },
+            "repetition": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            }
+          }
+        },
+        "d3": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_jargon",
+            "clarity"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "unnecessary_jargon": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            },
+            "clarity": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            }
+          }
+        },
+        "d4": {
+          "pass": true,
+          "type": "necessary-interruption",
+          "eligible_claims": [
+            "information",
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d5": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates",
+            "filler",
+            "repetition",
+            "unnecessary_explanation"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "filler": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "progress"
+            },
+            "unnecessary_explanation": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "progress"
+            }
+          },
+          "payload_recognized": {
+            "pass": true,
+            "meaning": "Supplementary progress-payload recognition, not a filler/repetition/update winner or cadence proof"
+          }
+        }
+      },
+      "eligible_claims": {
+        "information": true,
+        "clarity": true,
+        "relevance": true,
+        "filler": true,
+        "repetition": true,
+        "unnecessary_jargon": true,
+        "excessive_updates": true,
+        "unnecessary_explanation": true
+      }
+    },
+    {
+      "id": "reader-unit4-review-2",
+      "status": "received",
+      "legacy": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "diagnostics": {
+        "d5": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates",
+            "filler",
+            "repetition",
+            "unnecessary_explanation"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "filler": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "progress"
+            },
+            "unnecessary_explanation": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "progress"
+            }
+          },
+          "payload_recognized": {
+            "pass": true,
+            "meaning": "Supplementary progress-payload recognition, not a filler/repetition/update winner or cadence proof"
+          }
+        },
+        "d4": {
+          "pass": true,
+          "type": "necessary-interruption",
+          "eligible_claims": [
+            "information",
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d3": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_jargon",
+            "clarity"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "unnecessary_jargon": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            },
+            "clarity": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            }
+          }
+        },
+        "d2": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_explanation",
+            "filler",
+            "repetition"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "unnecessary_explanation": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            },
+            "filler": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            },
+            "repetition": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "final"
+            }
+          }
+        },
+        "d1": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates"
+          ],
+          "confidence": "high",
+          "goal_passes": {
+            "excessive_updates": {
+              "pass": true,
+              "common_preservation_direction_confidence": true,
+              "intended_goal_choice": true,
+              "changed_surface_evidence": true,
+              "expected_surface": "progress"
+            }
+          }
+        }
+      },
+      "eligible_claims": {
+        "information": true,
+        "clarity": true,
+        "relevance": true,
+        "filler": true,
+        "repetition": true,
+        "unnecessary_jargon": true,
+        "excessive_updates": true,
+        "unnecessary_explanation": true
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "w1-exclusive-enabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit4-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats.",
+                "Reference = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910 seconds",
+                "P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The audited time saving is **12.09% across seven complete pairs**, with first-selection accuracy unchanged at **7/8 for both formats**.",
+                "Its difference is `140 - 150 = -10`: the guide took ten seconds longer.",
+                "PASS: 632-byte original and archive match byte for byte"
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both lead with the limited-check decision and understandable corrected numbers; the slightly different rounding does not change readability.",
+              "evidence": [
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats.",
+                "The audited time saving is **12.09% across seven complete pairs**, with first-selection accuracy unchanged at **7/8 for both formats**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "left",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The left intermediate report explains a substantive inclusion distinction. The right adds routine verification and writing-stage details despite the request to keep those notes in files; they do not change the user’s decision before completion.",
+              "evidence": [
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching.",
+                "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "left",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The right writing/finishing narration adds little beyond its opening and the eventual deliverable. The left uses the interim space for actual interpretation. Required opening and ongoing presence are not the reason for this preference.",
+              "evidence": [
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching.",
+                "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+                "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "left",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The right repeats its promised handoff task list as a writing-stage update, without a new decision, blocker, or changed expectation.",
+              "evidence": [
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching.",
+                "I’ll write the methods handoff and copy the original draft unchanged. I’ll include P5 and P7 examples, a practical plan for the limited check, and a committee message you can copy.",
+                "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both use ordinary study terms with concrete counts. The requested technical reasoning and standalone committee text are preserved deliverables, not needless jargon.",
+              "evidence": [
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats.",
+                "The audited time saving is **12.09% across seven complete pairs**, with first-selection accuracy unchanged at **7/8 for both formats**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "not-observed",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "The host requires openings and ongoing commentary. Receipt times cannot establish which additional message slots were required, so message counts do not establish excessive frequency. Content-level redundancy is judged separately.",
+              "evidence": [],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "left",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The extra right verification and work-stage narration is unnecessary for the current decision before completion. This judgment does not shorten the requested methods or committee copy.",
+              "evidence": [
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching.",
+                "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+                "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "Completed-message receipt times do not establish exact authoring intervals, desktop notifications, or compliance with the host’s 60-second instruction."
+          ]
+        },
+        {
+          "reviewer": "reader-unit4-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**No—the claim is unsupported.**",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "the guide took ten seconds longer.",
+                "Retain P7 in accuracy because both first selections were observed as correct.",
+                "Standardization remains a later decision. No further study has been launched."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No—the evidence supports neither “30% faster” nor “more accurate.”",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "the guide was slower by ten seconds.",
+                "Both P7 first-selection cards say correct",
+                "No new check has started, and the evidence does not yet support standardization."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both clearly reject the unsupported claim and identify the limited-check decision. The left’s correction-versus-authorization distinction is useful, and the right is also understandable.",
+              "evidence": [
+                "No further decision is needed to correct the committee summary.",
+                "Your decision now is whether to authorize a limited, staffed next check."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "right",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The left uses progress for routine verification/writing stages despite the request for routine notes in files; the right gives the consequential P5/P7 inclusion result.",
+              "evidence": [
+                "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "right",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "Stating that requested sections are being written adds no before-completion decision, blocker or changed expectation. Host-required presence does not require that checklist.",
+              "evidence": [
+                "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "right",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The left’s intermediate list repeats its opening task list. The right advances from intention to concrete inclusion findings.",
+              "evidence": [
+                "I’ll write the methods handoff and copy the original draft unchanged. I’ll include P5 and P7 examples, a practical plan for the limited check, and a committee message you can copy.",
+                "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both decisions use accessible words. Technical calculation detail is explained in the requested files.",
+              "evidence": [
+                "No further decision is needed to correct the committee summary.",
+                "Your decision now is whether to authorize a limited, staffed next check."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Longer left work may require additional host commentary. Counts and receipt timestamps do not establish excessive interruptions; low-value content is assessed separately.",
+              "evidence": [
+                "I’m writing the reproducible calculation, the P5 and P7 examples, and the proposed next-check plan. The original draft has been copied without editing.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "right",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "The verification-stage explanation changes no decision or expectation, and routine checks were requested in files. The right instead reports a material inclusion distinction.",
+              "evidence": [
+                "The calculations agree across two independent checks, and all supplied sources are unchanged. I’m finishing the verification notes in the audit files.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ],
+              "preferred_source": "n27",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "Completion receipts do not prove exact authoring cadence or notifications. Incoming native child instructions remain unverified."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "w1-exclusive-disabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit4-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Seven complete timing pairs show a **12.1% saving**, with five faster and two slower. First-selection accuracy was **7/8 for both formats**.",
+                "A new chain lookup would be a new observation, not a replacement value for P7.",
+                "PASS: all 12 existing files unchanged, draft archive byte-identical, exactly two handoff files added, and local document links resolve."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats.",
+                "Reference = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910 seconds",
+                "P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both give a direct decision and corrected evidence in the narrow second turn, with the larger reasoning placed in the requested files.",
+              "evidence": [
+                "No—the claim is unsupported. The guide used **12.1% less total time across seven complete pairs**, while first-selection accuracy was **7/8 for both formats**.",
+                "No—the evidence supports neither “30% faster” nor “more accurate.” Recorded lookup time was 12.1% lower across seven usable pairs; both formats had 7/8 correct first selections."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "both",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both finals stay on decisions and deliverable locations; both handoff progress messages report the requested P5/P7 distinction. The left also explains its proposed measurement change without claiming a check ran.",
+              "evidence": [
+                "Seven complete timing pairs show a **12.1% saving**, with five faster and two slower. First-selection accuracy was **7/8 for both formats**.",
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats.",
+                "The handoff will explain why P5 stays in both analyses as a slower lookup with an incorrect guide selection, while P7 stays in accuracy but is excluded from timing.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "both",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Neither has a material off-topic aside or empty reassurance. Openings are host-required, and the observed interim explanations concern the audit rather than padding.",
+              "evidence": [
+                "Seven complete timing pairs show a **12.1% saving**, with five faster and two slower. First-selection accuracy was **7/8 for both formats**.",
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats.",
+                "The handoff will explain why P5 stays in both analyses as a slower lookup with an incorrect guide selection, while P7 stays in accuracy but is excluded from timing.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Each has an opening and a later substantive audit or handoff result; overlapping packet views are not additional messages. The recurring P5/P7 topic belongs to a newly requested handoff.",
+              "evidence": [
+                "The handoff will explain why P5 stays in both analyses as a slower lookup with an incorrect guide selection, while P7 stays in accuracy but is excluded from timing.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both communicate the main decision in plain language; study terms and requested detail are adequately grounded in counts and concrete examples.",
+              "evidence": [
+                "Seven complete timing pairs show a **12.1% saving**, with five faster and two slower. First-selection accuracy was **7/8 for both formats**.",
+                "The observed time saving was 12.1% across seven usable pairs; accuracy was 7/8 for both formats."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "not-observed",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "Both have host-required openings and ongoing commentary. Exact authoring and notification cadence is unavailable; the records do not justify a frequency preference.",
+              "evidence": [],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The narrow answer remains short and actionable on both sides. Full methods and committee wording are requested output and should retain their detail.",
+              "evidence": [
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "Completed-message receipt times do not establish exact authoring intervals, desktop notifications, or compliance with the host’s 60-second instruction."
+          ]
+        },
+        {
+          "reviewer": "reader-unit4-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No—the evidence supports neither “30% faster” nor “more accurate.”",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "the guide was slower by ten seconds.",
+                "Both P7 first-selection cards say correct",
+                "No new check has started, and the evidence does not yet support standardization."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No—the claim is unsupported.",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "The guide was ten seconds slower on this observed task.",
+                "P7's first selections are recorded correct for both formats",
+                "No new check has started; standardization remains a later decision."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both reject the claim and plainly identify a limited check rather than standardization. Equivalent wording and rounding do not change readability.",
+              "evidence": [
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "both",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both finals focus on the decision; progress identifies important inclusion results or a proposed design’s comparability limit before completing the handoff.",
+              "evidence": [
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+                "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Short ordinary finals carry decision/file information. Requested substantial methods and copy-ready committee text are protected work, not filler.",
+              "evidence": [
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "both",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The human’s new narrow question justifies restating the relevant result. Material intermediate findings and completion summaries have distinct roles.",
+              "evidence": [
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet.",
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+                "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both use accessible check/standardization terms; quantitative precision is needed to correct the committee claim.",
+              "evidence": [
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Each tool-work turn has an opening and a substantive intermediate; neither adds updates to the short decision-only turn. Host commentary is required. Receipt timestamps cannot prove exact authored cadence or notifications.",
+              "evidence": [
+                "P5 stays in both analyses: its times are complete, and its incorrect first selection remains incorrect after coaching. P7 stays in the accuracy count but drops out of both timing totals because its guide time is missing.",
+                "For the next check, I’m proposing fresh lookups without immediate repeats and a clearly defined timing endpoint. That will make the new results easier to interpret, though they may not be directly comparable with the original elapsed times."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both narrow decisions are brief. Later detailed methods and standalone copy answer an explicit request for reasoning and should not be shortened as chat overexplanation.",
+              "evidence": [
+                "Your decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Your decision now is whether to authorize a **limited staffed check**. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "Completion receipts are not exact authoring or desktop-notification times. Incoming native child instructions remain unverified."
+          ]
+        }
+      ]
+    }
+  ],
+  "native_child_incoming_instructions": "unverified",
+  "actual_desktop_ui": "unverified",
+  "reviewer_model_effort": "unknown",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold"
+}

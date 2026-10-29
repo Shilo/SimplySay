@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-4-review",
+  "status": "unit-4-complete-regression",
   "new_conversations": 29,
   "new_task_starts": 72,
   "starts": [
@@ -292,7 +292,7 @@
       "role": "fresh-blinded-exclusive-status-reviewer-one",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-valid-calibration",
       "purpose": "Independent blinded assessment of all three saved conditions with prospective goal-specific controls and shared host facts",
       "agent": "/root/reader_unit4_blind_1"
     },
@@ -301,7 +301,7 @@
       "role": "fresh-blinded-exclusive-status-reviewer-reversed",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-valid-calibration",
       "purpose": "Independent blinded assessment of all three saved conditions with prospective goal-specific controls and shared host facts",
       "agent": "/root/reader_unit4_blind_2"
     }
@@ -318,7 +318,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "All planned responses complete; only the allocated two fresh blinded reviews pending",
+  "block_reason": "Unit complete; no automatic response repeats. Record a different evidence-backed purpose before further model work.",
   "checkpoint": "experiments/reader-v1/evidence/unit4/first-pair-checkpoint.json",
   "diagnostics": [
     {

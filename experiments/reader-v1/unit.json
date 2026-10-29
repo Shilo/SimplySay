@@ -1,5 +1,5 @@
 {
-  "status": "ready",
+  "status": "closed-regression",
   "authorization": "owner-reader-development-2026-10-29",
   "record": "docs/reader-unit4-plan.md",
   "purpose": "Correct non-exclusive required-status fallback, with prospective independent-goal scoring and common host-assessment facts",

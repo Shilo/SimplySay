@@ -1,0 +1,60 @@
+{
+  "status": "closed-regression",
+  "authorization": "owner-reader-development-2026-10-29",
+  "record": "docs/reader-unit4-plan.md",
+  "purpose": "Correct non-exclusive required-status fallback, with prospective independent-goal scoring and common host-assessment facts",
+  "end_conversation_cap": 29,
+  "end_task_cap": 72,
+  "unit_limits_are_not_overall_owner_caps": true,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "n27"
+      ],
+      "role": "study-absent-exclusive-fallback",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n28"
+      ],
+      "role": "study-enabled-exclusive-fallback",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n29"
+      ],
+      "role": "study-disabled-exclusive-fallback",
+      "max_turns_each": 3
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "n30",
+      "max_turns": 1
+    },
+    {
+      "id": "n31",
+      "max_turns": 1
+    }
+  ],
+  "preparation_contexts": 0,
+  "planned_preparation_tasks": 2,
+  "new_native_response_tasks": 9,
+  "new_blinded_reviewer_conversations": 2,
+  "new_blinded_reviewer_tasks": 2,
+  "retries": 0,
+  "replacements": 0,
+  "further_units": "Record a specific evidence-backed purpose before dispatch, under the broader authorization",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false,
+  "manifest": "experiments/workflow-v1/reader-unit4.manifest.json",
+  "native_response_attempt_slots": 3,
+  "planned_completed_response_conversations": 3,
+  "retained_pre_model_failure_slots": 0,
+  "first_pair_stop": "If both satisfactory on target or enabled still plainly narrates routine forthcoming steps/content, skip n29, review saved pair and retain missing disabled evidence.",
+  "goal_calibration_mode": "independent-goals-v1"
+}
