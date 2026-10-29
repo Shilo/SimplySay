@@ -1,0 +1,13 @@
+{
+  "prior_used":18,"authorized_ceiling":24,"round_ceiling":6,"reserve":0,
+  "sessions":[
+    {"id":"f19","role":"independent-case-author-and-verifier"},
+    {"id":"f20","role":"absent-subject"},
+    {"id":"f21","role":"enabled-subject"},
+    {"id":"f22","role":"minimal-subject"},
+    {"id":"f23","role":"blinded-reviewer-orientation-one"},
+    {"id":"f24","role":"blinded-reviewer-reversed"}
+  ],
+  "direct_claude":false,"new_paid_services":false,"new_native_delegation":false,
+  "stop_after_round":true,"production_and_publication":"hold"
+}
