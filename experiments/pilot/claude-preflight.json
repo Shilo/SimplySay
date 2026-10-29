@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "timezone": "America/Los_Angeles",
+  "stage": "preflight-only",
+  "host": "Claude Code",
+  "version": "2.1.312",
+  "modelSessionAttempts": 0,
+  "existingDefaultProfile": {
+    "resolvedToExpectedDefault": true,
+    "loggedIn": false,
+    "authMethod": "none",
+    "apiProvider": "firstParty"
+  },
+  "freshIsolatedProfile": {
+    "loggedIn": false,
+    "authMethod": "none",
+    "apiProvider": "firstParty"
+  },
+  "processCredentialFallbacksPresent": {
+    "ANTHROPIC_API_KEY": false,
+    "ANTHROPIC_AUTH_TOKEN": false,
+    "CLAUDE_CODE_OAUTH_TOKEN": false,
+    "CLAUDE_CODE_USE_BEDROCK": false,
+    "CLAUDE_CODE_USE_VERTEX": false,
+    "CLAUDE_CODE_USE_FOUNDRY": false
+  },
+  "defaultCredentialMetadata": {
+    "fileExists": true,
+    "subscriptionOAuthEntryPresent": true,
+    "nonemptyAccessTokenPresent": false,
+    "nonemptyRefreshTokenPresent": false,
+    "copied": false,
+    "rawContentsLogged": false
+  },
+  "awaiting": [
+    "usable approved subscription authentication",
+    "frozen independent cases",
+    "central allocation and reservation mechanism"
+  ]
+}
