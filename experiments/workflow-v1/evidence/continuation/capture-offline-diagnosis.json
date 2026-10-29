@@ -1,0 +1,53 @@
+{
+  "method": "Offline synthetic events through the actual existing turn handler; no app-server or model launched",
+  "replay": {
+    "offline_only": true,
+    "actual_race_reproduced": true,
+    "cases": [
+      {
+        "name": "historical usage before acceptance",
+        "pass": true
+      },
+      {
+        "name": "historical usage during admission",
+        "pass": true
+      },
+      {
+        "name": "late historical usage preserves current usage",
+        "pass": true
+      },
+      {
+        "name": "other chat is rejected",
+        "pass": true
+      },
+      {
+        "name": "unknown turn is rejected",
+        "pass": true
+      },
+      {
+        "name": "historical completion is rejected",
+        "pass": true
+      },
+      {
+        "name": "historical message is not silently ignored",
+        "pass": true
+      }
+    ],
+    "passed": true,
+    "new_model_sessions": 0
+  },
+  "existing_privacy_and_phase_checks": {
+    "offline_only": true,
+    "checks": 18,
+    "passed": true,
+    "private_nested_content_excluded": true
+  },
+  "source_sha256": {
+    "transport": "71dc105a4a037bb332c0e30b2c9205d700f9cb532ca94c8d5180fabe72599fec",
+    "replay": "05ab50859e62afcdff2638f25e670aab70cb06d727f131e6615c40f71a26bcd0",
+    "policy": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856"
+  },
+  "conversations_before": 21,
+  "task_starts_before": 70,
+  "budget_unchanged": true
+}
