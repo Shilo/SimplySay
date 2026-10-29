@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "frozen-before-blinded-reviewer-launch",
+  "scope": "Retrospective automated-assessment calibration only. This does not amend the original pilot criteria or evidence.",
+  "controls": [
+    {
+      "id": "email_essential_omission",
+      "source": "experiments/pilot/evidence/runs-v2/r02/final.txt",
+      "construction": "Delete only the complete R-103 bullet from the standalone copy-ready email. Keep the ordinary wrapper, other email facts, progress, files and reports unchanged.",
+      "required_information_verdict": {"original": "preserved", "mutant": "omitted-essential"},
+      "required_evidence": "Identify that the email itself no longer tells Casey that R-103 requires a receipt. Presence in the wrapper or report does not repair the standalone draft.",
+      "required_quality_preference": "unconstrained",
+      "rationale": "A fluent omission can remain easy to read. Do not collapse preservation and surface quality into one score."
+    },
+    {
+      "id": "irrelevant_filler_and_updates",
+      "source": "experiments/pilot/evidence/runs-v2/r02/final.txt and events.jsonl",
+      "construction": "Preserve original substantive chat and protected artifact bytes. Add clearly unrelated prose to ordinary chat and at least three semantically redundant progress updates containing no changed result, obstacle or next decision. Mark inserted material only in private provenance, never in reviewer packets.",
+      "required_information_verdict": {"original": "preserved", "mutant": "preserved"},
+      "required_quality_preference": "original",
+      "required_evidence": "Cite the added irrelevant material and redundant updates or repetition; do not merely cite greater length.",
+      "rationale": "Additional filler should be detected even when task correctness and protected deliverables remain complete."
+    },
+    {
+      "id": "insufficient_technical_depth",
+      "source": "experiments/pilot/evidence/runs-v2/r03/final.txt",
+      "construction": "Replace the detailed final explanation with a fluent terse recommendation that retains the send-first recommendation and duplicate-risk warning but omits a worked timed/state duplicate trace and the causal durable/concurrent atomic deduplication explanation. Keep the full detailed original as the valid comparison.",
+      "required_information_verdict": {"original": "preserved", "mutant": "omitted-essential"},
+      "required_quality_preference": "original",
+      "required_evidence": "Identify missing requested explanation or worked timeline. Recognize that useful technical detail is necessary for this audience and task, rather than a jargon or length defect.",
+      "rationale": "The task explicitly requests enough reasoning to review a queue design. Concision cannot substitute for required depth."
+    },
+    {
+      "id": "identical_response_tie",
+      "source": "experiments/pilot/evidence/runs-v2/r02/final.txt and events.jsonl",
+      "construction": "Use exactly the same task, progress, final response and protected artifacts on both sides. Different opaque aliases are allowed; no content or execution-evidence differences are allowed.",
+      "required_information_verdict": {"left": "preserved", "right": "preserved"},
+      "required_quality_preference": "tie",
+      "required_evidence": "No substantive difference, or identical content. Do not invent a defect based on position or alias.",
+      "rationale": "A forced winner on identical evidence reveals positional or spurious discrimination."
+    }
+  ],
+  "reviewer_trust_rule": {
+    "calibrated": "All four controls satisfy every specified required information verdict and required quality preference; required evidence identifies the intended defect or equality rather than word count alone.",
+    "partial_or_failed": "Any failed, unknown, missing, low-confidence or unsupported control is retained and flagged. Do not use that reviewer to establish the primary calibrated preference claim. Report its raw judgments in the all-reviewer view.",
+    "no_retargeting": "Do not change construction, expected verdicts or threshold after reviewer output. Do not retry a reviewer for unfavorable judgments or calibration failure. Missing/unusable output may use the separately allocated reserve, with the failure retained.",
+    "aggregation": "Report all-reviewer and calibrated-only judgments separately. An empty calibrated set yields no calibrated communication verdict, never an implicit tie or win. Preserve every disagreement and tie."
+  },
+  "order_check": {
+    "reviewers": 4,
+    "orientation": "Two reviewers per orientation; reverse side assignment and pair/case sequence for the other orientation.",
+    "report": "Normalize choices back to source candidates; report left/right/tie counts, orientation-specific outcomes, identical-tie failures and cross-reviewer disagreements. Any direction change is an order-sensitivity warning.",
+    "limitation": "Different reviewers occupy opposite orientations. Reviewer variance is confounded with order; four assessments cannot prove order bias absent. Repeated candidates can become recognizable without revealing treatment identity."
+  },
+  "deterministic_controls": [
+    "Mutating an exact approved total must fail the standalone-email or report exact-value check; a wrapper match cannot repair the affected artifact.",
+    "Deleting the R-103 receipt action only in the email must fail that artifact's required-information check even when other artifacts retain it.",
+    "Filler insertion must leave all protected artifact hashes and required-information checks unchanged.",
+    "The full technical original must retain all required explanatory checks; the terse mutant must fail the named missing-depth checks. Lexical matches are only screen evidence, not proof of semantic correctness.",
+    "Original evidence hashes and original pilot criteria/cases/policy hashes must remain unchanged."
+  ],
+  "interpretation_limits": [
+    "These are automated assessments, not measured human-comprehension improvements.",
+    "Calibration on obvious synthetic defects does not establish sensitivity to all subtle omissions, misinformation or verbosity problems.",
+    "Shared model and rubric biases remain possible despite independent contexts and treatment blinding.",
+    "No single aggregate combines communication preference with information preservation; omissions cannot be offset by fluent or shorter chat.",
+    "Missing original parent-to-child instructions and failed absent delegation remain unknown regardless of reviewer fluency judgments."
+  ]
+}
