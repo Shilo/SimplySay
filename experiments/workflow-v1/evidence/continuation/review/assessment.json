@@ -1,0 +1,1637 @@
+{
+  "label": "Automated experimental assessments, not measured human comprehension",
+  "deterministic": {
+    "view-w2-a": {
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "fail",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "unverified",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "fail",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t3_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t3_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "case_checks": {
+        "schema_version": 1,
+        "case_id": "w2-archive-copy-audit",
+        "deterministic_status": "unverified",
+        "semantic_status": "requires_blinded_review",
+        "checks": [
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 11117,
+            "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t1_copy_audit",
+            "status": "observed",
+            "commands_count": 6,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "capture_completeness",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "issues": [
+              "Final not observed separately."
+            ]
+          },
+          {
+            "id": "native_turn_completion",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 11117,
+            "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "commands_count": 0,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 11117,
+            "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "file:staged-pack/labels.csv",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 60,
+            "sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "exact_copy:staged-pack/labels.csv",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "file:staged-pack/layout.svg",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 196,
+            "sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "exact_copy:staged-pack/layout.svg",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "file:staged-pack/manual.txt",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 122,
+            "sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "exact_copy:staged-pack/manual.txt",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "file:handoff/verification.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 1074,
+            "sha256": "9202dc2d1166b8b0b50a53eb58703da7ee2df068721f0fb719574f06c6ef435e"
+          },
+          {
+            "id": "json:handoff/verification.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "file:handoff/restore-guide.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 15999,
+            "sha256": "0e4d3410c683fd9dd49a19fd4803f8075eacf564aac26f05b83053aec3980f6e"
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t3_repair_handoff",
+            "status": "observed",
+            "commands_count": 6,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          }
+        ]
+      },
+      "semantic_essentials": "Independent review required; no lexical pass substitute",
+      "original_incoming_child_instructions": "unverified"
+    },
+    "view-w2-b": {
+      "capture_checks": [
+        {
+          "name": "complete_observed_conversation",
+          "status": "pass",
+          "note": "Missing/failed captures are not passes"
+        },
+        {
+          "name": "t1_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t1_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t2_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t2_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "t3_capture",
+          "status": "pass",
+          "note": "Actual final/event/timestamp/file evidence"
+        },
+        {
+          "name": "t3_same_id",
+          "status": "pass",
+          "note": "Observed continuation, not fallback"
+        },
+        {
+          "name": "auth_copy_removed",
+          "status": "pass",
+          "note": "No copied sign-in retained"
+        },
+        {
+          "name": "correct_loading",
+          "status": "pass",
+          "note": "One exact startup for enabled, none in controls; not adherence proof"
+        }
+      ],
+      "case_checks": {
+        "schema_version": 1,
+        "case_id": "w2-archive-copy-audit",
+        "deterministic_status": "pass",
+        "semantic_status": "requires_blinded_review",
+        "checks": [
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 8554,
+            "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t1_copy_audit",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t1_copy_audit",
+            "status": "observed",
+            "commands_count": 9,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 8554,
+            "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t2_practical_decision",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t2_practical_decision",
+            "status": "unverified",
+            "commands_count": 0,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          },
+          {
+            "id": "file:audit/findings.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 8554,
+            "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+          },
+          {
+            "id": "file:audit/inventory.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 1014,
+            "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+          },
+          {
+            "id": "json:audit/inventory.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "file:staged-pack/labels.csv",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 60,
+            "sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "exact_copy:staged-pack/labels.csv",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "file:staged-pack/layout.svg",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 196,
+            "sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "exact_copy:staged-pack/layout.svg",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "file:staged-pack/manual.txt",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 122,
+            "sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "exact_copy:staged-pack/manual.txt",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "file:handoff/verification.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 1074,
+            "sha256": "9202dc2d1166b8b0b50a53eb58703da7ee2df068721f0fb719574f06c6ef435e"
+          },
+          {
+            "id": "json:handoff/verification.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "problems": []
+          },
+          {
+            "id": "file:handoff/restore-guide.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "bytes": 18623,
+            "sha256": "944f49d7f6f25ded522863551995629c60d952177b65a785f7fa2603e21428e0"
+          },
+          {
+            "id": "source_bytes:README.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+            "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+          },
+          {
+            "id": "source_bytes:archive-plan.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+            "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+          },
+          {
+            "id": "source_bytes:evidence/copy-log.json",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+            "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+          },
+          {
+            "id": "source_bytes:evidence/restore-note.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+            "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+          },
+          {
+            "id": "source_bytes:draft-status.md",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+            "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+          },
+          {
+            "id": "source_bytes:source-pack/manual.txt",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+            "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+          },
+          {
+            "id": "source_bytes:source-pack/labels.csv",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+            "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+          },
+          {
+            "id": "source_bytes:source-pack/layout.svg",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+            "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+          },
+          {
+            "id": "source_bytes:tools/inspect-pack.cjs",
+            "turn_id": "t3_repair_handoff",
+            "status": "pass",
+            "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+            "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+          },
+          {
+            "id": "subject_execution_evidence",
+            "turn_id": "t3_repair_handoff",
+            "status": "observed",
+            "commands_count": 10,
+            "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+          }
+        ]
+      },
+      "semantic_essentials": "Independent review required; no lexical pass substitute",
+      "original_incoming_child_instructions": "unverified"
+    }
+  },
+  "reviewers": [
+    {
+      "id": "continuation-review-1",
+      "status": "received",
+      "calibration": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "review": {
+        "schema_version": 1,
+        "reviewer_id": "continuation-review-1",
+        "pair_reviews": [
+          {
+            "pair_id": "pair-0b853e05327c",
+            "left_information": {
+              "status": "unknown",
+              "issues": [
+                "The initial audit and observed third-turn work preserve their requested substance: correct original mismatch/missing/matching inventory, repaired equality for all three files, unchanged source/logs/initial audit, substantial repeat-check and planned-rehearsal guide, and a complete standalone staff message. Overall chronological preservation remains unknown solely for the second practical question, which was accepted but has no observed answer because of the controller capture defect. That gap is not a model omission, a preservation pass or intentional concision."
+              ],
+              "evidence": [
+                "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+                "\"source_staged_full_bytes_equal\": true",
+                "\"initial_audit_preserved\": true",
+                "All three documented blocks parsed; read-only check block executed. Restore block was not executed.",
+                "A manifest names the complete expected set and records reference sizes and checksums.",
+                "Independent backup, clean-directory restoration, media-failure recovery, and permission recovery remain unverified. We will keep the old source.",
+                "Final not observed separately."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "No. The success log does not establish a complete copy: one staged file differs and another is missing.",
+                "\"expected_files\": 3,\n    \"present_files\": 3,\n    \"matching_files\": 3,\n    \"mismatched_files\": 0,\n    \"missing_files\": 0",
+                "\"protected_files_unchanged\": 11",
+                "PASS: all three source and staged files match the recorded baseline and each other.",
+                "The repaired manifest replaces neither the original log nor the initial audit.",
+                "This procedure has not been run.",
+                "Independent backup and full restore capability, including recovery after media failure or permission loss, remain unverified."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "All three staged files now match the source in both raw bytes and SHA-256 hashes. The original audit remains unchanged.",
+                "All three staged files now match the source byte for byte and by SHA-256. The source, logs, and initial audit are unchanged.",
+                "Repaired and verified all three files.",
+                "All 3 staged files now match the source byte for byte and by SHA-256."
+              ],
+              "rationale": "On the common observed first and third turns, both lead with a clear decision or current result, locate the requested files, and keep routine byte/hash detail in substantial protected reports. The left names outstanding ownership decisions in its first final; the right gives more immediate file-level reasons. Both third-turn updates report a material change from incomplete staging to verified equality, while their finishing-guide clauses add little beyond that result. Their openings set the authorized scope, and neither pattern establishes a material advantage in filler, repetition, jargon or useful updates. Both standalone staff drafts retain the recovery limits; the shorter one is not rewarded merely for length. The observed-content comparison ties. The right's second answer is clear, but its missing counterpart cannot establish a winner: the controller interruption is unknown and also limits a clean matched full-follow-up inference. The observed third-turn work is assessed independently of that gap.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "The left practical question was accepted but no answer is observed after a controller capture defect. Its empty final is not a model-chosen omission, concise success or preservation pass.",
+              "The differing interrupted history prevents a clean matched inference about the complete follow-up sequence, even though both initial audits and both third-turn repair/handoff outputs are available.",
+              "Identifying local paths are redacted by the exporter. The actual read-only guide checks executed successfully; a privacy placeholder is not treated as the original model's invalid command.",
+              "Receipt times do not establish desktop notifications or measured user attention. Update judgments concern observed content, not silence or word/message counts."
+            ]
+          },
+          {
+            "pair_id": "pair-73ab5828a",
+            "left_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The standalone Casey email omits R-103 and the missing-receipt action, although its heading says two claims need action. Surrounding chat and the report cannot repair a missing essential in the copy-ready email. The displayed code, tests and report otherwise satisfy the request and agree with captured checks."
+              ],
+              "evidence": [
+                "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.\n\nR-104 was denied and is excluded.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The ordinary reply and initial progress update are identical. They clearly state files, observed tests, unresolved actions and Friday uncertainty. The protected email omission is assessed separately and is not rewarded as concise ordinary communication.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Execution evidence is historical; no fresh rerun or message timing is supplied."
+            ]
+          },
+          {
+            "pair_id": "pair-5ff3ef47e",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "communication": {
+              "preference": "left",
+              "dimensions": {
+                "clarity": "left",
+                "relevance": "left",
+                "filler": "left",
+                "repetition": "left",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "left"
+              },
+              "evidence": [
+                "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+                "I am still working on this task.",
+                "The approved total is **11,249 cents (112.49 currency units)**."
+              ],
+              "rationale": "The right introduces an unrelated fact before the result and three identical status messages with no new decision, blocker, result or useful wait expectation. The left stays focused on the reimbursement work. This preference follows irrelevant and repeated content rather than fewer messages alone. Both retain the same complete protected work and appropriate initial expectation.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; the update assessment concerns content rather than inferred cadence or notification burden."
+            ]
+          },
+          {
+            "pair_id": "pair-dcf59ddf3",
+            "left_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The reply offers conclusions and technique names but omits the worked times/states duplicate timeline and the requested causal treatment of all three failure windows. It also omits expired-worker overlap, ambiguous timeout acceptance, the eventual-success assumption, stable keys with durable atomic receiver deduplication/effect, and lease renewal's benefits and limits. It does not preserve the reasoning depth needed by the stated reader."
+              ],
+              "evidence": [
+                "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice.",
+                "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "The receiver may have accepted the request despite the timeout.",
+                "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+                "Expiration is not cancellation.",
+                "**retries must continue, and some attempt must eventually succeed.**",
+                "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+                "Neither makes receiver acceptance and marking done atomic.",
+                "The receiver’s ability to support this is currently unknown, so it is a proposed improvement rather than an existing guarantee."
+              ]
+            },
+            "communication": {
+              "preference": "right",
+              "dimensions": {
+                "clarity": "right",
+                "relevance": "right",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "right",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease.",
+                "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded.",
+                "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects."
+              ],
+              "rationale": "The right develops the requested reasoning with definitions, causal failure cases, a timeline and concrete atomicity hazards. The left's unexplained technique labels and conclusion do not connect cause and effect for the stated reader. The right's length and technical vocabulary serve the explicit depth request, while its structure makes the explanation navigable. Its repeated recommendation connects detailed reasoning to the priority rather than adding material filler. Both have the same initial update.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "No execution was requested. Message timing is unavailable."
+            ]
+          },
+          {
+            "pair_id": "pair-a9491d80f",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday.",
+                "Confirm both before communicating a Friday commitment."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+                "Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The displayed progress, ordinary reply, complete email, artifacts and captured execution are identical. Both clearly communicate work, real checks, pending actions and timing limits. No communication preference is justified.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Execution evidence is historical; message timing is unavailable."
+            ]
+          }
+        ],
+        "supplemental_delegation": {
+          "parent_directive_status": "unknown",
+          "information": {
+            "status": "unknown",
+            "issues": [
+              "The observable child response and saved report preserve all ten correct pair calculations, rejection reasons, confirmed and conditional choices, savings and D verification caveat. The root recommendation and key arithmetic are correct. Overall native-delegation/forwarding compliance remains unknown because the incoming directive and native lifecycle trace are absent; the root's assertion does not establish exactly one child/no descendants or absence of added style/length constraints."
+            ],
+            "evidence": [
+              "There are 10 possible pairs.",
+              "The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**.",
+              "If D later becomes confirmed by Friday, the least expensive qualifying choice would be **C + D at $160**, supplying **30 kits and 20 mats**.",
+              "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+              "Exactly one native child performed the analysis without delegation."
+            ]
+          },
+          "ordinary_chat_quality": {
+            "observations": [
+              "The root puts the current recommendation and supporting figures first, separates the cheaper conditional option, and gives the verification required before choosing it.",
+              "The opening sets the requested child/check/save expectation. The second update supplies the material child result, which helps track the dependent workflow; its routine checking/saving narration adds limited information. Accuracy or required message presence does not establish that every clause is useful.",
+              "Closing process claims address requested checking and observability but cannot verify unobserved directive/lifecycle details. The full child report is protected requested work and is not penalized for depth. No matched comparison supports a treatment-effect claim."
+            ],
+            "evidence": [
+              "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+              "**Next action:** verify D’s Friday availability before choosing C + D.",
+              "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+            ]
+          },
+          "missing_evidence": [
+            "Actual parent-to-child directive is unavailable; forwarding and absence of root-added report style/length restrictions cannot be verified.",
+            "No native spawn/descendant lifecycle trace is displayed to corroborate the one-child/no-delegation assertion.",
+            "No completed matched delegation comparison is available; timing is not notification evidence."
+          ]
+        },
+        "limitations": [
+          "Independent retrospective assessment of the assigned packet/template and explicitly authorized validator only. No project-source inspection, other review access, external service, fresh subject execution, helper or new model session was used.",
+          "ordinary_chat, progress and turns were checked as overlapping views of the same events. Exact equality checks identified repeated snapshots and identical artifacts/execution; these were read once and not counted as repeated chat.",
+          "The archive initial audits and observed third-turn repairs/handoffs have assessable actual outputs. The left second practical answer is unknown after a controller capture defect. It is not marked omitted-essential or preserved, and the interrupted history limits a clean matched full-follow-up inference.",
+          "Some identifying paths and metadata are exporter-redacted. Raw files were separately retained but not read outside this packet; current byte-equality and source-preservation conclusions rely on displayed snapshots and captured checks. Redacted placeholders are not original invalid commands.",
+          "Both workflow subjects have opening/periodic-update host requirements. Required presence does not establish wording usefulness, missing updates alone gets no benefit, and receipt timing is not measured notification or attention burden.",
+          "Protected original evidence, full technical restore guides and standalone staff/email drafts were assessed for the actual request. Neither fewer words/messages nor better wording alone establishes preservation or all communication goals.",
+          "Supplemental delegation directive/native lifecycle are unverified; no matched delegation effect or human-comprehension effect is established."
+        ]
+      }
+    },
+    {
+      "id": "continuation-review-2",
+      "status": "received",
+      "calibration": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "review": {
+        "schema_version": 1,
+        "reviewer_id": "continuation-review-2",
+        "pair_reviews": [
+          {
+            "pair_id": "pair-f2ecf2583",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "right_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The copy-ready Casey email omits R-103's missing-receipt action while saying two claims need action. The fact remains in surrounding chat and the report, which cannot complete the standalone email."
+              ],
+              "evidence": [
+                "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+                "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The ordinary chat and progress are identical and clearly state the result, checks, and unresolved actions. The right's email omission is a protected-deliverable failure, not an ordinary-chat benefit from brevity. There is no ordinary-chat difference to prefer.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; no cadence or notification inference is supported."
+            ]
+          },
+          {
+            "pair_id": "pair-30d4f6ffa",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "communication": {
+              "preference": "right",
+              "dimensions": {
+                "clarity": "right",
+                "relevance": "right",
+                "filler": "right",
+                "repetition": "right",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "right"
+              },
+              "evidence": [
+                "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+                "I am still working on this task.",
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`."
+              ],
+              "rationale": "Both preserve the same work and complete email. The left adds irrelevant trivia before the result and repeats a generic work-status message three times without a material finding, blocker, decision, or useful wait expectation. The right keeps the relevant content prominent. The preference concerns distraction and repeated empty content, not fewer messages alone; potentially required update presence would not make this content useful.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "No message timing or specific host-cadence explanation is captured; no notification-burden claim is made."
+            ]
+          },
+          {
+            "pair_id": "pair-49491fbf4",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Once its lease expires, it becomes available to another worker, which can retry.",
+                "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+                "Expiration is not cancellation.",
+                "retries must continue, and some attempt must eventually succeed.",
+                "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+                "Neither makes receiver acceptance and marking done atomic."
+              ]
+            },
+            "right_information": {
+              "status": "omitted-essential",
+              "issues": [
+                "The response gives a conclusion without the requested separate causal accounts of all three failure windows or a worked timeline with times and states.",
+                "It omits the old worker continuing after expiry, overlapping sends, and the timeout's unknown acceptance outcome.",
+                "It names idempotency and deduplication without explaining stable keys across attempts, durable receiver memory, atomic coordination with the effect, or the failures of separate deduplication checks.",
+                "It omits the eventual-success condition, lease-renewal tradeoffs and limits, and enough remaining-guarantee reasoning for the stated reader."
+              ],
+              "evidence": [
+                "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+              ]
+            },
+            "communication": {
+              "preference": "left",
+              "dimensions": {
+                "clarity": "left",
+                "relevance": "left",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+                "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded.",
+                "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+                "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease."
+              ],
+              "rationale": "The left's definitions, causal transitions, timeline, and atomicity counterexamples make the requested design reasoning understandable. Its depth and technical precision serve the stated reader. The right is legible as a summary but leaves the relationships and recommendations unexplained, so its brevity is not a communication gain for this request. Both have the same appropriate initial progress message.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; no cadence or notification comparison is made."
+            ]
+          },
+          {
+            "pair_id": "pair-e8e252fc0",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "export function prepareBatch(claims) {",
+                "All **9 tests passed**, and the CLI produced the expected JSON.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "- R-102, 2,400 cents: pending approval.",
+                "- R-103, 1,800 cents: missing receipt.",
+                "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+                "The approved total is **11,249 cents (112.49 currency units)**.",
+                "Friday arrival remains unconfirmed."
+              ],
+              "rationale": "The displayed progress, ordinary chat, complete final, email, actual files, and execution evidence are identical. Both clearly communicate the result and unresolved actions. There is no difference to prefer.",
+              "confidence": "high"
+            },
+            "missing_evidence": [
+              "Message timing is unavailable; no cadence comparison is supported."
+            ]
+          },
+          {
+            "pair_id": "pair-299a97d24c2f",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "| labels.csv | 60 | 44 | mismatched |",
+                "| layout.svg | 196 | absent | missing |",
+                "| manual.txt | 122 | 122 | matching |",
+                "No. The success log does not establish a complete copy: one staged file differs and another is missing.",
+                "Summary: 3 expected, 3 present, 3 matching, 0 mismatched, 0 missing.",
+                "PASS: all three source and staged files match the recorded baseline and each other.",
+                "\"protected_files_unchanged\": 11",
+                "\"existing_staged_manual_unchanged\": true",
+                "The rehearsal block was not executed; it remains a planned procedure, not evidence of a completed restore.",
+                "We are keeping the old source. This verifies the current local copy.",
+                "Independent backup and full restore capability, including recovery after media failure or permission loss, remain unverified."
+              ]
+            },
+            "right_information": {
+              "status": "unknown",
+              "issues": [
+                "The observed initial audit and third-turn repair/handoff preserve their requirements: actual initial bytes/hashes, corrected claims, full repaired-state inventory, all three matching staged files, preserved source/logs/initial audit, substantial repeat-check and planned-rehearsal instructions, and a complete standalone staff message.",
+                "The practical second-turn question was accepted but no answer was observed because of a controller capture defect. Its response remains unknown; this is not a model omission, a concise success, or a preservation pass for that turn.",
+                "The redacted local-root placeholder in the guide is an exporter substitution, not evidence of an originally invalid command. Captured execution shows the documented read-only block ran successfully and the future restore block was not run."
+              ],
+              "evidence": [
+                "Final not observed separately.",
+                "Summary: 3 expected, 3 present, 3 matching, 0 mismatched, 0 missing.",
+                "\"source_staged_full_bytes_equal\": true",
+                "\"unchanged_existing_files\": 12",
+                "\"initial_audit_preserved\": true",
+                "All three documented blocks parsed; read-only check block executed. Restore block was not executed.",
+                "All three expected files match the retained source byte for byte and by SHA-256.",
+                "Independent backup, clean-directory restoration, media-failure recovery, and permission recovery remain unverified.",
+                "We will keep the old source.",
+                "The next decision is to assign responsibility for an independent backup and a documented full restore rehearsal."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "All three staged files now match the source byte for byte and by SHA-256.",
+                "All three staged files now match the source in both raw bytes and SHA-256 hashes.",
+                "The guide will distinguish this verified local copy from the backup and restore tests that remain undone.",
+                "I’m finishing the repeat-check commands and restore plan, with the remaining recovery gaps made explicit."
+              ],
+              "rationale": "For the observed initial and third turns, both keep detailed technical work in files, report the material audit/repair result, preserve useful recovery warnings, and give complete staff drafts. The left makes the initial file defects concrete; the right explicitly names the next ownership/backup decision. Both third-turn exchanges clearly distinguish verified local copying from untested recovery. Small wording or length differences do not show a meaningful overall advantage, and their material-result updates are more useful than generic activity narration. The right's unobserved practical answer is excluded rather than treated as better concision. Its interrupted history prevents a clean matched full-follow-up inference, so this tie is scoped to available communication.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "The right's second-turn practical answer is not observed because of the controller capture defect; its content and preservation are unknown.",
+              "The right third turn follows an interrupted history, limiting a clean matched inference about the complete chronological follow-up.",
+              "Identifying paths/metadata are redacted in the exported files. Original raw files are separately retained but were not accessed; command usability is assessed using displayed code and captured successful execution.",
+              "Receipt timings do not establish desktop notifications or notification burden. No update-cadence advantage is claimed from absent messages.",
+              "Original incoming native child instructions remain unverified."
+            ]
+          }
+        ],
+        "supplemental_delegation": {
+          "parent_directive_status": "unknown",
+          "information": {
+            "status": "unknown",
+            "issues": [
+              "The observable child and saved reports preserve correct calculations and assessments for all ten pairs, confirmed A+B, conditional C+D, the $15 difference, and the Friday-verification caveat. No substantive report omission is observed.",
+              "The actual parent-to-child directive is absent, so forwarding the full request without added style or length constraints cannot be verified.",
+              "Native invocation/count, descendant activity, and independent parent recomputation evidence beyond the final assertion are absent. Full delegation compliance therefore remains unknown."
+            ],
+            "evidence": [
+              "| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25**",
+              "| C + D | $70 + $90 = **$160** | 16 + 14 = **30** | 8 + 12 = **20**",
+              "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+              "The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D.",
+              "Exactly one native child performed the analysis without delegation.",
+              "I independently checked all ten pairs’ arithmetic and constraints"
+            ]
+          },
+          "ordinary_chat_quality": {
+            "observations": [
+              "The root's numerical recommendation and next verification are clear, with tentative availability kept conditional.",
+              "The initial update explains the requested delegation/check/save process; the later update adds the material confirmed-versus-conditional finding and pending verification rather than generic status alone.",
+              "The detailed child report is protected requested work and remains substantively available in public and saved forms; its depth is not chatter to shorten.",
+              "The lifecycle and independent-check statements concern requested auditability but are not independently substantiated here. No matched comparison supports a communication-effect inference."
+            ],
+            "evidence": [
+              "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+              "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**.",
+              "**Next action:** verify D’s Friday availability before choosing C + D.",
+              "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+            ]
+          },
+          "missing_evidence": [
+            "Actual parent-to-child directive and any added style/length constraints.",
+            "Native child invocation/count and descendant activity.",
+            "Independent parent arithmetic/constraint recomputation beyond the final assertion.",
+            "A completed matched comparison."
+          ]
+        },
+        "limitations": [
+          "Retrospective automated packet-only review, not a measured human-comprehension study. Only the assigned packet/template and expressly permitted validation export were accessed as review inputs. No candidate project reruns, helpers, new model sessions, external services, maps, policies, or prior judgments were accessed.",
+          "Full requests, chronological replies/progress, actual file contents and recorded execution were read in bounded chunks. Exact repeated snapshots and repeated file contents in command outputs were equality-checked and read once; overlapping packet views were not counted as extra chat.",
+          "The right archive subject's practical answer was interrupted by a controller capture defect. It remains unknown, not a model omission or concision benefit. Both initial audits and both third-turn repairs/handoffs are observable and were judged separately; the interruption limits a clean whole-follow-up comparison.",
+          "Both repairs have captured byte/hash equality and preservation checks, exact current inventory objects, executable read-only check evidence, substantial planned-rehearsal guidance, and complete staff messages. Neither a clean-directory rehearsal nor independent recovery was performed or claimed.",
+          "Exported local paths and metadata are privacy-redacted. A placeholder was not treated as the model's original invalid command; recorded successful execution supports the read-only examples. Separately retained raw project files were not accessed.",
+          "Protected restore guides and copy-ready drafts were judged as standalone requested deliverables. Requested depth and useful technical language were not penalized for length.",
+          "Required update presence is distinct from content usefulness. The observed archive updates report material audit/repair results; no benefit is inferred merely from fewer messages, missing responses, or receipt timing. Receipt timing is not desktop notification evidence.",
+          "Batch and queue timings are unavailable. Control judgments concern displayed content and execution honesty, with no cadence or notification-burden claims.",
+          "Supplemental report content is observable, but forwarding, native lifecycle and independent parent recomputation evidence are incomplete. No full delegation-compliance or causal communication-effect conclusion is inferred."
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "w2-continuation-absent-v4",
+      "votes": [
+        {
+          "reviewer": "continuation-review-1",
+          "calibrated": true,
+          "preferred_source": "tie",
+          "left_source": "view-w2-a",
+          "right_source": "view-w2-b",
+          "judgment": {
+            "pair_id": "pair-0b853e05327c",
+            "left_information": {
+              "status": "unknown",
+              "issues": [
+                "The initial audit and observed third-turn work preserve their requested substance: correct original mismatch/missing/matching inventory, repaired equality for all three files, unchanged source/logs/initial audit, substantial repeat-check and planned-rehearsal guide, and a complete standalone staff message. Overall chronological preservation remains unknown solely for the second practical question, which was accepted but has no observed answer because of the controller capture defect. That gap is not a model omission, a preservation pass or intentional concision."
+              ],
+              "evidence": [
+                "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+                "\"source_staged_full_bytes_equal\": true",
+                "\"initial_audit_preserved\": true",
+                "All three documented blocks parsed; read-only check block executed. Restore block was not executed.",
+                "A manifest names the complete expected set and records reference sizes and checksums.",
+                "Independent backup, clean-directory restoration, media-failure recovery, and permission recovery remain unverified. We will keep the old source.",
+                "Final not observed separately."
+              ]
+            },
+            "right_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "No. The success log does not establish a complete copy: one staged file differs and another is missing.",
+                "\"expected_files\": 3,\n    \"present_files\": 3,\n    \"matching_files\": 3,\n    \"mismatched_files\": 0,\n    \"missing_files\": 0",
+                "\"protected_files_unchanged\": 11",
+                "PASS: all three source and staged files match the recorded baseline and each other.",
+                "The repaired manifest replaces neither the original log nor the initial audit.",
+                "This procedure has not been run.",
+                "Independent backup and full restore capability, including recovery after media failure or permission loss, remain unverified."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "All three staged files now match the source in both raw bytes and SHA-256 hashes. The original audit remains unchanged.",
+                "All three staged files now match the source byte for byte and by SHA-256. The source, logs, and initial audit are unchanged.",
+                "Repaired and verified all three files.",
+                "All 3 staged files now match the source byte for byte and by SHA-256."
+              ],
+              "rationale": "On the common observed first and third turns, both lead with a clear decision or current result, locate the requested files, and keep routine byte/hash detail in substantial protected reports. The left names outstanding ownership decisions in its first final; the right gives more immediate file-level reasons. Both third-turn updates report a material change from incomplete staging to verified equality, while their finishing-guide clauses add little beyond that result. Their openings set the authorized scope, and neither pattern establishes a material advantage in filler, repetition, jargon or useful updates. Both standalone staff drafts retain the recovery limits; the shorter one is not rewarded merely for length. The observed-content comparison ties. The right's second answer is clear, but its missing counterpart cannot establish a winner: the controller interruption is unknown and also limits a clean matched full-follow-up inference. The observed third-turn work is assessed independently of that gap.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "The left practical question was accepted but no answer is observed after a controller capture defect. Its empty final is not a model-chosen omission, concise success or preservation pass.",
+              "The differing interrupted history prevents a clean matched inference about the complete follow-up sequence, even though both initial audits and both third-turn repair/handoff outputs are available.",
+              "Identifying local paths are redacted by the exporter. The actual read-only guide checks executed successfully; a privacy placeholder is not treated as the original model's invalid command.",
+              "Receipt times do not establish desktop notifications or measured user attention. Update judgments concern observed content, not silence or word/message counts."
+            ]
+          }
+        },
+        {
+          "reviewer": "continuation-review-2",
+          "calibrated": true,
+          "preferred_source": "tie",
+          "left_source": "view-w2-b",
+          "right_source": "view-w2-a",
+          "judgment": {
+            "pair_id": "pair-299a97d24c2f",
+            "left_information": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "| labels.csv | 60 | 44 | mismatched |",
+                "| layout.svg | 196 | absent | missing |",
+                "| manual.txt | 122 | 122 | matching |",
+                "No. The success log does not establish a complete copy: one staged file differs and another is missing.",
+                "Summary: 3 expected, 3 present, 3 matching, 0 mismatched, 0 missing.",
+                "PASS: all three source and staged files match the recorded baseline and each other.",
+                "\"protected_files_unchanged\": 11",
+                "\"existing_staged_manual_unchanged\": true",
+                "The rehearsal block was not executed; it remains a planned procedure, not evidence of a completed restore.",
+                "We are keeping the old source. This verifies the current local copy.",
+                "Independent backup and full restore capability, including recovery after media failure or permission loss, remain unverified."
+              ]
+            },
+            "right_information": {
+              "status": "unknown",
+              "issues": [
+                "The observed initial audit and third-turn repair/handoff preserve their requirements: actual initial bytes/hashes, corrected claims, full repaired-state inventory, all three matching staged files, preserved source/logs/initial audit, substantial repeat-check and planned-rehearsal instructions, and a complete standalone staff message.",
+                "The practical second-turn question was accepted but no answer was observed because of a controller capture defect. Its response remains unknown; this is not a model omission, a concise success, or a preservation pass for that turn.",
+                "The redacted local-root placeholder in the guide is an exporter substitution, not evidence of an originally invalid command. Captured execution shows the documented read-only block ran successfully and the future restore block was not run."
+              ],
+              "evidence": [
+                "Final not observed separately.",
+                "Summary: 3 expected, 3 present, 3 matching, 0 mismatched, 0 missing.",
+                "\"source_staged_full_bytes_equal\": true",
+                "\"unchanged_existing_files\": 12",
+                "\"initial_audit_preserved\": true",
+                "All three documented blocks parsed; read-only check block executed. Restore block was not executed.",
+                "All three expected files match the retained source byte for byte and by SHA-256.",
+                "Independent backup, clean-directory restoration, media-failure recovery, and permission recovery remain unverified.",
+                "We will keep the old source.",
+                "The next decision is to assign responsibility for an independent backup and a documented full restore rehearsal."
+              ]
+            },
+            "communication": {
+              "preference": "tie",
+              "dimensions": {
+                "clarity": "tie",
+                "relevance": "tie",
+                "filler": "tie",
+                "repetition": "tie",
+                "unnecessary_jargon": "tie",
+                "excessive_updates": "tie"
+              },
+              "evidence": [
+                "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+                "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+                "All three staged files now match the source byte for byte and by SHA-256.",
+                "All three staged files now match the source in both raw bytes and SHA-256 hashes.",
+                "The guide will distinguish this verified local copy from the backup and restore tests that remain undone.",
+                "I’m finishing the repeat-check commands and restore plan, with the remaining recovery gaps made explicit."
+              ],
+              "rationale": "For the observed initial and third turns, both keep detailed technical work in files, report the material audit/repair result, preserve useful recovery warnings, and give complete staff drafts. The left makes the initial file defects concrete; the right explicitly names the next ownership/backup decision. Both third-turn exchanges clearly distinguish verified local copying from untested recovery. Small wording or length differences do not show a meaningful overall advantage, and their material-result updates are more useful than generic activity narration. The right's unobserved practical answer is excluded rather than treated as better concision. Its interrupted history prevents a clean matched full-follow-up inference, so this tie is scoped to available communication.",
+              "confidence": "medium"
+            },
+            "missing_evidence": [
+              "The right's second-turn practical answer is not observed because of the controller capture defect; its content and preservation are unknown.",
+              "The right third turn follows an interrupted history, limiting a clean matched inference about the complete chronological follow-up.",
+              "Identifying paths/metadata are redacted in the exported files. Original raw files are separately retained but were not accessed; command usability is assessed using displayed code and captured successful execution.",
+              "Receipt timings do not establish desktop notifications or notification burden. No update-cadence advantage is claimed from absent messages.",
+              "Original incoming native child instructions remain unverified."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "original_incoming_child_instructions": "unverified"
+}

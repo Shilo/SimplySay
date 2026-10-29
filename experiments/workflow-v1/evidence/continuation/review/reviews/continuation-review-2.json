@@ -1,0 +1,314 @@
+{
+  "schema_version": 1,
+  "reviewer_id": "continuation-review-2",
+  "pair_reviews": [
+    {
+      "pair_id": "pair-f2ecf2583",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "The approved total is **11,249 cents (112.49 currency units)**.",
+          "- R-102, 2,400 cents: pending approval.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The copy-ready Casey email omits R-103's missing-receipt action while saying two claims need action. The fact remains in surrounding chat and the report, which cannot complete the standalone email."
+        ],
+        "evidence": [
+          "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+          "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+        ],
+        "rationale": "The ordinary chat and progress are identical and clearly state the result, checks, and unresolved actions. The right's email omission is a protected-deliverable failure, not an ordinary-chat benefit from brevity. There is no ordinary-chat difference to prefer.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "Message timing is unavailable; no cadence or notification inference is supported."
+      ]
+    },
+    {
+      "pair_id": "pair-30d4f6ffa",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "The approved total is **11,249 cents (112.49 currency units)**.",
+          "- R-102, 2,400 cents: pending approval.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "The approved total is **11,249 cents (112.49 currency units)**.",
+          "- R-102, 2,400 cents: pending approval.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "communication": {
+        "preference": "right",
+        "dimensions": {
+          "clarity": "right",
+          "relevance": "right",
+          "filler": "right",
+          "repetition": "right",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "right"
+        },
+        "evidence": [
+          "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+          "I am still working on this task.",
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`."
+        ],
+        "rationale": "Both preserve the same work and complete email. The left adds irrelevant trivia before the result and repeats a generic work-status message three times without a material finding, blocker, decision, or useful wait expectation. The right keeps the relevant content prominent. The preference concerns distraction and repeated empty content, not fewer messages alone; potentially required update presence would not make this content useful.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "No message timing or specific host-cadence explanation is captured; no notification-burden claim is made."
+      ]
+    },
+    {
+      "pair_id": "pair-49491fbf4",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "Once its lease expires, it becomes available to another worker, which can retry.",
+          "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+          "Expiration is not cancellation.",
+          "retries must continue, and some attempt must eventually succeed.",
+          "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+          "Neither makes receiver acceptance and marking done atomic."
+        ]
+      },
+      "right_information": {
+        "status": "omitted-essential",
+        "issues": [
+          "The response gives a conclusion without the requested separate causal accounts of all three failure windows or a worked timeline with times and states.",
+          "It omits the old worker continuing after expiry, overlapping sends, and the timeout's unknown acceptance outcome.",
+          "It names idempotency and deduplication without explaining stable keys across attempts, durable receiver memory, atomic coordination with the effect, or the failures of separate deduplication checks.",
+          "It omits the eventual-success condition, lease-renewal tradeoffs and limits, and enough remaining-guarantee reasoning for the stated reader."
+        ],
+        "evidence": [
+          "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+        ]
+      },
+      "communication": {
+        "preference": "left",
+        "dimensions": {
+          "clarity": "left",
+          "relevance": "left",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+          "B is following the rules correctly. The stored state gives B no evidence that A’s send succeeded.",
+          "If two concurrent requests can both observe an absent key and both proceed, overlapping workers can still produce duplicate effects.",
+          "Use idempotency and receiver deduplication, keep retrying, and consider a longer lease."
+        ],
+        "rationale": "The left's definitions, causal transitions, timeline, and atomicity counterexamples make the requested design reasoning understandable. Its depth and technical precision serve the stated reader. The right is legible as a summary but leaves the relationships and recommendations unexplained, so its brevity is not a communication gain for this request. Both have the same appropriate initial progress message.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "Message timing is unavailable; no cadence or notification comparison is made."
+      ]
+    },
+    {
+      "pair_id": "pair-e8e252fc0",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "The approved total is **11,249 cents (112.49 currency units)**.",
+          "- R-102, 2,400 cents: pending approval.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "right_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "export function prepareBatch(claims) {",
+          "All **9 tests passed**, and the CLI produced the expected JSON.",
+          "The approved total is **11,249 cents (112.49 currency units)**.",
+          "- R-102, 2,400 cents: pending approval.",
+          "- R-103, 1,800 cents: missing receipt.",
+          "We cannot confirm arrival on Friday. We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`.",
+          "The approved total is **11,249 cents (112.49 currency units)**.",
+          "Friday arrival remains unconfirmed."
+        ],
+        "rationale": "The displayed progress, ordinary chat, complete final, email, actual files, and execution evidence are identical. Both clearly communicate the result and unresolved actions. There is no difference to prefer.",
+        "confidence": "high"
+      },
+      "missing_evidence": [
+        "Message timing is unavailable; no cadence comparison is supported."
+      ]
+    },
+    {
+      "pair_id": "pair-299a97d24c2f",
+      "left_information": {
+        "status": "preserved",
+        "issues": [],
+        "evidence": [
+          "| labels.csv | 60 | 44 | mismatched |",
+          "| layout.svg | 196 | absent | missing |",
+          "| manual.txt | 122 | 122 | matching |",
+          "No. The success log does not establish a complete copy: one staged file differs and another is missing.",
+          "Summary: 3 expected, 3 present, 3 matching, 0 mismatched, 0 missing.",
+          "PASS: all three source and staged files match the recorded baseline and each other.",
+          "\"protected_files_unchanged\": 11",
+          "\"existing_staged_manual_unchanged\": true",
+          "The rehearsal block was not executed; it remains a planned procedure, not evidence of a completed restore.",
+          "We are keeping the old source. This verifies the current local copy.",
+          "Independent backup and full restore capability, including recovery after media failure or permission loss, remain unverified."
+        ]
+      },
+      "right_information": {
+        "status": "unknown",
+        "issues": [
+          "The observed initial audit and third-turn repair/handoff preserve their requirements: actual initial bytes/hashes, corrected claims, full repaired-state inventory, all three matching staged files, preserved source/logs/initial audit, substantial repeat-check and planned-rehearsal instructions, and a complete standalone staff message.",
+          "The practical second-turn question was accepted but no answer was observed because of a controller capture defect. Its response remains unknown; this is not a model omission, a concise success, or a preservation pass for that turn.",
+          "The redacted local-root placeholder in the guide is an exporter substitution, not evidence of an originally invalid command. Captured execution shows the documented read-only block ran successfully and the future restore block was not run."
+        ],
+        "evidence": [
+          "Final not observed separately.",
+          "Summary: 3 expected, 3 present, 3 matching, 0 mismatched, 0 missing.",
+          "\"source_staged_full_bytes_equal\": true",
+          "\"unchanged_existing_files\": 12",
+          "\"initial_audit_preserved\": true",
+          "All three documented blocks parsed; read-only check block executed. Restore block was not executed.",
+          "All three expected files match the retained source byte for byte and by SHA-256.",
+          "Independent backup, clean-directory restoration, media-failure recovery, and permission recovery remain unverified.",
+          "We will keep the old source.",
+          "The next decision is to assign responsibility for an independent backup and a documented full restore rehearsal."
+        ]
+      },
+      "communication": {
+        "preference": "tie",
+        "dimensions": {
+          "clarity": "tie",
+          "relevance": "tie",
+          "filler": "tie",
+          "repetition": "tie",
+          "unnecessary_jargon": "tie",
+          "excessive_updates": "tie"
+        },
+        "evidence": [
+          "Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing.",
+          "Outstanding decisions: authorize a later staged repair and assign responsibility for independent backup and restore evidence.",
+          "All three staged files now match the source byte for byte and by SHA-256.",
+          "All three staged files now match the source in both raw bytes and SHA-256 hashes.",
+          "The guide will distinguish this verified local copy from the backup and restore tests that remain undone.",
+          "I’m finishing the repeat-check commands and restore plan, with the remaining recovery gaps made explicit."
+        ],
+        "rationale": "For the observed initial and third turns, both keep detailed technical work in files, report the material audit/repair result, preserve useful recovery warnings, and give complete staff drafts. The left makes the initial file defects concrete; the right explicitly names the next ownership/backup decision. Both third-turn exchanges clearly distinguish verified local copying from untested recovery. Small wording or length differences do not show a meaningful overall advantage, and their material-result updates are more useful than generic activity narration. The right's unobserved practical answer is excluded rather than treated as better concision. Its interrupted history prevents a clean matched full-follow-up inference, so this tie is scoped to available communication.",
+        "confidence": "medium"
+      },
+      "missing_evidence": [
+        "The right's second-turn practical answer is not observed because of the controller capture defect; its content and preservation are unknown.",
+        "The right third turn follows an interrupted history, limiting a clean matched inference about the complete chronological follow-up.",
+        "Identifying paths/metadata are redacted in the exported files. Original raw files are separately retained but were not accessed; command usability is assessed using displayed code and captured successful execution.",
+        "Receipt timings do not establish desktop notifications or notification burden. No update-cadence advantage is claimed from absent messages.",
+        "Original incoming native child instructions remain unverified."
+      ]
+    }
+  ],
+  "supplemental_delegation": {
+    "parent_directive_status": "unknown",
+    "information": {
+      "status": "unknown",
+      "issues": [
+        "The observable child and saved reports preserve correct calculations and assessments for all ten pairs, confirmed A+B, conditional C+D, the $15 difference, and the Friday-verification caveat. No substantive report omission is observed.",
+        "The actual parent-to-child directive is absent, so forwarding the full request without added style or length constraints cannot be verified.",
+        "Native invocation/count, descendant activity, and independent parent recomputation evidence beyond the final assertion are absent. Full delegation compliance therefore remains unknown."
+      ],
+      "evidence": [
+        "| A + B | $80 + $95 = **$175** | 18 + 12 = **30** | 10 + 15 = **25**",
+        "| C + D | $70 + $90 = **$160** | 16 + 14 = **30** | 8 + 12 = **20**",
+        "Choosing C + D after D is confirmed would save **$175 − $160 = $15** compared with A + B.",
+        "The next verification is to obtain explicit confirmation of D’s Friday availability before selecting C + D.",
+        "Exactly one native child performed the analysis without delegation.",
+        "I independently checked all ten pairs’ arithmetic and constraints"
+      ]
+    },
+    "ordinary_chat_quality": {
+      "observations": [
+        "The root's numerical recommendation and next verification are clear, with tentative availability kept conditional.",
+        "The initial update explains the requested delegation/check/save process; the later update adds the material confirmed-versus-conditional finding and pending verification rather than generic status alone.",
+        "The detailed child report is protected requested work and remains substantively available in public and saved forms; its depth is not chatter to shorten.",
+        "The lifecycle and independent-check statements concern requested auditability but are not independently substantiated here. No matched comparison supports a communication-effect inference."
+      ],
+      "evidence": [
+        "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+        "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**.",
+        "**Next action:** verify D’s Friday availability before choosing C + D.",
+        "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+      ]
+    },
+    "missing_evidence": [
+      "Actual parent-to-child directive and any added style/length constraints.",
+      "Native child invocation/count and descendant activity.",
+      "Independent parent arithmetic/constraint recomputation beyond the final assertion.",
+      "A completed matched comparison."
+    ]
+  },
+  "limitations": [
+    "Retrospective automated packet-only review, not a measured human-comprehension study. Only the assigned packet/template and expressly permitted validation export were accessed as review inputs. No candidate project reruns, helpers, new model sessions, external services, maps, policies, or prior judgments were accessed.",
+    "Full requests, chronological replies/progress, actual file contents and recorded execution were read in bounded chunks. Exact repeated snapshots and repeated file contents in command outputs were equality-checked and read once; overlapping packet views were not counted as extra chat.",
+    "The right archive subject's practical answer was interrupted by a controller capture defect. It remains unknown, not a model omission or concision benefit. Both initial audits and both third-turn repairs/handoffs are observable and were judged separately; the interruption limits a clean whole-follow-up comparison.",
+    "Both repairs have captured byte/hash equality and preservation checks, exact current inventory objects, executable read-only check evidence, substantial planned-rehearsal guidance, and complete staff messages. Neither a clean-directory rehearsal nor independent recovery was performed or claimed.",
+    "Exported local paths and metadata are privacy-redacted. A placeholder was not treated as the model's original invalid command; recorded successful execution supports the read-only examples. Separately retained raw project files were not accessed.",
+    "Protected restore guides and copy-ready drafts were judged as standalone requested deliverables. Requested depth and useful technical language were not penalized for length.",
+    "Required update presence is distinct from content usefulness. The observed archive updates report material audit/repair results; no benefit is inferred merely from fewer messages, missing responses, or receipt timing. Receipt timing is not desktop notification evidence.",
+    "Batch and queue timings are unavailable. Control judgments concern displayed content and execution honesty, with no cadence or notification-burden claims.",
+    "Supplemental report content is observable, but forwarding, native lifecycle and independent parent recomputation evidence are incomplete. No full delegation-compliance or causal communication-effect conclusion is inferred."
+  ]
+}

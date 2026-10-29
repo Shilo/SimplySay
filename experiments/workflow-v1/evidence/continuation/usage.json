@@ -1,0 +1,58 @@
+{
+  "approval": "Same six-turn continuation; repeated approvals did not add turns",
+  "conversation_cap": 32,
+  "task_turn_cap": 108,
+  "counted_conversations": 21,
+  "counted_task_starts": 70,
+  "continuation": {
+    "authorization": "owner-approved-2026-10-29-six-turns",
+    "record": "docs/workflow-continuation-authorization.md",
+    "used_task_starts": 6,
+    "max_task_starts": 6,
+    "by_chat": {
+      "e18": 2,
+      "e20": 2,
+      "e11": 1,
+      "e12": 1
+    },
+    "repeated_approvals_do_not_reset": true,
+    "only_existing_chats": true,
+    "status": "finished-with-retained-capture-gap",
+    "approved_tasks_exhausted": true
+  },
+  "affected_chats": [
+    {
+      "id": "e11",
+      "turns": 4,
+      "max_turns": 4,
+      "status": "continuation-review-completed"
+    },
+    {
+      "id": "e12",
+      "turns": 4,
+      "max_turns": 4,
+      "status": "continuation-review-completed"
+    },
+    {
+      "id": "e18",
+      "turns": 4,
+      "max_turns": 4,
+      "status": "continuation-completed"
+    },
+    {
+      "id": "e20",
+      "turns": 4,
+      "max_turns": 4,
+      "status": "continuation-completed"
+    }
+  ],
+  "new_conversations_in_continuation": 0,
+  "subject_attempts": 4,
+  "observed_completed_subject_replies": 3,
+  "capture_interrupted_subject_attempts": 1,
+  "reviewer_followups": 2,
+  "remaining_conversation_slots": 11,
+  "no_automatic_next_round": true,
+  "production": "hold",
+  "publication": "hold"
+}

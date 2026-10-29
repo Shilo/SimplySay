@@ -1,0 +1,7 @@
+{
+  "raw_artifacts": "Original native files are retained unmodified in private disposable capture directories.",
+  "binding_entries": "Source and target hashes are verified per edge; some sources are assessment views and are explicitly identified by their source path.",
+  "raw_equal_file_entries": "Counts byte-equal source/target edges, including view copies; not a count of unique unredacted native artifacts.",
+  "path_only_redaction": "Two edges redact the same one guide workspace path. The original raw guide hash is retained. No substantive text, code logic or requested detail was rewritten.",
+  "assessment_views": "Not model conversations; do not add them to session accounting."
+}

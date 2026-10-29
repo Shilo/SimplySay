@@ -1,0 +1,46 @@
+{
+  "label": "Automated assessments, not measured human comprehension",
+  "counted_conversations": 21,
+  "conversation_cap": 32,
+  "counted_task_starts": 70,
+  "task_turn_cap": 108,
+  "approved_continuation_attempts_used": 6,
+  "new_conversations_in_continuation": 0,
+  "observed_workflow_replies": 3,
+  "capture_interrupted_workflow_attempts": 1,
+  "reviewer_followups": 2,
+  "valid_review_responses": 2,
+  "controls_passed": 8,
+  "controls_reused_not_novel": true,
+  "opposite_sides_and_order": true,
+  "assessment_replay": "byte-identical",
+  "review_format_conversions": 0,
+  "continuation_votes": [
+    {
+      "key": "w2-continuation-absent-v4",
+      "votes": [
+        "tie",
+        "tie"
+      ]
+    }
+  ],
+  "bound_entries": 330,
+  "raw_equal_file_entries": 224,
+  "path_only_redacted_artifact_entries": 2,
+  "all_bound_sources_and_projections_match": true,
+  "previous_subject_exports_unchanged": 199,
+  "historical_files_unchanged": 287,
+  "auth_profiles_checked": 17,
+  "copied_signins_retained": 0,
+  "holdout_hashes_unchanged": true,
+  "holdout_content_not_opened": true,
+  "unknown_absent_practical_reply": true,
+  "original_child_instructions": "unverified",
+  "provider_limit_bypass": false,
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold",
+  "new_model_sessions_in_verifier": 0,
+  "privacy_scope": "Existing targeted scanner; not full release/history/license clearance"
+}

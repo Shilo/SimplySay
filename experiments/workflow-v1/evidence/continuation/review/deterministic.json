@@ -1,0 +1,798 @@
+{
+  "view-w2-a": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "fail",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "unverified",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "fail",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "w2-archive-copy-audit",
+      "deterministic_status": "unverified",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 11117,
+          "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_copy_audit",
+          "status": "observed",
+          "commands_count": 6,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "capture_completeness",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "issues": [
+            "Final not observed separately."
+          ]
+        },
+        {
+          "id": "native_turn_completion",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "reason": "Native turn did not complete cleanly; retained artifacts are still checked separately."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 11117,
+          "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 11117,
+          "sha256": "4ef55096e517d622f994d08ee9415cb7f68448e47e7ab3978a0972db791a9f56"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "file:staged-pack/labels.csv",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 60,
+          "sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "exact_copy:staged-pack/labels.csv",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "file:staged-pack/layout.svg",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 196,
+          "sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "exact_copy:staged-pack/layout.svg",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "file:staged-pack/manual.txt",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 122,
+          "sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "exact_copy:staged-pack/manual.txt",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "file:handoff/verification.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 1074,
+          "sha256": "9202dc2d1166b8b0b50a53eb58703da7ee2df068721f0fb719574f06c6ef435e"
+        },
+        {
+          "id": "json:handoff/verification.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "file:handoff/restore-guide.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 15999,
+          "sha256": "0e4d3410c683fd9dd49a19fd4803f8075eacf564aac26f05b83053aec3980f6e"
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_repair_handoff",
+          "status": "observed",
+          "commands_count": 6,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  },
+  "view-w2-b": {
+    "capture_checks": [
+      {
+        "name": "complete_observed_conversation",
+        "status": "pass",
+        "note": "Missing/failed captures are not passes"
+      },
+      {
+        "name": "t1_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t1_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t2_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t2_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "t3_capture",
+        "status": "pass",
+        "note": "Actual final/event/timestamp/file evidence"
+      },
+      {
+        "name": "t3_same_id",
+        "status": "pass",
+        "note": "Observed continuation, not fallback"
+      },
+      {
+        "name": "auth_copy_removed",
+        "status": "pass",
+        "note": "No copied sign-in retained"
+      },
+      {
+        "name": "correct_loading",
+        "status": "pass",
+        "note": "One exact startup for enabled, none in controls; not adherence proof"
+      }
+    ],
+    "case_checks": {
+      "schema_version": 1,
+      "case_id": "w2-archive-copy-audit",
+      "deterministic_status": "pass",
+      "semantic_status": "requires_blinded_review",
+      "checks": [
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 8554,
+          "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t1_copy_audit",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t1_copy_audit",
+          "status": "observed",
+          "commands_count": 9,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 8554,
+          "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t2_practical_decision",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t2_practical_decision",
+          "status": "unverified",
+          "commands_count": 0,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        },
+        {
+          "id": "file:audit/findings.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 8554,
+          "sha256": "82c2b1776a80cb9279b986100807a0218d2bba6b18e22fd777708eb70bfd5140"
+        },
+        {
+          "id": "file:audit/inventory.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 1014,
+          "sha256": "553f3b6ac645db1ba06d7df39c30e019f1e0d2758bba60e26d67a2461890d2a4"
+        },
+        {
+          "id": "json:audit/inventory.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "file:staged-pack/labels.csv",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 60,
+          "sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "exact_copy:staged-pack/labels.csv",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "file:staged-pack/layout.svg",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 196,
+          "sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "exact_copy:staged-pack/layout.svg",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "file:staged-pack/manual.txt",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 122,
+          "sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "exact_copy:staged-pack/manual.txt",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "file:handoff/verification.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 1074,
+          "sha256": "9202dc2d1166b8b0b50a53eb58703da7ee2df068721f0fb719574f06c6ef435e"
+        },
+        {
+          "id": "json:handoff/verification.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "problems": []
+        },
+        {
+          "id": "file:handoff/restore-guide.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "bytes": 18623,
+          "sha256": "944f49d7f6f25ded522863551995629c60d952177b65a785f7fa2603e21428e0"
+        },
+        {
+          "id": "source_bytes:README.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d",
+          "actual_sha256": "ab2e2aa009836bba164a8003538571a40990cb93312125fda92ecbc5f071be9d"
+        },
+        {
+          "id": "source_bytes:archive-plan.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990",
+          "actual_sha256": "787faac251ba594ef9a5fa1eac5980cdebb9c5c2666215e28fbe45c3f6701990"
+        },
+        {
+          "id": "source_bytes:evidence/copy-log.json",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801",
+          "actual_sha256": "e150a7088e29df9810689012a296b75d3edcc65be2a8e5e6da37429694538801"
+        },
+        {
+          "id": "source_bytes:evidence/restore-note.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797",
+          "actual_sha256": "152fd669ba0db738092767a958391964c6fabae95473a2a5472dbce89980f797"
+        },
+        {
+          "id": "source_bytes:draft-status.md",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43",
+          "actual_sha256": "3b2b75ae4790d52860acb9c3024754bc25e7952f4d3769b34b62c448f3548c43"
+        },
+        {
+          "id": "source_bytes:source-pack/manual.txt",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337",
+          "actual_sha256": "6dddb3b441ece7f14da54dc4c7f5d98b7ee70980ffcf64a2954c32f9d7854337"
+        },
+        {
+          "id": "source_bytes:source-pack/labels.csv",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26",
+          "actual_sha256": "61ded2b9f447f67160f0bf3489af7649e2a22006e08ad70d0750f142eb671c26"
+        },
+        {
+          "id": "source_bytes:source-pack/layout.svg",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a",
+          "actual_sha256": "b9aa5c06bcf8a05976145dae86471ea83d586224aba804afc189c9754460148a"
+        },
+        {
+          "id": "source_bytes:tools/inspect-pack.cjs",
+          "turn_id": "t3_repair_handoff",
+          "status": "pass",
+          "expected_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b",
+          "actual_sha256": "3d2b598950cafbd079a9e66c52cef3a34eb511122352d2cfc255fff932db5c9b"
+        },
+        {
+          "id": "subject_execution_evidence",
+          "turn_id": "t3_repair_handoff",
+          "status": "observed",
+          "commands_count": 10,
+          "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+        }
+      ]
+    },
+    "semantic_essentials": "Independent review required; no lexical pass substitute",
+    "original_incoming_child_instructions": "unverified"
+  }
+}
