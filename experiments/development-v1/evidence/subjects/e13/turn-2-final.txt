@@ -1,0 +1,5 @@
+Staff will see one row per contact ID, with the newest name, email, and timestamp kept together. A changed email won’t cause a duplicate, and two people sharing an email will both appear.
+
+The CSV columns and ordering rules stay the same, so existing workflows should continue to work. In the supplied samples, Morgan now appears once as “Morgan New,” alongside Ari and Jo.
+
+No decisions are needed before using it under the existing contract. All seven regression tests pass. This remains a local file export; it doesn’t update the staff directory.

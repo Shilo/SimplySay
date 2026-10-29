@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-fdccdec8305b2e8e"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Capacity enforcement means registration accepts the first **40 places**, then rejects further registrations when full. That check passed.\n\nDuplicate-submission protection means repeated clicks with the **same submission token** return the existing registration instead of creating another. That check also passed. Different people sharing an email address can still register separately.\n\nNeither blocks opening. With the confirmation time fixed and tested, the notes show no remaining launch blocker. Calendar-invite delivery is still unverified, so don’t assume invites work."}}
+{"type":"turn.completed","usage":{"input_tokens":31977,"cached_input_tokens":20864,"cache_write_input_tokens":0,"output_tokens":266,"reasoning_output_tokens":0}}

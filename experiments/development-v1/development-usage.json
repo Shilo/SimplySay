@@ -1,0 +1,25 @@
+{
+  "interpretation": "Account-wide quota includes controller and collaborator activity; not an isolated monetary measurement. CLI per-turn reported snapshots may be cumulative; never sum them blindly.",
+  "native_subject_conversations": 12,
+  "native_subject_task_turns": 40,
+  "paid_api_or_service_introduced": false,
+  "before_first_native_subject": {
+    "primary": {
+      "usedPercent": 79,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "after_last_native_subject": {
+    "primary": {
+      "usedPercent": 83,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "later_review_and_documentation_usage": "Not independently metered; these snapshots are not end-of-phase billing evidence."
+}

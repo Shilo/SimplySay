@@ -1,0 +1,90 @@
+{
+  "source": "Existing disposable generic model-template metadata only; no identity/account/auth content exported.",
+  "not_actual_request_capture": true,
+  "rows": [
+    {
+      "id": "e03",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e04",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e05",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e06",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e07",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e08",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e09",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e10",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e13",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e14",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e15",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    },
+    {
+      "id": "e16",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "auth_copy_present": false
+    }
+  ]
+}

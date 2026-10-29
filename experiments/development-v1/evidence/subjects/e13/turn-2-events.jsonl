@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-87b8b6b0ffb1f426"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Staff will see one row per contact ID, with the newest name, email, and timestamp kept together. A changed email won’t cause a duplicate, and two people sharing an email will both appear.\n\nThe CSV columns and ordering rules stay the same, so existing workflows should continue to work. In the supplied samples, Morgan now appears once as “Morgan New,” alongside Ari and Jo.\n\nNo decisions are needed before using it under the existing contract. All seven regression tests pass. This remains a local file export; it doesn’t update the staff directory."}}
+{"type":"turn.completed","usage":{"input_tokens":62800,"cached_input_tokens":49536,"cache_write_input_tokens":0,"output_tokens":2041,"reasoning_output_tokens":0}}

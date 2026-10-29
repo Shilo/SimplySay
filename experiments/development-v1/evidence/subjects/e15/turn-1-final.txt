@@ -1,0 +1,7 @@
+Not yet. First, correct the confirmation text from **Thursday at 10:00** to **Saturday at 10:00**, then test it before opening registration.
+
+Capacity checks passed: the first 40 places are accepted and the next registration is rejected. Repeat clicks with the same submission token also correctly return the existing registration.
+
+Calendar-invite delivery remains unchecked. Verify it before relying on invites; volunteers can use the confirmed registration list for check-in. The workshop is in **room Cedar**.
+
+No live registration service is connected or changed by this local exercise.

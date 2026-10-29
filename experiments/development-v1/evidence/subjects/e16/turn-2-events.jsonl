@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-7b5266370f5d27e2"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Staff will see each contact once across teams, with the newest recorded name and details—even if their email changed. Different people who share an email will remain separate. The CSV columns and format stay the same.\n\nThere’s nothing you need to decide before using it. The contract already specifies the behavior, including keeping the first row when timestamps tie. All seven regression tests pass."}}
+{"type":"turn.completed","usage":{"input_tokens":112579,"cached_input_tokens":84352,"cache_write_input_tokens":0,"output_tokens":5418,"reasoning_output_tokens":68}}

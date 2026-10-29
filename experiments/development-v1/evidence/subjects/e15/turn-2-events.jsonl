@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-a61e8ca0b39719bd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Neither blocks opening: both checks passed.\n\n- **Capacity enforcement:** The workshop has 40 places. Registration accepts the first 40 and rejects the next registration once full.\n- **Duplicate submissions:** Repeated clicks using the same submission token return the existing registration instead of creating another. Shared email addresses alone don’t count as duplicates, because different people may share one.\n\nWith the confirmation time fixed and tested, no recorded launch blocker remains. Calendar-invite delivery is still unchecked, so don’t assume attendees receive working invites."}}
+{"type":"turn.completed","usage":{"input_tokens":32011,"cached_input_tokens":20864,"cache_write_input_tokens":0,"output_tokens":283,"reasoning_output_tokens":0}}

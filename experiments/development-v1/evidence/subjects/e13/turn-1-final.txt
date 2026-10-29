@@ -1,0 +1,5 @@
+Fixed the export to merge by exact `contact_id` and compare actual timestamp instants. Equal timestamps retain the first row; output order and CSV format remain unchanged.
+
+Added seven passing regression tests covering duplicates, shared emails, timestamp offsets, ties, input immutability, CSV escaping, and CLI output. Updated `docs/maintainer.md`.
+
+Verified with `node --test test/export.test.cjs`. Fixtures and contract were unchanged.

@@ -1,0 +1,3 @@
+Fixed the export to merge by exact contact ID and choose the newest timestamp instant, preserving first-encounter order and ties.
+
+Added seven passing regression tests and updated docs/maintainer.md. Verified the sample CLI output. CSV format, supplied fixtures, and EXPORT-CONTRACT.md remain unchanged; only built-in Node modules are used.

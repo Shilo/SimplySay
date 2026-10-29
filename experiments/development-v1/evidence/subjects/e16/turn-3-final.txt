@@ -1,0 +1,26 @@
+The identity key is the exact `contact_id`. Email plays no part in deciding whether two rows belong to the same person.
+
+For example, the supplied fixtures contain Morgan (`c-101`) and Ari (`c-202`) with the same email. They stay separate because their IDs differ. Morgan’s later row still has ID `c-101`, so it replaces Morgan’s earlier row even though the email changed.
+
+For repeated IDs, the merge:
+
+1. Compares `updated_at` as actual instants using `Date.parse`, so timezone offsets are handled correctly.
+2. Keeps the **complete row** with the newest timestamp—name, email and timestamp together.
+3. Keeps the first encountered row if the timestamps represent the same instant.
+4. Leaves the contact at its original position in the output. Replacing its details doesn’t move it.
+
+“First encountered” means file argument order, then row order within each file. IDs are compared exactly: `a` and `A` are separate IDs.
+
+The seven tests in `test/export.test.cjs` cover:
+
+| Test | What it protects |
+|---|---|
+| Supplied fixtures | Shared emails stay separate; changed email still merges by ID; the complete winning row and output order are correct; files load in argument order. |
+| Timestamp comparisons | Offsets and fractional seconds select the newest instant, regardless of which row arrives first. |
+| Equal timestamps | Equivalent timestamp spellings keep the first row, within and across teams. |
+| Exact IDs and input preservation | Case-distinct IDs stay separate; later replacements retain position; older rows cannot overwrite newer ones; frozen inputs remain unchanged. |
+| Empty teams | Empty inputs produce only the CSV header and final newline. |
+| CSV escaping | Column order and escaping of commas, quotes, carriage returns and newlines remain correct. |
+| CLI output | Running the real CLI produces exactly the expected sample CSV, exits successfully and writes no diagnostics. |
+
+All seven pass. Malformed-row validation remains outside this repair, as specified by the contract.

@@ -1,0 +1,26 @@
+{
+  "turn": 3,
+  "expected_thread": "thread-a61e8ca0b39719bd",
+  "observed_thread": "thread-a61e8ca0b39719bd",
+  "exit_code": 0,
+  "error": null,
+  "timed_out": false,
+  "usage": {
+    "input_tokens": 43053,
+    "cached_input_tokens": 31744,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 342,
+    "reasoning_output_tokens": 0
+  },
+  "started_utc": "2026-10-29T08:36:29.947Z",
+  "started_ids": [
+    "thread-a61e8ca0b39719bd"
+  ],
+  "ended_utc": "2026-10-29T08:36:35.418Z",
+  "unexpected_threads": [],
+  "thread": "thread-a61e8ca0b39719bd",
+  "continuation_observed": true,
+  "failed": false,
+  "snapshot_issues": [],
+  "case_turn_id": "t3_volunteer_message"
+}
