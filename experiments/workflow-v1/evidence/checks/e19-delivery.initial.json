@@ -1,0 +1,43 @@
+{
+  "subject": "e19",
+  "observation": "during active trial; supported local records, read-only",
+  "policy_sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "developer_records": [
+    {
+      "line": 4,
+      "role": "developer",
+      "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "characters": 21546,
+      "exact_authored_policy": false
+    },
+    {
+      "line": 5,
+      "role": "developer",
+      "sha256": "2bfa60ab84a7faba1720f1b6292d33abfd7790ea6456f03ae6effadaae7e4e40",
+      "characters": 3619,
+      "exact_authored_policy": false
+    },
+    {
+      "line": 10,
+      "role": "developer",
+      "sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+      "characters": 837,
+      "exact_authored_policy": true
+    }
+  ],
+  "user_records": [
+    {
+      "line": 6,
+      "sha256": "854a3952d1953970518ef62f52672a55a9fd09372eceed99189e1ee9c77e1025",
+      "contains_identical_audience_preamble": false
+    },
+    {
+      "line": 11,
+      "sha256": "dc3a2c2c3fd7d767f922a1511dd810e8094a49ef0c96722c7e16522e79620ad8",
+      "contains_identical_audience_preamble": true
+    }
+  ],
+  "other_content_excluded": true,
+  "outgoing_request": "unverified",
+  "first_scan": "Header-order-dependent filter selected no records; not a missing-policy finding"
+}
