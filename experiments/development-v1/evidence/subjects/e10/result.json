@@ -1,0 +1,124 @@
+{
+  "id": "e10",
+  "condition": "minimal",
+  "case_id": "d2-contact-export-repair",
+  "policy": null,
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": null,
+      "observed_thread": "thread-7b4a8b6d2c1afb19",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 86836,
+        "cached_input_tokens": 62720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2717,
+        "reasoning_output_tokens": 84
+      },
+      "started_utc": "2026-10-29T07:59:00.052Z",
+      "started_ids": [
+        "thread-7b4a8b6d2c1afb19"
+      ],
+      "ended_utc": "2026-10-29T08:00:18.676Z",
+      "unexpected_threads": [],
+      "thread": "thread-7b4a8b6d2c1afb19",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t1_repair"
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-7b4a8b6d2c1afb19",
+      "observed_thread": "thread-7b4a8b6d2c1afb19",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 102235,
+        "cached_input_tokens": 77952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2836,
+        "reasoning_output_tokens": 84
+      },
+      "started_utc": "2026-10-29T08:00:18.689Z",
+      "started_ids": [
+        "thread-7b4a8b6d2c1afb19"
+      ],
+      "ended_utc": "2026-10-29T08:00:29.468Z",
+      "unexpected_threads": [],
+      "thread": "thread-7b4a8b6d2c1afb19",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t2_staff_effect"
+    },
+    {
+      "turn": 3,
+      "expected_thread": "thread-7b4a8b6d2c1afb19",
+      "observed_thread": "thread-7b4a8b6d2c1afb19",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 117801,
+        "cached_input_tokens": 93312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3224,
+        "reasoning_output_tokens": 84
+      },
+      "started_utc": "2026-10-29T08:00:29.500Z",
+      "started_ids": [
+        "thread-7b4a8b6d2c1afb19"
+      ],
+      "ended_utc": "2026-10-29T08:00:48.959Z",
+      "unexpected_threads": [],
+      "thread": "thread-7b4a8b6d2c1afb19",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t3_maintainer_reasoning"
+    },
+    {
+      "turn": 4,
+      "expected_thread": "thread-7b4a8b6d2c1afb19",
+      "observed_thread": "thread-7b4a8b6d2c1afb19",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 168389,
+        "cached_input_tokens": 135552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4347,
+        "reasoning_output_tokens": 84
+      },
+      "started_utc": "2026-10-29T08:00:48.986Z",
+      "started_ids": [
+        "thread-7b4a8b6d2c1afb19"
+      ],
+      "ended_utc": "2026-10-29T08:01:27.792Z",
+      "unexpected_threads": [],
+      "thread": "thread-7b4a8b6d2c1afb19",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t4_handoff"
+    }
+  ],
+  "failed": false,
+  "loading_events": [],
+  "quota_after": {
+    "primary": {
+      "usedPercent": 80,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "auth_copy_removed": true
+}

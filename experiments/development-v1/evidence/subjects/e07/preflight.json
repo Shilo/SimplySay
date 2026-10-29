@@ -1,0 +1,34 @@
+{
+  "version": "codex-cli 0.163.0",
+  "condition": "absent",
+  "subscription_only": true,
+  "policy_sha256": null,
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "config_hash": "187c93dbe3e79a49f5798d74e8ec7825ce54b60684e2a79de5aeb15e6b74b221",
+  "effective_isolation": {
+    "apps": false,
+    "multi_agent": false,
+    "agents": false,
+    "default_plugins": false
+  },
+  "quota_before": {
+    "primary": {
+      "usedPercent": 80,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "installed_roots_verified": 0,
+  "installed_package": null
+}

@@ -1,0 +1,1 @@
+Two different contacts can share an email address. Walk me through why they stay separate, and how we choose the row when one contact really is duplicated. I maintain this now and need to understand the test coverage.

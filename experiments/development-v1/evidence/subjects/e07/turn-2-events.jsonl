@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-7c5114dd86262018"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Staff will see one row per contact, even when that person appears across teams or changes email. The newest record supplies the name and other details. Different people who share an email will each keep their own row.\n\nThe CSV columns and format stay the same. The supplied example now exports Morgan New, Ari Chen, and Jo Rivera correctly.\n\nNo decision is needed before using it under the existing contract. It relies on stable contact IDs and accurate update timestamps; when timestamps tie, the first record encountered wins. All nine regression tests pass."}}
+{"type":"turn.completed","usage":{"input_tokens":62124,"cached_input_tokens":53632,"cache_write_input_tokens":0,"output_tokens":2237,"reasoning_output_tokens":10}}

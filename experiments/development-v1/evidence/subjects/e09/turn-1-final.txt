@@ -1,0 +1,5 @@
+Fixed the export to merge by exact `contact_id` and choose the newest timestamp instant, preserving first-seen order and first-row ties.
+
+Added regression tests and updated `docs/maintainer.md`. All 7 tests pass; the sample CLI export produces the expected three contacts, including Morgan New.
+
+CSV format, supplied fixtures, and contract remain unchanged. Only built-in Node modules are used.

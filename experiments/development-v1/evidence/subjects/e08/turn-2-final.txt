@@ -1,0 +1,5 @@
+Staff will see one row per contact ID, even when someone’s email changes across teams. Different people sharing an email will remain separate. The newest record supplies the name and other details, including when timestamps use different timezone offsets.
+
+The CSV columns and format stay the same. In the supplied samples, Morgan New replaces Morgan Old, while Ari Chen remains a separate contact.
+
+No decisions are needed before using this fix under the existing contract. All eight regression tests pass, including the CLI export check.

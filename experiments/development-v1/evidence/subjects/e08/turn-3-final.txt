@@ -1,0 +1,35 @@
+The merge uses **`contact_id` as identity**. Email plays no part in deciding whether rows belong to the same person.
+
+For example, the supplied fixtures contain:
+
+| ID | Name | Email |
+|---|---|---|
+| `c-101` | Morgan Old | `shared@example.invalid` |
+| `c-202` | Ari Chen | `shared@example.invalid` |
+| `c-101` | Morgan New | `morgan@example.invalid` |
+
+Morgan and Ari stay separate because their IDs differ. Morgan’s two rows compete because they have the same ID, even though their emails differ.
+
+For each ID, the merge:
+
+1. Keeps the first row encountered.
+2. Compares later rows using `Date.parse(updated_at)`, which accounts for timezone offsets.
+3. Replaces the stored row only when the later row represents a strictly newer instant.
+4. Keeps the first row on a tie.
+
+The **complete winning row** is used—fields from different versions aren’t mixed. Replacing a row also preserves that ID’s original position in the export. Inputs aren’t mutated.
+
+The eight regression tests cover:
+
+| Test area | What it verifies |
+|---|---|
+| Supplied fixtures | Shared emails remain separate; Morgan’s changed email doesn’t create a duplicate; output follows first-seen ID order. |
+| Timezone offsets | The newest actual instant wins even when text sorting would choose incorrectly, in either encounter order. Exact winning values are preserved. |
+| Equal instants | The first row wins within and across teams, including differently written timestamps representing the same instant. |
+| Fractional seconds | Milliseconds affect the winner; repeated IDs within one team merge correctly. |
+| IDs, order, mutation | IDs aren’t trimmed or case-normalized; replacement preserves position; frozen inputs remain unchanged. |
+| Empty input | Empty exports contain only the header and final LF. |
+| CSV escaping | Column order, commas, quotes, carriage returns, and newlines retain the established format. |
+| Loader and CLI | File argument order is preserved, and the CLI prints exactly the expected fixture CSV with no stderr output. |
+
+Run them with `node --test test/export.test.cjs`. All eight passed. Malformed-row validation remains outside this repair, as specified by the contract.

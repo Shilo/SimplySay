@@ -1,0 +1,29 @@
+The merge uses **`contact_id` as the identity key**. Email is just a value on the row; it never determines whether two rows belong to the same person.
+
+For example, the supplied fixtures contain:
+
+- `c-101`, Morgan Old, with `shared@example.invalid`
+- `c-202`, Ari Chen, with `shared@example.invalid`
+
+Those IDs differ, so both contacts stay in the export. A later row for `c-101` contains Morgan New and a different email. That row replaces Morgan’s earlier row without affecting Ari.
+
+For repeated rows with the same ID, the rules are:
+
+1. Parse `updated_at` and compare the actual timestamp instants, accounting for timezone offsets.
+2. Keep the **complete newest row**—we don’t combine fields from different versions.
+3. If the instants are equal, keep the first row encountered.
+4. Keep each contact in the position where its ID first appeared, even if a later row wins.
+
+The regression tests in `test/export.test.cjs` cover:
+
+| Coverage | What it protects |
+|---|---|
+| Shared emails and changed emails | Different IDs remain separate; one ID merges even after an email change. |
+| Exact IDs | `a` and `A` remain distinct. |
+| Complete winning values | The winner’s name, email, whitespace, and other values are preserved. |
+| Timestamp offsets and fractions | Selection follows actual time, rather than alphabetical timestamp order, regardless of which version arrives first. |
+| Equal instants | The first row wins within a team and across teams, including differently written equivalent timestamps. |
+| Ordering and input preservation | Replacements retain first-seen ID order, and merging leaves inputs unchanged. |
+| CSV and integration | Empty exports, escaping, column order, final newline, file argument order, and exact CLI output remain correct. |
+
+All seven tests pass. The fixture integration test specifically expects Morgan New, Ari Chen, and Jo Rivera as three separate output rows.

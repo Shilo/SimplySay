@@ -1,0 +1,5 @@
+Staff will see one row per contact ID across teams, with the newest name, email, and other row values. People who share an email address will remain separate contacts. The CSV columns and format stay the same.
+
+No decision is needed before using it under the existing contract. If two rows have the same timestamp instant, the first encountered row wins, so file order matters for those ties.
+
+All seven tests passed, including the local sample export.

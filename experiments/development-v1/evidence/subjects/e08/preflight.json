@@ -1,0 +1,59 @@
+{
+  "version": "codex-cli 0.163.0",
+  "condition": "enabled",
+  "subscription_only": true,
+  "policy_sha256": "76f3dafec75d8e1ce847dcbb7a83ea6aa0b2d66e4ec679a8f8e8791d3621cabe",
+  "hooks_effective": {
+    "data": [
+      {
+        "cwd": "<TASK_ROOT>",
+        "hooks": [
+          {
+            "key": "ss-feasibility@ss-feasibility-catalog:hooks/hooks.json:session_start:0:0",
+            "eventName": "sessionStart",
+            "handlerType": "command",
+            "command": "node -e \"require(process.env.PLUGIN_ROOT + '/session-start.cjs')\"",
+            "async": false,
+            "matcher": "startup",
+            "timeoutSec": 10,
+            "statusMessage": null,
+            "additionalContextLimit": null,
+            "sourcePath": "<PROFILE_ROOT>\\plugins\\cache\\ss-feasibility-catalog\\ss-feasibility\\0.0.0\\hooks\\hooks.json",
+            "source": "plugin",
+            "pluginId": "ss-feasibility@ss-feasibility-catalog",
+            "displayOrder": 0,
+            "enabled": true,
+            "isManaged": false,
+            "currentHash": "sha256:95413dd9c205a0a3025ef2403f47fe226336c1263655a43bcec4148f6cc047ef",
+            "trustStatus": "trusted"
+          }
+        ],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "config_hash": "261b4c22e127d8fb0069ade8731cf810a5b153c5c3509465146b97a083e0db02",
+  "effective_isolation": {
+    "apps": false,
+    "multi_agent": false,
+    "agents": false,
+    "default_plugins": false
+  },
+  "quota_before": {
+    "primary": {
+      "usedPercent": 79,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "installed_roots_verified": 1,
+  "installed_package": {
+    ".codex-plugin/plugin.json": "bdae4b8b04de1892d071d568805a17dcadf9fb86efac268b504900d42ec1f55c",
+    "hooks/hooks.json": "ea24207c8fe2e05bc972fb8133ae70ab86dc9a481fc793525ea98bb22e7b2a7c",
+    "session-start.cjs": "93019ae91bb34abdc8246e53dc09030313941d989b029a8d34d73b8bd27a41ef",
+    "policy.txt": "76f3dafec75d8e1ce847dcbb7a83ea6aa0b2d66e4ec679a8f8e8791d3621cabe"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "team": "south",
+  "contacts": [
+    {
+      "contact_id": "c-101",
+      "name": "Morgan New",
+      "email": "morgan@example.invalid",
+      "updated_at": "2026-10-28T10:00:00Z"
+    },
+    {
+      "contact_id": "c-303",
+      "name": "Jo Rivera",
+      "email": "jo@example.invalid",
+      "updated_at": "2026-10-25T15:30:00Z"
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "e08",
+  "condition": "enabled",
+  "case_id": "d2-contact-export-repair",
+  "policy": "experiments/development-v1/candidates/a-relevance-gate.v2.txt",
+  "turns": [
+    {
+      "turn": 1,
+      "expected_thread": null,
+      "observed_thread": "thread-ce42305897966385",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 76717,
+        "cached_input_tokens": 63360,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4117,
+        "reasoning_output_tokens": 53
+      },
+      "started_utc": "2026-10-29T07:56:36.310Z",
+      "started_ids": [
+        "thread-ce42305897966385"
+      ],
+      "ended_utc": "2026-10-29T07:57:56.442Z",
+      "unexpected_threads": [],
+      "thread": "thread-ce42305897966385",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t1_repair"
+    },
+    {
+      "turn": 2,
+      "expected_thread": "thread-ce42305897966385",
+      "observed_thread": "thread-ce42305897966385",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 93285,
+        "cached_input_tokens": 79744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4219,
+        "reasoning_output_tokens": 53
+      },
+      "started_utc": "2026-10-29T07:57:56.484Z",
+      "started_ids": [
+        "thread-ce42305897966385"
+      ],
+      "ended_utc": "2026-10-29T07:58:05.826Z",
+      "unexpected_threads": [],
+      "thread": "thread-ce42305897966385",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t2_staff_effect"
+    },
+    {
+      "turn": 3,
+      "expected_thread": "thread-ce42305897966385",
+      "observed_thread": "thread-ce42305897966385",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 110003,
+        "cached_input_tokens": 96256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4692,
+        "reasoning_output_tokens": 53
+      },
+      "started_utc": "2026-10-29T07:58:05.880Z",
+      "started_ids": [
+        "thread-ce42305897966385"
+      ],
+      "ended_utc": "2026-10-29T07:58:22.976Z",
+      "unexpected_threads": [],
+      "thread": "thread-ce42305897966385",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t3_maintainer_reasoning"
+    },
+    {
+      "turn": 4,
+      "expected_thread": "thread-ce42305897966385",
+      "observed_thread": "thread-ce42305897966385",
+      "exit_code": 0,
+      "error": null,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 164801,
+        "cached_input_tokens": 130432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5693,
+        "reasoning_output_tokens": 53
+      },
+      "started_utc": "2026-10-29T07:58:23.004Z",
+      "started_ids": [
+        "thread-ce42305897966385"
+      ],
+      "ended_utc": "2026-10-29T07:58:58.379Z",
+      "unexpected_threads": [],
+      "thread": "thread-ce42305897966385",
+      "continuation_observed": true,
+      "failed": false,
+      "snapshot_issues": [],
+      "case_turn_id": "t4_handoff"
+    }
+  ],
+  "failed": false,
+  "loading_events": [
+    {
+      "event": "SessionStart",
+      "source": "startup",
+      "session_id": "thread-ce42305897966385",
+      "policyHash": "76f3dafec75d8e1ce847dcbb7a83ea6aa0b2d66e4ec679a8f8e8791d3621cabe"
+    }
+  ],
+  "quota_after": {
+    "primary": {
+      "usedPercent": 79,
+      "windowDurationMins": 10080,
+      "resetsAt": 1793818132
+    },
+    "secondary": null,
+    "limitId": "codex"
+  },
+  "auth_copy_removed": true
+}

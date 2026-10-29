@@ -1,0 +1,5 @@
+Staff will see one row per contact, even when that person appears across teams or changes email. The newest record supplies the name and other details. Different people who share an email will each keep their own row.
+
+The CSV columns and format stay the same. The supplied example now exports Morgan New, Ari Chen, and Jo Rivera correctly.
+
+No decision is needed before using it under the existing contract. It relies on stable contact IDs and accurate update timestamps; when timestamps tie, the first record encountered wins. All nine regression tests pass.

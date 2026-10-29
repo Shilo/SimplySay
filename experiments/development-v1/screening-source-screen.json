@@ -1,0 +1,3973 @@
+{
+  "schema_version": 1,
+  "auditor": "independent-case-evaluation-challenger-e02",
+  "same_conversation_task_turn": 2,
+  "inspected_utc": "2026-10-29T08:12:50.180Z",
+  "inspected_ids": [
+    "e03",
+    "e04",
+    "e05",
+    "e06",
+    "e07",
+    "e08",
+    "e09",
+    "e10"
+  ],
+  "scope": "Full actual task snapshots, public native events, prompts, finals, per-turn results, stderr and receipt times only. No candidate policy, condition mapping, judgment, profile content or sealed holdout was read. This is work/preservation and execution-scope verification, not a blinded communication preference judgment.",
+  "source_inspection_method": "Read every distinct actual executable source, package script and test in full; SHA-256 bound identical copies in every earlier/later snapshot. Read full actual documentation and standalone handoffs, final/copy-ready replies, recorded commands/results, file-change paths and stderr. Actual code execution is permitted only for the frozen probes on the hash-listed snapshots; changed bytes need a new inspection.",
+  "safe_for_offline_probe": true,
+  "subjects": [
+    {
+      "id": "e03",
+      "case_id": "d1-workshop-registration",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e03/result.json",
+      "result_sha256": "c731326056e9dea4f1328ec5ce92a348ce8016fb20786b9bb88f81999da09b95",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": false,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Read supplied local launch notes; list neutral task names in e03; final replies only. No executable subject source or sending/publication operation."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_opening_decision",
+          "files_dir": "<PILOT_ROOT>/e03/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-prompt.txt",
+              "bytes": 359,
+              "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-events.jsonl",
+              "bytes": 2932,
+              "sha256": "48777bd677e061670e3fb18b907cdbe3a8de0b909c2fb7ea07fbf8262dea5139"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-final.txt",
+              "bytes": 762,
+              "sha256": "21af0dd8e544103eec44c25ee792612623d1d5ae7d765bdfdc314664ce94ed0a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-result.json",
+              "bytes": 683,
+              "sha256": "b049ef6bea150f508c20716fde90150435b1ad015c59d8e3394fff27c02a220f"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-timing.jsonl",
+              "bytes": 548,
+              "sha256": "f4b36b97448dc55e2f827449ad5e395d508e66dedad244167936868099dfbc2d"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-1-stderr.txt",
+              "bytes": 609,
+              "sha256": "f8be17d5952994e9255f05e3c95f3ba64489d7de91f40e2a760ff52b8d749fee"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-266258825fe59df6",
+            "raw_usage": {
+              "input_tokens": 20795,
+              "cached_input_tokens": 0,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 220,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:55:10.296Z",
+            "ended_utc": "2026-10-29T07:55:23.446Z"
+          },
+          "receipt_times": {
+            "rows": 7,
+            "first": "2026-10-29T07:55:10.814Z",
+            "last": "2026-10-29T07:55:22.707Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "6ae746a3aae897d930e39812ddfa68f779f3c58dd8baeaa7956bb0488d17a2a0",
+              "output_sha256": "8e4c9c9e17072479606770aefcc85fabd8a676e99202d5786cb60c6043290b45",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": [
+            "2026-10-29T07:55:22.710706Z  WARN codex_core::tasks: failed to flush rollout after emitting terminal turn event: thread thread-266258825fe59df6 not found"
+          ]
+        },
+        {
+          "turn": 2,
+          "id": "t2_explain_checks",
+          "files_dir": "<PILOT_ROOT>/e03/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-prompt.txt",
+              "bytes": 197,
+              "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-events.jsonl",
+              "bytes": 938,
+              "sha256": "0290fda96aa0bdbcb9bb8dfe976bed927a758fc51b378a22562df7e66f05653a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-final.txt",
+              "bytes": 592,
+              "sha256": "04ecbe41a2c4f3a17dd6a6394535ca50998bb523ab69c168c18de95afe032a4d"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-result.json",
+              "bytes": 715,
+              "sha256": "e85b8b7893d4585728b87cbc3fb9da7a881a6113b8a94433520e272cfc884204"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "9ddc6d3a60930420736db0beac40f46b508c722aa5aed180e19f05f0437d1963"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "461c8277255a587cd947e4db9c6ad37fdc0b792573e6a6e844d36dad77ecdebe"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-266258825fe59df6",
+            "observed_thread": "thread-266258825fe59df6",
+            "raw_usage": {
+              "input_tokens": 31563,
+              "cached_input_tokens": 0,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 326,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:55:23.453Z",
+            "ended_utc": "2026-10-29T07:55:29.320Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:55:23.596Z",
+            "last": "2026-10-29T07:55:28.837Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_volunteer_message",
+          "files_dir": "<PILOT_ROOT>/e03/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-prompt.txt",
+              "bytes": 190,
+              "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-events.jsonl",
+              "bytes": 759,
+              "sha256": "22e5a930a234bc300d2a5007bd19d9bbec9937839d8a58ef4d6c5043ce7d5f11"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-final.txt",
+              "bytes": 412,
+              "sha256": "c2125bcea16670ff5b6450d77724722e0ce6ccb02c1366eab664523b01a6b64f"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-result.json",
+              "bytes": 718,
+              "sha256": "fbf93a0c8bfbba9e95c2167e13426696b1b553cbf2894f05cd13a7b52c8d0357"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "f334e1ed20fd5ac560fb71a6edd59512d8ab46bf3cb5c173a3e1c0d221c1ac2a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e03/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "7238bfcad454254ed6b8d851e12811f1b49db6d785ee4f710698fc37456532d3"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-266258825fe59df6",
+            "observed_thread": "thread-266258825fe59df6",
+            "raw_usage": {
+              "input_tokens": 42483,
+              "cached_input_tokens": 0,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 413,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:55:29.330Z",
+            "ended_utc": "2026-10-29T07:55:36.287Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:55:29.471Z",
+            "last": "2026-10-29T07:55:35.811Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "not-applicable",
+        "requested_reasoning_and_deliverables": "Current go/no-go and source uncertainty retained; follow-up state applied; complete standalone volunteer draft with Saturday 10:00, Cedar, list lookup/check-in and unverified calendar delivery.",
+        "semantic_issues": []
+      }
+    },
+    {
+      "id": "e04",
+      "case_id": "d1-workshop-registration",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e04/result.json",
+      "result_sha256": "11ad8c6cb370b69579b30c8d574255b1c054381ee6a94bd8b2a9a8d1732d70bc",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": false,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Read supplied local launch notes; list neutral task names in e03; final replies only. No executable subject source or sending/publication operation."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_opening_decision",
+          "files_dir": "<PILOT_ROOT>/e04/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-prompt.txt",
+              "bytes": 359,
+              "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-events.jsonl",
+              "bytes": 2759,
+              "sha256": "689667f01c4570c51e4c157d3cbea69d1cd5d1f934c8943ceb7f87fc7a919dc9"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-final.txt",
+              "bytes": 660,
+              "sha256": "1661a2be80fafa1a644c7e7a190737c9701082ce8d9050c0659aaceff9aa7005"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-result.json",
+              "bytes": 683,
+              "sha256": "837d03a25890e3065e35cd9e89237644920f36051ff45446d6fc0d477a9e2b39"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-timing.jsonl",
+              "bytes": 548,
+              "sha256": "8dac56f5aaafefdb3018087b4483e63ceb99d8b9aba2780471b84ae451751d41"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-1-stderr.txt",
+              "bytes": 442,
+              "sha256": "7eea9c34d757373c563e69fedae571e78ccfea4ce101840ddd4d232c21095b4c"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-f7a2b62d7a7c37e0",
+            "raw_usage": {
+              "input_tokens": 21070,
+              "cached_input_tokens": 0,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 188,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:56:10.338Z",
+            "ended_utc": "2026-10-29T07:56:22.609Z"
+          },
+          "receipt_times": {
+            "rows": 7,
+            "first": "2026-10-29T07:56:10.811Z",
+            "last": "2026-10-29T07:56:21.988Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "d3a090c7673f0010b5f6916672e41db5365387fa289eceb43d264270536a4b89",
+              "output_sha256": "1e080ce58aedac2eace8267602fc73596c067972c2e2ff7c7fd87bbb68be8757",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 2,
+          "id": "t2_explain_checks",
+          "files_dir": "<PILOT_ROOT>/e04/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-prompt.txt",
+              "bytes": 197,
+              "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-events.jsonl",
+              "bytes": 893,
+              "sha256": "f6d97f99ef1bac923c4c9681bc945e4522662dc541416441624807a39b43b971"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-final.txt",
+              "bytes": 543,
+              "sha256": "aa03ca6faae84d3f64892f22c823aab861b00a07184843ff0dade493f20d1459"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-result.json",
+              "bytes": 719,
+              "sha256": "f6d584f8c008dc849c70a34a42c43ba30a7f43a46de063faf40d3b5106f9da79"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "f21ff12d5fc85864940359279ebcf58a239f9510ad48c804d55ee46976ff96f8"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "9b9ce0961a14517fc25cee50c5c9f2e36cef1197a20a67c38f8f10a0c2c64cf6"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-f7a2b62d7a7c37e0",
+            "observed_thread": "thread-f7a2b62d7a7c37e0",
+            "raw_usage": {
+              "input_tokens": 31944,
+              "cached_input_tokens": 10624,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 284,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:56:22.632Z",
+            "ended_utc": "2026-10-29T07:56:29.076Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:56:22.794Z",
+            "last": "2026-10-29T07:56:28.520Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_volunteer_message",
+          "files_dir": "<PILOT_ROOT>/e04/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-prompt.txt",
+              "bytes": 190,
+              "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-events.jsonl",
+              "bytes": 674,
+              "sha256": "e6a22d2831a5222a88df569ab7836acef779c038ac6231d3073250dbc3e6fead"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-final.txt",
+              "bytes": 325,
+              "sha256": "1dbda3ce7ea20ac4796ac07dfd7cf5e91c411b14233f4e975d85c369cf74894a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-result.json",
+              "bytes": 722,
+              "sha256": "fcc273b64e14fd8da3101936437fcbc019294e9faced2901cc84b71b8e61eb57"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "7f9eb477eeec1fd5a1b1de8cc093dfe09a8a890833e4e25b3fb71a0b9a089b43"
+            },
+            {
+              "path": "<PILOT_ROOT>/e04/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "78d823ad1d79c3cc23e7862204d3fa3dabf49ed4cf1465aa78f1450313ede285"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-f7a2b62d7a7c37e0",
+            "observed_thread": "thread-f7a2b62d7a7c37e0",
+            "raw_usage": {
+              "input_tokens": 42960,
+              "cached_input_tokens": 21376,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 353,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:56:29.102Z",
+            "ended_utc": "2026-10-29T07:56:34.752Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:56:29.286Z",
+            "last": "2026-10-29T07:56:34.340Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "not-applicable",
+        "requested_reasoning_and_deliverables": "Current go/no-go and source uncertainty retained; follow-up state applied; complete standalone volunteer draft with Saturday 10:00, Cedar, list lookup/check-in and unverified calendar delivery.",
+        "semantic_issues": []
+      }
+    },
+    {
+      "id": "e05",
+      "case_id": "d1-workshop-registration",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e05/result.json",
+      "result_sha256": "00517564b06aed24821a66abd5ca7ac3c5233eca5d6eb1cbcb95858e824b6eb7",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": false,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Read supplied local launch notes; list neutral task names in e03; final replies only. No executable subject source or sending/publication operation."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_opening_decision",
+          "files_dir": "<PILOT_ROOT>/e05/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-prompt.txt",
+              "bytes": 359,
+              "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-events.jsonl",
+              "bytes": 2769,
+              "sha256": "6f5390f93718da59cc14025dfafe046ea2f2ba851ce328055e311434d49beaa6"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-final.txt",
+              "bytes": 666,
+              "sha256": "4e0879ee22c3ab44986eb053286d2631a107b5a58555a4abfb75fc7392001c7a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-result.json",
+              "bytes": 687,
+              "sha256": "fc19a3f82352e0f3068f8468d40ef65661a01ea76608f4076d9845170feb335d"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-timing.jsonl",
+              "bytes": 548,
+              "sha256": "5ba27bc6af9a9ac7415c08b19d15f422762c36a00e761798fe9ae1f5898e878b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-1-stderr.txt",
+              "bytes": 442,
+              "sha256": "61f5c6f1f1bf0a3a8843b99f29a29c4e69b61e6530479136f27020b79c508e15"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-985513469179ced5",
+            "raw_usage": {
+              "input_tokens": 21083,
+              "cached_input_tokens": 19072,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 184,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:53:49.339Z",
+            "ended_utc": "2026-10-29T07:54:03.564Z"
+          },
+          "receipt_times": {
+            "rows": 7,
+            "first": "2026-10-29T07:53:49.462Z",
+            "last": "2026-10-29T07:54:02.757Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "d3a090c7673f0010b5f6916672e41db5365387fa289eceb43d264270536a4b89",
+              "output_sha256": "1e080ce58aedac2eace8267602fc73596c067972c2e2ff7c7fd87bbb68be8757",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 2,
+          "id": "t2_explain_checks",
+          "files_dir": "<PILOT_ROOT>/e05/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-prompt.txt",
+              "bytes": 197,
+              "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-events.jsonl",
+              "bytes": 927,
+              "sha256": "d64ffc515883643ba830f17dd9a17296197f0f9baae84dfb8ebf9c7bd5d22580"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-final.txt",
+              "bytes": 577,
+              "sha256": "e31a4490db1a25de2037d980c5c35d5bf2daf1f728c1aad60c94ef891527fe1c"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-result.json",
+              "bytes": 719,
+              "sha256": "e84799305d579ff546c3cdcea28dcc34fb264dcdbaed7f01b69e724064af02aa"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "c77212c6638872cad31f58dd837e2f7e819a0530a84a4e7fa93b8f725d426498"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "c469195ef1acf4fb03599ff88c4c24440082228912566f95b952b0fa8a2b1595"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-985513469179ced5",
+            "observed_thread": "thread-985513469179ced5",
+            "raw_usage": {
+              "input_tokens": 31963,
+              "cached_input_tokens": 29696,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 288,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:54:03.578Z",
+            "ended_utc": "2026-10-29T07:54:10.330Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:54:03.722Z",
+            "last": "2026-10-29T07:54:09.842Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_volunteer_message",
+          "files_dir": "<PILOT_ROOT>/e05/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-prompt.txt",
+              "bytes": 190,
+              "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-events.jsonl",
+              "bytes": 629,
+              "sha256": "e23401135db9118e13515405bd0c88fa6add4fd50ce8f4dff4dfabcf5790cd50"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-final.txt",
+              "bytes": 280,
+              "sha256": "c89ff8c3a5d05dcf434784bf3e687cafc742cd2782e23e5212e8b3b2637948af"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-result.json",
+              "bytes": 722,
+              "sha256": "8949e884f19547413607b170a8ed189d1559529fdaf34d05b5ea8bd6a6426c99"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "1056e23fdc921256ab8fc6bf1a5d114977fb0bfec5ec6aa6855168b0efb79a39"
+            },
+            {
+              "path": "<PILOT_ROOT>/e05/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "01ed2b3bbb10f2cdce51be48414b6547e8bfe0687435c0ebc0248cc4f6eee447"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-985513469179ced5",
+            "observed_thread": "thread-985513469179ced5",
+            "raw_usage": {
+              "input_tokens": 42993,
+              "cached_input_tokens": 40448,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 348,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:54:10.364Z",
+            "ended_utc": "2026-10-29T07:54:15.608Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:54:10.543Z",
+            "last": "2026-10-29T07:54:14.809Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "not-applicable",
+        "requested_reasoning_and_deliverables": "Current go/no-go and source uncertainty retained; follow-up state applied; complete standalone volunteer draft with Saturday 10:00, Cedar, list lookup/check-in and unverified calendar delivery.",
+        "semantic_issues": []
+      }
+    },
+    {
+      "id": "e06",
+      "case_id": "d1-workshop-registration",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e06/result.json",
+      "result_sha256": "e6cf5b6d72f80ad83d9aa30feeff2965a1a5172ab2cc5cb2b44952265342dcfe",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": false,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Read supplied local launch notes; list neutral task names in e03; final replies only. No executable subject source or sending/publication operation."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_opening_decision",
+          "files_dir": "<PILOT_ROOT>/e06/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-prompt.txt",
+              "bytes": 359,
+              "sha256": "8664f37d3abdd57d9c99f749fda8e1984ef228729d901c58e0c9b206dd65c660"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-events.jsonl",
+              "bytes": 2702,
+              "sha256": "7f42298c9e28e4cc0640bd6a737ae69011d15ba1a6bc337d86f2d2d215bfb679"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-final.txt",
+              "bytes": 599,
+              "sha256": "1c63d1e36f3462b99441640e70869cda86e9a96b19285d1825541bd07e81c3a1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-result.json",
+              "bytes": 687,
+              "sha256": "7bbaab2aa27991e7f9f505f0c4031a8d90471b2b6cdfde26c98eca0adc3e19f4"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-timing.jsonl",
+              "bytes": 548,
+              "sha256": "09d092cbe01b62bad92198093bd841288bc24a2943a159022cef6031052426b8"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-1-stderr.txt",
+              "bytes": 442,
+              "sha256": "59bb18665029de5104697547b8f4dbb4d95c84239f3baca10113b01b28f1f608"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-30aeef714a7c2a92",
+            "raw_usage": {
+              "input_tokens": 20865,
+              "cached_input_tokens": 18944,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 176,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:55:37.606Z",
+            "ended_utc": "2026-10-29T07:55:48.826Z"
+          },
+          "receipt_times": {
+            "rows": 7,
+            "first": "2026-10-29T07:55:38.146Z",
+            "last": "2026-10-29T07:55:48.006Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "d3a090c7673f0010b5f6916672e41db5365387fa289eceb43d264270536a4b89",
+              "output_sha256": "1e080ce58aedac2eace8267602fc73596c067972c2e2ff7c7fd87bbb68be8757",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 2,
+          "id": "t2_explain_checks",
+          "files_dir": "<PILOT_ROOT>/e06/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-prompt.txt",
+              "bytes": 197,
+              "sha256": "86edf52924d65e41e69c29f9981c998582b3f78ef3de038f80c1c109a1f36ba5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-events.jsonl",
+              "bytes": 944,
+              "sha256": "b42388b13e0844c8ffe9126f3e93a66ca2f5708828eff3bafc293fdba9e6f36b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-final.txt",
+              "bytes": 594,
+              "sha256": "1fd1c8f7515d475f2e63b1a0c292f8ddfaba8200ed63b24e454e7b08dc1596af"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-result.json",
+              "bytes": 719,
+              "sha256": "523c601c1f362e1bb3f05900ca9cd60d525d39f83107e32180440615b255d22f"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "10f78b63d4e69d06b5b7f41aee873b244c172474cf77aaa164bcd52de8483bb5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "46bd0f251a6f0b56b842ed07e370dea3ddb064ea7112fe03c53560c4e52b46b5"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-30aeef714a7c2a92",
+            "observed_thread": "thread-30aeef714a7c2a92",
+            "raw_usage": {
+              "input_tokens": 31625,
+              "cached_input_tokens": 29440,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 284,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:55:48.838Z",
+            "ended_utc": "2026-10-29T07:55:56.198Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:55:48.990Z",
+            "last": "2026-10-29T07:55:55.668Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_volunteer_message",
+          "files_dir": "<PILOT_ROOT>/e06/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-files/launch-notes.md",
+              "relative_path": "launch-notes.md",
+              "bytes": 1056,
+              "sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "executable_or_package": false
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "launch-notes.md",
+              "actual_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "expected_sha256": "1391dc10e564ea16875e1129d7041050466c6b04fd015330cfb8803774b83b42",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-prompt.txt",
+              "bytes": 190,
+              "sha256": "96a7765aa0c7fd6cf4930ad4b27fa4a9fcf09fe5974cdbb239a88e06b9b8590b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-events.jsonl",
+              "bytes": 703,
+              "sha256": "79a7d8d900e39c2c688194c18b0139c24e86ff5d50262cf6f380ad7f42e3bb82"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-final.txt",
+              "bytes": 354,
+              "sha256": "e956b1237e501cb9a049fb360c226997be8d75ff4d48a90700d8305c14d76392"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-result.json",
+              "bytes": 722,
+              "sha256": "9a9987932b8eec70f00dd9c7dfbdb2b25f9fd1fbd63dc802352ad79a198ef366"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "b6e4df1e2d396071f32044a37aaa4e835431524d326783c2a2a13746d32d3547"
+            },
+            {
+              "path": "<PILOT_ROOT>/e06/turn-3-stderr.txt",
+              "bytes": 561,
+              "sha256": "f3a7e58a37edb296dc122f05022c64a77775f9584b72485eadc730b347c2f1b5"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-30aeef714a7c2a92",
+            "observed_thread": "thread-30aeef714a7c2a92",
+            "raw_usage": {
+              "input_tokens": 42539,
+              "cached_input_tokens": 40192,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 360,
+              "reasoning_output_tokens": 0
+            },
+            "started_utc": "2026-10-29T07:55:56.215Z",
+            "ended_utc": "2026-10-29T07:56:09.010Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:55:56.414Z",
+            "last": "2026-10-29T07:56:08.583Z"
+          },
+          "commands": [],
+          "retained_native_warnings": [
+            "2026-10-29T07:56:01.308145Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out"
+          ]
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "not-applicable",
+        "requested_reasoning_and_deliverables": "Current go/no-go and source uncertainty retained; follow-up state applied; complete standalone volunteer draft with Saturday 10:00, Cedar, list lookup/check-in and unverified calendar delivery.",
+        "semantic_issues": []
+      }
+    },
+    {
+      "id": "e07",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e07/result.json",
+      "result_sha256": "99979418eb865445ec0b2bda071c2544450cf1230a5ead38f0ea9452ccb6e115",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": true,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Pure Map-based merge and Date.parse timestamp selection; built-in CSV formatting.",
+        "Synchronous reads of caller-supplied JSON files; fixed probes use only the inspected local fixtures.",
+        "Built-in Node tests/assertions; test integration spawns current process.execPath only for this project CLI and inspected fixture paths.",
+        "Package scripts invoke local tests/export only; no dependencies, downloads, network calls, payment, model/host commands or private-project reads in actual source/scripts/tests."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_repair",
+          "files_dir": "<PILOT_ROOT>/e07/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1246,
+              "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4106,
+              "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-prompt.txt",
+              "bytes": 622,
+              "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-events.jsonl",
+              "bytes": 21974,
+              "sha256": "fad124f4f9475b6900fc21d7dd7706a0b5b4b75fc9517660c369658345d9936b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-final.txt",
+              "bytes": 378,
+              "sha256": "fc3935f3236eaf4694f51cecae188527f4f5b1536ec25465f7db5327f7e43cd8"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-result.json",
+              "bytes": 679,
+              "sha256": "3d14270feeec599bc723410839b9f15a4b771191106ff74440298a67b330b830"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-timing.jsonl",
+              "bytes": 1156,
+              "sha256": "5a2e2ced479ac3a649f1997f899a2872f76d6cf48adf2ee543e66864d58a6d65"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-1-stderr.txt",
+              "bytes": 442,
+              "sha256": "d6af257e9934ab12e37ed287fe6ac3f0e5a9110157f657387782316b91c842ef"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-7c5114dd86262018",
+            "raw_usage": {
+              "input_tokens": 47509,
+              "cached_input_tokens": 39168,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2127,
+              "reasoning_output_tokens": 10
+            },
+            "started_utc": "2026-10-29T08:01:29.228Z",
+            "ended_utc": "2026-10-29T08:02:29.785Z"
+          },
+          "receipt_times": {
+            "rows": 14,
+            "first": "2026-10-29T08:01:29.826Z",
+            "last": "2026-10-29T08:02:29.157Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "620395663485d2e5aaba6f2751fb38456613b4b42f915bf04e344816fb66766e",
+              "output_sha256": "db98ed8ea381d2f10d3b4a29a5cee40d68d68aa6592a011e8f1c7392582d041c",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_2",
+              "command_sha256": "cbc18ffff01efc81cf396ebc9ae9ddc9ad6451860fbc823c292c31463703f209",
+              "output_sha256": "d4150ced6f2b66031e14260708892f6af4b904c308d036b7b9337307cb721007",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_5",
+              "command_sha256": "70bb41bf54c9480b48c166bc963ed1bba9aa959fcc363648a8e1a21251e99b74",
+              "output_sha256": "6fc4265911f12739ce439057565c888177c5961db797e2a910715ea5fbb71e37",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": {
+                "tests": 9,
+                "pass": 9,
+                "fail": 0,
+                "cancelled": 0,
+                "skipped": 0
+              }
+            }
+          ],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 2,
+          "id": "t2_staff_effect",
+          "files_dir": "<PILOT_ROOT>/e07/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1246,
+              "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4106,
+              "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-prompt.txt",
+              "bytes": 93,
+              "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-events.jsonl",
+              "bytes": 911,
+              "sha256": "9ebddb1aee7ea2706dd2f45741468bac92af78690ef988c84b3fc1cedc03b4d0"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-final.txt",
+              "bytes": 560,
+              "sha256": "f57f0bfc0e5f24ac7bf2257afce8eecff25647af5259bd36ed0a569f853d152a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-result.json",
+              "bytes": 719,
+              "sha256": "f26b21a58934040299e21f893612fb8412de812cd06851a867abf3f847f58e95"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "7ce8e4988a048b16a2da2e53ec534a169f3e1cb1fc880ba6bf5dccce2bbc71b1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "470b9c5c06c69cf0e3249a64fae6f128fdfafbc9fec9b7366232364f574d0361"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7c5114dd86262018",
+            "observed_thread": "thread-7c5114dd86262018",
+            "raw_usage": {
+              "input_tokens": 62124,
+              "cached_input_tokens": 53632,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2237,
+              "reasoning_output_tokens": 10
+            },
+            "started_utc": "2026-10-29T08:02:29.823Z",
+            "ended_utc": "2026-10-29T08:02:38.777Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T08:02:29.989Z",
+            "last": "2026-10-29T08:02:38.321Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_maintainer_reasoning",
+          "files_dir": "<PILOT_ROOT>/e07/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1246,
+              "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4106,
+              "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-prompt.txt",
+              "bytes": 217,
+              "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-events.jsonl",
+              "bytes": 2458,
+              "sha256": "5a6b566e7319bf38ba7c008f0e5acd9c8b14b519bf21ad9c8f4d3601b2d0d939"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-final.txt",
+              "bytes": 2079,
+              "sha256": "e2fac93fee13affdce440d99f2fc96a46792137df588945e3e6ff4af93d4b0c9"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-result.json",
+              "bytes": 727,
+              "sha256": "bf22924daf7f700f10c3645298d05173cc2272f3115cf072c4f311d490fe2747"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "6a95b7ec9b113f96adc525dba3101b94adc4b17cbe976722a7747ba97491ddb5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "a698d9f7012479b4a116f058b8f3d67c8454dcc9cea0ca8b3554958917cf76af"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7c5114dd86262018",
+            "observed_thread": "thread-7c5114dd86262018",
+            "raw_usage": {
+              "input_tokens": 76897,
+              "cached_input_tokens": 68224,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2669,
+              "reasoning_output_tokens": 10
+            },
+            "started_utc": "2026-10-29T08:02:38.796Z",
+            "ended_utc": "2026-10-29T08:02:56.658Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T08:02:38.933Z",
+            "last": "2026-10-29T08:02:56.083Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 4,
+          "id": "t4_handoff",
+          "files_dir": "<PILOT_ROOT>/e07/turn-4-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1246,
+              "sha256": "225f06da0a6573957c3b68d64e51671ed0a34b511b7eead25b0b634a2e92f57d",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/handoff.md",
+              "relative_path": "handoff.md",
+              "bytes": 3918,
+              "sha256": "92158abf4142e4724383c1d8bf68b9df676d6b632b338fd786edc59d993bb95b",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4106,
+              "sha256": "eee3edd0551e07e96e663b07fda3493bd0fd405bb920b9fc615535974fb1b7d3",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-prompt.txt",
+              "bytes": 261,
+              "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-events.jsonl",
+              "bytes": 4242,
+              "sha256": "7f593c88bec151b6abd64b441feade7a66831ab4e20fbe21c4f995d1f6cb25d7"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-final.txt",
+              "bytes": 646,
+              "sha256": "d3735787da3cab8a81961cbf1b0e9b0b220ee59832d9bb9fdd0d1a08929004c7"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-result.json",
+              "bytes": 716,
+              "sha256": "ede5823ebc2ccd57289b16d9943ecebd8cd9e59a26ec2411e0da24fbaa9b1791"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-timing.jsonl",
+              "bytes": 720,
+              "sha256": "b4e9f76644de0f7f42fb9142276dedbcf5a4ece3a118b2dcc3d7cd18dd8203b0"
+            },
+            {
+              "path": "<PILOT_ROOT>/e07/turn-4-stderr.txt",
+              "bytes": 442,
+              "sha256": "50549d4d14b553594cb564df82a21382514ced3cccc62742495aad3352cdd361"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7c5114dd86262018",
+            "observed_thread": "thread-7c5114dd86262018",
+            "raw_usage": {
+              "input_tokens": 124861,
+              "cached_input_tokens": 115072,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 3780,
+              "reasoning_output_tokens": 10
+            },
+            "started_utc": "2026-10-29T08:02:56.714Z",
+            "ended_utc": "2026-10-29T08:03:36.048Z"
+          },
+          "receipt_times": {
+            "rows": 9,
+            "first": "2026-10-29T08:02:56.913Z",
+            "last": "2026-10-29T08:03:35.062Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "d233795fe9a5c5d988e1a51ab4149d682cbaa041ec43be797b6988d503b4e75f",
+              "output_sha256": "020c23414cec68d5adf2138b00a6e60d48aaeaef7013c08ad04d0784a7dfe1d6",
+              "exit_code": 1,
+              "status": "failed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "Meaningful public-API/CLI assertions for original identity/latest bugs and ties/order/format/nonmutation boundaries, rather than unchanged smoke tests.",
+        "requested_reasoning_and_deliverables": "Full current-ID/latest-row explanation with concrete examples and real coverage evidence; complete actual maintainer notes/handoff plus self-contained staff draft and live-export caveat.",
+        "semantic_issues": [
+          "Shared submillisecond precision gap listed at top level; no additional case-specific omission found."
+        ],
+        "retained_failures": [
+          "Turn 4 command exit 1 came from rg finding no AGENTS.md/handoff.md; no test failure or missing completed deliverable follows. Handoff accurately attributes nine passing tests to the earlier repair; no handoff rerun was claimed."
+        ]
+      }
+    },
+    {
+      "id": "e08",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e08/result.json",
+      "result_sha256": "3172d6ecdb0759e65c91d3520524216be66b66c6d0d514cd32446567f1b8e428",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": true,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Pure Map-based merge and Date.parse timestamp selection; built-in CSV formatting.",
+        "Synchronous reads of caller-supplied JSON files; fixed probes use only the inspected local fixtures.",
+        "Built-in Node tests/assertions; test integration spawns current process.execPath only for this project CLI and inspected fixture paths.",
+        "Package scripts invoke local tests/export only; no dependencies, downloads, network calls, payment, model/host commands or private-project reads in actual source/scripts/tests."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_repair",
+          "files_dir": "<PILOT_ROOT>/e08/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1342,
+              "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4013,
+              "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-prompt.txt",
+              "bytes": 622,
+              "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-events.jsonl",
+              "bytes": 21407,
+              "sha256": "0a53ea121fa4163d295c83d6ba7609323afdf88cf8036bed9fd23fa282e98263"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-final.txt",
+              "bytes": 343,
+              "sha256": "0346c58a0c128c89c3f0ec3d7033aa071bfbb0ab72a4dd456c73d3bcff34ae6e"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-result.json",
+              "bytes": 679,
+              "sha256": "0d0f5d860bd31103d9668296b776f45f4373b0785d7c96c366a5c7551ef80694"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-timing.jsonl",
+              "bytes": 1330,
+              "sha256": "2104b34492184c6ea597470b27ca859de14792bd0492ca674ef62cde1bffe3c2"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-1-stderr.txt",
+              "bytes": 680,
+              "sha256": "d0e9bf45886ce8df8f534e16591d6ed8412d50b7449708cb2e2bca25be3c779e"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-ce42305897966385",
+            "raw_usage": {
+              "input_tokens": 76717,
+              "cached_input_tokens": 63360,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 4117,
+              "reasoning_output_tokens": 53
+            },
+            "started_utc": "2026-10-29T07:56:36.310Z",
+            "ended_utc": "2026-10-29T07:57:56.442Z"
+          },
+          "receipt_times": {
+            "rows": 16,
+            "first": "2026-10-29T07:56:36.465Z",
+            "last": "2026-10-29T07:57:55.451Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "620395663485d2e5aaba6f2751fb38456613b4b42f915bf04e344816fb66766e",
+              "output_sha256": "ee9334e6136582bec36f08b50c778cc86d9d002ea16bd69a38bc8b2408497ff0",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_2",
+              "command_sha256": "0232a5696425953380f299cf4aaf256eccf3d6ae9942a31f7b28011cec369ca1",
+              "output_sha256": "9d5970ffce2e72e6ee3348edbfa762124ba9c4430360ca789159cfb2705e7f58",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_5",
+              "command_sha256": "0453b588f4be0ac3d54f8ecf0bcc533a0bf3df510a9f1cd831007dd7cf104f91",
+              "output_sha256": "e82e6808f2a13f1eae49f595a470b4c92d72561afa714ae7a99f67498c7dd3a1",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_6",
+              "command_sha256": "ad0d1d6fd6f231029b82c7549b1db045efc2ee1800a99cfdddc372f95b1e3576",
+              "output_sha256": "cd0005f52da46c59c1d3682339ec0d0e395f7b54d0fb4cfdd96e34225cf647f5",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": {
+                "tests": 8,
+                "pass": 8,
+                "fail": 0,
+                "cancelled": 0,
+                "skipped": 0
+              }
+            }
+          ],
+          "retained_native_warnings": [
+            "2026-10-29T07:57:28.151768Z ERROR codex_core::tools::router: error=apply_patch verification failed: invalid patch: multiple operations target <PILOT_ROOT>\\e08\\task\\test\\export.test.cjs"
+          ]
+        },
+        {
+          "turn": 2,
+          "id": "t2_staff_effect",
+          "files_dir": "<PILOT_ROOT>/e08/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1342,
+              "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4013,
+              "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-prompt.txt",
+              "bytes": 93,
+              "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-events.jsonl",
+              "bytes": 892,
+              "sha256": "4a8311c5ed85fe0148d355b121f66defe2bd3189266308cd02ff4a5986e65d70"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-final.txt",
+              "bytes": 541,
+              "sha256": "1e29132b76477b4498202e6ae7ff95dbbd4a22a90381711ef8ed333ee7745ac4"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-result.json",
+              "bytes": 719,
+              "sha256": "9755a553948cd986f30a3014b0cfcc7f6d6c2f1586f7b414e4b3a165f3f4b6d6"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "12d8aa0202c326a66ef2a9aaa4aefd9f02281d108de3bb9d18871f517df70a60"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "60914cb31c7f72510b6ba264199a451694667b2d002e40f54626e025b25dcc96"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-ce42305897966385",
+            "observed_thread": "thread-ce42305897966385",
+            "raw_usage": {
+              "input_tokens": 93285,
+              "cached_input_tokens": 79744,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 4219,
+              "reasoning_output_tokens": 53
+            },
+            "started_utc": "2026-10-29T07:57:56.484Z",
+            "ended_utc": "2026-10-29T07:58:05.826Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:57:56.647Z",
+            "last": "2026-10-29T07:58:04.964Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_maintainer_reasoning",
+          "files_dir": "<PILOT_ROOT>/e08/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1342,
+              "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4013,
+              "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-prompt.txt",
+              "bytes": 217,
+              "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-events.jsonl",
+              "bytes": 2572,
+              "sha256": "ab35227508fd9461377c2f15e4d0ce82662de6cd46d94af92e90fbafde431cd6"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-final.txt",
+              "bytes": 2190,
+              "sha256": "80b38c7ca66c9054369db5b12102ea1e4951b11d9ff93deefa0c280e47e3f2a5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-result.json",
+              "bytes": 728,
+              "sha256": "a60f0b0d663c8a6f1c3527bb6bd4e2988cd1e8f0585e6c24c2eef76297a3535f"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "345ecd4ecf6f30c9012cae58c94835054e8d5d5e5c5e0cd0932a2bdf2233315e"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "2350fc919def387805e0ba5c0cc7b6c071720df05234b0a57a393bba1dab821a"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-ce42305897966385",
+            "observed_thread": "thread-ce42305897966385",
+            "raw_usage": {
+              "input_tokens": 110003,
+              "cached_input_tokens": 96256,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 4692,
+              "reasoning_output_tokens": 53
+            },
+            "started_utc": "2026-10-29T07:58:05.880Z",
+            "ended_utc": "2026-10-29T07:58:22.976Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T07:58:06.034Z",
+            "last": "2026-10-29T07:58:22.436Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 4,
+          "id": "t4_handoff",
+          "files_dir": "<PILOT_ROOT>/e08/turn-4-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1342,
+              "sha256": "9fe5e346bc79c36d3767da1b59084d41b099abf2fba54f3b6803350c5a314774",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/handoff.md",
+              "relative_path": "handoff.md",
+              "bytes": 3260,
+              "sha256": "36d1e2494054799453c7191b3c8e5eb90f516f6f577e4cdb4535fc109b1bcdd7",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4013,
+              "sha256": "edf104af6285d60cc66a2c8173d5bd474d3420df70b31011fc7cf1333d3a34a9",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-prompt.txt",
+              "bytes": 261,
+              "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-events.jsonl",
+              "bytes": 8721,
+              "sha256": "0b33ca8bb22a3d3837063dd097d7d2a943ff9ec45f7effa0e9b4275f431e60f5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-final.txt",
+              "bytes": 760,
+              "sha256": "f59636f151d52050b0aa6ca73508de6fdeef81976a5a5321ea38cfe732957d62"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-result.json",
+              "bytes": 716,
+              "sha256": "51234a0611ef0b1878e0be85c776d6349d7f62354da0cf1785067e1d9e4e8b1b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-timing.jsonl",
+              "bytes": 894,
+              "sha256": "fa777389ca40853ff0bf3a0c934660e96d72acf8ce3a612ff22e49a32a3cf93e"
+            },
+            {
+              "path": "<PILOT_ROOT>/e08/turn-4-stderr.txt",
+              "bytes": 442,
+              "sha256": "db582c5df62ce439438215ed41a4803cfcd94406ccf69948a87bc078d2ce01b5"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-ce42305897966385",
+            "observed_thread": "thread-ce42305897966385",
+            "raw_usage": {
+              "input_tokens": 164801,
+              "cached_input_tokens": 130432,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 5693,
+              "reasoning_output_tokens": 53
+            },
+            "started_utc": "2026-10-29T07:58:23.004Z",
+            "ended_utc": "2026-10-29T07:58:58.379Z"
+          },
+          "receipt_times": {
+            "rows": 11,
+            "first": "2026-10-29T07:58:23.165Z",
+            "last": "2026-10-29T07:58:57.656Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "888b39038c1f96b5e51c0a975359728cce53229ac41b104b74aef176ee66a9e4",
+              "output_sha256": "1985f60e200353c1e52ad8511bc91cfdd7ada8625e7fc755af98a4c994af2a88",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": {
+                "tests": 8,
+                "pass": 8,
+                "fail": 0,
+                "cancelled": 0,
+                "skipped": 0
+              }
+            },
+            {
+              "item_id": "item_3",
+              "command_sha256": "617ec1b5ca47c4f544e401c3ecadd4bf303eb6e20090ae03493ee1c1b612388b",
+              "output_sha256": "39029654d205f9e1a84dfd092201801e36b941d8002c838f0a3325926e229f1e",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "Meaningful public-API/CLI assertions for original identity/latest bugs and ties/order/format/nonmutation boundaries, rather than unchanged smoke tests.",
+        "requested_reasoning_and_deliverables": "Full current-ID/latest-row explanation with concrete examples and real coverage evidence; complete actual maintainer notes/handoff plus self-contained staff draft and live-export caveat.",
+        "semantic_issues": [
+          "Shared submillisecond precision gap listed at top level; no additional case-specific omission found."
+        ],
+        "retained_failures": [
+          "Turn 1 stderr records an invalid apply_patch attempt with multiple operations targeting the test file. Actual final source/tests/docs were repaired, eight tests passed, and a real handoff rerun passed. This ordinary recovered attempt is not an infrastructure replacement justification."
+        ]
+      }
+    },
+    {
+      "id": "e09",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e09/result.json",
+      "result_sha256": "b8799e04878e2768f3287f13a2e1ae75490427d240e33884ce825a9f2dbc5def",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": true,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Pure Map-based merge and Date.parse timestamp selection; built-in CSV formatting.",
+        "Synchronous reads of caller-supplied JSON files; fixed probes use only the inspected local fixtures.",
+        "Built-in Node tests/assertions; test integration spawns current process.execPath only for this project CLI and inspected fixture paths.",
+        "Package scripts invoke local tests/export only; no dependencies, downloads, network calls, payment, model/host commands or private-project reads in actual source/scripts/tests."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_repair",
+          "files_dir": "<PILOT_ROOT>/e09/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1074,
+              "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 3949,
+              "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-prompt.txt",
+              "bytes": 622,
+              "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-events.jsonl",
+              "bytes": 11166,
+              "sha256": "3e4de64eb05146ff93cd5d273d9496ac7fc7333867c60d02290fb8f7d70aa2d9"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-final.txt",
+              "bytes": 394,
+              "sha256": "29a805647949441623db247e39ebf7627282a34e8cfde34309f06f2a2dcfc91b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-result.json",
+              "bytes": 679,
+              "sha256": "24ffe28271fee951675e9df36909f474ba838d136e5ea14c29d05c809202de93"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-timing.jsonl",
+              "bytes": 1156,
+              "sha256": "c5f08021bb8016c9e59df6c89c5ec8a5209142fec33dee66bbe4785ef8edcf55"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-1-stderr.txt",
+              "bytes": 442,
+              "sha256": "a1654ef5704ed33a0257e8506641844dd59cd26c9df516ddcc5fa22232bc5d51"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-7bb96b67ce3b8493",
+            "raw_usage": {
+              "input_tokens": 48168,
+              "cached_input_tokens": 24832,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2209,
+              "reasoning_output_tokens": 13
+            },
+            "started_utc": "2026-10-29T08:03:37.793Z",
+            "ended_utc": "2026-10-29T08:04:28.381Z"
+          },
+          "receipt_times": {
+            "rows": 14,
+            "first": "2026-10-29T08:03:38.278Z",
+            "last": "2026-10-29T08:04:27.133Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "a4a7b7690345942bd94d997885613b473ff27c6df977e2fbd7ff4c2027381473",
+              "output_sha256": "f44afdf1bfd64e61e57b4c85363cfb0a4e618b56e96be7728445a07adfd12e49",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_2",
+              "command_sha256": "cbc18ffff01efc81cf396ebc9ae9ddc9ad6451860fbc823c292c31463703f209",
+              "output_sha256": "55a7a3f5d688761dbb59d79fc62ab6de8f7d2187b63923049c8013373ec329eb",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_5",
+              "command_sha256": "41ca1e2fe1d56b52c19540ec0f70aed1071d0326a02ee288c61c1e19d98c40bc",
+              "output_sha256": "afe22ecd48874ff87d54ac304cd8848a446ce8339c96e4fe5fdd5d1bbd9cdc88",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": {
+                "tests": 7,
+                "pass": 7,
+                "fail": 0,
+                "cancelled": 0,
+                "skipped": 0
+              }
+            }
+          ],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 2,
+          "id": "t2_staff_effect",
+          "files_dir": "<PILOT_ROOT>/e09/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1074,
+              "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 3949,
+              "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-prompt.txt",
+              "bytes": 93,
+              "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-events.jsonl",
+              "bytes": 803,
+              "sha256": "945e181e6c8f265c54b29b7e79d2e8e5e6cfefb661aeeb89e5ebd032afaa216a"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-final.txt",
+              "bytes": 452,
+              "sha256": "f90e840f0528380b8ccb1e5b490cb38ca217942effbe3fa9feb73eb9541a439e"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-result.json",
+              "bytes": 719,
+              "sha256": "c914e972ac42d9be6ca5ad301be48827600560b9b06c7e5f21af77ac4a972668"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "955080ca1ba2a83593926260832b338c8bcfcaf19bddf92578f2742ca0e4c3ff"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "34c997719c632a93e6bb8a8d4a10ff5cd14bd069fc143f79289460e2ff8ec86d"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7bb96b67ce3b8493",
+            "observed_thread": "thread-7bb96b67ce3b8493",
+            "raw_usage": {
+              "input_tokens": 62948,
+              "cached_input_tokens": 35200,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2302,
+              "reasoning_output_tokens": 13
+            },
+            "started_utc": "2026-10-29T08:04:28.401Z",
+            "ended_utc": "2026-10-29T08:04:36.469Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T08:04:28.575Z",
+            "last": "2026-10-29T08:04:36.017Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_maintainer_reasoning",
+          "files_dir": "<PILOT_ROOT>/e09/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1074,
+              "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 3949,
+              "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-prompt.txt",
+              "bytes": 217,
+              "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-events.jsonl",
+              "bytes": 2286,
+              "sha256": "57750f4d69c038314962a5850893826e12c66324d05176ef7f3ed4e1bb9618fd"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-final.txt",
+              "bytes": 1911,
+              "sha256": "a9cbc3415e295025d1f0a24b38c2a5cf17e1e9abc3be2d763f5ae3596719cc00"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-result.json",
+              "bytes": 727,
+              "sha256": "5afaef40760331894d56660e290c88bbe57005a90496296d09cffd372db8112e"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "edb30191cbce3433060c62f1fd5140208dbe62ccc1ab74872955929dcb459da1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "5f875aeda180126e86a3b9137e91dad50c8724a5e49f359a45181961da11140f"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7bb96b67ce3b8493",
+            "observed_thread": "thread-7bb96b67ce3b8493",
+            "raw_usage": {
+              "input_tokens": 77869,
+              "cached_input_tokens": 49792,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2713,
+              "reasoning_output_tokens": 13
+            },
+            "started_utc": "2026-10-29T08:04:36.482Z",
+            "ended_utc": "2026-10-29T08:04:53.265Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T08:04:36.644Z",
+            "last": "2026-10-29T08:04:52.807Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 4,
+          "id": "t4_handoff",
+          "files_dir": "<PILOT_ROOT>/e09/turn-4-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1074,
+              "sha256": "b0ead36c49e7af80d183e62a454ff9cc657765d5dc004a12f4f3aed061694354",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/handoff.md",
+              "relative_path": "handoff.md",
+              "bytes": 3331,
+              "sha256": "d07f272fc8d4731d4c39f0d14e6974ebef93834d72bc722d580182356629d0bb",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 3949,
+              "sha256": "b4c5c4c85242a0050e9dd65def9e88c10dbce7ddc9376b4e1a35f8bd6df97865",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-prompt.txt",
+              "bytes": 261,
+              "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-events.jsonl",
+              "bytes": 11982,
+              "sha256": "1e125ff5d9f9f8fa4ddd743f2c1615d550fcb5ce97835730f14b3b692570c038"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-final.txt",
+              "bytes": 794,
+              "sha256": "5ae42a2eaf86c61beae8e0f6a6ef9edd2a59bab4bf978fa596a41430573363f7"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-result.json",
+              "bytes": 715,
+              "sha256": "bb51e8156c837b9f6d22b327ef119d24dd93b1f1194a4c15756e5280a54cd754"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-timing.jsonl",
+              "bytes": 894,
+              "sha256": "c9bc34c9d087e89560351e8eded32faaa7b1c7f77072a0a5db0306f0e559d6e5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e09/turn-4-stderr.txt",
+              "bytes": 442,
+              "sha256": "3d948f7e5ea168c5db809e9bea50ab058fe6cfe8b6451ed57602186c6987ed81"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7bb96b67ce3b8493",
+            "observed_thread": "thread-7bb96b67ce3b8493",
+            "raw_usage": {
+              "input_tokens": 129384,
+              "cached_input_tokens": 97536,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 3761,
+              "reasoning_output_tokens": 13
+            },
+            "started_utc": "2026-10-29T08:04:53.284Z",
+            "ended_utc": "2026-10-29T08:05:32.959Z"
+          },
+          "receipt_times": {
+            "rows": 11,
+            "first": "2026-10-29T08:04:53.455Z",
+            "last": "2026-10-29T08:05:32.168Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "365341edfe72c85ed477de9d0c2eb21364ae3761fb9b1d31ae59b3465e42d5de",
+              "output_sha256": "62855e7562aab5409aea63782495e9ce27f3fa84ce2ba4d802a3bfdc83c9a54b",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_3",
+              "command_sha256": "617ec1b5ca47c4f544e401c3ecadd4bf303eb6e20090ae03493ee1c1b612388b",
+              "output_sha256": "1d489a0cade71bf478f4c04a40925621041dc1950f8f8c23b8f57466827c2cd8",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            }
+          ],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "Meaningful public-API/CLI assertions for original identity/latest bugs and ties/order/format/nonmutation boundaries, rather than unchanged smoke tests.",
+        "requested_reasoning_and_deliverables": "Full current-ID/latest-row explanation with concrete examples and real coverage evidence; complete actual maintainer notes/handoff plus self-contained staff draft and live-export caveat.",
+        "semantic_issues": [
+          "Shared submillisecond precision gap listed at top level; no additional case-specific omission found."
+        ]
+      }
+    },
+    {
+      "id": "e10",
+      "case_id": "d2-contact-export-repair",
+      "status": "completed-and-inspected",
+      "result_path": "<PILOT_ROOT>/e10/result.json",
+      "result_sha256": "7c54ce79ba889bab3fd2ac9b0038fdb8f7f8f92d0b54711ecb214a635a35d1de",
+      "native_failed": false,
+      "auth_copy_removed": true,
+      "probe_applicable": true,
+      "safe_for_offline_probe": true,
+      "permitted_operations": [
+        "Pure Map-based merge and Date.parse timestamp selection; built-in CSV formatting.",
+        "Synchronous reads of caller-supplied JSON files; fixed probes use only the inspected local fixtures.",
+        "Built-in Node tests/assertions; test integration spawns current process.execPath only for this project CLI and inspected fixture paths.",
+        "Package scripts invoke local tests/export only; no dependencies, downloads, network calls, payment, model/host commands or private-project reads in actual source/scripts/tests."
+      ],
+      "turns": [
+        {
+          "turn": 1,
+          "id": "t1_repair",
+          "files_dir": "<PILOT_ROOT>/e10/turn-1-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1183,
+              "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4215,
+              "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-prompt.txt",
+              "bytes": 622,
+              "sha256": "5cb77b0588027774f600592c4effeb8127fd5d9957f3158fb075e5c6c0ed75e5"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-events.jsonl",
+              "bytes": 12797,
+              "sha256": "d7895516487c7e6337134e0d9f6b9309e2154545448ee56fa78866ec11ce88f7"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-final.txt",
+              "bytes": 345,
+              "sha256": "1f2565e9593e4cb5d8a42d9cd057486f9f26a8e3adffff38b5bc135f44a20223"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-result.json",
+              "bytes": 679,
+              "sha256": "83e326e599819072e584ee322a78b78dafb3adf363825fd91370313a49ab78c4"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-timing.jsonl",
+              "bytes": 1767,
+              "sha256": "21c1c2c3fbf95587c7f0dbc3f1846d25b9fb0396fec9f0c27a2d4d814733287e"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-1-stderr.txt",
+              "bytes": 773,
+              "sha256": "ae063d28de63b91080424ccf84fdf21daa87d7eb08c5bfa4b9534222200869e6"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": null,
+            "observed_thread": "thread-7b4a8b6d2c1afb19",
+            "raw_usage": {
+              "input_tokens": 86836,
+              "cached_input_tokens": 62720,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2717,
+              "reasoning_output_tokens": 84
+            },
+            "started_utc": "2026-10-29T07:59:00.052Z",
+            "ended_utc": "2026-10-29T08:00:18.676Z"
+          },
+          "receipt_times": {
+            "rows": 21,
+            "first": "2026-10-29T07:59:00.809Z",
+            "last": "2026-10-29T08:00:17.926Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "620395663485d2e5aaba6f2751fb38456613b4b42f915bf04e344816fb66766e",
+              "output_sha256": "e89fe193e510c343ac5fc2799e9c189850f3354f27504fd41a8c7e79f26eaed3",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_2",
+              "command_sha256": "bf27ff8dd34df0f64de6292160555ac1ee4b22bdfc2d29f858453c48284b4374",
+              "output_sha256": "c193330fafa8cfb8ef2ad9970e7a28138fb4fc258b43acb74d0731a1db277885",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_4",
+              "command_sha256": "75a2c9b92f5247dcd8209658f233e6d7193f76afa529730977610723c5a0872d",
+              "output_sha256": "3408046e5ba9818445f1a747174cdb1c1594acbb5e6a45e5ba45e087cdeb788b",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_6",
+              "command_sha256": "81a04f163c3e0aeff115899081318ebc12d4609e9f16acc0e51ad8bc37a60f09",
+              "output_sha256": "cafb94005bc3a353ebb179c6d26b98fb0532085dd94ce6d6009d361e87aa1730",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": null
+            },
+            {
+              "item_id": "item_9",
+              "command_sha256": "bff6873e63e0f1eac36b9cbd30638b4926c79ee178225fdeedfa32b58c0b8c8b",
+              "output_sha256": "2dbcfaadc0beece976261d34663ec32f8a38a44bf1e69dad7cc9b6918bc5881b",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": {
+                "tests": 7,
+                "pass": 7,
+                "fail": 0,
+                "cancelled": 0,
+                "skipped": 0
+              }
+            }
+          ],
+          "retained_native_warnings": [
+            "2026-10-29T07:59:17.540770Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in <PILOT_ROOT>\\e10\\task\\src\\csv.cjs:"
+          ]
+        },
+        {
+          "turn": 2,
+          "id": "t2_staff_effect",
+          "files_dir": "<PILOT_ROOT>/e10/turn-2-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1183,
+              "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4215,
+              "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-prompt.txt",
+              "bytes": 93,
+              "sha256": "340797b7a6087598464c851ab0ab56b0f20e499a7f59df658b28fe65485e7214"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-events.jsonl",
+              "bytes": 969,
+              "sha256": "5a2c131fda3c15e8d6870ac6dc61f320319e7e2a25af53f2949003e3b72a3966"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-final.txt",
+              "bytes": 617,
+              "sha256": "c34313dabe008b5cb2d1c6ae0cc42fd9c3e2e61e637c629cbda69b2bf2c37498"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-result.json",
+              "bytes": 720,
+              "sha256": "afe277ce62de82d2fd17c097f62fb573316cc883d98fb68e58449f30cff3f05c"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-timing.jsonl",
+              "bytes": 289,
+              "sha256": "40111d00b95280ac7a8686c167ead3f1ddab3e6f73dd68dac9322418c82eed27"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-2-stderr.txt",
+              "bytes": 442,
+              "sha256": "a5036bffce520bf0fbd4028d0415ef5cfa264664591d873627ad9bc8fd10123a"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7b4a8b6d2c1afb19",
+            "observed_thread": "thread-7b4a8b6d2c1afb19",
+            "raw_usage": {
+              "input_tokens": 102235,
+              "cached_input_tokens": 77952,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 2836,
+              "reasoning_output_tokens": 84
+            },
+            "started_utc": "2026-10-29T08:00:18.689Z",
+            "ended_utc": "2026-10-29T08:00:29.468Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T08:00:18.844Z",
+            "last": "2026-10-29T08:00:28.839Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 3,
+          "id": "t3_maintainer_reasoning",
+          "files_dir": "<PILOT_ROOT>/e10/turn-3-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1183,
+              "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4215,
+              "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-prompt.txt",
+              "bytes": 217,
+              "sha256": "c5df46c07c7515f00d9ff07cc2d0855e0c78f95097172aa647473f0e1379ced1"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-events.jsonl",
+              "bytes": 2192,
+              "sha256": "91de138b5bb17aead7678419d1f3cbf9ae438d0f06209a5887a680f35e068938"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-final.txt",
+              "bytes": 1815,
+              "sha256": "2762a623603f9aecbf031ef61a2c9adb4bd68b50f6575f9ff3483713b0048911"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-result.json",
+              "bytes": 728,
+              "sha256": "bd95d1d969a89f586cd94436f483b136a0090f365de3b7bd30cdbf0c82288ebe"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-timing.jsonl",
+              "bytes": 289,
+              "sha256": "3fb6e0ba094bd0a07e88aefdac0a901f678a8e1882dc29d34a28cd9ff5ab2ca4"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-3-stderr.txt",
+              "bytes": 442,
+              "sha256": "2917c329075ed0f5e0a7d9c0fdb00bd46620f2aa248b5fb7647c9d7d35016eea"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7b4a8b6d2c1afb19",
+            "observed_thread": "thread-7b4a8b6d2c1afb19",
+            "raw_usage": {
+              "input_tokens": 117801,
+              "cached_input_tokens": 93312,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 3224,
+              "reasoning_output_tokens": 84
+            },
+            "started_utc": "2026-10-29T08:00:29.500Z",
+            "ended_utc": "2026-10-29T08:00:48.959Z"
+          },
+          "receipt_times": {
+            "rows": 4,
+            "first": "2026-10-29T08:00:29.659Z",
+            "last": "2026-10-29T08:00:48.397Z"
+          },
+          "commands": [],
+          "retained_native_warnings": []
+        },
+        {
+          "turn": 4,
+          "id": "t4_handoff",
+          "files_dir": "<PILOT_ROOT>/e10/turn-4-files",
+          "files": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/bin/export.cjs",
+              "relative_path": "bin/export.cjs",
+              "bytes": 372,
+              "sha256": "d04c4e18917e504cec36c718895cb031667d471767344707b0bbc8eedb3131ac",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/docs/maintainer.md",
+              "relative_path": "docs/maintainer.md",
+              "bytes": 1183,
+              "sha256": "cfa266d8273c77a0febf7fa496d279011251632d8322769aa9d224ff1046b7b0",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/EXPORT-CONTRACT.md",
+              "relative_path": "EXPORT-CONTRACT.md",
+              "bytes": 1616,
+              "sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/fixtures/north.json",
+              "relative_path": "fixtures/north.json",
+              "bytes": 348,
+              "sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/fixtures/south.json",
+              "relative_path": "fixtures/south.json",
+              "bytes": 345,
+              "sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/handoff.md",
+              "relative_path": "handoff.md",
+              "bytes": 3756,
+              "sha256": "ec06e18203d6ad88a1252712521185672c4bd8ea5fffc9fcf220059126dfb219",
+              "executable_or_package": false
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/package.json",
+              "relative_path": "package.json",
+              "bytes": 222,
+              "sha256": "6e5945ac116f629e423b0529aa98fb4d464f38c28c2457a0a3dddd503cfa1f5a",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/src/csv.cjs",
+              "relative_path": "src/csv.cjs",
+              "bytes": 332,
+              "sha256": "ab2692235252b360fadbfd494ea05e7ea917f7093a38b32d75514c1a09b7a6c1",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/src/load.cjs",
+              "relative_path": "src/load.cjs",
+              "bytes": 164,
+              "sha256": "edfda578001fc66c19ba22d6acb43da0f13b5f3e3813fb831e8bf3259e5b00c2",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/src/merge.cjs",
+              "relative_path": "src/merge.cjs",
+              "bytes": 378,
+              "sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+              "executable_or_package": true
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-files/test/export.test.cjs",
+              "relative_path": "test/export.test.cjs",
+              "bytes": 4215,
+              "sha256": "3d47ef5ca970886cd570a150d04103a258f02a70693e42a0ebf46becaa65384b",
+              "executable_or_package": true
+            }
+          ],
+          "fixture_checks": [
+            {
+              "path": "EXPORT-CONTRACT.md",
+              "actual_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "expected_sha256": "4f36c2d5dc7875729b411bfc5fb31d6f919381896ec38e2c561a6effcb110e35",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/north.json",
+              "actual_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "expected_sha256": "25a257b4eb83a6937dd3ed874fb20caf9c1518ad4f6a8b16af8f1183ab06eea5",
+              "equal_raw_bytes": true
+            },
+            {
+              "path": "fixtures/south.json",
+              "actual_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "expected_sha256": "180231006795c5b680c72603ccf8c293a165edde709d959da6045a0a22a081bd",
+              "equal_raw_bytes": true
+            }
+          ],
+          "raw_records": [
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-prompt.txt",
+              "bytes": 261,
+              "sha256": "8e4f87ce1083c64a23ef389ae607e7be41e2a0e6e033bcc313cde0e9be6e5289"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-events.jsonl",
+              "bytes": 5110,
+              "sha256": "4b41d884f00bb39be1436ddada2a8c9a4c3d839d6da00c305ce87b9d8344fa7b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-final.txt",
+              "bytes": 762,
+              "sha256": "7239fa8cf682131e18f988b88652a08af883eb838893abc14f12d8714fc6c097"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-result.json",
+              "bytes": 716,
+              "sha256": "53339541cc7b48e411138669d44ee996b57d978990b719d46a6f86aeafd8e19f"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-timing.jsonl",
+              "bytes": 720,
+              "sha256": "dad443bcd22e25d6d51d6456b3a150ccdf65b97aff7d06015d2f9d100e600b9b"
+            },
+            {
+              "path": "<PILOT_ROOT>/e10/turn-4-stderr.txt",
+              "bytes": 442,
+              "sha256": "a6aa07fc744d5c2d5b9069445b7844d829c6d7e5cb9662b959f8dd2363da9c07"
+            }
+          ],
+          "native_result": {
+            "exit_code": 0,
+            "error": null,
+            "timed_out": false,
+            "continuation_observed": true,
+            "snapshot_issues": [],
+            "expected_thread": "thread-7b4a8b6d2c1afb19",
+            "observed_thread": "thread-7b4a8b6d2c1afb19",
+            "raw_usage": {
+              "input_tokens": 168389,
+              "cached_input_tokens": 135552,
+              "cache_write_input_tokens": 0,
+              "output_tokens": 4347,
+              "reasoning_output_tokens": 84
+            },
+            "started_utc": "2026-10-29T08:00:48.986Z",
+            "ended_utc": "2026-10-29T08:01:27.792Z"
+          },
+          "receipt_times": {
+            "rows": 9,
+            "first": "2026-10-29T08:00:49.146Z",
+            "last": "2026-10-29T08:01:26.997Z"
+          },
+          "commands": [
+            {
+              "item_id": "item_1",
+              "command_sha256": "19525034e20a5d3daf6f04ad7920c0521f297deea665f8fa442e582e90e6dd7b",
+              "output_sha256": "2daccba65bf75a65a6e86872dc4ee739399190a1e2b75c0e89584c4e1e64915c",
+              "exit_code": 0,
+              "status": "completed",
+              "test_result_counts": {
+                "tests": 7,
+                "pass": 7,
+                "fail": 0,
+                "cancelled": 0,
+                "skipped": 0
+              }
+            }
+          ],
+          "retained_native_warnings": []
+        }
+      ],
+      "semantic_review": {
+        "required_case_essentials": "preserved-for-inspected-requested-core-behavior",
+        "source_preservation": "raw-byte-preserved",
+        "regression_coverage": "Meaningful public-API/CLI assertions for original identity/latest bugs and ties/order/format/nonmutation boundaries, rather than unchanged smoke tests.",
+        "requested_reasoning_and_deliverables": "Full current-ID/latest-row explanation with concrete examples and real coverage evidence; complete actual maintainer notes/handoff plus self-contained staff draft and live-export caveat.",
+        "semantic_issues": [
+          "Shared submillisecond precision gap listed at top level; no additional case-specific omission found."
+        ],
+        "retained_failures": [
+          "Turn 1 temporarily misdiagnosed the unchanged CSV regex and an attempted patch failed. The subject explicitly corrected the diagnosis after a direct local probe. Captured CSV source remains unchanged and its actual tests pass; seven tests were genuinely rerun on handoff."
+        ]
+      }
+    }
+  ],
+  "shared_semantic_issues": [
+    {
+      "id": "submillisecond_timestamp_precision",
+      "status": "shared-literal-contract-gap",
+      "subjects": [
+        "e07",
+        "e08",
+        "e09",
+        "e10"
+      ],
+      "requirement_basis": "Unchanged EXPORT-CONTRACT.md: valid ISO timestamp with explicit timezone; select newest actual timestamp instant, with no precision restriction.",
+      "actual_source_sha256": "1143268f52bb3edf05c96eabbe432aedb0522a37ac73751dc339f8c66c778915",
+      "observed_counterexample": {
+        "timestamps": [
+          "2026-10-29T12:00:00.0001Z",
+          "2026-10-29T12:00:00.0002Z"
+        ],
+        "date_parse_values": [
+          1793275200000,
+          1793275200000
+        ],
+        "actual_first_row_name": "older",
+        "literal_contract_newest_name": "newer",
+        "executed_source": "<PILOT_ROOT>/e07/turn-1-files/src/merge.cjs"
+      },
+      "interpretation": "A real precision limitation of all four identical source implementations, not a treatment-caused difference. Fixed pretrial probes cover millisecond fractions and were not modified. Intended real-input precision is unverified. e07/e08 handoffs disclose millisecond precision; e09/e10 do not state this edge."
+    }
+  ],
+  "unverified_limits": [
+    "No live staff export, production data or downstream consumer was exercised; subjects correctly retain this limitation in final deliverables.",
+    "The reviewed code is safe for the existing local probes only; this is not a universal guarantee for arbitrary future CLI paths or changed code.",
+    "No source screen establishes incoming native child instructions, cross-host behavior, desktop notifications, publishing or release compatibility.",
+    "Native usage objects are retained per turn exactly; input/output counters appear cumulative on resumes and were not summed into a cost claim.",
+    "Communication style, avoidable reading and avoidable update preferences are for the separate blinded reviewers. Required message presence does not make unhelpful content useful."
+  ],
+  "cases_checks_modified": false,
+  "policies_read": false,
+  "holdouts_read": false,
+  "model_or_agent_launches": 0,
+  "publication_projection": {
+    "raw_source_sha256": "595785984a1b350dba06e14638181d2b12ddb6bebea51b5396e047b45e3412c1",
+    "method": "Existing evidence scrubber pseudonymizes local paths; all original source/record hashes, findings and verdicts retained. Raw report stays local."
+  }
+}

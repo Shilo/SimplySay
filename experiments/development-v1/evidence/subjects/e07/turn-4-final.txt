@@ -1,0 +1,9 @@
+Created [handoff.md](handoff.md) with behavior, the nine passing regression tests, the sample CLI check, remaining limits, and the staff draft.
+
+Copyable message:
+
+> The contact exporter now recognizes contacts by contact ID. People who share an email stay separate, while the same person appearing across teams gets one row using their latest timestamped record.
+>
+> The CSV columns and format are unchanged. All nine local regression tests passed, and the supplied sample export produced the expected results. A live staff export and downstream import have not yet been verified. The tool does not update the staff directory.
+
+Nothing was sent.

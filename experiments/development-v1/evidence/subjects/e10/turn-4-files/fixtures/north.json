@@ -1,0 +1,17 @@
+{
+  "team": "north",
+  "contacts": [
+    {
+      "contact_id": "c-101",
+      "name": "Morgan Old",
+      "email": "shared@example.invalid",
+      "updated_at": "2026-10-20T09:00:00Z"
+    },
+    {
+      "contact_id": "c-202",
+      "name": "Ari Chen",
+      "email": "shared@example.invalid",
+      "updated_at": "2026-10-21T09:00:00Z"
+    }
+  ]
+}

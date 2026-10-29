@@ -1,0 +1,5 @@
+Fixed merging to use `contact_id` and compare actual timestamp instants, preserving first-row ties, original ID order, and exact winning values.
+
+Added nine regression tests and updated `docs/maintainer.md`. All tests pass, and the sample CLI export produces the expected three contacts.
+
+Fixtures, contract, and CSV format remain unchanged. Only built-in Node modules are used.

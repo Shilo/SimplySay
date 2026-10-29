@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-7b4a8b6d2c1afb19"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Staff will see one row per contact, even when that person appears across teams or changes email. Different people who share an email will remain separate. Each contact’s name and other details will come from their most recently updated record.\n\nThe CSV columns and row ordering stay the same. For the supplied samples, staff will get three contacts, including Morgan New instead of Morgan Old.\n\nNo decisions are needed before using it—the fix follows the existing contract, and all seven tests pass. When two records have exactly the same update time, the first encountered record wins, as the contract specifies."}}
+{"type":"turn.completed","usage":{"input_tokens":102235,"cached_input_tokens":77952,"cache_write_input_tokens":0,"output_tokens":2836,"reasoning_output_tokens":84}}

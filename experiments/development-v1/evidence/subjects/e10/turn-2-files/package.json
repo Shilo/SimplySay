@@ -1,0 +1,9 @@
+{
+  "name": "local-contact-export",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/export.test.cjs",
+    "export": "node bin/export.cjs fixtures/north.json fixtures/south.json"
+  }
+}

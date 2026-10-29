@@ -1,0 +1,30 @@
+The merge uses **`contact_id` as the key**. Email plays no part in deciding whether two rows represent the same person.
+
+For example, the fixtures contain:
+
+- `c-101`: Morgan, with `shared@example.invalid`
+- `c-202`: Ari, also with `shared@example.invalid`
+
+Those IDs create separate entries, so both people stay in the export. When another `c-101` row appears with Morgan’s new email, it competes only with the earlier `c-101` row.
+
+For repeated IDs, the merge parses `updated_at` and compares the actual instants:
+
+- A newer row replaces the **entire stored row**, including name and email.
+- An older row is ignored.
+- An equal timestamp keeps the first encountered row, even if the timestamps use different timezone notation.
+
+Replacing a row doesn’t move its position. Output order follows when each ID was first encountered. The input objects aren’t modified.
+
+The seven tests cover:
+
+| Test | What it protects |
+|---|---|
+| Identity and replacement | Shared emails stay separate; changed emails don’t create duplicates; newest complete row wins; stale rows lose; ID order remains stable; frozen inputs remain unchanged |
+| Timestamp comparisons | Timezone offsets, date boundaries, fractional seconds, and either encounter order |
+| Equal instants | First row wins within and across teams, including equivalent timestamp representations |
+| Empty input | Empty teams produce only the CSV header and final newline |
+| CSV escaping | Column order, commas, quotes, carriage returns, newlines, and final LF |
+| Fixtures and CLI | File argument order and exact three-contact CSV output, with no extra stdout or stderr |
+| Single contact | Basic merge and CSV behavior |
+
+Run them with `npm test`. The fixture/CLI test ties the rules together: it expects Morgan New, Ari Chen, and Jo Rivera, in that order.

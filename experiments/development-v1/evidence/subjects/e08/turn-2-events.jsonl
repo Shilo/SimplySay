@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"thread-ce42305897966385"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Staff will see one row per contact ID, even when someone’s email changes across teams. Different people sharing an email will remain separate. The newest record supplies the name and other details, including when timestamps use different timezone offsets.\n\nThe CSV columns and format stay the same. In the supplied samples, Morgan New replaces Morgan Old, while Ari Chen remains a separate contact.\n\nNo decisions are needed before using this fix under the existing contract. All eight regression tests pass, including the CLI export check."}}
+{"type":"turn.completed","usage":{"input_tokens":93285,"cached_input_tokens":79744,"cache_write_input_tokens":0,"output_tokens":4219,"reasoning_output_tokens":53}}

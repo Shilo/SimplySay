@@ -1,0 +1,33 @@
+The merge uses **`contact_id` as the identity key**. Email is just a value in the row—it never determines whether two rows belong to the same person.
+
+For example, these stay separate:
+
+| Contact ID | Name | Email |
+|---|---|---|
+| c-101 | Morgan | shared@example.invalid |
+| c-202 | Ari | shared@example.invalid |
+
+They have different IDs, so both appear in the export. Conversely, two rows with `c-101` are duplicates even if their email addresses differ.
+
+For each repeated ID, the merge:
+
+1. Compares `updated_at` as actual timestamp instants, including timezone offsets.
+2. Keeps the **entire row** with the newest instant, without mixing fields or normalizing values.
+3. Keeps the first encountered row when the instants tie.
+4. Leaves the ID in its original output position, even if a later row wins.
+
+Traversal follows the supplied file order, then the row order within each file. Inputs are not mutated.
+
+The nine regression tests cover:
+
+- **Supplied fixtures:** Morgan’s changed email still merges under c-101, Ari remains separate despite the shared email, and output order stays correct.
+- **Timestamp selection:** duplicates within and across teams, older rows encountered later, timezone offsets that defeat text comparison, and fractional seconds.
+- **Ties:** differently written timestamps representing the same instant keep the first complete row.
+- **Shared emails:** distinct IDs survive both identical emails and emails differing in case or surrounding spaces.
+- **Input preservation:** frozen teams, arrays, and contacts merge successfully and remain unchanged.
+- **Empty input:** no contact rows, with the required header and final newline.
+- **CSV formatting:** column order, preserved spaces, and escaping commas, quotes, carriage returns, and newlines.
+- **Loading order:** files are loaded in argument order.
+- **CLI integration:** the supplied fixtures produce exactly the expected CSV on stdout, with no stderr output.
+
+Run them with `npm test`. All nine passed. Malformed-row validation remains outside this repair, as specified by the contract.

@@ -1,0 +1,5 @@
+Fixed merging to use `contact_id` and actual timestamp instants, preserving first-seen order, tie behavior, and exact winning values.
+
+Added eight regression tests; all pass, including CLI output and CSV escaping. Updated `docs/maintainer.md`.
+
+Row format, supplied fixtures, and contract remain unchanged. Only built-in Node modules are used.

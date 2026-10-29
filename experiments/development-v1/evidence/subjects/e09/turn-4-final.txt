@@ -1,0 +1,7 @@
+Created [handoff.md](/<TASK_ROOT>/handoff.md) covering behavior, regression checks actually run, and remaining limits.
+
+Copy-ready staff message (not sent):
+
+> The contact exporter now keeps one row per contact ID across teams, using the newest dated row for that contact’s name and email. Different contacts who share an email address stay separate. If timestamps match exactly, the first row encountered is kept.
+>
+> The CSV columns and format are unchanged. All seven local regression tests passed, and the supplied sample export produced the expected three contacts. An export using live staff data and its downstream use have not yet been verified. The exporter reads local files and does not change staff directory records.

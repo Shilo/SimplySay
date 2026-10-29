@@ -1,0 +1,7 @@
+Created [handoff.md](/<TASK_ROOT>/handoff.md) with behavior, checks actually run, and remaining limits. Reran `npm test`: all 7 tests passed.
+
+Copy-ready staff message—not sent:
+
+> The contact exporter now keeps one row per contact ID, even when an email address changes. Different contacts who share an email stay separate. Each contact’s latest timestamped record supplies their name and other details.
+>
+> The CSV columns, format, and ordering rule are unchanged. All seven local regression tests passed, including the sample command-line export. A live or production export and downstream import have not been verified. The exporter reads local files and does not update the staff directory.

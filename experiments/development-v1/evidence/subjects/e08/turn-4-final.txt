@@ -1,0 +1,7 @@
+Created [handoff.md](handoff.md) covering behavior, checks actually run, and remaining limits. Reran the regression suite: all eight tests passed.
+
+Copy-ready staff message (not sent):
+
+> The contact export now combines records using contact IDs. Different people sharing an email address stay separate, and a contact whose email changed appears once. For repeated records, the newest timestamp determines which complete record is exported; ties keep the first encountered record.
+>
+> The CSV columns and format are unchanged. All eight local regression tests passed, including the sample CLI export. This has not been verified with a live export, production data, or a downstream import. The exporter reads local files and does not update the staff directory.
