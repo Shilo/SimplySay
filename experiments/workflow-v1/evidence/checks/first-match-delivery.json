@@ -1,0 +1,110 @@
+{
+  "evidence": "Supported persisted model-conversation records, not outgoing wire or attention",
+  "records": [
+    {
+      "id": "e31",
+      "condition": "absent",
+      "developer_messages": [
+        {
+          "line": 4,
+          "role": "developer",
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "characters": 21546,
+          "exact_authored_policy": false
+        },
+        {
+          "line": 5,
+          "role": "developer",
+          "sha256": "7accbc986563fb3a6393b09fa61e5c068e88644d939b4f0c3ecf976592dbfb50",
+          "characters": 3619,
+          "exact_authored_policy": false
+        }
+      ],
+      "requested_user_turns": [
+        {
+          "line": 10,
+          "turn": 1,
+          "role": "user",
+          "sha256": "dc3a2c2c3fd7d767f922a1511dd810e8094a49ef0c96722c7e16522e79620ad8",
+          "exact_captured_request": true
+        },
+        {
+          "line": 70,
+          "turn": 2,
+          "role": "user",
+          "sha256": "6046f14c501da0b0c417c17072fd9deaa6b497f72f572ed5feca6c3eb39a641f",
+          "exact_captured_request": true
+        },
+        {
+          "line": 82,
+          "turn": 3,
+          "role": "user",
+          "sha256": "284b90b468e434ee42b27303e8890eab6d825e64a6e2378502fe5bb824660fae",
+          "exact_captured_request": true
+        }
+      ],
+      "top_level_compaction_records": 0,
+      "outgoing_model_requests": "unverified",
+      "reasoning_content": "excluded",
+      "source_journal_sha256": [
+        "6aea095988b9b544dd4e154545b11266bc0852a08b67dd11ccacbe41e3782f29"
+      ]
+    },
+    {
+      "id": "e19",
+      "condition": "enabled",
+      "developer_messages": [
+        {
+          "line": 4,
+          "role": "developer",
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "characters": 21546,
+          "exact_authored_policy": false
+        },
+        {
+          "line": 5,
+          "role": "developer",
+          "sha256": "2bfa60ab84a7faba1720f1b6292d33abfd7790ea6456f03ae6effadaae7e4e40",
+          "characters": 3619,
+          "exact_authored_policy": false
+        },
+        {
+          "line": 10,
+          "role": "developer",
+          "sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+          "characters": 837,
+          "exact_authored_policy": true
+        }
+      ],
+      "requested_user_turns": [
+        {
+          "line": 11,
+          "turn": 1,
+          "role": "user",
+          "sha256": "dc3a2c2c3fd7d767f922a1511dd810e8094a49ef0c96722c7e16522e79620ad8",
+          "exact_captured_request": true
+        },
+        {
+          "line": 69,
+          "turn": 2,
+          "role": "user",
+          "sha256": "6046f14c501da0b0c417c17072fd9deaa6b497f72f572ed5feca6c3eb39a641f",
+          "exact_captured_request": true
+        },
+        {
+          "line": 81,
+          "turn": 3,
+          "role": "user",
+          "sha256": "284b90b468e434ee42b27303e8890eab6d825e64a6e2378502fe5bb824660fae",
+          "exact_captured_request": true
+        }
+      ],
+      "top_level_compaction_records": 0,
+      "outgoing_model_requests": "unverified",
+      "reasoning_content": "excluded",
+      "source_journal_sha256": [
+        "70c678722656d844cc3a28dcb10712cee4e9a58bbcf4d14a5dead27b0e6d5db5"
+      ]
+    }
+  ]
+}
