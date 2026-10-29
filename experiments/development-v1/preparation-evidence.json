@@ -1,0 +1,348 @@
+{
+  "schema_version": 1,
+  "status": "offline descriptive analysis only; no new models or quality judgments",
+  "history_lock_sha256": "fb56142c814d9ec3e4e51353538609b1c43f5e3ce13c2ac55f73662c44ea7e42",
+  "historical_packet_sha256": "94accd22ac9034ff5c902722d59acfd61232cc541d15b80ec6865412d213eaf5",
+  "older_observed_chat": [
+    {
+      "source": "runs-v2/r09",
+      "condition": "absent",
+      "case_id": "reimbursement_batch",
+      "ordinary_chat_words": 38,
+      "progress": [
+        "I’ll inspect the supplied batch, build the tool and tests using Node’s built-in modules, and write a report that keeps approval status separate from payment timing."
+      ],
+      "progress_count": 1
+    },
+    {
+      "source": "runs-v2/r04",
+      "condition": "installed-disabled",
+      "case_id": "reimbursement_batch",
+      "ordinary_chat_words": 39,
+      "progress": [
+        "I’ll inspect the supplied batch, build the Node.js tool and tests, and write the report and email draft. I’ll keep Friday’s arrival timing unconfirmed, as the supplied facts don’t establish it.\n",
+        "The supplied batch has 11,249 cents approved. R-102 needs approval, R-103 needs a receipt, and R-104 is excluded. All eight tests pass so far; I’m adding a command-level invalid-record check and documenting the results.\n"
+      ],
+      "progress_count": 2
+    },
+    {
+      "source": "runs-v2/r02",
+      "condition": "enabled",
+      "case_id": "reimbursement_batch",
+      "ordinary_chat_words": 37,
+      "progress": [
+        "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+      ],
+      "progress_count": 1
+    },
+    {
+      "source": "runs-v2/r06",
+      "condition": "minimal-instruction",
+      "case_id": "reimbursement_batch",
+      "ordinary_chat_words": 42,
+      "progress": [
+        "I’ll inspect the supplied batch, build and test the tool, and write the report and draft email with the payment-timing limits made clear."
+      ],
+      "progress_count": 1
+    },
+    {
+      "source": "runs-v2/r05",
+      "condition": "absent",
+      "case_id": "queue_failure_explanation",
+      "ordinary_chat_words": 1371,
+      "progress": [
+        "I’ll read the queue rules and use them to walk through the failure cases and design tradeoffs."
+      ],
+      "progress_count": 1
+    },
+    {
+      "source": "runs-v2/r03",
+      "condition": "enabled",
+      "case_id": "queue_failure_explanation",
+      "ordinary_chat_words": 1624,
+      "progress": [
+        "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs."
+      ],
+      "progress_count": 1
+    }
+  ],
+  "final_pilot_observed_chat": [
+    {
+      "condition": "absent",
+      "source": "f20",
+      "turns": [
+        {
+          "turn": 1,
+          "final_words": 49,
+          "progress_count": 1,
+          "progress": [
+            "I’ll read the analyst report and write a purchase note with the recommended pair and any cheaper option worth checking first."
+          ],
+          "final_sha256": "d01dca45f425298e8255c6e20beaf05357562013ed7ea8208784ca078ada471e"
+        },
+        {
+          "turn": 2,
+          "final_words": 356,
+          "progress_count": 0,
+          "progress": [],
+          "final_sha256": "fde4859d140c5c5c6c66bd5781294d4505de3ec035c913b9a7cef998523da301"
+        },
+        {
+          "turn": 3,
+          "final_words": 56,
+          "progress_count": 1,
+          "progress": [
+            "I’ll update the decision for D’s confirmed Friday availability, copy the original report unchanged, and check all ten pairs for the spreadsheet handoff."
+          ],
+          "final_sha256": "1e84cfa2cb25a819db1de29d83b0779cdc5d9cdac7121fb13baf8c8ca98d4dd5"
+        }
+      ]
+    },
+    {
+      "condition": "enabled",
+      "source": "f21",
+      "turns": [
+        {
+          "turn": 1,
+          "final_words": 38,
+          "progress_count": 1,
+          "progress": [
+            "I’ll read the analyst report and write a purchase note with the recommended pair and any cheaper option worth checking before ordering."
+          ],
+          "final_sha256": "37c7fceffc8265e0b0158c565a00009c97918234e9f4cf374145d83bb38225a5"
+        },
+        {
+          "turn": 2,
+          "final_words": 446,
+          "progress_count": 0,
+          "progress": [],
+          "final_sha256": "5a1bd52e26c586f1372d20e8da3d8637340fc1ba0168fa8a81850736574cb0de"
+        },
+        {
+          "turn": 3,
+          "final_words": 58,
+          "progress_count": 1,
+          "progress": [
+            "I’ll update the handoff to select C+D with D confirmed for Friday, copy the original report unchanged, and verify all ten pairs in the spreadsheet JSON."
+          ],
+          "final_sha256": "5d5e4721217aa81673ba8ce85d34b3d81ed3418e82f0fa08e11e1ead7330e3bd"
+        }
+      ]
+    },
+    {
+      "condition": "minimal",
+      "source": "f22",
+      "turns": [
+        {
+          "turn": 1,
+          "final_words": 42,
+          "progress_count": 1,
+          "progress": [
+            "I’ll read the analyst report and write a purchase note with the recommended pair and any cheaper option to check first."
+          ],
+          "final_sha256": "8ff176715cbdf960d5303cf623b01e55e4fc8d959ff2ca20f2a752c9ab351574"
+        },
+        {
+          "turn": 2,
+          "final_words": 356,
+          "progress_count": 0,
+          "progress": [],
+          "final_sha256": "8044b72b37f159570cfc0da14385bd4eaf97051d30b77a84d02e3b2bf6dade08"
+        },
+        {
+          "turn": 3,
+          "final_words": 45,
+          "progress_count": 1,
+          "progress": [
+            "I’ll prepare the handoff with C+D selected, update all ten pair checks for D’s confirmed Friday availability, and preserve the original report unchanged."
+          ],
+          "final_sha256": "b36c989327cf9b03d9bbfb88de65e9f9d2951f939b39d663ea52fb469d19d46b"
+        }
+      ]
+    }
+  ],
+  "final_pilot_existing_judgments": [
+    {
+      "comparison": "absent-enabled",
+      "votes": [
+        {
+          "reviewer": "final-review-1",
+          "calibrated": true,
+          "preference": "q2",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "right",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "left_information": "omitted-essential",
+          "right_information": "omitted-essential"
+        },
+        {
+          "reviewer": "final-review-2",
+          "calibrated": true,
+          "preference": "q2",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "left",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "left_information": "omitted-essential",
+          "right_information": "omitted-essential"
+        }
+      ]
+    },
+    {
+      "comparison": "absent-minimal",
+      "votes": [
+        {
+          "reviewer": "final-review-1",
+          "calibrated": true,
+          "preference": "q3",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "left",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "left_information": "omitted-essential",
+          "right_information": "omitted-essential"
+        },
+        {
+          "reviewer": "final-review-2",
+          "calibrated": true,
+          "preference": "q3",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "right",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "left_information": "omitted-essential",
+          "right_information": "omitted-essential"
+        }
+      ]
+    },
+    {
+      "comparison": "enabled-minimal",
+      "votes": [
+        {
+          "reviewer": "final-review-1",
+          "calibrated": true,
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "left_information": "omitted-essential",
+          "right_information": "omitted-essential"
+        },
+        {
+          "reviewer": "final-review-2",
+          "calibrated": true,
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "left_information": "omitted-essential",
+          "right_information": "omitted-essential"
+        }
+      ]
+    }
+  ],
+  "existing_loading_audit": {
+    "owned_startup_events": [
+      {
+        "event": "SessionStart",
+        "source": "startup",
+        "session_id": "thread-f05fa2bd620f5a45",
+        "policyHash": "c6ff9c021ae76e0377f4d7a3fd1f568728d0721ca5b781249a0cf38214065fcd"
+      }
+    ],
+    "actual_startups": 1,
+    "not_a_prompt_adherence_guarantee": true
+  },
+  "existing_host_metadata": [
+    {
+      "source": "f20",
+      "source_kind": "existing disposable model-metadata cache, not a captured outgoing model request",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "relevant_paragraphs": [
+        "If the user's request requires calling tools, start with a message in the `commentary` channel. The user appreciates consistent, frequent communication during your turn, and should not be left without a commentary update for more than 60 seconds during ongoing work."
+      ],
+      "delivery_and_precedence_in_actual_request": "unverified",
+      "no_auth_copy_present": true
+    },
+    {
+      "source": "f21",
+      "source_kind": "existing disposable model-metadata cache, not a captured outgoing model request",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "relevant_paragraphs": [
+        "If the user's request requires calling tools, start with a message in the `commentary` channel. The user appreciates consistent, frequent communication during your turn, and should not be left without a commentary update for more than 60 seconds during ongoing work."
+      ],
+      "delivery_and_precedence_in_actual_request": "unverified",
+      "no_auth_copy_present": true
+    },
+    {
+      "source": "f22",
+      "source_kind": "existing disposable model-metadata cache, not a captured outgoing model request",
+      "model": "gpt-6.1-sol",
+      "template_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+      "template_characters": 21546,
+      "relevant_paragraphs": [
+        "If the user's request requires calling tools, start with a message in the `commentary` channel. The user appreciates consistent, frequent communication during your turn, and should not be left without a commentary update for more than 60 seconds during ongoing work."
+      ],
+      "delivery_and_precedence_in_actual_request": "unverified",
+      "no_auth_copy_present": true
+    }
+  ],
+  "new_candidate_drafts": [
+    {
+      "path": "candidates/a-relevance-gate.v1.txt",
+      "bytes": 724,
+      "words": 103,
+      "sha256": "ade89e071a2037c5311ed1d6a50911b857c5f9bad91ace990e59a8c1fdfbad28",
+      "status": "untested controller draft"
+    },
+    {
+      "path": "candidates/b-incremental-conversation.v1.txt",
+      "bytes": 715,
+      "words": 95,
+      "sha256": "79343fba1bde07d7cf95e17c8644e06feb9ed55af8c9446ce02bb0749219198e",
+      "status": "untested controller draft"
+    }
+  ],
+  "allocation_checks": {
+    "slots": 32,
+    "scheduled": 30,
+    "subjects": 24,
+    "scheduled_subject_turns": 88,
+    "scheduled_all_turns": 100,
+    "total_with_reserves": 108,
+    "new_conversations_launched": 0,
+    "approval": "pending-owner-approval"
+  },
+  "privacy": "Only model template hash and relevant generic host paragraph exported; cache identity, account metadata, auth, private reasoning and full instructions excluded."
+}
