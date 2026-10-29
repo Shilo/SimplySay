@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-2-review",
+  "status": "unit-2-finished-shared-preview-defect",
   "new_conversations": 20,
   "new_task_starts": 49,
   "starts": [
@@ -202,7 +202,7 @@
       "role": "fresh-blinded-reader-reviewer-one-unit2",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-valid-calibration",
       "purpose": "Independent blinded judgment of saved unit2 responses and protected work; no response rerun",
       "agent": "/root/reader_unit2_blind_1"
     },
@@ -211,7 +211,7 @@
       "role": "fresh-blinded-reader-reviewer-reversed-unit2",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-valid-calibration",
       "purpose": "Independent blinded judgment of saved unit2 responses and protected work; no response rerun",
       "agent": "/root/reader_unit2_blind_2"
     }
@@ -228,7 +228,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "All planned response conversations complete; only recorded blinded reviews pending",
+  "block_reason": "All planned work complete; record the next purposeful work unit before additional model tasks",
   "checkpoint": "experiments/reader-v1/evidence/unit2/first-pair-checkpoint.json",
   "diagnostics": [
     {

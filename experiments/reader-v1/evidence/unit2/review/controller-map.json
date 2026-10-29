@@ -1,0 +1,326 @@
+{
+  "sources": [
+    {
+      "id": "n14",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/c.case.json"
+    },
+    {
+      "id": "n15",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/reader-v1/cases/c.case.json"
+    },
+    {
+      "id": "n16",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/reader-v1/cases/c.case.json"
+    },
+    {
+      "id": "n17",
+      "condition": "absent",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n18",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    },
+    {
+      "id": "n19",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v2.txt",
+      "case_file": "experiments/workflow-v1/cases/w1.case.json"
+    }
+  ],
+  "pairs": [
+    {
+      "key": "c-enabled-absent",
+      "a": "n14",
+      "b": "n15"
+    },
+    {
+      "key": "c-disabled-absent",
+      "a": "n14",
+      "b": "n16"
+    },
+    {
+      "key": "w1-r2-enabled-absent",
+      "a": "n17",
+      "b": "n18"
+    },
+    {
+      "key": "w1-r2-disabled-absent",
+      "a": "n17",
+      "b": "n19"
+    }
+  ],
+  "reviewers": {
+    "reader-unit2-review-1": {
+      "pairs": [
+        {
+          "key": "c-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-545979bf3b9b",
+          "left": "sample-4701b5152562",
+          "right": "sample-696e84ff09c3",
+          "left_source": "n14",
+          "right_source": "n15"
+        },
+        {
+          "key": "c-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-c6543c6dbaf0",
+          "left": "sample-8e1146a4a71a",
+          "right": "sample-4701b5152562",
+          "left_source": "n16",
+          "right_source": "n14"
+        },
+        {
+          "key": "diagnostic-d1",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d1",
+          "pair_id": "pair-9187ad2d688f",
+          "left": "sample-57b2448fa10e",
+          "right": "sample-c8c608ad14ca",
+          "left_source": "diagnostic-d1-good",
+          "right_source": "diagnostic-d1-mutant",
+          "good_source": "diagnostic-d1-good"
+        },
+        {
+          "pair_id": "pair-73ab5828a",
+          "left": "sample-2576ab1cf",
+          "right": "sample-86c7faf6c",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "cMissing",
+          "right_source": "mC"
+        },
+        {
+          "key": "diagnostic-d2",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d2",
+          "pair_id": "pair-90ab9af877c2",
+          "left": "sample-f3c26928ad4b",
+          "right": "sample-63006303ba53",
+          "left_source": "diagnostic-d2-mutant",
+          "right_source": "diagnostic-d2-good",
+          "good_source": "diagnostic-d2-good"
+        },
+        {
+          "pair_id": "pair-5ff3ef47e",
+          "left": "sample-86c7faf6c",
+          "right": "sample-b3828c97b",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cFiller"
+        },
+        {
+          "key": "diagnostic-d3",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d3",
+          "pair_id": "pair-fef313ae04a6",
+          "left": "sample-0cf2fee06b67",
+          "right": "sample-0881b1650e44",
+          "left_source": "diagnostic-d3-good",
+          "right_source": "diagnostic-d3-mutant",
+          "good_source": "diagnostic-d3-good"
+        },
+        {
+          "key": "w1-r2-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-c280b09bff30",
+          "left": "sample-f37b5f9e47fd",
+          "right": "sample-80d071b4ace0",
+          "left_source": "n17",
+          "right_source": "n18"
+        },
+        {
+          "key": "diagnostic-d4",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d4",
+          "pair_id": "pair-e1648ca3d666",
+          "left": "sample-6473b950883d",
+          "right": "sample-6fe83f9834e9",
+          "left_source": "diagnostic-d4-mutant",
+          "right_source": "diagnostic-d4-good",
+          "good_source": "diagnostic-d4-good"
+        },
+        {
+          "key": "w1-r2-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-40d8f6c2f65b",
+          "left": "sample-9456b21c2c73",
+          "right": "sample-f37b5f9e47fd",
+          "left_source": "n19",
+          "right_source": "n17"
+        },
+        {
+          "key": "diagnostic-d5",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d5",
+          "pair_id": "pair-856ff177beda",
+          "left": "sample-a4a53d7969c0",
+          "right": "sample-253080793de5",
+          "left_source": "diagnostic-d5-good",
+          "right_source": "diagnostic-d5-mutant",
+          "good_source": "diagnostic-d5-good"
+        },
+        {
+          "pair_id": "pair-dcf59ddf3",
+          "left": "sample-c33d41d55",
+          "right": "sample-e9a313b83",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "cTerse",
+          "right_source": "dB"
+        },
+        {
+          "pair_id": "pair-a9491d80f",
+          "left": "sample-86c7faf6c",
+          "right": "sample-cbe806cd1",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cIdentical"
+        }
+      ],
+      "packet_sha256": "fb5d5dd9e8c3047dcb9be1d171538700670c607b27f0e09eb0848a0e05a86591"
+    },
+    "reader-unit2-review-2": {
+      "pairs": [
+        {
+          "pair_id": "pair-f2ecf2583",
+          "left": "sample-f896a3879",
+          "right": "sample-fe159c2f8",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cMissing"
+        },
+        {
+          "pair_id": "pair-30d4f6ffa",
+          "left": "sample-914adb43c",
+          "right": "sample-f896a3879",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "cFiller",
+          "right_source": "mC"
+        },
+        {
+          "key": "diagnostic-d5",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d5",
+          "pair_id": "pair-fb434440e320",
+          "left": "sample-fa97b6998cba",
+          "right": "sample-03a12d543054",
+          "left_source": "diagnostic-d5-mutant",
+          "right_source": "diagnostic-d5-good",
+          "good_source": "diagnostic-d5-good"
+        },
+        {
+          "key": "w1-r2-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-5e9ba43f302e",
+          "left": "sample-10e0e571f68a",
+          "right": "sample-63ed66b3d8d7",
+          "left_source": "n17",
+          "right_source": "n19"
+        },
+        {
+          "key": "diagnostic-d4",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d4",
+          "pair_id": "pair-7fb7489087c5",
+          "left": "sample-55e6dbd4804a",
+          "right": "sample-fb2128c3bf53",
+          "left_source": "diagnostic-d4-good",
+          "right_source": "diagnostic-d4-mutant",
+          "good_source": "diagnostic-d4-good"
+        },
+        {
+          "key": "w1-r2-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-5c6f02d90b1c",
+          "left": "sample-2bb85924dcf1",
+          "right": "sample-10e0e571f68a",
+          "left_source": "n18",
+          "right_source": "n17"
+        },
+        {
+          "key": "diagnostic-d3",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d3",
+          "pair_id": "pair-012b8cb80b1a",
+          "left": "sample-1eb9fa3213ec",
+          "right": "sample-b735d1250e61",
+          "left_source": "diagnostic-d3-mutant",
+          "right_source": "diagnostic-d3-good",
+          "good_source": "diagnostic-d3-good"
+        },
+        {
+          "pair_id": "pair-49491fbf4",
+          "left": "sample-95842651b",
+          "right": "sample-89813e901",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "dB",
+          "right_source": "cTerse"
+        },
+        {
+          "key": "diagnostic-d2",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d2",
+          "pair_id": "pair-04b39a160a0c",
+          "left": "sample-661495ea0605",
+          "right": "sample-1fda5c3fa93e",
+          "left_source": "diagnostic-d2-good",
+          "right_source": "diagnostic-d2-mutant",
+          "good_source": "diagnostic-d2-good"
+        },
+        {
+          "pair_id": "pair-e8e252fc0",
+          "left": "sample-73cbcc024",
+          "right": "sample-f896a3879",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "cIdentical",
+          "right_source": "mC"
+        },
+        {
+          "key": "diagnostic-d1",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d1",
+          "pair_id": "pair-8d91bfb0bc08",
+          "left": "sample-6b64e62a023d",
+          "right": "sample-fa01894bfa6e",
+          "left_source": "diagnostic-d1-mutant",
+          "right_source": "diagnostic-d1-good",
+          "good_source": "diagnostic-d1-good"
+        },
+        {
+          "key": "c-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-9b1a88fb9f7f",
+          "left": "sample-42e98546b63f",
+          "right": "sample-a87c2c430f96",
+          "left_source": "n14",
+          "right_source": "n16"
+        },
+        {
+          "key": "c-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-2715bfa791f4",
+          "left": "sample-2bcea6edb662",
+          "right": "sample-42e98546b63f",
+          "left_source": "n15",
+          "right_source": "n14"
+        }
+      ],
+      "packet_sha256": "725d13cbf4dc3ea7dc43959322559fa0b3b309abf209f5caa4fa9f1b631c06b3"
+    }
+  }
+}

@@ -1,0 +1,1267 @@
+{
+  "label": "Automated experimental judgments, not measured human comprehension",
+  "archive": [
+    {
+      "path": "assessment.json",
+      "sha256": "472216a3483056de2918d5a7f22918989521d4f35cb2094f25063118bb4b77ce",
+      "bytes": 379372
+    },
+    {
+      "path": "controller-map.json",
+      "sha256": "7b21a245fbdf8c2a41d8f44e0bf574e9b540d18567a13be96bad8cb0bcd7bc21",
+      "bytes": 9975
+    },
+    {
+      "path": "deterministic.json",
+      "sha256": "9786d0d681ab0eab972e93057043c17f311e8dc7f4c8c9b9f3525a8685b1ab91",
+      "bytes": 57417
+    },
+    {
+      "path": "reader-freeze.json",
+      "sha256": "aa1824acda02b687583657828bff341c28861870d6ec55668785f5e3f87db5ea",
+      "bytes": 9463
+    },
+    {
+      "path": "chat-content-screens.json",
+      "sha256": "56925dd715bc3695283d8dc6813270b24b677d980477d281f6dd27a79bd25828",
+      "bytes": 1057
+    },
+    {
+      "path": "reader-unit2-review-1/packet.json",
+      "sha256": "fb5d5dd9e8c3047dcb9be1d171538700670c607b27f0e09eb0848a0e05a86591",
+      "bytes": 763828
+    },
+    {
+      "path": "reader-unit2-review-1/response-template.json",
+      "sha256": "38633a69a2feb3ee98b3d686403c3412287cee190f196ea2d8ec58ef5b58c0f0",
+      "bytes": 29984
+    },
+    {
+      "path": "reviews/reader-unit2-review-1.json",
+      "sha256": "29de1580dd2ee61cbccadbb200404094a39c56467a53b2aa11c0dde31b7d40f7",
+      "bytes": 124002
+    },
+    {
+      "path": "reader-unit2-review-2/packet.json",
+      "sha256": "725d13cbf4dc3ea7dc43959322559fa0b3b309abf209f5caa4fa9f1b631c06b3",
+      "bytes": 763828
+    },
+    {
+      "path": "reader-unit2-review-2/response-template.json",
+      "sha256": "741ffaf5832d6f4d4c30092f4f49be2456bf9df40e15f121f82a23b25632481b",
+      "bytes": 29984
+    },
+    {
+      "path": "reviews/reader-unit2-review-2.json",
+      "sha256": "6d9568a6afce5c69a30cfe2c29a8278777d0007d45373e2d56cf580654728feb",
+      "bytes": 91946
+    }
+  ],
+  "completed_response_conversations": 6,
+  "response_task_starts": 18,
+  "new_reviewer_conversations": 2,
+  "reviewer_task_starts": 2,
+  "preparation_followup_tasks": 2,
+  "fresh_response_failures": 0,
+  "retries": 0,
+  "all_objective_checks": "pass",
+  "generated_reproduction_commands_checked": 3,
+  "original_unit1_review_archive_unchanged": true,
+  "historical_locked_files_unchanged": 287,
+  "sealed_content_opened": false,
+  "sealed_hashes_unchanged": true,
+  "auth_profiles_checked": 32,
+  "copied_signins_retained": 0,
+  "subject_export_files": 249,
+  "raw_byte_exact_artifacts": 123,
+  "reviewers": [
+    {
+      "id": "reader-unit2-review-1",
+      "status": "received",
+      "legacy": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "diagnostics": {
+        "d1": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d2": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_explanation",
+            "filler",
+            "repetition"
+          ],
+          "confidence": "high"
+        },
+        "d3": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_jargon",
+            "clarity"
+          ],
+          "confidence": "high"
+        },
+        "d4": {
+          "pass": true,
+          "type": "necessary-interruption",
+          "eligible_claims": [
+            "information",
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d5": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates",
+            "filler",
+            "repetition",
+            "unnecessary_explanation"
+          ],
+          "confidence": "high"
+        }
+      },
+      "eligible_claims": {
+        "information": true,
+        "clarity": true,
+        "relevance": true,
+        "filler": true,
+        "repetition": true,
+        "unnecessary_jargon": true,
+        "excessive_updates": true,
+        "unnecessary_explanation": true
+      }
+    },
+    {
+      "id": "reader-unit2-review-2",
+      "status": "received",
+      "legacy": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "diagnostics": {
+        "d5": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates",
+            "filler",
+            "repetition",
+            "unnecessary_explanation"
+          ],
+          "confidence": "high"
+        },
+        "d4": {
+          "pass": true,
+          "type": "necessary-interruption",
+          "eligible_claims": [
+            "information",
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d3": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_jargon",
+            "clarity"
+          ],
+          "confidence": "high"
+        },
+        "d2": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_explanation",
+            "filler",
+            "repetition"
+          ],
+          "confidence": "high"
+        },
+        "d1": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        }
+      },
+      "eligible_claims": {
+        "information": true,
+        "clarity": true,
+        "relevance": true,
+        "filler": true,
+        "repetition": true,
+        "unnecessary_jargon": true,
+        "excessive_updates": true,
+        "unnecessary_explanation": true
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "c-enabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit2-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "The signature check uses `kid` to select a bundled Ed25519 public key, then checks `sig` against the signed event ID, ticket ID, and validity times. Success establishes that the trusted issuer signed those fields and they have not been altered.",
+                "It finishes at **9:55 am**."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "The signature check proves that the trusted issuer signed the event, ticket ID and validity times, and that those signed fields have not changed. The `kid` field selects the bundled Ed25519 public key used to check the signature.",
+                "It finishes at 9:55 am."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both explain offline green in everyday terms for the coordinator, then provide worked checks/tables or steps when the user becomes the maintainer. The simple time question receives an immediately readable answer.",
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "It finishes at **9:55 am**.",
+                "It finishes at 9:55 am."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Each follows the chronological requests: admission/duplicate limits, then the requested ticket/signature/reconnection reasoning, then just the briefing finish time.",
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "It finishes at **9:55 am**.",
+                "It finishes at 9:55 am."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The replies lead with substantive answers. The surrounding examples and qualifications concern the scanner’s actual limits rather than generic praise or task-free preamble.",
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Revisiting ticket facts in turn two is justified by the new request for reasoning. Neither appends a gate checklist to the later time calculation. Overlapping packet views are not counted as extra messages.",
+              "evidence": [
+                "It finishes at **9:55 am**.",
+                "It finishes at 9:55 am.",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Technical key/signature terms occur in the maintainer’s requested explanation and are connected to what verification proves. Coordinator-facing wording remains accessible.",
+              "evidence": [
+                "The signature check uses `kid` to select a bundled Ed25519 public key, then checks `sig` against the signed event ID, ticket ID, and validity times. Success establishes that the trusted issuer signed those fields and they have not been altered.",
+                "The signature check proves that the trusted issuer signed the event, ticket ID and validity times, and that those signed fields have not changed. The `kid` field selects the bundled Ed25519 public key used to check the signature."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both contain appropriate task-opening messages rather than repetitive interruption. A separate turn-two opening on a side that rereads the notes is not an excess merely because the other side answers from context.",
+              "evidence": [
+                "Before final for turn 1: I’ll read `scanner-notes.md` and check what the green tick and offline scanning mean for the door crew.",
+                "Before final for turn 1: I’ll read the scanner notes and explain what the green tick and two offline phones mean for your door crew.\n",
+                "Before final for turn 2: I’ll check the notes again, then walk through each ticket’s checks and what changes when the server connection returns."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Turn one’s practical cancellation, clock and offline-duplication limits support the gate decision. Turn two explicitly asks for the detailed causal reasoning; turn three remains concise. Neither side’s useful requested precision is treated as clutter.",
+              "evidence": [
+                "The signature check uses `kid` to select a bundled Ed25519 public key, then checks `sig` against the signed event ID, ticket ID, and validity times. Success establishes that the trusted issuer signed those fields and they have not been altered.",
+                "The signature check proves that the trusted issuer signed the event, ticket ID and validity times, and that those signed fields have not changed. The `kid` field selects the bundled Ed25519 public key used to check the signature.",
+                "It finishes at **9:55 am**.",
+                "It finishes at 9:55 am."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": []
+        },
+        {
+          "reviewer": "reader-unit2-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "The signature authenticates the expiry time; it cannot establish that the phone’s current time is correct.",
+                "It cannot reverse those admissions or prevent duplicates that already happened.",
+                "It finishes at 9:55 am."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "The signature correctly protects the expiry value; the error comes from comparing it with an inaccurate clock.",
+                "That cannot undo people already admitted or retroactively prevent the two offline acceptances of T-41.",
+                "It finishes at **9:55 am**."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both give the coordinator a direct practical warning, then provide the maintainer’s requested causal traces with tables or ordered steps. The simple last question receives a direct time answer.",
+              "evidence": [
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "It finishes at 9:55 am.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both adapt to each current turn: local-green limits, detailed signature/state/clock reasoning, then the 15-minute arithmetic. Neither replaces the requested explanation with a headline.",
+              "evidence": [
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "A valid signature does **not** prove that a ticket is currently uncanceled, unused or within its validity window.",
+                "Signing the validity times also does not make the phone’s clock accurate."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The examples and qualifications explain concrete risks in the supplied prototype. Neither adds empty commentary or a new checklist to the brief time answer.",
+              "evidence": [
+                "It finishes at 9:55 am.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Restating outcomes while walking through separate checks supports the requested reasoning. Neither repeats a gate briefing checklist in the final turn.",
+              "evidence": [
+                "A valid signature does **not** prove that a ticket is currently uncanceled, unused or within its validity window.",
+                "Signing the validity times also does not make the phone’s clock accurate.",
+                "It finishes at 9:55 am.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The first turn uses practical terms for the nondeveloper, while the maintainer’s technical turn explains the signature and indivisible server operation. That requested precision is appropriate.",
+              "evidence": [
+                "**An offline green tick does not guarantee that someone is currently allowed in. Two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "A valid signature does **not** prove that a ticket is currently uncanceled, unused or within its validity window.",
+                "Signing the validity times also does not make the phone’s clock accurate."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both use scope-setting openings for recorded file reading. Where one reuses already-read notes without a new tool call, its lack of another opening is not itself an advantage. No redundant in-task status stream appears.",
+              "evidence": [
+                "I’ll read the scanner notes and explain what the green tick and two offline phones mean for your door crew.",
+                "I’ll read `scanner-notes.md` and check what the green tick and offline scanning mean for the door crew."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both preserve the detailed second-turn reasoning the maintainer explicitly requests, and keep the third-turn time answer brief. There is no compelling excess that distinguishes them.",
+              "evidence": [
+                "A valid signature does **not** prove that a ticket is currently uncanceled, unused or within its validity window.",
+                "Signing the validity times also does not make the phone’s clock accurate.",
+                "It finishes at 9:55 am.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "key": "c-disabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit2-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "The QR’s `kid` selects a bundled Ed25519 public key. Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed.",
+                "It finishes at **9:55 am**."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "The signature check uses `kid` to select a bundled Ed25519 public key, then checks `sig` against the signed event ID, ticket ID, and validity times. Success establishes that the trusted issuer signed those fields and they have not been altered.",
+                "It finishes at **9:55 am**."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both explain offline green in everyday terms for the coordinator, then provide worked checks/tables or steps when the user becomes the maintainer. The simple time question receives an immediately readable answer.",
+              "evidence": [
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Each follows the chronological requests: admission/duplicate limits, then the requested ticket/signature/reconnection reasoning, then just the briefing finish time.",
+              "evidence": [
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The replies lead with substantive answers. The surrounding examples and qualifications concern the scanner’s actual limits rather than generic praise or task-free preamble.",
+              "evidence": [
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Revisiting ticket facts in turn two is justified by the new request for reasoning. Neither appends a gate checklist to the later time calculation. Overlapping packet views are not counted as extra messages.",
+              "evidence": [
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**.",
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Technical key/signature terms occur in the maintainer’s requested explanation and are connected to what verification proves. Coordinator-facing wording remains accessible.",
+              "evidence": [
+                "The QR’s `kid` selects a bundled Ed25519 public key. Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed.",
+                "The signature check uses `kid` to select a bundled Ed25519 public key, then checks `sig` against the signed event ID, ticket ID, and validity times. Success establishes that the trusted issuer signed those fields and they have not been altered."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both contain appropriate task-opening messages rather than repetitive interruption. A separate turn-two opening on a side that rereads the notes is not an excess merely because the other side answers from context.",
+              "evidence": [
+                "Before final for turn 1: I’ll read the scanner notes and check what the green tick means, including what happens when two phones are offline.",
+                "Before final for turn 1: I’ll read `scanner-notes.md` and check what the green tick and offline scanning mean for the door crew.",
+                "Before final for turn 2: I’ll trace each ticket through the checks in the notes, then explain what changes when the phones reconnect.",
+                "Before final for turn 2: I’ll check the notes again, then walk through each ticket’s checks and what changes when the server connection returns."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Turn one’s practical cancellation, clock and offline-duplication limits support the gate decision. Turn two explicitly asks for the detailed causal reasoning; turn three remains concise. Neither side’s useful requested precision is treated as clutter.",
+              "evidence": [
+                "The QR’s `kid` selects a bundled Ed25519 public key. Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed.",
+                "The signature check uses `kid` to select a bundled Ed25519 public key, then checks `sig` against the signed event ID, ticket ID, and validity times. Success establishes that the trusted issuer signed those fields and they have not been altered.",
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": []
+        },
+        {
+          "reviewer": "reader-unit2-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "The signature correctly protects the expiry value; the error comes from comparing it with an inaccurate clock.",
+                "That cannot undo people already admitted or retroactively prevent the two offline acceptances of T-41.",
+                "It finishes at **9:55 am**."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "The signature correctly protects the stated expiry time. The error comes from comparing that authentic expiry against B’s slow clock.",
+                "It cannot undo entry or retroactively prevent the two T-41 admissions.",
+                "It finishes at **9:55 am**."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both give the coordinator a direct practical warning, then provide the maintainer’s requested causal traces with tables or ordered steps. The simple last question receives a direct time answer.",
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both adapt to each current turn: local-green limits, detailed signature/state/clock reasoning, then the 15-minute arithmetic. Neither replaces the requested explanation with a headline.",
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "Signing the validity times also does not make the phone’s clock accurate.",
+                "Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The examples and qualifications explain concrete risks in the supplied prototype. Neither adds empty commentary or a new checklist to the brief time answer.",
+              "evidence": [
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Restating outcomes while walking through separate checks supports the requested reasoning. Neither repeats a gate briefing checklist in the final turn.",
+              "evidence": [
+                "Signing the validity times also does not make the phone’s clock accurate.",
+                "Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed.",
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The first turn uses practical terms for the nondeveloper, while the maintainer’s technical turn explains the signature and indivisible server operation. That requested precision is appropriate.",
+              "evidence": [
+                "**A green tick does not guarantee that someone is currently allowed in. Two offline phones can also admit the same ticket twice.**",
+                "**An offline green tick does not guarantee that the person is currently allowed in. And two offline phones can accept the same ticket twice.**",
+                "Signing the validity times also does not make the phone’s clock accurate.",
+                "Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both use scope-setting openings for recorded file reading. Where one reuses already-read notes without a new tool call, its lack of another opening is not itself an advantage. No redundant in-task status stream appears.",
+              "evidence": [
+                "I’ll read `scanner-notes.md` and check what the green tick and offline scanning mean for the door crew.",
+                "I’ll read the scanner notes and check what the green tick means, including what happens when two phones are offline."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both preserve the detailed second-turn reasoning the maintainer explicitly requests, and keep the third-turn time answer brief. There is no compelling excess that distinguishes them.",
+              "evidence": [
+                "Signing the validity times also does not make the phone’s clock accurate.",
+                "Successful signature verification proves that the trusted issuer signed the event, ticket ID, and validity-window fields, and that those signed fields have not changed.",
+                "It finishes at **9:55 am**.",
+                "It finishes at **9:55 am**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "key": "w1-r2-enabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit2-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now.",
+                "Committee message to copy; not sent:\n\n> We will keep the current reference card in place while we plan a limited, staffed check of the reorganized guide. Our audit does not support the earlier claim that the new guide is 30% faster and more accurate. Four volunteers contributed eight task pairs; seven had both times recorded. Across those seven pairs, total time was 910 seconds with the reference and 800 seconds with the guide, an observed reduction of 110 seconds (about 12.1%). The guide was faster in five pairs and slower in two. First-selection accuracy across all eight pairs was 7/8 for each format.\n>\n> These results support further checking but do not establish improved accuracy or readiness for standardization. Repeated tasks, coaching and one missing guide time leave uncertainty about performance across ordinary shifts. Before any next check starts, we will define its scope, measurement rules and acceptance criteria for accuracy, usability, assistance and time. No new check has started.",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}\n",
+                "Both times are positive, so P5 is eligible for timing. Its contribution is `140 - 150 = -10` seconds: the guide was ten seconds slower. Excluding it because the guide answer was wrong would remove a recorded unfavorable result in violation of the protocol.",
+                "P7"
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**No—the evidence supports neither claim.** Total lookup time was 12.09% lower across seven complete pairs, and both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet.",
+                "Committee message to copy; not sent:\n\n> We will keep the current reference card in place while planning a limited, staffed check of the reorganized guide. Four volunteers contributed eight task pairs, with complete timings for seven. Across those seven pairs, recorded lookup time totaled 910 seconds with the reference and 800 seconds with the guide—a reduction of 12.09%. The guide was faster in five pairs and slower in two. Both formats had seven correct first selections out of eight. The evidence does not support the draft’s claims of a 30% time reduction or improved accuracy.\n>\n> Repeated lookups, coaching, one missing guide time and limited participation leave performance in ordinary work uncertain. These results support further checking before standardization. Before starting, we need to agree the check’s scope, staffing, measurement rules and decision criteria for accuracy, usability, assistance and time. No further study has been launched.",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}\n",
+                "Both times are positive, so P5 belongs in the time comparison. Its contribution is `140 - 150 = -10` seconds, meaning the guide took 10 seconds longer. Include it among the slower pairs even though the guide was attempted second and could have benefited from practice. The record does not explain why the guide was slower, so it cannot isolate an effect of the guide, the task or coaching.",
+                "Exclude P7 from both timing totals, including its known 150-second reference time. Without a guide time, there is no matched difference and no basis to call P7 faster, slower or tied. A correct selection, assistance flag or known task order does not recover seconds. Do not treat the blank as a failure or as zero, and do not replace it with another volunteer's time."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both finals clearly state a limited staffed check, correct the speed/accuracy claim and locate the requested files. The committee copy is separately complete and readable, with no style penalty for its requested content.",
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now.",
+                "**No—the evidence supports neither claim.** Total lookup time was 12.09% lower across seven complete pairs, and both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both keep ordinary chat on the current decision and unresolved scope/criteria. Detailed methods and routine verification reside in the requested files; neither substitutes a short headline for the handoff.",
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now.",
+                "**No—the evidence supports neither claim.** Total lookup time was 12.09% lower across seven complete pairs, and both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Neither ordinary final adds a generic lesson, promotional preamble or unrelated aside. Completion/file-location statements are useful handoff information.",
+              "evidence": [
+                "The evidence supports **a limited, staffed next check**. Immediate standardization is unsupported: matched time fell 12.1% across seven pairs, while first-selection accuracy was 7/8 for both formats.\n\nCreated [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json), including corrected summary wording and verification notes. All supplied sources remain unchanged.\n\nBefore any next check, define its scope and accuracy/usability acceptance criteria.",
+                "Recommend a **limited, staffed next check before standardizing**. The guide saved 12.09% across seven complete time pairs, was slower twice, and matched reference accuracy at 7/8. The draft overstates the evidence.\n\nCreated [findings.md](<TASK_ROOT>/audit/findings.md), including a corrected summary, and [metrics.json](<TASK_ROOT>/audit/metrics.json).\n\nAll supplied sources remain unchanged. No volunteers were contacted or further study started."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The narrow follow-up specifically asks about the claim again, so restating corrected numbers serves that request. Repeating the facts in standalone committee copy is required protected content, not chat repetition.",
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now.",
+                "**No—the evidence supports neither claim.** Total lookup time was 12.09% lower across seven complete pairs, and both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both communicate matched time and first selections in understandable context; the full methods file’s precise inclusion rules and arithmetic are requested technical depth.",
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now.",
+                "**No—the evidence supports neither claim.** Total lookup time was 12.09% lower across seven complete pairs, and both formats had 7/8 correct first selections.\n\nYour decision now is whether to authorize a limited, staffed next check. The evidence does not support standardizing the guide yet."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both have useful openings and an early adoption/claim result during substantial file work. No repeated empty status messages occur. The additional message on one side contains a verification result and pending planning decisions, so count alone does not establish excess; optional methodological payload is assessed separately.",
+              "evidence": [
+                "I’ll inspect the protocol and study records, check the calculations independently, and write the audit files. I’ll leave the supplied sources unchanged and keep the chat focused on the decision.\n",
+                "I’ll audit the local pack, check the calculations, and write the two audit files without changing the sources.\n",
+                "The evidence supports a limited staffed next check. The draft overstates both speed and accuracy, and the records do not support immediate standardization. I’m documenting the corrected results and the uncertainties that matter for that decision.\n",
+                "The records support a limited next check. Across seven complete time pairs, the guide saved 12.1% overall but was slower twice. Both formats had 7/8 correct first selections, so the draft’s accuracy and immediate-adoption claims are unsupported.\n"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "Both intermediate handoff updates explain the upcoming P5/P7 methods detail without introducing a blocker, consequential design change, timing expectation or user decision needed before completion. The details belong in the requested handoff. This is a shared optional-payload weakness, independent of any host need for a progress message.",
+              "evidence": [
+                "P5 belongs in both analyses: its guide time was slower, and its first selection was wrong despite later help. P7 belongs in accuracy only because its guide time is missing. I’ll use those examples to explain the separate inclusion rules and keep the proposed next check distinct from the historical study.\n",
+                "The handoff will make the two edge cases explicit: P5 counts as a slower guide lookup with an incorrect first selection despite later coaching; P7 has no usable time comparison but retains both accuracy outcomes. For the next check, the plan will identify the scope, timing endpoint, and decision criteria that still need to be agreed.\n"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": []
+        },
+        {
+          "reviewer": "reader-unit2-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "P5 also belongs in the accuracy comparison: add one correct selection to the reference count and none to the guide count.",
+                "Status: draft, not sent to the committee. Reconcile this text against the source records before using it.",
+                "Repeated lookups, coaching, one missing guide time and limited participation leave performance in ordinary work uncertain."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "P7 still adds one correct first selection to each format's accuracy count and denominator.",
+                "Status: draft, not sent to the committee. Reconcile this text against the source records before using it.",
+                "Repeated tasks, coaching and one missing guide time leave uncertainty about performance across ordinary shifts."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both lead with a usable limited-check decision, give the corrected timing and accuracy result, and adapt the second turn to the narrow committee-claim question. The copy-ready committee text is a protected deliverable.",
+              "evidence": [
+                "Recommend a **limited, staffed next check before standardizing**.",
+                "The evidence supports **a limited, staffed next check**.",
+                "7/8",
+                "7/8"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both ordinary finals focus on the decision, created paths and unresolved next-check criteria; detailed methods and verification stay in the requested files.",
+              "evidence": [
+                "Recommend a **limited, staffed next check before standardizing**.",
+                "The evidence supports **a limited, staffed next check**.",
+                "Created [methods.md]",
+                "Created [methods.md]"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Neither ordinary final adds empty praise or an unrelated preamble. Requested committee copy is not treated as filler.",
+              "evidence": [
+                "Recommend a **limited, staffed next check before standardizing**.",
+                "The evidence supports **a limited, staffed next check**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The later finals answer different current requests. Repeating essential corrected figures in the standalone committee message is required preservation, not avoidable chat repetition.",
+              "evidence": [
+                "**No—the evidence supports neither claim.**",
+                "No. The records show **12.1% less total time across seven matched pairs**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Matched pairs and first-selection accuracy are needed study terms and are used with concrete counts; neither final burdens this coordinator with avoidable terminology.",
+              "evidence": [
+                "both formats had 7/8 correct first selections.",
+                "with **7/8 correct first selections for both formats**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "Both include intermediate P5/P7 handoff narration that does not present a new choice, blocker, warning or changed expectation before completion. This common optional payload problem does not make either the winner and does not treat required message presence or fewer updates as a benefit.",
+              "evidence": [
+                "The handoff will make the two edge cases explicit: P5 counts as a slower guide lookup with an incorrect first selection despite later coaching; P7 has no usable time comparison but retains both accuracy outcomes.",
+                "P5 belongs in both analyses: its guide time was slower, and its first selection was wrong despite later help. P7 belongs in accuracy only because its guide time is missing."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "The P5/P7 reasoning is required in the handoff, where both preserve it. Explaining those routine file contents in an intermediate update gives no clear before-completion benefit for the request to keep routine detail in files.",
+              "evidence": [
+                "The handoff will make the two edge cases explicit: P5 counts as a slower guide lookup with an incorrect first selection despite later coaching; P7 has no usable time comparison but retains both accuracy outcomes.",
+                "P5 belongs in both analyses: its guide time was slower, and its first selection was wrong despite later help. P7 belongs in accuracy only because its guide time is missing."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "The packet does not specify the complete historical host rules for intermediate-message presence; optional payload is assessed separately from message count or timing gaps."
+          ]
+        }
+      ]
+    },
+    {
+      "key": "w1-r2-disabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit2-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "**No—the evidence does not support that claim.** The guide reduced matched total time by **12.1% across seven usable pairs**, and first-selection accuracy was **7/8 for both formats**.\n\nYour decision now is whether to authorize a **limited, staffed next check**, with its scope and success criteria agreed beforehand. The current evidence does not justify standardizing the guide.",
+                "Message to copy, not sent:\n\n> We will keep the current reference card in place while planning a limited, staffed check of the reorganized guide. The audit does not support the draft claim that the guide is 30 percent faster and more accurate. Four volunteers completed eight task comparisons; seven had both recorded times. In those seven, total time fell from 910 to 800 seconds, a saving of 110 seconds or about 12.1%. The guide was faster in five comparisons and slower in two. First-selection accuracy was 7 out of 8 for both formats.\n>\n> These results suggest a possible local time benefit, but repeated tasks, practice, coaching, one missing time and the small number of volunteers leave ordinary-work performance uncertain. Equal observed accuracy does not establish equivalent accuracy or safety. We should agree the scope, staff support and success criteria for a limited next check before launching it; the current evidence does not justify standardizing the guide. No new check has started.",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}\n",
+                "V3 tried the reference card first. Its record is `140,true,false`; the guide record is `150,false,true`. Both elapsed times are present and positive, so P5 belongs in the timing calculation. Its difference is `140 - 150 = -10` seconds: the guide took ten seconds longer. This contributes one slower pair, not a faster pair.",
+                "Exclude P7 from **both** timing sums, not just the guide sum. The raw reference column adds to 1,060 seconds; subtract P7's 150 to obtain the matched 910. Comparing 1,060 with the seven guide times totaling 800 would manufacture a 260-second saving, about 24.5%, from different sets of tasks. Treating the blank as zero creates the same invalid comparison. Neither procedure is allowed, and no value should be imputed."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now.",
+                "Committee message to copy; not sent:\n\n> We will keep the current reference card in place while we plan a limited, staffed check of the reorganized guide. Our audit does not support the earlier claim that the new guide is 30% faster and more accurate. Four volunteers contributed eight task pairs; seven had both times recorded. Across those seven pairs, total time was 910 seconds with the reference and 800 seconds with the guide, an observed reduction of 110 seconds (about 12.1%). The guide was faster in five pairs and slower in two. First-selection accuracy across all eight pairs was 7/8 for each format.\n>\n> These results support further checking but do not establish improved accuracy or readiness for standardization. Repeated tasks, coaching and one missing guide time leave uncertainty about performance across ordinary shifts. Before any next check starts, we will define its scope, measurement rules and acceptance criteria for accuracy, usability, assistance and time. No new check has started.",
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}\n",
+                "Both times are positive, so P5 is eligible for timing. Its contribution is `140 - 150 = -10` seconds: the guide was ten seconds slower. Excluding it because the guide answer was wrong would remove a recorded unfavorable result in violation of the protocol.",
+                "P7"
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both finals clearly state a limited staffed check, correct the speed/accuracy claim and locate the requested files. The committee copy is separately complete and readable, with no style penalty for its requested content.",
+              "evidence": [
+                "**No—the evidence does not support that claim.** The guide reduced matched total time by **12.1% across seven usable pairs**, and first-selection accuracy was **7/8 for both formats**.\n\nYour decision now is whether to authorize a **limited, staffed next check**, with its scope and success criteria agreed beforehand. The current evidence does not justify standardizing the guide.",
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both keep ordinary chat on the current decision and unresolved scope/criteria. Detailed methods and routine verification reside in the requested files; neither substitutes a short headline for the handoff.",
+              "evidence": [
+                "**No—the evidence does not support that claim.** The guide reduced matched total time by **12.1% across seven usable pairs**, and first-selection accuracy was **7/8 for both formats**.\n\nYour decision now is whether to authorize a **limited, staffed next check**, with its scope and success criteria agreed beforehand. The current evidence does not justify standardizing the guide.",
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Neither ordinary final adds a generic lesson, promotional preamble or unrelated aside. Completion/file-location statements are useful handoff information.",
+              "evidence": [
+                "The evidence supports a **limited, staffed next check**. Standardizing now is not justified: four volunteers supplied seven usable time pairs, showing 12.1% total time savings, two slower pairs, and unchanged accuracy of 7/8 for both formats.\n\nWrote [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json), including draft corrections and verification details.\n\nBefore another check, define its scope and acceptance criteria. All supplied sources remain unchanged; no volunteers were contacted or study started.",
+                "The evidence supports **a limited, staffed next check**. Immediate standardization is unsupported: matched time fell 12.1% across seven pairs, while first-selection accuracy was 7/8 for both formats.\n\nCreated [findings.md](/<TASK_ROOT>/audit/findings.md) and [metrics.json](/<TASK_ROOT>/audit/metrics.json), including corrected summary wording and verification notes. All supplied sources remain unchanged.\n\nBefore any next check, define its scope and accuracy/usability acceptance criteria."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The narrow follow-up specifically asks about the claim again, so restating corrected numbers serves that request. Repeating the facts in standalone committee copy is required protected content, not chat repetition.",
+              "evidence": [
+                "**No—the evidence does not support that claim.** The guide reduced matched total time by **12.1% across seven usable pairs**, and first-selection accuracy was **7/8 for both formats**.\n\nYour decision now is whether to authorize a **limited, staffed next check**, with its scope and success criteria agreed beforehand. The current evidence does not justify standardizing the guide.",
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both communicate matched time and first selections in understandable context; the full methods file’s precise inclusion rules and arithmetic are requested technical depth.",
+              "evidence": [
+                "**No—the evidence does not support that claim.** The guide reduced matched total time by **12.1% across seven usable pairs**, and first-selection accuracy was **7/8 for both formats**.\n\nYour decision now is whether to authorize a **limited, staffed next check**, with its scope and success criteria agreed beforehand. The current evidence does not justify standardizing the guide.",
+                "No. The records show **12.1% less total time across seven matched pairs**, with **7/8 correct first selections for both formats**. Neither the 30% claim nor improved accuracy is supported.\n\nYour decision now is whether to pursue a limited, staffed next check. If so, define its scope and accuracy/usability acceptance criteria before starting. The evidence does not support standardizing the guide now."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both have useful openings and an early adoption/claim result during substantial file work. No repeated empty status messages occur. The additional message on one side contains a verification result and pending planning decisions, so count alone does not establish excess; optional methodological payload is assessed separately.",
+              "evidence": [
+                "I’ll check the local protocol, observations, and records, recalculate the results, and write the audit files with a recommendation on whether to standardize the guide or run a limited next check.",
+                "I’ll inspect the protocol and study records, check the calculations independently, and write the audit files. I’ll leave the supplied sources unchanged and keep the chat focused on the decision.\n",
+                "The records support a limited next check, not standardization now. The guide saved 110 seconds across seven comparable pairs (12.1%), was slower in two, and had the same first-selection accuracy as the reference card: 7/8. The draft also overstates the participant count; there were four volunteers, and P7’s missing guide time must stay out of the timing calculation.",
+                "The evidence supports a limited staffed next check. The draft overstates both speed and accuracy, and the records do not support immediate standardization. I’m documenting the corrected results and the uncertainties that matter for that decision.\n"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "Both intermediate handoff updates explain the upcoming P5/P7 methods detail without introducing a blocker, consequential design change, timing expectation or user decision needed before completion. The details belong in the requested handoff. This is a shared optional-payload weakness, independent of any host need for a progress message.",
+              "evidence": [
+                "The handoff will make the separate denominators explicit: P5 stays in both analyses despite the guide error and later coaching; P7 stays in accuracy but drops out of timing because its guide time is missing. I’ll also explain how the proposed use of fresh comparison tasks would differ from this exercise’s repeated-task design.",
+                "P5 belongs in both analyses: its guide time was slower, and its first selection was wrong despite later help. P7 belongs in accuracy only because its guide time is missing. I’ll use those examples to explain the separate inclusion rules and keep the proposed next check distinct from the historical study.\n"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": []
+        },
+        {
+          "reviewer": "reader-unit2-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "P7 still adds one correct first selection to each format's accuracy count and denominator.",
+                "Status: draft, not sent to the committee. Reconcile this text against the source records before using it.",
+                "Repeated tasks, coaching and one missing guide time leave uncertainty about performance across ordinary shifts."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "{\n  \"eligible_time_pairs\": 7,\n  \"reference_seconds\": 910,\n  \"guide_seconds\": 800,\n  \"time_saved_seconds\": 110,\n  \"faster_pairs\": 5,\n  \"slower_pairs\": 2,\n  \"tied_pairs\": 0,\n  \"accuracy_pairs\": 8,\n  \"reference_correct\": 7,\n  \"guide_correct\": 7\n}",
+                "P5 contributes one correct reference outcome and zero correct guide outcomes, both within denominators of eight.",
+                "Status: draft, not sent to the committee. Reconcile this text against the source records before using it.",
+                "Equal observed accuracy does not establish equivalent accuracy or safety."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both lead with a usable limited-check decision, give the corrected timing and accuracy result, and adapt the second turn to the narrow committee-claim question. The copy-ready committee text is a protected deliverable.",
+              "evidence": [
+                "The evidence supports **a limited, staffed next check**.",
+                "The evidence supports a **limited, staffed next check**.",
+                "7/8",
+                "7/8"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both ordinary finals focus on the decision, created paths and unresolved next-check criteria; detailed methods and verification stay in the requested files.",
+              "evidence": [
+                "The evidence supports **a limited, staffed next check**.",
+                "The evidence supports a **limited, staffed next check**.",
+                "Created [methods.md]",
+                "Saved [methods.md]"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Neither ordinary final adds empty praise or an unrelated preamble. Requested committee copy is not treated as filler.",
+              "evidence": [
+                "The evidence supports **a limited, staffed next check**.",
+                "The evidence supports a **limited, staffed next check**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The later finals answer different current requests. Repeating essential corrected figures in the standalone committee message is required preservation, not avoidable chat repetition.",
+              "evidence": [
+                "No. The records show **12.1% less total time across seven matched pairs**",
+                "**No—the evidence does not support that claim.**"
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Matched pairs and first-selection accuracy are needed study terms and are used with concrete counts; neither final burdens this coordinator with avoidable terminology.",
+              "evidence": [
+                "with **7/8 correct first selections for both formats**.",
+                "first-selection accuracy was **7/8 for both formats**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "Both include intermediate P5/P7 handoff narration that does not present a new choice, blocker, warning or changed expectation before completion. This common optional payload problem does not make either the winner and does not treat required message presence or fewer updates as a benefit.",
+              "evidence": [
+                "P5 belongs in both analyses: its guide time was slower, and its first selection was wrong despite later help. P7 belongs in accuracy only because its guide time is missing.",
+                "The handoff will make the separate denominators explicit: P5 stays in both analyses despite the guide error and later coaching; P7 stays in accuracy but drops out of timing because its guide time is missing."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "The P5/P7 reasoning is required in the handoff, where both preserve it. Explaining those routine file contents in an intermediate update gives no clear before-completion benefit for the request to keep routine detail in files.",
+              "evidence": [
+                "P5 belongs in both analyses: its guide time was slower, and its first selection was wrong despite later help. P7 belongs in accuracy only because its guide time is missing.",
+                "The handoff will make the separate denominators explicit: P5 stays in both analyses despite the guide error and later coaching; P7 stays in accuracy but drops out of timing because its guide time is missing."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "The packet does not specify the complete historical host rules for intermediate-message presence; no preference is inferred from differing update counts or elapsed gaps."
+          ]
+        }
+      ]
+    }
+  ],
+  "native_child_incoming_instructions": "unverified",
+  "actual_desktop_ui": "unverified",
+  "reviewer_model_effort": "unknown",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold"
+}

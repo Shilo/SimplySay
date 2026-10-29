@@ -1,0 +1,103 @@
+{
+  "source": "Existing local Codex model metadata cache; selected fields only, no new host or model call",
+  "observed_utc": "2026-10-29T17:05:53.001Z",
+  "fetched_utc": "2026-10-29T17:02:35.897131500Z",
+  "client_version": "0.165.0",
+  "source_sha256": "f45839160b6edc3c611838e3be3d135913a0f3dd3fd43c84f7ec87ac01d7a89c",
+  "visible_models": [
+    {
+      "slug": "gpt-6.1-sol",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6-astra",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6.1-terra",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6-sol",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-6-luna",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    },
+    {
+      "slug": "gpt-5.6-sol",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-5.6-terra",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max",
+        "ultra"
+      ]
+    },
+    {
+      "slug": "gpt-5.6-luna",
+      "supported_reasoning": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  ],
+  "actual_tested_subject_models": [
+    "gpt-6.1-sol"
+  ],
+  "limitations": [
+    "Cache listing is not a live account-specific permission or included-cost check.",
+    "No additional model is behavior tested by this inspection.",
+    "Hidden/reserved entries excluded; no model routing or preferences changed."
+  ]
+}
