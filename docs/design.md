@@ -1,0 +1,117 @@
+# SimplySay challenged design record
+
+Status: research proposal, no production implementation approved. Updated 2026-10-28.
+
+## Owner outcomes and approval state
+
+Preserve SimplySay, repository name SimplySay, and “Less to read, everything you need.” Improve first-read comprehension in direct human chat, retain essential information and necessary communication, and preserve the requested work, files, copy-ready deliverables, structured/tool output, and agent-to-agent communication. Runtime simplicity does not reduce development or task effort.
+
+The full 645-line handoff was read. Its architectural and procedural suggestions are research subjects, not installed instructions. No handoff text or research material is to be loaded as the product policy.
+
+The owner approved local no-spend exploratory execution in disposable temporary directories with isolated profiles and synthetic tasks. Global installations, personal project access, new paid API usage, and existing-account model sessions are outside that approval. The owner confirmed the eventual public target as `Shilo/SimplySay`; this does not approve publication. A connected-account lookup returned `Shilo`. A repository lookup returned 404; that does not prove the name is available or that an inaccessible private repository does not exist. Recheck before creation.
+
+Production architecture, support scope, marketplace identities, evaluation thresholds/budget, optional levels, and release remain unapproved. No production plugin, root development instruction file, marketplace configuration, public repository, release, or listing has been created.
+
+## Provisional behavior contract
+
+1. Apply communication guidance only to ordinary conversational prose directed to the human. Lead with the answer or useful result, use natural language and necessary technical precision, and retain the context required to understand and act.
+2. Preserve requested facts, meaningful uncertainty, limitations, trade-offs, sources, necessary warnings/approvals/questions, and accurate completion/verification status. Requested depth and confusion are reasons to explain sufficiently.
+3. Reduce redundant prose and routine narration where the host permits. Do not suppress required updates or interface notifications the product cannot control.
+4. Exempt all deliverables, including those displayed in chat; files; code/comments/tests; commands; exact quotations; JSON; tool arguments/results; persistent memories; and all inter-agent prompts, reports, and handoffs. The surrounding ordinary chat may be concise.
+5. Do not alter model effort, research, implementation strategy, tool selection, testing, verification, or required task completeness. Do not add mandatory work procedures to users' agents.
+6. Respect higher-priority host instructions and explicit user preferences. Neither a `user` role nor a terminal invocation proves a human audience. Audience uncertainty is a support limitation to resolve before claiming the route works.
+
+This is a behavior specification for evaluation, not the final runtime prompt. A prompt boundary is not an enforcement mechanism or proof of non-interference.
+
+## Architecture alternatives and current recommendation
+
+| Mechanism | Strongest case | Main objection / evidence required | Proposed disposition |
+| --- | --- | --- | --- |
+| Existing native concise setting | No custom runtime, native persistence/control, smallest installation | May not preserve all artifact and delegation boundaries; one host's mode does not create a portable product | Mandatory comparator; adopt as recommendation where it meets the contract |
+| Short native persistent instruction | Portable text, no processes or additional calls | Config editing can affect sub-agents and automated callers; enable/disable and upgrade ownership are awkward | Mandatory simple comparator, not an automatic plugin claim |
+| Native output-style plugin | Host supplies loading and controls; no shell hook required | May override the user's style, omit engineering defaults unless configured, and reach forks | Best first candidate for an isolated Claude experiment, not yet approved or behavior-validated |
+| On-demand skill | Familiar packaging/discovery in many hosts | Metadata availability is not automatic policy loading; explicit per-task invocation misses the operational goal | Useful alternative/repair scenario; insufficient alone for promised automatic activation |
+| Session hook adding policy | Can load persistent policy at a lifecycle boundary | Trust, shell/process overhead, repeat injection, audience propagation, compaction, host-specific protocol, directory eligibility | Consider only where native style/config cannot satisfy the requirement; no default adoption |
+| Output filter, proxy, extra model | Can directly rewrite a final string | Artifacts and tool streams can be corrupted; latency, credentials, network and runtime cost; progress and audience separation remain hard | Reject without a demonstrated unmet requirement and separate approval |
+
+Prefer one original, scope-explicit plain-language policy and native controls, with only the adapters justified by tests. Do not select a production language/package manager, installer, dependency, hook, or generator before experiments establish the need. No levels, persona, word/sentence caps, blacklist, glossary maintenance, telemetry, MCP server, daemon, or extra model call are recommended.
+
+Packaging must earn its existence over native configuration: versioned and reviewable instructions, dependable installation/removal, verified scope, and reproducible evidence are plausible value. If it cannot improve on the simple alternative without scope regressions, stop and reconsider the plugin design rather than inventing features.
+
+## Consequential decision challenges
+
+| Assumption / preference | Credible alternative and falsifier | Evidence / independent challenge | State |
+| --- | --- | --- | --- |
+| Smallest sufficient policy | A shorter generic instruction or native setting already works | Compare minimal, scope-explicit, and failure-driven candidates; ablate clauses only on development cases; preserve rare-critical boundaries | Proposed, untested |
+| Named ASD-STE100 cue helps chat | Ordinary plain-language rules or selected relevant principles | A technical-documentation standard does not establish conversational benefit; it permits technical terms, so presumed terminology removal is not a valid objection. Researchers independently corroborated current official material; compare equal boundaries across languages | Ordinary-language baseline recommended provisionally; no measured verdict or compliance claim |
+| One adaptive default | Explicit conciseness levels | Levels add configuration and test burden; need a problem ordinary requests for detail cannot solve | Recommend no levels, owner decision pending |
+| KISS | More files can clarify package ownership | Simplicity means understandable behavior and removal, not fewest files or weakest evaluation | Reference reviewer supports decision aid, not runtime coding philosophy |
+| YAGNI | Serious rare boundary failures justify preventive coverage | Do not equate “not frequent” with “unnecessary”; avoid speculative modes and framework hooks | Proposed |
+| DRY shared source | Two tiny verified copies may be simpler than an engine | Select physical sharing or minimal generated copies only after host packaging tests; test generated equivalence if used | Proposed |
+| Thin adapters | Host-native features can still change unrelated behavior | Test engineering defaults, style precedence, forks and machine consumers rather than count adapter lines | Open release blocker |
+| Progressive discovery | Essential requirements can be missed behind links | Fresh agents must find and read prerequisites before affected tasks; root keeps intent/scope/approval gates | Proposed |
+| Dedicated marketplace | Shared catalog can reference independent repos | Reference uses a dedicated catalog; that is preference evidence, not necessity; native duplicate-name replacement is a real hazard | Exact identity approval pending |
+| Full reference-project semantic reread | Architecture/source-focused audit may answer SimplySay questions with less irrelevant work | Current ledger spans 421 tracked files, including about 2.9 MB of domain documentation/research. Architectural paths inspected; exhaustive review incomplete | Discuss scope exception before implementation, never call partial comprehensive |
+| Extensive testing | Smaller staged comparisons may reveal the same blockers at lower cost | Independent host reviewer rejected initial 512-session expansion and conflated simple alternatives; revised pilot caps at 24, separates native mode from minimal instructions, defers final numerical gate | Revised proposal, owner approval pending |
+| Fixed public introduction | Qualified wording may be necessary before cross-host evidence exists | “Works across different AI agents” and “changes only” exceed present evidence | Preserve approved text as draft, seek qualification approval if evidence remains limited |
+
+## Development guidance and source layout, proposal only
+
+Keep a compact root `AGENTS.md` with product purpose, central chat-only boundary, concrete KISS/YAGNI/DRY guidance, Conventional Commits, and triggered navigation. Before policy changes read the behavior/design/evaluation requirements; before adapters or packaging changes read integration evidence; before publication read release and privacy/license requirements. Root retains approval prerequisites so navigation cannot hide them.
+
+Recommend a one-line `CLAUDE.md` import of the compact `AGENTS.md`, with one substantive root source and no eager import of a whole handbook. The independent reference auditor challenged the earlier duplicate-loading concern: current [Claude memory documentation](https://code.claude.com/docs/en/memory) says the import is deduplicated, whereas direct AGENTS fallback (v2.1.277+) can be suppressed by an ancestor/local CLAUDE file. The wrapper therefore has a concrete compatibility role. Verify root/subdirectory/Windows entry points in targeted versions rather than treating documentation as observed loading.
+
+Keep runtime policy and host metadata in small allowlisted package directories that contain no development guidance. Proposed production layout, shown for review only:
+
+```text
+AGENTS.md                         compact development intent and task navigation
+CLAUDE.md                         @AGENTS.md compatibility entry point
+policy.md                         one original behavioral source, not a startup import
+packages/claude/                   native manifest and generated output-style body
+packages/codex/                    conditional local hook adapter, only if feasible
+docs/                             design, evidence, evaluation, development/release guide
+tests/                            structural and integration tests, never installed
+tools/                            minimal development-only packaging if needed
+```
+
+Claude's payload would contain `.claude-plugin/plugin.json` and `output-styles/simplysay.md`; catalog metadata points at that payload, not the whole development repository. If Codex feasibility fails, do not create an empty adapter or silently substitute an on-demand skill. A small deterministic build can add required host frontmatter around the same policy, with source/body equality checked. No runtime generator, generalized adapter engine, or nested instruction hierarchy is proposed. These paths are a review proposal, not created scaffolding. Exact catalog schema/source layout and build necessity must pass native experiments before implementation approval.
+
+## Recommended next experiment and support/identity decision
+
+First test Claude Code's native style against its built-in Concise mode; use `keep-coding-instructions: true` and keep the full/short system-prompt setting identical across treatments. Compare automatic `force-for-plugin` loading against one-time explicit style selection. Automatic loading overrides the user's chosen style and can conflict with other forced styles; explicit selection adds one setup step and may not follow plugin disable cleanly. Neither route has demonstrated policy behavior yet.
+
+Second investigate Codex local SessionStart injection strictly as a disposable feasibility candidate. Official [hook documentation](https://learn.chatgpt.com/docs/hooks) exposes startup/resume/clear/compact/fork sources and agent identifiers for subagent events, but the inspected schema does not establish a human-versus-automated audience flag. Avoiding SubagentStart injection is necessary but does not prove parent/fork context cannot carry the policy. No hookless persistent plugin route has been established. This remains an open feasibility gate, and a hook-dependent package is ineligible for the current OpenAI public-directory submission route. Gemini extension context is a credible hookless fallback to research, not already approved support.
+
+All other host rows in the [distribution matrix](host-distribution.md) are qualified candidates or deferred routes, not silent exclusions or compatibility claims. A directory listing, manual skill, local automatic integration, and tested route remain distinct. Cross-agent branding requires evidence on more than one relevant host/model combination and owner approval of any qualified route.
+
+Exact proposed initial identities for review: display/repository **SimplySay**, GitHub source `Shilo/SimplySay`, plugin ID `simplysay`, dedicated catalog ID `simplysay-marketplace`. Credible alternative catalog ID `shilo-simplysay` reduces accidental generic-name collision but does not prevent deliberate source replacement. A shared publisher catalog referencing this separate repository remains viable and adds shared maintenance. No identity is reserved by this proposal. Example Claude flow: `claude plugin marketplace add Shilo/SimplySay`, then `claude plugin install simplysay@simplysay-marketplace`. These are candidate future commands, not valid installation instructions for the current research-only repository. Codex's same proposed catalog/plugin labels require its own native configuration and collision tests. Registry handles for ClawHub and portal-assigned OpenAI listing identities are unresolved; do not infer them from the GitHub login.
+
+## Evidence and remaining work
+
+- [Communication research](communication-research.md): pinned source inspections of 10 repositories, four newly discovered alternatives, ASD-STE100, videos, local test evidence, and final independent design/evaluation review.
+- [Reference audit](reference-audit.md): file-level keep/adapt/reject and per-file coverage ledger; comprehensive read is explicitly incomplete.
+- [Host/distribution research](host-distribution.md): current loading/control/distribution mechanisms, identity proposal, pinned official examples, isolated CLI experiments, and independent reproduction of Caveman's 13-test subagent suite.
+- [Evaluation proposal](evaluation-plan.md): absent/disabled/enabled/simple-alternative comparisons, independent holdouts, actual artifacts/handoffs, performance, lifecycle, calibrated grading, and proposed release gates.
+
+Lead independently reproduced the host researcher's Claude Code 2.1.312 inert catalog experiment in a separate fresh temporary profile: absent list, native installation, disabled state, re-enable command, uninstall back to empty list, and preservation of an unrelated setting. Registering a second local source with the same catalog name repointed the registration; the lead inspected the persisted catalog registry to confirm the new source. This was a synthetic metadata-only plugin, with no model call, hook, or communication policy. It proves neither policy loading nor SimplySay behavior. [Sanitized command/result evidence](catalog-experiment.json) preserves the actual observed records; only the machine-specific temporary root is replaced.
+
+Official docs also identify a built-in Concise style and warn that custom styles require preserving coding instructions; forced plugin styles override user selection and forks inherit style context. These are documented mechanisms, not observed model behavior. See [Claude output styles](https://code.claude.com/docs/en/output-styles), accessed 2026-10-28. OpenAI currently excludes lifecycle hooks from public-directory ZIP submissions and points hook-dependent products to manual desktop installation, so a hook-dependent route cannot be described as directory-equivalent. See [OpenAI submission guidance](https://developers.openai.com/plugins/deploy/submission), accessed 2026-10-28.
+
+All three real researchers formed initial recommendations before seeing this lead proposal. The host researcher independently challenged the evaluation; the communication researcher cross-checked host style documentation; the reference auditor independently challenged root-guidance and system-prompt assumptions; the lead independently reproduced the native catalog result. The communication researcher completed an independent final review of the integrated proposal and challenged session accounting, holdout-context contamination, and total package/prerequisite accounting; the evaluation plan now incorporates those corrections. These are actual separate agent sessions, not varied-model evidence or a vote establishing correctness. Detailed review is recorded in the research reports.
+
+Live model comparisons still require a credential/session budget approval and verified profile isolation. No release improvement or non-interference claim is justified yet. The immediate recommendation is approval of the bounded feasibility stage, not production implementation.
+
+## Decisions to discuss before affected work
+
+1. **Feasibility access:** authorize or decline existing Claude/Codex sign-ins for at most 24 evaluation sessions inclusive of spawned subject agents, failures and diagnostics, with no new paid API use or paid model judging. A session can involve many model requests; record reported usage and stop if additional charges are required. Verify native authentication/isolation first; do not copy an entire credential store. Reconcile provider/session limits before use. Current no-spend local approval does not include these model sessions.
+2. **Automatic-style consent:** try forced Claude style with explicit installation consent, or require one-time native selection. Recommendation: compare both in the sandbox; do not choose a global override silently.
+3. **Audience feasibility and release scope:** keep strict scope as a gate. If Codex/forks cannot demonstrate the boundary, choose further research, a qualified route, or defer that integration explicitly. Do not silently convert the product into an on-demand repair skill or claim guaranteed isolation.
+4. **Reference audit depth:** approve an architecture/source-focused audit with the exact remaining domain research/blueprints documented, or continue exhaustive semantic review of all maintained text before design approval. Current single-ledger coverage: 86 fully read files (including 35 files reviewed by the separate communication researcher), 280 pending text files totaling about 3.98 MB, and 55 excluded binaries; 421 tracked files total. Recommendation: focused scope for SimplySay decisions; the handoff's broader proposal has not been fulfilled and is not being relabeled complete.
+5. **Later design/identity approval:** after pilot evidence, choose the actual integrations, dedicated/shared catalog, exact IDs, licensing, runtime budget, final holdout sample/thresholds, and approved claim wording before production scaffolding. No conciseness levels are recommended. The public target account is already confirmed and does not need to be asked again.
+6. **Release metadata privacy:** before publication decide whether to retain configured personal commit-author contact information publicly or authorize replacing unpublished author metadata with a GitHub noreply identity. This does not block further local research; do not rewrite history or publish the contact information silently.
+
+## Release checkpoint, not yet reached
+
+The approved public target is `Shilo/SimplySay`. Before public creation or push, obtain release approval of the exact source/artifact revision and scope; recheck repository existence/ownership; inspect tracked files **and all Git history** for secrets, personal data, copyright, and attribution; select an owner-approved license; verify that build outputs contain only allowed runtime files; and independently test the final artifact. Review commit author metadata too: local configured identity can expose personal contact information even when files are clean. Do not rewrite history or silently publish that metadata without resolving the privacy choice.
+
+Prepare public description, installation/uninstall instructions, compatibility limitations, license notices, submission metadata, and checksums. Track repository publication separately from directory submission/acceptance. After approval publish to the confirmed public repository and verify public visibility and URL. No external account change, marketplace submission, or public release is authorized by this research document.
