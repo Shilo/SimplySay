@@ -9,33 +9,38 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-1-finished-no-incremental-benefit",
+  "status": "unit-2-preparation",
   "new_conversations": 12,
-  "new_task_starts": 27,
+  "new_task_starts": 29,
   "starts": [
     {
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "completed",
+      "status": "allocated-preparation",
       "agent": "/root/reader_policy_challenge",
-      "turns": 4,
-      "max_turns": 4,
+      "turns": 5,
+      "max_turns": 5,
       "followup_purposes": [
         "Independent verification of new-phase ledger isolation and installed-disabled runner support",
         "Independent verification of new cases, realistic calibration and companion field contract before live subjects",
-        "Correct rejected CLI disabling using verified supported config API; independent local guard tests"
+        "Correct rejected CLI disabling using verified supported config API; independent local guard tests",
+        "Independently challenge unit 2 policy, natural case and prospective calibration contract before response dispatch"
       ]
     },
     {
       "id": "n02",
       "role": "independent-case-and-evaluation-challenger",
       "purpose": "Realistic case design and minimal separate goal/calibration assessment using existing tools",
-      "status": "completed",
+      "status": "allocated-preparation",
       "agent": "/root/reader_case_eval_challenge",
-      "turns": 2,
-      "max_turns": 2,
-      "followup_purpose": "Implement the two frozen development cases and minimal companion/calibration adapter using existing tools"
+      "turns": 3,
+      "max_turns": 3,
+      "followup_purpose": "Implement the two frozen development cases and minimal companion/calibration adapter using existing tools",
+      "followup_purposes": [
+        "Implement the two frozen development cases and minimal companion/calibration adapter using existing tools",
+        "Independently author naturally technical source conversation and same-presence progress-payload diagnostic; preserve old cases/controls"
+      ]
     },
     {
       "id": "n03",
@@ -145,7 +150,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "Completed development unit; record the next purposeful unit before any new response dispatch",
+  "block_reason": "Unit 2 preparation recorded; no response dispatch until independent challenges, local checks and freeze",
   "checkpoint": "experiments/reader-v1/evidence/first-pair-checkpoint.json",
   "diagnostics": [
     {
