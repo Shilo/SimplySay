@@ -1,0 +1,8 @@
+{
+  "stage":"second frozen development workflow; v4 unchanged from first matched content-selection signal",
+  "subjects":[
+    {"id":"e18","case_file":"experiments/workflow-v1/cases/w2.case.json","condition":"absent"},
+    {"id":"e20","case_file":"experiments/workflow-v1/cases/w2.case.json","condition":"enabled","policy":"experiments/workflow-v1/candidates/workflow.v4.txt"}
+  ],
+  "review_pairs":[{"key":"w2-absent-v4-installed","a":"e18","b":"e20"}]
+}
