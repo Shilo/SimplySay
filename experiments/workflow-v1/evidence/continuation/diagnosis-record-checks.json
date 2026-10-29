@@ -1,0 +1,86 @@
+{
+  "method": "Comparison of existing archived records only; no new loading check or model session",
+  "policy_sha256": "af3e525a7ccc9432f2fff45366f59af7a7cd08797aa0b9b9f7d923debca01856",
+  "policy_bytes": 837,
+  "matching_pairs": [
+    {
+      "absent": "e31",
+      "enabled": "e19",
+      "scope": "Complete three-turn study; unaffected by capture bug"
+    },
+    {
+      "absent": "e18",
+      "enabled": "e20",
+      "scope": "Initial archive audit only; later absent practical answer interrupted"
+    }
+  ],
+  "subject_settings": [
+    {
+      "id": "e31",
+      "version": "codex-cli 0.165.0-alpha.1.2",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "effective_isolation": {
+        "apps": false,
+        "multi_agent": false,
+        "agents": false,
+        "default_plugins": false
+      }
+    },
+    {
+      "id": "e19",
+      "version": "codex-cli 0.165.0-alpha.1.2",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "effective_isolation": {
+        "apps": false,
+        "multi_agent": false,
+        "agents": false,
+        "default_plugins": false
+      }
+    },
+    {
+      "id": "e18",
+      "version": "codex-cli 0.165.0-alpha.1.2",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "effective_isolation": {
+        "apps": false,
+        "multi_agent": false,
+        "agents": false,
+        "default_plugins": false
+      }
+    },
+    {
+      "id": "e20",
+      "version": "codex-cli 0.165.0-alpha.1.2",
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "effective_isolation": {
+        "apps": false,
+        "multi_agent": false,
+        "agents": false,
+        "default_plugins": false
+      }
+    }
+  ],
+  "same_binary_sha256": "0c09e45bc76433756eb2d492f6db0ce6f269967e6618f4a6ae73e2fa239694b8",
+  "same_stock_host_context_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+  "exact_user_task_hashes_match": true,
+  "installed_policy_matches_existing_loading_and_context_records": true,
+  "desktop_interface_equivalence": "unverified",
+  "examples": [
+    {
+      "id": "study-progress",
+      "absent": "I’m finishing the byte comparison and source checks; the handoff includes an unsent committee message and a bounded next-check plan.",
+      "enabled": "The records do not define exactly when timing stopped relative to coaching. The proposed check defines that endpoint explicitly and keeps its results separate from the historical timings.",
+      "recorded_outcome": "Both reviewers preferred enabled progress content; clarity/jargon tied"
+    },
+    {
+      "id": "archive-first-decision",
+      "absent": "Do not rely on the draft or retire the source. Staging is incomplete, and whole-pack recovery is unproven.",
+      "enabled": "Do not rely on the draft. Only `manual.txt` matches; `labels.csv` differs and `layout.svg` is missing. Retain the source; full restore capability remains unproven.",
+      "recorded_outcome": "Both reviewers tied observed initial communication; both already satisfactory"
+    }
+  ]
+}
