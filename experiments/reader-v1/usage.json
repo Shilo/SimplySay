@@ -9,7 +9,7 @@
     },
     "superseded_by_owner": true
   },
-  "status": "core-chat1-review",
+  "status": "core-chat1-closed-satisfactory-tie-executor-blocked",
   "new_conversations": 38,
   "new_task_starts": 93,
   "starts": [
@@ -381,7 +381,7 @@
       "purpose": "Independent blinded per-goal assessment of every saved corrected chat and unchanged controls; no failed-setup rerun",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-valid-calibration",
       "agent": "/root/core_chat_blind_1"
     },
     {
@@ -390,7 +390,7 @@
       "purpose": "Independent blinded per-goal assessment of every saved corrected chat and unchanged controls; no failed-setup rerun",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-format-recovered-identity",
       "agent": "/root/core_chat_blind_2"
     }
   ],
@@ -406,7 +406,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "All corrected subjects complete; only the two allocated fresh reviews remain.",
+  "block_reason": "No incremental gain on already-clear short chat. Long-workflow/actual protected work requires restoring unavailable native MXC execution; no unchanged-policy repeat or new round allocated.",
   "checkpoint": "experiments/reader-v1/evidence/core-chat1/first-pair-checkpoint.json",
   "diagnostics": [
     {
@@ -423,6 +423,13 @@
       "model_turns": 0,
       "credentials_copied": false,
       "evidence": "experiments/reader-v1/evidence/core-unit1/executor-probe.json"
+    },
+    {
+      "purpose": "Distinguish native MXC capability from app-server-only failure using documented standalone synthetic echo",
+      "model_contexts": 0,
+      "model_turns": 0,
+      "credentials_copied": false,
+      "evidence": "experiments/reader-v1/evidence/core-unit1/native-mxc-probe.json"
     }
   ],
   "conversation_counting": "Reserved attempts include pre-model failures; completed behavior is recorded separately",
@@ -471,5 +478,5 @@
       "reason": "Stopped after demonstrated unavailable isolated command executor; no retries or grader spending on missing source facts."
     }
   ],
-  "decision": "docs/core-chat-correction-plan.md"
+  "decision": "docs/core-chat-results.md"
 }

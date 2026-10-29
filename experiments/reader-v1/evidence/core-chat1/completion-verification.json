@@ -1,0 +1,71 @@
+{
+  "label": "Completed controlled simplification checkpoint; no release qualification",
+  "usage": {
+    "attempted_context_slots": 38,
+    "logical_tasks": 93,
+    "actual_model_contexts": 37,
+    "new_contexts_this_work": 7,
+    "new_tasks_this_work": 19,
+    "new_model_diagnostics": 0
+  },
+  "current_candidate": {
+    "path": "experiments/reader-v1/candidates/core.v1.txt",
+    "sha256": "3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8",
+    "words": 143,
+    "bytes": 1091
+  },
+  "original_failed_subjects": [
+    "n34",
+    "n35"
+  ],
+  "corrected_completed_subjects": [
+    "n42",
+    "n43",
+    "n44"
+  ],
+  "fresh_reviewers": [
+    "n45",
+    "n46"
+  ],
+  "substantive_real_judgments_changed": false,
+  "raw_legacy_qualified_reviewers": 1,
+  "format_recovered_qualified_reviewers": 2,
+  "format_recovery_audit_sha256": "b8050a4c7e313a4ef0ae4cd10ba6e033895c0371c03b263e796d1d8b8a68d1d1",
+  "negative_recovery_guards": 7,
+  "corrected_goal_result": "Six final-answer goals tie as both satisfactory; updates unknown; information and requested teaching preserved",
+  "full_goal_met": false,
+  "protected_core_file_workflow_scope": "unverified; blocked by unavailable MXC executor",
+  "new_untouched_validation": false,
+  "old_history_hashes_unchanged": 287,
+  "old_review_archives_unchanged": true,
+  "sealed_hashes_unchanged": true,
+  "sealed_content_opened": false,
+  "native_auth_profiles_checked": 42,
+  "copied_signins_retained": 0,
+  "launch_freezes_verified": [
+    {
+      "path": "experiments/workflow-v1/reader-core-unit1.manifest.json.freeze.json",
+      "sha256": "ac423af77a7e3c0735061de3576037187cceb6c0b49057dad54b918b2dc162f6",
+      "bound_inputs": 32,
+      "pretrial_unit_preserved_at": "3cf93787ee32bee1bb24f1b914fb3217ab86c146",
+      "current_active_unit_pointer": "Intentionally closed; original ready bytes retained in Git and launch freeze"
+    },
+    {
+      "path": "experiments/workflow-v1/reader-core-chat1.manifest.json.freeze.json",
+      "sha256": "859fb0f49ee19d2fb2f4ab2faec589574a69bbf322059b99f2527a4de71b0089",
+      "bound_inputs": 30,
+      "pretrial_unit_preserved_at": "6983d69156849afad6551a928885a37df5991b0b",
+      "current_active_unit_pointer": "Intentionally closed; original ready bytes retained in Git and launch freeze"
+    }
+  ],
+  "executor_probes": {
+    "app_server": false,
+    "native_cli": false,
+    "auth_copied": false,
+    "weaker_or_global_setup": false
+  },
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold"
+}

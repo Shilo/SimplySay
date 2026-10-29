@@ -1,0 +1,32 @@
+{
+  "purpose": "Distinguish standalone native MXC support from the demonstrated app-server execution failure",
+  "source": "https://learn.chatgpt.com/docs/windows/windows-sandbox",
+  "method": "Documented standalone sandbox command with synthetic echo; no thread/model/sign-in",
+  "args": [
+    "-c",
+    "windows.sandbox=mxc",
+    "sandbox",
+    "--include-managed-config",
+    "--permission-profile",
+    ":workspace",
+    "--",
+    "cmd.exe",
+    "/d",
+    "/c",
+    "echo",
+    "MXC_OK"
+  ],
+  "exit_code": 1,
+  "error": null,
+  "stdout": "",
+  "stderr": "Error: failed to prepare MXC sandbox: native MXC is unavailable on this executor",
+  "succeeded": false,
+  "auth_copied": false,
+  "new_model_work": 0,
+  "global_setup_or_settings_changes": false,
+  "weaker_isolation": false,
+  "stderr_sha256": "3c617dc6df4fc1c8aeafdcf498c87efce2a008b7a1d3b73ec33f651054840a14",
+  "stderr_bytes": 478,
+  "warning_summary": "PATH-alias helper creation was refused under the disposable temporary profile; identifying paths are omitted from this public projection.",
+  "raw_metadata": "Retained locally outside Git; no reasoning or credential content"
+}

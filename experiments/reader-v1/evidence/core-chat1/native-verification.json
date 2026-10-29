@@ -1,0 +1,454 @@
+{
+  "label": "Local capture, matching and source integrity checks; semantic/style judgments are recorded separately",
+  "rows": [
+    {
+      "id": "n42",
+      "condition": "absent",
+      "capture_and_case_checks": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "pass",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-d-inline-photo-advice",
+          "deterministic_status": "pass",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d1_explain_recommend",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d2_metadata_followup",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "host": "codex-cli 0.165.0-alpha.1.2",
+      "ordinary_included_before_every_turn": true,
+      "native_errors": [],
+      "public_progress_counts": [
+        0,
+        0,
+        0
+      ],
+      "final_characters": [
+        1002,
+        316,
+        3187
+      ],
+      "actual_generated_files": [
+        [],
+        [],
+        []
+      ],
+      "tool_calls": [],
+      "developer_context": [
+        {
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "normalized_owned_paths_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a"
+        },
+        {
+          "characters": 3619,
+          "sha256": "371a42fadb98753c91e8e910e58139e1aff66df08ca4671e151997cf400d14f0",
+          "normalized_owned_paths_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed"
+        }
+      ],
+      "auth_copy_removed": true,
+      "last_cumulative_usage": {
+        "inputTokens": 32916,
+        "cachedInputTokens": 11008,
+        "outputTokens": 2541,
+        "reasoningOutputTokens": 1416,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 35457
+      },
+      "quota_after": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 7,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793885771
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      }
+    },
+    {
+      "id": "n43",
+      "condition": "enabled",
+      "capture_and_case_checks": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "pass",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-d-inline-photo-advice",
+          "deterministic_status": "pass",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d1_explain_recommend",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d2_metadata_followup",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "host": "codex-cli 0.165.0-alpha.1.2",
+      "ordinary_included_before_every_turn": true,
+      "native_errors": [],
+      "public_progress_counts": [
+        0,
+        0,
+        0
+      ],
+      "final_characters": [
+        1026,
+        273,
+        3191
+      ],
+      "actual_generated_files": [
+        [],
+        [],
+        []
+      ],
+      "tool_calls": [],
+      "developer_context": [
+        {
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "normalized_owned_paths_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a"
+        },
+        {
+          "characters": 3619,
+          "sha256": "9269b4813a970d6b89b7cc9b7534b2afb8c975fe360b52409b9f47fb1a75b1dd",
+          "normalized_owned_paths_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed"
+        },
+        {
+          "characters": 1091,
+          "sha256": "3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8",
+          "normalized_owned_paths_sha256": "3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8"
+        }
+      ],
+      "auth_copy_removed": true,
+      "last_cumulative_usage": {
+        "inputTokens": 33585,
+        "cachedInputTokens": 19968,
+        "outputTokens": 2512,
+        "reasoningOutputTokens": 1374,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 36097
+      },
+      "quota_after": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 7,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793885771
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      }
+    },
+    {
+      "id": "n44",
+      "condition": "disabled",
+      "capture_and_case_checks": {
+        "capture_checks": [
+          {
+            "name": "complete_observed_conversation",
+            "status": "pass",
+            "note": "Missing/failed captures are not passes"
+          },
+          {
+            "name": "t1_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t1_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t2_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t2_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "t3_capture",
+            "status": "pass",
+            "note": "Actual final/event/timestamp/file evidence"
+          },
+          {
+            "name": "t3_same_id",
+            "status": "pass",
+            "note": "Observed continuation, not fallback"
+          },
+          {
+            "name": "auth_copy_removed",
+            "status": "pass",
+            "note": "No copied sign-in retained"
+          },
+          {
+            "name": "correct_loading",
+            "status": "pass",
+            "note": "One exact startup for enabled, none in controls; not adherence proof"
+          }
+        ],
+        "case_checks": {
+          "schema_version": 1,
+          "case_id": "reader-d-inline-photo-advice",
+          "deterministic_status": "pass",
+          "semantic_status": "requires_blinded_review",
+          "checks": [
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d1_explain_recommend",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d2_metadata_followup",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            },
+            {
+              "id": "subject_execution_evidence",
+              "turn_id": "d3_detailed_teaching",
+              "status": "unverified",
+              "commands_count": 0,
+              "limitation": "Review the actual commands/results for requested tests and claimed checks. Evaluator black-box success does not prove subject execution."
+            }
+          ]
+        },
+        "semantic_essentials": "Independent review required; no lexical pass substitute",
+        "original_incoming_child_instructions": "unverified"
+      },
+      "model": "gpt-6.1-sol",
+      "effort": "xhigh",
+      "host": "codex-cli 0.165.0-alpha.1.2",
+      "ordinary_included_before_every_turn": true,
+      "native_errors": [],
+      "public_progress_counts": [
+        0,
+        0,
+        0
+      ],
+      "final_characters": [
+        1021,
+        285,
+        3159
+      ],
+      "actual_generated_files": [
+        [],
+        [],
+        []
+      ],
+      "tool_calls": [],
+      "developer_context": [
+        {
+          "characters": 21546,
+          "sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+          "normalized_owned_paths_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a"
+        },
+        {
+          "characters": 3619,
+          "sha256": "41cafca4712b14d3f9a17310176dbc2c1de92efd5867949082b978f6b268816d",
+          "normalized_owned_paths_sha256": "14036eb5edcba0f5f9112dc2ee0da2f97a245146db798f19a4e214c9b55a6fed"
+        }
+      ],
+      "auth_copy_removed": true,
+      "last_cumulative_usage": {
+        "inputTokens": 33206,
+        "cachedInputTokens": 22144,
+        "outputTokens": 2588,
+        "reasoningOutputTokens": 1480,
+        "cacheWriteInputTokens": 0,
+        "totalTokens": 35794
+      },
+      "quota_after": {
+        "ordinaryUsageAllowed": true,
+        "primary": {
+          "usedPercent": 7,
+          "windowDurationMins": 10080,
+          "resetsAt": 1793885771
+        },
+        "secondary": null,
+        "limitId": "codex",
+        "spendControlReached": false,
+        "rateLimitReachedType": null
+      }
+    }
+  ],
+  "matching": {
+    "task_facts_and_prompts": true,
+    "model": "gpt-6.1-sol",
+    "effort": "xhigh",
+    "summary": "none",
+    "mode": "default",
+    "host": "0.165.0-alpha.1.2 app-server research client",
+    "stock_developer_sha256": "2181ecc51528326182f349c9d83effa598156a4a307e9fd50bc7bd050496fa7a",
+    "other_developer_context_equal_after_owned_path_normalization": true,
+    "configured_tools_and_permissions_same": true
+  },
+  "source_facts": "Provided identically as task data, not style instructions",
+  "policy_sha256": "3680aaaa209321fc1d8c100a4cb0fc75d268833b46ab9c4958a7446b4d545fe8",
+  "package_runtime_bytes": 2226,
+  "runtime_extra_model_calls": 0,
+  "subject_export_entries": 63,
+  "raw_byte_exact_artifacts": 0,
+  "auth_profiles_checked": 42,
+  "copied_signins_retained": 0,
+  "locked_historical_files_unchanged": 287,
+  "sealed_content_opened": false,
+  "sealed_hashes_unchanged": true,
+  "protected_file_code_workflow_scope": "unverified for core; executor unavailable, no such work requested here",
+  "native_incoming_helper_directives": "unverified",
+  "desktop_interface_notifications": "unverified",
+  "model_attention_outgoing_assembly": "unverified",
+  "reviewer_model_effort": "unknown",
+  "cost": "Included permission before every subject turn; cumulative snapshots retained without summing or estimating money",
+  "production": "hold",
+  "publication": "hold"
+}

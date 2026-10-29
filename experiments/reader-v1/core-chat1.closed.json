@@ -1,0 +1,56 @@
+{
+  "status": "closed-satisfactory-tie-executor-blocked",
+  "authorization": "owner-reader-development-2026-10-29",
+  "record": "docs/core-chat-correction-plan.md",
+  "purpose": "Correct source-fact delivery for a short ordinary-chat comparison without changing installed core or weakening unavailable file executor isolation",
+  "end_conversation_cap": 38,
+  "end_task_cap": 93,
+  "unit_limits_are_not_overall_owner_caps": true,
+  "exact_fresh_assignments": [
+    {
+      "ids": [
+        "n42"
+      ],
+      "role": "inline-photo-absent-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n43"
+      ],
+      "role": "inline-photo-enabled-core1",
+      "max_turns_each": 3
+    },
+    {
+      "ids": [
+        "n44"
+      ],
+      "role": "inline-photo-disabled-core1",
+      "max_turns_each": 3
+    }
+  ],
+  "reviewers": [
+    {
+      "id": "n45",
+      "max_turns": 1
+    },
+    {
+      "id": "n46",
+      "max_turns": 1
+    }
+  ],
+  "preparation_contexts": 0,
+  "planned_preparation_tasks": 0,
+  "new_native_response_tasks": 9,
+  "new_blinded_reviewer_conversations": 2,
+  "new_blinded_reviewer_tasks": 2,
+  "retries": 0,
+  "replacements": 0,
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": false,
+  "publication": false,
+  "manifest": "experiments/workflow-v1/reader-core-chat1.manifest.json",
+  "goal_calibration_mode": "independent-goals-v1",
+  "first_pair_stop": "Inspect n42/n43 fully; stop on setup/capture failure or evident essential/depth loss. If valid complete disabled n44 and grade all. No repeated pair allocated."
+}
