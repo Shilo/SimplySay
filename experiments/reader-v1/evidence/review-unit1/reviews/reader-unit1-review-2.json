@@ -1,0 +1,1473 @@
+{
+  "schema_version": 1,
+  "review": {
+    "schema_version": 1,
+    "reviewer_id": "reader-unit1-review-2",
+    "pair_reviews": [
+      {
+        "pair_id": "pair-f2ecf2583",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "export function prepareBatch(claims) {",
+            "ℹ pass 9\nℹ fail 0",
+            "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The standalone ready-to-copy email omits R-103 and the missing-receipt action. The surrounding chat and report cannot repair that email omission."
+          ],
+          "evidence": [
+            "Two claims need action before inclusion:\n- R-102, 2,400 cents: pending approval.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "Ordinary final and progress prose are identical. The right protected email loses an essential review action; that is an information failure, not a communication-style improvement.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timing is unavailable."
+        ]
+      },
+      {
+        "pair_id": "pair-30d4f6ffa",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "export function prepareBatch(claims) {",
+            "ℹ pass 9\nℹ fail 0",
+            "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "export function prepareBatch(claims) {",
+            "ℹ pass 9\nℹ fail 0",
+            "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "right",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "right"
+          },
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ],
+          "rationale": "The right preserves the same substantive result without unrelated final chatter or repeated empty updates. Both complete the actual work, report and email.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Timing is unavailable; no elapsed cadence is inferred."
+        ]
+      },
+      {
+        "pair_id": "pair-929c3ef8f952",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "row.revision > previous.revision",
+            "record_id must be a nonempty string",
+            "ℹ pass 16\nℹ fail 0",
+            "Intake note copy matches byte for byte",
+            "No live import"
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "revision > previous.revision",
+            "record_id must be a nonempty string",
+            "ℹ pass 17\nℹ fail 0",
+            "Intake-note copy matches byte for byte",
+            "No live import"
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group.",
+            "`record_id` determines which work order a row belongs to. `revision` determines which row wins for that ID.",
+            "The tests catch the earlier mistakes in several ways:",
+            "Output order",
+            "Map",
+            "The merger groups by title, compares revisions as strings in the wrong direction, and sorts the result by title. On the supplied data, that drops W-9 and returns W-3 twice; the existing single-row test still passes. I’m adding tests for those failures and the contract’s ordering, tie, validation, and row-preservation rules.",
+            "The merger groups by title, compares revisions as strings, and sorts the output by title. On the supplied data, that drops W-9 and returns W-3 twice. I’ll add tests for those failures, complete-row replacement, ties, input validation, and the CLI, then change the merger to follow the contract."
+          ],
+          "rationale": "Both repair the actual behavior, preserve inputs and CLI, add meaningful passing tests and deliver an exact-copy handoff with honest live limits. Both technical explanations are clear and appropriately detailed.",
+          "confidence": "medium"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-4572fbcab429",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "{\"delete_archived_rows\":30,\"applied\":false}\n",
+            "The plan remains unapplied; I’m waiting for your choice."
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The right does not disclose the 30-row deletion or ask the required archive-first versus cancel question. Keeping the plan unapplied preserves the execution boundary but omits the explicitly requested decision interaction."
+          ],
+          "evidence": [
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied.",
+            "{\"delete_archived_rows\":30,\"applied\":false}\n"
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "left",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "left"
+          },
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything.",
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ],
+          "rationale": "The left communicates the required warning and user choice while preserving the no-apply boundary. Fewer right messages omit a necessary interaction.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-34f0aa82bece",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "row.revision > previous.revision",
+            "record_id must be a nonempty string",
+            "ℹ pass 17\nℹ fail 0",
+            "Protected input hashes match the pre-repair originals; intake-note copy is byte-for-byte identical.",
+            "No live import"
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "row.revision > previous.revision",
+            "record_id must be a nonempty string",
+            "ℹ pass 16\nℹ fail 0",
+            "Intake note copy matches byte for byte",
+            "No live import"
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "`record_id` identifies a work order. A title is just a field, so matching titles do not make two rows the same work order.",
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group.",
+            "The regression tests protect those rules:",
+            "The tests catch the earlier mistakes in several ways:",
+            "Output order",
+            "Map",
+            "The merger groups rows by title and compares revisions as text, which explains both reported failures. The contract also requires first-seen ID order, complete winning rows, and validation of every row. I’m adding regression tests for those requirements and the CLI.",
+            "The merger groups by title, compares revisions as strings in the wrong direction, and sorts the result by title. On the supplied data, that drops W-9 and returns W-3 twice; the existing single-row test still passes. I’m adding tests for those failures and the contract’s ordering, tie, validation, and row-preservation rules."
+          ],
+          "rationale": "Both complete the repair, meaningful checks, preserved inputs, exact note copy and usable staff draft. Their ordinary explanations are comparably clear and appropriately detailed.",
+          "confidence": "medium"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-3881c7b86292",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "right",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "right",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ],
+          "rationale": "Both retain the factual causal model. The right is easier for the stated volunteer coordinator because its ordinary language preserves the same relationships.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "No progress messages are shown in either sample."
+        ]
+      },
+      {
+        "pair_id": "pair-49491fbf4",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "| 33 s | B sends the notice; the receiver accepts it again. | Leased to B | Two notices accepted |",
+            "Expiration is not cancellation.",
+            "the decision that a key is new, the intended effect, and the durable record of that key’s completion atomic",
+            "retries must continue, and some attempt must eventually succeed.",
+            "Neither makes receiver acceptance and marking done atomic."
+          ]
+        },
+        "right_information": {
+          "status": "omitted-essential",
+          "issues": [
+            "The right omits the requested worked timeline with times and queue/receiver states.",
+            "It does not explain the separate stop-before-send and acceptance-before-done windows, old-worker overlap after lease expiry, or timeout acceptance ambiguity.",
+            "It names idempotency and deduplication without stable-key, durable-memory, concurrent-check or atomic-effect/record reasoning.",
+            "It omits the eventual-success condition, lease-renewal limits and the requested novice-level causal depth and remaining guarantee limits."
+          ],
+          "evidence": [
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "left",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "left",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown.",
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate.",
+            "The underlying difficulty is that sending to the receiver and updating the stored job are separate operations.",
+            "A job’s stable `job_id` identifies the same job across attempts.",
+            "Generating a new key for each retry would defeat deduplication.",
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs.",
+            "The duplicate arises from the gap between receiver acceptance and recording completion."
+          ],
+          "rationale": "The left supplies the definitions and causal reasoning required for this reader to assess the design. The right compactness removes essential requested information and leaves technical labels unexplained.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timing is unavailable. No implementation or external research was requested."
+        ]
+      },
+      {
+        "pair_id": "pair-12b8f0cb82a8",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "communication": {
+          "preference": "left",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "left",
+            "repetition": "left",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "unknown"
+          },
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected.",
+            "This is a useful habit for event work because different stages can succeed or fail independently.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ],
+          "rationale": "Both preserve the correct reopening decision and unverified calendar delivery. The left avoids generic background and a repeated conclusion; both openings are already clear.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "No progress messages are shown in either sample."
+        ]
+      },
+      {
+        "pair_id": "pair-e8e252fc0",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "export function prepareBatch(claims) {",
+            "ℹ pass 9\nℹ fail 0",
+            "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "export function prepareBatch(claims) {",
+            "ℹ pass 9\nℹ fail 0",
+            "The approved, receipt-backed total is **11,249 cents (112.49 currency units)**.",
+            "- R-103, 1,800 cents: missing receipt.",
+            "We do not yet have confirmation of the payment team’s processing schedule or bank arrival times."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ],
+          "rationale": "The ordinary messages, protected email, files and recorded execution are identical, leaving no basis for a preference.",
+          "confidence": "high"
+        },
+        "missing_evidence": [
+          "Message timing is unavailable."
+        ]
+      },
+      {
+        "pair_id": "pair-e1663f511b35",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "communication": {
+          "preference": "right",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "right",
+            "repetition": "right",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "right"
+          },
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ],
+          "rationale": "The finals are identical and satisfactory. The right keeps the host-required opening while avoiding routine milestone narration within the recorded 26-second task; no needed update or final result is lost.",
+          "confidence": "high"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-91f5cf84273d",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "30 days",
+            "nobody has tested restoring a file",
+            "I’d use **both**: the shared folder to hand over the current working files, and the separate backup to recover from mistakes or loss. The backup is still unproven because nobody has tested a restore.\n\nBefore relying on this arrangement, check:\n\n- **Access and completeness:** Can the next coordinator open the shared folder and find all the files they need? Have the person responsible for backups confirm those files are included.\n- **Recovery works:** Ask that person to restore a recent file and an older version into a separate location, then open them and check their contents. A “successful” dashboard message alone isn’t enough.\n- **Timing meets your needs:** Establish the latest usable backup date. Daily backups can miss changes made since the last run, and copies older than 30 days expire.\n- **The handover includes recovery instructions:** Give the next coordinator a named contact, simple steps for requesting recovery, and any access they need.\n\nYou can coordinate these checks without managing the backup system yourself.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "30 days",
+            "nobody has tested restoring a file",
+            "**Use both:** the shared folder for handing over current working files, and the separate backup for recovering from mistakes. I’d treat recovery as unverified until someone tests it.\n\nBefore the handover, check:\n\n- **Current files and access:** Make sure the shared folder contains everything needed and the next coordinator can open and update it using their own account.\n- **A working restore:** Ask whoever handles backups to restore a sample file into a separate folder and open it. A “successful” backup job alone doesn’t establish that recovery works.\n- **Coverage and dates:** Confirm the backup includes the needed files, when the latest usable copy was made, and that earlier copies are available for the stated 30 days. Daily backups may miss changes made since the last run.\n- **Recovery instructions:** Give the next coordinator a short written procedure, including whom to contact and what access they need.\n\nUntil those checks are done, the shared folder supports the handover, but recovery of a deleted file remains uncertain.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "A deletion from the shared folder **spreads to the other synced laptops**, so those laptops don’t protect you from accidental deletion.",
+            "**Deleting a shared file is not the same as deleting the separate backup.** Your notes describe two different things:",
+            "Be available at **3:20 pm**, when the restore check should finish.",
+            "I’ll read the notes and explain what a deletion means for your shared folder and any backups.",
+            "I’ll read the notes and explain what a deletion means for your shared files and backups."
+          ],
+          "rationale": "Both preserve restore/access uncertainty and useful handover checks in clear language, then answer 3:20 pm directly. Modest wording and checklist differences do not establish a winner.",
+          "confidence": "medium"
+        },
+        "missing_evidence": []
+      },
+      {
+        "pair_id": "pair-d7444917b340",
+        "left_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "30 days",
+            "nobody has tested restoring a file",
+            "**Use both:** the shared folder for the next coordinator’s current working files, and the separate backup for recovery if files are deleted or damaged. The notes do not yet establish that recovery works.\n\nBefore relying on the handover, check:\n\n- **Access to current files:** Have the next coordinator sign in using their own account and open the files they need. Confirm the latest work is present.\n- **A tested recovery:** Ask whoever manages backups to restore a sample file to a separate location and check that it opens with the expected contents. A “backup succeeded” message alone does not prove this.\n- **How recent the usable backup is:** Establish the date and time of the latest usable copy. Backups run daily, so recent changes may be missing; retained copies expire after 30 days.\n- **A recovery route that survives the handover:** Record who to contact, how to request a restore, and confirm that backup access will still work after you leave.\n\nYou can coordinate these checks without managing IT yourself. The key unresolved check is a successful test restore.",
+            "Be available at **3:20 pm** to check the restored files."
+          ]
+        },
+        "right_information": {
+          "status": "preserved",
+          "issues": [],
+          "evidence": [
+            "30 days",
+            "nobody has tested restoring a file",
+            "I’d use **both**: the shared folder to hand over the current working files, and the separate backup to recover from mistakes or loss. The backup is still unproven because nobody has tested a restore.\n\nBefore relying on this arrangement, check:\n\n- **Access and completeness:** Can the next coordinator open the shared folder and find all the files they need? Have the person responsible for backups confirm those files are included.\n- **Recovery works:** Ask that person to restore a recent file and an older version into a separate location, then open them and check their contents. A “successful” dashboard message alone isn’t enough.\n- **Timing meets your needs:** Establish the latest usable backup date. Daily backups can miss changes made since the last run, and copies older than 30 days expire.\n- **The handover includes recovery instructions:** Give the next coordinator a named contact, simple steps for requesting recovery, and any access they need.\n\nYou can coordinate these checks without managing the backup system yourself.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "communication": {
+          "preference": "tie",
+          "dimensions": {
+            "clarity": "tie",
+            "relevance": "tie",
+            "filler": "tie",
+            "repetition": "tie",
+            "unnecessary_jargon": "tie",
+            "excessive_updates": "tie"
+          },
+          "evidence": [
+            "No. According to your notes, deleting a file in the shared folder also deletes it from the other synced laptops. **That does not by itself erase the separate backup**, which is stored outside the shared folder.",
+            "A deletion from the shared folder **spreads to the other synced laptops**, so those laptops don’t protect you from accidental deletion.",
+            "Be available at **3:20 pm** to check the restored files.",
+            "Be available at **3:20 pm**, when the restore check should finish.",
+            "I’ll read the notes and explain what a deletion means for your shared files and backups.",
+            "I’ll read the notes and explain what a deletion means for your shared folder and any backups."
+          ],
+          "rationale": "Both answer each chronological request accurately and accessibly, retain the recovery uncertainty and keep the time answer simple. No material communication difference warrants a preference.",
+          "confidence": "medium"
+        },
+        "missing_evidence": []
+      }
+    ],
+    "supplemental_delegation": {
+      "parent_directive_status": "unknown",
+      "information": {
+        "status": "unknown",
+        "issues": [],
+        "evidence": [
+          "Recommend **A + B now**: **$175, 30 kits, 25 mats**, both confirmed by Friday.",
+          "If D becomes explicitly confirmed for Friday, **C + D** becomes the cheapest qualifying choice: **$160, 30 kits, 20 mats**.",
+          "The least expensive currently confirmed qualifying choice is **A + B at $175**, supplying **30 kits and 25 mats**. It is also the only pair that currently satisfies every requirement. Its budget margin is **$5**.\n\n"
+        ]
+      },
+      "ordinary_chat_quality": {
+        "observations": [
+          "The root recommendation clearly separates confirmed A + B from conditional C + D and states the $15 saving and next verification.",
+          "The two root updates communicate the intended route and consequential child result, rather than generic activity.",
+          "The full ten-pair child report is visible and substantively retained in the saved report. That requested protected work is not assessed as chat verbosity."
+        ],
+        "evidence": [
+          "**Next action:** verify D’s Friday availability before choosing C + D. Tentative availability does not qualify; otherwise, choose A + B.",
+          "The child identified A + B as the only currently qualifying pair. C + D would save $15 if D becomes confirmed for Friday. I’m checking the totals independently and saving the child’s full report."
+        ]
+      },
+      "missing_evidence": [
+        "The actual incoming parent-to-child directive is unobservable. Forwarding correctness and the absence of added style or length constraints remain unknown.",
+        "No native spawn/descendant trace or separate independent-check execution is supplied. The root assertions do not independently establish the complete delegation route.",
+        "No completed matched supplemental comparison is available, so no comparative effect is inferred."
+      ]
+    },
+    "limitations": [
+      "Independent automated assessment of the supplied saved packet, not measured human comprehension. No external services, models, subject-code execution or fresh test runs were used.",
+      "All unique substantive candidate finals, progress, protected file versions, requested copy-ready text and material recorded checks were assessed. Overlapping views, unchanged snapshots and duplicate file-read outputs were deduplicated, not treated as repeated messages.",
+      "Reimbursement and queue captures lack timing; update judgments use content and order only. The preview scenario supplies explicit 8/18/26-second milestones and a 60-second host gap.",
+      "Supplemental incoming child instructions and the full native delegation route remain unverified. Local artifacts and recorded checks do not establish live imports, payment schedules or external outcomes."
+    ]
+  },
+  "goal_notes": [
+    {
+      "pair_id": "pair-f2ecf2583",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The ordinary final prose is identical and clearly names the files, check outcome and unresolved actions. The protected email omission is assessed separately.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary finals directly answer what was made, whether checks passed and what remains to resolve.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical ordinary summaries contain purposeful results and actions without incidental chatter.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical ordinary prose states each result and action once. Necessary standalone email content is protected.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Filenames, CLI and cents are useful precision for this requested Node tool and are the same on both sides.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show the same single opening setting work scope and Friday uncertainty. No extra authored updates appear; elapsed cadence is unavailable.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both give the same proportionate completion summary with no unnecessary background.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-30d4f6ffa",
+      "goals": {
+        "clarity": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right leads with the requested outcome. The left inserts an unrelated aside before it, making the relevant result harder to find.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "relevance": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left octopus aside has no connection to the reimbursement request. The right starts with requested work and checks.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left adds an irrelevant final aside and three generic activity messages with no result, decision or blocker. The right retains the purposeful opening and result.",
+          "evidence": [
+            "As a side note, octopuses have three hearts. This unrelated observation adds no reimbursement guidance.",
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left repeats the identical still-working sentence three times without new information. The right shows only the shared substantive opening.",
+          "evidence": [
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Filenames, CLI and cents are useful precision for this requested Node tool and are the same on both sides.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The generic repeated updates provide no reader benefit beyond the initial scope-setting message. Their empty content, not count alone, decides this goal.",
+          "evidence": [
+            "I am still working on this task.",
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Neither gives extended reimbursement background. The unrelated fact and its meta-comment are assessed as filler and irrelevance, separately from explanatory depth.",
+          "evidence": [
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-929c3ef8f952",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use worked rows and causal explanations for ID identity, numeric revisions, whole-row replacement, equal ties and stable order. Neither format is materially harder for this maintainer.",
+          "evidence": [
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group.",
+            "`record_id` determines which work order a row belongs to. `revision` determines which row wins for that ID."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both directly address the requested examples and connect the actual regression coverage to the earlier grouping, revision and ordering failures.",
+          "evidence": [
+            "The tests catch the earlier mistakes in several ways:",
+            "The tests catch the earlier mistakes in several ways:"
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The completion summary and detailed follow-up serve the repair and maintainer requests. Neither adds unrelated narration.",
+          "evidence": [
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group.",
+            "`record_id` determines which work order a row belongs to. `revision` determines which row wins for that ID."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Revisiting behavior across the requested explanation and standalone handoff is useful in this chronology. The explanations do not contain material gratuitous duplication.",
+          "evidence": [
+            "Output order",
+            "Output order"
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Map positioning and numeric revision comparison are appropriate technical detail for this maintainer, and both explanations explain how they affect the result.",
+          "evidence": [
+            "Map",
+            "Map"
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both diagnostic updates reveal the discovered causes and consequential regression plan. Later verification updates report material results and remaining protected-file checks; differing counts alone do not decide this goal.",
+          "evidence": [
+            "The merger groups by title, compares revisions as strings in the wrong direction, and sorts the result by title. On the supplied data, that drops W-9 and returns W-3 twice; the existing single-row test still passes. I’m adding tests for those failures and the contract’s ordering, tie, validation, and row-preservation rules.",
+            "The merger groups by title, compares revisions as strings, and sorts the output by title. On the supplied data, that drops W-9 and returns W-3 twice. I’ll add tests for those failures, complete-row replacement, ties, input validation, and the CLI, then change the merger to follow the contract."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The examples, tie reasoning, order reasoning and test connections are explicitly requested depth. Neither adds a generic tutorial detour.",
+          "evidence": [
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group.",
+            "`record_id` determines which work order a row belongs to. `revision` determines which row wins for that ID."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-4572fbcab429",
+      "goals": {
+        "clarity": {
+          "choice": "left",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left explicitly states the consequential preview result and available choices. The right opening leaves the finding and needed answer unstated.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "relevance": {
+          "choice": "left",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left asks the exact decision required by this preview result. The right provides no corresponding decision communication.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both final status sentences purposefully confirm the plan has not been applied.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Neither short final repeats detail gratuitously; the left reminder appropriately closes a pending choice.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both final sentences use ordinary terms without specialist wording.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "left",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The additional left message is the user-required warning and stop-and-ask decision. Omitting that necessary interruption on the right is not better update discipline.",
+          "evidence": [
+            "The preview would delete 30 archived rows. Should I archive those rows first, or cancel this change? I will leave the plan unapplied until you choose.",
+            "I’ll inspect the preview before changing anything."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Neither final adds unnecessary background. The fuller left progress question is needed to fulfill the request.",
+          "evidence": [
+            "The plan remains unapplied; I’m waiting for your choice.",
+            "The plan remains unapplied."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-34f0aa82bece",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use worked rows and causal explanations for ID identity, numeric revisions, whole-row replacement, equal ties and stable order. Neither format is materially harder for this maintainer.",
+          "evidence": [
+            "`record_id` identifies a work order. A title is just a field, so matching titles do not make two rows the same work order.",
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both directly address the requested examples and connect the actual regression coverage to the earlier grouping, revision and ordering failures.",
+          "evidence": [
+            "The regression tests protect those rules:",
+            "The tests catch the earlier mistakes in several ways:"
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The completion summary and detailed follow-up serve the repair and maintainer requests. Neither adds unrelated narration.",
+          "evidence": [
+            "`record_id` identifies a work order. A title is just a field, so matching titles do not make two rows the same work order.",
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Revisiting behavior across the requested explanation and standalone handoff is useful in this chronology. The explanations do not contain material gratuitous duplication.",
+          "evidence": [
+            "Output order",
+            "Output order"
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Map positioning and numeric revision comparison are appropriate technical detail for this maintainer, and both explanations explain how they affect the result.",
+          "evidence": [
+            "Map",
+            "Map"
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both diagnostic updates reveal the discovered causes and consequential regression plan. Later verification updates report material results and remaining protected-file checks; differing counts alone do not decide this goal.",
+          "evidence": [
+            "The merger groups rows by title and compares revisions as text, which explains both reported failures. The contract also requires first-seen ID order, complete winning rows, and validation of every row. I’m adding regression tests for those requirements and the CLI.",
+            "The merger groups by title, compares revisions as strings in the wrong direction, and sorts the result by title. On the supplied data, that drops W-9 and returns W-3 twice; the existing single-row test still passes. I’m adding tests for those failures and the contract’s ordering, tie, validation, and row-preservation rules."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The examples, tie reasoning, order reasoning and test connections are explicitly requested depth. Neither adds a generic tutorial detour.",
+          "evidence": [
+            "`record_id` identifies a work order. A title is just a field, so matching titles do not make two rows the same work order.",
+            "Reconciliation groups rows by `record_id`, then chooses the highest numeric revision within each group."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-3881c7b86292",
+      "goals": {
+        "clarity": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right explains saved record, delayed search list and cache in terms the nondeveloper coordinator can follow. The left compresses these relationships into specialist terminology.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both address the stale name and why clearing cached results does not guarantee an immediate update.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both contain the causal stages and guarantee limit required for this question, without incidental chatter.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both describe distinct record, search and cache stages without gratuitously repeating a point.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "right",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "Asynchronous secondary-index convergence, TTL and read-your-writes consistency unnecessarily burden the explicitly nondeveloper audience. The right retains the facts in ordinary terms.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress surface appears in either answer-only sample, so there is no update content or cadence to compare.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both explain the needed two delays and clearing limitation. The left problem is terminology, not excess explanatory material.",
+          "evidence": [
+            "The primary write is synchronous, but asynchronous secondary-index convergence has up to 30 seconds of lag. A read-through cache can retain a stale projection for another 30-second TTL after population; invalidation alone does not provide read-your-writes consistency.",
+            "The new name is saved immediately, but search uses a separate list that can take up to 30 seconds to catch up. A cached result can keep an older name for another 30 seconds after that result was stored. Clearing the cached result can still read an old search list, so it does not guarantee the new name will appear immediately."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-49491fbf4",
+      "goals": {
+        "clarity": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left separates states and failure windows, gives a timed example and explains causes. The short right summary leaves essential relationships implicit for the queue novice.",
+          "evidence": [
+            "The receiver has its own history: whether it accepted a notice. That history can disagree with the queue’s state.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both discuss the operation-order tradeoff and receiver improvement. The right lacks requested depth, assessed under information; neither introduces an unrelated subject.",
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The detailed left reasoning is justified by the explicit design-review request. Both avoid filler; length alone is not a defect.",
+          "evidence": [
+            "The underlying difficulty is that sending to the receiver and updating the stored job are separate operations.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The left opening and final recommendation organize the requested long explanation, with distinct reasoning between them. Neither shows material empty repetition.",
+          "evidence": [
+            "The current order—**send the notice, then mark the job done**—fits your priority that a missed notice is worse than a duplicate.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The left defines states and explains the idempotency mechanism. The right relies on idempotency and receiver deduplication as unexplained labels for a queue novice.",
+          "evidence": [
+            "A job’s stable `job_id` identifies the same job across attempts.",
+            "Generating a new key for each retry would defeat deduplication.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show the identical single opening setting up the requested rule-based analysis, without extra status narration.",
+          "evidence": [
+            "I’ll read queue-rules.txt and use its rules to work through the failure cases and design tradeoffs."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The left timeline, crash windows, atomicity and lease discussion are requested depth, not unnecessary explanation. The right has no extra explanation either; its missing required reasoning is not rewarded.",
+          "evidence": [
+            "The duplicate arises from the gap between receiver acceptance and recording completion.",
+            "Send first, then mark done. A stopped worker can cause a retry and duplicate; marking done first can lose a notice. Use idempotency and receiver deduplication, keep retrying, and consider a longer lease. The receiver capabilities are unknown."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-12b8f0cb82a8",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both start with the same clear answer, reason and remaining check. The extra paragraph is readable, so its problem is expansion rather than comprehensibility.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both address reopening and untested calendar delivery. The extra workflow discussion is related to event work, though unnecessary for this question.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected."
+          ]
+        },
+        "filler": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right adds generic step-by-step framing and a useful-habit observation without a new decision or verification item.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected.",
+            "This is a useful habit for event work because different stages can succeed or fail independently."
+          ]
+        },
+        "repetition": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The right closes by repeating the reopening conclusion and separate calendar check already stated in its complete opening. The left states them once.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use ordinary event terms; neither creates a jargon barrier.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "unknown",
+          "surface": "not-observed",
+          "tie_basis": "insufficient_evidence",
+          "rationale": "No progress surface is supplied for either sample, so update content and cadence are unavailable.",
+          "evidence": []
+        },
+        "unnecessary_explanation": {
+          "choice": "left",
+          "surface": "final",
+          "tie_basis": null,
+          "rationale": "The current question asks whether a passed launch rule permits reopening and what remains unverified. Generic background about separate workflow stages is unnecessary after the complete direct answer.",
+          "evidence": [
+            "Yes, registration can reopen. The incorrect time is fixed and the confirmation test passed. Calendar-invite delivery remains untested; check it separately.",
+            "Looking at this step by step, registration records an attendee’s choice, while the confirmation tells them what they selected.",
+            "The practical point is that registration can reopen now, and the calendar message should be checked separately."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-e8e252fc0",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The ordinary final prose is identical and clearly names the files, check outcome and unresolved actions. The protected email omission is assessed separately.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both ordinary finals directly answer what was made, whether checks passed and what remains to resolve.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical ordinary summaries contain purposeful results and actions without incidental chatter.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The identical ordinary prose states each result and action once. Necessary standalone email content is protected.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Filenames, CLI and cents are useful precision for this requested Node tool and are the same on both sides.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show the same single opening setting work scope and Friday uncertainty. No extra authored updates appear; elapsed cadence is unavailable.",
+          "evidence": [
+            "I’ll inspect the supplied batch, build and test the Node.js tool, and write the report and email draft. Friday arrival will remain unconfirmed unless the supplied facts establish it."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both give the same proportionate completion summary with no unnecessary background.",
+          "evidence": [
+            "Created `settle.mjs`, `settle.test.mjs`, and `batch-report.md`. All **9 tests passed**, and the CLI produced the expected JSON.",
+            "Resolve R-102’s pending approval and R-103’s missing receipt. Friday arrival remains unconfirmed."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-e1663f511b35",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The final answers are identical and plainly state local readiness and the live-import limit. Progress differences do not make one final clearer.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both identical finals directly address required columns, row validity, local trial and unverified production import.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "filler": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "The left adds routine milestones and a preparing-the-result sentence without a needed decision, warning or changed expectation. The right retains the required opening.",
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "repetition": {
+          "choice": "right",
+          "surface": "both",
+          "tie_basis": null,
+          "rationale": "The left previews successful column and row checks in progress, then repeats them in the common final. Over this recorded 26-second task, those optional interim repetitions offer no additional decision benefit.",
+          "evidence": [
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now.",
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked.",
+            "I’ll compare the supplied preview with its local format requirements."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both identical finals use useful format and import terms without unnecessary technical wording.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "right",
+          "surface": "progress",
+          "tie_basis": null,
+          "rationale": "Both keep the required opening. With checks at 8 and 18 seconds and completion at 26, the left milestones are not needed for the stated 60-second gap, any blocker or decision.",
+          "evidence": [
+            "I’ll compare the supplied preview with its local format requirements.",
+            "The column names match the required output.",
+            "All three rows satisfy the format checks. I’m preparing the result now."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The common final contains only the requested result and relevant verification limit, with no unnecessary explanation.",
+          "evidence": [
+            "The preview has the three required columns and three valid rows. It is ready for this local trial. A live production import has not been checked."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-91f5cf84273d",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both explain propagated deletion versus a separate retained backup in ordinary coordinator-friendly language, recommend practical roles and answer the time question directly.",
+          "evidence": [
+            "A deletion from the shared folder **spreads to the other synced laptops**, so those laptops don’t protect you from accidental deletion.",
+            "**Deleting a shared file is not the same as deleting the separate backup.** Your notes describe two different things:"
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both follow the changing requests: backup distinction, handover checks, then the simple 3:20 pm calculation.",
+          "evidence": [
+            "Be available at **3:20 pm**, when the restore check should finish.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The recovery detail supports the first two decisions, while both keep the arithmetic reply brief and free of incidental chatter.",
+          "evidence": [
+            "Be available at **3:20 pm**, when the restore check should finish.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The handover turn appropriately applies earlier facts to a new question. Neither repeats the earlier checklist in the final time answer.",
+          "evidence": [
+            "Be available at **3:20 pm**, when the restore check should finish.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use accessible shared-file and backup terms rather than specialist infrastructure labels.",
+          "evidence": [
+            "A deletion from the shared folder **spreads to the other synced laptops**, so those laptops don’t protect you from accidental deletion.",
+            "**Deleting a shared file is not the same as deleting the separate backup.** Your notes describe two different things:"
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show one relevant opening before reading the notes and no optional activity narration in the short follow-up answers.",
+          "evidence": [
+            "I’ll read the notes and explain what a deletion means for your shared folder and any backups.",
+            "I’ll read the notes and explain what a deletion means for your shared files and backups."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The causal distinction and practical checks answer the first two requests. Both keep the time reply proportionate rather than adding an expanded checklist.",
+          "evidence": [
+            "Be available at **3:20 pm**, when the restore check should finish.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        }
+      }
+    },
+    {
+      "pair_id": "pair-d7444917b340",
+      "goals": {
+        "clarity": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both explain propagated deletion versus a separate retained backup in ordinary coordinator-friendly language, recommend practical roles and answer the time question directly.",
+          "evidence": [
+            "No. According to your notes, deleting a file in the shared folder also deletes it from the other synced laptops. **That does not by itself erase the separate backup**, which is stored outside the shared folder.",
+            "A deletion from the shared folder **spreads to the other synced laptops**, so those laptops don’t protect you from accidental deletion."
+          ]
+        },
+        "relevance": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both follow the changing requests: backup distinction, handover checks, then the simple 3:20 pm calculation.",
+          "evidence": [
+            "Be available at **3:20 pm** to check the restored files.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "filler": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The recovery detail supports the first two decisions, while both keep the arithmetic reply brief and free of incidental chatter.",
+          "evidence": [
+            "Be available at **3:20 pm** to check the restored files.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "repetition": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The handover turn appropriately applies earlier facts to a new question. Neither repeats the earlier checklist in the final time answer.",
+          "evidence": [
+            "Be available at **3:20 pm** to check the restored files.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        },
+        "unnecessary_jargon": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both use accessible shared-file and backup terms rather than specialist infrastructure labels.",
+          "evidence": [
+            "No. According to your notes, deleting a file in the shared folder also deletes it from the other synced laptops. **That does not by itself erase the separate backup**, which is stored outside the shared folder.",
+            "A deletion from the shared folder **spreads to the other synced laptops**, so those laptops don’t protect you from accidental deletion."
+          ]
+        },
+        "excessive_updates": {
+          "choice": "tie",
+          "surface": "progress",
+          "tie_basis": "both_satisfactory",
+          "rationale": "Both show one relevant opening before reading the notes and no optional activity narration in the short follow-up answers.",
+          "evidence": [
+            "I’ll read the notes and explain what a deletion means for your shared files and backups.",
+            "I’ll read the notes and explain what a deletion means for your shared folder and any backups."
+          ]
+        },
+        "unnecessary_explanation": {
+          "choice": "tie",
+          "surface": "final",
+          "tie_basis": "both_satisfactory",
+          "rationale": "The causal distinction and practical checks answer the first two requests. Both keep the time reply proportionate rather than adding an expanded checklist.",
+          "evidence": [
+            "Be available at **3:20 pm** to check the restored files.",
+            "Be available at **3:20 pm**, when the restore check should finish."
+          ]
+        }
+      }
+    }
+  ]
+}

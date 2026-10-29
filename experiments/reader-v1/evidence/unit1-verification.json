@@ -1,0 +1,107 @@
+{
+  "label": "Automated assessments, not measured human comprehension",
+  "outcome": "Valid ties; no demonstrated incremental communication benefit",
+  "completed_response_conversations": 6,
+  "response_task_starts": 18,
+  "pre_model_failed_attempts": 1,
+  "development_contexts": 3,
+  "development_task_starts": 7,
+  "blinded_reviewer_contexts": 2,
+  "reviewer_task_starts": 2,
+  "total_attempt_slots": 12,
+  "total_task_starts": 27,
+  "former_caps_superseded": true,
+  "reviewers_passed_legacy_controls": 2,
+  "new_diagnostic_controls_passed": 8,
+  "total_control_judgments_passed": 16,
+  "real_pair_judgments": 8,
+  "per_goal_real_judgments": 56,
+  "all_real_goal_judgments": "tie/both_satisfactory",
+  "all_information_judgments": "preserved",
+  "all_objective_checks": "pass",
+  "delivery": "Exact developer-context candidate before all tasks in enabled; absent/disabled have no candidate",
+  "obedience": "Plain final explanations in every arm; enabled still includes work-plan/checking narration",
+  "usefulness": "No calibrated gain on any goal in these examples",
+  "source_and_work_outputs_inspected": true,
+  "incoming_native_child_instructions": "unverified",
+  "desktop_ui": "unverified",
+  "reviewer_exact_model_effort": "unknown",
+  "archive": [
+    {
+      "path": "assessment.json",
+      "sha256": "07d85d1d2319d821a25416e4e6c72c2857ddf8d64c8b548974fac9f9ac5ea259",
+      "bytes": 289248
+    },
+    {
+      "path": "controller-map.json",
+      "sha256": "e715cd5c82c351f8feac619e95be22d1a38736420d2212fb10057e6b188329f7",
+      "bytes": 9150
+    },
+    {
+      "path": "deterministic.json",
+      "sha256": "ae8cc78bcf99ef9a76debc6dc702b6d6c85071820b5184d104e270a75a5a6211",
+      "bytes": 43730
+    },
+    {
+      "path": "reader-freeze.json",
+      "sha256": "91e8002588d6cad420a31ca4db5247ce698be4e3d38c0da570cd1776b16a3fd6",
+      "bytes": 8588
+    },
+    {
+      "path": "chat-content-screens.json",
+      "sha256": "920c2ba1968c4183ae8520c0f3904a8cba4e24aea4bfa57a1388ddd5d810a426",
+      "bytes": 1056
+    },
+    {
+      "path": "reader-unit1-review-1/packet.json",
+      "sha256": "19fffe2ac1356616a327cc02d74c0d8b2409637b12b3ab72fca4a4278f879bb6",
+      "bytes": 564477,
+      "non_identifying_drive_roots": 5
+    },
+    {
+      "path": "reader-unit1-review-1/response-template.json",
+      "sha256": "5f70a51c8bfbe9aa87168b999b86bcf6a65792c15f5b0283ca2c6fac9757f5fc",
+      "bytes": 27714
+    },
+    {
+      "path": "reviews/reader-unit1-review-1.json",
+      "sha256": "5e866c68c6da8280c903ce055f85d428191b5f894d5dda380a7e6d489f54036e",
+      "bytes": 81437
+    },
+    {
+      "path": "reader-unit1-review-2/packet.json",
+      "sha256": "2287ff7e64f941a3621c61366210be7ea1ed7787976c33bf54a19c539a510cc7",
+      "bytes": 564477,
+      "non_identifying_drive_roots": 5
+    },
+    {
+      "path": "reader-unit1-review-2/response-template.json",
+      "sha256": "5dfb2e83b98351f8140d6cc16a8e2127b41f185dba922b2bbbba51f9c9a3886c",
+      "bytes": 27714
+    },
+    {
+      "path": "reviews/reader-unit1-review-2.json",
+      "sha256": "7dd9666960ea78d9087b661acc2824b995adf56a680100c67ea033d1e3788947",
+      "bytes": 85856
+    }
+  ],
+  "selected_subject_files": 223,
+  "byte_exact_raw_artifacts": 96,
+  "historical_locked_files_unchanged": 287,
+  "auth_profiles_checked": 26,
+  "copied_signins_retained": 0,
+  "sealed_cases_opened": false,
+  "sealed_case_hashes_unchanged": true,
+  "no_paid_fallback_or_new_service": true,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold",
+  "historical_source_replay_revision": "d3d8e9f",
+  "limitations": [
+    "Synthetic realistic controls do not prove every subtle reader-benefit judgment.",
+    "Legacy control positions are not a complete order reversal; reviewer variance and ordering remain confounded.",
+    "Existing cases often already give the baseline a plain-language source or explicitly request detail.",
+    "Required-message payload sensitivity needs a distinct prospective control; do not rescore this unit to invent a gain.",
+    "Original failure and all raw reviews remain unchanged; no reviewer retry or format conversion used."
+  ]
+}

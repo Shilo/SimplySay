@@ -1,0 +1,29 @@
+{
+  "n05": {
+    "status": "positive-lexical-evidence",
+    "expected": "3:20 pm or an equivalent correct expression",
+    "recognized_correct_form": true,
+    "clock_tokens": [
+      "3:20 pm"
+    ],
+    "limitation": "A conservative text screen, not a semantic pass. Unrecognized equivalent wording or contradictions require independent review."
+  },
+  "n06": {
+    "status": "positive-lexical-evidence",
+    "expected": "3:20 pm or an equivalent correct expression",
+    "recognized_correct_form": true,
+    "clock_tokens": [
+      "3:20 pm"
+    ],
+    "limitation": "A conservative text screen, not a semantic pass. Unrecognized equivalent wording or contradictions require independent review."
+  },
+  "n13": {
+    "status": "positive-lexical-evidence",
+    "expected": "3:20 pm or an equivalent correct expression",
+    "recognized_correct_form": true,
+    "clock_tokens": [
+      "3:20 pm"
+    ],
+    "limitation": "A conservative text screen, not a semantic pass. Unrecognized equivalent wording or contradictions require independent review."
+  }
+}

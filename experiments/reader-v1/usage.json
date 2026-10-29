@@ -9,9 +9,9 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-1-corrected-control-ready",
-  "new_conversations": 6,
-  "new_task_starts": 13,
+  "status": "unit-1-finished-no-incremental-benefit",
+  "new_conversations": 12,
+  "new_task_starts": 27,
   "starts": [
     {
       "id": "n01",
@@ -75,6 +75,62 @@
       "max_turns": 3,
       "status": "failed",
       "reserved_utc": "2026-10-29T14:52:10.826Z"
+    },
+    {
+      "id": "n13",
+      "role": "shared-files-corrected-installed-disabled",
+      "condition": "disabled",
+      "case_id": "reader-a-shared-files",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T15:04:14.795Z"
+    },
+    {
+      "id": "n08",
+      "role": "workorders-absent",
+      "condition": "absent",
+      "case_id": "reader-b-work-order-repair",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T15:06:42.292Z"
+    },
+    {
+      "id": "n09",
+      "role": "workorders-installed-concrete",
+      "condition": "enabled",
+      "case_id": "reader-b-work-order-repair",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T15:15:05.171Z"
+    },
+    {
+      "id": "n10",
+      "role": "workorders-installed-disabled",
+      "condition": "disabled",
+      "case_id": "reader-b-work-order-repair",
+      "turns": 3,
+      "max_turns": 3,
+      "status": "completed",
+      "reserved_utc": "2026-10-29T15:23:52.487Z"
+    },
+    {
+      "id": "n11",
+      "role": "fresh-blinded-reader-reviewer-one",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "completed-valid-calibration",
+      "agent": "/root/reader_unit1_blind_1"
+    },
+    {
+      "id": "n12",
+      "role": "fresh-blinded-reader-reviewer-reversed",
+      "turns": 1,
+      "max_turns": 1,
+      "status": "completed-valid-calibration",
+      "agent": "/root/reader_unit1_blind_2"
     }
   ],
   "new_paid_services": false,
@@ -87,14 +143,9 @@
     "record": "docs/reader-development-authorization.md",
     "unit": "experiments/reader-v1/unit.json"
   },
-  "dispatch_blocked": false,
-  "allowed_subjects": [
-    "n13",
-    "n08",
-    "n09",
-    "n10"
-  ],
-  "block_reason": null,
+  "dispatch_blocked": true,
+  "allowed_subjects": [],
+  "block_reason": "Completed development unit; record the next purposeful unit before any new response dispatch",
   "checkpoint": "experiments/reader-v1/evidence/first-pair-checkpoint.json",
   "diagnostics": [
     {

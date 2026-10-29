@@ -1,0 +1,33 @@
+{
+  "common_dispatch": "experiments/reader-v1/review-dispatch.txt",
+  "common_sha256": "527025d9c869574a566f3fcd9e6f1bd05d217c4137b58183ce4aeabcc7ffe0ad",
+  "assignments": [
+    {
+      "slot": "n11",
+      "reviewer_id": "reader-unit1-review-1",
+      "packet_sha256": "19fffe2ac1356616a327cc02d74c0d8b2409637b12b3ab72fca4a4278f879bb6",
+      "template_sha256": "5f70a51c8bfbe9aa87168b999b86bcf6a65792c15f5b0283ca2c6fac9757f5fc",
+      "allowed_reads": "Own packet and template; invoke exported validator only",
+      "tasks": 1,
+      "model_effort": "unknown"
+    },
+    {
+      "slot": "n12",
+      "reviewer_id": "reader-unit1-review-2",
+      "packet_sha256": "2287ff7e64f941a3621c61366210be7ea1ed7787976c33bf54a19c539a510cc7",
+      "template_sha256": "5dfb2e83b98351f8140d6cc16a8e2127b41f185dba922b2bbbba51f9c9a3886c",
+      "allowed_reads": "Own packet and template; invoke exported validator only",
+      "tasks": 1,
+      "model_effort": "unknown"
+    }
+  ],
+  "separate_from_response_subjects": true,
+  "paid_api_judging": false,
+  "procedural_clarification": {
+    "signature": "validate(wrapper, packet): parsed JSON objects, returns true or throws",
+    "sent_to_both": true,
+    "reason": "One reviewer requested the signature; no judgment/calibration guidance provided",
+    "within_original_tasks": true,
+    "new_task_starts": 0
+  }
+}

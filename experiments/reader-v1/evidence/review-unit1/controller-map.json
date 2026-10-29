@@ -1,0 +1,304 @@
+{
+  "sources": [
+    {
+      "id": "n05",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/a.case.json"
+    },
+    {
+      "id": "n06",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/a.case.json"
+    },
+    {
+      "id": "n13",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/a.case.json"
+    },
+    {
+      "id": "n08",
+      "condition": "absent",
+      "case_file": "experiments/reader-v1/cases/b.case.json"
+    },
+    {
+      "id": "n09",
+      "condition": "enabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/b.case.json"
+    },
+    {
+      "id": "n10",
+      "condition": "disabled",
+      "policy": "experiments/reader-v1/candidates/concrete.v1.txt",
+      "case_file": "experiments/reader-v1/cases/b.case.json"
+    }
+  ],
+  "pairs": [
+    {
+      "key": "a-enabled-absent",
+      "a": "n05",
+      "b": "n06"
+    },
+    {
+      "key": "a-disabled-absent",
+      "a": "n05",
+      "b": "n13"
+    },
+    {
+      "key": "b-enabled-absent",
+      "a": "n08",
+      "b": "n09"
+    },
+    {
+      "key": "b-disabled-absent",
+      "a": "n08",
+      "b": "n10"
+    }
+  ],
+  "reviewers": {
+    "reader-unit1-review-1": {
+      "pairs": [
+        {
+          "key": "a-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-4c4031a5e302",
+          "left": "sample-f7684bc8c61a",
+          "right": "sample-63cb55d558dd",
+          "left_source": "n05",
+          "right_source": "n06"
+        },
+        {
+          "key": "a-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-2776146e8842",
+          "left": "sample-d1fa14c65c9b",
+          "right": "sample-f7684bc8c61a",
+          "left_source": "n13",
+          "right_source": "n05"
+        },
+        {
+          "key": "diagnostic-d1",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d1",
+          "pair_id": "pair-564036441231",
+          "left": "sample-6af3e982b633",
+          "right": "sample-955c6b9d2f3f",
+          "left_source": "diagnostic-d1-good",
+          "right_source": "diagnostic-d1-mutant",
+          "good_source": "diagnostic-d1-good"
+        },
+        {
+          "pair_id": "pair-73ab5828a",
+          "left": "sample-2576ab1cf",
+          "right": "sample-86c7faf6c",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "cMissing",
+          "right_source": "mC"
+        },
+        {
+          "key": "diagnostic-d2",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d2",
+          "pair_id": "pair-bdd359b072dc",
+          "left": "sample-921520a687c6",
+          "right": "sample-975174860ad0",
+          "left_source": "diagnostic-d2-mutant",
+          "right_source": "diagnostic-d2-good",
+          "good_source": "diagnostic-d2-good"
+        },
+        {
+          "pair_id": "pair-5ff3ef47e",
+          "left": "sample-86c7faf6c",
+          "right": "sample-b3828c97b",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cFiller"
+        },
+        {
+          "key": "diagnostic-d3",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d3",
+          "pair_id": "pair-6236ea984039",
+          "left": "sample-6f3794376e6c",
+          "right": "sample-f78dd3c63199",
+          "left_source": "diagnostic-d3-good",
+          "right_source": "diagnostic-d3-mutant",
+          "good_source": "diagnostic-d3-good"
+        },
+        {
+          "key": "b-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-ab25882b14ec",
+          "left": "sample-04db37ee3cbf",
+          "right": "sample-2bd4e35bdd61",
+          "left_source": "n08",
+          "right_source": "n09"
+        },
+        {
+          "key": "diagnostic-d4",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d4",
+          "pair_id": "pair-d5ed2971f70b",
+          "left": "sample-90cb8d894f5b",
+          "right": "sample-710f46742fdd",
+          "left_source": "diagnostic-d4-mutant",
+          "right_source": "diagnostic-d4-good",
+          "good_source": "diagnostic-d4-good"
+        },
+        {
+          "key": "b-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-15488e2b84be",
+          "left": "sample-982193c40672",
+          "right": "sample-04db37ee3cbf",
+          "left_source": "n10",
+          "right_source": "n08"
+        },
+        {
+          "pair_id": "pair-dcf59ddf3",
+          "left": "sample-c33d41d55",
+          "right": "sample-e9a313b83",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "cTerse",
+          "right_source": "dB"
+        },
+        {
+          "pair_id": "pair-a9491d80f",
+          "left": "sample-86c7faf6c",
+          "right": "sample-cbe806cd1",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cIdentical"
+        }
+      ],
+      "packet_sha256": "19fffe2ac1356616a327cc02d74c0d8b2409637b12b3ab72fca4a4278f879bb6"
+    },
+    "reader-unit1-review-2": {
+      "pairs": [
+        {
+          "pair_id": "pair-f2ecf2583",
+          "left": "sample-f896a3879",
+          "right": "sample-fe159c2f8",
+          "key": "omission",
+          "kind": "control",
+          "left_source": "mC",
+          "right_source": "cMissing"
+        },
+        {
+          "pair_id": "pair-30d4f6ffa",
+          "left": "sample-914adb43c",
+          "right": "sample-f896a3879",
+          "key": "filler",
+          "kind": "control",
+          "left_source": "cFiller",
+          "right_source": "mC"
+        },
+        {
+          "key": "b-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-929c3ef8f952",
+          "left": "sample-3863c0766880",
+          "right": "sample-70aea8fea5d1",
+          "left_source": "n08",
+          "right_source": "n10"
+        },
+        {
+          "key": "diagnostic-d4",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d4",
+          "pair_id": "pair-4572fbcab429",
+          "left": "sample-c1cf77d852c9",
+          "right": "sample-03295309300d",
+          "left_source": "diagnostic-d4-good",
+          "right_source": "diagnostic-d4-mutant",
+          "good_source": "diagnostic-d4-good"
+        },
+        {
+          "key": "b-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-34f0aa82bece",
+          "left": "sample-7934d7c9cb9f",
+          "right": "sample-3863c0766880",
+          "left_source": "n09",
+          "right_source": "n08"
+        },
+        {
+          "key": "diagnostic-d3",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d3",
+          "pair_id": "pair-3881c7b86292",
+          "left": "sample-fb7c4a372338",
+          "right": "sample-974fe77e0cdd",
+          "left_source": "diagnostic-d3-mutant",
+          "right_source": "diagnostic-d3-good",
+          "good_source": "diagnostic-d3-good"
+        },
+        {
+          "pair_id": "pair-49491fbf4",
+          "left": "sample-95842651b",
+          "right": "sample-89813e901",
+          "key": "depth",
+          "kind": "control",
+          "left_source": "dB",
+          "right_source": "cTerse"
+        },
+        {
+          "key": "diagnostic-d2",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d2",
+          "pair_id": "pair-12b8f0cb82a8",
+          "left": "sample-88349a2b76a5",
+          "right": "sample-1eac8d3c4436",
+          "left_source": "diagnostic-d2-good",
+          "right_source": "diagnostic-d2-mutant",
+          "good_source": "diagnostic-d2-good"
+        },
+        {
+          "pair_id": "pair-e8e252fc0",
+          "left": "sample-73cbcc024",
+          "right": "sample-f896a3879",
+          "key": "identity",
+          "kind": "control",
+          "left_source": "cIdentical",
+          "right_source": "mC"
+        },
+        {
+          "key": "diagnostic-d1",
+          "kind": "diagnostic-control",
+          "diagnostic_id": "d1",
+          "pair_id": "pair-e1663f511b35",
+          "left": "sample-b4401c46bf44",
+          "right": "sample-1226198bb3f7",
+          "left_source": "diagnostic-d1-mutant",
+          "right_source": "diagnostic-d1-good",
+          "good_source": "diagnostic-d1-good"
+        },
+        {
+          "key": "a-disabled-absent",
+          "kind": "real",
+          "pair_id": "pair-91f5cf84273d",
+          "left": "sample-3486a506d71f",
+          "right": "sample-0b1895498778",
+          "left_source": "n05",
+          "right_source": "n13"
+        },
+        {
+          "key": "a-enabled-absent",
+          "kind": "real",
+          "pair_id": "pair-d7444917b340",
+          "left": "sample-de71ace71cb2",
+          "right": "sample-3486a506d71f",
+          "left_source": "n06",
+          "right_source": "n05"
+        }
+      ],
+      "packet_sha256": "2287ff7e64f941a3621c61366210be7ea1ed7787976c33bf54a19c539a510cc7"
+    }
+  }
+}
