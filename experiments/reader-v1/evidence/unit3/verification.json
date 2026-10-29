@@ -1,0 +1,536 @@
+{
+  "label": "Automated experimental judgments, not measured human comprehension",
+  "archive": [
+    {
+      "path": "assessment.json",
+      "sha256": "18748a424ff49a16edba8176d6853cec7181129f0783ac52ce73b40cd7a21b10",
+      "bytes": 242199
+    },
+    {
+      "path": "controller-map.json",
+      "sha256": "2d224cf5743f57033ec5bf2d40869f41347cefb4c60242e6f250f2e022ed6be2",
+      "bytes": 7376
+    },
+    {
+      "path": "deterministic.json",
+      "sha256": "51076f1a20ba19ed73eeaad66b4188aef630e19416e8492c70a8e6a5df9f4071",
+      "bytes": 31026
+    },
+    {
+      "path": "reader-freeze.json",
+      "sha256": "f0623b154d4058e0bf7a4f99e61a3d5515574f868a0f9daef375f5ff7d969a65",
+      "bytes": 7813
+    },
+    {
+      "path": "chat-content-screens.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "bytes": 3
+    },
+    {
+      "path": "reader-unit3-review-1/packet.json",
+      "sha256": "ab4571456ac94599ae60aebb1749ab5101f00fc3d91ca59e31293e5a001ba1e7",
+      "bytes": 506600
+    },
+    {
+      "path": "reader-unit3-review-1/response-template.json",
+      "sha256": "66b42b30e27b07f1ebec7a7cf5afbc3b5c0854b1f77b3cb0bf0094dca248b848",
+      "bytes": 23174
+    },
+    {
+      "path": "reviews/reader-unit3-review-1.json",
+      "sha256": "db138231ad58ff835acda9adf23d8803fcca3b2e522668f83714fed605a5099b",
+      "bytes": 79380
+    },
+    {
+      "path": "reader-unit3-review-2/packet.json",
+      "sha256": "d0fdd56a448351012ebd84977ef488a40bae9f5b2eabdde6629f1a868f960b4f",
+      "bytes": 506600
+    },
+    {
+      "path": "reader-unit3-review-2/response-template.json",
+      "sha256": "f388475a91778aafeb7ba0a8cd8224cc7903a2ad630ba9057e00bc1f6742430b",
+      "bytes": 23174
+    },
+    {
+      "path": "reviews/reader-unit3-review-2.json",
+      "sha256": "a2696f353c83c808973ad5329400bd117382338187ff36df082111471c659959",
+      "bytes": 87704
+    }
+  ],
+  "completed_response_conversations": 2,
+  "response_task_starts": 6,
+  "new_reviewer_conversations": 2,
+  "reviewer_task_starts": 2,
+  "preparation_followup_tasks": 1,
+  "fresh_response_failures": 0,
+  "retries": 0,
+  "all_objective_checks": "pass",
+  "generated_reproduction_commands_checked": 2,
+  "original_unit1_review_archive_unchanged": true,
+  "original_unit2_review_archive_unchanged": true,
+  "historical_locked_files_unchanged": 287,
+  "sealed_content_opened": false,
+  "sealed_hashes_unchanged": true,
+  "auth_profiles_checked": 34,
+  "copied_signins_retained": 0,
+  "subject_export_files": 118,
+  "raw_byte_exact_artifacts": 76,
+  "reviewers": [
+    {
+      "id": "reader-unit3-review-1",
+      "status": "received",
+      "legacy": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "left"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "omitted-essential",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "diagnostics": {
+        "d1": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d2": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_explanation",
+            "filler",
+            "repetition"
+          ],
+          "confidence": "high"
+        },
+        "d3": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_jargon",
+            "clarity"
+          ],
+          "confidence": "high"
+        },
+        "d4": {
+          "pass": true,
+          "type": "necessary-interruption",
+          "eligible_claims": [
+            "information",
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d5": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates",
+            "filler",
+            "repetition",
+            "unnecessary_explanation"
+          ],
+          "confidence": "high"
+        }
+      },
+      "eligible_claims": {
+        "information": true,
+        "clarity": true,
+        "relevance": true,
+        "filler": true,
+        "repetition": true,
+        "unnecessary_jargon": true,
+        "excessive_updates": true,
+        "unnecessary_explanation": true
+      }
+    },
+    {
+      "id": "reader-unit3-review-2",
+      "status": "received",
+      "legacy": {
+        "pass": true,
+        "controls": {
+          "omission": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "tie"
+          },
+          "filler": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "right"
+          },
+          "depth": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "omitted-essential"
+            },
+            "preference": "left"
+          },
+          "identity": {
+            "pass": true,
+            "information": {
+              "left": "preserved",
+              "right": "preserved"
+            },
+            "preference": "tie"
+          }
+        }
+      },
+      "diagnostics": {
+        "d5": {
+          "pass": false,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates",
+            "filler",
+            "repetition",
+            "unnecessary_explanation"
+          ],
+          "confidence": "high"
+        },
+        "d4": {
+          "pass": true,
+          "type": "necessary-interruption",
+          "eligible_claims": [
+            "information",
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        },
+        "d3": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_jargon",
+            "clarity"
+          ],
+          "confidence": "high"
+        },
+        "d2": {
+          "pass": false,
+          "type": "style",
+          "eligible_claims": [
+            "unnecessary_explanation",
+            "filler",
+            "repetition"
+          ],
+          "confidence": "high"
+        },
+        "d1": {
+          "pass": true,
+          "type": "style",
+          "eligible_claims": [
+            "excessive_updates"
+          ],
+          "confidence": "high"
+        }
+      },
+      "eligible_claims": {
+        "information": true,
+        "clarity": true,
+        "relevance": true,
+        "filler": false,
+        "repetition": false,
+        "unnecessary_jargon": true,
+        "excessive_updates": true,
+        "unnecessary_explanation": false
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "w1-v3-enabled-absent",
+      "votes": [
+        {
+          "reviewer": "reader-unit3-review-1",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Reference: `120 + 100 + 160 + 80 + 140 + 200 + 110 = 910` seconds.",
+                "Reference accuracy is **7/8 = 87.5%**; guide accuracy is **7/8 = 87.5%**.",
+                "P5 contributes **140 reference seconds and 150 guide seconds**, giving `140 - 150 = -10` seconds.",
+                "Retain P7 for **accuracy in both formats**: it contributes one correct first selection to each numerator and one observed selection to each denominator.",
+                "PASS: original draft archived byte for byte",
+                "The eight task pairs came from four volunteers in one staffed exercise. Repeated-task practice, coaching, one missing timing measurement and the small group limit the conclusion."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "Reference seconds = 120 + 100 + 160 + 80 + 140 + 200 + 110 = 910",
+                "Guide seconds     =  90 +  95 + 100 + 75 + 150 + 160 + 130 = 800",
+                "Both formats were initially correct on six pairs: P1, P2, P4, P6, P7 and P8.",
+                "Its saving is `140 - 150 = -10` seconds: the guide was ten seconds slower.",
+                "Retain P7 in accuracy: it adds one correct first selection to each format and one pair to the accuracy denominator.",
+                "\"original_draft_byte_identical\": true",
+                "The tasks were repeated, coaching occurred, and one guide time was missing. These limits leave the guide’s effect on ordinary-shift speed, accuracy and need for help uncertain."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both lead with the decision and explain the corrected time and accuracy figures in plain language. The methods documents and committee messages retain the requested depth; they are protected work, not excess chat.",
+              "evidence": [
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**.",
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "Both include routine file-work narration that does not ask for a decision or change expectations. The left’s earlier audit decision does help, so the right is not uniformly more relevant across the conversation.",
+              "evidence": [
+                "The methods file now includes the arithmetic, limits of the evidence, and a proposed check with criteria to set before scheduling. The archived draft matches the original byte for byte. I’m verifying that the embedded reproduction script runs and that all existing files remain unchanged.",
+                "I’m developing the P5 and P7 examples and the proposed check plan, then I’ll verify the reproduction steps and archived draft."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The ordinary final text identifies the decision, requested files and outstanding criteria. Neither adds unrelated pleasantries or padding; the copy-ready committee text is separately assessed for completeness.",
+              "evidence": [
+                "Recommend a **limited, staffed next check before standardization**.",
+                "Recommend a **limited, staffed next check before standardizing**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The answer to the repeated claim is appropriately restated because the user explicitly asks a new narrow question. Both keep that turn brief; the later standalone committee message needs its own facts.",
+              "evidence": [
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**.",
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both use understandable terms for the coordinator and give the actual denominators. Neither replaces the decision with unexplained technical vocabulary.",
+              "evidence": [
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**.",
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "tie",
+              "surface": "progress",
+              "tie_basis": "both_problem",
+              "rationale": "Both include optional routine preparation/verification narration without an evident need to interrupt. This is a content limitation shared by both, not a judgment based on message counts or an assumed 60-second rule. The left’s turn-1 finding has a separate reader benefit.",
+              "evidence": [
+                "The methods file now includes the arithmetic, limits of the evidence, and a proposed check with criteria to set before scheduling. The archived draft matches the original byte for byte. I’m verifying that the embedded reproduction script runs and that all existing files remain unchanged.",
+                "I’m developing the P5 and P7 examples and the proposed check plan, then I’ll verify the reproduction steps and archived draft."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "unnecessary_explanation": {
+              "choice": "right",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "At turn 3 the left explains the P5/P7 inclusion rules in chat even though the request places that reasoning in the handoff file. The right confines its update to the work being prepared. Both protected handoffs retain the reasoning, and the left’s earlier turn-1 decision update remains useful.",
+              "evidence": [
+                "P5 and P7 show why the rules matter: P5 stays in the timing comparison and counts as an incorrect guide first selection despite later help. P7 stays in accuracy but is excluded from timing because its guide stopwatch value is missing.",
+                "I’m developing the P5 and P7 examples and the proposed check plan, then I’ll verify the reproduction steps and archived draft."
+              ],
+              "preferred_source": "n23",
+              "claim_eligible": true
+            }
+          },
+          "missing_evidence": [
+            "No original incoming child directive or new delegation route is captured. This does not establish a comparative effect in this three-turn audit.",
+            "Timing is recorded, but this case does not state a particular host commentary cadence; no unobserved cadence requirement is inferred."
+          ]
+        },
+        {
+          "reviewer": "reader-unit3-review-2",
+          "information": {
+            "left": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now.",
+                "Both times are positive, so P5 remains in timing. Its saving is `140 - 150 = -10` seconds: the guide was ten seconds slower.",
+                "Retain P7 in accuracy: it adds one correct first selection to each format and one pair to the accuracy denominator.",
+                "The archived draft was compared byte-for-byte and by SHA-256 with `draft-summary.md`; both hashes are `4a7277ebee0f9597a1e066107380540c66590c6b81304218c91dc46cfd2135d4`."
+              ]
+            },
+            "right": {
+              "status": "preserved",
+              "issues": [],
+              "evidence": [
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**. They do not support “30 percent faster and more accurate” or standardization now.\n\nYour decision now is whether to pursue a limited, staffed next check and, if so, define its accuracy and usability acceptance criteria before scheduling it.",
+                "Both times are positive, so P5 contributes **140 reference seconds and 150 guide seconds**, giving `140 - 150 = -10` seconds.",
+                "Retain P7 for **accuracy in both formats**: it contributes one correct first selection to each numerator and one observed selection to each denominator.",
+                "The archived summary was compared byte for byte with the original draft; both have SHA-256 `4A7277EBEE0F9597A1E066107380540C66590C6B81304218C91DC46CFD2135D4`."
+              ]
+            },
+            "calibration_eligible": true
+          },
+          "goals": {
+            "clarity": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both chronological finals lead with the current decision, answer the narrow second-turn claim directly and locate the requested files. Committee copy is a protected deliverable.",
+              "evidence": [
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now.",
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**. They do not support “30 percent faster and more accurate” or standardization now.\n\nYour decision now is whether to pursue a limited, staffed next check and, if so, define its accuracy and usability acceptance criteria before scheduling it."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "relevance": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Both follow the changing requests: current decision, unresolved planning criteria and created file locations. The long turn-3 committee text is requested standalone copy, not ordinary chatter.",
+              "evidence": [
+                "Recommend a **limited, staffed next check before standardizing**. Seven matched pairs show a 12.09% time saving; first-selection accuracy is equal at 7/8. Four volunteers, repeated tasks and coaching limit the conclusion. The coordinator should set acceptance criteria before another check.\n\nCompleted [findings.md](<TASK_ROOT>/audit/findings.md) and [metrics.json](<TASK_ROOT>/audit/metrics.json), including calculations and verification notes. All supplied sources remain unchanged.",
+                "Recommend a **limited, staffed next check before standardization**. The guide saved 12.1% across seven usable time pairs; both formats had 7/8 correct first selections. Four volunteers participated, so the draft overstates the evidence.\n\nCreated [findings.md](<TASK_ROOT>/audit/findings.md) and [metrics.json](<TASK_ROOT>/audit/metrics.json), including corrected summary text and verification notes.\n\nBefore another check, define its scope and acceptance criteria for accuracy and usability. Supplied sources remain unchanged; no volunteers were contacted or study started.",
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now.",
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**. They do not support “30 percent faster and more accurate” or standardization now.\n\nYour decision now is whether to pursue a limited, staffed next check and, if so, define its accuracy and usability acceptance criteria before scheduling it."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "filler": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Neither ordinary final adds empty preambles or generic praise.",
+              "evidence": [
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now.",
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**. They do not support “30 percent faster and more accurate” or standardization now.\n\nYour decision now is whether to pursue a limited, staffed next check and, if so, define its accuracy and usability acceptance criteria before scheduling it."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "repetition": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "Corrected figures recur because the second user explicitly asks about the claim and the third requests committee copy. That is useful reuse, not unsolicited repetition; snapshot duplication adds no messages.",
+              "evidence": [
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now.",
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**. They do not support “30 percent faster and more accurate” or standardization now.\n\nYour decision now is whether to pursue a limited, staffed next check and, if so, define its accuracy and usability acceptance criteria before scheduling it."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": false
+            },
+            "unnecessary_jargon": {
+              "choice": "tie",
+              "surface": "final",
+              "tie_basis": "both_satisfactory",
+              "rationale": "The final terminology is useful and appropriate for the stated audience and task.",
+              "evidence": [
+                "No. The evidence shows **12.09% less total lookup time across seven measured pairs**, with **equal first-selection accuracy: 7/8 for each format**.\n\nDecide whether to pursue a limited, staffed next check. If you do, agree on acceptance criteria before it starts. The current evidence does not support standardizing the guide now.",
+                "No. The records show **12.1% less total lookup time across seven usable pairs**, with **equal first-selection accuracy: 7/8 for each format**. They do not support “30 percent faster and more accurate” or standardization now.\n\nYour decision now is whether to pursue a limited, staffed next check and, if so, define its accuracy and usability acceptance criteria before scheduling it."
+              ],
+              "preferred_source": "tie",
+              "claim_eligible": true
+            },
+            "excessive_updates": {
+              "choice": "unknown",
+              "surface": "progress",
+              "tie_basis": "insufficient_evidence",
+              "rationale": "Content benefits are mixed. Right’s turn-1 update gives the decision well before completion, but turn-3 examples restate handoff material; left’s shorter intermediate updates are routine status. Timings are captured, but the applicable host notification rule is absent. Four versus five progress entries does not establish a comparative gain.",
+              "evidence": [
+                "The record reconciliation is complete. I’m writing the findings and checking the output calculations and source-file integrity.\n",
+                "The records support a limited, staffed next check, not standardization now. Across seven usable time pairs, the guide saved 12.1% and was slower in two pairs. Both formats had seven correct first selections out of eight. The draft’s claims about eight independent volunteers, complete timing, improved accuracy, and coaching having no effect need correction.",
+                "I’m developing the P5 and P7 examples and the proposed check plan, then I’ll verify the reproduction steps and archived draft.\n",
+                "P5 and P7 show why the rules matter: P5 stays in the timing comparison and counts as an incorrect guide first selection despite later help. P7 stays in accuracy but is excluded from timing because its guide stopwatch value is missing. I’ll include a read-only reproduction script and explain how observations from the same volunteer affect the interpretation."
+              ],
+              "preferred_source": "unknown",
+              "claim_eligible": false
+            },
+            "unnecessary_explanation": {
+              "choice": "left",
+              "surface": "progress",
+              "tie_basis": null,
+              "rationale": "Right’s turn-3 P5/P7 mini-explanation and reproduction-script description belong in the requested handoff and change no decision before completion. Left keeps that intermediate message to the work stage. This preference is confined to progress: full requested reasoning and complete committee copy survive on both sides.",
+              "evidence": [
+                "I’m developing the P5 and P7 examples and the proposed check plan, then I’ll verify the reproduction steps and archived draft.\n",
+                "P5 and P7 show why the rules matter: P5 stays in the timing comparison and counts as an incorrect guide first selection despite later help. P7 stays in accuracy but is excluded from timing because its guide stopwatch value is missing. I’ll include a read-only reproduction script and explain how observations from the same volunteer affect the interpretation."
+              ],
+              "preferred_source": "n23",
+              "claim_eligible": false
+            }
+          },
+          "missing_evidence": [
+            "Incoming native child instructions are unverified.",
+            "No specific applicable host notification rule is supplied for the study-audit conversation. Captured timing alone does not establish required-message compliance.",
+            "All relevant execution outputs and unique files were read. Some long command bodies were inspected only through their starts and successful outputs, not every implementation character."
+          ]
+        }
+      ]
+    }
+  ],
+  "native_child_incoming_instructions": "unverified",
+  "actual_desktop_ui": "unverified",
+  "reviewer_model_effort": "unknown",
+  "new_paid_services": false,
+  "direct_claude": false,
+  "production": "hold",
+  "publication": "hold"
+}

@@ -1160,6 +1160,6 @@
   "auth_profiles_checked": 34,
   "copied_auth_retained": 0,
   "concurrency": "First matched subjects used independent overlapping profiles; launch order/settings unchanged",
-  "reader_model_effort": "unknown",
-  "original_incoming_child_instructions": "unverified"
+  "original_incoming_child_instructions": "unverified",
+  "reviewer_model_effort": "unknown"
 }

@@ -9,24 +9,25 @@
     },
     "superseded_by_owner": true
   },
-  "status": "unit-3-response-stop-review-saved-pair",
+  "status": "unit-4-diagnostic-preparation",
   "new_conversations": 24,
-  "new_task_starts": 58,
+  "new_task_starts": 59,
   "starts": [
     {
       "id": "n01",
       "role": "independent-instruction-challenger",
       "purpose": "Challenge original compact full-goal policies against observed failure modes",
-      "status": "completed",
+      "status": "allocated-unit4-diagnosis",
       "agent": "/root/reader_policy_challenge",
-      "turns": 6,
-      "max_turns": 6,
+      "turns": 7,
+      "max_turns": 7,
       "followup_purposes": [
         "Independent verification of new-phase ledger isolation and installed-disabled runner support",
         "Independent verification of new cases, realistic calibration and companion field contract before live subjects",
         "Correct rejected CLI disabling using verified supported config API; independent local guard tests",
         "Independently challenge unit 2 policy, natural case and prospective calibration contract before response dispatch",
-        "Choose one evidence-backed next experiment after unit2 shared preview failure; positive required-update fallback versus different-model baseline ceiling, no trials"
+        "Choose one evidence-backed next experiment after unit2 shared preview failure; positive required-update fallback versus different-model baseline ceiling, no trials",
+        "Diagnose separate-goal calibration coupling and literal fallback scope from unit3 records before more response spending; no rescore or trials"
       ]
     },
     {
@@ -241,7 +242,7 @@
       "role": "fresh-blinded-status-fallback-reviewer-one",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-valid-calibration",
       "purpose": "Independent blinded assessment of saved stopped pair, all goals and protected work; no response rerun",
       "agent": "/root/reader_unit3_blind_1"
     },
@@ -250,7 +251,7 @@
       "role": "fresh-blinded-status-fallback-reviewer-reversed",
       "turns": 1,
       "max_turns": 1,
-      "status": "running-review",
+      "status": "completed-partial-calibration-d2-d5",
       "purpose": "Independent blinded assessment of saved stopped pair, all goals and protected work; no response rerun",
       "agent": "/root/reader_unit3_blind_2"
     }
@@ -267,7 +268,7 @@
   },
   "dispatch_blocked": true,
   "allowed_subjects": [],
-  "block_reason": "Prospective first-pair stop: routine verification preview remains; n24 unattempted, reviewers still allocated",
+  "block_reason": "One recorded diagnostic follow-up only; further response/reviewer work unallocated",
   "checkpoint": "experiments/reader-v1/evidence/unit3/first-pair-checkpoint.json",
   "diagnostics": [
     {
