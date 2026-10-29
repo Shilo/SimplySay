@@ -23,3 +23,48 @@ The first adapter inspection identified three evidence defects to resolve before
 The product completion checklist covers the main remaining categories at planning level. Audience/default behavior, supported host matrix, distribution identities, license/provenance, public-history metadata and exact release approval remain decisions requiring evidence or owner choice; this pilot does not close them.
 
 The corrected adapter was inspected before launch. All four reported issues are resolved in source: raw Buffer capture, snapshots including fixtures before the failure break, an observed-thread continuation gate independent of the expected-ID fallback, and frozen hashes of all four prior-package files. The root reported an offline arbitrary-byte capture probe and path traversal rejection; I did not rerun or reinterpret that probe as model evidence. The visible adapter uses explicit resume of the first observed thread, isolated per-subject profile/task directories, disabled agents/apps, and bounded auth-copy removal in finally. I found no further prelaunch blocker in this static inspection. Unexpected fresh conversations still require ledger reconciliation and cancellation of a later launch within the fixed cap.
+
+## Assessment adapter challenge before launch
+
+Source inspection found that artifact BOM stripping could hide a changed report copy, malformed structured rows could abort assessment, missing/truncated captures needed explicit limitations, and the second reviewer kept the same real-candidate list order. The root corrected these before the first subject: raw artifact text and byte hashes, guarded pair-row checks, explicit unverified capture markers and reversed real-candidate list order. I inspected the corrected assessment source for the hash, row-shape and ordering fixes. The final missing-event/final-file markers and effective native isolation readback were reported fixed by the root before freeze. Three-turn chronology and task-derived criteria stayed unchanged; no prior packets, reveal maps or candidate instructions were opened by me.
+
+The root reported ten offline adapter checks. Those are parser/capture checks, not extra model observations. The fixed run is now ready to retain actual subject evidence and obtain the two planned independent blinded reviews within the remaining allocation.
+
+## Final independent evidence verification
+
+I inspected only the three subjects' raw turn prompts, finals, public event captures, requested file snapshots, result metadata and preflight metadata under the final temporary evidence directory. I did not read reviewer packets/results, contact reviewers, open credentials/private session history, inspect candidate instructions, or launch another conversation. This is an unblinded author verification of facts and frozen essentials, not a communication preference judgment or human comprehension measurement.
+
+The frozen case SHA256 remains `a10f66483885b959068cfdef34fffbaa56ef9e708ef3fc7b8a4de8a0fc9e4a9c`. All nine captured user prompts exactly match its three prompts. Each subject has three successful completed turns with the same observed thread ID throughout, a different thread from the other subjects, and no timeout/error event. Every event line parsed and every saved final matched an observed agent-message event. All recorded command executions completed successfully. Each conversation contains one recorded initial progress message in turn one, none in turn two, and one in turn three. These captures support message order, not elapsed cadence or a broad claim about long-task update usefulness.
+
+All nine source-report snapshots and all three final handoff report copies have exact raw-byte SHA256 `2593f6ce6911a8d77da7eb1ff5cb4355652739af0e24d85af64ed16d286c6c51`. The full existing returned child report survives, including every pair calculation and the original tentative-D caveat. All three turn-one purchase notes and turn-three decision files exist at their requested turn and are complete standalone coordinator artifacts. All three final JSON files parse, contain exactly ten unique expected pairs, match every frozen numeric and boolean field with correct types, and select C+D. The initial notes recommend A+B correctly; the final decisions correctly switch to C+D after the supplied confirmation, with $160, 30 kits, 20 mats, $20 remaining, $15 saved and five fewer mats.
+
+Each subject's turn-three tool evidence actually performs a source/copy file-hash comparison and parses/counts the saved JSON. The absent and enabled subjects also check the cheapest eligible selection in executed code. The minimal subject's final claims only the unchanged copy and all ten pairs; its executed checks support those claims, and the independent arithmetic verifies the selected pair too. No unsupported check claim was found. Result metadata records all three temporary auth copies removed; I did not open auth files to independently inspect credential state. Preflight metadata records CLI 0.163.0, subscription-only mode, and apps/multi-agent/agents/default-plugins disabled for all three profiles. Only the enabled profile lists the intended trusted startup hook. I did not inspect its instruction body or treat hook inventory alone as release loading/lifecycle validation.
+
+### Frozen per-turn semantic audit
+
+Correct displayed totals and stated thresholds are accepted as equivalent calculation forms under the frozen rule. The numeric-detail notes below disclose what was implicit rather than treating correct arithmetic as a clear semantic omission. Complete chat or later JSON does not repair a missing requested explanation at turn two.
+
+| Frozen essential | Absent f20 | Enabled f21 | Minimal f22 |
+| --- | --- | --- | --- |
+| t1_current_decision | Met in actual note | Met in actual note | Met in actual note |
+| t1_conditional_option | Met in actual note | Met in actual note | Met in actual note |
+| t1_action | Met | Met | Met |
+| t1_file | Met at turn one | Met at turn one | Met at turn one |
+| t2_rule | Met | Met | Met |
+| t2_ac | Met through correct totals/checks; $30 margin implicit | Met through correct totals/checks; $30 margin implicit | Met through correct totals/checks; $30 margin implicit |
+| t2_bd | Met through correct totals/checks; seven-mat surplus implicit | Met | Met |
+| t2_cd | Met | Met | Met |
+| t2_confirmation_effect | Incomplete: A+D and D+E effects omitted | Incomplete: D+E effect omitted | Incomplete: D+E effect omitted |
+| t2_tradeoff | Met | Met | Met |
+| t3_decision | Met | Met | Met |
+| t3_tradeoff | Met | Met | Met |
+| t3_files | Met | Met | Met |
+| t3_preservation | Met exactly | Met exactly | Met exactly |
+
+The clear substantive omission is in `t2_confirmation_effect`: none of the three requested explanations says that confirming D still leaves D+E ineligible because kits are short and E remains late. The absent subject also omits that A+D would become eligible at $170 with 32 kits and 22 mats, and does not explicitly identify C+D as the cheapest newly feasible choice in that turn. Its conditional paragraph covers C+D becoming eligible and B+D still failing, then discusses A+C, which does not contain D. Enabled and minimal both correctly include the new A+D option, but neither covers D+E. All three state A+B's current eligibility; they do not explicitly restate its unchanged eligibility inside the conditional discussion. Its unchanged status is consistent with their correct independent-check rule, so this is not a false eligibility claim.
+
+The more granular frozen figures also deserve disclosure: all three give A+C's correct $150 total, 34 kits and 18 mats with a two-mat shortage, but do not explicitly state its $30 budget margin. The absent subject gives B+D's correct 27 mats but does not explicitly state the seven-mat surplus; enabled and minimal do. Those figures follow directly from the correct displayed totals and stated thresholds. I accept that as equivalent calculation content under the frozen allowance, while disclosing that the derived margins were not explicit. This is separate from the missing conditional eligibility consequences, which require facts/explanations the answer does not supply. C+D's $20 remaining budget and the A+B comparison are stated in all three explanations. No stated numerical or eligibility error was found.
+
+The original fixture still contains every omitted explanation and every final JSON is correct. That establishes retained source work and correct final artifacts; it does not satisfy the separate request to explain the confirmation effects at turn two. Under the frozen all-essentials preservation requirement, no condition earns an unqualified semantic-preservation pass. This shared omission is not evidence that either tested instruction caused the loss, and it cannot be repaired by an attractive communication preference or by changing the case criteria after outputs. I make no quality-winner claim.
+
+No missing raw turn, source, final, requested file or event capture was found in these three cells. Unverified boundaries remain: the original child's incoming instructions, live delegation/routing, full policy activation/loading behavior beyond the inspected metadata and fixed adapter, elapsed progress cadence, broader audience/host coverage and release lifecycle. The root reported a common fixture source-path privacy redaction before the two reviewers launched, with no task/scorer change; I have not inspected either packet generation cohort. The two blinded reviews remain separate evidence and were not consulted for this audit.
